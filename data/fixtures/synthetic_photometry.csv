@@ -1,0 +1,7 @@
+source_row_id,target_id,time_value,time_format,time_scale,time_reference,band,magnitude,magnitude_error,is_upper_limit,limit_magnitude,observer_id,quality_flag,provenance_id
+fixture-000,SYNTHETIC_DN_001,1.0,relative_demo_days,synthetic,simulation_origin,synthetic_V_like,14.2,0.12,false,,SIMULATOR,synthetic,fixture-v1
+fixture-001,SYNTHETIC_DN_001,2.0,relative_demo_days,synthetic,simulation_origin,synthetic_V_like,,,true,14.0,SIMULATOR,synthetic,fixture-v1
+fixture-002,SYNTHETIC_DN_001,3.0,relative_demo_days,synthetic,simulation_origin,synthetic_V_like,11.2,0.12,false,,SIMULATOR,synthetic,fixture-v1
+fixture-003,SYNTHETIC_DN_001,4.0,relative_demo_days,synthetic,simulation_origin,synthetic_V_like,10.7,0.12,false,,SIMULATOR,synthetic,fixture-v1
+fixture-004,SYNTHETIC_DN_001,6.0,relative_demo_days,synthetic,simulation_origin,synthetic_V_like,12.8,0.12,false,,SIMULATOR,synthetic,fixture-v1
+fixture-005,SYNTHETIC_DN_001,9.0,relative_demo_days,synthetic,simulation_origin,synthetic_V_like,14.3,0.12,false,,SIMULATOR,synthetic,fixture-v1

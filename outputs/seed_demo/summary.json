@@ -1,0 +1,162 @@
+{
+  "data_kind": "SYNTHETIC ONLY",
+  "version": "0.1.0",
+  "seed": 1729,
+  "n_events_per_scenario": 240,
+  "python": "3.12.14",
+  "scientific_claims": "None. This is a software and design demonstration.",
+  "scope": "M0/M1 complete-event oracle forecasts; separate exogenous-cadence visibility diagnostic",
+  "not_implemented": [
+    "real archive ingestion",
+    "real event extraction",
+    "latent-state fit M2/M3",
+    "censor-aware fitting",
+    "hierarchical pooling",
+    "parameter uncertainty",
+    "adaptive observation process"
+  ],
+  "scenarios": {
+    "null": {
+      "n_train": 168,
+      "n_test": 72,
+      "evaluation": "chronological, frozen fit, complete oracle cycles only",
+      "units": "gaps in relative_demo_days; natural-log predictive density averaged per held-out cycle",
+      "models": {
+        "M0_renewal": {
+          "mean_log_score": -4.029179187620688,
+          "coverage_90": 0.8888888888888888,
+          "mean_absolute_error_of_predictive_median_days": 10.772083469564068,
+          "fitted_duration_slope": 0.0,
+          "fitted_residual_log_sigma": 0.4004003888717113
+        },
+        "M1_duration": {
+          "mean_log_score": -4.010585403420368,
+          "coverage_90": 0.9027777777777778,
+          "mean_absolute_error_of_predictive_median_days": 10.427050842965063,
+          "fitted_duration_slope": -0.13851670172394193,
+          "fitted_residual_log_sigma": 0.39670312441293776
+        }
+      },
+      "delta_mean_log_score_M1_minus_M0": 0.018593784200319874,
+      "correlation_duration_with_quiescent_gap": -0.1542961035998726,
+      "correlation_duration_with_onset_gap": 0.07136038046227282,
+      "oracle_visibility": {
+        "n_scheduled_observations": 2679,
+        "n_events_hit_twice": 143,
+        "n_events": 240,
+        "warning": "truth event membership is used; not a recovered-event catalogue"
+      }
+    },
+    "memory": {
+      "n_train": 168,
+      "n_test": 72,
+      "evaluation": "chronological, frozen fit, complete oracle cycles only",
+      "units": "gaps in relative_demo_days; natural-log predictive density averaged per held-out cycle",
+      "models": {
+        "M0_renewal": {
+          "mean_log_score": -4.286347374893242,
+          "coverage_90": 0.9166666666666666,
+          "mean_absolute_error_of_predictive_median_days": 15.581899740130694,
+          "fitted_duration_slope": 0.0,
+          "fitted_residual_log_sigma": 0.4839077898276512
+        },
+        "M1_duration": {
+          "mean_log_score": -4.145714275189154,
+          "coverage_90": 0.9027777777777778,
+          "mean_absolute_error_of_predictive_median_days": 13.01825628862656,
+          "fitted_duration_slope": 0.7473191866962222,
+          "fitted_residual_log_sigma": 0.39057027481302675
+        }
+      },
+      "delta_mean_log_score_M1_minus_M0": 0.14063309970408788,
+      "correlation_duration_with_quiescent_gap": 0.5318857998533887,
+      "correlation_duration_with_onset_gap": 0.6421110953664929,
+      "oracle_visibility": {
+        "n_scheduled_observations": 2860,
+        "n_events_hit_twice": 152,
+        "n_events": 240,
+        "warning": "truth event membership is used; not a recovered-event catalogue"
+      }
+    },
+    "latent": {
+      "n_train": 168,
+      "n_test": 72,
+      "evaluation": "chronological, frozen fit, complete oracle cycles only",
+      "units": "gaps in relative_demo_days; natural-log predictive density averaged per held-out cycle",
+      "models": {
+        "M0_renewal": {
+          "mean_log_score": -4.698559735417055,
+          "coverage_90": 0.8888888888888888,
+          "mean_absolute_error_of_predictive_median_days": 22.25742053789297,
+          "fitted_duration_slope": 0.0,
+          "fitted_residual_log_sigma": 0.6616681638716474
+        },
+        "M1_duration": {
+          "mean_log_score": -4.4244448386889745,
+          "coverage_90": 0.9027777777777778,
+          "mean_absolute_error_of_predictive_median_days": 16.83575397300117,
+          "fitted_duration_slope": 0.7110340311109266,
+          "fitted_residual_log_sigma": 0.5472483640679917
+        }
+      },
+      "delta_mean_log_score_M1_minus_M0": 0.2741148967280802,
+      "correlation_duration_with_quiescent_gap": 0.4945590112230313,
+      "correlation_duration_with_onset_gap": 0.6002104020029715,
+      "oracle_visibility": {
+        "n_scheduled_observations": 3241,
+        "n_events_hit_twice": 138,
+        "n_events": 240,
+        "warning": "truth event membership is used; not a recovered-event catalogue"
+      }
+    },
+    "both": {
+      "n_train": 168,
+      "n_test": 72,
+      "evaluation": "chronological, frozen fit, complete oracle cycles only",
+      "units": "gaps in relative_demo_days; natural-log predictive density averaged per held-out cycle",
+      "models": {
+        "M0_renewal": {
+          "mean_log_score": -4.551373432114577,
+          "coverage_90": 0.9027777777777778,
+          "mean_absolute_error_of_predictive_median_days": 24.79244996641731,
+          "fitted_duration_slope": 0.0,
+          "fitted_residual_log_sigma": 0.963006908701283
+        },
+        "M1_duration": {
+          "mean_log_score": -4.097270528478676,
+          "coverage_90": 0.8611111111111112,
+          "mean_absolute_error_of_predictive_median_days": 15.50797703441561,
+          "fitted_duration_slope": 1.389208206339223,
+          "fitted_residual_log_sigma": 0.5592348172182757
+        }
+      },
+      "delta_mean_log_score_M1_minus_M0": 0.454102903635901,
+      "correlation_duration_with_quiescent_gap": 0.7249996266612709,
+      "correlation_duration_with_onset_gap": 0.7793650459369977,
+      "oracle_visibility": {
+        "n_scheduled_observations": 2634,
+        "n_events_hit_twice": 118,
+        "n_events": 240,
+        "warning": "truth event membership is used; not a recovered-event catalogue"
+      }
+    }
+  },
+  "sha256_csv": {
+    "both/oracle_forecasts.csv": "770824987dc0d94303741162f37601acd5c4d71b656d9ecfab291741ab746eac",
+    "both/oracle_visibility.csv": "3b37632c21908a61583e24fd335907bd9b07d07d72ed0ce95d2048deb7f083fe",
+    "both/synthetic_observations.csv": "cfce94a3eff90cdb79cfff88e5a4bd5b185d2e0db81d25da4b7a92ce624e981d",
+    "both/synthetic_truth.csv": "aa439b64b39275ad2cc4ef3f5d755486510fbf714730443d8d1fd0763804f86b",
+    "latent/oracle_forecasts.csv": "2c54ff005e8ca48a30751ace951ceb4014604ccd0369246c5a828a820ba2c73e",
+    "latent/oracle_visibility.csv": "3502b71e99ccdbdf805a170dd06307e8fac89b1769ab47c39a0110a71e837add",
+    "latent/synthetic_observations.csv": "b30a641f12cbd47d642e5f817614e542b333356861e82c0d0c9bb478f3858f90",
+    "latent/synthetic_truth.csv": "12c089e3b11356284a6047dd93051ed815d91c8543ae409f4c2e5e1658f1a807",
+    "memory/oracle_forecasts.csv": "9727a12a1f805a7d74458672995d07ab0c25d9ff4114722fde4ae84ce7fd6f40",
+    "memory/oracle_visibility.csv": "506d84de78d2cbaf6c6e0395d28843197e43639760a3c0f22284f032de62d852",
+    "memory/synthetic_observations.csv": "ed30df33eee8e68eff36901af97e3d7c3693c328d4f637af2387c5972d0e9172",
+    "memory/synthetic_truth.csv": "7131cb8b0bf3f4758242417f690058384e193159013a2146f520133ad82e3430",
+    "null/oracle_forecasts.csv": "10fd085428637b4aa90ebd36c40ac663b837b1a6db209802b62abaa1ab4aefa7",
+    "null/oracle_visibility.csv": "37971715514c6c4b5d47ae0119470394230f173ee928a33c642dc47de6b6de27",
+    "null/synthetic_observations.csv": "06dcf548efc63f6a248d65ac549bbd07ae4eabfde52f1b34897994e570a13b82",
+    "null/synthetic_truth.csv": "a805d6c785449551631dd755197a5885485024cf115159902af38956c1c397b2"
+  }
+}
