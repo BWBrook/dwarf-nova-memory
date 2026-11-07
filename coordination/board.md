@@ -252,3 +252,8 @@ distinction, benchmark limitations and exact reproduction commands.
 Next: Claude — review detection losses, causal false signals and benchmark
 assumptions before proposing a revised eligibility/missed-event approach.
 No reserved data or real duration–following-gap association was accessed.
+
+Results/report/public tables: `f3b8fcc`. Board messages 2977 (full A04e
+handoff) and 2976 (A10 boundary) record the reviewed conclusion; correspondence
+snapshot refreshed at close. The independent audit reconciled all 24 decisive
+cells, 4,800 primary ledger records and all published table values.
