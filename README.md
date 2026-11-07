@@ -64,7 +64,7 @@ Small floating-point differences across runtimes need not give identical hashes.
 | Data access and provenance | 12 hashed native SS Cyg acquisitions through 1959-12-31 noon under D013; 72,635 unique native IDs after overlap removal; raw data excluded from Git |
 | Candidate targets | Provisional, with classification evidence and caveats; no final eligibility asserted |
 | Statistical design and simulation programme | Specified, including censoring, missing events and state alternatives |
-| Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation; candidate observer-balanced event extractors X1–X3 (not frozen) |
+| Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation; candidate observer-balanced event extractors X1–X4 (not frozen) |
 | Archive adapter | Receipt-verified bounded native VStar/AID requests implemented for the SS Cyg open era; no time normalization or event inference |
 | M2/M3 and validated observational forecasting | Not implemented; draft event extractors and conditional synthetic recovery are available |
 | Synthetic recovery | Original 3,200-history X1/X2 screen plus independent 7,600-history X3 validation; no candidate qualifies. X3 improves intervals but fails effective coverage under state-compatible cadence; no real-star predictive result |
@@ -104,6 +104,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [Independent A04 comparison and open-era coverage](docs/audits/2026-11-07-a04-independent-comparison-open-era.md) | Sealed blind labels, unresolved boundaries, conditional endpoint sensitivities and 1896–1959 acquisition |
 | [A04c synthetic recovery screen](docs/audits/2026-11-07-a04c-injection-recovery.md) | Frozen criteria, independent synthetic truth, failed extractor qualification and recovery diagnostics |
 | [A04d benchmark review and X3 repair](docs/audits/2026-11-07-a04d-observation-review-x3-repair.md) | Predictive checks of the A04c benchmark, why X1/X2 miss, fitted-interval extractor X3, proposed fresh validation |
+| [A04f X3 failure review and X4](docs/audits/2026-11-08-a04f-x3-failure-review-x4.md) | Why X3 failed A04e, a state-cadence observer-diversity defect, the X4 repair, proposed A04g validation |
 | [A04e independent X3 validation](docs/audits/2026-11-07-a04e-x3-independent-validation.md) | Qualified independent benchmark, 7,600-history frozen validation, failed global qualification, causal confirmation and retained challenges |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |

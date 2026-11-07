@@ -27,7 +27,11 @@ coverage but fails global qualification under both coverage rules, principally
 through effective coverage in state-compatible cadence. The causal wrapper's
 1910–1929 unsafe-emission rate remains inconclusive. The original-v1 end
 failure is retained. X3 is a tested candidate, not an accepted extractor;
-see the A04e report and D015. No frozen
+see the A04e report and D015. A04f traced X3's losses to single-observer
+outbursts (inflated by the state arm's donor rule, which fails an
+observer-diversity check), shared timing errors and tail re-arming of the
+causal rule, and proposes X4 (`src/dnmem/extract_x4.py`) for A04g validation
+on an unseen benchmark family. X4 is a candidate, not frozen. No frozen
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,

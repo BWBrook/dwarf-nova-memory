@@ -16,6 +16,7 @@ claims and handovers.
 | A04 | Annotate development events and coverage | Boundaries adjudicated; conditional synthetic screen complete, both candidates require repair | Claude + Codex | [A04c recovery audit](../docs/audits/2026-11-07-a04c-injection-recovery.md); 3,200 histories, effective coverage fails; original labels/candidates retained |
 | A04b | Extraction and coverage candidates; open-era injection/recovery | Screen complete in A04c; qualification fails | Claude extractors, Codex harness | Both candidates retained unchanged; conditional-vs-effective coverage and 1950s null bias prevent freeze; repair and fresh validation next |
 | A04d | Benchmark review, extractor repair, fresh validation | X3 proposed with training evidence; validation protocol proposed, not frozen | Claude X3 and checks; Codex benchmark v2 and validation | [A04d memo](../docs/audits/2026-11-07-a04d-observation-review-x3-repair.md), [proposed protocol](../docs/protocols/a04d-x3-validation-v1.md); v1 benchmark fails predictive checks; X3 93–95% effective coverage on training, fails v1 end coverage |
+| A04f | X3 failure review and X4 repair | X4 proposed with development evidence; A04g protocol proposed, not frozen | Claude X4 and diagnosis; Codex v3 benchmark and validation | [A04f memo](../docs/audits/2026-11-08-a04f-x3-failure-review-x4.md), [proposed protocol](../docs/protocols/a04g-x4-validation-v1.md); state arm fails observer-diversity check; X4 94–98% effective coverage on development seeds of both v2 arms |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -257,3 +258,29 @@ Results/report/public tables: `f3b8fcc`. Board messages 2977 (full A04e
 handoff) and 2976 (A10 boundary) record the reviewed conclusion; correspondence
 snapshot refreshed at close. The independent audit reconciled all 24 decisive
 cells, 4,800 primary ledger records and all published table values.
+
+## Completed tranche — A04f X3 failure review and X4 repair, 8 November 2026
+
+Claude, base `d687c73`. All simulations use new `a04f-claude-*` seed namespaces;
+no A04e qualification or validation seeds, no 1960+ data and no real
+duration–gap association.
+
+- Diagnosis on v2 diagnosis seeds reproduces A04e (1930–1949 state X3
+  88.9%/89.2%). Losses: 5.3% single-observer (unconfirmed) outbursts in the
+  state arm against 2.2% in random, about 4.5% finite misses at 95%
+  conditional coverage falling with fit size, and causal false emissions that
+  are tail or rise re-arming within days of a true crossing.
+- The state arm's nearest-donor rule copies one real day's observers across a
+  synthetic outburst: median 8–9 distinct bright observers per outburst
+  against 14–16 real. Real X3 unconfirmed share is 1.5% (5 of 344).
+- X4: 0.05 mag shared-error floor (chosen on the smooth training family),
+  uncontradicted multi-night single-observer confirmation, and causal arming
+  at 0.5 mag past the threshold. Development: 94–98% effective coverage in
+  every v2 and smooth cell, causal unsafe at most 0.021 per year, widths up
+  6–23%.
+- Proposed A04g: an unseen v3 family, a diversity-preserving decisive state
+  arm qualified on observer diversity, a gross-error arm, seeds from Codex's
+  freeze commit, A04e criteria unchanged.
+
+Next: Codex reviews X4 and the A04g proposal, builds v3 and the revised state
+arm independently of X4, freezes and runs the validation.

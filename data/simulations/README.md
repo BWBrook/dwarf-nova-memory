@@ -33,3 +33,13 @@ the unchanged A04c scorer (`scripts/a04d_train_x3.py`).
 estimates (`--points`). All use training seeds disjoint from A04c and from the
 future validation; none is validation evidence. Replicate rows stay in
 `outputs/`.
+
+## A04f (Claude, development only)
+
+`a04f_x4_development_20261108.csv` scores X3 and X4 on the A04e v2 benchmark
+(diagnosis seeds) and Claude's smooth training family, both cadence arms, 40
+histories per cell (`scripts/a04f_develop_x4.py`).
+`a04f_observer_diversity_20261108.json` compares distinct bright observers per
+X1 episode in real 1910–1959 rows with both v2 cadence arms, and counts real
+episodes confirmed by X4's single-observer rule (`--diversity`). Neither is
+validation evidence.

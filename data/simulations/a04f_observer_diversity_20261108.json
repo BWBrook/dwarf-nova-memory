@@ -1,0 +1,89 @@
+{
+  "measure": "distinct bright observers per X1 episode spanning at least 4 d",
+  "seed_base": "a04f-claude-development-20261108-diversity",
+  "replicates_per_era_phase": 12,
+  "1910_1929": {
+    "real": {
+      "episodes": 142,
+      "median": 14.5,
+      "q10": 6,
+      "q25": 9,
+      "share_le_1": 0.0,
+      "share_le_2": 0.0211
+    },
+    "v2_random": {
+      "episodes": 1650,
+      "median": 13.0,
+      "q10": 6,
+      "q25": 8,
+      "share_le_1": 0.0055,
+      "share_le_2": 0.0097
+    },
+    "v2_state": {
+      "episodes": 1668,
+      "median": 9.0,
+      "q10": 3,
+      "q25": 6,
+      "share_le_1": 0.0216,
+      "share_le_2": 0.054
+    }
+  },
+  "1930_1949": {
+    "real": {
+      "episodes": 129,
+      "median": 16,
+      "q10": 2,
+      "q25": 6,
+      "share_le_1": 0.0388,
+      "share_le_2": 0.1008
+    },
+    "v2_random": {
+      "episodes": 1714,
+      "median": 13.0,
+      "q10": 3,
+      "q25": 6,
+      "share_le_1": 0.0484,
+      "share_le_2": 0.0869
+    },
+    "v2_state": {
+      "episodes": 1689,
+      "median": 9,
+      "q10": 2,
+      "q25": 4,
+      "share_le_1": 0.0853,
+      "share_le_2": 0.1557
+    }
+  },
+  "1950_1959": {
+    "real": {
+      "episodes": 76,
+      "median": 14.0,
+      "q10": 2,
+      "q25": 7,
+      "share_le_1": 0.0395,
+      "share_le_2": 0.1184
+    },
+    "v2_random": {
+      "episodes": 866,
+      "median": 13.0,
+      "q10": 2,
+      "q25": 6,
+      "share_le_1": 0.045,
+      "share_le_2": 0.1016
+    },
+    "v2_state": {
+      "episodes": 846,
+      "median": 8.0,
+      "q10": 2,
+      "q25": 4,
+      "share_le_1": 0.0638,
+      "share_le_2": 0.1383
+    }
+  },
+  "real_1910_1959_x4": {
+    "confirmed_by_two_observers": 339,
+    "confirmed_by_single_observer_rule": 1,
+    "unconfirmed": 4,
+    "x3_confirmed": 339
+  }
+}
