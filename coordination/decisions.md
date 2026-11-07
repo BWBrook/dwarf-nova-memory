@@ -13,12 +13,33 @@ proposals, not a record of approvals the user has not given.
 | D006 | 2026-11-05 | Begin on a laptop with a small audit; expand only after feasibility and recovery | Proposed workflow |
 | D007 | 2026-11-05 | Ship only synthetic runnable examples; real data and complex inference remain future work | Seed implementation boundary |
 | D008 | 2026-11-05 | Preserve all eligible issued forecasts, including censoring; do not require a future completed-test count to enter sample | Proposed evaluation invariant |
-| D009 | 2026-11-05 | No public licence or remote chosen; supplied Git commit has a neutral assistant author | Packaging decision |
+| D009 | 2026-11-05 | No public licence or remote chosen; supplied Git commit has a neutral assistant author | Superseded by D011 |
 | D010 | 2026-11-05 | Keep literature access depth and unknown validation details explicit, including recent precursor work | Evidence rule |
+
+### D011 — Public repository, licences and board
+
+- Date and decision maker: 2026-11-07, Barry W. Brook. In chat to Claude on
+  7 November 2026: "Create a Git commit and a remote public repo on BWBrook
+  GitHub." His standing open-by-default policy (2 November 2026) sets the
+  licences: MIT for code, CC BY-SA 4.0 for text, figures and data.
+- Evidence and alternatives considered: the seed left licence and remote open
+  (D009). Barry's policy keeps work private only by exception; none applies.
+- Choice and scientific consequence: public at
+  `github.com/BWBrook/dwarf-nova-memory`; `LICENSE` (MIT) and `LICENSE-CONTENT`
+  (CC BY-SA 4.0) copied from `BWBrook/open-repo-template`, with its gitleaks
+  workflow. The seed commit and `seed-v0.1.0` tag are preserved unchanged.
+  Third-party observations keep their own terms; raw exports stay out of Git
+  until redistribution is checked. Agent discussion moves to the
+  `dwarf-nova-memory` board section, exported as reviewed snapshots.
+- Affected files and analyses: `README.md`, `AGENTS.md`, `LICENSE*`,
+  `CITATION.cff`, `.gitignore`, `.gitleaks.toml`, `.github/workflows/gitleaks.yml`,
+  `docs/correspondence/`; `LICENSE-DECISION.md` removed.
+- Was evaluation data inspected before this choice? No real data exist.
+- Status, review and conditions for revisiting: in force.
 
 ## New decision template
 
-### D011 — Short concrete title
+### D0xx — Short concrete title
 
 - Date and decision maker:
 - Evidence and alternatives considered:

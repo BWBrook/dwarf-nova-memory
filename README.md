@@ -1,6 +1,8 @@
 # Dwarf-nova recurrence: memory, changing activity and forecast reliability
 
-**A research repository seed for Barry W. Brook. Prepared 5 November 2026.**
+> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. No real-star result exists yet.
+
+**A research repository led by Barry W. Brook. Seeded 5 November 2026; public from 7 November 2026.**
 
 The proposed first paper asks: **Does information from a completed outburst
 improve predictions of the next outburst beyond star-specific recurrence and
@@ -58,7 +60,7 @@ above. With the package installed, `dnmem demo --output outputs/run_002` is equi
 | Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation |
 | M2/M3 latent models, real event inference and archive adapters | Not implemented; explicit next tasks |
 | Observational findings | None; no real-star results or empirical power claims |
-| Git | Initialized `main` branch, one seed commit, `seed-v0.1.0` tag; no remote |
+| Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |
 
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
 uses *true complete simulated event histories*. The observation schedule is a
@@ -85,26 +87,36 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [Evidence register](references/evidence.csv) | Access depth, source links and verification |
 | [Agent prompts](prompts/README.md) | Concrete kickoff and independent review instructions |
 | [Manuscript outline](manuscript/outline.md) | Result-neutral paper structure and planned figures |
+| [Seed ideation](docs/gpt-6-pro_ideation.md) | The Barry–GPT-6 Pro conversation that chose the topic and commissioned the seed |
+| [Correspondence](docs/correspondence/INDEX.md) | Reviewed snapshots of the Claude–Codex–Barry board discussions |
 
-## Moving the repository to your remote
+## How this work is done
 
-Unzip the archive with hidden directories included, then:
+Barry W. Brook leads the science. OpenAI GPT-6 Pro (ChatGPT) proposed the topic
+among twenty candidates and built the seed: framework documents, literature
+review, bibliography, evidence register and synthetic prototype
+([ideation record](docs/gpt-6-pro_ideation.md)). The seed commit carries a
+neutral assistant identity and is preserved unchanged. From 7 November 2026 the
+work continues with Claude (Anthropic, Claude Opus 5.5 in Claude Code) and Codex
+(OpenAI), who propose, implement and cross-review through Barry's correspondence
+board. Reviewed snapshots of that discussion are published in
+[`docs/correspondence/`](docs/correspondence/INDEX.md), and each contribution
+records the system and model that made it.
 
-```bash
-cd dwarf-nova-memory
-git status
-git log --oneline -1
-git remote add origin YOUR_REMOTE_URL
-git push -u origin main
-git push origin seed-v0.1.0
-```
+There are no secrets, downloaded papers or real observations in this repository.
+Raw archive exports stay out of Git until their redistribution terms are checked
+(see [data and provenance](docs/03-data-and-provenance.md)).
 
-Set your normal local Git author identity before your own commits. The seed
-commit uses a neutral assistant identity, not a signature impersonating you.
-If your extractor omitted `.git`, extract again with hidden entries included.
-There are no secrets, configured remotes, downloaded papers or real observations
-in this repository. Choose the code/document licence before public release; see
-[the licence decision](LICENSE-DECISION.md).
+## Citation
+
+See [`CITATION.cff`](CITATION.cff). Paper-grade milestones will be tagged as
+releases with a Zenodo DOI.
+
+## Licence
+
+Code is released under the [MIT Licence](LICENSE). Text, figures and data created
+for this project are released under [CC BY-SA 4.0](LICENSE-CONTENT). Third-party
+observations, papers and catalogues keep their own terms.
 
 ## Recommended first decision
 

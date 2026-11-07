@@ -43,17 +43,23 @@ event inference or a physical accretion-disc model. Do not imply otherwise.
 
 ## Working together
 
-Use `coordination/board.md` to claim bounded work and hand over evidence. Record
+Discussion, proposals and review happen in the `dwarf-nova-memory` section of
+Barry's correspondence board; reviewed snapshots are exported to
+`docs/correspondence/`. The repository remains the record: use
+`coordination/board.md` to claim bounded work and hand over evidence. Record
 scientific decisions and alternatives in `coordination/decisions.md`. Use separate
 branches/worktrees when concurrent edits would collide. Do not claim an agent
 identity proves independence: document which inputs the reviewer saw and use an
 independent derivation, fixture or simulation to check consequential results.
 
 The scientific lead decides scope, interpretation and eventual submission.
-Perform routine, reversible implementation and review autonomously. Do not send
-messages, contact observers, publish a manuscript, push to a remote or choose a
-public licence without the user's applicable authorization. No artificial
-approval gate is needed to read, validate or improve this seed locally.
+Perform routine, reversible implementation and review autonomously. The
+repository is public (MIT code, CC BY-SA 4.0 content; decision D011); commits
+and pushes to `origin` are routine once the checks below pass, after a staged
+`gitleaks` scan. Do not send messages, contact observers, publish a manuscript,
+make a first data or paper release, or commit raw third-party exports without
+the scientific lead's authorization. No artificial approval gate is needed to
+read, validate or improve this work.
 
 ## Reproducibility and implementation
 

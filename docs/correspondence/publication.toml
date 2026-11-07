@@ -1,0 +1,6 @@
+project = "dwarf-nova-memory"
+flag_terms = ["password", "token", "credential", "student", "ssh", "hostname", "private", "email"]
+cleared = []
+redact = [['\bmini\b', '[host]']]
+
+[withheld]

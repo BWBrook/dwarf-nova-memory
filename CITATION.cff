@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "dwarf-nova-memory: incremental predictive information in dwarf-nova outburst histories"
+authors:
+  - family-names: Brook
+    given-names: Barry W.
+    orcid: "https://orcid.org/0000-0002-2491-1517"
+    affiliation: University of Tasmania
+license: MIT
+repository-code: "https://github.com/BWBrook/dwarf-nova-memory"
+keywords:
+  - dwarf novae
+  - cataclysmic variables
+  - outburst recurrence
+  - forecast evaluation
+  - censoring

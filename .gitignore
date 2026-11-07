@@ -25,3 +25,12 @@ outputs/*
 !outputs/seed_demo/**
 *.zip
 *.bundle
+*.pem
+*.p12
+*.pfx
+
+# Agent run logs and local agent state
+*.events.jsonl
+rollout-*.jsonl
+.claude/worktrees/
+.claude/settings.local.json

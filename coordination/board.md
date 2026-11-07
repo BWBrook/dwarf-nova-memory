@@ -1,13 +1,16 @@
 # Shared task board
 
-Updated: 5 November 2026. All future-work assignments are suggestions for the
-user's local agents; no agent is assumed to retain a session after this handoff.
+Updated: 7 November 2026. Discussion lives in the `dwarf-nova-memory` board
+section (snapshots in `docs/correspondence/`); this table is the record of
+claims and handovers.
 
 | ID | Task | Status | Suggested owner | Acceptance / next action |
 |---|---|---|---|---|
 | S00 | Initial literature, data and methods framework | Seed complete | Shared | Re-audit closest sources; review access-depth limitations |
 | S01 | Runnable synthetic scaffold and scientific invariants | Seed checked | Shared | See `docs/12-seed-validation.md` |
-| A01 | Independently challenge novelty and physical framing | Ready | Claude | One-page overlap statement with source evidence |
+| S02 | Public repo, licences, board section, first post | Done 2026-11-07 | Claude | D011; 17/17 tests and `validate_seed.py` pass on macOS, Python 3.15.0 |
+| A00 | Outcome-access partition before any real light curve is plotted | Proposed 2026-11-07 | Codex + Claude | Agree a quarantine cutoff on the board before A03 downloads; see board thread |
+| A01 | Independently challenge novelty and physical framing | Claimed by Claude, next turn | Claude | One-page overlap statement with source evidence |
 | A02 | Audit code and reproduce a key probability independently | Ready | Codex | Commands, numeric check and concrete findings |
 | A03 | Resolve one real target and obtain an authentic export | After A01/A02 | Codex | Raw file + hash + provenance; no silent conventions |
 | A04 | Annotate development events and coverage | After A03 | Claude + independent Codex subset | Boundary intervals and disagreement record |
