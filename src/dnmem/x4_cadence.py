@@ -17,6 +17,8 @@ THRESHOLD = 10.0
 ERA_RADIUS_DAYS = 5 * 365.25
 QUIET_RADIUS_DAYS = 15
 DONOR_POOL_SIZE = 8
+SEASON_WINDOW_DAYS = 60.0
+YEAR_DAYS = 365.25
 
 
 def _finite(value: Any, label: str) -> float:
@@ -100,11 +102,19 @@ def _donor_episodes(table: Mapping[int, Mapping[str, Any]]) -> list[dict[str, An
 
 
 def _bright_target_runs(
-    ordered_days: Sequence[int], wanted: Mapping[int, str], history: Any
+    ordered_days: Sequence[int],
+    wanted: Mapping[int, str],
+    history: Any,
+    start: float,
+    stop: float,
 ) -> list[dict[str, Any]]:
     if not ordered_days:
         return []
-    midpoint_days = list(range(ordered_days[0] + 1, ordered_days[-1]))
+    midpoint_days = [
+        day
+        for day in range(math.floor(start), math.ceil(stop))
+        if start <= day + 0.5 < stop
+    ]
     midpoint_values = _evaluate(history, [day + 0.5 for day in midpoint_days])
     midpoint_bright = {
         day: value <= THRESHOLD for day, value in zip(midpoint_days, midpoint_values)
@@ -131,8 +141,16 @@ def _bright_target_runs(
         anchor = run[0]
         while midpoint_bright.get(anchor - 1, False):
             anchor -= 1
-        result.append({"target_days": run, "anchor": anchor})
+        end = run[-1]
+        while midpoint_bright.get(end + 1, False):
+            end += 1
+        result.append({"target_days": run, "anchor": anchor, "end": end})
     return result
+
+
+def _season_distance(left: float, right: float) -> float:
+    difference = abs((left % YEAR_DAYS) - (right % YEAR_DAYS))
+    return min(difference, YEAR_DAYS - difference)
 
 
 def _choose_bright_donors(
@@ -140,6 +158,7 @@ def _choose_bright_donors(
 ) -> tuple[Mapping[str, Any] | None, int | None]:
     target_days = run["target_days"]
     midpoint = median(target_days)
+    target_span = run["end"] - run["anchor"]
     eligible = [
         (index, episode)
         for index, episode in enumerate(episodes)
@@ -147,11 +166,25 @@ def _choose_bright_donors(
             median((episode["first_bright"], episode["last_bright"])) - midpoint
         )
         <= ERA_RADIUS_DAYS
+        and _season_distance(episode["first_bright"], run["anchor"])
+        <= SEASON_WINDOW_DAYS
     ]
     if not eligible:
         return None, None
-    eligible.sort(
+    def span_difference(item: tuple[int, Mapping[str, Any]]) -> int:
+        return abs(
+            (item[1]["last_bright"] - item[1]["first_bright"]) - target_span
+        )
+    minimum_span_difference = min(span_difference(item) for item in eligible)
+    matched = [
+        item
+        for item in eligible
+        if span_difference(item) <= minimum_span_difference + 2
+    ]
+    matched.sort(
         key=lambda item: (
+            span_difference(item),
+            _season_distance(item[1]["first_bright"], run["anchor"]),
             abs(
                 median((item[1]["first_bright"], item[1]["last_bright"]))
                 - midpoint
@@ -159,7 +192,7 @@ def _choose_bright_donors(
             item[1]["first_bright"],
         )
     )
-    local = eligible[:DONOR_POOL_SIZE]
+    local = matched[:DONOR_POOL_SIZE]
     rng = _rng(
         seed,
         f"bright-run:{target_days[0]}:{target_days[-1]}:{run['anchor']}",
@@ -221,11 +254,12 @@ def diverse_state_schedule(
     """Borrow cadence as an era-local whole-event observation block.
 
     Each synthetic bright run draws one era-local real bright episode without
-    conditioning on target duration or observed-day count. Its complete
-    first-to-last-bright observation pattern is aligned by relative calendar
-    day. A donor-missing relative day becomes an explicitly reported additional
-    empty target day; no row is clamped or duration-warped. Quiet targets retain
-    an already-faint day or use the nearest faint donor within 15 days.
+    conditioning on observer count or target observed-day count. Donors are
+    matched on season and whole-episode calendar span. The complete
+    first-to-last-bright observation pattern is aligned by relative calendar day.
+    A donor-missing relative day becomes an explicitly reported additional empty
+    target day; no row is clamped or duration-warped. Quiet targets retain an
+    already-faint day or use the nearest faint donor within 15 days.
     """
     start_value = _finite(start, "start")
     stop_value = _finite(stop, "stop")
@@ -258,12 +292,16 @@ def diverse_state_schedule(
         for day, value in zip(ordered, _evaluate(history, representative_times))
     }
     episodes = _donor_episodes(table)
-    bright_runs = _bright_target_runs(ordered, wanted, history)
+    bright_runs = _bright_target_runs(
+        ordered, wanted, history, start_value, stop_value
+    )
     assignments: dict[int, tuple[int, str, int | None]] = {}
     matched_runs = 0
     unmatched_runs = 0
     additional_empty_days = 0
     episode_uses: list[int] = []
+    span_differences: list[int] = []
+    season_differences: list[float] = []
     for run in bright_runs:
         donor_episode, episode_index = _choose_bright_donors(run, episodes, seed)
         if donor_episode is None:
@@ -273,6 +311,16 @@ def diverse_state_schedule(
             continue
         matched_runs += 1
         episode_uses.append(episode_index)
+        span_differences.append(
+            abs(
+                donor_episode["last_bright"]
+                - donor_episode["first_bright"]
+                - (run["end"] - run["anchor"])
+            )
+        )
+        season_differences.append(
+            _season_distance(donor_episode["first_bright"], run["anchor"])
+        )
         for day in run["target_days"]:
             donor_day = donor_episode["first_bright"] + day - run["anchor"]
             if donor_day not in donor_episode["days"]:
@@ -316,6 +364,7 @@ def diverse_state_schedule(
     output.sort(key=lambda row: (float(row["JD"]), str(row.get("observer_id", ""))))
 
     calendar_days = math.ceil(stop_value) - math.floor(start_value)
+    output_observed_days = len({math.floor(float(row["JD"])) for row in output})
     metadata = {
         "observed_target_days": len(table),
         "borrowed_days": borrowed_days,
@@ -323,17 +372,34 @@ def diverse_state_schedule(
         "no_match_fraction": no_match_days / len(table) if table else 1.0,
         "empty_days_preserved": calendar_days - len(table),
         "boundary_rows_omitted": boundary_rows_omitted,
-        "output_observed_days": len(table) - additional_empty_days,
+        "output_observed_days": output_observed_days,
         "additional_empty_days": additional_empty_days,
-        "total_empty_days": calendar_days - len(table) + additional_empty_days,
+        "total_empty_days": calendar_days - output_observed_days,
         "bright_runs": len(bright_runs),
         "bright_runs_matched": matched_runs,
         "bright_runs_unmatched": unmatched_runs,
+        "donor_matching": {
+            "era_radius_days": ERA_RADIUS_DAYS,
+            "season_window_days": SEASON_WINDOW_DAYS,
+            "mean_absolute_span_difference_days": (
+                sum(span_differences) / len(span_differences)
+                if span_differences
+                else None
+            ),
+            "max_absolute_span_difference_days": max(span_differences, default=None),
+            "mean_season_distance_days": (
+                sum(season_differences) / len(season_differences)
+                if season_differences
+                else None
+            ),
+            "max_season_distance_days": max(season_differences, default=None),
+        },
         "donor_reuse": _reuse_summary(uses, episode_uses),
         "scope": (
             "whole-event bright observation blocks and nearest-day faint cadence; "
-            "bright donors condition on state and epoch, never target duration, "
-            "target observed-day count, or the following gap"
+            "bright donors condition on state, epoch, season, and whole-episode "
+            "calendar span, never observer count, target observed-day count, or "
+            "the following gap"
         ),
     }
     return output, metadata

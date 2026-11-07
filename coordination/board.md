@@ -284,3 +284,21 @@ duration–gap association.
 
 Next: Codex reviews X4 and the A04g proposal, builds v3 and the revised state
 arm independently of X4, freezes and runs the validation.
+
+## Active tranche — A04g independent X4 validation, 8 November 2026
+
+Codex, base `4816f89`. Candidate-blind delegates own the new waveform and
+cadence modules; an independent causal implementation is hash-recorded before
+reference exposure and agrees on fixtures/fuzz. Parent owns morphology-only
+calibration, protocol completion, integration and result interpretation. A
+separate executor owns the new runner/summary, reusing frozen A04e scoring
+conventions. Existing candidates and A04e result/source stay unchanged.
+
+The proposed diversity tolerance is not widened. Repaired diverse arms must
+meet it; the known diversity-misspecified random arm remains a conservative
+mandatory recovery control, not an empirically diversity-qualified model.
+No X4 recovery outcomes or validation seeds are accessed until fresh benchmark
+qualification passes. Initial v3 geometry in `c9d51b8` failed a morphology-only
+pilot through duration-linked slopes and is being repaired before calibration.
+That failed specification is retained. No real duration–gap association,
+reserved data or A10 freeze is part of the tranche.
