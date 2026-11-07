@@ -20,3 +20,16 @@ The full per-replicate metric rows, scheduling cache and full summary JSON are
 gitignored under `outputs/`. Reproduction commands are in the report; the
 original hashed raw acquisitions must exist locally. Do not add the large
 regenerable payloads or source observer metadata to Git.
+
+## A04d (Claude, training only)
+
+`a04d_morphology_check_20261107.json` compares local slopes, residual scatter
+and estimates per window around X1 boundaries in real 1910–1959 rows with the
+A04c v1 benchmark and Claude's training "smooth" morphology
+(`scripts/a04d_morphology_check.py`). `a04d_x3_training_20261107.csv` holds
+the X1/X2/X3 training batch: five conditions, 40 replicates per era, scored by
+the unchanged A04c scorer (`scripts/a04d_train_x3.py`).
+`a04d_x3_point_check_20261107.csv` compares X1 midpoints with X3 point
+estimates (`--points`). All use training seeds disjoint from A04c and from the
+future validation; none is validation evidence. Replicate rows stay in
+`outputs/`.

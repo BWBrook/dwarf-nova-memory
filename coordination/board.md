@@ -15,6 +15,7 @@ claims and handovers.
 | A03 | Resolve one real target and obtain an authentic export | Native acquisition done 2026-11-07; normalization pending | Codex | [A03 receipt](../docs/audits/2026-11-07-a03-ss-cyg-acquisition.md): 3438 visual rows, 124 limits, raw hash/manifest; only 1956–1959; native time scale/reference unresolved |
 | A04 | Annotate development events and coverage | Boundaries adjudicated; conditional synthetic screen complete, both candidates require repair | Claude + Codex | [A04c recovery audit](../docs/audits/2026-11-07-a04c-injection-recovery.md); 3,200 histories, effective coverage fails; original labels/candidates retained |
 | A04b | Extraction and coverage candidates; open-era injection/recovery | Screen complete in A04c; qualification fails | Claude extractors, Codex harness | Both candidates retained unchanged; conditional-vs-effective coverage and 1950s null bias prevent freeze; repair and fresh validation next |
+| A04d | Benchmark review, extractor repair, fresh validation | X3 proposed with training evidence; validation protocol proposed, not frozen | Claude X3 and checks; Codex benchmark v2 and validation | [A04d memo](../docs/audits/2026-11-07-a04d-observation-review-x3-repair.md), [proposed protocol](../docs/protocols/a04d-x3-validation-v1.md); v1 benchmark fails predictive checks; X3 93–95% effective coverage on training, fails v1 end coverage |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -190,3 +191,29 @@ repair handoff; 2962 records the A10 resolution and preserves the distinction
 between candidate adjacencies and verified forecasts. Independent source and
 artifact reaggregation reproduced all gates, and the production candidates
 were unchanged. No fresh validation seeds have been consumed by a repair.
+
+## Completed tranche — A04d benchmark review and X3 repair, 7 November 2026
+
+Claude, base `0ba1e4c`. Development used training seeds only (base
+`a04d-claude-training-20261107`); the A04c screen seed and 1960+ data were not
+touched, and no real duration–gap association was computed.
+
+- A posterior predictive check (`scripts/a04d_morphology_check.py`) shows the
+  A04c v1 benchmark's decline rate scales with duration (Spearman −0.54; real
+  0.04), its decline doubles in speed at a knot exactly at 10.0 (real slopes
+  are equal on both sides), and its scatter at the threshold is about 20% low.
+- Per-event diagnosis: every X1 boundary miss is a single misclassified vote at
+  the bound; X2's bounds are night-median times; lost matches are 1.6% short
+  sparse events and 1.2% gap splits.
+- X3 (`src/dnmem/extract_x3.py`): X1 detection with a 7 d split rule, fitted
+  crossing posteriors with clipping, posterior-median point estimates and an
+  operational confirmation time. On training it reaches 93–95% effective
+  coverage under realistic morphology; it fails v1's end coverage (84–86%)
+  because of the knot.
+- Proposed protocol `docs/protocols/a04d-x3-validation-v1.md`: benchmark v2
+  gated on the predictive checks, state-matched cadence arm, 400 replicates
+  in decisive cells, seeds from Codex's freeze commit, a fifth criterion on
+  premature confirmation.
+
+Next: Codex reviews X3 and the protocol, builds benchmark v2 independently of
+X3's source, freezes the protocol and runs the validation.

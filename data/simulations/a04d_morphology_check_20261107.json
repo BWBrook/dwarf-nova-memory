@@ -1,0 +1,301 @@
+{
+  "estimator": "Posterior predictive check of injection benchmarks against open-era SS Cyg light curves.",
+  "synthetic_seed_base": "a04d-claude-morphology-20261107",
+  "synthetic_replicates_per_era": 6,
+  "real_1910_1959": {
+    "episodes": 335,
+    "onset": {
+      "abs_slope_mag_per_d": {
+        "q10": 0.213,
+        "q25": 0.363,
+        "q50": 0.667,
+        "q75": 1.226,
+        "q90": 1.875,
+        "n": 179
+      },
+      "residual_sd_mag": {
+        "q10": 0.087,
+        "q25": 0.128,
+        "q50": 0.204,
+        "q75": 0.297,
+        "q90": 0.403,
+        "n": 179
+      },
+      "estimates_in_window": {
+        "q10": 1,
+        "q25": 2,
+        "q50": 4,
+        "q75": 10,
+        "q90": 19,
+        "n": 335
+      }
+    },
+    "end": {
+      "abs_slope_mag_per_d": {
+        "q10": 0.237,
+        "q25": 0.293,
+        "q50": 0.333,
+        "q75": 0.391,
+        "q90": 0.429,
+        "n": 312
+      },
+      "residual_sd_mag": {
+        "q10": 0.122,
+        "q25": 0.173,
+        "q50": 0.222,
+        "q75": 0.272,
+        "q90": 0.315,
+        "n": 312
+      },
+      "estimates_in_window": {
+        "q10": 5,
+        "q25": 9,
+        "q50": 18,
+        "q75": 29,
+        "q90": 37,
+        "n": 335
+      }
+    },
+    "end_slope_vs_duration_spearman": 0.044,
+    "end_slope_median_short_lt11d": 0.333,
+    "end_slope_median_long_ge11d": 0.341,
+    "decline_slope_above_threshold": {
+      "q10": 0.116,
+      "q25": 0.167,
+      "q50": 0.203,
+      "q75": 0.246,
+      "q90": 0.292,
+      "n": 279
+    },
+    "decline_slope_below_threshold": {
+      "q10": 0.098,
+      "q25": 0.143,
+      "q50": 0.2,
+      "q75": 0.272,
+      "q90": 0.348,
+      "n": 262
+    }
+  },
+  "a04c_v1_benchmark": {
+    "episodes": 2023,
+    "onset": {
+      "abs_slope_mag_per_d": {
+        "q10": 0.55,
+        "q25": 0.8,
+        "q50": 1.118,
+        "q75": 1.429,
+        "q90": 1.789,
+        "n": 911
+      },
+      "residual_sd_mag": {
+        "q10": 0.042,
+        "q25": 0.092,
+        "q50": 0.148,
+        "q75": 0.218,
+        "q90": 0.283,
+        "n": 911
+      },
+      "estimates_in_window": {
+        "q10": 1,
+        "q25": 2,
+        "q50": 4,
+        "q75": 7,
+        "q90": 10,
+        "n": 2023
+      }
+    },
+    "end": {
+      "abs_slope_mag_per_d": {
+        "q10": 0.233,
+        "q25": 0.323,
+        "q50": 0.444,
+        "q75": 0.601,
+        "q90": 0.8,
+        "n": 1589
+      },
+      "residual_sd_mag": {
+        "q10": 0.074,
+        "q25": 0.126,
+        "q50": 0.176,
+        "q75": 0.241,
+        "q90": 0.302,
+        "n": 1589
+      },
+      "estimates_in_window": {
+        "q10": 2,
+        "q25": 4,
+        "q50": 9,
+        "q75": 15,
+        "q90": 22,
+        "n": 2023
+      }
+    },
+    "end_slope_vs_duration_spearman": -0.536,
+    "end_slope_median_short_lt11d": 0.577,
+    "end_slope_median_long_ge11d": 0.37,
+    "decline_slope_above_threshold": {
+      "q10": 0.126,
+      "q25": 0.196,
+      "q50": 0.263,
+      "q75": 0.368,
+      "q90": 0.513,
+      "n": 1468
+    },
+    "decline_slope_below_threshold": {
+      "q10": 0.222,
+      "q25": 0.364,
+      "q50": 0.565,
+      "q75": 0.788,
+      "q90": 1.0,
+      "n": 317
+    }
+  },
+  "claude_training_smooth": {
+    "episodes": 2027,
+    "onset": {
+      "abs_slope_mag_per_d": {
+        "q10": 0.298,
+        "q25": 0.433,
+        "q50": 0.641,
+        "q75": 0.9,
+        "q90": 1.181,
+        "n": 1329
+      },
+      "residual_sd_mag": {
+        "q10": 0.063,
+        "q25": 0.107,
+        "q50": 0.153,
+        "q75": 0.219,
+        "q90": 0.286,
+        "n": 1329
+      },
+      "estimates_in_window": {
+        "q10": 1,
+        "q25": 3,
+        "q50": 6,
+        "q75": 11,
+        "q90": 16,
+        "n": 2027
+      }
+    },
+    "end": {
+      "abs_slope_mag_per_d": {
+        "q10": 0.223,
+        "q25": 0.267,
+        "q50": 0.312,
+        "q75": 0.365,
+        "q90": 0.412,
+        "n": 1851
+      },
+      "residual_sd_mag": {
+        "q10": 0.082,
+        "q25": 0.132,
+        "q50": 0.173,
+        "q75": 0.222,
+        "q90": 0.272,
+        "n": 1851
+      },
+      "estimates_in_window": {
+        "q10": 4,
+        "q25": 8,
+        "q50": 15,
+        "q75": 24,
+        "q90": 33,
+        "n": 2027
+      }
+    },
+    "end_slope_vs_duration_spearman": 0.017,
+    "end_slope_median_short_lt11d": 0.312,
+    "end_slope_median_long_ge11d": 0.31,
+    "decline_slope_above_threshold": {
+      "q10": 0.128,
+      "q25": 0.178,
+      "q50": 0.224,
+      "q75": 0.278,
+      "q90": 0.333,
+      "n": 1627
+    },
+    "decline_slope_below_threshold": {
+      "q10": 0.104,
+      "q25": 0.157,
+      "q50": 0.21,
+      "q75": 0.265,
+      "q90": 0.333,
+      "n": 1487
+    }
+  },
+  "claude_training_smooth_noise1.25": {
+    "episodes": 2027,
+    "onset": {
+      "abs_slope_mag_per_d": {
+        "q10": 0.273,
+        "q25": 0.414,
+        "q50": 0.62,
+        "q75": 0.887,
+        "q90": 1.161,
+        "n": 1342
+      },
+      "residual_sd_mag": {
+        "q10": 0.068,
+        "q25": 0.122,
+        "q50": 0.183,
+        "q75": 0.256,
+        "q90": 0.32,
+        "n": 1342
+      },
+      "estimates_in_window": {
+        "q10": 1,
+        "q25": 3,
+        "q50": 6,
+        "q75": 11,
+        "q90": 17,
+        "n": 2027
+      }
+    },
+    "end": {
+      "abs_slope_mag_per_d": {
+        "q10": 0.21,
+        "q25": 0.254,
+        "q50": 0.302,
+        "q75": 0.354,
+        "q90": 0.406,
+        "n": 1833
+      },
+      "residual_sd_mag": {
+        "q10": 0.102,
+        "q25": 0.15,
+        "q50": 0.207,
+        "q75": 0.259,
+        "q90": 0.313,
+        "n": 1833
+      },
+      "estimates_in_window": {
+        "q10": 4,
+        "q25": 8,
+        "q50": 15,
+        "q75": 25,
+        "q90": 34,
+        "n": 2027
+      }
+    },
+    "end_slope_vs_duration_spearman": 0.004,
+    "end_slope_median_short_lt11d": 0.303,
+    "end_slope_median_long_ge11d": 0.3,
+    "decline_slope_above_threshold": {
+      "q10": 0.1,
+      "q25": 0.15,
+      "q50": 0.2,
+      "q75": 0.25,
+      "q90": 0.305,
+      "n": 1600
+    },
+    "decline_slope_below_threshold": {
+      "q10": 0.094,
+      "q25": 0.13,
+      "q50": 0.185,
+      "q75": 0.24,
+      "q90": 0.3,
+      "n": 1459
+    }
+  }
+}
