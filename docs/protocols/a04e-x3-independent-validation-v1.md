@@ -100,6 +100,12 @@ identically to all three extractors; truth is supplied only to scoring.
 - **Primary:** v2 independent null, both cadence phases, 1910–1929,
   1930–1949, 1950–1959, 400 histories per cell at threshold 10. First 200
   histories also supply threshold-9.5/10.5 sensitivities.
+- **Structured zero-mark control:** v2, both phases and those three eras,
+  400 histories at threshold 10. Retain latent previous-gap correlation 0.282
+  and gap persistence 0.382 while setting the latent partial mark effect to
+  zero. It is decisive alongside the independent negative-control null. Raw
+  Pearson partial correlation after marginal transforms need not be exactly
+  zero; paired bias is always against each realized raw-scale oracle.
 - **Alternative:** v2 copula alternative, both phases and those three eras,
   200 histories per cell at all three thresholds. The 0.13 target is latent;
   compare extracted raw-scale statistics with each realized oracle.
@@ -109,10 +115,10 @@ identically to all three extractors; truth is supplied only to scoring.
   original cadence, 200 per era, threshold 10.
 - **1900s diagnostic:** v2 null, both phases, 200 per cell, all thresholds.
 
-Total: 5,200 histories and 64,800 finder/threshold/coverage-rule metric rows.
+Total: 7,600 histories and 79,200 finder/threshold/coverage-rule metric rows.
 C1/7 d and C2/0.95 are both computed. C1 is selected only if it passes every
-primary cell; otherwise C2 can be selected only if it passes every primary
-cell. No per-cell switching is permitted. X1/X2 are contextual references.
+independent and structured cell; otherwise C2 can be selected only if it passes
+every such cell. No per-cell switching is permitted. X1/X2 are contextual references.
 
 ## Scoring and operational confirmation completion
 
@@ -138,6 +144,9 @@ execution wrapper for the stated two-observer rule:
 - The same two strongly faint observers close an unarmed, single-observer
   provisional event without emitting, so stale bright evidence cannot join
   unrelated later outbursts.
+- Process visits with identical close times jointly. Any available bright
+  vote resets faint evidence and suppresses all same-time faint emissions,
+  so observer names cannot decide whether a confirmation exists.
 - Re-arm after fresh bright evidence; never erase an emitted timestamp when
   a later tail is merged retrospectively. Preserve false, ambiguous and
   duplicate emissions. Score first emission per true event, with a separate
@@ -149,7 +158,7 @@ Prefix-causal forecast features and historical upload latency remain A10 work.
 
 ## Qualification criteria and inference
 
-Each X3 primary era/phase cell must clear all bounds with a 95% Monte Carlo
+Each X3 decisive era/phase/mechanism cell must clear all bounds with a 95% Monte Carlo
 interval: effective coverage ≥90% at **both** boundaries; short-event
 completeness outside March–May ≥95%; false confirmed episodes <0.2/year;
 absolute paired null-association bias <0.02; first-emission premature rate

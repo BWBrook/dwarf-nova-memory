@@ -3,6 +3,7 @@ import importlib.util
 from pathlib import Path
 import sys
 import tempfile
+from types import SimpleNamespace
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,6 +14,14 @@ SPEC.loader.exec_module(MODULE)
 
 
 class PreparationIdentityTests(unittest.TestCase):
+    def test_original_cache_cannot_be_substituted_before_raw_access(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            original = root / "inputs.json"
+            original.write_text('{"source_sha256": {}}')
+            with self.assertRaisesRegex(ValueError, "accepted A04c"):
+                MODULE.prepare(SimpleNamespace(original=original, output=root / "new"))
+
     def test_exact_identity_hashes_and_membership_are_required(self):
         with tempfile.TemporaryDirectory() as temp:
             paths, hashes = [], {}

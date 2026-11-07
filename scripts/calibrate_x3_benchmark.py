@@ -21,6 +21,7 @@ from dnmem.x3_observation import calibrate_brightness, labelled_days, state_comp
 from run_injection_recovery import seed_for, write_json
 
 INPUTS = None
+A04C_INPUT_SHA256 = "4b76fb3678f19f69eaa0a46c9edfac203bc6fb2cae35a8b17554e0f9207c93f5"
 
 
 def digest(path):
@@ -28,9 +29,13 @@ def digest(path):
 
 
 def provenance():
-    paths = [Path(__file__), ROOT / "src/dnmem/injection_truth.py", ROOT / "src/dnmem/injection_truth_v2.py",
+    paths = [Path(__file__), ROOT / "scripts/run_injection_recovery.py",
+             ROOT / "src/dnmem/injection_truth.py", ROOT / "src/dnmem/injection_truth_v2.py",
              ROOT / "src/dnmem/injection_observe.py", ROOT / "src/dnmem/x3_observation.py",
-             ROOT / "src/dnmem/validation_morphology.py", ROOT / "src/dnmem/extract.py"]
+             ROOT / "src/dnmem/validation_morphology.py", ROOT / "src/dnmem/extract.py",
+             ROOT / "src/dnmem/coverage.py", ROOT / "src/dnmem/aavso.py",
+             ROOT / "docs/protocols/a04e-x3-independent-validation-v1.md"]
+    paths.extend(p for p in (ROOT / "configs/a04e_benchmark.json", ROOT / "configs/a04e_inputs.json") if p.exists())
     return {"git_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
             "dirty": bool(subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT, text=True)),
             "python": sys.version, "code_sha256": {str(p.relative_to(ROOT)): digest(p) for p in paths}}
@@ -46,6 +51,8 @@ def checked_sources(paths, expected):
 def prepare(args):
     from dnmem.coverage import combine_acquisitions
     args.output.mkdir(parents=True, exist_ok=False)
+    if digest(args.original) != A04C_INPUT_SHA256:
+        raise ValueError("original input cache differs from the accepted A04c snapshot")
     original = json.loads(args.original.read_text())
     paths = sorted((ROOT / "data/raw").glob("aavso_ss_cyg_*/native.xml"))
     actual_sources = checked_sources(paths, original["source_sha256"])
@@ -131,6 +138,43 @@ def execute(args):
     prep = json.loads((args.inputs.parent / "preparation_receipt.json").read_text())
     if prep["inputs_sha256"] != digest(args.inputs):
         raise ValueError("prepared inputs changed")
+    anchor = None
+    frozen_provenance = None
+    if args.command == "qualify":
+        frozen_provenance = provenance()
+        if frozen_provenance["git_commit"] != args.freeze_commit or frozen_provenance["dirty"]:
+            raise ValueError("qualification requires the clean freeze commit at HEAD")
+        for name, actual in frozen_provenance["code_sha256"].items():
+            committed = subprocess.check_output(["git", "show", f"{args.freeze_commit}:{name}"], cwd=ROOT)
+            if hashlib.sha256(committed).hexdigest() != actual:
+                raise ValueError("qualification source differs from freeze")
+        anchor = json.loads((ROOT / "configs/a04e_inputs.json").read_text())
+        if anchor["prepared_inputs_sha256"] != digest(args.inputs):
+            raise ValueError("prepared cache differs from frozen input manifest")
+        if anchor["preparation_receipt_sha256"] != digest(args.inputs.parent / "preparation_receipt.json"):
+            raise ValueError("preparation receipt differs from frozen input manifest")
+        if anchor["original_inputs_sha256"] != A04C_INPUT_SHA256 or digest(args.calibration) != anchor["calibration_receipt_sha256"]:
+            raise ValueError("calibration differs from frozen input manifest")
+        calibration = json.loads(args.calibration.read_text())
+        if (calibration.get("mode") != "calibrate" or calibration.get("configuration_count") != 36
+                or calibration.get("replicates_per_era_phase") != 2
+                or calibration.get("seed_base") != "a04e-calibration-20261107"
+                or calibration["inputs_sha256"] != digest(args.inputs)):
+            raise ValueError("calibration metadata violates finite design")
+        for name, expected in calibration["code_sha256"].items():
+            source = subprocess.check_output(["git", "show", f"{anchor['calibration_source_commit']}:{name}"], cwd=ROOT)
+            if hashlib.sha256(source).hexdigest() != expected:
+                raise ValueError("calibration source is not preserved at its recorded source commit")
+        attempts = []
+        for name, expected in anchor["calibration_attempts_sha256"].items():
+            attempt_path = args.calibration.parent / name
+            if digest(attempt_path) != expected:
+                raise ValueError("calibration attempt changed")
+            attempts.append(json.loads(attempt_path.read_text()))
+        passing = [r for r in attempts if r["passed"]]
+        chosen = min(passing, key=lambda r: r["distance"]) if passing else None
+        if chosen != calibration["selected"] or chosen is None or chosen["configuration"] != json.loads(args.parameters.read_text()):
+            raise ValueError("parameters are not the finite calibration's deterministic selection")
     args.output.mkdir(parents=True, exist_ok=False)
     if args.command == "calibrate":
         configurations = [{"shape_config": asdict(ShapeConfig(rise_rate_median=rise,
@@ -154,9 +198,17 @@ def execute(args):
             print(f"{index+1}/{len(configurations)} configurations; passed={passed}; distance={result['distance']:.3f}", flush=True)
     passing = [r for r in results if r["passed"]]
     selected = min(passing, key=lambda r: r["distance"]) if passing else None
-    write_json(args.output / "receipt.json", {**provenance(), "inputs_sha256": digest(args.inputs),
+    final_provenance = provenance()
+    if frozen_provenance is not None and final_provenance != frozen_provenance:
+        raise ValueError("qualification tree changed during execution")
+    result_receipt = {**final_provenance, "inputs_sha256": digest(args.inputs),
         "seed_base": base, "replicates_per_era_phase": reps, "configuration_count": len(results),
-        "selected": selected, "all_passed": bool(passing), "mode": args.command})
+        "selected": selected, "all_passed": bool(passing), "mode": args.command}
+    if anchor is not None:
+        result_receipt.update({"calibration_receipt_sha256": digest(args.calibration),
+                              "calibration_attempts_sha256": anchor["calibration_attempts_sha256"],
+                              "parameters_sha256": digest(args.parameters)})
+    write_json(args.output / "receipt.json", result_receipt)
     if selected:
         write_json(args.output / "parameters.json", selected["configuration"])
     if not passing:
@@ -176,6 +228,7 @@ def main():
         p.add_argument("--workers", type=int, default=4)
         if name == "qualify":
             p.add_argument("--parameters", type=Path, required=True)
+            p.add_argument("--calibration", type=Path, required=True)
             p.add_argument("--freeze-commit", required=True)
     args = parser.parse_args()
     prepare(args) if args.command == "prepare" else execute(args)

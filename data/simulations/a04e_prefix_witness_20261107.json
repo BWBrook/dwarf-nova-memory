@@ -1,0 +1,69 @@
+{
+  "data_kind": "synthetic adversarial control",
+  "base_jd": 2451544.5,
+  "candidate_sha256": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+  "batch_confirmed": 2451653.2,
+  "prefix_audit": {
+    "auditable": true,
+    "reason": null,
+    "full_candidate_peak_t": 2451645.1,
+    "full_reported_confirmation": 2451653.2,
+    "reported_confirmation_prefix_measurable": true,
+    "no_selective_disappearance": false,
+    "selective_disappearance_count": 1,
+    "passed": false,
+    "records": [
+      {
+        "cutoff": 2451649.2,
+        "is_reported_cutoff": false,
+        "candidate_found": true,
+        "candidate_match_ambiguous": false,
+        "prefix_confirmation": 2451649.2,
+        "full_confirmation": 2451653.2,
+        "confirmation_matches_full": false,
+        "discrepant_fields": [
+          "end_lo",
+          "end_hi",
+          "end_t",
+          "confirmed"
+        ]
+      },
+      {
+        "cutoff": 2451653.2,
+        "is_reported_cutoff": true,
+        "candidate_found": true,
+        "candidate_match_ambiguous": false,
+        "prefix_confirmation": 2451653.2,
+        "full_confirmation": 2451653.2,
+        "confirmation_matches_full": true,
+        "discrepant_fields": []
+      }
+    ]
+  },
+  "immutable_causal_emissions": [
+    {
+      "emission_index": 0,
+      "emitted_at": 2451649.35,
+      "bright_first_at": 2451645.25,
+      "last_bright_at": 2451648.35,
+      "faint_first_at": 2451649.25,
+      "bright_observer_count": 2,
+      "faint_observer_count": 2,
+      "trigger_visit_first_jd": 2451649.2,
+      "trigger_visit_last_jd": 2451649.2,
+      "trigger_visit_closed_at": 2451649.35
+    },
+    {
+      "emission_index": 1,
+      "emitted_at": 2451653.35,
+      "bright_first_at": 2451650.25,
+      "last_bright_at": 2451652.35,
+      "faint_first_at": 2451653.25,
+      "bright_observer_count": 2,
+      "faint_observer_count": 2,
+      "trigger_visit_first_jd": 2451653.2,
+      "trigger_visit_last_jd": 2451653.2,
+      "trigger_visit_closed_at": 2451653.35
+    }
+  ]
+}
