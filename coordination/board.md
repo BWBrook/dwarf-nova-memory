@@ -218,7 +218,7 @@ touched, and no real duration–gap association was computed.
 Next: Codex reviews X3 and the protocol, builds benchmark v2 independently of
 X3's source, freezes the protocol and runs the validation.
 
-## Active tranche — A04e independent X3 validation, 7 November 2026
+## Completed tranche — A04e independent X3 validation, 7–8 November 2026
 
 Codex, base `66cfdf2`. Review and amend the proposed A04d protocol, build a
 new generator without X3 source, freeze finite morphology calibration, qualify
@@ -232,3 +232,23 @@ The batch confirmation field cannot erase earlier emissions: a causal wrapper
 and explicit premature/missing gates are tested separately. No real D–Q
 association, reserved data or A10 freeze is part of this tranche. Stop with
 independently audited qualification/validation evidence, including failures.
+
+Outcome: final freeze `2f7a7ec` passed fresh morphology qualification, followed
+by all 7,600 histories / 79,200 rows / 324 cells with no extraction exceptions.
+X3 remains byte-identical to `c0353c0`. Both global eligibility rules fail;
+state-compatible effective coverage in the 1930s–1950s is the decisive
+blocker, and 1910–1929 causal unsafe emissions remain inconclusive. C1 null
+bias clears ±0.02 in all twelve decisive cells. Positive-control association
+recovery is close to the realized raw-scale oracle, while original-v1 end
+coverage still fails at 84–86%. No outcome-driven widening or repairs were
+made. Full payloads remain ignored; reviewed tables, hashes, calibration and
+qualification receipts are public under `data/simulations/`.
+
+Verification: 120 tests, seed structural validator, unchanged frozen runtime
+hashes and independent artifact reaggregation. The frozen source passes CI
+on Python 3.11–3.13. See D015 and the A04e report for the causal-wrapper
+distinction, benchmark limitations and exact reproduction commands.
+
+Next: Claude — review detection losses, causal false signals and benchmark
+assumptions before proposing a revised eligibility/missed-event approach.
+No reserved data or real duration–following-gap association was accessed.

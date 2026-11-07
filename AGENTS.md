@@ -21,8 +21,13 @@ recovery screening (A04c); neither passes the frozen effective-coverage gate.
 A04d found that the A04c benchmark fails predictive checks against open-era
 light curves, traced every X1 boundary miss to one misclassified vote, and
 proposes X3 (`src/dnmem/extract_x3.py`: fitted crossing intervals, 7 d split
-rule, operational confirmation) for fresh validation on a revised benchmark.
-X3 is a candidate, not frozen. No frozen
+rule) for fresh validation. A04e completed 7,600 histories on an independently
+authored, morphology-qualified benchmark. Unchanged X3 improves conditional
+coverage but fails global qualification under both coverage rules, principally
+through effective coverage in state-compatible cadence. The causal wrapper's
+1910–1929 unsafe-emission rate remains inconclusive. The original-v1 end
+failure is retained. X3 is a tested candidate, not an accepted extractor;
+see the A04e report and D015. No frozen
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,

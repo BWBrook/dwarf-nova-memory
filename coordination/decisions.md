@@ -146,6 +146,45 @@ proposals, not a record of approvals the user has not given.
   conditional coverage and observation-model limitations; any repair needs a
   separate calibration batch and fresh validation seeds.
 
+### D015 — Independent X3 benchmark and causal confirmation validation
+
+- Date and participants: 2026-11-07. Claude proposed X3 and a replacement
+  benchmark in A04d. Codex reviewed and amended that proposal, with an
+  independent source audit, before new recovery outcomes.
+- Choice: replace the threshold-kinked original waveform as the primary
+  qualification benchmark, while retaining its known failure as a reported
+  misspecification challenge. Use an independently authored curved generator,
+  finite morphology-only calibration and fresh qualification before recovery.
+  Matching selected X1-conditioned summaries is not physical validation.
+- Freeze: `2f7a7eca4ece7a7702fb429ec5bb4a94a2bc57d1`, the
+  [A04e protocol](../docs/protocols/a04e-x3-independent-validation-v1.md),
+  fixed inputs and parameters. X3 remains byte-identical to `c0353c0`.
+  Both the initial `3ad0939` and amended final-hash morphology qualifications
+  passed and are retained. No candidate-validation result preceded the
+  amendment; parameters and generator were unchanged.
+- Causal safety: X3's final confirmation can erase an earlier emission, so
+  its batch field cannot establish the premature-confirmation criterion.
+  Test a separately specified permanent-emission wrapper. Count ambiguous
+  alongside false emissions in the <0.2/year gate; retain both separately.
+  Final endpoints are not thereby established as available at emission.
+- Decisive grid: independent and structured zero-mark controls, three eras,
+  both cadence phases, 400 histories each. Require one global coverage rule
+  to clear all twelve cells, with frozen Monte Carlo intervals and no
+  per-cell switching. Preserve alternative, persistent-offset, original-v1,
+  threshold and early-era diagnostics. Total: 7,600 histories, 79,200 rows.
+- Evaluation boundary: no reserved photometry or real duration–following-gap
+  association is part of A04e. A passing result would qualify only synthetic
+  retrospective extraction within the tested envelope. A10 additionally
+  needs causal features, positive-control recovery and achievable precision.
+- Status: final morphology qualification passed; all 7,600 recovery histories
+  completed with 79,200 rows and no extraction exceptions. Both global rules
+  fail X3 qualification. State-compatible effective coverage fails in the
+  1930–1949/1950–1959 cells; 1910–1929 unsafe-emission rates are inconclusive.
+  All twelve C1 paired null-bias checks pass, and the original-v1 end failure
+  is reproduced. No extractor selected. Results do not authorize A10 or
+  reserved-data access. See the
+  [A04e report](../docs/audits/2026-11-07-a04e-x3-independent-validation.md).
+
 ## New decision template
 
 ### D0xx — Short concrete title

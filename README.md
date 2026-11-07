@@ -67,7 +67,7 @@ Small floating-point differences across runtimes need not give identical hashes.
 | Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation; candidate observer-balanced event extractors X1–X3 (not frozen) |
 | Archive adapter | Receipt-verified bounded native VStar/AID requests implemented for the SS Cyg open era; no time normalization or event inference |
 | M2/M3 and validated observational forecasting | Not implemented; draft event extractors and conditional synthetic recovery are available |
-| Synthetic recovery | 3,200 histories test unchanged X1/X2; neither qualifies under the frozen effective-coverage gate; no real-star predictive result |
+| Synthetic recovery | Original 3,200-history X1/X2 screen plus independent 7,600-history X3 validation; no candidate qualifies. X3 improves intervals but fails effective coverage under state-compatible cadence; no real-star predictive result |
 | Observational findings | Annotation and returned-row coverage only. Independent 1957 boundary differences adjudicated; no real forecast or empirical duration–gap correlation has been computed |
 | Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |
 
@@ -104,6 +104,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [Independent A04 comparison and open-era coverage](docs/audits/2026-11-07-a04-independent-comparison-open-era.md) | Sealed blind labels, unresolved boundaries, conditional endpoint sensitivities and 1896–1959 acquisition |
 | [A04c synthetic recovery screen](docs/audits/2026-11-07-a04c-injection-recovery.md) | Frozen criteria, independent synthetic truth, failed extractor qualification and recovery diagnostics |
 | [A04d benchmark review and X3 repair](docs/audits/2026-11-07-a04d-observation-review-x3-repair.md) | Predictive checks of the A04c benchmark, why X1/X2 miss, fitted-interval extractor X3, proposed fresh validation |
+| [A04e independent X3 validation](docs/audits/2026-11-07-a04e-x3-independent-validation.md) | Qualified independent benchmark, 7,600-history frozen validation, failed global qualification, causal confirmation and retained challenges |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

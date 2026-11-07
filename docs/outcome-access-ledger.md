@@ -179,3 +179,21 @@ statistics in this tranche are calculated only on synthetic truth and its
 extracted observations. No empirical real duration–gap association, reserved
 photometry or reserved-block coverage was inspected or computed. The native
 hashes, prepared-input hash and code receipts identify the experiment.
+
+#### Codex A04e independent-X3-validation access entry, 7 November 2026
+
+I read Claude's A04d findings and X3 source. I used the same already opened
+pre-1960 native exports for outburst-brightness residual calibration and
+X1-conditioned morphology summaries, including end-slope–duration Spearman
+correlation with average ranks for ties. The new truth-generator delegate
+received a bounded waveform brief and timing-generator interface, without
+X3 source, Claude's training code, annotations or real rows. The parent and
+other implementation reviewers were not blind to X3; source separation is
+documented rather than inferred from agent names.
+
+The independent benchmark was calibrated by morphology only. All recovery
+associations and confirmation checks in A04e concern synthetic histories.
+No empirical real duration–following-gap correlation, 1960+ photometry or
+reserved-block coverage was inspected or computed. Qualification and
+validation use separate namespaces derived from a pre-outcome source freeze;
+the initial and amended morphology qualifications are both retained.
