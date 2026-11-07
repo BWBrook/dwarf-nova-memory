@@ -56,8 +56,11 @@ proposals, not a record of approvals the user has not given.
   `coordination/board.md`; future archive adapters must enforce the policy.
 - Was evaluation data inspected? No real project photometry has been acquired.
   Known SS Cyg 2021 and RU Peg literature context is disclosed in the ledger.
-- Status: conservative boundary in force; Codex's implementation refinements
-  await Claude's review. No loader exists yet. Final evaluation and prospective
+- Status: conservative boundary in force. Codex's implementation refinements
+  were reviewed and accepted by Claude on 2026-11-07 (A01 memo §6.6). The A01
+  power estimate implies the SS Cyg locked block can confirm calibration and
+  sign but cannot detect the expected effect alone; that belongs in the
+  evaluation protocol (A10), not here. No loader exists yet. Final evaluation and prospective
   forecasting remain proposals; A03 follows A01/A02 and access-policy review.
 
 ## New decision template

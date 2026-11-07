@@ -2,6 +2,15 @@
 
 **Research cut-off and inspection date:** 5 November 2026. **Status:** a targeted seed review, not a systematic review or a claim of priority. No new astronomical measurements or fitted results are reported here.
 
+> **A01 update, 7 November 2026.** The [A01 audit](audits/2026-11-07-a01-novelty-framing.md) read the historical SS Cyg papers in full and corrects this review in four places:
+>
+> 1. Cannizzo & Mattei (1992) already made the shared-term argument about cycle length, before Ak et al. (2002). They reported quiescent-interval correlations for 705 outbursts.
+> 2. Price et al. (2007) and Grigorievskiy et al. (2014) are the closest precursor and forecasting precedents, and are missing below.
+> 3. Hempelmann & Kurths (1990) report memory from autocorrelation and information measures, with no forecast skill.
+> 4. Cannizzo (1993) supplies the disc-instability account of long/short alternation.
+>
+> Treat the audit's precedent matrix as superseding section 4's gap matrix until this review is revised.
+
 The bibliography contains 25 astronomy sources and five methodological sources. The [evidence register](../references/evidence.csv) records the original source, what was actually inspected, the claim it supports, and remaining checks. The [search log](../references/search-log.md) records search scope and access gaps. `Full-text sections` means that relevant sections were inspected; it does not mean every calculation was independently audited. Two important historical articles are presently bibliography-only leads. Recent work with uncertain edition metadata is explicitly marked.
 
 ## 1. The question needs to be narrower than “do dwarf novae have memory?”
