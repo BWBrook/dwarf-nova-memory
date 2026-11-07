@@ -1,4 +1,4 @@
-"""State-conditioned cadence with episode-level bright-day donor progression."""
+"""State-conditioned cadence with whole-event observation-block resampling."""
 
 from __future__ import annotations
 
@@ -74,20 +74,34 @@ def _validated_days(days: Sequence[Mapping[str, Any]]) -> dict[int, dict[str, An
     return table
 
 
-def _donor_episodes(table: Mapping[int, Mapping[str, Any]]) -> list[list[int]]:
+def _donor_episodes(table: Mapping[int, Mapping[str, Any]]) -> list[dict[str, Any]]:
     bright = sorted(day for day, record in table.items() if record["state"] == "B")
-    episodes: list[list[int]] = []
+    bright_runs: list[list[int]] = []
     for day in bright:
-        if not episodes or day - episodes[-1][-1] > SPLIT_GAP:
-            episodes.append([day])
+        if not bright_runs or day - bright_runs[-1][-1] > SPLIT_GAP:
+            bright_runs.append([day])
         else:
-            episodes[-1].append(day)
+            bright_runs[-1].append(day)
+    episodes = []
+    for run in bright_runs:
+        first, last = run[0], run[-1]
+        episodes.append(
+            {
+                "first_bright": first,
+                "last_bright": last,
+                "days": {
+                    day: table[day]
+                    for day in sorted(table)
+                    if first <= day <= last
+                },
+            }
+        )
     return episodes
 
 
 def _bright_target_runs(
     ordered_days: Sequence[int], wanted: Mapping[int, str], history: Any
-) -> list[list[int]]:
+) -> list[dict[str, Any]]:
     if not ordered_days:
         return []
     midpoint_days = list(range(ordered_days[0] + 1, ordered_days[-1]))
@@ -112,31 +126,46 @@ def _bright_target_runs(
         current.append(day)
     if current:
         runs.append(current)
-    return runs
+    result = []
+    for run in runs:
+        anchor = run[0]
+        while midpoint_bright.get(anchor - 1, False):
+            anchor -= 1
+        result.append({"target_days": run, "anchor": anchor})
+    return result
 
 
 def _choose_bright_donors(
-    run: Sequence[int], episodes: Sequence[Sequence[int]], seed: Any
-) -> tuple[list[int] | None, int | None]:
-    midpoint = median(run)
+    run: Mapping[str, Any], episodes: Sequence[Mapping[str, Any]], seed: Any
+) -> tuple[Mapping[str, Any] | None, int | None]:
+    target_days = run["target_days"]
+    midpoint = median(target_days)
     eligible = [
-        (index, list(episode))
+        (index, episode)
         for index, episode in enumerate(episodes)
-        if len(episode) >= len(run)
-        and abs(median(episode) - midpoint) <= ERA_RADIUS_DAYS
+        if abs(
+            median((episode["first_bright"], episode["last_bright"])) - midpoint
+        )
+        <= ERA_RADIUS_DAYS
     ]
     if not eligible:
         return None, None
-    minimum_surplus = min(len(episode) - len(run) for _, episode in eligible)
-    matched = [
-        item for item in eligible if len(item[1]) - len(run) <= minimum_surplus + 2
-    ]
-    matched.sort(key=lambda item: (abs(median(item[1]) - midpoint), item[1][0]))
-    local = matched[:DONOR_POOL_SIZE]
-    rng = _rng(seed, f"bright-run:{run[0]}:{run[-1]}:{len(run)}")
+    eligible.sort(
+        key=lambda item: (
+            abs(
+                median((item[1]["first_bright"], item[1]["last_bright"]))
+                - midpoint
+            ),
+            item[1]["first_bright"],
+        )
+    )
+    local = eligible[:DONOR_POOL_SIZE]
+    rng = _rng(
+        seed,
+        f"bright-run:{target_days[0]}:{target_days[-1]}:{run['anchor']}",
+    )
     index, episode = local[rng.randrange(len(local))]
-    offset = rng.randrange(len(episode) - len(run) + 1)
-    return episode[offset : offset + len(run)], index
+    return episode, index
 
 
 def _shifted_slots(
@@ -189,13 +218,14 @@ def diverse_state_schedule(
     stop: float,
     seed: Any,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    """Borrow state-compatible cadence without repeating one bright donor day.
+    """Borrow cadence as an era-local whole-event observation block.
 
-    Each synthetic bright run is mapped in order to distinct days from one
-    era-local real bright episode. Donor episodes are matched only on their
-    number of observed bright days and epoch; the following real gap is never
-    inspected. Quiet targets retain an already-faint day or use the nearest
-    faint donor within 15 days.
+    Each synthetic bright run draws one era-local real bright episode without
+    conditioning on target duration or observed-day count. Its complete
+    first-to-last-bright observation pattern is aligned by relative calendar
+    day. A donor-missing relative day becomes an explicitly reported additional
+    empty target day; no row is clamped or duration-warped. Quiet targets retain
+    an already-faint day or use the nearest faint donor within 15 days.
     """
     start_value = _finite(start, "start")
     stop_value = _finite(stop, "stop")
@@ -232,18 +262,24 @@ def diverse_state_schedule(
     assignments: dict[int, tuple[int, str, int | None]] = {}
     matched_runs = 0
     unmatched_runs = 0
+    additional_empty_days = 0
     episode_uses: list[int] = []
     for run in bright_runs:
-        donors, episode_index = _choose_bright_donors(run, episodes, seed)
-        if donors is None:
+        donor_episode, episode_index = _choose_bright_donors(run, episodes, seed)
+        if donor_episode is None:
             unmatched_runs += 1
-            for day in run:
+            for day in run["target_days"]:
                 assignments[day] = (day, "unmatched", None)
             continue
         matched_runs += 1
         episode_uses.append(episode_index)
-        for day, donor in zip(run, donors):
-            assignments[day] = (donor, "B", episode_index)
+        for day in run["target_days"]:
+            donor_day = donor_episode["first_bright"] + day - run["anchor"]
+            if donor_day not in donor_episode["days"]:
+                assignments[day] = (day, "donor_missing", episode_index)
+                additional_empty_days += 1
+            else:
+                assignments[day] = (donor_day, "B", episode_index)
 
     faint_days = sorted(day for day, record in table.items() if record["state"] == "F")
     for day in ordered:
@@ -268,6 +304,8 @@ def diverse_state_schedule(
     uses: list[tuple[str, int]] = []
     for day in ordered:
         donor_day, state, _ = assignments[day]
+        if state == "donor_missing":
+            continue
         borrowed_days += donor_day != day
         no_match_days += state == "unmatched"
         if state != "unmatched":
@@ -285,13 +323,17 @@ def diverse_state_schedule(
         "no_match_fraction": no_match_days / len(table) if table else 1.0,
         "empty_days_preserved": calendar_days - len(table),
         "boundary_rows_omitted": boundary_rows_omitted,
+        "output_observed_days": len(table) - additional_empty_days,
+        "additional_empty_days": additional_empty_days,
+        "total_empty_days": calendar_days - len(table) + additional_empty_days,
         "bright_runs": len(bright_runs),
         "bright_runs_matched": matched_runs,
         "bright_runs_unmatched": unmatched_runs,
         "donor_reuse": _reuse_summary(uses, episode_uses),
         "scope": (
-            "episode-progressive bright cadence and nearest-day faint cadence; "
-            "conditioning uses state, observed bright-day count, and epoch, never the following gap"
+            "whole-event bright observation blocks and nearest-day faint cadence; "
+            "bright donors condition on state and epoch, never target duration, "
+            "target observed-day count, or the following gap"
         ),
     }
     return output, metadata

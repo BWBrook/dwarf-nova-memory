@@ -132,15 +132,37 @@ class DiverseCadenceTests(unittest.TestCase):
         self.assertEqual(target_cast, {"a", "b", "c", "d", "e"})
         self.assertEqual(metadata["bright_runs_matched"], 1)
 
-    def test_too_short_episode_falls_back_instead_of_clamping_last_donor_day(self):
+    def test_too_short_episode_creates_reported_missingness_instead_of_clamping(self):
         donors = [day(100 + index, "B", observer) for index, observer in enumerate("abc")]
         targets = [day(200 + index, "F", f"q{index}") for index in range(5)]
         schedule, metadata = diverse_state_schedule(
             donors + targets, WindowHistory(200, 205), 90, 210, seed=5
         )
         target = [row for row in schedule if 200 <= float(row["JD"]) < 205]
-        self.assertEqual([row["observer_id"] for row in target], [f"q{i}" for i in range(5)])
-        self.assertEqual(metadata["bright_runs_unmatched"], 1)
+        self.assertEqual([row["observer_id"] for row in target], list("abc"))
+        self.assertEqual(metadata["additional_empty_days"], 2)
+        self.assertEqual(metadata["bright_runs_matched"], 1)
+
+    def test_whole_donor_block_retains_mixed_faint_and_missing_relative_days(self):
+        donors = [
+            day(100, "B", "a"),
+            day(101, "mixed", "mixed-cast"),
+            day(103, "F", "faint-cast"),
+            day(104, "B", "b"),
+        ]
+        targets = [day(200 + index, "F", f"q{index}") for index in range(5)]
+        schedule, metadata = diverse_state_schedule(
+            donors + targets, WindowHistory(200, 205), 90, 210, seed=17
+        )
+        target = [row for row in schedule if 200 <= float(row["JD"]) < 205]
+        self.assertEqual(
+            [row["observer_id"] for row in target],
+            ["a", "mixed-cast", "faint-cast", "b"],
+        )
+        self.assertEqual(
+            [math.floor(float(row["JD"])) for row in target], [200, 201, 203, 204]
+        )
+        self.assertEqual(metadata["additional_empty_days"], 1)
 
     def test_observer_diversity_filters_peak_era_and_includes_unconfirmed(self):
         rows = []
