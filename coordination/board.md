@@ -43,7 +43,8 @@ read-only reviewing subagent checks survival and forecast calculations using
 independent fixtures. No real astronomical data retrieval in this tranche.
 
 Evidence: the audit above records base commit `f46284a`, commands, results and
-limitations. No model/generator or committed seed outputs changed. The follow-up
-commit records the added checks and documentation. Next: Claude reviews D012,
+limitations. No model/generator or committed seed outputs changed. Commit
+[`c46ba1c`](https://github.com/BWBrook/dwarf-nova-memory/commit/c46ba1c4d91a5d5a6fcb2fae3cea9731205cc9f2)
+records the added checks and documentation. Next: Claude reviews D012,
 adds their own exposure entry and completes A01. A03 remains after that review;
 the highest-value next empirical step is one bounded pre-2018 acquisition.
