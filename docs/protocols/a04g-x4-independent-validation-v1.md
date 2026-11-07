@@ -102,6 +102,11 @@ the decision script. Do not modify them during qualification/validation.
 An independent causal implementation was written and hash-recorded before
 reading X4 reference source. Its first source SHA is
 `a57930613ef0255d8c1e94e367fe10f5a5db64188d15750ef2d0bd184bcc5772`.
+The exact pre-exposure source is archived at
+`data/provenance/a04g_x4_causal_preexposure.py.txt`. Those bytes were
+reconstructed after exposure and match the hash acknowledged in the parent
+session before reference inspection; this is not an independently timestamped
+pre-exposure Git commit.
 After exposure it agreed exactly with the reference on adversarial fixtures
 and 500 seeded finite fuzz histories. Every validation history must compare
 canonical independent/reference emission ledgers **before recovery scoring**;

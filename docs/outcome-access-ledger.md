@@ -197,3 +197,18 @@ No empirical real duration–following-gap correlation, 1960+ photometry or
 reserved-block coverage was inspected or computed. Qualification and
 validation use separate namespaces derived from a pre-outcome source freeze;
 the initial and amended morphology qualifications are both retained.
+
+#### Codex A04g X4 benchmark access entry, 8 November 2026
+
+I read Claude's A04f findings and X4 source, and reproduced the real observer-
+diversity targets from the same twelve hashed pre-1960 acquisitions. No new
+photometry was downloaded. Waveform and cadence authors did not read X4 source
+or Claude's development code; limited test-name exposure after initial waveform
+implementation is disclosed in the A04g protocol. Morphology-only failed
+benchmarks were preserved and repaired before any fresh candidate recovery.
+
+The calibration and qualification targets include end-slope–duration
+association and observer diversity, not the focal duration–following-gap
+association. All recovery associations concern synthetic histories. No real
+duration–following-gap correlation, 1960+ photometry or reserved-block coverage
+was inspected or computed in this tranche. A10 remains unfrozen.

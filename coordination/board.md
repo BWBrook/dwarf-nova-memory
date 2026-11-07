@@ -302,3 +302,11 @@ qualification passes. Initial v3 geometry in `c9d51b8` failed a morphology-only
 pilot through duration-linked slopes and is being repaired before calibration.
 That failed specification is retained. No real duration–gap association,
 reserved data or A10 freeze is part of the tranche.
+
+Pre-qualification checkpoint: revised polynomial truth preserves slopes and
+amplitudes; revised cadence matches calendar span/season while recording
+additional missing days. The 27-configuration finite calibration has one
+passing configuration (index 23), with source `28741bc`. Independent audit
+verified all input/calibration/source bindings and corrected guard contracts.
+Fresh qualification is fixed at 32 histories per era/phase/family, with no
+tolerance widening or after-failure seed extension. D016 records the design.

@@ -185,6 +185,39 @@ proposals, not a record of approvals the user has not given.
   reserved-data access. See the
   [A04e report](../docs/audits/2026-11-07-a04e-x3-independent-validation.md).
 
+### D016 — Fresh X4 validation with qualified observer diversity
+
+- Date and participants: 2026-11-08. Claude proposed A04g; Codex completes it
+  with candidate-blind waveform/cadence construction, independent causal
+  reimplementation and a bounded independent design/source-chain audit.
+- Keep X4 byte-identical to `352a09e`, and preserve the A04e failure. Qualify
+  both v2/v3 repaired diverse arms under the original 15% median and 0.05
+  low-diversity-share tolerances. Do not widen those bounds. Random cadence
+  remains a conservative mandatory recovery control with its known observer
+  mismatch disclosed, not an empirically diversity-qualified arm.
+- The cadence uses whole donor blocks matched on calendar span, season and
+  epoch. Original and additional donor-missing days remain missing. Early
+  failed waveform/cadence specifications and morphology-only pilots are
+  preserved in Git; no X4 outcome informed their repair.
+- Calibration: 27 predeclared v3 configurations, two histories per era/phase,
+  source `28741bc`; only index 23 passes. V2 parameters are unchanged. Fresh
+  qualification is fixed at 32 histories per era/phase/family before any
+  qualification outcome. Failure stops recovery with validation seeds unused.
+- The gross-error arm uses a 0.32% quiet observer-night contamination budget,
+  with persistence included. It is a stress intensity, not an identified
+  wrong-star probability. False/ambiguous causal signals and retrospective
+  false episodes are its only decisive outcomes.
+- Recovery criteria and Monte Carlo conventions remain A04e's. Prespecify
+  16,600 histories, 51,800 rows, 24 ordinary and six gross-error decisive cells
+  per global rule. Prefer C1 only if every cell passes; otherwise C2 only if
+  every cell passes. A passing extraction screen does not freeze A10 or open
+  reserved data. The
+  [completed protocol](../docs/protocols/a04g-x4-independent-validation-v1.md)
+  and [A04g report](../docs/audits/2026-11-08-a04g-x4-independent-validation.md)
+  state exact scope and residual assumptions.
+- Status: calibration complete; source/input chain independently checked;
+  final freeze and fresh benchmark qualification precede any X4 recovery.
+
 ## New decision template
 
 ### D0xx — Short concrete title
