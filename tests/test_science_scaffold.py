@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from dnmem.cli import run_demo
 from dnmem.forecast import compare_complete_oracle_cycles, fit_model
 from dnmem.schema import REQUIRED, validate_photometry
-from dnmem.simulate import simulate_events, sample_photometry
+from dnmem.simulate import Event, simulate_events, sample_photometry
 from dnmem.survival import (conditional_event_probability, interval_probability,
                             lognormal_cdf, lognormal_logpdf, lognormal_survival)
 
@@ -47,6 +47,15 @@ class WaitingTimeTests(unittest.TestCase):
         self.assertGreater(p, 0)
         self.assertLess(p, 1e-18)
 
+    def test_landmark_matches_independent_density_quadrature(self):
+        mu, sigma, age, horizon = math.log(20), 0.6, 20.0, 20.0
+        n = 2000
+        step = horizon / n
+        density = lambda q: math.exp(-0.5 * ((math.log(q) - mu) / sigma) ** 2) / (q * sigma * math.sqrt(2 * math.pi))
+        integral = step / 3 * (density(age) + density(age + horizon)
+                              + sum((4 if i % 2 else 2) * density(age + i * step) for i in range(1, n)))
+        self.assertAlmostEqual(conditional_event_probability(age, horizon, mu, sigma), integral / 0.5, places=12)
+
     def test_invalid_distribution_and_intervals_fail(self):
         for sigma in (0, -1, math.nan, math.inf):
             with self.assertRaises(ValueError):
@@ -57,6 +66,25 @@ class WaitingTimeTests(unittest.TestCase):
 
 
 class ForecastTests(unittest.TestCase):
+    def test_frozen_forecast_matches_analytic_regression_fixture(self):
+        events, onset = [], 0.0
+        for i in range(20):
+            x = (-1, -1, 1, 1)[i % 4]
+            residual = (-0.2, 0.2, -0.2, 0.2)[i % 4]
+            duration, gap = math.exp(2 + x), math.exp(3 + 0.5 * x + residual)
+            events.append(Event(i, onset, onset + duration, duration, gap, 0.0))
+            onset += duration + gap
+        summary, forecasts = compare_complete_oracle_cycles(events, train_fraction=0.8)
+        model = summary["models"]["M1_duration"]
+        self.assertAlmostEqual(model["fitted_duration_slope"], 0.5)
+        self.assertAlmostEqual(model["fitted_residual_log_sigma"], 0.2)
+        for row in forecasts:
+            if row["model"] == "M1_duration":
+                x = (-1, -1, 1, 1)[row["event_id"] % 4]
+                self.assertAlmostEqual(row["median_gap"], math.exp(3 + 0.5 * x))
+                expected_log_score = -math.log(row["observed_gap"]) - math.log(0.2) - 0.5 * math.log(2 * math.pi) - 0.5
+                self.assertAlmostEqual(row["log_score"], expected_log_score)
+
     def test_simulator_is_reproducible(self):
         self.assertEqual(simulate_events("both", 50, 3), simulate_events("both", 50, 3))
         self.assertNotEqual(simulate_events("both", 50, 3), simulate_events("both", 50, 4))

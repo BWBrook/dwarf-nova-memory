@@ -42,6 +42,18 @@ consistency, simple JSON/TOML structure, unique candidate IDs and the sixteen
 generated CSV hashes. It does not verify that a referenced paper's conclusion
 is true, parse BibTeX fully, test live remote services or prove model adequacy.
 
+### Follow-up audit, 7 November 2026
+
+The historical preparation record above remains unchanged. The
+[opening A02 audit](audits/2026-11-07-code-audit.md) distinguishes integrity of
+the committed bytes from fresh-run numerical reproduction. On macOS with
+Python 3.15.0, all sixteen regenerated tables and scenario summaries agree
+within explicit `1e-12` relative/absolute tolerances, while eight tables have
+different byte hashes. `python scripts/check_demo_reproduction.py` performs
+this check without replacing the committed example; CI now runs it too.
+The current suite has 22 tests, including independent density-quadrature and
+analytic-regression fixtures plus failure cases for the reproduction checker.
+
 The configured CI matrix proposes Python 3.11–3.13; only the local Python version
 above was actually run in this preparation session. No remote CI run is claimed.
 

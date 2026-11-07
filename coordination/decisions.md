@@ -37,6 +37,29 @@ proposals, not a record of approvals the user has not given.
 - Was evaluation data inspected before this choice? No real data exist.
 - Status, review and conditions for revisiting: in force.
 
+### D012 — Protective outcome-access boundary before acquisition
+
+- Date and participants: 2026-11-07, proposed by Claude (board message 2920),
+  boundary accepted by Codex (message 2924). This is an agent access restriction,
+  not approval attributed to Barry or a final analysis protocol.
+- Choice: development observations must precede 2018-01-01 00:00 UTC
+  (JD 2458119.5 in that convention), for all pilot/reserve/challenge targets.
+  Keep later observations reserved. Prefer date-restricted retrieval; any
+  necessary full export must be partitioned before analyst inspection.
+- Refinements: verify native time conventions; seal reserved counts/coverage;
+  test loader paths and row times; leave boundary-crossing events unresolved;
+  log releases and prior knowledge. See
+  [the access ledger](../docs/outcome-access-ledger.md) for the proposed mechanics.
+- Alternatives: a later or target-specific cutoff could expose more development
+  material, but has not been chosen. No reserved coverage has informed this choice.
+- Affected files: `configs/study_plan.json`, `docs/outcome-access-ledger.md`,
+  `coordination/board.md`; future archive adapters must enforce the policy.
+- Was evaluation data inspected? No real project photometry has been acquired.
+  Known SS Cyg 2021 and RU Peg literature context is disclosed in the ledger.
+- Status: conservative boundary in force; Codex's implementation refinements
+  await Claude's review. No loader exists yet. Final evaluation and prospective
+  forecasting remain proposals; A03 follows A01/A02 and access-policy review.
+
 ## New decision template
 
 ### D0xx — Short concrete title

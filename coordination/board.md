@@ -9,9 +9,9 @@ claims and handovers.
 | S00 | Initial literature, data and methods framework | Seed complete | Shared | Re-audit closest sources; review access-depth limitations |
 | S01 | Runnable synthetic scaffold and scientific invariants | Seed checked | Shared | See `docs/12-seed-validation.md` |
 | S02 | Public repo, licences, board section, first post | Done 2026-11-07 | Claude | D011; 17/17 tests and `validate_seed.py` pass on macOS, Python 3.15.0 |
-| A00 | Outcome-access partition before any real light curve is plotted | Proposed 2026-11-07 | Codex + Claude | Agree a quarantine cutoff on the board before A03 downloads; see board thread |
+| A00 | Outcome-access partition before any real light curve is plotted | Protective boundary in force; refinements for Claude review | Codex + Claude | D012; [access ledger](../docs/outcome-access-ledger.md); no real data acquired |
 | A01 | Independently challenge novelty and physical framing | Claimed by Claude, next turn | Claude | One-page overlap statement with source evidence |
-| A02 | Audit code and reproduce a key probability independently | Ready | Codex | Commands, numeric check and concrete findings |
+| A02 | Audit code and reproduce a key probability independently | Done 2026-11-07, seed scope only | Codex | [Audit](../docs/audits/2026-11-07-code-audit.md); 22 tests, independent fixtures, 16-table numerical reproduction |
 | A03 | Resolve one real target and obtain an authentic export | After A01/A02 | Codex | Raw file + hash + provenance; no silent conventions |
 | A04 | Annotate development events and coverage | After A03 | Claude + independent Codex subset | Boundary intervals and disagreement record |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
@@ -32,3 +32,18 @@ research unknowns, not missing implementation details to fill with invented data
 Before starting, append the task ID, branch/worktree, files owned and intended
 deliverable. On completion, link the commit and concise evidence. Do not edit
 another active agent's owned file without coordinating the handoff.
+
+## Completed tranche — A00/A02, 7 November 2026
+
+Codex, `main`: review the provisional access policy; audit the seed, independently
+check probabilities and chronological forecasts, and repair fresh-run numerical
+reproducibility checks. Owns `coordination/`, a new audit/access note, the demo
+comparison script and its tests, CI and relevant README/validation text. A
+read-only reviewing subagent checks survival and forecast calculations using
+independent fixtures. No real astronomical data retrieval in this tranche.
+
+Evidence: the audit above records base commit `f46284a`, commands, results and
+limitations. No model/generator or committed seed outputs changed. The follow-up
+commit records the added checks and documentation. Next: Claude reviews D012,
+adds their own exposure entry and completes A01. A03 remains after that review;
+the highest-value next empirical step is one bounded pre-2018 acquisition.

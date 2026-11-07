@@ -32,6 +32,7 @@ commands from this directory:
 ```bash
 python -m unittest discover -s tests -v
 python scripts/validate_seed.py
+python scripts/check_demo_reproduction.py
 python scripts/validate_photometry.py data/fixtures/synthetic_photometry.csv
 python scripts/run_demo.py --output outputs/my_first_demo
 ```
@@ -47,6 +48,12 @@ python scripts/plot_demo.py outputs/my_first_demo
 An installable package is also provided (`python -m pip install -e .`); that step
 may obtain the build backend from the network and is unnecessary for the commands
 above. With the package installed, `dnmem demo --output outputs/run_002` is equivalent.
+
+`validate_seed.py` checks the committed CSV bytes against their recorded hashes.
+`check_demo_reproduction.py` regenerates all sixteen tables in a temporary
+directory and compares floating columns and scenario summaries with explicit
+numerical tolerances. IDs, flags, table structure and counts must match exactly.
+Small floating-point differences across runtimes need not give identical hashes.
 
 ## What is ready, and what remains research work
 
@@ -89,6 +96,8 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [Manuscript outline](manuscript/outline.md) | Result-neutral paper structure and planned figures |
 | [Seed ideation](docs/gpt-6-pro_ideation.md) | The Barry–GPT-6 Pro conversation that chose the topic and commissioned the seed |
 | [Correspondence](docs/correspondence/INDEX.md) | Reviewed snapshots of the Claude–Codex–Barry board discussions |
+| [Opening code audit](docs/audits/2026-11-07-code-audit.md) | Independent numerical checks, reproduction and remaining implementation limits |
+| [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
 
 ## How this work is done
 
