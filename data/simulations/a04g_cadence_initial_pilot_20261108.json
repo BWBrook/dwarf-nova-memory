@@ -1,0 +1,690 @@
+{
+  "cadence_source_sha256": "adde49379c90b67f58d5625b82c90998f69451547d81b7ccb1ade70582f954f8",
+  "family": "v2",
+  "inputs_sha256": "572f24f553c7be443c888483ede4c50c67979b05ce75901eeb0470512fa72811",
+  "phases": {
+    "diverse": {
+      "diversity": {
+        "1910_1929": {
+          "gate": {
+            "median_relative_error": 0.10344827586206895,
+            "median_tolerance": 0.15,
+            "passed": true,
+            "share_le_2_difference": 0.010097348798674398,
+            "share_tolerance": 0.05
+          },
+          "summary": {
+            "episodes": 272,
+            "median": 16.0,
+            "share_le_1": 0.003676470588235294,
+            "share_le_2": 0.011029411764705883
+          }
+        },
+        "1930_1949": {
+          "gate": {
+            "median_relative_error": 0.0,
+            "median_tolerance": 0.15,
+            "passed": true,
+            "share_le_2_difference": 0.04642736771149309,
+            "share_tolerance": 0.05
+          },
+          "summary": {
+            "episodes": 276,
+            "median": 16.0,
+            "share_le_1": 0.036231884057971016,
+            "share_le_2": 0.05434782608695652
+          }
+        },
+        "1950_1959": {
+          "gate": {
+            "median_relative_error": 0.0,
+            "median_tolerance": 0.15,
+            "passed": false,
+            "share_le_2_difference": 0.07014519056261342,
+            "share_tolerance": 0.05
+          },
+          "summary": {
+            "episodes": 145,
+            "median": 14,
+            "share_le_1": 0.020689655172413793,
+            "share_le_2": 0.04827586206896552
+          }
+        }
+      },
+      "geometry": [
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 52,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 141,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": 0.1259845605031664,
+          "raw_duration_gap_partial_prior_gap": 0.11954673486045309,
+          "raw_duration_prior_gap_correlation": 0.07537422119747424,
+          "raw_duration_serial_correlation": -0.3783454996074182,
+          "raw_gap_serial_correlation": 0.03928583123167187,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 44,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 137,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": -0.06696269553527358,
+          "raw_duration_gap_partial_prior_gap": -0.08572897039754891,
+          "raw_duration_prior_gap_correlation": 0.07764709013421263,
+          "raw_duration_serial_correlation": -0.3791724828301741,
+          "raw_gap_serial_correlation": -0.007165673257105551,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 47,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 137,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": 0.012543647606487284,
+          "raw_duration_gap_partial_prior_gap": 0.011421225776819924,
+          "raw_duration_prior_gap_correlation": 0.03724242989118088,
+          "raw_duration_serial_correlation": -0.39514617007584235,
+          "raw_gap_serial_correlation": -0.0073849310595045705,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 46,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 142,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": 0.007272591797682906,
+          "raw_duration_gap_partial_prior_gap": 0.01034058884423543,
+          "raw_duration_prior_gap_correlation": 0.14610662080804693,
+          "raw_duration_serial_correlation": -0.3578331678856711,
+          "raw_gap_serial_correlation": 0.054387500019998564,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 21,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 71,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": -0.11122644052885819,
+          "raw_duration_gap_partial_prior_gap": -0.1218350802949777,
+          "raw_duration_prior_gap_correlation": 0.19227021146533504,
+          "raw_duration_serial_correlation": -0.5132877470717838,
+          "raw_gap_serial_correlation": -0.04793662355863936,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 26,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 73,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": -0.06880287113618207,
+          "raw_duration_gap_partial_prior_gap": -0.08204461951077381,
+          "raw_duration_prior_gap_correlation": 0.038824670355479124,
+          "raw_duration_serial_correlation": -0.46684523230082536,
+          "raw_gap_serial_correlation": -0.16842859336565108,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        }
+      ],
+      "mean_no_match_fraction": 0.005633981468243607,
+      "morphology": {
+        "comparisons": {
+          "above_positive_fit_fraction": {
+            "absolute_difference": 0.009978550361962601,
+            "passed": true,
+            "real": 0.8328358208955224,
+            "synthetic": 0.842814371257485,
+            "tolerance": 0.15
+          },
+          "below_positive_fit_fraction": {
+            "absolute_difference": 0.04556260613102148,
+            "passed": true,
+            "real": 0.7820895522388059,
+            "synthetic": 0.7365269461077845,
+            "tolerance": 0.15
+          },
+          "decline_side_slope_ratio": {
+            "factor": 1.062192118226601,
+            "maximum_factor": 1.5,
+            "passed": true,
+            "real": 0.9852216748768473,
+            "synthetic": 0.927536231884058
+          },
+          "end_residual_sd_median": {
+            "passed": true,
+            "real": 0.222,
+            "relative_error": 0.022522522522522542,
+            "synthetic": 0.227,
+            "tolerance": 0.15
+          },
+          "end_slope_duration_spearman": {
+            "absolute_difference": 0.031,
+            "passed": true,
+            "real": 0.045,
+            "synthetic": 0.076,
+            "tolerance": 0.15
+          },
+          "end_slope_median": {
+            "passed": true,
+            "real": 0.333,
+            "relative_error": 0.0,
+            "synthetic": 0.333,
+            "tolerance": 0.15
+          },
+          "onset_slope_median": {
+            "passed": true,
+            "real": 0.667,
+            "relative_error": 0.019490254872563735,
+            "synthetic": 0.68,
+            "tolerance": 0.15
+          }
+        },
+        "gates": {
+          "above_positive_fit_fraction": true,
+          "below_positive_fit_fraction": true,
+          "decline_side_slope_ratio": true,
+          "end_residual_sd_median": true,
+          "end_slope_duration_spearman": true,
+          "end_slope_median": true,
+          "onset_slope_median": true
+        },
+        "passed": true
+      },
+      "passed": false,
+      "summaries": {
+        "10.0": {
+          "decline_slope_above_threshold": {
+            "n": 563,
+            "q10": 0.1,
+            "q25": 0.151,
+            "q50": 0.207,
+            "q75": 0.268,
+            "q90": 0.333
+          },
+          "decline_slope_below_threshold": {
+            "n": 492,
+            "q10": 0.091,
+            "q25": 0.122,
+            "q50": 0.192,
+            "q75": 0.246,
+            "q90": 0.317
+          },
+          "end": {
+            "abs_slope_mag_per_d": {
+              "n": 636,
+              "q10": 0.233,
+              "q25": 0.282,
+              "q50": 0.333,
+              "q75": 0.398,
+              "q90": 0.451
+            },
+            "estimates_in_window": {
+              "n": 668,
+              "q10": 6,
+              "q25": 11,
+              "q50": 17,
+              "q75": 25,
+              "q90": 33
+            },
+            "residual_sd_mag": {
+              "n": 636,
+              "q10": 0.125,
+              "q25": 0.171,
+              "q50": 0.227,
+              "q75": 0.277,
+              "q90": 0.323
+            }
+          },
+          "end_slope_median_long_ge11d": 0.333,
+          "end_slope_median_short_lt11d": 0.333,
+          "end_slope_vs_duration_n": 636,
+          "end_slope_vs_duration_spearman": 0.076,
+          "end_slope_vs_duration_status": "ok",
+          "episodes": 668,
+          "fit_diagnostics": {
+            "above_threshold": {
+              "fit_count": 596,
+              "positive_fit_count": 563,
+              "positive_fit_fraction": 0.842814371257485,
+              "wrong_sign_fit_count": 33
+            },
+            "below_threshold": {
+              "fit_count": 517,
+              "positive_fit_count": 492,
+              "positive_fit_fraction": 0.7365269461077845,
+              "wrong_sign_fit_count": 25
+            },
+            "end": {
+              "fit_count": 641,
+              "positive_fit_count": 636,
+              "positive_fit_fraction": 0.9520958083832335,
+              "wrong_sign_fit_count": 5
+            },
+            "onset": {
+              "fit_count": 489,
+              "positive_fit_count": 476,
+              "positive_fit_fraction": 0.7125748502994012,
+              "wrong_sign_fit_count": 13
+            }
+          },
+          "onset": {
+            "abs_slope_mag_per_d": {
+              "n": 476,
+              "q10": 0.303,
+              "q25": 0.45,
+              "q50": 0.68,
+              "q75": 1.0,
+              "q90": 1.305
+            },
+            "estimates_in_window": {
+              "n": 668,
+              "q10": 2,
+              "q25": 4,
+              "q50": 7,
+              "q75": 12,
+              "q90": 18
+            },
+            "residual_sd_mag": {
+              "n": 476,
+              "q10": 0.085,
+              "q25": 0.148,
+              "q50": 0.215,
+              "q75": 0.28,
+              "q90": 0.345
+            }
+          }
+        }
+      }
+    },
+    "random": {
+      "diversity": {
+        "1910_1929": {
+          "gate": {
+            "median_relative_error": 0.10344827586206895,
+            "median_tolerance": 0.15,
+            "passed": true,
+            "share_le_2_difference": 0.017450289975144986,
+            "share_tolerance": 0.05
+          },
+          "summary": {
+            "episodes": 272,
+            "median": 13.0,
+            "share_le_1": 0.003676470588235294,
+            "share_le_2": 0.003676470588235294
+          }
+        },
+        "1930_1949": {
+          "gate": {
+            "median_relative_error": 0.125,
+            "median_tolerance": 0.15,
+            "passed": true,
+            "share_le_2_difference": 0.015904345089962524,
+            "share_tolerance": 0.05
+          },
+          "summary": {
+            "episodes": 271,
+            "median": 14,
+            "share_le_1": 0.03690036900369004,
+            "share_le_2": 0.08487084870848709
+          }
+        },
+        "1950_1959": {
+          "gate": {
+            "median_relative_error": 0.0714285714285714,
+            "median_tolerance": 0.15,
+            "passed": false,
+            "share_le_2_difference": 0.05459126539753639,
+            "share_tolerance": 0.05
+          },
+          "summary": {
+            "episodes": 141,
+            "median": 13,
+            "share_le_1": 0.0425531914893617,
+            "share_le_2": 0.06382978723404255
+          }
+        }
+      },
+      "geometry": [
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 46,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 137,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": -0.13227323443971434,
+          "raw_duration_gap_partial_prior_gap": -0.13676018399465534,
+          "raw_duration_prior_gap_correlation": -0.06441602234902101,
+          "raw_duration_serial_correlation": -0.4454062039719667,
+          "raw_gap_serial_correlation": -0.04438302182258865,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 46,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 141,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": -0.016542585809308737,
+          "raw_duration_gap_partial_prior_gap": -0.00822520860525949,
+          "raw_duration_prior_gap_correlation": -0.018789477451939325,
+          "raw_duration_serial_correlation": -0.31455022560551826,
+          "raw_gap_serial_correlation": -0.06448295224196919,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 44,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 135,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": -0.026089178510751997,
+          "raw_duration_gap_partial_prior_gap": -0.025080313922116394,
+          "raw_duration_prior_gap_correlation": -0.02060749081650541,
+          "raw_duration_serial_correlation": -0.439371145566713,
+          "raw_gap_serial_correlation": -0.05388805809686557,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 36,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 137,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": 0.01968164198896715,
+          "raw_duration_gap_partial_prior_gap": 0.01876182603169375,
+          "raw_duration_prior_gap_correlation": 9.16417378746509e-06,
+          "raw_duration_serial_correlation": -0.3512744085223704,
+          "raw_gap_serial_correlation": 0.05162180062419212,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 24,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 70,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": -0.2532853059283341,
+          "raw_duration_gap_partial_prior_gap": -0.23986042735682092,
+          "raw_duration_prior_gap_correlation": 0.22962524369958914,
+          "raw_duration_serial_correlation": -0.4479618788008701,
+          "raw_gap_serial_correlation": -0.1366982827861303,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        },
+        {
+          "aligned_duration_capped_count": 0,
+          "geometry_adjusted_count": 23,
+          "independent_null": true,
+          "initialization": "fixed calendar warm-up before the retained random-phase window; not an exact equilibrium renewal sample",
+          "latent_duration_gap_correlation_target": 0.0,
+          "latent_duration_persistence": -0.4,
+          "latent_gap_serial_target": 0.0,
+          "mode": "null",
+          "n_events": 70,
+          "phase": "random",
+          "quiet_magnitude": 11.8,
+          "raw_duration_gap_correlation": -0.03264407685968272,
+          "raw_duration_gap_partial_prior_gap": -0.0023962229767268937,
+          "raw_duration_prior_gap_correlation": -0.06781043858217621,
+          "raw_duration_serial_correlation": -0.4606971648512316,
+          "raw_gap_serial_correlation": 0.4072782772160503,
+          "reference_threshold": 10.0,
+          "shape_family": "asymmetric_half_gaussian_flat_peak_v2"
+        }
+      ],
+      "mean_no_match_fraction": 0.0,
+      "morphology": {
+        "comparisons": {
+          "above_positive_fit_fraction": {
+            "absolute_difference": 0.06606752821259565,
+            "passed": true,
+            "real": 0.8328358208955224,
+            "synthetic": 0.7667682926829268,
+            "tolerance": 0.15
+          },
+          "below_positive_fit_fraction": {
+            "absolute_difference": 0.07782125955587915,
+            "passed": true,
+            "real": 0.7820895522388059,
+            "synthetic": 0.7042682926829268,
+            "tolerance": 0.15
+          },
+          "decline_side_slope_ratio": {
+            "factor": 1.0481081647626036,
+            "maximum_factor": 1.5,
+            "passed": true,
+            "real": 0.9852216748768473,
+            "synthetic": 0.94
+          },
+          "end_residual_sd_median": {
+            "passed": true,
+            "real": 0.222,
+            "relative_error": 0.022522522522522542,
+            "synthetic": 0.227,
+            "tolerance": 0.15
+          },
+          "end_slope_duration_spearman": {
+            "absolute_difference": 0.105,
+            "passed": true,
+            "real": 0.045,
+            "synthetic": 0.15,
+            "tolerance": 0.15
+          },
+          "end_slope_median": {
+            "passed": true,
+            "real": 0.333,
+            "relative_error": 0.0,
+            "synthetic": 0.333,
+            "tolerance": 0.15
+          },
+          "onset_slope_median": {
+            "passed": true,
+            "real": 0.667,
+            "relative_error": 0.004497751124437785,
+            "synthetic": 0.67,
+            "tolerance": 0.15
+          }
+        },
+        "gates": {
+          "above_positive_fit_fraction": true,
+          "below_positive_fit_fraction": true,
+          "decline_side_slope_ratio": true,
+          "end_residual_sd_median": true,
+          "end_slope_duration_spearman": true,
+          "end_slope_median": true,
+          "onset_slope_median": true
+        },
+        "passed": true
+      },
+      "passed": true,
+      "summaries": {
+        "10.0": {
+          "decline_slope_above_threshold": {
+            "n": 503,
+            "q10": 0.102,
+            "q25": 0.15,
+            "q50": 0.2,
+            "q75": 0.262,
+            "q90": 0.318
+          },
+          "decline_slope_below_threshold": {
+            "n": 462,
+            "q10": 0.091,
+            "q25": 0.125,
+            "q50": 0.188,
+            "q75": 0.25,
+            "q90": 0.305
+          },
+          "end": {
+            "abs_slope_mag_per_d": {
+              "n": 588,
+              "q10": 0.23,
+              "q25": 0.283,
+              "q50": 0.333,
+              "q75": 0.4,
+              "q90": 0.462
+            },
+            "estimates_in_window": {
+              "n": 656,
+              "q10": 4,
+              "q25": 7,
+              "q50": 14,
+              "q75": 23,
+              "q90": 32
+            },
+            "residual_sd_mag": {
+              "n": 588,
+              "q10": 0.114,
+              "q25": 0.173,
+              "q50": 0.227,
+              "q75": 0.282,
+              "q90": 0.334
+            }
+          },
+          "end_slope_median_long_ge11d": 0.357,
+          "end_slope_median_short_lt11d": 0.327,
+          "end_slope_vs_duration_n": 588,
+          "end_slope_vs_duration_spearman": 0.15,
+          "end_slope_vs_duration_status": "ok",
+          "episodes": 656,
+          "fit_diagnostics": {
+            "above_threshold": {
+              "fit_count": 524,
+              "positive_fit_count": 503,
+              "positive_fit_fraction": 0.7667682926829268,
+              "wrong_sign_fit_count": 21
+            },
+            "below_threshold": {
+              "fit_count": 488,
+              "positive_fit_count": 462,
+              "positive_fit_fraction": 0.7042682926829268,
+              "wrong_sign_fit_count": 26
+            },
+            "end": {
+              "fit_count": 591,
+              "positive_fit_count": 588,
+              "positive_fit_fraction": 0.8963414634146342,
+              "wrong_sign_fit_count": 3
+            },
+            "onset": {
+              "fit_count": 434,
+              "positive_fit_count": 433,
+              "positive_fit_fraction": 0.6600609756097561,
+              "wrong_sign_fit_count": 1
+            }
+          },
+          "onset": {
+            "abs_slope_mag_per_d": {
+              "n": 433,
+              "q10": 0.313,
+              "q25": 0.486,
+              "q50": 0.67,
+              "q75": 0.93,
+              "q90": 1.3
+            },
+            "estimates_in_window": {
+              "n": 656,
+              "q10": 1,
+              "q25": 3,
+              "q50": 6,
+              "q75": 11,
+              "q90": 16
+            },
+            "residual_sd_mag": {
+              "n": 433,
+              "q10": 0.054,
+              "q25": 0.12,
+              "q50": 0.188,
+              "q75": 0.264,
+              "q90": 0.322
+            }
+          }
+        }
+      }
+    }
+  },
+  "replicates_per_era_phase": 2,
+  "scope": "Morphology and observer diversity only; no X4 recovery scores.",
+  "seed_base": "a04g-calibration-20261108"
+}
