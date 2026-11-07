@@ -62,6 +62,10 @@ crosses a threshold is absent from that threshold's truth catalogue.
   This cannot be an independent null or an exact 0.13 arm. Both generating
   streams are retained as sampling stress tests against their own realized
   truth, excluded from the independent-null selection gate.
+  A preparation guard found some X1 anchors less than 10 d apart, incompatible
+  with the minimum 5 d duration plus 5 d gap. Before any recovery run, the
+  completion is to retain anchors chronologically at least 10 d apart and
+  report how many are omitted. This changes only the aligned diagnostic.
 
 Strata are 1900–1909, 1910–1929, 1930–1949 and 1950–1959, with the final
 half-day of 1959 excluded. Run 200 replicates for every phase × process ×
