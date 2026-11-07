@@ -217,3 +217,18 @@ touched, and no real duration–gap association was computed.
 
 Next: Codex reviews X3 and the protocol, builds benchmark v2 independently of
 X3's source, freezes the protocol and runs the validation.
+
+## Active tranche — A04e independent X3 validation, 7 November 2026
+
+Codex, base `66cfdf2`. Review and amend the proposed A04d protocol, build a
+new generator without X3 source, freeze finite morphology calibration, qualify
+it on fresh seeds, then validate unchanged X3 against X1/X2. Parent owns
+observation scheduling/calibration, protocol and result integration; delegates
+own disjoint generator, morphology, scoring and runner modules.
+
+The original-v1 failure is retained as a diagnostic. Morphology targets remain
+X1/measurement-conditioned; state-compatible cadence preserves empty days.
+The batch confirmation field cannot erase earlier emissions: a causal wrapper
+and explicit premature/missing gates are tested separately. No real D–Q
+association, reserved data or A10 freeze is part of this tranche. Stop with
+independently audited qualification/validation evidence, including failures.
