@@ -15,8 +15,9 @@ acquisitions outside Git; the manifest and A04 comparison report record scope.
 Native visual JD is presumed UT-based and geocentric; the 0.006 d convention
 sensitivity does not bound all historical record errors. A04 supplies Claude's
 1956–1958 judgements and a sealed independent 1957 subset, with unresolved
-boundary differences (`data/annotations/`). No frozen extractor, normalized observation
-table or forecast table exists. Every committed photometry or forecast fixture
+boundary differences, now adjudicated (`data/annotations/`). Two candidate
+extractors (`src/dnmem/extract.py`, A04b) await injection/recovery. No frozen
+extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,
 missed event inference or a physical accretion-disc model. Do not imply otherwise.

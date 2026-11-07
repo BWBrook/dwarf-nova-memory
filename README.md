@@ -64,7 +64,7 @@ Small floating-point differences across runtimes need not give identical hashes.
 | Data access and provenance | 12 hashed native SS Cyg acquisitions through 1959-12-31 noon under D013; 72,635 unique native IDs after overlap removal; raw data excluded from Git |
 | Candidate targets | Provisional, with classification evidence and caveats; no final eligibility asserted |
 | Statistical design and simulation programme | Specified, including censoring, missing events and state alternatives |
-| Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation |
+| Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation; candidate observer-balanced event extractors (not frozen) |
 | Archive adapter | Receipt-verified bounded native VStar/AID requests implemented for the SS Cyg open era; no time normalization or event inference |
 | M2/M3 latent models and real event inference | Not implemented; explicit next tasks |
 | Observational findings | Annotation and returned-row coverage only. Independent 1957 labels recover corresponding episodes but disagree at three boundaries; no forecast or empirical duration–gap correlation has been computed |
@@ -102,6 +102,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [First authentic acquisition](docs/audits/2026-11-07-a03-ss-cyg-acquisition.md) | Native export, provenance, observation limits and next annotation step |
 | [Independent A04 comparison and open-era coverage](docs/audits/2026-11-07-a04-independent-comparison-open-era.md) | Sealed blind labels, unresolved boundaries, conditional endpoint sensitivities and 1896–1959 acquisition |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
+| [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
 
 ## How this work is done

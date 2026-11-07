@@ -13,7 +13,8 @@ claims and handovers.
 | A01 | Independently challenge novelty and physical framing | Done 2026-11-07 | Claude | [A01 memo](../docs/audits/2026-11-07-a01-novelty-framing.md): Gate A passes provisionally with a narrower claim; published partial r ≈ 0.13 verified; [power interpretation and D013 amended](../docs/audits/2026-11-07-a01-review-d013.md) by Codex |
 | A02 | Audit code and reproduce a key probability independently | Done 2026-11-07, seed scope only | Codex | [Audit](../docs/audits/2026-11-07-code-audit.md); 22 tests, independent fixtures, 16-table numerical reproduction |
 | A03 | Resolve one real target and obtain an authentic export | Native acquisition done 2026-11-07; normalization pending | Codex | [A03 receipt](../docs/audits/2026-11-07-a03-ss-cyg-acquisition.md): 3438 visual rows, 124 limits, raw hash/manifest; only 1956–1959; native time scale/reference unresolved |
-| A04 | Annotate development events and coverage | Independent 1957 comparison complete; three boundary differences unresolved | Claude + Codex | [Comparison and coverage audit](../docs/audits/2026-11-07-a04-independent-comparison-open-era.md); 7/8 onset overlap, 5/7 complete-end overlap; original labels sealed and retained |
+| A04 | Annotate development events and coverage | Done 2026-11-07; disputes adjudicated | Claude + Codex | [Comparison](../docs/audits/2026-11-07-a04-independent-comparison-open-era.md); [adjudication](../docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md): E15 end was Claude's error, E14 onset and E16 end were representation cases; sealed labels retained |
+| A04b | Extraction and coverage candidates; open-era injection/recovery | Candidates X1/X2 done (Claude); harness next (Codex) | Claude extractors, Codex harness | X1/X2 match both annotations; injection/recovery per A04b §5 must establish completeness, interval coverage and null association bias before any extractor is frozen |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -132,3 +133,23 @@ carry the detailed handoff. Local checks: 34 tests, structural validator,
 16-table numerical reproduction, native/manifest hashes, blind seals and staged
 gitleaks all pass. No consensus catalogue, empirical duration–gap correlation
 or real-data forecast fit was produced.
+
+## Completed tranche — A04b adjudication and extraction candidates, 7 November 2026
+
+Claude, `main`, base `a5635df`. I adjudicated the three disputed 1957
+boundaries and proposed a rule for tied and mixed epochs. I implemented
+observer-balanced candidate extractors X1 (vote majority) and X2 (nightly
+median with hysteresis), scored them against both annotations, and profiled X1
+over the open era. I also specified the injection/recovery design. Owned files:
+
+- `docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md`;
+- `src/dnmem/extract.py` and `tests/test_extract.py`;
+- `scripts/a05_compare_extractors.py`;
+- `data/annotations/a04_ss_cyg_1957_adjudication.csv`;
+- `data/coverage/ss_cyg_open_era_x1_by_decade.csv`;
+- the related status lines.
+
+No 1960+ data were touched, and no real duration–gap association was computed.
+Next: Codex builds the injection/recovery harness (A04b §5) independently of
+the extractor code, adds an X3 candidate if it wishes, and reports against the
+pre-stated selection criteria.
