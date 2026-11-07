@@ -100,6 +100,32 @@ class InjectionTruthV3Tests(unittest.TestCase):
             self.assertEqual(event.rise_slope_at_reference, event.drawn_rise_slope)
             self.assertEqual(event.decline_slope_at_reference, event.drawn_decline_slope)
             self.assertFalse(event.geometry_constraints)
+        event = truth.events[2]
+        h = min(event.rise_width, event.decline_width) * 1e-5
+        rise_derivative = (
+            event.magnitude_at(event.onset_jd + h)
+            - event.magnitude_at(event.onset_jd - h)
+        ) / (2.0 * h)
+        decline_derivative = (
+            event.magnitude_at(event.end_jd + h)
+            - event.magnitude_at(event.end_jd - h)
+        ) / (2.0 * h)
+        self.assertAlmostEqual(-rise_derivative, event.drawn_rise_slope, delta=1e-7)
+        self.assertAlmostEqual(decline_derivative, event.drawn_decline_slope, delta=1e-7)
+        rise = [
+            event.magnitude_at(
+                event.support_start_jd + event.rise_width * index / 100.0
+            )
+            for index in range(101)
+        ]
+        decline = [
+            event.magnitude_at(
+                event.plateau_end_jd + event.decline_width * index / 100.0
+            )
+            for index in range(101)
+        ]
+        self.assertTrue(all(right <= left for left, right in zip(rise, rise[1:])))
+        self.assertTrue(all(right >= left for left, right in zip(decline, decline[1:])))
         for left, right in zip(truth.events, truth.events[1:]):
             self.assertLess(left.support_end_jd, right.support_start_jd)
 
