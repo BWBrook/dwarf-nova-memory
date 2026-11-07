@@ -1,0 +1,24 @@
+{
+  "prepared_at_utc": "2026-11-07T07:23:12.862323+00:00",
+  "protocol_commit": "1bfbca5",
+  "protocol_sha256": "eff2a57334e2f995a923e50c8d84ff40dcd88ab66cab43292095f94fe27c77e8",
+  "source_sha256": "1840efeaa141ffd62899b54f6c078e823dede90437d7f44f5b7904f40c8ad87f",
+  "subset_sha256": "8d43dc9f4490058f1cd720fc7e3c46c12ea90896e63847dfb6b44cbe1f575311",
+  "subset_window_jd": [
+    2435839.5,
+    2436204.5
+  ],
+  "derivation": "native rows, all columns/flags, inclusive subset; no annotation or outcome summary supplied",
+  "agent": "fresh Codex subagent (gpt-5.6-sol, medium reasoning), fork_turns=none",
+  "allowed_inputs": [
+    "native_1957.csv",
+    "protocol-v1.md",
+    "input-receipt.json"
+  ],
+  "restriction": "no repository, board, parent history, other annotations or network access; sealed before comparison",
+  "original_seal_sha256": "63fb95bab6f8cb6faa2e9f1033efddd6ac21ae2c0aaa8b7239dd2afc0f115e4f",
+  "public_outputs_sha256": {
+    "data/annotations/a04_ss_cyg_1957_codex_blind_v1.csv": "97c9e62511140aeec0f207c3836cdb0dd8f94485a7952182eada6052745b6858",
+    "data/annotations/a04_ss_cyg_1957_codex_blind_v1_decisions.csv": "5c3fb9e5e595fdebd8b61bcc09b532330096790b17b939b661be2cad45c0b410"
+  }
+}
