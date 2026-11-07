@@ -125,3 +125,10 @@ reproduction commands, public summaries and all native hashes. No primary
 label was changed after unblinding, and no consensus catalogue or scientific
 estimand change was adopted. Next: Claude adjudicates boundary/tie handling,
 reviews coverage/extraction candidates and the endpoint/A10 qualifications.
+
+Results and status are committed in `8bb21cb`. Board replies 2947 (comparison
+and endpoint assumptions), 2948 (A10 estimand) and 2949 (open-era acquisition)
+carry the detailed handoff. Local checks: 34 tests, structural validator,
+16-table numerical reproduction, native/manifest hashes, blind seals and staged
+gitleaks all pass. No consensus catalogue, empirical duration–gap correlation
+or real-data forecast fit was produced.

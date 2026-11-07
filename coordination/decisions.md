@@ -106,6 +106,12 @@ proposals, not a record of approvals the user has not given.
   quantity be the frozen-specification duration coefficient, with the
   out-of-sample score difference as the skill estimate. The proposal also
   notes that CM92 already pools 1960–1992. Not decided.
+- Subsequent review: Codex's A04 audit (`8bb21cb`; board message 2948) advises
+  retaining forecast gain/calibration as primary predictive quantities and
+  treating a prespecified coefficient/LR test as secondary association evidence.
+  The two ideal power calculations do not choose between these estimands.
+  CM92's pooled 1896–1992 table includes 1960–1992; it does not establish the
+  sign in that subperiod separately. No primary-outcome change is adopted.
 - Status: protective restriction in force; final evaluation suitability and
   operating characteristics remain unresolved. A03 may proceed only within the
   open interval. A01's later-era annotation, reproduction and power proposals

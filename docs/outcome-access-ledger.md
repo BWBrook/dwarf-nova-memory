@@ -144,3 +144,26 @@ I viewed native SS Cyg photometry for JD 2435473.5–2436569.5
 open development data under D013. No observation at or after 1959-01-01 was
 retrieved, plotted or summarised. No duration–gap correlation was computed
 on these data.
+
+#### Codex A04 comparison and acquisition entry, 7 November 2026
+
+The parent had read Claude's A04 summary and labels. The independent delegate
+received only the frozen v1 protocol, the 1957 native subset and its receipt in
+a fresh context; its labels were committed in `2aa9262` before comparison.
+The comparison and qualifications are recorded in `8bb21cb` and the A04
+independent-comparison report. No empirical duration–gap correlation was computed.
+
+After comparison, I acquired and profiled the SS Cyg open-era stream from
+1896-01-01 through native JD 2436934.0, presumed 1959-12-31 noon, in 12 retained
+exports including overlapping probes. I viewed coverage summaries and native
+plots around 1905 and 1925; the corresponding 1945 plot was generated locally.
+All acquisitions are hashed and listed in the public manifest; raw data remain
+outside Git. These are development inputs and cannot later be described as
+unexamined. No 1960+ photometry or reserved-block coverage was retrieved or
+summarised. Existing literature exposure remains as disclosed above.
+
+The adapter and receipt/row-time guards are now implemented; the earlier
+statements that no loader existed record the pre-acquisition state. Native
+time is preserved, and the presumed convention does not bound all historical
+timestamp errors. No new reserved astronomical outcome was learned during the
+methodological reading of Inoue–Kilian's 2002 working paper.
