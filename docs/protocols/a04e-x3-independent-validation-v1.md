@@ -164,7 +164,11 @@ completeness outside March–May ≥95%; false confirmed episodes <0.2/year;
 absolute paired null-association bias <0.02; first-emission premature rate
 <2% of issued unique-matched events and missing rate <5% of unique matches.
 The false-episode criterion applies both to the retrospective catalogue and
-to false causal emissions, so erased or unmatched emissions cannot evade it.
+to the sum of false and ambiguously assigned causal emissions, so erased or
+non-uniquely attributable emissions cannot evade it. Pure false and ambiguous
+counts remain separate diagnostics. This conservative completion precedes
+all candidate-validation outcomes; the earlier morphology-only qualification
+is retained and repeated under the amended freeze namespace.
 Undefined statistics cannot pass. No widening, repairs or seed extensions
 are fitted to the validation outcomes.
 

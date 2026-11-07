@@ -13,6 +13,7 @@ import csv
 import hashlib
 import json
 import math
+import subprocess
 from collections import defaultdict
 from pathlib import Path
 from statistics import mean, stdev
@@ -67,6 +68,8 @@ RATIO_FIELDS = {
         "operational_confirmation_all_truth_observed_count"),
     "operational_confirmation_false_per_year": (
         "operational_confirmation_false_emission_count", "exposure_years"),
+    "operational_confirmation_unsafe_per_year": (
+        "operational_confirmation_unsafe_emission_count", "exposure_years"),
 }
 
 MEAN_FIELDS = (
@@ -364,7 +367,18 @@ def _validate_rows(rows: list[dict[str, Any]], receipt: dict[str, Any]) -> None:
         raise ValueError(f"metrics grid mismatch: {missing} missing, {extra} unspecified rows")
 
 
+def _with_unsafe_counts(rows):
+    output = []
+    for row in rows:
+        false = _number(row.get("operational_confirmation_false_emission_count"))
+        ambiguous = _number(row.get("operational_confirmation_ambiguous_emission_count"))
+        count = None if false is None or ambiguous is None else false + ambiguous
+        output.append({**row, "operational_confirmation_unsafe_emission_count": count})
+    return output
+
+
 def _cell_summary(key: tuple[str, str, str, str, str, str], rows: list[dict[str, Any]]) -> dict[str, Any]:
+    rows = _with_unsafe_counts(rows)
     metrics: dict[str, dict[str, Any]] = {}
     for name, (numerator, denominator) in RATIO_FIELDS.items():
         metrics[name] = ratio_interval(rows, numerator, denominator, rare=name in RARE_RATE_NAMES)
@@ -376,8 +390,8 @@ def _cell_summary(key: tuple[str, str, str, str, str, str], rows: list[dict[str,
         "end_effective_coverage": _gate(metrics["end_effective_coverage"], .90, "above"),
         "short_outside_mar_may_completeness": _gate(metrics["short_outside_mar_may_completeness"], .95, "above"),
         "false_confirmed_per_year": _gate(metrics["false_confirmed_per_year"], .20, "below"),
-        "operational_confirmation_false_per_year": _gate(
-            metrics["operational_confirmation_false_per_year"], .20, "below"),
+        "operational_confirmation_unsafe_per_year": _gate(
+            metrics["operational_confirmation_unsafe_per_year"], .20, "below"),
         "total_bias": _gate(metrics["total_bias"], .02, "inside"),
         "operational_confirmation_premature_fraction": _gate(
             metrics["operational_confirmation_premature_fraction"], .02, "below"),
@@ -440,6 +454,12 @@ def summarize(directory: Path, output: Path) -> dict[str, Any]:
     receipt_path = directory / "receipt.json"
     metrics_path = directory / "metrics.csv"
     receipt = json.loads(receipt_path.read_text())
+    source = Path(__file__).resolve()
+    committed = subprocess.check_output(
+        ["git", "show", f"{receipt['freeze_commit']}:scripts/summarize_x3_validation.py"],
+        cwd=source.parents[1])
+    if hashlib.sha256(committed).digest() != hashlib.sha256(source.read_bytes()).digest():
+        raise ValueError("decision source differs from the validation freeze")
     _validate_receipt(receipt, metrics_path)
     with metrics_path.open(newline="") as handle:
         rows = list(csv.DictReader(handle))

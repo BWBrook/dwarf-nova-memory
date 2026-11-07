@@ -37,6 +37,7 @@ CASES = ("primary", "structured", "alternative", "offset", "v1", "early")
 EXPECTED_AGGREGATE_CELLS = 324
 RUNTIME_SOURCES = (
     "scripts/run_x3_validation.py",
+    "scripts/summarize_x3_validation.py",
     "src/dnmem/injection_truth.py",
     "src/dnmem/injection_truth_v2.py",
     "src/dnmem/injection_observe.py",
@@ -674,6 +675,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         raise RuntimeError(f"completed {completed} histories, expected {expected['histories']}")
     if metric_count != expected["metric_rows"]:
         raise RuntimeError(f"completed {metric_count} metric rows, expected {expected['metric_rows']}")
+    if _runtime_source_hashes(freeze_commit) != runtime_sources:
+        raise ValueError("validation sources changed during execution")
     receipt = {
         "status": "completed",
         "validation_base": base,

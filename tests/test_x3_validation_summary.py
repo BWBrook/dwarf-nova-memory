@@ -12,6 +12,13 @@ SPEC.loader.exec_module(SUMMARY)
 
 
 class X3ValidationSummaryTests(TestCase):
+    def test_ambiguous_emissions_cannot_evade_the_causal_false_rate_gate(self):
+        rows = [{"operational_confirmation_false_emission_count": "0",
+                 "operational_confirmation_ambiguous_emission_count": "1", "exposure_years": "1"}] * 2
+        metric = SUMMARY.ratio_interval(SUMMARY._with_unsafe_counts(rows),
+                                       "operational_confirmation_unsafe_emission_count", "exposure_years")
+        self.assertEqual(SUMMARY._gate(metric, .2, "below"), "FAIL")
+
     def test_ratio_uses_pooled_denominator_and_cluster_delta_mcse(self):
         rows = [{"hit": "1", "n": "1"}, {"hit": "0", "n": "9"}]
         metric = SUMMARY.ratio_interval(rows, "hit", "n")
