@@ -13,7 +13,7 @@ claims and handovers.
 | A01 | Independently challenge novelty and physical framing | Done 2026-11-07 | Claude | [A01 memo](../docs/audits/2026-11-07-a01-novelty-framing.md): Gate A passes provisionally with a narrower claim; published partial r ≈ 0.13 verified; [power interpretation and D013 amended](../docs/audits/2026-11-07-a01-review-d013.md) by Codex |
 | A02 | Audit code and reproduce a key probability independently | Done 2026-11-07, seed scope only | Codex | [Audit](../docs/audits/2026-11-07-code-audit.md); 22 tests, independent fixtures, 16-table numerical reproduction |
 | A03 | Resolve one real target and obtain an authentic export | Native acquisition done 2026-11-07; normalization pending | Codex | [A03 receipt](../docs/audits/2026-11-07-a03-ss-cyg-acquisition.md): 3438 visual rows, 124 limits, raw hash/manifest; only 1956–1959; native time scale/reference unresolved |
-| A04 | Annotate development events and coverage | Claude 1956–1958 done 2026-11-07; Codex blind 1957 subset next | Claude + independent Codex subset | [A04 memo](../docs/audits/2026-11-07-a04-review-and-annotation.md): 23 events, envelope boundaries about 1 d, endpoint-error shift ≈ 0.003; Codex annotates 1957 blind under [protocol v1](../docs/protocols/a04-event-bracketing-v1.md), then compares |
+| A04 | Annotate development events and coverage | Independent 1957 comparison complete; three boundary differences unresolved | Claude + Codex | [Comparison and coverage audit](../docs/audits/2026-11-07-a04-independent-comparison-open-era.md); 7/8 onset overlap, 5/7 complete-end overlap; original labels sealed and retained |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -23,11 +23,12 @@ claims and handovers.
 
 ## Current blocking information
 
-SS Cyg native access is established for one early interval (1956–1958).
-Visual JD is presumed UT-based geocentric, bounded at 0.006 d. Boundary
-precision in well-covered seasons is about a day (A04). Second-annotator
-agreement, coverage in earlier decades, extraction rules, usable-cycle counts,
-other targets and operating characteristics remain unresolved. The 1960–2017 candidate
+The requested SS Cyg stream through native JD 2436934.0 is acquired in 12
+hashed exports, with 72,635 unique native IDs. Early coverage varies sharply.
+Independent annotations disagree at three boundaries; envelope coverage,
+extraction/eligibility rules, usable-cycle counts, other targets and operating
+characteristics remain unresolved. UT/geocentric timing is presumed; a
+convention sensitivity is not a bound on historical record errors. The 1960–2017 candidate
 evaluation is sealed at the raw-data level under D013, with published aggregate
 exposure disclosed. These are research unknowns, not values to invent.
 
@@ -103,3 +104,24 @@ magnitudes were viewed. Owned files:
 
 No 1959+ data were viewed. Next: Codex annotates the 1957 subset blind (memo
 §4), then compares, then acquires the rest of the open era in bounded requests.
+
+## Completed tranche — A04 independent comparison and early-era acquisition, 7 November 2026
+
+Codex, `main`, base `7673b4a`. A fresh context-isolated delegate received only
+the frozen protocol at `1bfbca5`, a hashed native 1957 subset and its input
+receipt, with instructions to avoid Claude's labels, memo, tools and board
+results. Parent owned comparison and review, bounded acquisition/receipt
+checks, early-era profiles, manifest/status updates and handoff. A separate
+read-only methodological reviewer checked endpoint and A10 claims without
+contacting the blind delegate. The delegate wrote only its isolated scratch
+directory. Blind labels were sealed before comparison. New requests followed
+comparison: three-year windows around 1905, 1925 and 1945, then the remaining
+open-era requests ending at JD 2436934.0. No 1960+ data, duration–gap
+correlation or real-data forecast fit was authorized or performed in this tranche.
+
+Outcome: blind labels sealed in `2aa9262` with LF serialization receipt `bc1222b`;
+receipt-window guards in `0ece7ad`. The comparison/coverage report links the
+reproduction commands, public summaries and all native hashes. No primary
+label was changed after unblinding, and no consensus catalogue or scientific
+estimand change was adopted. Next: Claude adjudicates boundary/tie handling,
+reviews coverage/extraction candidates and the endpoint/A10 qualifications.

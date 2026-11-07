@@ -22,13 +22,15 @@ def main() -> None:
     rows, summary = read_acquisition(args.native_xml)
     if not rows:
         raise ValueError("no native observations to plot")
-    if set(summary["bands"]) != {"Vis."}:
-        raise ValueError("this plot requires the single native visual stream")
+    other_bands = sum(row["band"] != "Vis." for row in rows)
+    rows = [row for row in rows if row["band"] == "Vis."]
+    if not rows:
+        raise ValueError("this plot requires native visual measurements")
     if not {row["val"] for row in rows} <= {"V", "T"}:
         raise ValueError("unhandled native validation flag in this plot")
-    first = summary["min_native_jd"]
+    first = summary["requested_start_jd"]
     fig, axes = plt.subplots(2, 1, figsize=(12, 6.5), constrained_layout=True)
-    for ax, end, title in ((axes[0], summary["max_native_jd"], "Entire bounded request"),
+    for ax, end, title in ((axes[0], summary["requested_end_jd"], "Entire bounded request"),
                            (axes[1], first + 90, "First 90 native JD days")):
         for quality, flag, marker, color, label in (("V", "0", ".", "tab:blue", "Visual, V flag"),
                                                    ("V", "1", "v", "tab:orange", "Fainter-than limit, V flag"),
@@ -46,7 +48,7 @@ def main() -> None:
         ax.grid(alpha=0.2)
     axes[0].legend(loc="upper right", ncol=2)
     fig.suptitle("SS Cyg: bounded AAVSO native visual photometry\n"
-                 "Native JD; validation flags retained; no event inference or reported uncertainties")
+                 f"Native JD; flags retained; {other_bands} other-band rows omitted; no event inference")
     args.output.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(args.output, dpi=160)
     plt.close(fig)

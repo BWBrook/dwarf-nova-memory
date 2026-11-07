@@ -9,11 +9,13 @@ protocol and not a completed analysis. Read `README.md`, `docs/01-research-brief
 `docs/02-literature-review.md`, `docs/05-statistical-design.md` and the coordination
 files before changing scientific assumptions.
 
-One bounded SS Cyg native export (1956-01-01 through 1959-01-01) has been
-retrieved locally and remains outside Git; see the acquisition manifest and A03
-report. Native visual JD is presumed UT-based and geocentric (bounded at
-0.006 d; A04 memo §2). A04 adds a first annotator-judgement event table for
-1956–1958 (`data/annotations/`). No frozen extractor, normalized observation
+The requested SS Cyg native stream from 1896-01-01 through JD 2436934.0
+(1959-12-31 noon under the presumed convention) is retained in 12 hashed
+acquisitions outside Git; the manifest and A04 comparison report record scope.
+Native visual JD is presumed UT-based and geocentric; the 0.006 d convention
+sensitivity does not bound all historical record errors. A04 supplies Claude's
+1956–1958 judgements and a sealed independent 1957 subset, with unresolved
+boundary differences (`data/annotations/`). No frozen extractor, normalized observation
 table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,

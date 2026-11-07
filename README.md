@@ -1,6 +1,6 @@
 # Dwarf-nova recurrence: memory, changing activity and forecast reliability
 
-> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. No real-star result exists yet.
+> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. No real-star forecast-skill result exists yet.
 
 **A research repository led by Barry W. Brook. Seeded 5 November 2026; public from 7 November 2026.**
 
@@ -61,13 +61,13 @@ Small floating-point differences across runtimes need not give identical hashes.
 |---|---|
 | Central question, hypotheses, first-paper boundaries | Written; provisional choices explicitly marked |
 | Initial literature review and bibliography | Source-checked initial review; access depth recorded; not a systematic review |
-| Data access and provenance | One bounded native SS Cyg export (1956–1958) acquired locally under D013; hashed and excluded from Git; visual JD presumed UT-based geocentric, bounded at 0.006 d |
+| Data access and provenance | 12 hashed native SS Cyg acquisitions through 1959-12-31 noon under D013; 72,635 unique native IDs after overlap removal; raw data excluded from Git |
 | Candidate targets | Provisional, with classification evidence and caveats; no final eligibility asserted |
 | Statistical design and simulation programme | Specified, including censoring, missing events and state alternatives |
 | Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation |
-| Archive adapter | Bounded native VStar/AID request and checks implemented for SS Cyg 1956–1959; no time normalization or event inference |
+| Archive adapter | Receipt-verified bounded native VStar/AID requests implemented for the SS Cyg open era; no time normalization or event inference |
 | M2/M3 latent models and real event inference | Not implemented; explicit next tasks |
-| Observational findings | None about memory or prediction. A04 annotates 23 SS Cyg outbursts in 1956–1958 to measure boundary precision; no forecast or duration–gap statistic has been computed |
+| Observational findings | Annotation and returned-row coverage only. Independent 1957 labels recover corresponding episodes but disagree at three boundaries; no forecast or empirical duration–gap correlation has been computed |
 | Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |
 
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
@@ -100,6 +100,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [Opening code audit](docs/audits/2026-11-07-code-audit.md) | Independent numerical checks, reproduction and remaining implementation limits |
 | [A01 review and D013](docs/audits/2026-11-07-a01-review-d013.md) | Corrected power interpretation and historical access sequence |
 | [First authentic acquisition](docs/audits/2026-11-07-a03-ss-cyg-acquisition.md) | Native export, provenance, observation limits and next annotation step |
+| [Independent A04 comparison and open-era coverage](docs/audits/2026-11-07-a04-independent-comparison-open-era.md) | Sealed blind labels, unresolved boundaries, conditional endpoint sensitivities and 1896–1959 acquisition |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
 

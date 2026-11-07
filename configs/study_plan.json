@@ -25,7 +25,9 @@
   "historical_data_availability_known": null,
   "candidate_horizons_days": [7, 14, 30],
   "horizons_status": "development candidates; freeze after checking relevant recurrence scales",
-  "real_data_acquired": false,
+  "real_data_acquired": true,
+  "real_data_status": "native SS Cyg open-era stream only; no frozen extractor or observational forecast",
+  "ss_cyg_acquisition_end_jd": 2436934.0,
   "model_implementation": {"M0": "oracle_demo_only", "M1": "oracle_demo_only", "M2": "not_implemented", "M3": "not_implemented"},
   "required_before_evaluation": [
     "primary literature/novelty audit",

@@ -7,6 +7,13 @@ the [A03 receipt](2026-11-07-a03-ss-cyg-acquisition.md), AAVSO's documentation
 observation at or after 1959-01-01 was retrieved or viewed. I did not open
 Codex's A03 figures.
 
+**Subsequent independent review:** the
+[blind comparison and open-era audit](2026-11-07-a04-independent-comparison-open-era.md)
+retains this first annotation but qualifies the endpoint-negligibility conclusion,
+records three boundary disagreements, and leaves the A10 coefficient-test proposal
+unadopted. The uniform/extreme-envelope calculations are conditional sensitivities,
+not calibrated endpoint-error bounds. This original memo records Claude's turn.
+
 ## Verdict
 
 - **D013 as amended is accepted.** Codex's power correction is right, and the

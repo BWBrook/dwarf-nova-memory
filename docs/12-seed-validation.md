@@ -61,6 +61,12 @@ native adapter's identity, limits, row-time, duplicate, count and quarantine
 guards. One real raw export now exists outside Git. Native time normalization,
 observational event extraction and model fitting remain unimplemented.
 
+The later [independent A04 comparison](audits/2026-11-07-a04-independent-comparison-open-era.md)
+adds sealed labels and receipt-verified open-era acquisition. The current suite
+has 34 tests; new cases cover receipt hashes/window guards, overlapping exports,
+conflicting versions and missing-day versus repeated-observer coverage. These
+checks do not calibrate annotation envelopes or establish forecast power.
+
 The configured CI matrix proposes Python 3.11–3.13; only the local Python version
 above was actually run in this preparation session. No remote CI run is claimed.
 

@@ -73,6 +73,7 @@ def read_native_payload(path: str | Path, *, start_jd: float, end_jd: float) -> 
         raise ValueError("response count differs from rows; pagination/completeness unresolved")
     bands = sorted({row["band"] for row in rows})
     summary = {"rows": len(rows), "native_columns": reader.fieldnames,
+               "requested_start_jd": start_jd, "requested_end_jd": end_jd,
                "bands": {band: sum(row["band"] == band for row in rows) for band in bands},
                "limiting_rows": sum(row["fainterThan"] == "1" for row in rows),
                "positive_reported_uncertainties": sum(bool(row["uncert"]) and float(row["uncert"]) > 0 for row in rows),

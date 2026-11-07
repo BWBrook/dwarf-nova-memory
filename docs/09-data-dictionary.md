@@ -50,8 +50,9 @@ retained in a sidecar table, not silently dropped.
 
 ## 2. Acquisitions
 
-`data/manifests/acquisitions.csv` records the first bounded SS Cyg native export
-(7 November 2026); its time scale/reference remain unresolved. Use one row per
+`data/manifests/acquisitions.csv` records 12 bounded SS Cyg native exports
+(7 November 2026), through native JD 2436934.0. The raw product does not establish
+each historical row's original time convention. Use one row per
 immutable export or well-defined acquisition batch. Record provider,
 query, target, source URL, UTC retrieval timestamp, file hash, native conventions,
 filters, terms URL, redistribution assessment, software version and notes.

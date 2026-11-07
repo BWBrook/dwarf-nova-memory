@@ -41,7 +41,12 @@ def summarize(rows):
     types = {t: sum(r["type_cm92_v1"] == t for r in rows) for t in ("long", "short", "ambiguous")}
     q = lambda xs: f"median {st.median(xs):.2f}, max {max(xs):.2f}"
     return {
-        "events": len(rows), "clean_events": len(clean), "clean_gap_pairs": len(gaps),
+        "events": len(rows), "clean_events": len(clean), "gap_pairs_in_scale_calculation": len(gaps),
+        "endpoint_model_assumptions": "centered independent error; true endpoints within uncalibrated envelopes; plug-in marginal scales; not a general bound",
+        "unverified_gap_pairs_in_scale_calculation": sum(
+            r["event_id"] in end_mid and rows[k+1]["event_id"] in on_mid
+            and r["missed_event_possible"] == "no" and r["consecutive_with_next"] != "verified"
+            for k, r in enumerate(rows[:-1])),
         "types_v1": types,
         "mechanical_fragments_merged": sum(int(r["candidates"].split("-")[-1]) - int(r["candidates"].split("-")[0])
                                            for r in rows),
@@ -51,7 +56,7 @@ def summarize(rows):
         "sd_end_error_uniform_d": round(math.sqrt(v_end), 3), "sd_onset_error_uniform_d": round(math.sqrt(v_on), 3),
         "sd_duration_mid_d": round(sd_d, 2), "sd_gap_mid_d": round(sd_q, 2),
         "shared_end_corr_shift_at_r0": round(shift(v_end), 4),
-        "shared_end_corr_shift_worst_case": round(shift(v_end_worst), 4),
+        "shared_end_corr_shift_endpoint_extremes_at_r0": round(shift(v_end_worst), 4),
         "shared_end_corr_shift_if_sd_1d": round(shift(1.0), 4),
         "end_confirm_lag_after_first_faint_d": q(conf_lag), "onset_detect_lag_after_first_bright_d": q(det_lag),
         "unverified_consecutive_pairs": sum(r["consecutive_with_next"] == "unverified" for r in rows),
