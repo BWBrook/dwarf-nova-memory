@@ -8,7 +8,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from dnmem.aavso import read_native_payload
+from dnmem.aavso import read_acquisition
 from dnmem.brackets import THRESHOLD, bounds, candidate_runs, coverage_gaps, row_class
 
 WINDOW = 70.0
@@ -26,7 +26,7 @@ def main() -> None:
     args = parser.parse_args()
     if args.output.exists():
         raise ValueError("refusing to reuse an existing output directory")
-    rows, summary = read_native_payload(args.native_xml)
+    rows, summary = read_acquisition(args.native_xml)
     runs = candidate_runs(rows)
     gaps = coverage_gaps(rows)
     args.output.mkdir(parents=True)

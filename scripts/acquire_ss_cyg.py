@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Acquire only the D013-open 1956-01-01 to 1959-01-01 SS Cyg interval."""
+"""Acquire an explicit SS Cyg native JD window strictly before the D013 cutoff."""
 
 from __future__ import annotations
 
@@ -15,17 +15,19 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from dnmem.aavso import VSTAR_COMMIT, read_native_payload, ss_cyg_request_url
+from dnmem.aavso import VSTAR_COMMIT, read_acquisition, ss_cyg_request_url
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path, help="new empty raw acquisition directory")
+    parser.add_argument("--start-jd", required=True, type=float)
+    parser.add_argument("--end-jd", required=True, type=float, help="inclusive provider endpoint, strictly before 1960")
     args = parser.parse_args()
+    url = ss_cyg_request_url(args.start_jd, args.end_jd)
     args.output.mkdir(parents=True, exist_ok=True)
     if any(args.output.iterdir()):
         raise ValueError("refusing to overwrite an acquisition")
-    url = ss_cyg_request_url()
     request = Request(url, headers={"User-Agent": "dwarf-nova-memory/0.1 bounded research acquisition"})
     with urlopen(request, timeout=30) as response:
         payload = response.read()
@@ -46,7 +48,7 @@ def main() -> None:
                "status": "retained native bytes; validation pending"}
     receipt_path = args.output / "receipt.json"
     receipt_path.write_text(json.dumps(receipt, indent=2) + "\n")
-    _, summary = read_native_payload(native)
+    _, summary = read_acquisition(native)
     receipt.update(summary)
     receipt_path.write_text(json.dumps(receipt, indent=2) + "\n")
     print(json.dumps(receipt, indent=2))

@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from dnmem.aavso import read_native_payload
+from dnmem.aavso import read_acquisition
 
 
 def main() -> None:
@@ -19,7 +19,9 @@ def main() -> None:
     args = parser.parse_args()
     if args.output.exists():
         raise ValueError("refusing to overwrite an existing figure")
-    rows, summary = read_native_payload(args.native_xml)
+    rows, summary = read_acquisition(args.native_xml)
+    if not rows:
+        raise ValueError("no native observations to plot")
     if set(summary["bands"]) != {"Vis."}:
         raise ValueError("this plot requires the single native visual stream")
     if not {row["val"] for row in rows} <= {"V", "T"}:
@@ -43,7 +45,7 @@ def main() -> None:
                xlim=(0, end - first))
         ax.grid(alpha=0.2)
     axes[0].legend(loc="upper right", ncol=2)
-    fig.suptitle("SS Cyg: AAVSO native visual photometry, 1956–1959 request\n"
+    fig.suptitle("SS Cyg: bounded AAVSO native visual photometry\n"
                  "Native JD; validation flags retained; no event inference or reported uncertainties")
     args.output.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(args.output, dpi=160)

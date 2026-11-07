@@ -95,7 +95,7 @@ The adapter uses the standard library; the optional plot uses the existing
 Matplotlib dependency. Use a new empty output directory for another acquisition:
 
 ```bash
-python3 scripts/acquire_ss_cyg.py --output data/raw/new_ss_cyg_1956_1959_run
+python3 scripts/acquire_ss_cyg.py --start-jd 2435473.5 --end-jd 2436569.5 --output data/raw/new_ss_cyg_1956_1959_run
 python3 scripts/plot_ss_cyg_native.py data/raw/new_ss_cyg_1956_1959_run/native.xml --output outputs/new_ss_cyg_native.png
 ```
 

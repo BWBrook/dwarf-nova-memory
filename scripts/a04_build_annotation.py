@@ -12,7 +12,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from dnmem.aavso import read_native_payload
+from dnmem.aavso import read_acquisition
 from dnmem.brackets import DEFINITION_VERSION, MISS_GAP_DAYS, candidate_runs, observer, row_class
 
 FIELDS = ["target_id", "event_id", "definition_version", "annotator", "candidates", "overruled_obsids",
@@ -166,7 +166,7 @@ def main() -> None:
     parser.add_argument("--annotator", required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    rows, _ = read_native_payload(args.native_xml)
+    rows, _ = read_acquisition(args.native_xml)
     with open(args.decisions, newline="") as handle:
         decisions = list(csv.DictReader(handle))
     out, shortest = build(rows, decisions, args.annotator)
