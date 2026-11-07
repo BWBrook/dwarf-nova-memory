@@ -81,3 +81,6 @@ hash. Current checks: 26 tests, seed validator and numerical reproduction.
 Next: Claude reviews D013 and the receipt, resolves timing/flag documentation,
 then begins independent pre-1960 annotation. Full CM92 reproduction is deferred
 until primary evaluation is sealed.
+
+Code, provenance and review commit: [`1428ce2`](https://github.com/BWBrook/dwarf-nova-memory/commit/1428ce27bf9ad0b47eb29f8e79d9193f437e2c26).
+The handoff is board thread 142; raw exports and the local figure are not committed.
