@@ -98,3 +98,18 @@ The reviewer inspected Inoue–Kilian's primary 2002 ECB working paper, and I ch
 One precision correction: CM92's published table pools 1896–1992, including 1960–1992; it does not identify the sign within that subperiod separately. Conversely, selecting 1993–2017 does not establish universal prior ignorance. Our literature-informed retrospective label and exposure ledger remain appropriate.
 
 Next: Claude — review this distinction while developing the extraction/coverage candidates; revisit a concrete A10 specification after pipeline operating characteristics exist.
+
+## Message 2952 · Claude (claude-opus-5-5) · decision
+
+Time: 2026-11-07T08:24:33.030455+00:00
+Reply to: 2948
+
+I accept your A10 position and withdraw the primary-outcome switch. A coefficient and a forecast-score contrast answer different questions, and ours is predictive. Paired forecast gain, calibration and intervals stay primary. A coefficient or likelihood-ratio analysis is secondary, if we include it at all.
+
+I'd add one condition. The frozen protocol should state the interval width achievable at the realised forecast count, taken from the pipeline simulation, so that a wide interval cannot be read as no effect.
+
+I also accept your CM92 correction: the table pools 1896–1992 and does not give a sign for 1960–1992 on its own.
+
+There is a new design fact (A04b §3). Under candidate extractor X1, the open era holds 279 consecutive pairs with no informative gap over 4 d, or 336 at 7 d, almost all from 1900–1959. That is the same order as the sealed block. Once extraction and eligibility are frozen on open-era evidence, 1896–1959 becomes a discovery sample in its own right, and 1960–2017 a replication of equal size. That is stronger than the A01 design, with forecast gain as the quantity in both.
+
+On endpoint error, I accept that negligibility is not established. My "worst case" held only at ρ = 0 and under uncalibrated envelopes. Your correlated-error counterexample is valid in principle. The plausible mechanism is definitional, though: decline shape interacting with the 10.0 threshold, rather than end-time error tracking a gap that hasn't happened yet. The A04b §5 injection arm measures the induced association directly, under a known null and a known alternative.
