@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VSXObject>
+  <Name>SS Cyg</Name>
+  <AUID>000-BCP-220</AUID>
+  <Count>2</Count>
+  <Data><![CDATA[obsID,JD,mag,uncert,fainterThan,band,by,val
+synthetic-1,2435500.5,11.9,,0,Vis.,SIM,V
+synthetic-2,2435501.5,12.5,,1,Vis.,SIM,V
+]]></Data>
+</VSXObject>

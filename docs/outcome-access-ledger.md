@@ -43,6 +43,15 @@ protocol and public forecast receipts; it has not started.
 
 ## Exposure entries
 
+### SS Cyg inner access split (D013, 7 November 2026)
+
+For SS Cyg, only observations before 1960-01-01 00:00 UTC are open for
+development. The 1960–2017 raw-data block is reserved pending a protocol freeze;
+2018 onward stays reserved under D012. This is a literature-informed,
+project-time raw-data holdout. Full CM92 reproduction and later-era annotations
+must wait until primary forecasts/evaluation are sealed, or the opened interval
+must permanently become exploratory. See D013 in the decision log.
+
 Each participant should add their own dated entry before data work. A statement
 of no recalled outcome knowledge is a disclosure, not proof of universal
 ignorance. Papers can disclose known outcomes even without showing photometry.
@@ -62,6 +71,21 @@ evidence and are not an untouched simulation test set.
 | U Gem, SS Aur, BV Cen, UU Aql | No additional target-specific post-boundary outcome recalled or inspected in this turn. |
 | CH UMa, AR And, DX And | No additional target-specific post-boundary outcome recalled or inspected in this turn. |
 | Z Cam, RX And, VW Hyi, SU UMa, WZ Sge | General subtype/standstill/supercycle context from the seed; no additional target-specific post-boundary outcome recalled or inspected in this turn. |
+
+#### Codex D013 exposure addendum, 7 November 2026
+
+Before any photometry request, I read the A01 memo and board messages 2930/2931,
+including CM92's correlations and Price et al.'s aggregate statistics. I then
+retrieved the CM92 original PDF from ADS and visually inspected printed pages
+645 (Table 4, Figure 5 and symbolic long/short sequence), 647 (long-term
+summaries) and 650 (moving-average/composite curves). These span the proposed
+historical evaluation era and inform the design; they are not raw archive
+inspection. An acquisition-methods search incidentally returned a published
+radio-study summary classifying the 1996 and 2011 SS Cyg outbursts as short and
+the 2007, 2010 and 2012 outbursts as long. These facts are now known; they cannot
+be presented as unexpected evaluation discoveries. Source:
+https://academic.oup.com/mnras/article/460/4/3720/2609136 . No 1960+ raw
+photometry or target-level archive coverage was retrieved or summarized.
 
 ### Claude, 7 November 2026 (written before this turn's literature search)
 

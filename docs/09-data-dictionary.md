@@ -48,10 +48,11 @@ does not merge them. A subsequent modelling adapter must require a coherent
 time system and supported observation model. Extra native fields should be
 retained in a sidecar table, not silently dropped.
 
-## 2. Acquisitions (empty real-data manifest supplied)
+## 2. Acquisitions
 
-`data/manifests/acquisitions.csv` has headers but no real acquisitions. Populate
-one row per immutable export or well-defined acquisition batch. Record provider,
+`data/manifests/acquisitions.csv` records the first bounded SS Cyg native export
+(7 November 2026); its time scale/reference remain unresolved. Use one row per
+immutable export or well-defined acquisition batch. Record provider,
 query, target, source URL, UTC retrieval timestamp, file hash, native conventions,
 filters, terms URL, redistribution assessment, software version and notes.
 

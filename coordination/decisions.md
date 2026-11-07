@@ -58,10 +58,53 @@ proposals, not a record of approvals the user has not given.
   Known SS Cyg 2021 and RU Peg literature context is disclosed in the ledger.
 - Status: conservative boundary in force. Codex's implementation refinements
   were reviewed and accepted by Claude on 2026-11-07 (A01 memo §6.6). The A01
-  power estimate implies the SS Cyg locked block can confirm calibration and
-  sign but cannot detect the expected effect alone; that belongs in the
-  evaluation protocol (A10), not here. No loader exists yet. Final evaluation and prospective
+  power interpretation is corrected by D013: neither sign/calibration
+  confirmation nor detection power has been established for the locked block.
+  That belongs in the evaluation protocol (A10), not here. No loader exists yet. Final evaluation and prospective
   forecasting remain proposals; A03 follows A01/A02 and access-policy review.
+
+### D013 — SS Cyg tuning access and candidate historical evaluation
+
+- Date and participants: 2026-11-07. Claude proposed 1896–1959 tuning and
+  1960–2017 evaluation in A01 / board message 2931. Codex accepts the protective
+  split **with amendments**, before any project photometry request. This does
+  not approve a final model, power claim, sample size or paper scope.
+- Access now: only SS Cyg observations before 1960-01-01 00:00 UTC are open for
+  extraction development, annotation, coverage diagnostics and tuning. First
+  acquisition will request a small 1956–1958 interval. Preserve native time
+  metadata; unresolved conventions cannot be silently relabelled UTC.
+- Keep 1960–2017 reserved as a **candidate project-time raw-data evaluation**
+  block, and keep 2018 onward reserved under D012. Prefer date-restricted
+  acquisition. Do not plot, annotate, count events or summarize coverage in
+  either reserved block before a documented release. No 1960+ raw data have
+  been inspected or retrieved by this project at this decision.
+- Freeze extraction, eligibility/coverage rules, model candidates, selection,
+  hyperparameters, score, horizons and update schedule before opening the
+  candidate evaluation block. Prespecified online refitting/filtering may use
+  only past information as evaluation progresses; model retuning may not.
+- **Resolve the A01 sequencing conflict:** pre-1980/2010–2017 double annotation
+  and a full 1896–1992 CM92 Table 4 reproduction cannot precede that freeze
+  while retaining 1960–2017 as uninspected project data. Develop only on the
+  open era and simulations. Defer the full reproduction until forecasts and
+  primary evaluation are sealed. If later-era data are opened for feasibility,
+  explicitly designate the opened block exploratory and amend the remaining
+  evaluation before access; never restore its untouched status.
+- Literature exposure: CM92 (1896–1992) and Price et al. (through 2006) have
+  already influenced this design. The access ledger also records Codex's
+  direct inspection of CM92 pages 645, 647 and 650 and incidental historical
+  classifications in a search result. This is a literature-informed split,
+  not universal ignorance of the evaluation outcomes.
+- Arithmetic: partial r = 0.130012289; ideal Gaussian conditional information
+  = 0.008523842 nats. About 470 forecasts makes `2*n*gain` about 8; that is
+  **not** a detection guarantee or a powered sample-size calculation. Real
+  score-comparison power, dependence, missing events and parameter estimation
+  require simulation after development. Neither 55 nor 400 usable forecasts
+  have been established. Do not promise that a small block confirms sign or
+  calibration, or that richer adjustment necessarily reduces a correlation.
+- Status: protective restriction in force; final evaluation suitability and
+  operating characteristics remain unresolved. A03 may proceed only within the
+  open interval. A01's later-era annotation, reproduction and power proposals
+  are superseded by this decision where they conflict.
 
 ## New decision template
 

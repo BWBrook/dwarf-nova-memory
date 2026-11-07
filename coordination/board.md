@@ -10,10 +10,10 @@ claims and handovers.
 | S01 | Runnable synthetic scaffold and scientific invariants | Seed checked | Shared | See `docs/12-seed-validation.md` |
 | S02 | Public repo, licences, board section, first post | Done 2026-11-07 | Claude | D011; 17/17 tests and `validate_seed.py` pass on macOS, Python 3.15.0 |
 | A00 | Outcome-access partition before any real light curve is plotted | Done 2026-11-07; refinements accepted by Claude | Codex + Claude | D012; [access ledger](../docs/outcome-access-ledger.md) with both exposure entries; no real data acquired |
-| A01 | Independently challenge novelty and physical framing | Done 2026-11-07 | Claude | [A01 memo](../docs/audits/2026-11-07-a01-novelty-framing.md): Gate A passes provisionally with a narrower claim; prior effect size from CM92 (partial r ≈ 0.13); proposed D013 tuning/evaluation split for Codex review |
+| A01 | Independently challenge novelty and physical framing | Done 2026-11-07 | Claude | [A01 memo](../docs/audits/2026-11-07-a01-novelty-framing.md): Gate A passes provisionally with a narrower claim; published partial r ≈ 0.13 verified; [power interpretation and D013 amended](../docs/audits/2026-11-07-a01-review-d013.md) by Codex |
 | A02 | Audit code and reproduce a key probability independently | Done 2026-11-07, seed scope only | Codex | [Audit](../docs/audits/2026-11-07-code-audit.md); 22 tests, independent fixtures, 16-table numerical reproduction |
-| A03 | Resolve one real target and obtain an authentic export | Ready: SS Cyg pre-2018, after D013 is agreed | Codex | Raw file + hash + provenance; no silent conventions; no later-era event summaries before D013 |
-| A04 | Annotate development events and coverage | After A03 | Claude + independent Codex subset | Boundary intervals and disagreement record |
+| A03 | Resolve one real target and obtain an authentic export | Native acquisition done 2026-11-07; normalization pending | Codex | [A03 receipt](../docs/audits/2026-11-07-a03-ss-cyg-acquisition.md): 3438 visual rows, 124 limits, raw hash/manifest; only 1956–1959; native time scale/reference unresolved |
+| A04 | Annotate development events and coverage | Ready after native time/flag review; pre-1960 only | Claude + independent Codex subset | Independent boundary brackets in an early interval; preserve limits/discrepant flags and disagreement; no 1960+ annotation |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -23,9 +23,11 @@ claims and handovers.
 
 ## Current blocking information
 
-Actual target-level data access, usable cycle counts, event-boundary precision
-and an untouched evaluation interval have not been established. These are
-research unknowns, not missing implementation details to fill with invented data.
+SS Cyg native access is established for one early interval. Native time
+scale/reference, boundary precision, usable-cycle counts, other targets
+and operating characteristics remain unresolved. The 1960–2017 candidate
+evaluation is sealed at the raw-data level under D013, with published aggregate
+exposure disclosed. These are research unknowns, not values to invent.
 
 ## Working claim format
 
@@ -60,3 +62,22 @@ rows E06–E08 of `references/evidence.csv`, the A01 note in
 `docs/outcome-access-ledger.md`, and the D012 status line. No real photometry
 was retrieved. Next: Codex reviews the memo, especially §3.2's prior effect
 size and the proposed D013 split, then proceeds to A03 for SS Cyg.
+
+## Completed tranche — D013 review and A03, 7 November 2026
+
+Codex, `main`, base `a89a084`: independently audit the A01 effect-size and power
+claims, resolve the proposed SS Cyg access split before retrieving photometry,
+and pursue a date-restricted authentic acquisition if the revised policy permits.
+Owns a new review/calculation script and tests, D013/access/config updates,
+A03 adapter/report/fixtures if supported by the native export, manifest and
+status records. A read-only methodological reviewer checks the arithmetic and
+holdout logic; no delegate may retrieve light curves. Reserved eras remain
+uninspected. Outcome: [D013 review](../docs/audits/2026-11-07-a01-review-d013.md) and
+[authentic acquisition](../docs/audits/2026-11-07-a03-ss-cyg-acquisition.md) complete.
+The official web export required sign-in; the source-supported VStar route
+succeeded anonymously. Native time normalization and observational fitting are
+not complete. A03 raw bytes stay outside Git; the public manifest records their
+hash. Current checks: 26 tests, seed validator and numerical reproduction.
+Next: Claude reviews D013 and the receipt, resolves timing/flag documentation,
+then begins independent pre-1960 annotation. Full CM92 reproduction is deferred
+until primary evaluation is sealed.

@@ -61,11 +61,12 @@ Small floating-point differences across runtimes need not give identical hashes.
 |---|---|
 | Central question, hypotheses, first-paper boundaries | Written; provisional choices explicitly marked |
 | Initial literature review and bibliography | Source-checked initial review; access depth recorded; not a systematic review |
-| Data access and provenance plan | Official documentation inspected; no target light curves acquired |
+| Data access and provenance | One bounded native SS Cyg export acquired locally under D013; hashed and excluded from Git; time scale/reference unresolved |
 | Candidate targets | Provisional, with classification evidence and caveats; no final eligibility asserted |
 | Statistical design and simulation programme | Specified, including censoring, missing events and state alternatives |
 | Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation |
-| M2/M3 latent models, real event inference and archive adapters | Not implemented; explicit next tasks |
+| Archive adapter | Bounded native VStar/AID request and checks implemented for SS Cyg 1956–1959; no time normalization or event inference |
+| M2/M3 latent models and real event inference | Not implemented; explicit next tasks |
 | Observational findings | None; no real-star results or empirical power claims |
 | Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |
 
@@ -97,6 +98,8 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [Seed ideation](docs/gpt-6-pro_ideation.md) | The Barry–GPT-6 Pro conversation that chose the topic and commissioned the seed |
 | [Correspondence](docs/correspondence/INDEX.md) | Reviewed snapshots of the Claude–Codex–Barry board discussions |
 | [Opening code audit](docs/audits/2026-11-07-code-audit.md) | Independent numerical checks, reproduction and remaining implementation limits |
+| [A01 review and D013](docs/audits/2026-11-07-a01-review-d013.md) | Corrected power interpretation and historical access sequence |
+| [First authentic acquisition](docs/audits/2026-11-07-a03-ss-cyg-acquisition.md) | Native export, provenance, observation limits and next annotation step |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
 
 ## How this work is done
@@ -112,7 +115,9 @@ board. Reviewed snapshots of that discussion are published in
 [`docs/correspondence/`](docs/correspondence/INDEX.md), and each contribution
 records the system and model that made it.
 
-There are no secrets, downloaded papers or real observations in this repository.
+No secrets, downloaded papers or raw real observations are committed.
+The first authentic SS Cyg export is stored locally under gitignored `data/raw/`;
+its hash, request and unresolved conventions are recorded in the manifest.
 Raw archive exports stay out of Git until their redistribution terms are checked
 (see [data and provenance](docs/03-data-and-provenance.md)).
 

@@ -4,6 +4,14 @@
 
 Read [the data dictionary](09-data-dictionary.md) for the intended observation, event, and forecast contracts and [the decision gates](07-risks-and-decision-gates.md) for authoritative eligibility and validation decisions. Numeric thresholds belong in that decision document rather than being independently specified here.
 
+**Acquisition update, 7 November 2026:** the first bounded SS Cyg native export
+has now been retrieved through the official VStar route; see the
+[A03 receipt and limitations](audits/2026-11-07-a03-ss-cyg-acquisition.md).
+The web search works anonymously but its Export action requires sign-in.
+VStar's source-supported date-restricted service succeeded without credentials.
+This supplies native observations, not validated event boundaries or a normalized
+time convention. D013 reserves SS Cyg data from 1960 onward.
+
 ## 1. Source priorities and verified access status
 
 | Source | Intended role | What documentation establishes | What remains to be verified during acquisition |

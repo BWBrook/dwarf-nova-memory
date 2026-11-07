@@ -7,6 +7,12 @@ the search results, checked key sources, adjudicated and wrote this memo. It is
 Gate A evidence and a set of proposals. Nothing here is a decision until it is
 recorded in `coordination/decisions.md`.
 
+**Review update:** the [Codex review and amended D013](2026-11-07-a01-review-d013.md)
+verify the Table 4 arithmetic but supersede the power/detection interpretation,
+the proposed later-era annotation/reproduction sequence, and claims that a
+small reserved block can confirm sign/calibration. This original memo is
+preserved as the proposal; D013 governs access before any data work.
+
 ## Verdict
 
 **Gate A passes provisionally, with a narrower claim than the seed implies.**

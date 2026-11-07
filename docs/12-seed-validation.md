@@ -54,6 +54,13 @@ this check without replacing the committed example; CI now runs it too.
 The current suite has 22 tests, including independent density-quadrature and
 analytic-regression fixtures plus failure cases for the reproduction checker.
 
+A subsequent [D013 review](audits/2026-11-07-a01-review-d013.md) and
+[bounded A03 acquisition](audits/2026-11-07-a03-ss-cyg-acquisition.md) bring the
+suite to 26 tests. Added checks cover known-Gaussian score moments and the
+native adapter's identity, limits, row-time, duplicate, count and quarantine
+guards. One real raw export now exists outside Git. Native time normalization,
+observational event extraction and model fitting remain unimplemented.
+
 The configured CI matrix proposes Python 3.11–3.13; only the local Python version
 above was actually run in this preparation session. No remote CI run is claimed.
 

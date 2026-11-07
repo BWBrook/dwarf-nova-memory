@@ -9,10 +9,13 @@ protocol and not a completed analysis. Read `README.md`, `docs/01-research-brief
 `docs/02-literature-review.md`, `docs/05-statistical-design.md` and the coordination
 files before changing scientific assumptions.
 
-No astronomical light curves have been retrieved. Every committed photometry or
-forecast table under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The code
-fits only M0/M1 using complete oracle cycles. It does not implement M2/M3, missed
-event inference or a physical accretion-disc model. Do not imply otherwise.
+One bounded SS Cyg native export (1956-01-01 through 1959-01-01) has been
+retrieved locally and remains outside Git; see the acquisition manifest and A03
+report. Native JD scale/reference remain unresolved; no normalized astronomical
+event or forecast table exists. Every committed photometry or forecast fixture
+under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
+still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,
+missed event inference or a physical accretion-disc model. Do not imply otherwise.
 
 ## Scientific invariants
 
