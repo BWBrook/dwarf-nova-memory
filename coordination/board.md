@@ -13,7 +13,7 @@ claims and handovers.
 | A01 | Independently challenge novelty and physical framing | Done 2026-11-07 | Claude | [A01 memo](../docs/audits/2026-11-07-a01-novelty-framing.md): Gate A passes provisionally with a narrower claim; published partial r ≈ 0.13 verified; [power interpretation and D013 amended](../docs/audits/2026-11-07-a01-review-d013.md) by Codex |
 | A02 | Audit code and reproduce a key probability independently | Done 2026-11-07, seed scope only | Codex | [Audit](../docs/audits/2026-11-07-code-audit.md); 22 tests, independent fixtures, 16-table numerical reproduction |
 | A03 | Resolve one real target and obtain an authentic export | Native acquisition done 2026-11-07; normalization pending | Codex | [A03 receipt](../docs/audits/2026-11-07-a03-ss-cyg-acquisition.md): 3438 visual rows, 124 limits, raw hash/manifest; only 1956–1959; native time scale/reference unresolved |
-| A04 | Annotate development events and coverage | Ready after native time/flag review; pre-1960 only | Claude + independent Codex subset | Independent boundary brackets in an early interval; preserve limits/discrepant flags and disagreement; no 1960+ annotation |
+| A04 | Annotate development events and coverage | Claude 1956–1958 done 2026-11-07; Codex blind 1957 subset next | Claude + independent Codex subset | [A04 memo](../docs/audits/2026-11-07-a04-review-and-annotation.md): 23 events, envelope boundaries about 1 d, endpoint-error shift ≈ 0.003; Codex annotates 1957 blind under [protocol v1](../docs/protocols/a04-event-bracketing-v1.md), then compares |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -23,9 +23,11 @@ claims and handovers.
 
 ## Current blocking information
 
-SS Cyg native access is established for one early interval. Native time
-scale/reference, boundary precision, usable-cycle counts, other targets
-and operating characteristics remain unresolved. The 1960–2017 candidate
+SS Cyg native access is established for one early interval (1956–1958).
+Visual JD is presumed UT-based geocentric, bounded at 0.006 d. Boundary
+precision in well-covered seasons is about a day (A04). Second-annotator
+agreement, coverage in earlier decades, extraction rules, usable-cycle counts,
+other targets and operating characteristics remain unresolved. The 1960–2017 candidate
 evaluation is sealed at the raw-data level under D013, with published aggregate
 exposure disclosed. These are research unknowns, not values to invent.
 
@@ -84,3 +86,20 @@ until primary evaluation is sealed.
 
 Code, provenance and review commit: [`1428ce2`](https://github.com/BWBrook/dwarf-nova-memory/commit/1428ce27bf9ad0b47eb29f8e79d9193f437e2c26).
 The handoff is board thread 142; raw exports and the local figure are not committed.
+
+## Completed tranche — D013 review, metadata check and A04 annotation, 7 November 2026
+
+Claude, `main`, base `04a8b69`. I accepted D013's amendments and checked native
+timing and flag documentation. I then annotated SS Cyg outbursts in
+1956-01-01 to 1959-01-01, using a protocol pushed (`1bfbca5`) before any
+magnitudes were viewed. Owned files:
+
+- `docs/protocols/a04-event-bracketing-v1.md`;
+- `docs/audits/2026-11-07-a04-review-and-annotation.md`;
+- `src/dnmem/brackets.py` and `scripts/a04_*`;
+- `data/annotations/`;
+- `tests/test_brackets.py` and `tests/test_a04_annotation.py`;
+- the D013 review line, the status lines in AGENTS/README, and my ledger entry.
+
+No 1959+ data were viewed. Next: Codex annotates the 1957 subset blind (memo
+§4), then compares, then acquires the rest of the open era in bounded requests.

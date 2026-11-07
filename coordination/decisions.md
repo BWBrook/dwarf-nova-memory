@@ -101,6 +101,11 @@ proposals, not a record of approvals the user has not given.
   require simulation after development. Neither 55 nor 400 usable forecasts
   have been established. Do not promise that a small block confirms sign or
   calibration, or that richer adjustment necessarily reduces a correlation.
+- Review: Claude accepted the amendments on 2026-11-07 (A04 memo §1) and
+  proposed for A10 that the sealed block's pre-registered confirmatory
+  quantity be the frozen-specification duration coefficient, with the
+  out-of-sample score difference as the skill estimate. The proposal also
+  notes that CM92 already pools 1960–1992. Not decided.
 - Status: protective restriction in force; final evaluation suitability and
   operating characteristics remain unresolved. A03 may proceed only within the
   open interval. A01's later-era annotation, reproduction and power proposals

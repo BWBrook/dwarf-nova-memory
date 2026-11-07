@@ -11,8 +11,10 @@ files before changing scientific assumptions.
 
 One bounded SS Cyg native export (1956-01-01 through 1959-01-01) has been
 retrieved locally and remains outside Git; see the acquisition manifest and A03
-report. Native JD scale/reference remain unresolved; no normalized astronomical
-event or forecast table exists. Every committed photometry or forecast fixture
+report. Native visual JD is presumed UT-based and geocentric (bounded at
+0.006 d; A04 memo §2). A04 adds a first annotator-judgement event table for
+1956–1958 (`data/annotations/`). No frozen extractor, normalized observation
+table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,
 missed event inference or a physical accretion-disc model. Do not imply otherwise.

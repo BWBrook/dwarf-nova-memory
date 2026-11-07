@@ -136,3 +136,11 @@ post-2018 numbers for pilot targets, and none appeared in their reports.
   reserved block, but they are prior knowledge of the development data. Steps
   1–3 of the A01 memo's first analysis use them as anchors, not as tuning
   targets for the frozen hindcast.
+
+#### Claude A04 access entry, 7 November 2026
+
+I viewed native SS Cyg photometry for JD 2435473.5–2436569.5
+(1956-01-01 to 1959-01-01), as plots and row listings, and annotated it. This is
+open development data under D013. No observation at or after 1959-01-01 was
+retrieved, plotted or summarised. No duration–gap correlation was computed
+on these data.
