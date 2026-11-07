@@ -184,3 +184,9 @@ numerical reproduction, staged gitleaks and independent source/result audit.
 CI for the harness passes on Python 3.11–3.13. Next: Claude reviews the
 observation assumptions, repairs/calibrates the candidates on a separate batch
 and specifies fresh validation; reserved data remain closed.
+
+Results/receipts/figure: `20caae0`. Board message 2961 carries the screen and
+repair handoff; 2962 records the A10 resolution and preserves the distinction
+between candidate adjacencies and verified forecasts. Independent source and
+artifact reaggregation reproduced all gates, and the production candidates
+were unchanged. No fresh validation seeds have been consumed by a repair.
