@@ -1,0 +1,90 @@
+{
+  "source_sha256": {
+    "aavso_ss_cyg_1896_1900_20261107": "bb3a3d4168c3fee91488798a68d080e9ad5ae2e3014b9530da8afab47460a210",
+    "aavso_ss_cyg_1900_1910_20261107": "cc74ccdbca0403af1d791718d1a1387718a9ff8dbe5940f97dc583b0e891e8b1",
+    "aavso_ss_cyg_1904_1907_20261107": "579e144485fe9f703cf5425853ef178296c789571743e7adc581324a94354bcb",
+    "aavso_ss_cyg_1910_1920_20261107": "3ab53cf2877382243bd609f2000fd8721729ef2ed2b7b53adeb0857d80399aee",
+    "aavso_ss_cyg_1920_1930_20261107": "d0411463e58d162de213487244032082de5ed4b0137da6a5ad56b868193f7352",
+    "aavso_ss_cyg_1924_1927_20261107": "398537e920a7636382dddb9e068fe500e312a693ce190abef92252cb38a6d739",
+    "aavso_ss_cyg_1930_1940_20261107": "5d3917fe1ddf2c4407e3e2511b90e9ffcad3e7f918718cd4c67e9f9f344c1a58",
+    "aavso_ss_cyg_1940_1950_20261107": "58b9e68e7ce85101441bd6d9e619b153371fba3164fd1a6faea90711951495b7",
+    "aavso_ss_cyg_1944_1947_20261107": "e0ed47d4761bd08462f306d0b634d0bb444fc892ba91e877bea44d5a316226eb",
+    "aavso_ss_cyg_1950_1956_20261107": "8f645708716e8809b3d681effbacd08fa935c3643b9e50f1d08e7e2a6705e563",
+    "aavso_ss_cyg_1956_1959_20261107": "1840efeaa141ffd62899b54f6c078e823dede90437d7f44f5b7904f40c8ad87f",
+    "aavso_ss_cyg_1959_end_20261107": "7118b04fd946b8bc1b98c7c1212d5eee70406fba448a0830085e2bce0c24a1fb"
+  },
+  "unique_native_rows": 72635,
+  "identical_overlaps": 8867,
+  "duration_marginal": {
+    "n": 330,
+    "min": 5.060000000055879,
+    "median": 10.444999999599531,
+    "max": 21.300000000279397
+  },
+  "gap_marginal": {
+    "n": 311,
+    "min": 16.34000000078231,
+    "median": 40.03249999973923,
+    "max": 90.40650000004098
+  },
+  "observation_model": {
+    "n_rows": 72122,
+    "n_detections": 68269,
+    "n_limits": 3853,
+    "n_observers": 579,
+    "native_jd_min": 2413729.0,
+    "native_jd_max": 2436933.7,
+    "calibration_bins": 8315,
+    "plateau_bins": 2034,
+    "offset_quantiles": {
+      "q25": -0.045454545454545456,
+      "q50": 0.0,
+      "q75": 0.0
+    },
+    "sigma_quantiles": {
+      "q25": 0.11119500000000025,
+      "q50": 0.185325,
+      "q75": 0.2223900000000005
+    },
+    "plateau_residual_quantiles": {
+      "q25": -0.1999999999999993,
+      "q50": 0.0,
+      "q75": 0.1999999999999993
+    }
+  },
+  "strata": [
+    {
+      "stratum": "1900_1909",
+      "start": 2415020.5,
+      "stop": 2418672.5,
+      "aligned_close_anchors_omitted": 0,
+      "scheduled_rows": 3217,
+      "aligned_anchors": 41
+    },
+    {
+      "stratum": "1910_1929",
+      "start": 2418672.5,
+      "stop": 2425977.5,
+      "aligned_close_anchors_omitted": 1,
+      "scheduled_rows": 28913,
+      "aligned_anchors": 142
+    },
+    {
+      "stratum": "1930_1949",
+      "start": 2425977.5,
+      "stop": 2433282.5,
+      "aligned_close_anchors_omitted": 2,
+      "scheduled_rows": 26347,
+      "aligned_anchors": 125
+    },
+    {
+      "stratum": "1950_1959",
+      "start": 2433282.5,
+      "stop": 2436934.0,
+      "aligned_close_anchors_omitted": 3,
+      "scheduled_rows": 12916,
+      "aligned_anchors": 71
+    }
+  ],
+  "scope": "separate marginal calibration only; no empirical real duration-gap association"
+}

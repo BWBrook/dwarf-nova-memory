@@ -13,8 +13,8 @@ claims and handovers.
 | A01 | Independently challenge novelty and physical framing | Done 2026-11-07 | Claude | [A01 memo](../docs/audits/2026-11-07-a01-novelty-framing.md): Gate A passes provisionally with a narrower claim; published partial r ≈ 0.13 verified; [power interpretation and D013 amended](../docs/audits/2026-11-07-a01-review-d013.md) by Codex |
 | A02 | Audit code and reproduce a key probability independently | Done 2026-11-07, seed scope only | Codex | [Audit](../docs/audits/2026-11-07-code-audit.md); 22 tests, independent fixtures, 16-table numerical reproduction |
 | A03 | Resolve one real target and obtain an authentic export | Native acquisition done 2026-11-07; normalization pending | Codex | [A03 receipt](../docs/audits/2026-11-07-a03-ss-cyg-acquisition.md): 3438 visual rows, 124 limits, raw hash/manifest; only 1956–1959; native time scale/reference unresolved |
-| A04 | Annotate development events and coverage | Done 2026-11-07; disputes adjudicated | Claude + Codex | [Comparison](../docs/audits/2026-11-07-a04-independent-comparison-open-era.md); [adjudication](../docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md): E15 end was Claude's error, E14 onset and E16 end were representation cases; sealed labels retained |
-| A04b | Extraction and coverage candidates; open-era injection/recovery | Candidates X1/X2 done (Claude); harness next (Codex) | Claude extractors, Codex harness | X1/X2 match both annotations; injection/recovery per A04b §5 must establish completeness, interval coverage and null association bias before any extractor is frozen |
+| A04 | Annotate development events and coverage | Boundaries adjudicated; conditional synthetic screen complete, both candidates require repair | Claude + Codex | [A04c recovery audit](../docs/audits/2026-11-07-a04c-injection-recovery.md); 3,200 histories, effective coverage fails; original labels/candidates retained |
+| A04b | Extraction and coverage candidates; open-era injection/recovery | Screen complete in A04c; qualification fails | Claude extractors, Codex harness | Both candidates retained unchanged; conditional-vs-effective coverage and 1950s null bias prevent freeze; repair and fresh validation next |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -26,9 +26,10 @@ claims and handovers.
 
 The requested SS Cyg stream through native JD 2436934.0 is acquired in 12
 hashed exports, with 72,635 unique native IDs. Early coverage varies sharply.
-Independent annotations disagree at three boundaries; envelope coverage,
-extraction/eligibility rules, usable-cycle counts, other targets and operating
-characteristics remain unresolved. UT/geocentric timing is presumed; a
+The three boundary disagreements are adjudicated. Conditional synthetic
+screening fails qualification; extraction/eligibility, confirmation, usable
+forecast counts, other targets and operating characteristics remain unresolved.
+UT/geocentric timing is presumed; a
 convention sensitivity is not a bound on historical record errors. The 1960–2017 candidate
 evaluation is sealed at the raw-data level under D013, with published aggregate
 exposure disclosed. These are research unknowns, not values to invent.
@@ -154,7 +155,7 @@ Next: Codex builds the injection/recovery harness (A04b §5) independently of
 the extractor code, adds an X3 candidate if it wishes, and reports against the
 pre-stated selection criteria.
 
-## Active tranche — A04c injection/recovery, 7 November 2026
+## Completed tranche — A04c injection/recovery, 7 November 2026
 
 Codex, base `4945af6`, implements the synthetic generator, observation model,
 independent scorer and seeded runner. The X1/X2 source remains unchanged.
@@ -165,5 +166,21 @@ The decisive null uses generated renewal times; fixed-onset alignment is a
 sampling diagnostic because Q=C−D. Criteria stay at threshold 10.0, with
 9.5/10.5 as truth-referenced sensitivities. All data inputs remain pre-1960.
 No empirical real duration–gap association or real forecast fit is authorized.
-Stop after the frozen screening grid and independent harness review establish
-which candidates pass, fail or remain unresolved, with Monte Carlo uncertainty.
+The stop condition is the frozen screening grid plus independent harness review,
+with explicit pass/fail/inconclusive criteria and Monte Carlo uncertainty.
+
+Outcome: `c2f6eed` freezes implementation choices; `3bb2237` commits the
+independently implemented harness before production. The 3,200-history grid
+completed with 57,600 metric rows and 288 aggregate cells, no extraction
+exceptions and no candidate selected. X1 conditional end coverage is 74–80%;
+X2 conditional intervals perform better but effective onset coverage is
+88–90%. All short-completeness and false-episode gates pass. Null bias clears
+the margin in 1910–1949 and remains inconclusive in the 1950s. No post-screen
+widening or extractor change was made. Detailed evidence and limitations are
+in the A04c report; full payloads remain gitignored.
+
+Local verification: 64 tests, structural validator, original sixteen-table
+numerical reproduction, staged gitleaks and independent source/result audit.
+CI for the harness passes on Python 3.11–3.13. Next: Claude reviews the
+observation assumptions, repairs/calibrates the candidates on a separate batch
+and specifies fresh validation; reserved data remain closed.

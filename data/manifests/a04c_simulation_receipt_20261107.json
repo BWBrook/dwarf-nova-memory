@@ -1,0 +1,107 @@
+{
+  "base_seed": 2026110704,
+  "replicates_per_cell": 200,
+  "tasks": 3200,
+  "workers": 4,
+  "inputs_sha256": "4b76fb3678f19f69eaa0a46c9edfac203bc6fb2cae35a8b17554e0f9207c93f5",
+  "source_sha256": {
+    "aavso_ss_cyg_1896_1900_20261107": "bb3a3d4168c3fee91488798a68d080e9ad5ae2e3014b9530da8afab47460a210",
+    "aavso_ss_cyg_1900_1910_20261107": "cc74ccdbca0403af1d791718d1a1387718a9ff8dbe5940f97dc583b0e891e8b1",
+    "aavso_ss_cyg_1904_1907_20261107": "579e144485fe9f703cf5425853ef178296c789571743e7adc581324a94354bcb",
+    "aavso_ss_cyg_1910_1920_20261107": "3ab53cf2877382243bd609f2000fd8721729ef2ed2b7b53adeb0857d80399aee",
+    "aavso_ss_cyg_1920_1930_20261107": "d0411463e58d162de213487244032082de5ed4b0137da6a5ad56b868193f7352",
+    "aavso_ss_cyg_1924_1927_20261107": "398537e920a7636382dddb9e068fe500e312a693ce190abef92252cb38a6d739",
+    "aavso_ss_cyg_1930_1940_20261107": "5d3917fe1ddf2c4407e3e2511b90e9ffcad3e7f918718cd4c67e9f9f344c1a58",
+    "aavso_ss_cyg_1940_1950_20261107": "58b9e68e7ce85101441bd6d9e619b153371fba3164fd1a6faea90711951495b7",
+    "aavso_ss_cyg_1944_1947_20261107": "e0ed47d4761bd08462f306d0b634d0bb444fc892ba91e877bea44d5a316226eb",
+    "aavso_ss_cyg_1950_1956_20261107": "8f645708716e8809b3d681effbacd08fa935c3643b9e50f1d08e7e2a6705e563",
+    "aavso_ss_cyg_1956_1959_20261107": "1840efeaa141ffd62899b54f6c078e823dede90437d7f44f5b7904f40c8ad87f",
+    "aavso_ss_cyg_1959_end_20261107": "7118b04fd946b8bc1b98c7c1212d5eee70406fba448a0830085e2bce0c24a1fb"
+  },
+  "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "preparation_receipt": {
+    "git_commit": "c2f6eed2e1cdefb6bd497f670e3e048854350189",
+    "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "source_sha256": {
+      "aavso_ss_cyg_1896_1900_20261107": "bb3a3d4168c3fee91488798a68d080e9ad5ae2e3014b9530da8afab47460a210",
+      "aavso_ss_cyg_1900_1910_20261107": "cc74ccdbca0403af1d791718d1a1387718a9ff8dbe5940f97dc583b0e891e8b1",
+      "aavso_ss_cyg_1904_1907_20261107": "579e144485fe9f703cf5425853ef178296c789571743e7adc581324a94354bcb",
+      "aavso_ss_cyg_1910_1920_20261107": "3ab53cf2877382243bd609f2000fd8721729ef2ed2b7b53adeb0857d80399aee",
+      "aavso_ss_cyg_1920_1930_20261107": "d0411463e58d162de213487244032082de5ed4b0137da6a5ad56b868193f7352",
+      "aavso_ss_cyg_1924_1927_20261107": "398537e920a7636382dddb9e068fe500e312a693ce190abef92252cb38a6d739",
+      "aavso_ss_cyg_1930_1940_20261107": "5d3917fe1ddf2c4407e3e2511b90e9ffcad3e7f918718cd4c67e9f9f344c1a58",
+      "aavso_ss_cyg_1940_1950_20261107": "58b9e68e7ce85101441bd6d9e619b153371fba3164fd1a6faea90711951495b7",
+      "aavso_ss_cyg_1944_1947_20261107": "e0ed47d4761bd08462f306d0b634d0bb444fc892ba91e877bea44d5a316226eb",
+      "aavso_ss_cyg_1950_1956_20261107": "8f645708716e8809b3d681effbacd08fa935c3643b9e50f1d08e7e2a6705e563",
+      "aavso_ss_cyg_1956_1959_20261107": "1840efeaa141ffd62899b54f6c078e823dede90437d7f44f5b7904f40c8ad87f",
+      "aavso_ss_cyg_1959_end_20261107": "7118b04fd946b8bc1b98c7c1212d5eee70406fba448a0830085e2bce0c24a1fb"
+    },
+    "inputs_sha256": "4b76fb3678f19f69eaa0a46c9edfac203bc6fb2cae35a8b17554e0f9207c93f5",
+    "code_sha256": {
+      "scripts/run_injection_recovery.py": "218332fab6ed51ad0964c223b0cf6a2b1457b6baf764181bcf8d4fbbef13d0ff",
+      "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+      "src/dnmem/coverage.py": "fe09b8134f3131dc3c3b1d2192270f4534916d54da3f7a3012ed4bf01016860c",
+      "src/dnmem/aavso.py": "480ef10ad5eb19f7daf5050b79f194f6de3d9783375621065377cf607b522ef1",
+      "src/dnmem/injection_observe.py": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581"
+    }
+  },
+  "git_commit": "3bb22375725898d9ea520ed94d4b36949eed1de4",
+  "dirty": false,
+  "code_sha256": {
+    "scripts/run_injection_recovery.py": "218332fab6ed51ad0964c223b0cf6a2b1457b6baf764181bcf8d4fbbef13d0ff",
+    "docs/protocols/a04c-injection-recovery-v1.md": "0f35abb8c1a2430cd918588c98fe486b5fe75018c3fc4a1d3a5e1b892b72e614",
+    "src/dnmem/injection_observe.py": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+    "src/dnmem/injection_score.py": "4cad219a69948f0b66d868b1b271a2b0c5f105d469dccb20fbcd332e14b11d9c",
+    "src/dnmem/injection_truth.py": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+    "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976"
+  },
+  "scope": "conditional synthetic recovery; no real forecast scores",
+  "elapsed_seconds": 1020.6967735840008,
+  "replicates_sha256": "7fbd11cd79bca0c89006211e9e00224d0dafe8314179f63ab236e9ce3f1b5bf0",
+  "completed_histories": 3200,
+  "aggregate_cells": 288,
+  "metric_rows": 57600,
+  "aggregation_code_sha256": "180eefcd203100f2d8a498594dcb520746f9e38b91eb61654ec81b13fac65656",
+  "aggregate_csv_sha256": "324b3a6ae28f0e2525891f12bd87b26fbb30b7d258713c5111b48fe33718a4cb",
+  "full_summary_json_sha256": "446817f6ba5fafdc71705c4267e34d662698ab04a112500da0c40cc4dffbba9f",
+  "candidate_decisions": [
+    {
+      "extractor": "X1",
+      "rule": "C1_4",
+      "verdict": "FAIL",
+      "mean_eligible_pairs_across_three_strata": 268.915
+    },
+    {
+      "extractor": "X1",
+      "rule": "C1_7",
+      "verdict": "FAIL",
+      "mean_eligible_pairs_across_three_strata": 313.76
+    },
+    {
+      "extractor": "X1",
+      "rule": "C2_095",
+      "verdict": "FAIL",
+      "mean_eligible_pairs_across_three_strata": 275.195
+    },
+    {
+      "extractor": "X2",
+      "rule": "C1_4",
+      "verdict": "FAIL",
+      "mean_eligible_pairs_across_three_strata": 268.77
+    },
+    {
+      "extractor": "X2",
+      "rule": "C1_7",
+      "verdict": "FAIL",
+      "mean_eligible_pairs_across_three_strata": 313.625
+    },
+    {
+      "extractor": "X2",
+      "rule": "C2_095",
+      "verdict": "FAIL",
+      "mean_eligible_pairs_across_three_strata": 275.23
+    }
+  ],
+  "selected": null,
+  "preparation_state_note": "Preparation used an uncommitted tree based on c2f6eed; its recorded per-file hashes match clean harness commit 3bb2237. The preparation commit field alone does not identify executed source."
+}

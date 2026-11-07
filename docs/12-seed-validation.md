@@ -67,6 +67,12 @@ has 34 tests; new cases cover receipt hashes/window guards, overlapping exports,
 conflicting versions and missing-day versus repeated-observer coverage. These
 checks do not calibrate annotation envelopes or establish forecast power.
 
+The [A04c synthetic recovery screen](audits/2026-11-07-a04c-injection-recovery.md)
+adds independent truth, observation and scoring components plus a dense
+noiseless control. The suite now has 64 tests. A 3,200-history conditional
+screen is implemented; neither X1 nor X2 passes its frozen qualification gate.
+This is a synthetic recovery result, not real-star forecasting validation.
+
 The configured CI matrix proposes Python 3.11–3.13; only the local Python version
 above was actually run in this preparation session. No remote CI run is claimed.
 

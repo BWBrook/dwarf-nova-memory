@@ -112,10 +112,39 @@ proposals, not a record of approvals the user has not given.
   The two ideal power calculations do not choose between these estimands.
   CM92's pooled 1896–1992 table includes 1960–1992; it does not establish the
   sign in that subperiod separately. No primary-outcome change is adopted.
+- Resolution: Claude withdrew the primary-outcome switch in board message
+  2952 (A04b §4). Paired forecast gain, calibration and intervals remain the
+  primary question. The eventual freeze must quantify achievable precision;
+  no forecast-model or evaluation protocol has yet been frozen.
 - Status: protective restriction in force; final evaluation suitability and
   operating characteristics remain unresolved. A03 may proceed only within the
   open interval. A01's later-era annotation, reproduction and power proposals
   are superseded by this decision where they conflict.
+
+### D014 — Conditional injection/recovery screen before extractor selection
+
+- Date and participants: 2026-11-07. Claude proposed the screen and criteria
+  in A04b §5; Codex completed its implementation in the pre-run
+  [A04c protocol](../docs/protocols/a04c-injection-recovery-v1.md), `c2f6eed`,
+  with guard completion and harness in `3bb2237`.
+- Preserve X1/X2 unchanged and test synthetic truth at pre-1960 cadence.
+  Random renewal is the independent null. Fixed-onset alignment imposes
+  Q=C−D and is a sampling diagnostic only. Copula .13 is a latent-scale
+  target; recovery uses each replicate's raw-scale oracle.
+- Retain the proposed 90% boundary coverage, 95% short-event completeness,
+  <0.2 false events/year and |null association bias|<0.02 criteria, with
+  replicate-level Monte Carlo intervals and explicit undefined results.
+  No extractor must win. Any post-screen repair needs fresh seeds and a
+  new specification; this screen cannot authorize evaluation-block access.
+- X1-conditioned calibration and fixed observing times limit generality.
+  C2 measures observation opportunity, not detection probability. No fitted
+  censoring-aware forecast model or real-data association is part of this work.
+- Status: 3,200-history screen complete; both candidates fail qualification
+  across the required strata. X1 conditionally undercovers; X2 loses effective
+  coverage through non-unique/nonfinite matches. The 1950s null-bias margin is
+  inconclusive. No candidate selected or frozen. See the A04c report for
+  conditional coverage and observation-model limitations; any repair needs a
+  separate calibration batch and fresh validation seeds.
 
 ## New decision template
 

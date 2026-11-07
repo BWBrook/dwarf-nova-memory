@@ -16,7 +16,10 @@ Native visual JD is presumed UT-based and geocentric; the 0.006 d convention
 sensitivity does not bound all historical record errors. A04 supplies Claude's
 1956–1958 judgements and a sealed independent 1957 subset, with unresolved
 boundary differences, now adjudicated (`data/annotations/`). Two candidate
-extractors (`src/dnmem/extract.py`, A04b) await injection/recovery. No frozen
+extractors (`src/dnmem/extract.py`, A04b) have completed conditional synthetic
+recovery screening (A04c); neither passes the frozen effective-coverage gate.
+X1 conditionally undercovers boundaries; X2's finite matched brackets perform
+better but lost unique matches reduce effective onset coverage. No frozen
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,

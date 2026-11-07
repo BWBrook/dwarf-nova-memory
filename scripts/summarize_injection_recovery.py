@@ -23,10 +23,16 @@ RATIOS = {
     "hidden_passed_fraction": ("hidden_passed", "pairs_passed"),
     "rejected_true_fraction": ("rejected_trueconsecutive", "mapped_trueconsecutive"),
     "type_error": ("type_misclassified_count", "duration_finite_matched_count"),
+    "missing_confirmation_fraction": ("confirmation_missing_count", "confirmation_candidate_count"),
+    "negative_confirmation_fraction": ("confirmation_negative_lag_count", "confirmation_observed_count"),
 }
-MEANS = ("oracle_r_all", "recovered_r", "total_bias", "selected_oracle_r", "selection_bias", "boundary_bias",
+MEANS = ("oracle_r_all", "recovered_r", "total_bias", "selected_oracle_r", "recovered_matched_r",
+         "selection_bias", "boundary_bias", "unmatched_bias",
          "eligible_count", "censored_count", "association_n", "onset_midpoint_bias", "end_midpoint_bias",
-         "onset_midpoint_rmse", "end_midpoint_rmse", "onset_mean_width", "end_mean_width")
+         "onset_midpoint_rmse", "end_midpoint_rmse", "onset_mean_width", "end_mean_width",
+         "split_truth_count", "split_excess_count", "merged_episode_count", "merged_excess_count",
+         "duration_midpoint_bias", "duration_midpoint_rmse", "confirmation_lag_mean",
+         "confirmation_lag_median", "confirmation_lag_rmse", "invalid_pair_count")
 
 
 def number(row, key):
@@ -78,6 +84,8 @@ def summarize(directory, output):
     groups = defaultdict(list)
     with replicate_path.open(newline="") as handle:
         for row in csv.DictReader(handle):
+            recovered, matched = number(row, "recovered_r"), number(row, "recovered_matched_r")
+            row["unmatched_bias"] = None if recovered is None or matched is None else recovered - matched
             groups[tuple(row[k] for k in KEYS)].append(row)
     expected = set(product(("1900_1909", "1910_1929", "1930_1949", "1950_1959"),
                            ("random", "aligned"), ("null", "alternative"), ("9.5", "10.0", "10.5"),
@@ -116,7 +124,9 @@ def summarize(directory, output):
     passing = [d for d in decisions if d["verdict"] == "PASS"]
     chosen = max(passing, key=lambda d: d["mean_eligible_pairs_across_three_strata"]) if passing else None
     (output / "summary.json").write_text(json.dumps({"run_receipt": receipt, "cells": results,
-        "candidate_decisions": decisions, "selected": chosen}, indent=2, allow_nan=False)+"\n")
+        "candidate_decisions": decisions, "selected": chosen,
+        "aggregation_code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "scope": "ratio-of-counts rates and means of replicate diagnostics; 95% normal Monte Carlo intervals"}, indent=2, allow_nan=False)+"\n")
     with (output / "summary.csv").open("w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(flat[0]), lineterminator="\n")
         writer.writeheader()

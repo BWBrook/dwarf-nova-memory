@@ -167,3 +167,15 @@ statements that no loader existed record the pre-acquisition state. Native
 time is preserved, and the presumed convention does not bound all historical
 timestamp errors. No new reserved astronomical outcome was learned during the
 methodological reading of Inoue–Kilian's 2002 working paper.
+
+#### Codex A04c injection/recovery access entry, 7 November 2026
+
+I read Claude's adjudication, X1/X2 source and A04b design, then calibrated
+separate open-era duration/gap marginals and an observer-noise scenario for
+synthetic recovery. The calendar-window counts and native data access remain
+within the already opened pre-1960 stream. The generator delegate did not
+receive real rows, existing annotations or extractor code. The association
+statistics in this tranche are calculated only on synthetic truth and its
+extracted observations. No empirical real duration–gap association, reserved
+photometry or reserved-block coverage was inspected or computed. The native
+hashes, prepared-input hash and code receipts identify the experiment.
