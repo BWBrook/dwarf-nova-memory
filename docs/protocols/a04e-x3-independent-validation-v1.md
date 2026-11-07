@@ -154,6 +154,8 @@ interval: effective coverage ≥90% at **both** boundaries; short-event
 completeness outside March–May ≥95%; false confirmed episodes <0.2/year;
 absolute paired null-association bias <0.02; first-emission premature rate
 <2% of issued unique-matched events and missing rate <5% of unique matches.
+The false-episode criterion applies both to the retrospective catalogue and
+to false causal emissions, so erased or unmatched emissions cannot evade it.
 Undefined statistics cannot pass. No widening, repairs or seed extensions
 are fitted to the validation outcomes.
 

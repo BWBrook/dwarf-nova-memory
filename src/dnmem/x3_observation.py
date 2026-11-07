@@ -65,9 +65,10 @@ def state_compatible_schedule(days, history, start, stop):
     result = []
     changed = unmatched = 0
     dropped = 0
-    for day, original in sorted(table.items()):
-        representative = median(float(r["JD"]) for r in original["slots"])
-        wanted = "B" if history.evaluate([representative])[0] <= 10 else "F"
+    ordered = sorted(table.items())
+    brightness = history.evaluate([median(float(r["JD"]) for r in d["slots"]) for _, d in ordered])
+    for (day, original), magnitude in zip(ordered, brightness):
+        wanted = "B" if magnitude <= 10 else "F"
         donors = by_state[wanted]
         available = donors[bisect_left(donors, day-15):bisect_right(donors, day+15)]
         if available:

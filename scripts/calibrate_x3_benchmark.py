@@ -36,13 +36,22 @@ def provenance():
             "python": sys.version, "code_sha256": {str(p.relative_to(ROOT)): digest(p) for p in paths}}
 
 
+def checked_sources(paths, expected):
+    actual = {p.parent.name: digest(p) for p in paths}
+    if len(paths) != 12 or len(actual) != 12 or actual != expected:
+        raise ValueError("native acquisitions differ from the frozen twelve-source hash map")
+    return actual
+
+
 def prepare(args):
     from dnmem.coverage import combine_acquisitions
     args.output.mkdir(parents=True, exist_ok=False)
     original = json.loads(args.original.read_text())
-    rows, _ = combine_acquisitions(sorted((ROOT / "data/raw").glob("aavso_ss_cyg_*/native.xml")))
-    if any(float(r["JD"]) >= 2436934.5 for r in rows):
-        raise ValueError("reserved observations forbidden")
+    paths = sorted((ROOT / "data/raw").glob("aavso_ss_cyg_*/native.xml"))
+    actual_sources = checked_sources(paths, original["source_sha256"])
+    rows, _ = combine_acquisitions(paths)
+    if any(not 2413559.5 <= float(r["JD"]) <= 2436934.0 for r in rows):
+        raise ValueError("observations outside the frozen acquisition window forbidden")
     model, noise_summary = calibrate_brightness(rows, original["model"])
     days = labelled_days(rows)
     strata = []
@@ -54,7 +63,7 @@ def prepare(args):
     payload = {**original, "brightness_model": model, "strata": strata, "real_morphology": real}
     write_json(args.output / "inputs.json", payload)
     receipt = {**provenance(), "original_inputs_sha256": digest(args.original),
-               "inputs_sha256": digest(args.output / "inputs.json"), "source_sha256": original["source_sha256"],
+               "inputs_sha256": digest(args.output / "inputs.json"), "source_sha256": actual_sources,
                "outburst_calibration": noise_summary, "real_morphology": real}
     write_json(args.output / "preparation_receipt.json", receipt)
     print(json.dumps({"outburst_calibration": noise_summary, "real_magnitude10": real["10.0"]}, indent=2))
