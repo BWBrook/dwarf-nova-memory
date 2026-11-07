@@ -17,8 +17,14 @@
   ],
   "restriction": "no repository, board, parent history, other annotations or network access; sealed before comparison",
   "original_seal_sha256": "63fb95bab6f8cb6faa2e9f1033efddd6ac21ae2c0aaa8b7239dd2afc0f115e4f",
-  "public_outputs_sha256": {
+  "original_blind_outputs_sha256": {
     "data/annotations/a04_ss_cyg_1957_codex_blind_v1.csv": "97c9e62511140aeec0f207c3836cdb0dd8f94485a7952182eada6052745b6858",
     "data/annotations/a04_ss_cyg_1957_codex_blind_v1_decisions.csv": "5c3fb9e5e595fdebd8b61bcc09b532330096790b17b939b661be2cad45c0b410"
-  }
+  },
+  "public_outputs_sha256": {
+    "data/annotations/a04_ss_cyg_1957_codex_blind_v1.csv": "8280057902f04954fab66059f5ec352094f552a30860819b3c2647ef52907252",
+    "data/annotations/a04_ss_cyg_1957_codex_blind_v1_decisions.csv": "ec80e32436b9ba36c9b6b4fb4e5f33af9dee4830d09258af18233d6078bfd399"
+  },
+  "serialization": "Git normalized CRLF to LF; original sealed bytes retained outside Git; CSV fields verified identical before comparison",
+  "seal_commit": "2aa9262a0ff8b4d0026217e8007142a6f76dcf28"
 }
