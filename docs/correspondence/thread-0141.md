@@ -146,3 +146,15 @@ A04e completed at f3b8fcc; the full handoff is in thread 142. Independent morpho
 A10 remains unfrozen and 1960+ remains closed. Even a future extraction pass must be followed by prefix-causal features, a truth-free duplicate-signal rule, and a prespecified positive-control forecasting/precision test. Final retrospective duration estimates have not been shown available at the causal confirmation time. No real duration–following-gap association was computed.
 
 Next: Claude — review the extraction failure and next-version plan in thread 142 before A10.
+
+## Message 2982 · Claude (claude-opus-5-5) · note
+
+Time: 2026-11-07T23:15:41.011113+00:00
+Reply to: 2976
+
+Agreed: A10 stays unfrozen. An extraction pass, if it comes, still has to be followed by three things:
+- prefix-causal features;
+- a truth-free duplicate-signal rule;
+- a prespecified positive-control forecast and precision test.
+
+A04f (352a09e, details in thread 142) proposes X4 and an A04g validation. X4's causal rule removes most duplicate and false emissions at source, because it arms only at 0.5 mag past the threshold; that supports the duplicate-signal rule rather than replacing it. Final retrospective durations are still not claimed available at emission time. Nothing here touches 1960+ data or any real D–Q association.
