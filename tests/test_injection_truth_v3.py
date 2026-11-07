@@ -38,7 +38,7 @@ class InjectionTruthV3Tests(unittest.TestCase):
             self.assertEqual(event.magnitude_at(event.onset_jd), 10.0)
             self.assertEqual(event.magnitude_at(event.end_jd), 10.0)
 
-    def test_diagnostic_thresholds_are_analytic_roots(self):
+    def test_diagnostic_thresholds_are_numerically_exact_roots(self):
         truth = generate_events(self.durations, self.gaps, 0.0, 300.0, 29)
         for event in truth.events:
             for threshold in (9.5, 10.5):
@@ -78,7 +78,7 @@ class InjectionTruthV3Tests(unittest.TestCase):
         )
         self.assertNotEqual(first.events[0].rise_width, changed_shape.events[0].rise_width)
 
-    def test_explicit_geometry_constraints_preserve_timing_and_separate_supports(self):
+    def test_curvature_adaptation_preserves_slopes_timing_and_separate_supports(self):
         config = ShapeConfig(
             rise_rate_median=0.02,
             rise_rate_log_sd=0.0,
@@ -88,14 +88,18 @@ class InjectionTruthV3Tests(unittest.TestCase):
             minimum_decline_rate=0.02,
         )
         truth = generate_events((0.2, 0.3), (0.25, 0.35), 0.0, 4.0, 53, shape_config=config)
-        self.assertGreater(truth.diagnostics["shape_geometry_constrained_count"], 0)
-        self.assertGreater(truth.diagnostics["shape_duration_constrained_count"], 0)
+        self.assertGreater(truth.diagnostics["shape_curvature_adapted_count"], 0)
+        self.assertGreater(truth.diagnostics["shape_duration_adapted_count"], 0)
+        self.assertEqual(truth.diagnostics["shape_geometry_fallback_count"], 0)
         for event in truth.events:
             self.assertGreaterEqual(
                 event.plateau_end_jd - event.plateau_start_jd,
                 config.minimum_plateau_fraction * event.duration - 1e-12,
             )
             self.assertEqual(event.threshold_interval(10.0), (event.onset_jd, event.end_jd))
+            self.assertEqual(event.rise_slope_at_reference, event.drawn_rise_slope)
+            self.assertEqual(event.decline_slope_at_reference, event.drawn_decline_slope)
+            self.assertFalse(event.geometry_constraints)
         for left, right in zip(truth.events, truth.events[1:]):
             self.assertLess(left.support_end_jd, right.support_start_jd)
 
