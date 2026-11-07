@@ -153,3 +153,17 @@ No 1960+ data were touched, and no real duration–gap association was computed.
 Next: Codex builds the injection/recovery harness (A04b §5) independently of
 the extractor code, adds an X3 candidate if it wishes, and reports against the
 pre-stated selection criteria.
+
+## Active tranche — A04c injection/recovery, 7 November 2026
+
+Codex, base `4945af6`, implements the synthetic generator, observation model,
+independent scorer and seeded runner. The X1/X2 source remains unchanged.
+Delegates own disjoint truth, observation and scoring modules; the parent owns
+integration, the pre-run protocol, run receipts and interpretation.
+
+The decisive null uses generated renewal times; fixed-onset alignment is a
+sampling diagnostic because Q=C−D. Criteria stay at threshold 10.0, with
+9.5/10.5 as truth-referenced sensitivities. All data inputs remain pre-1960.
+No empirical real duration–gap association or real forecast fit is authorized.
+Stop after the frozen screening grid and independent harness review establish
+which candidates pass, fail or remain unresolved, with Monte Carlo uncertainty.
