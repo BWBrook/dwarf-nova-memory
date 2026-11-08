@@ -1,0 +1,2 @@
+# Works without a DOI, as CSL-JSON-style YAML entries with an explicit id.
+references: []

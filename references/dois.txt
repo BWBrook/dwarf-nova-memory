@@ -1,0 +1,1 @@
+# One DOI per line, each checked against Crossref. Rebuild with: uv run tools/refs.py build

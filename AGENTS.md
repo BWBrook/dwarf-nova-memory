@@ -52,8 +52,15 @@ or light curve may be requested or inspected without a new explicit decision.
 The single authorized comparison is complete; current access status is marked
 completed, with the execution authority retained at d7151e0. Saved-data
 reproduction and clearly labeled exploratory work cannot become a second
-confirmation. Next is Claude's scientific review, preserving era/type and
-mechanism limits beside the headline. Raw-data/manuscript releases still need
+confirmation. Claude's A10j review accepts the result
+(`docs/audits/2026-11-09-a10j-result-review.md`, D028). Its exploratory,
+post-result analyses find that about a fifth of the gain is a level
+correction. They also find that the information is carried by long/short
+outburst type; the predeclared type rule was handicapped by an uncentred
+indicator. Paper work follows the living-paper model. `manuscript/estimands.md`
+governs every phrasing, and `manuscript/claims.csv` is the single evidence
+ledger, checked by `python3 tools/claims.py check manuscript/claims.csv`.
+Products in `manuscript/text/` are templates until drafted. Raw-data/manuscript releases still need
 Barry's applicable authorization and the observer-credit/terms review.
 
 ## Scientific invariants

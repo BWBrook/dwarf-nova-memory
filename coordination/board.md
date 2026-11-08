@@ -22,13 +22,15 @@ claims and handovers.
 | A10b | Model implementation, repaired ledger and full-chain synthetic controls | Complete development pilot; reviewed in A10c | Codex with independent code/method references | D018 keeps forecast gain confirmatory; [development specification](../docs/protocols/a10b-model-controls-v1.md); no real focal fit or reserved-data access |
 | A10c | Control review; forecast system, OC study and development-fit specification | Implemented and amended in A10d/A10e | Claude review/spec; Codex implementation, OC study and real 1910–1959 fit | [A10c memo](../docs/audits/2026-11-08-a10c-controls-review.md), [protocol](../docs/protocols/a10c-development-fit-v1.md), D020; fallback routing gave duration credit for missing timing; null coefficients negative (end-error coupling); directional matched M3 gives −0.0002 null, +0.0023 injected on A10b scores |
 | A10d/A10e | Directional forecasts, 360-trial OC screen, first real 1910–1959 fit | Complete; reviewed in A10f | Codex | [A10d audit](../docs/audits/2026-11-08-a10d-directional-oc.md), [A10e report](../docs/audits/2026-11-08-a10e-first-development-fit.md); D021, D022; power 27.5%; real β=0.0466, P3 at zero; parameters `ce4ef8d5…` |
-| A10f | Development review and evaluation protocol | Proposed for Codex review; go-ahead pending Barry | Claude protocol; Codex runner, fixtures, rehearsal and sealed run | [A10f memo](../docs/audits/2026-11-08-a10f-development-review.md), [protocol](../docs/protocols/a10f-evaluation-v1.md), D023; real dev LR reached by 5/220 gated nulls, 12/40 injected; slow state disfavoured by lagged-mark bound; conditional power ~1/3 |
+| A10f | Development review and evaluation protocol | Amended by Codex in A10g (D024); executed in A10i | Claude protocol; Codex runner, fixtures, rehearsal and sealed run | [A10f memo](../docs/audits/2026-11-08-a10f-development-review.md), [protocol](../docs/protocols/a10f-evaluation-v1.md), D023; real dev LR reached by 5/220 gated nulls, 12/40 injected; slow state disfavoured by lagged-mark bound; conditional power ~1/3 |
+| A10g–A10i | Sealed runner, checker, rehearsal, protocol DOI and the 1960–2017 run | Complete; reviewed in A10j | Codex | [A10g freeze](../docs/audits/2026-11-08-a10g-evaluation-freeze.md), [A10h repair](../docs/audits/2026-11-08-a10h-native-format-repair.md), [A10i result](../docs/audits/2026-11-09-a10i-sealed-evaluation.md); D024–D027; +0.01653 [0.00495, 0.02812], 441 forecasts; criterion met after post-access format repair |
+| A10j | Result review, exploratory decomposition, paper framing | Complete; exploratory claims await Codex's check | Claude | [A10j memo](../docs/audits/2026-11-09-a10j-result-review.md), D028, [estimands](../manuscript/estimands.md), [claims ledger](../manuscript/claims.csv); level part ≈ 1/5; information carried by long/short type; type rule hit by uncentred indicator |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
 | A08 | Implement observational M0, then M1 | After A07 | Agent implementer + other reviewer | Censoring, boundary propagation, calibration |
 | A09 | Add past-only M2/M3 and identifiability simulation | After A08 | Rotate roles | Same state architecture, no future smoothing |
-| A10 | Freeze evaluation | D018 fixes forecast-gain confirmation; system, gate and development fit done (A10c–e); A10f evaluation protocol proposed | Scientific lead | Codex review and pre-access work, then Barry's go-ahead to open 1960–2017 |
+| A10 | Freeze evaluation | Complete: frozen 1960–2017 comparison met its criterion (A10i); reviewed (A10j) | Scientific lead | Paper from the claims ledger; 2018+ stays closed |
 
 ## Current blocking information
 
@@ -698,3 +700,30 @@ manuscript release is made.
 
 Next: Claude — review the real result and frame the paper with the era/type
 and mechanism qualifications beside the headline; keep 2018 onward closed.
+
+
+## A10j: result reviewed; paper framing seeded
+
+9 November 2026. Claude accepts A10i. The interval, every variant, the eras
+and the routes reproduce from saved scores with separate code. The result
+survives dropping any block (0.0132–0.0194) and an SE up to 1.43 times larger.
+
+Exploratory, post-result:
+
+- about a fifth of the gain is a level correction, because the frozen M2
+  forecasts 1960–2017 gaps 4.6% too long;
+- the information is carried by long versus short outburst type, with
+  nothing detectable within type;
+- the predeclared type rule scored low because its type indicator was
+  uncentred under the fixed baseline, an interaction both agents missed.
+
+The living-paper scaffold, `manuscript/estimands.md` and a 25-claim ledger
+are in place. No products are drafted yet.
+
+[A10j memo](../docs/audits/2026-11-09-a10j-result-review.md); D028.
+2018 onward stays closed.
+
+Next: Codex — independently check C11–C13 and C20–C25, review
+`manuscript/estimands.md`, and set up figures and the makedoc build; Claude
+then reads CM92 and Cannizzo (1993) in full and drafts the products.
+

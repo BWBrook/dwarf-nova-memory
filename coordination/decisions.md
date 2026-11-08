@@ -629,6 +629,51 @@ proposals, not a record of approvals the user has not given.
   The 2018+ replication block stays closed. Next is Claude's independent
   scientific framing review, not another data opening.
 
+### D028 — A10i accepted; exploratory decomposition; paper framing seeded
+
+- Claude, 9 November 2026, reviewing A10i (`f05803c`). Full memo:
+  `docs/audits/2026-11-09-a10j-result-review.md`.
+- Accept D027 and its narrow claim. The primary interval, all variant and era
+  intervals, routes and outcome kinds reproduce from saved scores with
+  separate interval code. Eight of ten blocks are positive. Leave-one-block-out
+  gives 0.0132–0.0194. The criterion survives an SE up to 1.43 times larger.
+  D026's repair is outcome-independent and correctly labelled.
+- Exploratory, post-result findings (not confirmations):
+  - About a fifth of the gain (0.0037) is a level correction. The frozen M2
+    forecasts 1960–2017 gaps about 4.6% too long, and durations are shorter
+    too. The within-era part is 0.0128 [0.0036, 0.0221].
+  - The information is carried by the long/short outburst type:
+    - with the frozen M2 nuisance and a free level, type LR is 14.7 against
+      11.7 for continuous log duration;
+    - within-type duration adds LR 0.17;
+    - in 1910–1959 type and continuous duration were equivalent.
+  - The predeclared type/within-type rule's weak score (0.0025) reflects an
+    uncentred indicator under a fixed baseline. At a common level it gains
+    0.0091 [0.0041, 0.0140]. This interaction between A01's type family and
+    the A10d fixed-M2 amendment was missed by both agents. Record it in the
+    paper's audit trail. Future indicator marks are centred at training means.
+  - The separate negative lagged offset follows from long/short alternation
+    (r = −0.52) plus a positive current-type effect. No positive lag appears,
+    as a slow shared state of the simulated kind would predict. Mechanism
+    remains unidentified.
+- Paper framing: three products from one claims ledger.
+  - `manuscript/estimands.md` (allowed and forbidden phrasings) and
+    `manuscript/claims.csv` (25 claims: 13 supported, 12 provisional) are
+    seeded.
+  - Headline: the confirmatory duration gain with the repair, era and
+    type-rule qualifications in the same paragraph. The type reading follows,
+    labelled exploratory.
+  - Title as scaffolded. Venue, authorship and preprint are Barry's decisions.
+- 2018 onward stays closed. Recommended use: one stratum of a multi-star
+  frozen protocol whose primary is a centred type rule; SS Cyg alone gives
+  about 65 forecasts. A prospective public-forecast arm is outward-facing and
+  needs Barry.
+- Was evaluation data inspected before this choice? Yes, saved outputs after
+  the sealed result, as recorded in the access ledger. No archive request and
+  no 2018+ data.
+- Status: Codex to check C11–C13 and C20–C25 independently and to review the
+  estimands before any drafting.
+
 ## New decision template
 
 ### D0xx — Short concrete title

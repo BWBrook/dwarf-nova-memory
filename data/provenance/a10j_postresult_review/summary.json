@@ -1,0 +1,547 @@
+{
+ "alternation": {
+  "development_1910_1959": {
+   "corr_log_duration_lag1": -0.4006399621894842,
+   "p_long_after_long": 0.17880794701986755,
+   "p_long_after_short": 0.7039106145251397,
+   "pairs": 330,
+   "share_long": 0.4636363636363636
+  },
+  "evaluation_1960_2017": {
+   "corr_log_duration_lag1": -0.5233322617664731,
+   "p_long_after_long": 0.14948453608247422,
+   "p_long_after_short": 0.6639676113360324,
+   "pairs": 441,
+   "share_long": 0.4376417233560091
+  }
+ },
+ "input_sha256": {
+  "committed_primary": "caee226d7729ec55e3421561c493cce5fb748458230cafb59e10796df8ea4ac0",
+  "delay_2-scores.json": "ad6ba23322a0c5d643c5674149b405dafa5903edd1b0a082b189ca9ff256122e",
+  "development_evidence-0.0.json": "4e4a302949e78c971a4855d9eb4f2341097299d433ff17fc0589a3c9c09fa439",
+  "development_frozen_parameters.json": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "development_ledger": "7355a842ca192cd3ceff787464da9ef5d696c4939c1d376295eceb41683fcebe",
+  "development_primary-scores.json": "10a23504602e9a1dbaff7cd7c4df36004923dc1bfab3608996e8c573eaafcd3b",
+  "development_type_within-scores.json": "3b5ee2863bc2d5da84e2722ebdcf4daae73228847194e6b0bc755b4b1a69b475",
+  "evidence-0.0.json": "af78b93906bc7cef3e365b7e327bb88e932c64815a69650d2113f0b11ef53d62",
+  "frozen_parameters.json": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "joint_placebo-scores.json": "2260b6be545499474c766de7affe4ee24f77c5ef43198f7f8a2572660aab9cd1",
+  "ledger-0.0.json": "be96e2fa620b882ebffdcc5d7e4eeb8f427ac773976f4478c965de3023e25d20",
+  "primary-scores.json": "9e8628d1406216afbe0aa5a22e346612646c20d518f9b49cd007716ebc950443",
+  "q_only-scores.json": "c0c2172a7dde53bc0e62f1502dbf5c036730ded19d5037ac7e1f732e9e81f807",
+  "type_within-scores.json": "91e0fb3757a36a6e1aadb6a022f5ee3bf16da59859fec8d890441b3528a3179a",
+  "uniform_end-scores.json": "9fce7181c3b319e148c60e709cf670f0570a61e0eb5b2a0b6d970980ebb5cc53"
+ },
+ "interval_recomputation": {
+  "blocks": [
+   {
+    "block": 0,
+    "mean_gain": 0.02642418029755121,
+    "mean_gain_without_block": 0.015182467305358978,
+    "n": 53,
+    "start_year": 1960
+   },
+   {
+    "block": 1,
+    "mean_gain": 0.04200892375358721,
+    "mean_gain_without_block": 0.013349085730417664,
+    "n": 49,
+    "start_year": 1966
+   },
+   {
+    "block": 2,
+    "mean_gain": 0.04228395549960423,
+    "mean_gain_without_block": 0.013240616611941909,
+    "n": 50,
+    "start_year": 1972
+   },
+   {
+    "block": 3,
+    "mean_gain": 0.002759467533133106,
+    "mean_gain_without_block": 0.018137578136013608,
+    "n": 46,
+    "start_year": 1978
+   },
+   {
+    "block": 4,
+    "mean_gain": 0.01671729749618472,
+    "mean_gain_without_block": 0.016513655974657173,
+    "n": 43,
+    "start_year": 1984
+   },
+   {
+    "block": 5,
+    "mean_gain": -0.01291071936834832,
+    "mean_gain_without_block": 0.019390042103520105,
+    "n": 39,
+    "start_year": 1990
+   },
+   {
+    "block": 6,
+    "mean_gain": -0.009179131911129628,
+    "mean_gain_without_block": 0.01931151141313586,
+    "n": 43,
+    "start_year": 1996
+   },
+   {
+    "block": 7,
+    "mean_gain": 0.027433240562095767,
+    "mean_gain_without_block": 0.015264176719982512,
+    "n": 46,
+    "start_year": 2002
+   },
+   {
+    "block": 8,
+    "mean_gain": 0.0035050393399281327,
+    "mean_gain_without_block": 0.01786893064328111,
+    "n": 41,
+    "start_year": 2008
+   },
+   {
+    "block": 9,
+    "mean_gain": 0.011773162111739753,
+    "mean_gain_without_block": 0.016893441084842843,
+    "n": 31,
+    "start_year": 2014
+   }
+  ],
+  "blocks_positive": 8,
+  "cr0_no_small_sample_factor": {
+   "blocks": 10,
+   "df": 9,
+   "estimate": 0.016533512177436503,
+   "lower_90": 0.005542261142996073,
+   "n": 441,
+   "se": 0.005995948661228292,
+   "upper_90": 0.027524763211876933
+  },
+  "cr1": {
+   "blocks": 10,
+   "df": 9,
+   "estimate": 0.016533512177436503,
+   "lower_90": 0.004947716309598648,
+   "n": 441,
+   "se": 0.006320284834306243,
+   "upper_90": 0.028119308045274356
+  },
+  "eras": {
+   "1960-1992": {
+    "blocks": 6,
+    "df": 5,
+    "estimate": 0.023983208669572265,
+    "lower_90": 0.00910883372629225,
+    "n": 261,
+    "se": 0.007381646584829533,
+    "upper_90": 0.03885758361285228
+   },
+   "1960-2017": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.016533512177436503,
+    "lower_90": 0.004947716309598648,
+    "n": 441,
+    "se": 0.006320284834306243,
+    "upper_90": 0.028119308045274356
+   },
+   "1993-2017": {
+    "blocks": 5,
+    "df": 4,
+    "estimate": 0.005731452263839645,
+    "lower_90": -0.010666564885628976,
+    "n": 180,
+    "se": 0.007691930421380693,
+    "upper_90": 0.02212946941330827
+   }
+  },
+  "issuance_median_gain": 0.00784598804034653,
+  "issuance_share_positive": 0.5396825396825397,
+  "leave_one_block_out_range": [
+   0.013240616611941909,
+   0.019390042103520105
+  ],
+  "matches_committed_primary": true,
+  "method": "CR1 cluster-robust mean, G/(G-1) factor, Student t with G-1 df; separate code from the frozen interval module",
+  "primary_gain_M2_minus_M0": {
+   "blocks": 10,
+   "df": 9,
+   "estimate": 0.11676024063900912,
+   "lower_90": 0.0663347276414969,
+   "n": 441,
+   "se": 0.027508132259175175,
+   "upper_90": 0.16718575363652136
+  },
+  "se_inflation_tolerated_before_rule_fails": 1.4270501885272724,
+  "three_year_clusters": {
+   "blocks": 20,
+   "df": 19,
+   "estimate": 0.016533512177436503,
+   "lower_90": 0.005851966898484906,
+   "n": 441,
+   "se": 0.006177400144037226,
+   "upper_90": 0.027215057456388102
+  },
+  "variant_gains_M3_minus_M2": {
+   "delay_2": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.016493418890984147,
+    "lower_90": 0.004941513744756033,
+    "n": 441,
+    "se": 0.0063017967635463955,
+    "upper_90": 0.02804532403721226
+   },
+   "joint_placebo": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.01672311667488417,
+    "lower_90": 0.004897755987873171,
+    "n": 436,
+    "se": 0.00645097226490879,
+    "upper_90": 0.02854847736189517
+   },
+   "primary": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.016533512177436503,
+    "lower_90": 0.004947716309598648,
+    "n": 441,
+    "se": 0.006320284834306243,
+    "upper_90": 0.028119308045274356
+   },
+   "q_only": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.01699147684511763,
+    "lower_90": 0.00536769847333758,
+    "n": 441,
+    "se": 0.0063410050546841325,
+    "upper_90": 0.02861525521689768
+   },
+   "type_within": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.002478268090079619,
+    "lower_90": -0.0021955062224858998,
+    "n": 441,
+    "se": 0.002549637956998687,
+    "upper_90": 0.0071520424026451385
+   },
+   "uniform_end": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.0165758067697772,
+    "lower_90": 0.00444547865427204,
+    "n": 441,
+    "se": 0.006617338135260407,
+    "upper_90": 0.028706134885282356
+   }
+  }
+ },
+ "level_decomposition": {
+  "M2_best_level_minus_M2": {
+   "1960-1992": {
+    "blocks": 6,
+    "df": 5,
+    "estimate": 0.015597649924263931,
+    "lower_90": -0.008750509957260746,
+    "n": 261,
+    "se": 0.012083163959608184,
+    "upper_90": 0.03994580980578861
+   },
+   "1960-2017": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.008848975708567517,
+    "lower_90": -0.006346403212434851,
+    "n": 441,
+    "se": 0.008289385040224336,
+    "upper_90": 0.024044354629569886
+   },
+   "1993-2017": {
+    "blocks": 5,
+    "df": 4,
+    "estimate": -0.0009366019041922836,
+    "lower_90": -0.0216251410582157,
+    "n": 180,
+    "se": 0.009704515018019425,
+    "upper_90": 0.019751937249831136
+   }
+  },
+  "M3_minus_M2_both_at_best_M2_level": {
+   "1960-1992": {
+    "blocks": 6,
+    "df": 5,
+    "estimate": 0.019892753840920582,
+    "lower_90": 0.005038953780420484,
+    "n": 261,
+    "se": 0.007371435970011446,
+    "upper_90": 0.03474655390142068
+   },
+   "1960-2017": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.012392988434074471,
+    "lower_90": 0.000979102858145441,
+    "n": 441,
+    "se": 0.006226504310015401,
+    "upper_90": 0.023806874010003504
+   },
+   "1993-2017": {
+    "blocks": 5,
+    "df": 4,
+    "estimate": 0.0015183285941476074,
+    "lower_90": -0.01515692828074486,
+    "n": 180,
+    "se": 0.00782197716170088,
+    "upper_90": 0.018193585469040076
+   }
+  },
+  "evaluation_mean_standardized_log_duration": -0.2378809665063406,
+  "frozen_M2_best_evaluation_level_shift": -0.04679323299041002,
+  "gain_frozen_M3_minus_M2": {
+   "1960-1992": {
+    "blocks": 6,
+    "df": 5,
+    "estimate": 0.02398320866957215,
+    "lower_90": 0.009108833726291916,
+    "n": 261,
+    "se": 0.007381646584829643,
+    "upper_90": 0.03885758361285238
+   },
+   "1960-2017": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.016533512177436812,
+    "lower_90": 0.004947716309599457,
+    "n": 441,
+    "se": 0.0063202848343059705,
+    "upper_90": 0.02811930804527417
+   },
+   "1993-2017": {
+    "blocks": 5,
+    "df": 4,
+    "estimate": 0.005731452263840571,
+    "lower_90": -0.01066656488562784,
+    "n": 180,
+    "se": 0.007691930421380595,
+    "upper_90": 0.022129469413308983
+   }
+  },
+  "level_part_M2_shifted_by_mark_level_minus_M2": {
+   "1960-1992": {
+    "blocks": 6,
+    "df": 5,
+    "estimate": 0.005273818334853749,
+    "lower_90": -0.000439057826213023,
+    "n": 261,
+    "se": 0.002835106212173606,
+    "upper_90": 0.010986694495920522
+   },
+   "1960-2017": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.003695763965193162,
+    "lower_90": 0.00013009478892622847,
+    "n": 441,
+    "se": 0.0019451443022117407,
+    "upper_90": 0.007261433141460095
+   },
+   "1993-2017": {
+    "blocks": 5,
+    "df": 4,
+    "estimate": 0.001407585129185311,
+    "lower_90": -0.0034820162341405994,
+    "n": 180,
+    "se": 0.0022935988621166827,
+    "upper_90": 0.006297186492511222
+   }
+  },
+  "level_shift_implied_by_frozen_mark": -0.011084439574561325,
+  "max_score_recompute_error": 1.3944401189291966e-13,
+  "slope_part_M3_minus_M2_shifted_by_mark_level": {
+   "1960-1992": {
+    "blocks": 6,
+    "df": 5,
+    "estimate": 0.018709390334718398,
+    "lower_90": 0.006510413233398363,
+    "n": 261,
+    "se": 0.0060539375941343395,
+    "upper_90": 0.030908367436038434
+   },
+   "1960-2017": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.01283774821224365,
+    "lower_90": 0.003641633668740551,
+    "n": 441,
+    "se": 0.005016665574541361,
+    "upper_90": 0.022033862755746748
+   },
+   "1993-2017": {
+    "blocks": 5,
+    "df": 4,
+    "estimate": 0.00432386713465526,
+    "lower_90": -0.012120652654718907,
+    "n": 180,
+    "se": 0.007713743733764964,
+    "upper_90": 0.02076838692402943
+   }
+  },
+  "slope_part_M3_recentred_minus_M2": {
+   "1960-1992": {
+    "blocks": 6,
+    "df": 5,
+    "estimate": 0.018697996486910055,
+    "lower_90": 0.006527612353471424,
+    "n": 261,
+    "se": 0.006039747876279523,
+    "upper_90": 0.030868380620348686
+   },
+   "1960-2017": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.012825623657504042,
+    "lower_90": 0.0035888915647506944,
+    "n": 441,
+    "se": 0.005038823265170597,
+    "upper_90": 0.02206235575025739
+   },
+   "1993-2017": {
+    "blocks": 5,
+    "df": 4,
+    "estimate": 0.0043106830548653215,
+    "lower_90": -0.011989000713672619,
+    "n": 180,
+    "se": 0.007645804507660544,
+    "upper_90": 0.02061036682340326
+   }
+  }
+ },
+ "scope": "EXPLORATORY post-result review of the sealed SS Cyg 1960-2017 comparison; aggregates only; cannot become a second confirmation; no 2018+ data",
+ "type_information": {
+  "development_refits_in_sample": {
+   "1910-1959": {
+    "level_only_shift": 3.662109375e-07,
+    "lr_type_only_minus_raw_log_duration": -0.021486891226459193,
+    "n_timing": 307,
+    "raw_log_duration": {
+     "beta_per_training_sd": 0.04659659114550957,
+     "level_shift": 1.553347407321533e-05,
+     "lr_vs_level_only": 5.1935458782159
+    },
+    "type_only": {
+     "beta_type_long_minus_short": 0.09280801587386733,
+     "level_shift": -0.04224463407772723,
+     "lr_vs_level_only": 5.172058986989441
+    },
+    "type_plus_within": {
+     "beta_type_long_minus_short": 0.0930531680314389,
+     "beta_within_per_frozen_within_sd": 0.012368941307010928,
+     "level_shift": -0.04252843451840621,
+     "lr_vs_level_only": 5.538294517826898,
+     "lr_within_given_type": 0.3662355308374572
+    }
+   }
+  },
+  "frozen_type_rule_gain_both_at_best_M2_level": {
+   "1960-1992": {
+    "blocks": 6,
+    "df": 5,
+    "estimate": 0.010037600541050294,
+    "lower_90": 0.0004620412782269101,
+    "n": 261,
+    "se": 0.004752024511940017,
+    "upper_90": 0.019613159803873677
+   },
+   "1960-2017": {
+    "blocks": 10,
+    "df": 9,
+    "estimate": 0.009047414219667121,
+    "lower_90": 0.00408689620272272,
+    "n": 441,
+    "se": 0.0027060624190548147,
+    "upper_90": 0.014007932236611523
+   },
+   "1993-2017": {
+    "blocks": 5,
+    "df": 4,
+    "estimate": 0.007611644053661522,
+    "lower_90": -0.006306067165571326,
+    "n": 180,
+    "se": 0.006528476299750523,
+    "upper_90": 0.02152935527289437
+   }
+  },
+  "frozen_type_rule_mean_offset_on_evaluation": 0.017283977857185356,
+  "frozen_type_rule_uncentred_indicator_note": "beta_type multiplies a 0/1 long indicator while the M2 intercept is fixed, so the frozen rule can lengthen post-long gaps but cannot shorten post-short gaps",
+  "refits_frozen_M2_nuisance_free_level": {
+   "1960-1992": {
+    "level_only_shift": -0.06517163085937502,
+    "lr_type_only_minus_raw_log_duration": 2.2007172222122335,
+    "n_timing": 256,
+    "raw_log_duration": {
+     "beta_per_training_sd": 0.0734080203463181,
+     "level_shift": -0.04791233978303075,
+     "lr_vs_level_only": 11.303127409139734
+    },
+    "type_only": {
+     "beta_type_long_minus_short": 0.16323172025438276,
+     "level_shift": -0.1334317963001605,
+     "lr_vs_level_only": 13.503844631351967
+    },
+    "type_plus_within": {
+     "beta_type_long_minus_short": 0.16341938843910972,
+     "beta_within_per_frozen_within_sd": -0.0007781088687839079,
+     "level_shift": -0.13376937129426802,
+     "lr_vs_level_only": 13.504676693272359,
+     "lr_within_given_type": 0.0008320619203914248
+    }
+   },
+   "1960-2017": {
+    "level_only_shift": -0.04679327392578127,
+    "lr_type_only_minus_raw_log_duration": 3.011982798244844,
+    "n_timing": 436,
+    "raw_log_duration": {
+     "beta_per_training_sd": 0.0559850463075837,
+     "level_shift": -0.03364149542192242,
+     "lr_vs_level_only": 11.686372607918656
+    },
+    "type_only": {
+     "beta_type_long_minus_short": 0.12936507125232322,
+     "level_shift": -0.10370098675780703,
+     "lr_vs_level_only": 14.6983554061635
+    },
+    "type_plus_within": {
+     "beta_type_long_minus_short": 0.13246216713076192,
+     "beta_within_per_frozen_within_sd": -0.009008521561298798,
+     "level_shift": -0.10875854292262663,
+     "lr_vs_level_only": 14.866784085235395,
+     "lr_within_given_type": 0.1684286790718943
+    }
+   },
+   "1993-2017": {
+    "level_only_shift": -0.020965270996093757,
+    "lr_type_only_minus_raw_log_duration": 0.4242604764635871,
+    "n_timing": 180,
+    "raw_log_duration": {
+     "beta_per_training_sd": 0.03356589419798417,
+     "level_shift": -0.013085186836036298,
+     "lr_vs_level_only": 1.8378574262274014
+    },
+    "type_only": {
+     "beta_type_long_minus_short": 0.07827794054378438,
+     "level_shift": -0.05778235270216352,
+     "lr_vs_level_only": 2.2621179026909886
+    },
+    "type_plus_within": {
+     "beta_type_long_minus_short": 0.08309404185955645,
+     "beta_within_per_frozen_within_sd": -0.009453431343296077,
+     "level_shift": -0.06495042716305562,
+     "lr_vs_level_only": 2.320238786430309,
+     "lr_within_given_type": 0.05812088373932056
+    }
+   }
+  },
+  "type_split_days": 12.0
+ }
+}

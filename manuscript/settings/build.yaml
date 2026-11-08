@@ -1,0 +1,67 @@
+# makedoc profiles (https://github.com/BWBrook/makedoc). Build with `make -C manuscript` from the repo root.
+# Paths are relative to this file. The CSL is a placeholder until a journal is chosen:
+#   make -C ~/work/makedoc csl-source JOURNAL="Journal Name" CSL_DEST_DIR="$PWD/manuscript/csl"
+default_profile: main
+
+common: &common
+  bibliography: ../../references/refs.yaml
+  csl: ../csl/chicago-author-date.csl
+  journal: Undecided
+  csl_search_dirs:
+    - ../csl
+  output_dir: ../build
+  page_numbers: lower_right
+  review_markup:
+    enabled: false
+  margins:
+    unit: cm
+    paper_size: a4
+    top: 2.0
+    right: 2.2
+    bottom: 2.0
+    left: 2.2
+
+profiles:
+  main:
+    <<: *common
+    description: Main text, journal-submission layout.
+    manuscript_sources:
+      - ../text/main.md
+      - ../text/figures.md
+    author_metadata: ../authors.yaml
+    output_stem: manuscript
+    line_spacing: 1.25
+    line_numbering: continuous
+    figures:
+      placement: pages
+      caption_position: top
+      placeholder_id: figures
+
+  supplement:
+    <<: *common
+    description: Supplement with methods, sensitivities and the audit trail.
+    manuscript_sources:
+      - ../text/supplement.md
+      - ../text/supplement_figures.md
+    author_metadata: ../authors.yaml
+    output_stem: supplement
+    line_spacing: single
+    line_numbering: none
+    figures:
+      placement: pages
+      caption_position: top
+      placeholder_id: figures
+
+  brief:
+    <<: *common
+    description: Two-page plain-language brief (one A4 sheet printed double-sided).
+    manuscript_sources:
+      - ../text/brief.md
+      - ../text/brief_figures.md
+    output_stem: brief
+    line_spacing: single
+    line_numbering: none
+    figures:
+      placement: inline
+      caption_position: bottom
+      placeholder_id: figures

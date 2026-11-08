@@ -37,3 +37,7 @@ rollout-*.jsonl
 data/simulations/a04e_validation_20261108/*.png
 data/simulations/a04e_validation_20261108/c2_095.svg
 data/simulations/a04g_qualification_20261108.png
+# living-paper build outputs (PDFs are tracked)
+manuscript/build/*.docx
+manuscript/build/*_build_manifest.json
+!manuscript/build/*.pdf

@@ -424,3 +424,20 @@ No source/model/parameter change followed result inspection. D027 preserves
 the narrow predictive claim, secondary era/type limitations, and consumed
 post-access-repair status. Current live authority is marked completed;
 execution authority remains at d7151e0. Future 2018+ access remains closed.
+
+
+### Claude A10j post-result review access
+
+9 November 2026, after the A10i primary file and report existed. Claude read
+the saved evaluation outputs outside Git (`outputs/a10h_live_repair_5e39aeb`:
+frozen parameters, the 0 d ledger and evidence, and all six variant score
+files) and the consumed 1910–1959 development outputs. Claude recomputed the
+primary and secondary intervals with separate code. Claude then ran
+**exploratory, post-result** re-scorings and refits: level versus slope; type
+versus within-type with the frozen M2 nuisance parameters; alternation.
+`scripts/a10j_postresult_review.py` writes aggregates only to
+`data/provenance/a10j_postresult_review/`. No per-issuance score table, event
+catalog or observer identity enters Git. No archive request was made, and no
+row from 2018 onward was requested or inspected. None of this can become a
+second confirmation; any type-based hypothesis it suggests needs new data
+under a new frozen protocol.

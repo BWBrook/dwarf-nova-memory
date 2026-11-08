@@ -1,0 +1,10 @@
+title_note: Internal research draft from a living repository. Release and submission are Barry W. Brook's decision.
+authors:
+  - name: Barry W. Brook
+    affiliations: [utas]
+    corresponding: true
+  - name: Claude (Anthropic) and OpenAI Codex
+    affiliations: [ai]
+affiliations:
+  utas: University of Tasmania, Hobart, Tasmania, Australia
+  ai: AI research collaborators; roles are stated in "Roles of AI systems and humans"
