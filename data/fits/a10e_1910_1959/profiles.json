@@ -1,0 +1,1676 @@
+{
+  "delay_2": {
+    "interpretation": {
+      "calibration_limit": "serial dependence and measurement uncertainty are not calibrated",
+      "mark_limit": "M3/P3 profiles hold fitted M2 nuisance parameters fixed exactly",
+      "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841"
+    },
+    "likelihood_ratio_cutoff": 3.841,
+    "models": {
+      "M0": {
+        "diagnostics": {
+          "frozen_objective": 1110.8043173123747,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 7.908056431915611e-10,
+          "full_reoptimization_objective": 1110.8043173115839,
+          "material_improvement_tolerance": 0.0011118043173123746
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1110.8043173123747,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": -4.547473508864641e-13,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.667171575377017,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6267801898217495,
+              "lower_clipped_to_bound": false,
+              "upper": 3.7076136248803433,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.015400794108067,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.0936317115618328,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9330600171877483,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      },
+      "M2": {
+        "diagnostics": {
+          "frozen_objective": 1023.965863239056,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 5.301217242958955e-10,
+          "full_reoptimization_objective": 1023.9658632385259,
+          "material_improvement_tolerance": 0.001024965863239056
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1023.965863239056,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "earlier_level": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.05114800790204416,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.009298096689123014,
+              "lower_clipped_to_bound": false,
+              "upper": 0.09301460841550241,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "earlier_level",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          },
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.659831977912263,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.619857824870423,
+              "lower_clipped_to_bound": false,
+              "upper": 3.6998329530442513,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0599666785762396,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.1408093523547735,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9747402023837652,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          },
+          "previous_gap": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.0781030318760077,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.036219146015564585,
+              "lower_clipped_to_bound": false,
+              "upper": 0.12001612401239076,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "previous_gap",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "M3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1021.3851983256025,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1021.3851983256025,
+          "material_improvement_tolerance": 0.0010223851983256025
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1021.3851983256025,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.04648446321569484,
+            "evaluation_count": 38,
+            "likelihood_support_interval": {
+              "lower": 0.006383846894181176,
+              "lower_clipped_to_bound": false,
+              "upper": 0.0865878093250851,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "P3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1023.965863239056,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1023.965863239056,
+          "material_improvement_tolerance": 0.001024965863239056
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1023.965863239056,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": true,
+            "at_upper_bound": false,
+            "estimate": 0.0,
+            "evaluation_count": 20,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.012414008378982544,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "R0": {
+        "diagnostics": {
+          "frozen_objective": 1112.8019020913202,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 2.078195393551141e-10,
+          "full_reoptimization_objective": 1112.8019020911124,
+          "material_improvement_tolerance": 0.0011138019020913202
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "frozen_objective": 1112.8019020913202,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.5419108827153036,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.4957473833599875,
+              "lower_clipped_to_bound": false,
+              "upper": 3.5881143171826193,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -0.8833802402463194,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -0.9617238104787108,
+              "lower_clipped_to_bound": false,
+              "upper": -0.800943619057202,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      }
+    },
+    "schema_version": "a10d-fit-profile-v1",
+    "support_delta_negative_log_likelihood": 1.9205
+  },
+  "joint_placebo": {
+    "interpretation": {
+      "calibration_limit": "serial dependence and measurement uncertainty are not calibrated",
+      "mark_limit": "M3/P3 profiles hold fitted M2 nuisance parameters fixed exactly",
+      "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841"
+    },
+    "likelihood_ratio_cutoff": 3.841,
+    "models": {
+      "M0": {
+        "diagnostics": {
+          "frozen_objective": 1110.7768321517078,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 3.637978807091713e-12,
+          "full_reoptimization_objective": 1110.7768321517042,
+          "material_improvement_tolerance": 0.0011117768321517079
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1110.7768321517078,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.6672617774824663,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6269133072714372,
+              "lower_clipped_to_bound": false,
+              "upper": 3.7076710444311662,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0159830385050908,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.0941592388949528,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9337023430667057,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      },
+      "M2": {
+        "diagnostics": {
+          "frozen_objective": 1024.0313433587435,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 6.866684998385608e-10,
+          "full_reoptimization_objective": 1024.0313433580568,
+          "material_improvement_tolerance": 0.0010250313433587434
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1024.0313433587435,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "earlier_level": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.051335907380916625,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.00952414314065173,
+              "lower_clipped_to_bound": false,
+              "upper": 0.0931697253397484,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "earlier_level",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          },
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.659981647934044,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6200378932610398,
+              "lower_clipped_to_bound": false,
+              "upper": 3.6999611653939133,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0602716697026662,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.141073216276305,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9750916851331166,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          },
+          "previous_gap": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.07801595244522026,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.03614875588531426,
+              "lower_clipped_to_bound": false,
+              "upper": 0.11990877900237967,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "previous_gap",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "M3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1021.4345707105587,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1021.4345707105587,
+          "material_improvement_tolerance": 0.0010224345707105587
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1021.4345707105587,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 9.094947017729282e-13,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.04659658037107343,
+            "evaluation_count": 38,
+            "likelihood_support_interval": {
+              "lower": 0.006524026067197831,
+              "lower_clipped_to_bound": false,
+              "upper": 0.08667280636709088,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "P3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1024.0313433587435,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1024.0313433587435,
+          "material_improvement_tolerance": 0.0010250313433587434
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1024.0313433587435,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": true,
+            "at_upper_bound": false,
+            "estimate": 0.0,
+            "evaluation_count": 20,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.012399107217788696,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "R0": {
+        "diagnostics": {
+          "frozen_objective": 1112.1436261188444,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 1.8189894035458565e-12,
+          "full_reoptimization_objective": 1112.1436261188426,
+          "material_improvement_tolerance": 0.0011131436261188443
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "frozen_objective": 1112.1436261188444,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.60258269361301,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.559225976980167,
+              "lower_clipped_to_bound": false,
+              "upper": 3.64598530582233,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -0.9458320700644913,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.024049755287117,
+              "lower_clipped_to_bound": false,
+              "upper": -0.8635281288146439,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      }
+    },
+    "schema_version": "a10d-fit-profile-v1",
+    "support_delta_negative_log_likelihood": 1.9205
+  },
+  "primary": {
+    "interpretation": {
+      "calibration_limit": "serial dependence and measurement uncertainty are not calibrated",
+      "mark_limit": "M3/P3 profiles hold fitted M2 nuisance parameters fixed exactly",
+      "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841"
+    },
+    "likelihood_ratio_cutoff": 3.841,
+    "models": {
+      "M0": {
+        "diagnostics": {
+          "frozen_objective": 1110.7768321517078,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 3.637978807091713e-12,
+          "full_reoptimization_objective": 1110.7768321517042,
+          "material_improvement_tolerance": 0.0011117768321517079
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1110.7768321517078,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.6672617774824663,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6269133072714372,
+              "lower_clipped_to_bound": false,
+              "upper": 3.7076710444311662,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0159830385050908,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.0941592388949528,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9337023430667057,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      },
+      "M2": {
+        "diagnostics": {
+          "frozen_objective": 1024.0313433587435,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 6.866684998385608e-10,
+          "full_reoptimization_objective": 1024.0313433580568,
+          "material_improvement_tolerance": 0.0010250313433587434
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1024.0313433587435,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "earlier_level": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.051335907380916625,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.00952414314065173,
+              "lower_clipped_to_bound": false,
+              "upper": 0.0931697253397484,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "earlier_level",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          },
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.659981647934044,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6200378932610398,
+              "lower_clipped_to_bound": false,
+              "upper": 3.6999611653939133,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0602716697026662,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.141073216276305,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9750916851331166,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          },
+          "previous_gap": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.07801595244522026,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.03614875588531426,
+              "lower_clipped_to_bound": false,
+              "upper": 0.11990877900237967,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "previous_gap",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "M3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1021.4345707105587,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1021.4345707105587,
+          "material_improvement_tolerance": 0.0010224345707105587
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1021.4345707105587,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 9.094947017729282e-13,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.04659658037107343,
+            "evaluation_count": 38,
+            "likelihood_support_interval": {
+              "lower": 0.006524026067197831,
+              "lower_clipped_to_bound": false,
+              "upper": 0.08667280636709088,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "P3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1024.0313433587435,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1024.0313433587435,
+          "material_improvement_tolerance": 0.0010250313433587434
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1024.0313433587435,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": true,
+            "at_upper_bound": false,
+            "estimate": 0.0,
+            "evaluation_count": 20,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.012399107217788696,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "R0": {
+        "diagnostics": {
+          "frozen_objective": 1112.1436261188444,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 1.8189894035458565e-12,
+          "full_reoptimization_objective": 1112.1436261188426,
+          "material_improvement_tolerance": 0.0011131436261188443
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "frozen_objective": 1112.1436261188444,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.60258269361301,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.559225976980167,
+              "lower_clipped_to_bound": false,
+              "upper": 3.64598530582233,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -0.9458320700644913,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.024049755287117,
+              "lower_clipped_to_bound": false,
+              "upper": -0.8635281288146439,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      }
+    },
+    "schema_version": "a10d-fit-profile-v1",
+    "support_delta_negative_log_likelihood": 1.9205
+  },
+  "q_only": {
+    "interpretation": {
+      "calibration_limit": "serial dependence and measurement uncertainty are not calibrated",
+      "mark_limit": "M3/P3 profiles hold fitted M2 nuisance parameters fixed exactly",
+      "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841"
+    },
+    "likelihood_ratio_cutoff": 3.841,
+    "models": {
+      "M0": {
+        "diagnostics": {
+          "frozen_objective": 1110.7768321517078,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 3.637978807091713e-12,
+          "full_reoptimization_objective": 1110.7768321517042,
+          "material_improvement_tolerance": 0.0011117768321517079
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1110.7768321517078,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.6672617774824663,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6269133072714372,
+              "lower_clipped_to_bound": false,
+              "upper": 3.7076710444311662,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0159830385050908,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.0941592388949528,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9337023430667057,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      },
+      "M2": {
+        "diagnostics": {
+          "frozen_objective": 1026.9168957682566,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 8.752294888836332e-09,
+          "full_reoptimization_objective": 1026.9168957595043,
+          "material_improvement_tolerance": 0.0010279168957682565
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1026.9168957682566,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.6592277956793566,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.61889720686176,
+              "lower_clipped_to_bound": false,
+              "upper": 3.699595339376714,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.050317461494633,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.131114716533848,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9651306819955789,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          },
+          "previous_gap": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.09293145588060372,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.05246079614778512,
+              "lower_clipped_to_bound": false,
+              "upper": 0.1334283416571235,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "previous_gap",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "M3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1024.5936733780222,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 2.2737367544323206e-13,
+          "full_reoptimization_objective": 1024.593673378022,
+          "material_improvement_tolerance": 0.0010255936733780222
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1024.5936733780222,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 6.821210263296962e-13,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.04450384200179319,
+            "evaluation_count": 38,
+            "likelihood_support_interval": {
+              "lower": 0.0040406644572627244,
+              "lower_clipped_to_bound": false,
+              "upper": 0.08497077644431333,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "P3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1026.9168957682566,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1026.9168957682566,
+          "material_improvement_tolerance": 0.0010279168957682565
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1026.9168957682566,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": true,
+            "at_upper_bound": false,
+            "estimate": 0.0,
+            "evaluation_count": 20,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.01250043511390686,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "R0": {
+        "diagnostics": {
+          "frozen_objective": 1112.1436261188444,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 1.8189894035458565e-12,
+          "full_reoptimization_objective": 1112.1436261188426,
+          "material_improvement_tolerance": 0.0011131436261188443
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "frozen_objective": 1112.1436261188444,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.60258269361301,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.559225976980167,
+              "lower_clipped_to_bound": false,
+              "upper": 3.64598530582233,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -0.9458320700644913,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.024049755287117,
+              "lower_clipped_to_bound": false,
+              "upper": -0.8635281288146439,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      }
+    },
+    "schema_version": "a10d-fit-profile-v1",
+    "support_delta_negative_log_likelihood": 1.9205
+  },
+  "type_within": {
+    "interpretation": {
+      "calibration_limit": "serial dependence and measurement uncertainty are not calibrated",
+      "mark_limit": "M3/P3 profiles hold fitted M2 nuisance parameters fixed exactly",
+      "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841"
+    },
+    "likelihood_ratio_cutoff": 3.841,
+    "models": {
+      "M0": {
+        "diagnostics": {
+          "frozen_objective": 1110.7768321517078,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 3.637978807091713e-12,
+          "full_reoptimization_objective": 1110.7768321517042,
+          "material_improvement_tolerance": 0.0011117768321517079
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1110.7768321517078,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.6672617774824663,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6269133072714372,
+              "lower_clipped_to_bound": false,
+              "upper": 3.7076710444311662,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0159830385050908,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.0941592388949528,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9337023430667057,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      },
+      "M2": {
+        "diagnostics": {
+          "frozen_objective": 1024.0313433587435,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 6.866684998385608e-10,
+          "full_reoptimization_objective": 1024.0313433580568,
+          "material_improvement_tolerance": 0.0010250313433587434
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1024.0313433587435,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "earlier_level": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.051335907380916625,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.00952414314065173,
+              "lower_clipped_to_bound": false,
+              "upper": 0.0931697253397484,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "earlier_level",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          },
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.659981647934044,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6200378932610398,
+              "lower_clipped_to_bound": false,
+              "upper": 3.6999611653939133,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0602716697026662,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.141073216276305,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9750916851331166,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          },
+          "previous_gap": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.07801595244522026,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.03614875588531426,
+              "lower_clipped_to_bound": false,
+              "upper": 0.11990877900237967,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "previous_gap",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "M3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1022.4549856884319,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1022.4549856884319,
+          "material_improvement_tolerance": 0.0010234549856884317
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1022.4549856884319,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 1.1368683772161603e-13,
+        "profiles": {
+          "beta_type": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.050526448392871154,
+            "evaluation_count": 21,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.10959837665558173,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta_type",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          },
+          "beta_within": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.011835797644866334,
+            "evaluation_count": 21,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.05189950666548096,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta_within",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "P3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1024.0313433587435,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1024.0313433587435,
+          "material_improvement_tolerance": 0.0010250313433587434
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1024.0313433587435,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "beta_type": {
+            "at_lower_bound": true,
+            "at_upper_bound": false,
+            "estimate": 0.0,
+            "evaluation_count": 20,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.025963634252548218,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta_type",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          },
+          "beta_within": {
+            "at_lower_bound": true,
+            "at_upper_bound": false,
+            "estimate": 0.0,
+            "evaluation_count": 20,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.0196702778339386,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta_within",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "R0": {
+        "diagnostics": {
+          "frozen_objective": 1112.1436261188444,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 1.8189894035458565e-12,
+          "full_reoptimization_objective": 1112.1436261188426,
+          "material_improvement_tolerance": 0.0011131436261188443
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "frozen_objective": 1112.1436261188444,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.60258269361301,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.559225976980167,
+              "lower_clipped_to_bound": false,
+              "upper": 3.64598530582233,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -0.9458320700644913,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.024049755287117,
+              "lower_clipped_to_bound": false,
+              "upper": -0.8635281288146439,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      }
+    },
+    "schema_version": "a10d-fit-profile-v1",
+    "support_delta_negative_log_likelihood": 1.9205
+  },
+  "uniform_end": {
+    "interpretation": {
+      "calibration_limit": "serial dependence and measurement uncertainty are not calibrated",
+      "mark_limit": "M3/P3 profiles hold fitted M2 nuisance parameters fixed exactly",
+      "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841"
+    },
+    "likelihood_ratio_cutoff": 3.841,
+    "models": {
+      "M0": {
+        "diagnostics": {
+          "frozen_objective": 1110.582128847935,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 5.002220859751105e-12,
+          "full_reoptimization_objective": 1110.58212884793,
+          "material_improvement_tolerance": 0.001111582128847935
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1110.582128847935,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": -4.547473508864641e-13,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.6657329746151346,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.625357086267509,
+              "lower_clipped_to_bound": false,
+              "upper": 3.706155354585685,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0167002850040159,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.0951958470805845,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9341284804805479,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      },
+      "M2": {
+        "diagnostics": {
+          "frozen_objective": 1024.0227131265997,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 3.092281986027956e-11,
+          "full_reoptimization_objective": 1024.0227131265688,
+          "material_improvement_tolerance": 0.0010250227131265997
+        },
+        "fit_kind": "conditional_landmark",
+        "frozen_objective": 1024.0227131265997,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "earlier_level": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.051040301340930384,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.009153435248248498,
+              "lower_clipped_to_bound": false,
+              "upper": 0.09295577766310445,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "earlier_level",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          },
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.6584459612909166,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.6184372375551073,
+              "lower_clipped_to_bound": false,
+              "upper": 3.698476142698845,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -1.0600651579332174,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.1411413627099813,
+              "lower_clipped_to_bound": false,
+              "upper": -0.9746362643670858,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          },
+          "previous_gap": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.07835783614727444,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 0.03643580331417508,
+              "lower_clipped_to_bound": false,
+              "upper": 0.12031145944210475,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "previous_gap",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "M3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1021.3269709713525,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1021.3269709713525,
+          "material_improvement_tolerance": 0.0010223269709713524
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1021.3269709713525,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": -2.2737367544323206e-13,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 0.04943376449479212,
+            "evaluation_count": 38,
+            "likelihood_support_interval": {
+              "lower": 0.007674807667440585,
+              "lower_clipped_to_bound": false,
+              "upper": 0.09159376887215723,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "P3": {
+        "baseline_model": "M2",
+        "diagnostics": {
+          "frozen_objective": 1024.0227131265997,
+          "full_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "full_reoptimization_improvement": 0.0,
+          "full_reoptimization_objective": 1024.0227131265997,
+          "material_improvement_tolerance": 0.0010250227131265997
+        },
+        "fit_kind": "fixed_m2_mark_offset",
+        "frozen_m2_nuisance": true,
+        "frozen_objective": 1024.0227131265997,
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 2.2737367544323206e-13,
+        "profiles": {
+          "beta": {
+            "at_lower_bound": true,
+            "at_upper_bound": false,
+            "estimate": 0.0,
+            "evaluation_count": 20,
+            "likelihood_support_interval": {
+              "lower": 0.0,
+              "lower_clipped_to_bound": true,
+              "upper": 0.012426823377609253,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "beta",
+            "status": "profiled",
+            "working_bounds": [
+              0.0,
+              5.0
+            ]
+          }
+        },
+        "row_count": 307
+      },
+      "R0": {
+        "diagnostics": {
+          "frozen_objective": 1112.1436261188444,
+          "full_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "full_reoptimization_improvement": 1.8189894035458565e-12,
+          "full_reoptimization_objective": 1112.1436261188426,
+          "material_improvement_tolerance": 0.0011131436261188443
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "frozen_objective": 1112.1436261188444,
+        "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+        "objective_scalar_difference": 0.0,
+        "profiles": {
+          "intercept": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": 3.60258269361301,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": 3.559225976980167,
+              "lower_clipped_to_bound": false,
+              "upper": 3.64598530582233,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "intercept",
+            "status": "profiled",
+            "working_bounds": [
+              -2.0,
+              8.0
+            ]
+          },
+          "log_sigma": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "estimate": -0.9458320700644913,
+            "evaluation_count": 39,
+            "likelihood_support_interval": {
+              "lower": -1.024049755287117,
+              "lower_clipped_to_bound": false,
+              "upper": -0.8635281288146439,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "log_sigma",
+            "status": "profiled",
+            "working_bounds": [
+              -4.0,
+              2.0
+            ]
+          }
+        },
+        "row_count": 330
+      }
+    },
+    "schema_version": "a10d-fit-profile-v1",
+    "support_delta_negative_log_likelihood": 1.9205
+  }
+}

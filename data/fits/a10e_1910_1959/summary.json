@@ -1,0 +1,233 @@
+{
+  "delay_2": {
+    "evidence": {
+      "interval:onset": 307,
+      "right_censored:coverage": 22,
+      "right_censored:superseded": 1
+    },
+    "interpretation": "in-sample development likelihoods; not held-out skill",
+    "issued": 330,
+    "log_likelihood": {
+      "M0": -1110.804317312375,
+      "M2": -1098.0157962724804,
+      "M3": -1095.435131359027,
+      "P3": -1098.0157962724804
+    },
+    "mean_in_sample_gain": {
+      "M2_M0": 0.03875309406028569,
+      "M3_M2": 0.007820196707434699,
+      "M3_P3": 0.007820196707434699,
+      "P3_M2": 0.0
+    },
+    "routes": {
+      "M0": {
+        "M0": 330
+      },
+      "M2": {
+        "M0": 23,
+        "M2": 307
+      },
+      "M3": {
+        "M0": 23,
+        "M3": 307
+      },
+      "P3": {
+        "M0": 23,
+        "M2": 307
+      }
+    },
+    "scored": 330
+  },
+  "joint_placebo": {
+    "evidence": {
+      "interval:onset": 307,
+      "right_censored:coverage": 22,
+      "right_censored:superseded": 1
+    },
+    "interpretation": "in-sample development likelihoods; not held-out skill",
+    "issued": 330,
+    "log_likelihood": {
+      "M0": -1036.8437157312715,
+      "M2": -1024.0313433587435,
+      "M3": -1021.4345707105587,
+      "P3": -1024.0313433587435
+    },
+    "mean_in_sample_gain": {
+      "M2_M0": 0.04173411196263205,
+      "M3_M2": 0.008458542827963697,
+      "M3_P3": 0.008458542827963697,
+      "P3_M2": 0.0
+    },
+    "routes": {
+      "M0": {
+        "M0": 307
+      },
+      "M2": {
+        "M2": 307
+      },
+      "M3": {
+        "M3": 307
+      },
+      "P3": {
+        "M2": 307
+      }
+    },
+    "scored": 307
+  },
+  "primary": {
+    "evidence": {
+      "interval:onset": 307,
+      "right_censored:coverage": 22,
+      "right_censored:superseded": 1
+    },
+    "interpretation": "in-sample development likelihoods; not held-out skill",
+    "issued": 330,
+    "log_likelihood": {
+      "M0": -1110.7768321517076,
+      "M2": -1097.9644597791796,
+      "M3": -1095.367687130995,
+      "P3": -1097.9644597791796
+    },
+    "mean_in_sample_gain": {
+      "M2_M0": 0.03882537082584254,
+      "M3_M2": 0.00786900802480259,
+      "M3_P3": 0.00786900802480259,
+      "P3_M2": 0.0
+    },
+    "routes": {
+      "M0": {
+        "M0": 330
+      },
+      "M2": {
+        "M0": 23,
+        "M2": 307
+      },
+      "M3": {
+        "M0": 23,
+        "M3": 307
+      },
+      "P3": {
+        "M0": 23,
+        "M2": 307
+      }
+    },
+    "scored": 330
+  },
+  "q_only": {
+    "evidence": {
+      "interval:onset": 307,
+      "right_censored:coverage": 22,
+      "right_censored:superseded": 1
+    },
+    "interpretation": "in-sample development likelihoods; not held-out skill",
+    "issued": 330,
+    "log_likelihood": {
+      "M0": -1110.7768321517076,
+      "M2": -1100.850012188693,
+      "M3": -1098.5267897984584,
+      "P3": -1100.850012188693
+    },
+    "mean_in_sample_gain": {
+      "M2_M0": 0.03008127261519626,
+      "M3_M2": 0.007040067849195355,
+      "M3_P3": 0.007040067849195355,
+      "P3_M2": 0.0
+    },
+    "routes": {
+      "M0": {
+        "M0": 330
+      },
+      "M2": {
+        "M0": 23,
+        "M2": 307
+      },
+      "M3": {
+        "M0": 23,
+        "M3": 307
+      },
+      "P3": {
+        "M0": 23,
+        "M2": 307
+      }
+    },
+    "scored": 330
+  },
+  "type_within": {
+    "evidence": {
+      "interval:onset": 307,
+      "right_censored:coverage": 22,
+      "right_censored:superseded": 1
+    },
+    "interpretation": "in-sample development likelihoods; not held-out skill",
+    "issued": 330,
+    "log_likelihood": {
+      "M0": -1110.7768321517076,
+      "M2": -1097.9644597791796,
+      "M3": -1096.388102108868,
+      "P3": -1097.9644597791796
+    },
+    "mean_in_sample_gain": {
+      "M2_M0": 0.03882537082584254,
+      "M3_M2": 0.004776841425186801,
+      "M3_P3": 0.004776841425186801,
+      "P3_M2": 0.0
+    },
+    "routes": {
+      "M0": {
+        "M0": 330
+      },
+      "M2": {
+        "M0": 23,
+        "M2": 307
+      },
+      "M3": {
+        "M0": 23,
+        "M3": 307
+      },
+      "P3": {
+        "M0": 23,
+        "M2": 307
+      }
+    },
+    "scored": 330
+  },
+  "uniform_end": {
+    "evidence": {
+      "interval:onset": 307,
+      "right_censored:coverage": 22,
+      "right_censored:superseded": 1
+    },
+    "interpretation": "in-sample development likelihoods; not held-out skill",
+    "issued": 330,
+    "log_likelihood": {
+      "M0": -1110.5821288479349,
+      "M2": -1097.7781035696073,
+      "M3": -1095.08236141436,
+      "P3": -1097.7781035696073
+    },
+    "mean_in_sample_gain": {
+      "M2_M0": 0.038800076600992724,
+      "M3_M2": 0.0081689156219613,
+      "M3_P3": 0.0081689156219613,
+      "P3_M2": 0.0
+    },
+    "routes": {
+      "M0": {
+        "M0": 330
+      },
+      "M2": {
+        "M0": 23,
+        "M2": 307
+      },
+      "M3": {
+        "M0": 23,
+        "M3": 307
+      },
+      "P3": {
+        "M0": 23,
+        "M2": 307
+      }
+    },
+    "scored": 330
+  }
+}

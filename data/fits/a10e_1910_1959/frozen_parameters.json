@@ -1,0 +1,1608 @@
+{
+  "delay_2": {
+    "counts": {
+      "excluded": 0,
+      "interval": 307,
+      "right_censored": 23
+    },
+    "directional": true,
+    "endpoint_mode": "point",
+    "joint_marks": false,
+    "local_level": true,
+    "mark_mode": "log_duration",
+    "metadata": {
+      "base_model": "M2 fixed for M3/P3 offsets",
+      "conditional_likelihood": "landmark survival with interval and right-censor terms",
+      "frozen": true,
+      "joint_marks": false,
+      "training_cutoff": 2436934.5
+    },
+    "models": {
+      "M0": {
+        "centers": {},
+        "coefficients": {},
+        "intercept": 3.667171575377017,
+        "metadata": {
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1110.8043173123747,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.8043173127562,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.8043173123747,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 330
+        },
+        "n_fit": 330,
+        "name": "M0",
+        "scales": {},
+        "sigma": 0.36225721017739937,
+        "terms": []
+      },
+      "M2": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "earlier_level": 0.05114800790204416,
+          "previous_gap": 0.0781030318760077
+        },
+        "intercept": 3.659831977912263,
+        "metadata": {
+          "baseline_training_count": 307,
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1023.965863239056,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1023.965863239056,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1023.9658632468469,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 307
+        },
+        "n_fit": 307,
+        "name": "M2",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34646735492326775,
+        "terms": [
+          "previous_gap",
+          "earlier_level"
+        ]
+      },
+      "M3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark": 2.3487013847278697,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.04648446321569484,
+          "earlier_level": 0.05114800790204416,
+          "previous_gap": 0.0781030318760077
+        },
+        "intercept": 3.659831977912263,
+        "metadata": {
+          "at_bound": false,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.04648446321569484
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "current",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1023.965863239056,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1021.3851983256025,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1021.3851983256025,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "M3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark": 0.38294184198218767,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34646735492326775,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta"
+        ]
+      },
+      "P3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark": 2.3229360594059685,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.0,
+          "earlier_level": 0.05114800790204416,
+          "previous_gap": 0.0781030318760077
+        },
+        "intercept": 3.659831977912263,
+        "metadata": {
+          "at_bound": true,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.0
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "previous",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1023.965863239056,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1023.965863239056,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1023.965863239056,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "P3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark": 0.44902194752186414,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34646735492326775,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta"
+        ]
+      }
+    },
+    "nodes": 5,
+    "r0": {
+      "centers": {},
+      "coefficients": {},
+      "intercept": 3.5419108827153036,
+      "metadata": {
+        "convergence": {
+          "boundary_parameters": [],
+          "gradient_finite": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "objective": 1112.8019020913202,
+          "starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.8019020940358,
+              "success": true
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.8019020913202,
+              "success": true
+            }
+          ],
+          "success": true
+        },
+        "counts": {
+          "excluded": 0,
+          "interval": 307,
+          "right_censored": 23
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "n_fit": 330
+      },
+      "n_fit": 330,
+      "name": "R0",
+      "scales": {},
+      "sigma": 0.41338321278205536,
+      "terms": []
+    }
+  },
+  "joint_placebo": {
+    "counts": {
+      "excluded": 0,
+      "interval": 307,
+      "right_censored": 23
+    },
+    "directional": true,
+    "endpoint_mode": "point",
+    "joint_marks": true,
+    "local_level": true,
+    "mark_mode": "log_duration",
+    "metadata": {
+      "base_model": "M2 fixed for M3/P3 offsets",
+      "conditional_likelihood": "landmark survival with interval and right-censor terms",
+      "frozen": true,
+      "joint_marks": true,
+      "training_cutoff": 2436934.5
+    },
+    "models": {
+      "M0": {
+        "centers": {},
+        "coefficients": {},
+        "intercept": 3.6672617774824663,
+        "metadata": {
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1110.7768321517078,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.7768321517078,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.7768321517458,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 330
+        },
+        "n_fit": 330,
+        "name": "M0",
+        "scales": {},
+        "sigma": 0.36204634933872,
+        "terms": []
+      },
+      "M2": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "baseline_training_count": 307,
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1024.0313433587435,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1024.0313433587435,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1024.0313433864662,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 307
+        },
+        "n_fit": 307,
+        "name": "M2",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level"
+        ]
+      },
+      "M3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark": 2.3487013847278697,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.04659658037107343,
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "at_bound": false,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.04659658037107343
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": true,
+          "mark_kind": "current",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1024.0313433587435,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1021.4345707105587,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1021.4345707105587,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "M3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark": 0.38294184198218767,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta"
+        ]
+      },
+      "P3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark": 2.3229360594059685,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.0,
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "at_bound": true,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.0
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": true,
+          "mark_kind": "previous",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1024.0313433587435,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1024.0313433587435,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1024.0313433587435,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "P3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark": 0.44902194752186414,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta"
+        ]
+      }
+    },
+    "nodes": 5,
+    "r0": {
+      "centers": {},
+      "coefficients": {},
+      "intercept": 3.60258269361301,
+      "metadata": {
+        "convergence": {
+          "boundary_parameters": [],
+          "gradient_finite": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "objective": 1112.1436261188444,
+          "starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436262073485,
+              "success": true
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436261188444,
+              "success": true
+            }
+          ],
+          "success": true
+        },
+        "counts": {
+          "excluded": 0,
+          "interval": 307,
+          "right_censored": 23
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "n_fit": 330
+      },
+      "n_fit": 330,
+      "name": "R0",
+      "scales": {},
+      "sigma": 0.3883562967781381,
+      "terms": []
+    }
+  },
+  "primary": {
+    "counts": {
+      "excluded": 0,
+      "interval": 307,
+      "right_censored": 23
+    },
+    "directional": true,
+    "endpoint_mode": "point",
+    "joint_marks": false,
+    "local_level": true,
+    "mark_mode": "log_duration",
+    "metadata": {
+      "base_model": "M2 fixed for M3/P3 offsets",
+      "conditional_likelihood": "landmark survival with interval and right-censor terms",
+      "frozen": true,
+      "joint_marks": false,
+      "training_cutoff": 2436934.5
+    },
+    "models": {
+      "M0": {
+        "centers": {},
+        "coefficients": {},
+        "intercept": 3.6672617774824663,
+        "metadata": {
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1110.7768321517078,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.7768321517078,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.7768321517458,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 330
+        },
+        "n_fit": 330,
+        "name": "M0",
+        "scales": {},
+        "sigma": 0.36204634933872,
+        "terms": []
+      },
+      "M2": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "baseline_training_count": 307,
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1024.0313433587435,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1024.0313433587435,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1024.0313433864662,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 307
+        },
+        "n_fit": 307,
+        "name": "M2",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level"
+        ]
+      },
+      "M3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark": 2.3487013847278697,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.04659658037107343,
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "at_bound": false,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.04659658037107343
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "current",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1024.0313433587435,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1021.4345707105587,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1021.4345707105587,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "M3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark": 0.38294184198218767,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta"
+        ]
+      },
+      "P3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark": 2.3229360594059685,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.0,
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "at_bound": true,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.0
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "previous",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1024.0313433587435,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1024.0313433587435,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1024.0313433587435,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "P3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark": 0.44902194752186414,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta"
+        ]
+      }
+    },
+    "nodes": 5,
+    "r0": {
+      "centers": {},
+      "coefficients": {},
+      "intercept": 3.60258269361301,
+      "metadata": {
+        "convergence": {
+          "boundary_parameters": [],
+          "gradient_finite": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "objective": 1112.1436261188444,
+          "starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436262073485,
+              "success": true
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436261188444,
+              "success": true
+            }
+          ],
+          "success": true
+        },
+        "counts": {
+          "excluded": 0,
+          "interval": 307,
+          "right_censored": 23
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "n_fit": 330
+      },
+      "n_fit": 330,
+      "name": "R0",
+      "scales": {},
+      "sigma": 0.3883562967781381,
+      "terms": []
+    }
+  },
+  "q_only": {
+    "counts": {
+      "excluded": 0,
+      "interval": 307,
+      "right_censored": 23
+    },
+    "directional": true,
+    "endpoint_mode": "point",
+    "joint_marks": false,
+    "local_level": false,
+    "mark_mode": "log_duration",
+    "metadata": {
+      "base_model": "M2 fixed for M3/P3 offsets",
+      "conditional_likelihood": "landmark survival with interval and right-censor terms",
+      "frozen": true,
+      "joint_marks": false,
+      "training_cutoff": 2436934.5
+    },
+    "models": {
+      "M0": {
+        "centers": {},
+        "coefficients": {},
+        "intercept": 3.6672617774824663,
+        "metadata": {
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1110.7768321517078,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.7768321517078,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.7768321517458,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 330
+        },
+        "n_fit": 330,
+        "name": "M0",
+        "scales": {},
+        "sigma": 0.36204634933872,
+        "terms": []
+      },
+      "M2": {
+        "centers": {
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "previous_gap": 0.09293145588060372
+        },
+        "intercept": 3.6592277956793566,
+        "metadata": {
+          "baseline_training_count": 307,
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1026.9168957682566,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1026.916895773174,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1026.9168957682566,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 307
+        },
+        "n_fit": 307,
+        "name": "M2",
+        "scales": {
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.3498266749821064,
+        "terms": [
+          "previous_gap"
+        ]
+      },
+      "M3": {
+        "centers": {
+          "mark": 2.3487013847278697,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.04450384200179319,
+          "previous_gap": 0.09293145588060372
+        },
+        "intercept": 3.6592277956793566,
+        "metadata": {
+          "at_bound": false,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.04450384200179319
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "current",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1026.9168957682566,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1024.5936733780222,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1024.5936733780222,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "M3",
+        "scales": {
+          "mark": 0.38294184198218767,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.3498266749821064,
+        "terms": [
+          "previous_gap",
+          "beta"
+        ]
+      },
+      "P3": {
+        "centers": {
+          "mark": 2.3229360594059685,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.0,
+          "previous_gap": 0.09293145588060372
+        },
+        "intercept": 3.6592277956793566,
+        "metadata": {
+          "at_bound": true,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.0
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "previous",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1026.9168957682566,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1026.9168957682566,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1026.9168957682566,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "P3",
+        "scales": {
+          "mark": 0.44902194752186414,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.3498266749821064,
+        "terms": [
+          "previous_gap",
+          "beta"
+        ]
+      }
+    },
+    "nodes": 5,
+    "r0": {
+      "centers": {},
+      "coefficients": {},
+      "intercept": 3.60258269361301,
+      "metadata": {
+        "convergence": {
+          "boundary_parameters": [],
+          "gradient_finite": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "objective": 1112.1436261188444,
+          "starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436262073485,
+              "success": true
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436261188444,
+              "success": true
+            }
+          ],
+          "success": true
+        },
+        "counts": {
+          "excluded": 0,
+          "interval": 307,
+          "right_censored": 23
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "n_fit": 330
+      },
+      "n_fit": 330,
+      "name": "R0",
+      "scales": {},
+      "sigma": 0.3883562967781381,
+      "terms": []
+    }
+  },
+  "type_within": {
+    "counts": {
+      "excluded": 0,
+      "interval": 307,
+      "right_censored": 23
+    },
+    "directional": true,
+    "endpoint_mode": "point",
+    "joint_marks": false,
+    "local_level": true,
+    "mark_mode": "type_within",
+    "metadata": {
+      "base_model": "M2 fixed for M3/P3 offsets",
+      "conditional_likelihood": "landmark survival with interval and right-censor terms",
+      "frozen": true,
+      "joint_marks": false,
+      "training_cutoff": 2436934.5
+    },
+    "models": {
+      "M0": {
+        "centers": {},
+        "coefficients": {},
+        "intercept": 3.6672617774824663,
+        "metadata": {
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1110.7768321517078,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.7768321517078,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.7768321517458,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 330
+        },
+        "n_fit": 330,
+        "name": "M0",
+        "scales": {},
+        "sigma": 0.36204634933872,
+        "terms": []
+      },
+      "M2": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "baseline_training_count": 307,
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1024.0313433587435,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1024.0313433587435,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1024.0313433864662,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 307
+        },
+        "n_fit": 307,
+        "name": "M2",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level"
+        ]
+      },
+      "M3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark_type": {
+            "0": 2.0410327767509595,
+            "1": 2.7109211643318907
+          },
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta_type": 0.050526448392871154,
+          "beta_within": 0.011835797644866334,
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "at_bound": false,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.050526448392871154,
+            0.011835797644866334
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "current",
+          "mark_mode": "type_within",
+          "n_fit": 307,
+          "selected_zero_objective": 1024.0313433587435,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1022.4549856884333,
+              "start": [
+                0.1,
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1022.4549856884319,
+              "start": [
+                1.0,
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "M3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark_within": 0.18761875963836452,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta_type",
+          "beta_within"
+        ]
+      },
+      "P3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark_type": {
+            "0": 1.9971286422748085,
+            "1": 2.71157776412671
+          },
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta_type": 0.0,
+          "beta_within": 0.0,
+          "earlier_level": 0.051335907380916625,
+          "previous_gap": 0.07801595244522026
+        },
+        "intercept": 3.659981647934044,
+        "metadata": {
+          "at_bound": true,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.0,
+            0.0
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "previous",
+          "mark_mode": "type_within",
+          "n_fit": 307,
+          "selected_zero_objective": 1024.0313433587435,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1024.0313433587435,
+              "start": [
+                0.1,
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1024.0313433587435,
+              "start": [
+                1.0,
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "P3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark_within": 0.27385828333612994,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.34636170156690677,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta_type",
+          "beta_within"
+        ]
+      }
+    },
+    "nodes": 5,
+    "r0": {
+      "centers": {},
+      "coefficients": {},
+      "intercept": 3.60258269361301,
+      "metadata": {
+        "convergence": {
+          "boundary_parameters": [],
+          "gradient_finite": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "objective": 1112.1436261188444,
+          "starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436262073485,
+              "success": true
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436261188444,
+              "success": true
+            }
+          ],
+          "success": true
+        },
+        "counts": {
+          "excluded": 0,
+          "interval": 307,
+          "right_censored": 23
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "n_fit": 330
+      },
+      "n_fit": 330,
+      "name": "R0",
+      "scales": {},
+      "sigma": 0.3883562967781381,
+      "terms": []
+    }
+  },
+  "uniform_end": {
+    "counts": {
+      "excluded": 0,
+      "interval": 307,
+      "right_censored": 23
+    },
+    "directional": true,
+    "endpoint_mode": "uniform_end",
+    "joint_marks": false,
+    "local_level": true,
+    "mark_mode": "log_duration",
+    "metadata": {
+      "base_model": "M2 fixed for M3/P3 offsets",
+      "conditional_likelihood": "landmark survival with interval and right-censor terms",
+      "frozen": true,
+      "joint_marks": false,
+      "training_cutoff": 2436934.5
+    },
+    "models": {
+      "M0": {
+        "centers": {},
+        "coefficients": {},
+        "intercept": 3.6657329746151346,
+        "metadata": {
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1110.582128847935,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.582128847935,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1110.582128847977,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 330
+        },
+        "n_fit": 330,
+        "name": "M0",
+        "scales": {},
+        "sigma": 0.3617867659659692,
+        "terms": []
+      },
+      "M2": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "earlier_level": 0.051040301340930384,
+          "previous_gap": 0.07835783614727444
+        },
+        "intercept": 3.6584459612909166,
+        "metadata": {
+          "baseline_training_count": 307,
+          "convergence": {
+            "boundary_parameters": [],
+            "gradient_finite": true,
+            "gradient_finite_free": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1024.0227131265997,
+            "starts": [
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1024.0227131280421,
+                "success": true
+              },
+              {
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1024.0227131265997,
+                "success": true
+              }
+            ],
+            "success": true
+          },
+          "fit_kind": "conditional_landmark",
+          "fixed_terms": [],
+          "n_fit": 307
+        },
+        "n_fit": 307,
+        "name": "M2",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.346433236720938,
+        "terms": [
+          "previous_gap",
+          "earlier_level"
+        ]
+      },
+      "M3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark": 2.3525432018511028,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.04943376449479212,
+          "earlier_level": 0.051040301340930384,
+          "previous_gap": 0.07835783614727444
+        },
+        "intercept": 3.6584459612909166,
+        "metadata": {
+          "at_bound": false,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.04943376449479212
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "current",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1024.0227131265997,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1021.3269709713525,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1021.3269709713526,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "M3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark": 0.39079848472469464,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.346433236720938,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta"
+        ]
+      },
+      "P3": {
+        "centers": {
+          "earlier_level": 3.6710386390589056,
+          "mark": 2.322936059405969,
+          "previous_gap": 3.674454318425385
+        },
+        "coefficients": {
+          "beta": 0.0,
+          "earlier_level": 0.051040301340930384,
+          "previous_gap": 0.07835783614727444
+        },
+        "intercept": 3.6584459612909166,
+        "metadata": {
+          "at_bound": true,
+          "base_model": "M2",
+          "baseline_training_count": 307,
+          "beta": [
+            0.0
+          ],
+          "directional": true,
+          "failed_starts": [],
+          "fit_kind": "fixed_m2_mark_offset",
+          "fit_status": "optimized",
+          "fixed_beta_indices": [],
+          "joint_marks": false,
+          "mark_kind": "previous",
+          "mark_mode": "log_duration",
+          "n_fit": 307,
+          "selected_zero_objective": 1024.0227131265997,
+          "successful_starts": [
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1024.0227131265997,
+              "start": [
+                0.1
+              ]
+            },
+            {
+              "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "objective": 1024.0227131265997,
+              "start": [
+                1.0
+              ]
+            }
+          ],
+          "unidentifiable": false,
+          "valid_mark_count": 307
+        },
+        "n_fit": 307,
+        "name": "P3",
+        "scales": {
+          "earlier_level": 0.22168144976377654,
+          "mark": 0.44902194752186414,
+          "previous_gap": 0.3532761300947066
+        },
+        "sigma": 0.346433236720938,
+        "terms": [
+          "previous_gap",
+          "earlier_level",
+          "beta"
+        ]
+      }
+    },
+    "nodes": 5,
+    "r0": {
+      "centers": {},
+      "coefficients": {},
+      "intercept": 3.60258269361301,
+      "metadata": {
+        "convergence": {
+          "boundary_parameters": [],
+          "gradient_finite": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "objective": 1112.1436261188444,
+          "starts": [
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436262073485,
+              "success": true
+            },
+            {
+              "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "objective": 1112.1436261188444,
+              "success": true
+            }
+          ],
+          "success": true
+        },
+        "counts": {
+          "excluded": 0,
+          "interval": 307,
+          "right_censored": 23
+        },
+        "fit_kind": "remaining_wait_at_issue",
+        "n_fit": 330
+      },
+      "n_fit": 330,
+      "name": "R0",
+      "scales": {},
+      "sigma": 0.3883562967781381,
+      "terms": []
+    }
+  }
+}

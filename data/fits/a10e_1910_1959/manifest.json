@@ -1,0 +1,13 @@
+{
+  "files_sha256": {
+    "frozen_parameters.json": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+    "profiles.json": "1d7ae0f7ca66cc5b09d129805e39788ffabe0fe74922bd33f21ada888ba2a6c8",
+    "run-receipt.json": "2d67ef6ef63cfb34f8bf9680615f3a8eb0b350402e33aa06aff51e6e769c78e5",
+    "summary.json": "5d0eeb11be19ad35ac181a1fd1933ff71981ccbcc67d4bcdfd1e80a742a36289"
+  },
+  "full_profiles_sha256": "da544d6ca1131731bd45b39bf79828822b3818523937c25137f15da167f5848e",
+  "interpretation": "in-sample development fit; conditional likelihood support is not calibrated confidence; no held-out skill result",
+  "parameters_sha256": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "profile_receipt_sha256": "fda151591ab9bce8bb8d374f407f7ea7cfda8870e58319b961c692340bebb770",
+  "source_freeze": "b80c4a9dd52f659663345190ea9da6bb205410a0"
+}

@@ -299,3 +299,18 @@ After A10d reporting commit `1026cff`, Barry explicitly selected the finite
 association, the adapter, source/window guards and profile diagnostics are
 being frozen under the A10e protocol. The run receipt will record source
 commit, native hashes and first-fit UTC. No 1960+ access is authorized.
+
+
+### Codex A10e first real association, 8 November 2026
+
+D022 and adapter/profile source freeze `b80c4a9` were committed before native
+opening at 2026-11-08 10:49:36 UTC. The run receipt marks the first real
+duration–following-gap model fit at 10:50:31 UTC. All twelve acquisition
+hashes match the retained cache; every native row is before 1960. Candidate
+and independent reference ledgers/evidence match at both delays. All six
+fits use 330 issuances (joint-mark diagnostic scores 307); parameter file
+SHA-256 is `ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3`.
+The resulting positive primary offset and in-sample likelihood gain are now
+known. No real Pearson correlation or held-out forecast score was computed.
+No model was changed afterwards; no 1960+ observation or coverage count was
+accessed. The development association cannot be made unseen again.

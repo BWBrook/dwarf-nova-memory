@@ -74,8 +74,8 @@ are negative through shared end-error coupling. It specifies a directional,
 matched M3 (β ≥ 0, duration only where the previous-gap term is present),
 a local-level comparator, a lagged-duration placebo, a gated synthetic OC
 study, and then the first real 1910–1959 fit (`docs/protocols/a10c-development-fit-v1.md`).
-A10 remains unfrozen. No frozen operational
-extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
+The later-data evaluation remains unfrozen. No operational extractor or
+normalized observation release exists. Every committed photometry or seed forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 in `forecast.py` still fits only M0/M1 complete oracle cycles for the seed demo;
 the separate ledger prototype does not infer missed events, a filtered latent
@@ -85,21 +85,21 @@ A10d implements the amended directional offset models and independent v3
 features. Source freeze `8f5df44` passes 100-history concordance and completes
 all 360 synthetic OC trials; independent numerical and aggregate audits pass.
 The finite observed-rate/joint-MC screen passes, with 27.5% injected-effect
-power. It is not a formal five-percent size certificate. The real fit remains
-closed pending the pre-outcome gate-policy clarification. D021 records why
-positive endpoint artefacts remain
-possible, why the lagged mark is not identifying, and how the finite synthetic
-screen differs from size certification. The source-freeze protocol is
-`docs/protocols/a10d-directional-oc-v1.md`; the completed report is
-`docs/audits/2026-11-08-a10d-directional-oc.md`. No real association or 1960+
-access has occurred.
+power. It is not a formal five-percent size certificate. D021 records the
+positive-endpoint counterexample and non-identifying lagged-mark comparator.
 
-D022 resolves the subsequent gate question: Barry explicitly accepted the
-360-trial observed≤5% screen, authorizing the first real 1910–1959 fit under
-`docs/protocols/a10e-real-development-fit-v1.md`. Freeze the guarded adapter
-and likelihood-profile diagnostic before that execution; every A10d model,
-feature and extraction source must retain its qualified bytes. The later
-1960+ access gate is unchanged.
+D022 records Barry's subsequent acceptance of the 360-trial observed≤5%
+screen. A10e freeze `b80c4a9` then completes the first real 1910–1959 fit on
+330 issuances at both delays, after exact candidate/reference concordance.
+Primary duration offset β=.04660 is positive; P3 is at zero. These are
+in-sample working-model results, not held-out skill or physical-memory
+identification. Conditional fixed-M2 likelihood-support profiles are not
+calibrated confidence intervals. See the A10e memo and
+`data/fits/a10e_1910_1959/frozen_parameters.json`, SHA-256
+`ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3`.
+Every qualified A10d estimator/extractor byte is unchanged. Do not retune the
+forecast system after this fit. No 1960+ observation or coverage summary has
+been opened; Barry's explicit evaluation go-ahead is still required.
 
 ## Scientific invariants
 

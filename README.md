@@ -75,7 +75,7 @@ Small floating-point differences across runtimes need not give identical hashes.
 | Archive adapter | Receipt-verified bounded native VStar/AID requests implemented for the SS Cyg open era; no time normalization or event inference |
 | M2/M3 and validated observational forecasting | [A10b](docs/audits/2026-11-08-a10b-model-controls.md) implements conditional M0–M3 and completes 56 synthetic control trials. Injected-effect prefix gain averages 0.00324 nats; individual-history intervals remain wide. AR-gap baseline, partial endpoint sensitivity and strict oracle matching remain limitations. [A10c](docs/audits/2026-11-08-a10c-controls-review.md) finds that a third of that gain came from forecasts with no previous-gap term, and that null coefficients are negative. It specifies a directional, matched M3 (null −0.0002, injected effect +0.0023 nats on the A10b scores), a placebo for shared slow state, and the path to the first real 1910–1959 fit. No operational or real-data forecast result |
 | Synthetic recovery | Earlier X1/X2/X3 failures retained. A04i's 4,800-history X4 screen passes at magnitude 10 on qualified v2 phase-aligned cadence; C1/7 d selected. The unseen waveform fails qualification and magnitude-9.5 diagnostics fail in later eras. This is conditional retrospective extraction, with no real-star predictive result |
-| Observational findings | Annotation and returned-row coverage only. Independent 1957 boundary differences adjudicated; no real forecast or empirical duration–gap correlation has been computed |
+| Observational findings | Independent 1957 boundary differences adjudicated; first 1910–1959 development model fit complete on 330 issuances. No held-out skill result |
 | Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |
 
 [A10d](docs/protocols/a10d-directional-oc-v1.md) implements the directional
@@ -84,11 +84,13 @@ features, and the 360-trial operating-characteristic runner. The
 [completed A10d audit](docs/audits/2026-11-08-a10d-directional-oc.md) passes
 the finite observed-rate/joint-MC screen: gated null confirmations are at
 most 2/40 or 0/20, and injected-effect power is 11/40 (27.5%). This does not
-certify a true five-percent error rate. The first real development fit remains
-closed pending the gate-policy clarification raised before outcomes. The
-positive coefficient and lagged-duration comparisons do not identify physical
-memory or universally exclude endpoint artefacts. No real association or
-1960+ data was accessed.
+certify a true five-percent error rate. Barry accepted that finite screen
+(D022), and the [first real development fit](docs/audits/2026-11-08-a10e-first-development-fit.md)
+is complete: 330 forecasts, a positive frozen duration offset, and similar
+endpoint/delay checks. This is in-sample evidence; held-out forecast skill is
+untested and 1960+ access remains closed. The positive coefficient and
+lagged-duration comparisons do not identify physical memory or universally
+exclude endpoint artefacts.
 
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
 uses *true complete simulated event histories*. The observation schedule is a

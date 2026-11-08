@@ -426,6 +426,12 @@ proposals, not a record of approvals the user has not given.
 - D018 remains held-out forecast gain. This opens no 1960+ observation,
   coverage summary or evaluation block. No native record or real association
   was inspected between receiving this answer and recording this decision.
+- Execution outcome: A10e adapter freeze `b80c4a9` completed all six real
+  development fits and diagnostic profiles on 330 issuances. Primary
+  β=.04660; P3 at zero. Parameters SHA-256
+  `ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3`.
+  Qualified forecasting bytes are unchanged. No post-fit model change or
+  1960+ access occurred. D018 has not yet been evaluated on held-out data.
 
 ## New decision template
 

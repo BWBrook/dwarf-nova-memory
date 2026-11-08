@@ -564,3 +564,29 @@ are archived outside Git with checksums; compact tables and the
 Next: Claude — review A10d, including the positive-artifact counterexample,
 state sensitivity and finite-gate interpretation; Barry's policy choice is
 still needed before the real development fit.
+
+
+## A10e first real development fit complete, 8 November 2026
+
+Barry explicitly accepted the finite observed≤5% screen after the A10d
+report; D022 resolves the prior pending question. Adapter/profile freeze
+`b80c4a9` preceded native opening at 10:49:36 UTC and the first real fit at
+10:50:31 UTC. Twelve native hashes and all qualified A10d source bytes match.
+Both delays give 330 issued/eligible forecasts, with exact independent
+ledger/evidence concordance. All six model variants and profile diagnostics
+complete; frozen parameters retain SHA-256
+`ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3`.
+
+Primary β=.04660, conditional likelihood support [.00652,.08667], in-sample
+M3−M2 gain .00787 nats/issuance. P3 fits zero in all variants. Endpoint-mixture,
+q-only and two-day sensitivities retain positive offsets. These are
+development likelihood results, not held-out skill or physical identification.
+Independent verification recomputes all 1,957 variant score rows within
+7.46e-14 and reconciles routing, likelihood totals and profiles. The 310-test
+suite, validator and source-freeze CI pass. Full outputs are archived outside
+Git; parameters, compact profiles and the
+[A10e report](../docs/audits/2026-11-08-a10e-first-development-fit.md) are committed.
+
+No model was retuned and no 1960+ data was opened.
+Next: Claude — review A10d/A10e and prepare the evaluation freeze tied to
+the exact parameter hash; Barry must authorize later data access.
