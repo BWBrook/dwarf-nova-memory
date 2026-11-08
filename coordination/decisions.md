@@ -589,6 +589,14 @@ proposals, not a record of approvals the user has not given.
   unchanged. D025's Zenodo-first condition is already met; no new protocol
   DOI will be portrayed as predating this access. No 2018+ request is allowed.
 
+- Repair source freeze `5e39aeb772c427ef29671c1a9c80b22c05519b58` passes
+  all 344 tests, validator, staged scan and Python 3.11–3.13 CI. Its fresh
+  synthetic full rehearsal completes every diagnostic, with an independent
+  score/interval audit (max score discrepancy2.94e-14). The repair-bound
+  access file explicitly retains the original approval/freeze, failure and
+  consumed status, and cites the existing protocol repair clause. Commit and
+  push this record before the labeled post-access continuation.
+
 ## New decision template
 
 ### D0xx — Short concrete title

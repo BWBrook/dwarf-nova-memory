@@ -394,3 +394,15 @@ was inspected. The block is nevertheless consumed and cannot regain
 untouched status. D026 records the independently reviewed exact-sentinel
 parser repair. Raw responses, hash receipts, log and the failed run remain
 retained; subsequent execution must be labeled post-access repair.
+
+
+### D026 repaired continuation checkpoint
+
+Source `5e39aeb` changes only the native missing-uncertainty validation and
+synthetic regression tests; every original forecasting source, parameter
+and protocol byte remains fixed. A fresh complete synthetic rehearsal and
+independent numerical check pass before continuation. The updated authority
+cites the original D025 approval, D026 repair, original failed run and consumed
+status. No real magnitude, outcome, event count, coverage summary, fitted
+coefficient or score was used to choose the change. The next command is a
+post-access format-repair continuation, not a renewed untouched first look.
