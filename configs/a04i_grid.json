@@ -1,0 +1,233 @@
+{
+  "calibration_replicates": 16,
+  "configurations": [
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v2-00",
+      "family": "v2",
+      "noise_multiplier": 0.95,
+      "pair_id": "v2-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_sd": 0.2,
+        "decline_rate_median": 0.4,
+        "low_amplitude_probability": 0.05,
+        "low_peak_magnitude_max": 9.5,
+        "low_peak_magnitude_min": 9.0,
+        "minimum_decline_rate": 0.12,
+        "minimum_rise_rate": 0.15,
+        "peak_magnitude_max": 8.8,
+        "peak_magnitude_min": 8.0,
+        "quiet_magnitude": 11.8,
+        "reference_threshold": 10.0,
+        "rise_rate_log_sd": 0.65,
+        "rise_rate_median": 0.95
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-00",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.333,
+        "peak_duration_coupling": -0.045,
+        "peak_level": 8.32,
+        "peak_scatter": 0.22,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.667
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-01",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.333,
+        "peak_duration_coupling": -0.055,
+        "peak_level": 8.37,
+        "peak_scatter": 0.25,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.667
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-02",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.333,
+        "peak_duration_coupling": -0.065,
+        "peak_level": 8.42,
+        "peak_scatter": 0.28,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.667
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-03",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.37,
+        "peak_duration_coupling": -0.045,
+        "peak_level": 8.32,
+        "peak_scatter": 0.22,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.8
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-04",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.37,
+        "peak_duration_coupling": -0.055,
+        "peak_level": 8.37,
+        "peak_scatter": 0.25,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.8
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-05",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.37,
+        "peak_duration_coupling": -0.065,
+        "peak_level": 8.42,
+        "peak_scatter": 0.28,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.8
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-06",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.4,
+        "peak_duration_coupling": -0.045,
+        "peak_level": 8.32,
+        "peak_scatter": 0.22,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.95
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-07",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.4,
+        "peak_duration_coupling": -0.055,
+        "peak_level": 8.37,
+        "peak_scatter": 0.25,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.95
+      }
+    },
+    {
+      "cadence_config": {
+        "donor_pool_size": 8,
+        "era_radius_days": 1826.25,
+        "history_grid_days": 0.25,
+        "season_window_days": 75.0
+      },
+      "configuration_id": "v4-08",
+      "family": "v4",
+      "noise_multiplier": 0.95,
+      "pair_id": "v4-phase",
+      "phase": "phase",
+      "shape_config": {
+        "decline_rate_log_spread": 0.23,
+        "decline_rate_median": 0.4,
+        "peak_duration_coupling": -0.065,
+        "peak_level": 8.42,
+        "peak_scatter": 0.28,
+        "rise_rate_log_spread": 0.65,
+        "rise_rate_median": 0.95
+      }
+    }
+  ],
+  "qualification_replicates": 150,
+  "scope": "one fixed phase policy; no variance/covariance search; fixed nuisance bounds"
+}

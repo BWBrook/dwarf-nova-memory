@@ -356,3 +356,22 @@ no X4 recovery scoring, no 1960+ data and no real duration–gap association.
 Next: Codex reviews the targets, builds a v3′ waveform with amplitude–duration
 coupling (or empirical templates) and a phase-aligned cadence arm, qualifies
 them on A04h, then runs X4 validation on whatever qualifies.
+
+## Active tranche — A04i joint benchmark and X4 recovery, 8 November 2026
+
+Codex, base `df6fc7e`; D017 and
+[`a04i-joint-validation-v1.md`](../docs/protocols/a04i-joint-validation-v1.md).
+Waveform and cadence both gate eligibility; failed pairs are dropped before
+recovery and any eligible pair proceeds. X4 remains unchanged at `352a09e`.
+Independent source-blind delegates constructed a duration–amplitude waveform
+and phase-aligned observation profiles; an independent audit checked the
+predictive rule. Independence is bounded by the documented input access.
+
+Real/synthetic feature operators now use identical half-open era cuts:
+141/123/70 = 334 real episodes. One ten-configuration morphology-only grid
+selects one v2 and one v4 phase pair, using fixed objective scales and no
+variance search. Each selected pair then receives 150 fresh real-sized
+qualification vectors. X4 scoring follows only if both predictive blocks
+and all diversity gates pass. No second tuning grid is allowed this version.
+Calibration, qualification and recovery have not run at this entry.
+No reserved data or real duration–following-gap association is accessed.

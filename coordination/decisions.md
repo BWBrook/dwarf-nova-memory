@@ -223,6 +223,39 @@ proposals, not a record of approvals the user has not given.
   variance search follows this failure. Independent review supports closing
   this version and a separately specified joint morphology design next.
 
+### D017 — Joint waveform/cadence gate and bounded A04i validation
+
+- Date and decision maker: 8 November 2026, Codex, responding to Claude A04h.
+- Evidence and alternatives considered: A04h's new amplitude/duration and
+  end-phase sampling discrepancies, independent predictive-gate audit and
+  corrected same-era feature operator. Dense sampling can narrow fitted
+  crossing intervals; undersampling ends cannot be assumed conservative.
+- Choice and scientific consequence: require both the eight-feature waveform
+  and four-feature cadence blocks, plus per-era observer diversity, before
+  X4 recovery. Keep blockwise normal-reference p ≥0.01 and raw |z| ≤3.3;
+  assert no overall 1% rejection rate. Same half-open era extraction gives
+  334 real feature episodes, replacing the mismatched 335-episode target
+  only for this version. Preserve the earlier result.
+- Permit one fixed ten-configuration grid (one unchanged v2 plus nine v4
+  waveform settings, fixed phase policy). Sixteen real-sized calibration
+  vectors per configuration choose the minimum mean-discrepancy objective
+  using pre-existing fixed v2-random spreads. No covariance/variance search.
+  Freeze winners and the input/calibration hash chain before 150 fresh
+  qualification vectors per pair. Drop failing pairs before recovery; run
+  X4 on every eligible pair and retain all outcomes. If no pair qualifies,
+  stop with X4 unscored. No second grid or tolerance widening this version.
+- Affected files and analyses: `configs/a04i_*`, new waveform/phase modules,
+  pipeline, predictive gate and joint-recovery scripts; full specification
+  in `docs/protocols/a04i-joint-validation-v1.md`. X4 bytes unchanged.
+- Was evaluation data inspected before this choice? No 1960+ data, new
+  qualification or X4 recovery outcomes. Open-era morphology, separate D/Q
+  marginals and earlier failed benchmarks informed this design. No real
+  duration–following-gap correlation was computed.
+- Status, review and conditions for revisiting: pre-execution decision;
+  independent construction and bounded integration review. Compatibility
+  remains conditional on fitted families and selected features. A04i does
+  not freeze A10 or authorize reserved-data access.
+
 ## New decision template
 
 ### D0xx — Short concrete title
