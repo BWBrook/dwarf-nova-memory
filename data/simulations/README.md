@@ -43,3 +43,12 @@ histories per cell (`scripts/a04f_develop_x4.py`).
 X1 episode in real 1910–1959 rows with both v2 cadence arms, and counts real
 episodes confirmed by X4's single-observer rule (`--diversity`). Neither is
 validation evidence.
+
+## A04h (Claude, morphology only)
+
+`a04h_morphology_targets_20261108.json` holds the real 1910–1959 target vector
+and, for v2 and v3 in random and diverse cadence, the replicate means, SDs,
+z-scores and Hotelling prediction p-values for the waveform and cadence blocks
+(150 real-sized replicates each; `scripts/a04h_morphology_targets.py`).
+`a04h_noiseless_geometry_20261108.json` gives noiseless decline-slope and peak
+geometry against duration for v2 and v3 (`--geometry`). No recovery scoring.

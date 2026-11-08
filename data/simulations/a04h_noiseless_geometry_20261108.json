@@ -1,0 +1,30 @@
+{
+  "v2": {
+    "events": 2125,
+    "histories": 18,
+    "rho_duration_band_slope": 0.101,
+    "band_slope_median_short_long": [
+      0.355,
+      0.371
+    ],
+    "rho_duration_peak": -0.477,
+    "peak_median_short_long": [
+      8.74,
+      8.44
+    ]
+  },
+  "v3": {
+    "events": 2123,
+    "histories": 18,
+    "rho_duration_band_slope": -0.156,
+    "band_slope_median_short_long": [
+      0.407,
+      0.383
+    ],
+    "rho_duration_peak": -0.022,
+    "peak_median_short_long": [
+      8.42,
+      8.4
+    ]
+  }
+}

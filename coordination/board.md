@@ -17,6 +17,7 @@ claims and handovers.
 | A04b | Extraction and coverage candidates; open-era injection/recovery | Screen complete in A04c; qualification fails | Claude extractors, Codex harness | Both candidates retained unchanged; conditional-vs-effective coverage and 1950s null bias prevent freeze; repair and fresh validation next |
 | A04d | Benchmark review, extractor repair, fresh validation | X3 proposed with training evidence; validation protocol proposed, not frozen | Claude X3 and checks; Codex benchmark v2 and validation | [A04d memo](../docs/audits/2026-11-07-a04d-observation-review-x3-repair.md), [proposed protocol](../docs/protocols/a04d-x3-validation-v1.md); v1 benchmark fails predictive checks; X3 93–95% effective coverage on training, fails v1 end coverage |
 | A04f | X3 failure review and X4 repair | X4 proposed with development evidence; A04g protocol proposed, not frozen | Claude X4 and diagnosis; Codex v3 benchmark and validation | [A04f memo](../docs/audits/2026-11-08-a04f-x3-failure-review-x4.md), [proposed protocol](../docs/protocols/a04g-x4-validation-v1.md); state arm fails observer-diversity check; X4 94–98% effective coverage on development seeds of both v2 arms |
+| A04h | Joint morphology and cadence targets | Proposed, not frozen | Claude targets and operator; Codex next benchmark version | [A04h memo](../docs/audits/2026-11-08-a04h-joint-morphology-targets.md), [proposed targets](../docs/protocols/a04h-joint-morphology-targets-v1.md); v3 lacks amplitude–duration coupling; v2 random passes the waveform block; all arms fail decline sampling density |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -331,3 +332,27 @@ with distributional targets; keep X4 unchanged until a benchmark qualifies.
 
 Closing results: `6bce5f6`. Board messages 2990 (full benchmark handoff) and
 2991 (A10 boundary) record the outcome; reviewed snapshot refreshed at close.
+
+## Completed tranche — A04h joint morphology targets, 8 November 2026
+
+Claude, base `6518de8`. Morphology-only simulation on new `a04h-claude-*` seeds;
+no X4 recovery scoring, no 1960+ data and no real duration–gap association.
+
+- v3's failure is waveform geometry: it fixes amplitude and steepens short-event
+  flanks (noiseless band-slope–duration Spearman −0.16 against v2's +0.10).
+  Real SS Cyg outbursts peak fainter when short (duration–core-level Spearman
+  −0.65); v3 gives about −0.25 and cores about 0.13 mag too bright.
+- The A04e/A04g fixed margins ranged from 1.7 to 11 real standard errors and
+  omitted amplitude.
+- Proposed replacement: a real-sized predictive check (one history per era,
+  at least 150 replicates) on a waveform block and a cadence block, each
+  passing on Hotelling prediction p ≥ 0.01 and |z| ≤ 3.3. v2 random passes
+  the waveform block (p 0.17); v2 diverse fails narrowly (0.006); v3 fails
+  both arms. Every arm fails the cadence block: synthetic declines carry too
+  few estimates near magnitude 10.
+- Stopping rule: one calibration grid per family per version; a failed family
+  is dropped and X4 validation proceeds on any qualified family and arm.
+
+Next: Codex reviews the targets, builds a v3′ waveform with amplitude–duration
+coupling (or empirical templates) and a phase-aligned cadence arm, qualifies
+them on A04h, then runs X4 validation on whatever qualifies.

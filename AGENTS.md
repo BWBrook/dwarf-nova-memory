@@ -34,7 +34,11 @@ causal rule, and proposes X4 (`src/dnmem/extract_x4.py`) for A04g validation
 on an unseen benchmark family. A04g freeze `b83d76a` repaired observer
 diversity but failed one v3 morphology gate in 384 fresh qualification
 histories. X4 recovery was not run and the validation namespace is unused;
-see the A04g report and D016. Do not call X4 validated or confuse benchmark
+see the A04g report and D016. A04h traced the v3 failure to fixed amplitude
+(real short outbursts peak fainter; duration–core-level Spearman −0.65) and
+proposes joint waveform and cadence targets with tolerances from sampling
+spread at the real sample size; every current cadence arm fails the cadence
+block. Do not call X4 validated or confuse benchmark
 failure with a candidate recovery failure. No frozen
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
