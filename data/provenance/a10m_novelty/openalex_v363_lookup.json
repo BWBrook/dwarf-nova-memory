@@ -1,0 +1,16 @@
+{
+  "retrieved_date": "2026-11-09",
+  "result_count_reported": 1,
+  "result_count_retained": 1,
+  "records": [
+    {
+      "id": "https://openalex.org/W2608392576",
+      "doi": null,
+      "display_name": "Forecasting the Outbursts of the Photometry Light Curve of Star V363 Lyr",
+      "publication_year": 2014,
+      "cited_by_count": 0
+    }
+  ],
+  "request_url": "https://api.openalex.org/works?filter=title.search:Forecasting%20the%20Outbursts%20of%20the%20Photometry&per-page=5",
+  "http_status": 200
+}

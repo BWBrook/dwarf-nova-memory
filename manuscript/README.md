@@ -20,15 +20,15 @@ The paper builds with [makedoc](https://github.com/BWBrook/makedoc), expected at
 poppler are system dependencies; `uv` supplies Python. From the repository root:
 
 ```sh
-uv run tools/refs.py build        # references/refs.yaml from references/dois.txt via Crossref
+uv run --project manuscript --frozen python tools/refs.py build        # references/refs.yaml from references/dois.txt via Crossref
 make -C manuscript check          # claims ledger, glyphs, makedoc lint and citation audit
 make -C manuscript                # PDF and DOCX into build/, then the brief's two-page check
 ```
 
 To cite a work, add its DOI to `references/dois.txt` (or an entry to `references/manual.yaml`),
 rebuild, and cite the printed key with Pandoc citation syntax (an at-sign key in square brackets).
-This repository's `scripts/validate_seed.py` currently accepts only keys in `references/literature.bib`;
-reconcile it with `references/refs.yaml` before the first citation is drafted. Keys follow Better BibTeX's default pattern and
+The structural validator accepts the legacy keys and the generated manuscript keys while preserving
+the separate source-evidence register. See `references/README.md` for identifier status and provenance. Keys follow Better BibTeX's default pattern and
 skip words, so a Zotero export of the same DOIs matches where the two sources' metadata agree (title casing and name
 particles can still differ). Generated content is not edited by hand: marked table blocks, `figures/`,
 `references/refs.yaml` and `build/`.

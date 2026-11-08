@@ -449,3 +449,24 @@ figures and the claims ledger while drafting the products. No retained-run
 file, archive response, per-issuance score, event catalog or observer
 identity was read. No archive request was made, and no row from 2018 onward
 was requested or inspected.
+
+### Codex A10m semantic review and independent literature-search exposure
+
+9 November 2026. The root reviewer and semantic delegates used the committed
+aggregate evidence, source code, paper drafts and rendered PDFs; no retained
+photometry, per-issuance table, model fit or archive endpoint was opened.
+A separate novelty delegate searched public scholarly sources. Broad search
+results delivered two unsolicited SS Cyg snippets: one pointing to an unopened
+public notebook about later data, and one publisher-paper result containing an
+aggregate with an unspecified historical span. The delegate opened neither
+outcome-rich source and did not relay, retain or publish any outcome values.
+It reported the exposure channels immediately; subsequent discovery was
+narrowed to publication sources. The independent novelty audit records source
+identities and limits without the outcome summaries.
+
+The 2018+ photometry archive remains closed, but the search delegate has this
+additional incidental outcome knowledge. Any future evaluation must carry
+that disclosure forward; do not describe all collaborators as wholly unaware
+of later-period outcomes. This exposure followed the completed 1960–2017
+primary result and changed no forecasting model, parameter, result or present
+scientific design.

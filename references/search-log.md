@@ -54,3 +54,26 @@ Thermonuclear classical/recurrent nova forecasts were not treated as dwarf-nova 
 Useful additional leads include Ak, Ozkan, and Mattei (2001), *Solar-type cycles of the secondary stars in cataclysmic variables*, DOI `10.1051/0004-6361:20010167`; the critique/follow-up literature to Osaki and Kato’s 2013 interpretation; and recent helium-system work such as the 2026 KL Dra study. These are follow-up leads, not fully reviewed included records.
 
 Absence from this seed is not evidence that a study does not exist. No priority or exhaustiveness claim should be based on this search alone.
+
+## A10m independent novelty check, 9 November 2026
+
+Codex independently checked the narrowed C41 claim after the first drafts.
+The exact 43 queries and their independent/reconciliation phases are in
+`data/provenance/a10m_novelty/search_receipt.json`; the source appraisal is
+`docs/audits/2026-11-09-a10m-novelty-review.md`. Twenty queries preceded reading
+A10l's search memo. The V363 Lyr proceedings PDF and Price preprint were
+source-checked. OpenAlex returned 68 CM92 citing records, all screened by
+title/identifier, with duplicate versions retained; its V363 record indexed
+zero forward citations. This is not an exhaustive full-text citation screen.
+ADS was inaccessible. Observer/non-English publications and several full texts,
+including Tsuranova et al. (2026), remain incomplete. No unverified methods
+are treated as source-verified exclusions.
+
+The search found no prior preregistered probabilistic held-out dwarf-nova
+recurrence evaluation or explicit held-out duration-addition comparison among
+located and checked sources. This supports a bounded search account and a
+qualified "to our knowledge" priority sentence, not universal absence. The
+V363 precedent is a held-out point-forecast study; its stochastic fitting
+runs are distinct from a scored predictive onset distribution. Unsolicited
+outcome snippets encountered during discovery are separately disclosed in
+`docs/outcome-access-ledger.md`; no new photometry was requested.

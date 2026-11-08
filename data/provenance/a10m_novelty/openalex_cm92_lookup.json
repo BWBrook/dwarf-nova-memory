@@ -1,0 +1,16 @@
+{
+  "retrieved_date": "2026-11-09",
+  "result_count_reported": 1,
+  "result_count_retained": 1,
+  "records": [
+    {
+      "id": "https://openalex.org/W2071470637",
+      "doi": "https://doi.org/10.1086/172092",
+      "display_name": "On the long-term behavior of SS Cygni",
+      "publication_year": 1992,
+      "cited_by_count": 68
+    }
+  ],
+  "request_url": "https://api.openalex.org/works/https://doi.org/10.1086/172092",
+  "http_status": 200
+}

@@ -1,0 +1,33 @@
+{
+  "final_pdf_pages": {
+    "brief": 2,
+    "main": 13,
+    "supplement": 9
+  },
+  "final_pdf_sha256": {
+    "brief.pdf": "b988e5524a3568ca45de085ca58cb2acd63349e67520d61005a960150dcb1789",
+    "manuscript.pdf": "758e4f042310930cca7214497a0431881b6507f6690a4dd631f306799daa7e0d",
+    "supplement.pdf": "16776fb1c9662109b130492ded3ef58f76cd0dd2afb67aa9f76ab009b8ac8bba"
+  },
+  "incidental_search_snippet_exposure": "disclosed in docs/outcome-access-ledger.md; no outcome values propagated",
+  "new_fits_or_scores": 0,
+  "parameter_sha256": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "photometry_requests": 0,
+  "protected_photometry_opened": false,
+  "qualified_forecasting_files_unchanged": 26,
+  "review_records_sha256": {
+    "a10m_article_review-followup.md": "61ecb4d11f8b0147549da1a561331845db6b7fd75b1673810b617f9847bd0d28",
+    "a10m_article_review.md": "fd0bffc08d0c5596ecb8346fcf8f1bebc5ab940f8dc3b4aac2a2f2a8eb48df8b",
+    "a10m_article_sentences.csv": "9099ded864d6cca74c1943019774568c4094f8a4956922bb7c47eb0b27fe94e7",
+    "a10m_support_review-followup.md": "3f5b322f38e127fae927578c5cd49b64fb397fabf53dcaa0f3e0b63c6c1214d5",
+    "a10m_support_review.md": "5795befd33d124a6fe09a6cf05aa4889495826b8f79f2ee665bcf3a7eaa62747"
+  },
+  "reviewed_base": "2ec353493b941ef190b63d74267375f29e119af6",
+  "scope": "semantic/source/render review, not a new fit or evaluation",
+  "source_checks": {
+    "c09_uniform_end_lower_full_precision": 0.00444547865427204,
+    "c25_strict_SE_boundary": 1.4270501885272726,
+    "c41_supported_as": "bounded independent search account, not universal absence"
+  },
+  "unit_tests": 348
+}

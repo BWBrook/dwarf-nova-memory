@@ -719,6 +719,34 @@ proposals, not a record of approvals the user has not given.
   observer-credit review and any release remain Barry's.
 - No archive request, retained-run read or 2018+ access occurred.
 
+### D031 — Draft review complete; bounded novelty supported; handoff to Barry
+
+- Codex, 9 November 2026; review base `2ec3534`. Report:
+  `docs/audits/2026-11-09-a10m-draft-review.md`. Article/captions,
+  supplement/brief/agent guide, and novelty were reviewed through separate
+  bounded routes. Changed passages were checked again after integration.
+- The original forecast comparison stands. No model, parameter, score,
+  receipt or qualified forecasting source changed. Corrections concern
+  interpretation, transformed-predictor definitions, qualification status,
+  likelihood references, single-observer confirmation wording, direct
+  rounding, observation-time availability and safe reproduction commands.
+  The supplement audit trail and agent-guide traps preserve the corrections.
+- C41 is supported only as a bounded independent search finding: no prior
+  preregistered probabilistic held-out recurrence evaluation or explicit
+  held-out duration-addition comparison was found among sources checked.
+  The 2014 V363 Lyr point-forecast precedent remains explicit. ADS, indexing,
+  observer/non-English and inaccessible-full-text gaps prevent universal
+  priority claims; “to our knowledge” must remain.
+- Final review PDFs have 13 article, 9 supplement and 2 brief pages. The
+  scientific result has not changed. The drafts are handed to Barry for
+  review; authorship, venue/CSL, observer credit and a later release remain
+  unsettled. No new release or submission is authorised by this entry.
+- No photometry or archive endpoint was requested. Two unsolicited
+  outcome-related search snippets were disclosed by the novelty delegate;
+  neither linked source was opened and no outcome values were passed to
+  the parent. The access ledger records that incidental knowledge for
+  future protocols. The 2018+ photometry archive remains closed.
+
 ## New decision template
 
 ### D0xx — Short concrete title

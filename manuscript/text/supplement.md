@@ -15,8 +15,8 @@ states what each analysis bounds and which phrasings are not allowed. Section an
 | Issuance | One forecast, issued when the observation-time rule first confirms that an outburst has ended |
 | Duration | Onset-to-end time of the completed outburst, from X4 run on the 400 days before issue |
 | Quiet gap | End of one outburst to onset of the next; the forecast target |
-| Previous gap, $q$ | The preceding quiet gap, used only if covered (no visit gap over seven days) |
-| Recent level, $L$ | Mean of up to six earlier covered log quiet gaps; zero (the training mean) if none |
+| Previous-gap predictor, $q$ | Standardised log of the preceding quiet gap, used only if covered (no visit gap over seven days) |
+| Recent-level predictor, $L$ | Standardised mean of up to six earlier covered log quiet gaps; zero after standardisation if none |
 | Onset bracket | X4's retrospective interval for the next onset; scoring evidence only |
 | Right censoring | The forecast ends at coverage loss, the next issuance, or the block end before an onset is established |
 | Log score | Natural log of the probability the forecast gave to the observed bracket (or to survival, if censored), conditional on survival to issue; units are nats |
@@ -50,7 +50,8 @@ the threshold in a decline cannot re-arm it.
 
 Three earlier extractors, X1 to X3, failed qualification. X4 passed a synthetic screen at magnitude
 10 on the qualified phase-aligned cadence family, and the C1/7 d coverage rule was selected there.
-It failed on an unseen waveform family, and magnitude-9.5 diagnostics failed in later eras. Those
+The unseen waveform family failed benchmark qualification before X4 recovery was scored;
+X4 recovery on that family was not tested. Magnitude-9.5 diagnostics failed in later eras. Those
 failures are retained (A04e–A04i). The evaluation is therefore conditional on the magnitude-10
 X4 extraction.
 
@@ -80,13 +81,16 @@ Otherwise the forecast is right-censored at the earliest of these events.
 ### S2.4 Models and likelihood
 
 Each model is a lognormal clock for the quiet gap $Q$ after a known end $e$, with log-location
-$\mu$ and scale $\sigma$:
+$\mu$ and log-standard deviation $\sigma$:
 
 - M0: $\mu = \alpha$;
 - M2: $\mu = \alpha + \gamma_1 q + \gamma_2 L$;
 - M3: $\mu = \alpha + \gamma_1 q + \gamma_2 L + \beta x$, with $\beta \ge 0$.
 
-Here $x$ is the standardised log duration. At issue age $a$, an onset bracket $(l, u]$ scores
+Here $q = (\log Q_{\mathrm{prev}} - c_q)/s_q$. If $\ell$ is the mean of up to six earlier covered
+log quiet gaps, $L = (\ell - c_L)/s_L$; set $L = 0$ if none are available. The centres and scales
+are frozen development means and standard deviations. Likewise, $x$ is the standardised log
+duration. At issue age $a$, an onset bracket $(l, u]$ scores
 $\log P(l - e < Q \le u - e) - \log S(a)$. A censoring time $c$ scores $\log S(c - e) - \log S(a)$,
 where $S$ is the survival function. Forecasts without a covered previous gap use M0 in both
 models, and forecasts without a known end use a common remaining-wait forecast. Both contribute
@@ -119,9 +123,9 @@ interval width may replace it.
 ### S2.6 Operating characteristics
 
 Before the development fit, a finite synthetic screen checked the design (A10d). At an effect sized
-to CM92's published correlations, [11]{.C30} of 40 simulated evaluations confirmed, with exact
+to CM92's published correlations, [11]{.C30} of [40]{.C30} simulated evaluations confirmed, with exact
 interval [0.146]{.C30} to [0.439]{.C30}[]{.C30}. Pooled no-effect histories gave [3]{.C31}
-confirmations in 220[]{.C31}. These histories share random streams, so the count is a finite
+confirmations in [220]{.C31}. These histories share random streams, so the count is a finite
 screen, not an independent error rate or a certified size. The reference injected effect gave a
 mean gain of [0.0045]{.C33} nats[]{.C33}. Barry accepted the finite screen before the first real
 fit (D022).
@@ -163,7 +167,7 @@ interval. Only the first row is confirmatory.
 | Segment 1960–1992 | [261]{.C06} | [0.0240]{.C06} | [0.0091]{.C06} to [0.0389]{.C06} |
 | Segment 1993–2017 | [180]{.C07} | [0.0057]{.C07} | [−0.0107]{.C07} to [0.0221]{.C07} |
 | 12-day class and within-class rule | 441 | [0.0025]{.C08} | [−0.0022]{.C08} to [0.0072]{.C08} |
-| Uniform-end marks | 441 | [0.0166]{.C09} | lower [0.0045]{.C09} |
+| Uniform-end marks | 441 | [0.0166]{.C09} | lower [0.0044]{.C09} |
 | Previous-gap-only baseline | 441 | [0.0170]{.C09} | lower [0.0054]{.C09} |
 | Two-day issue delay | 441 | [0.0165]{.C09} | lower [0.0049]{.C09} |
 | Joint-valid rows | 436 | [0.0167]{.C09} | lower [0.0049]{.C09} |
@@ -172,8 +176,8 @@ interval. Only the first row is confirmatory.
 
 The primary interval uses ten nonempty blocks and nine degrees of freedom[]{.C01}. Eight have positive means. Leave-one-block-out means span [0.0132]{.C25} to
 [0.0194]{.C25}, and [0.5397]{.C25} of individual issuance gains are positive. Holding the estimate,
-critical value and blocks fixed, the decision fails once the standard error is multiplied by
-[1.427]{.C25} or more[]{.C25}. The boundary is strict: a 42% inflation passes and an exact 43%
+critical value and blocks fixed, the strict failure boundary is approximately
+[1.42705]{.C25} times the reported standard error. A 42% inflation passes and an exact 43%
 fails. None of these checks validates the cluster dependence assumption.
 
 The frozen P3 placebo equals M2, because its development lag coefficient sat at its bound of zero.
@@ -228,18 +232,18 @@ adjustment it describes. None supplies a further held-out confirmation.
   level, the gain is [0.01239]{.C20} ([0.00098]{.C20} to [0.02381]{.C20}). The two orderings of the
   split differ by about 0.000012 nats.
 - **Class versus continuous duration (C21).** With M2's historical parameters fixed and a free
-  common level, the evaluation statistics against the level-only model are as follows:
-  - class alone, [14.7]{.C21 .V005};
-  - continuous log duration, [11.7]{.C21 .V006};
+  common level, the evaluation likelihood-ratio comparisons are as follows:
+  - class versus level only, [14.7]{.C21 .V005};
+  - continuous log duration versus level only, [11.7]{.C21 .V006};
   - within-class duration added to class, [0.17]{.C21 .V007}.
 
   The class contrast corresponds to a [14]{.C21 .V008}% larger untruncated working-clock scale after
   long outbursts. In 1910–1959 the class and continuous fits were similar, with a smaller contrast[]{.C21}.
-- **Shared level for the class rule (C22).** The frozen class rule's mean type offset is
+- **Shared level for the class rule (C22).** The frozen class-plus-within rule's mean offset is
   [0.01728]{.C22}. Giving both rules M2's evaluation-fitted level yields a gain of [0.00905]{.C22}
   ([0.00409]{.C22} to [0.01401]{.C22}). For 1993–2017 alone it yields [0.00761]{.C22}
   ([−0.00631]{.C22} to [0.02153]{.C22}). The uncentred type component cannot shorten short-outburst
-  forecasts, but the full frozen rule does shorten 181 of 245 of them through its within-class term.
+  forecasts, but the full frozen rule does shorten [181]{.C22} of [245]{.C22} of them through its within-class term.
 - **Era refits (C23).** The class contrast is [0.16323]{.C23} (statistic [13.504]{.C23}) in
   1960–1992 and [0.07828]{.C23} ([2.262]{.C23}) in 1993–2017. These are descriptive; there is no
   test of change.
@@ -256,17 +260,37 @@ is not evidence for the claim.
 
 ### S3.7 Prior art checked against the source
 
-Claude re-read CM92's Table 4 and its Fig. 5 subscript conventions on the original scan[]{.C40}.
+Claude re-read CM92's Table 4 and its Fig. 5 subscript conventions on the original scan
+[@cannizzo1992LongtermBehaviorSS] []{.C40}.
 For [705]{.C40} outbursts (1896–1992), the correlations are:
 
 - duration with the following quiescence, [0.223]{.C40};
 - duration with the preceding quiescence, [0.282]{.C40};
 - successive durations, [−0.400]{.C40}.
 
-Durations split at [12]{.C40} days, with 401 shorter and 304 longer. The correlation of duration
-with the following onset-to-onset cycle is 0.475, against 0.145 with the preceding cycle. For
-end-to-end cycles the pattern reverses, at 0.093 and 0.521. The famous relation is therefore
+Durations split at [12]{.C40} days, with [401]{.C40} shorter and [304]{.C40} longer. The correlation of duration
+with the following onset-to-onset cycle is [0.475]{.C40}, against [0.145]{.C40} with the preceding cycle. For
+end-to-end cycles the pattern reverses, at [0.093]{.C40} and [0.521]{.C40}. The famous relation is therefore
 largely definitional, as CM92 showed.
+
+### S3.8 Bounded independent novelty check
+
+An independent search in A10m found no prior preregistered probabilistic held-out recurrence
+evaluation, or explicit held-out comparison of duration beyond a timing-history baseline, among
+the studies located and checked. This supports a bounded "to our knowledge" statement, not proof
+of universal priority. The exact queries and source receipts are in
+`data/provenance/a10m_novelty/`; the appraisal is
+`docs/audits/2026-11-09-a10m-novelty-review.md`.
+
+The closest precedent, [Grigorievskiy et al. (2014)](https://research.cs.aalto.fi/aml/Publications/Publication216.pdf),
+uses chronological training, validation and test sets, with one test outburst of V363 Lyr. It
+scores point-onset errors; no preregistration or scored predictive onset distribution is reported.
+No explicit duration-addition comparison against a common timing baseline is reported. Repeated
+random fits do not make the evaluated forecast a probability distribution. The independent
+search included an OpenAlex citing-title screen and primary-source checks of this study and
+@price2007SSCygniOutburst. ADS access failed; observer/non-English coverage is incomplete, and some
+full texts, including Tsuranova et al. (2026), remain inaccessible. Their unverified methods are
+not treated as exclusions. []{.C41}
 
 ## S4. Analyses superseded during review
 
@@ -302,25 +326,48 @@ forecast test of dwarf-nova recurrence. The refreshed search found a held-out po
 of V363 Lyr by Grigorievskiy and colleagues, in the 2014 ITISE proceedings (pp. 520–531), with a single test
 outburst. The claim now specifies preregistered, probabilistic and duration-based[]{.C41}.
 
+**Draft corrections in A10m.** Semantic review corrected an overstatement of complete flare
+recovery, distinguished an unseen-waveform qualification failure from unperformed X4 recovery,
+defined the standardised timing predictors, and gave the within-class likelihood statistic its
+proper class-model reference. The article's assumptions table now states calculated results and
+current limits rather than attributing information exclusively to class or physical disc state.
+The uniform-end lower bound is rounded directly from the full-precision evidence, and the SE
+failure boundary is explicitly approximate when printed. Reproduction commands preserve committed
+evidence and state their retained-input dependencies. The primary comparison is unchanged.
+
 ## S5. Reproduction and navigation
 
 From the repository root, without new archive requests:
 
+These public-only checks use the committed aggregates and figure assets:
+
 ```sh
-python3 scripts/check_a10g_evaluation.py --directory outputs/a10h_live_repair_5e39aeb --output outputs/a10k_saved_score_audit.json
-uv run --frozen --extra analysis python scripts/a10j_postresult_review.py
-uv run --frozen --extra analysis python scripts/a10k_exploratory_audit.py
-uv run --frozen --extra analysis python scripts/a10k_secondary_audit.py
 python3 manuscript/figures.py --check
 make -C manuscript check
 make -C manuscript
 ```
 
-The first command needs the retained completed run. That run is kept outside Git because it holds
-raw archive replies, observer identities and per-issuance scores. Its archive SHA-256 and manifest
-are in `data/provenance/a10i_evaluation_1960_2017/archive.json`. The committed aggregate evidence
-supports every ledger value. The published protocol is at
-<https://doi.org/10.5281/zenodo.24053338>.
+Recomputing scores and exploratory fits requires the retained inputs outside Git. The saved-score
+checker needs the completed evaluation run. The three subsequent analyses also need the retained
+1910–1959 development inputs. Outputs below go to scratch paths; committed evidence is preserved.
+
+```sh
+python3 scripts/check_a10g_evaluation.py \
+  --directory outputs/a10h_live_repair_5e39aeb \
+  --output outputs/a10m_reproduction/score_audit.json
+uv run --frozen --extra analysis \
+  python scripts/a10j_postresult_review.py \
+  --output outputs/a10m_reproduction/a10j_summary.json
+uv run --frozen --extra analysis \
+  python scripts/a10k_exploratory_audit.py
+uv run --frozen --extra analysis \
+  python scripts/a10k_secondary_audit.py
+```
+
+The retained run includes raw archive replies, observer identities and per-issuance scores. Its
+archive SHA-256 and manifest are in `data/provenance/a10i_evaluation_1960_2017/archive.json`.
+The committed aggregates support the ledger values, but do not replace these inputs for a full
+recomputation. The published protocol is at <https://doi.org/10.5281/zenodo.24053338>.
 
 Navigation:
 

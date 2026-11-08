@@ -1,0 +1,72 @@
+{
+  "review_date": "2026-11-09",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Forecasting the Outbursts of the Photometry Light Curve of Star V363 Lyr",
+      "authors": "Grigorievskiy et al.",
+      "year": 2014,
+      "url": "https://research.cs.aalto.fi/aml/Publications/Publication216.pdf",
+      "access": "Full PDF retrieved; relevant text read; printed page 6 split visually checked.",
+      "sha256": "0ff9ed5767344a5e855130ae8e9d6b7d1757359c214195d5c9cbf2c4be22f48f",
+      "retention": "PDF/text/figure inspection files in temporary scratch only; not copied to repository."
+    },
+    {
+      "id": "S02",
+      "title": "A Search for SS Cyg Outburst Predictors",
+      "authors": "Price et al.",
+      "year": 2007,
+      "url": "https://arxiv.org/pdf/0710.2937",
+      "version": "0710.2937v1, 2007-10-16",
+      "doi": "10.1086/524413",
+      "access": "Full primary preprint via web.run; sections 1-4 and references read."
+    },
+    {
+      "id": "S03",
+      "title": "Study of Dwarf Novae by Fractal Methods",
+      "authors": "Tsuranova, Tarasenkov and Moskovchenko",
+      "year": 2026,
+      "url": "https://journals.rcsi.science/0004-6299/article/view/466940",
+      "doi": "10.7868/S3034518926080062",
+      "access": "Official English abstract, metadata and references only; Russian full text redirected to payment/login; XML click unsupported by web tool."
+    },
+    {
+      "id": "S04",
+      "title": "On the long-term behavior of SS Cygni",
+      "authors": "Cannizzo and Mattei",
+      "year": 1992,
+      "url": "https://doi.org/10.1086/172092",
+      "access": "OpenAlex metadata and all 68 indexed citing records screened by title; original scientific findings not independently re-read this audit."
+    },
+    {
+      "id": "S05",
+      "title": "Machine-learning applications for cataclysmic variable discovery in the ZTF alert stream",
+      "url": "https://academic.oup.com/mnras/article/527/3/8633/7459939",
+      "access": "Primary indexed full text on classification structure inspected; no light curves or outcome tables extracted."
+    },
+    {
+      "id": "S06",
+      "title": "Outburst cycle of V363 Lyr",
+      "authors": "Kato et al.",
+      "year": 2001,
+      "url": "https://articles.adsabs.harvard.edu/pdf/2001IBVS.5118....1K",
+      "access": "Bibliographic backward lead only; ADS PDF/full routes inaccessible; author institutional bibliography confirmed identity."
+    },
+    {
+      "id": "S07",
+      "title": "On the Sequencing of Long and Short Outbursts in Dwarf Novae",
+      "authors": "Cannizzo",
+      "year": 1994,
+      "url": "https://doi.org/10.1007/978-94-011-0858-4_9",
+      "access": "Bibliographic lead from CM92 citers and publisher contents; original ADS PDF inaccessible. No detailed methods assertion."
+    },
+    {
+      "id": "S08",
+      "title": "Time series, neural networks and the future of the Sun",
+      "authors": "Conway",
+      "year": 1998,
+      "url": "https://doi.org/10.1016/S1387-6473(98)00041-4",
+      "access": "Bibliographic CM92 citer; primary full text not retrieved. Not used to exclude a dwarf-nova forecast method."
+    }
+  ]
+}

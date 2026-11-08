@@ -1,0 +1,417 @@
+{
+  "retrieved_date": "2026-11-09",
+  "result_count_reported": 68,
+  "result_count_retained": 68,
+  "records": [
+    {
+      "id": "https://openalex.org/W2140509822",
+      "doi": "https://doi.org/10.1111/j.1365-2966.2009.16010.x",
+      "display_name": "Physical properties of IP Pegasi: an eclipsing dwarf nova with an unusually cool white dwarf",
+      "publication_year": 2010
+    },
+    {
+      "id": "https://openalex.org/W2099957638",
+      "doi": "https://doi.org/10.1046/j.1365-8711.2003.06936.x",
+      "display_name": "The X-ray and extreme-ultraviolet flux evolution of SS Cygni throughout outburst",
+      "publication_year": 2003
+    },
+    {
+      "id": "https://openalex.org/W1965391370",
+      "doi": "https://doi.org/10.1088/0004-637x/747/2/117",
+      "display_name": "THEKEPLERLIGHT CURVES OF V1504 CYGNI AND V344 LYRAE: A STUDY OF THE OUTBURST PROPERTIES",
+      "publication_year": 2012
+    },
+    {
+      "id": "https://openalex.org/W2055200107",
+      "doi": "https://doi.org/10.1051/0004-6361:20000107",
+      "display_name": "The nature of dwarf nova outbursts",
+      "publication_year": 2001
+    },
+    {
+      "id": "https://openalex.org/W2084761014",
+      "doi": "https://doi.org/10.1126/science.1237145",
+      "display_name": "An Accurate Geometric Distance to the Compact Binary SS Cygni Vindicates Accretion Disc Theory",
+      "publication_year": 2013
+    },
+    {
+      "id": "https://openalex.org/W2007814675",
+      "doi": "https://doi.org/10.1088/0004-637x/725/2/1393",
+      "display_name": "THEKEPLERLIGHT CURVE OF V344 Lyrae: CONSTRAINING THE THERMAL-VISCOUS LIMIT CYCLE INSTABILITY",
+      "publication_year": 2010
+    },
+    {
+      "id": "https://openalex.org/W2148677551",
+      "doi": "https://doi.org/10.1051/0004-6361:20031221",
+      "display_name": "Delays in dwarf novae I: The case of SS Cygni",
+      "publication_year": 2003
+    },
+    {
+      "id": "https://openalex.org/W2050524771",
+      "doi": "https://doi.org/10.1086/517496",
+      "display_name": "The Masses and Evolutionary State of the Stars in the Dwarf Nova SS Cygni",
+      "publication_year": 2007
+    },
+    {
+      "id": "https://openalex.org/W2404820169",
+      "doi": "https://doi.org/10.1093/mnras/stw1238",
+      "display_name": "The reproducible radio outbursts of SS Cygni",
+      "publication_year": 2016
+    },
+    {
+      "id": "https://openalex.org/W2605143784",
+      "doi": "https://doi.org/10.1051/0004-6361/201730679",
+      "display_name": "Distances of cataclysmic variables and related objects derived fromGaiaData Release 1",
+      "publication_year": 2017
+    },
+    {
+      "id": "https://openalex.org/W2043791507",
+      "doi": "https://doi.org/10.1086/305630",
+      "display_name": "Low States in Cataclysmic Variables",
+      "publication_year": 1998
+    },
+    {
+      "id": "https://openalex.org/W2116524200",
+      "doi": "https://doi.org/10.1086/300381",
+      "display_name": "Unusual “Stunted” Outbursts in Old Novae and Nova-like Cataclysmic Variables",
+      "publication_year": 1998
+    },
+    {
+      "id": "https://openalex.org/W2126573108",
+      "doi": "https://doi.org/10.1046/j.1365-8711.2000.03357.x",
+      "display_name": "Disc instability models for X-ray transients: evidence for evaporation and low -viscosity?",
+      "publication_year": 2000
+    },
+    {
+      "id": "https://openalex.org/W3100729000",
+      "doi": "https://doi.org/10.1051/0004-6361:20031221/pdf",
+      "display_name": "Delays in dwarf novae I: The case of SS Cygni",
+      "publication_year": 2003
+    },
+    {
+      "id": "https://openalex.org/W2107961459",
+      "doi": "https://doi.org/10.1051/0004-6361:20010167",
+      "display_name": "Solar-type cycles of the secondary stars in cataclysmic variables",
+      "publication_year": 2001
+    },
+    {
+      "id": "https://openalex.org/W2167023142",
+      "doi": "https://doi.org/10.1051/0004-6361:200809502",
+      "display_name": "The nature and evolution of Nova Cygni 2006",
+      "publication_year": 2008
+    },
+    {
+      "id": "https://openalex.org/W1992872841",
+      "doi": "https://doi.org/10.1088/0067-0049/203/2/29",
+      "display_name": "AN ONLINE CATALOG OF CATACLYSMIC VARIABLE SPECTRA FROM THEFAR-ULTRAVIOLET SPECTROSCOPIC EXPLORER",
+      "publication_year": 2012
+    },
+    {
+      "id": "https://openalex.org/W2901303571",
+      "doi": "https://doi.org/10.1093/mnras/sty3174",
+      "display_name": "Evidence for mass accretion driven by spiral shocks onto the white dwarf in SDSS J123813.73–033933.0",
+      "publication_year": 2018
+    },
+    {
+      "id": "https://openalex.org/W2553930715",
+      "doi": "https://doi.org/10.1093/mnrasl/slw243",
+      "display_name": "Rapid radio flaring during an anomalous outburst of SS Cyg",
+      "publication_year": 2016
+    },
+    {
+      "id": "https://openalex.org/W2037275300",
+      "doi": "https://doi.org/10.1088/0004-6256/141/4/121",
+      "display_name": "THE DWARF NOVA OUTBURSTS OF NOVA HER 1960 (=V446 HER)",
+      "publication_year": 2011
+    },
+    {
+      "id": "https://openalex.org/W4301332039",
+      "doi": "https://doi.org/10.1051/0004-6361:20079056",
+      "display_name": "Multiple timescales in cataclysmic binaries",
+      "publication_year": 2008
+    },
+    {
+      "id": "https://openalex.org/W2039000800",
+      "doi": "https://doi.org/10.1088/0004-6256/148/6/115",
+      "display_name": "CATACLYSMIC VARIABLES IN THE SUPERBLINK PROPER MOTION SURVEY",
+      "publication_year": 2014
+    },
+    {
+      "id": "https://openalex.org/W1982504073",
+      "doi": "https://doi.org/10.1046/j.1365-8711.1999.02396.x",
+      "display_name": "Structure and properties of transition fronts in accretion discs",
+      "publication_year": 1999
+    },
+    {
+      "id": "https://openalex.org/W2085808736",
+      "doi": "https://doi.org/10.1016/s1387-6473(98)00041-4",
+      "display_name": "Time series, neural networks and the future of the Sun",
+      "publication_year": 1998
+    },
+    {
+      "id": "https://openalex.org/W2069584062",
+      "doi": "https://doi.org/10.1086/309310",
+      "display_name": "A Search for Rotational Modulation of X‐Ray Centers on the Classical Be Star γ Cassiopeiae",
+      "publication_year": 2000
+    },
+    {
+      "id": "https://openalex.org/W1658365641",
+      "doi": "https://doi.org/10.1051/0004-6361:20011560",
+      "display_name": "Dramatic change of the recurrence time and outburst parameters of the intermediate polar GK Persei",
+      "publication_year": 2002
+    },
+    {
+      "id": "https://openalex.org/W1977908157",
+      "doi": "https://doi.org/10.1086/306165",
+      "display_name": "A Study of the Outbursts in SS Cygni",
+      "publication_year": 1998
+    },
+    {
+      "id": "https://openalex.org/W2118308732",
+      "doi": "https://doi.org/10.1051/0004-6361:20078146",
+      "display_name": "The dwarf nova SS Cygni: what is wrong?",
+      "publication_year": 2007
+    },
+    {
+      "id": "https://openalex.org/W1993089792",
+      "doi": "https://doi.org/10.1051/0004-6361:20011627",
+      "display_name": "Implications of the HST/FGS parallax of SS Cygni on the disc instability model",
+      "publication_year": 2002
+    },
+    {
+      "id": "https://openalex.org/W2023023578",
+      "doi": "https://doi.org/10.1051/0004-6361:20020600",
+      "display_name": "Statistical analysis of the long-term visual light curve parameters of dwarf novae",
+      "publication_year": 2002
+    },
+    {
+      "id": "https://openalex.org/W2126371296",
+      "doi": "https://doi.org/10.1088/0004-637x/757/2/174",
+      "display_name": "THE SHAPE OF LONG OUTBURSTS IN U GEM TYPE DWARF NOVAE FROM AAVSO DATA",
+      "publication_year": 2012
+    },
+    {
+      "id": "https://openalex.org/W2078903083",
+      "doi": "https://doi.org/10.1088/2041-8205/716/2/l157",
+      "display_name": "THE ACCRETING WHITE DWARF IN SS CYGNI REVEALED",
+      "publication_year": 2010
+    },
+    {
+      "id": "https://openalex.org/W2050342105",
+      "doi": "https://doi.org/10.1086/432088",
+      "display_name": "Far‐Ultraviolet Spectroscopy of the Dwarf Novae SS Cygni and WX Hydri in Quiescence",
+      "publication_year": 2005
+    },
+    {
+      "id": "https://openalex.org/W2752667337",
+      "doi": "https://doi.org/10.1093/mnras/stx2260",
+      "display_name": "Roche tomography of cataclysmic variables – VIII. The irradiated and spotted dwarf nova, SS Cygni",
+      "publication_year": 2017
+    },
+    {
+      "id": "https://openalex.org/W1972530478",
+      "doi": "https://doi.org/10.1086/342843",
+      "display_name": "The 1985 October Long Outburst of U Geminorum: Revealing the Viscous Timescale in Long Orbital Period Dwarf Novae",
+      "publication_year": 2002
+    },
+    {
+      "id": "https://openalex.org/W2066626277",
+      "doi": "https://doi.org/10.1086/432784",
+      "display_name": "A Recurrence Time versus Orbital Period Relation for the Z Camelopardalis Stars",
+      "publication_year": 2005
+    },
+    {
+      "id": "https://openalex.org/W1932889340",
+      "doi": "https://doi.org/10.1007/s10509-015-2516-z",
+      "display_name": "Effect of data gaps on correlation dimension computed from light curves of variable stars",
+      "publication_year": 2015
+    },
+    {
+      "id": "https://openalex.org/W2805739003",
+      "doi": "https://doi.org/10.3847/1538-4357/aabfe2",
+      "display_name": "High-cadence Multi-color Observations of the Dwarf Nova KSP-OT-201503a by the KMTNet Supernova Program",
+      "publication_year": 2018
+    },
+    {
+      "id": "https://openalex.org/W2016391387",
+      "doi": "https://doi.org/10.1046/j.1365-8711.1999.02239.x",
+      "display_name": "Hot white dwarfs and the UV delay in dwarf novae",
+      "publication_year": 1999
+    },
+    {
+      "id": "https://openalex.org/W4313349875",
+      "doi": "https://doi.org/10.1093/pasj/psac106",
+      "display_name": "The light curve simulations of the 2021 anomalous event in SS Cygni",
+      "publication_year": 2022
+    },
+    {
+      "id": "https://openalex.org/W1970735177",
+      "doi": "https://doi.org/10.1051/0004-6361:20000535",
+      "display_name": "Numerical simulations of the accretion-ejection instability in magnetised accretion disks",
+      "publication_year": 2001
+    },
+    {
+      "id": "https://openalex.org/W3098177731",
+      "doi": "https://doi.org/10.1051/0004-6361:20000535/pdf",
+      "display_name": "Numerical simulations of the Accretion-Ejection Instability in magnetised accretion disks",
+      "publication_year": 2001
+    },
+    {
+      "id": "https://openalex.org/W2124549508",
+      "doi": "https://doi.org/10.1093/pasj/54.6.987",
+      "display_name": "Time-Resolved Photometry of GK Persei during the 1996 Outburst",
+      "publication_year": 2002
+    },
+    {
+      "id": "https://openalex.org/W1993475934",
+      "doi": "https://doi.org/10.1111/j.1365-2966.2010.16476.x",
+      "display_name": "Unresolved X-ray emission in M31 and constraints on progenitors of classical novae",
+      "publication_year": 2010
+    },
+    {
+      "id": "https://openalex.org/W4400185055",
+      "doi": "https://doi.org/10.1134/s1063772924700203",
+      "display_name": "Study of the Rapid Variability of a Dwarf Nova SS Cyg at Different Brightness Levels",
+      "publication_year": 2024
+    },
+    {
+      "id": "https://openalex.org/W133374896",
+      "doi": "https://doi.org/10.1023/a:1001821702818",
+      "display_name": "High-Speed BVRI Photometry of SS Cyg at Quiescence and at Outburst",
+      "publication_year": 1998
+    },
+    {
+      "id": "https://openalex.org/W2125038175",
+      "doi": "https://doi.org/10.1134/1.163831",
+      "display_name": "Photometric parameters of the dwarf nova SS Cygni in the quiescent state",
+      "publication_year": 2000
+    },
+    {
+      "id": "https://openalex.org/W2022425851",
+      "doi": "https://doi.org/10.1086/524413",
+      "display_name": "SS Cygni Outburst Predictors and Long Term Quasi-periodic Behavior",
+      "publication_year": 2007
+    },
+    {
+      "id": "https://openalex.org/W2091422733",
+      "doi": "https://doi.org/10.1086/316526",
+      "display_name": "Photometric Oscillations at about 200 Days in the Symbiotic Variable PU Vulpeculae",
+      "publication_year": 2000
+    },
+    {
+      "id": "https://openalex.org/W1650430328",
+      "doi": "https://doi.org/10.1007/978-94-011-0858-4_14",
+      "display_name": "Recurrence Time for Dwarf Nova Outbursts: Dependence on Mass Transfer Rate",
+      "publication_year": 1994
+    },
+    {
+      "id": "https://openalex.org/W2015471083",
+      "doi": "https://doi.org/10.1086/300250",
+      "display_name": "An Analysis of AAVSO Observations of Z Camelopardalis",
+      "publication_year": 1998
+    },
+    {
+      "id": "https://openalex.org/W2029314836",
+      "doi": "https://doi.org/10.1086/305299",
+      "display_name": "V446 Herculis (Nova Her 1960) Is an Optical Triple: Implications for the Resumption of Dwarf Nova Outbursts following the Nova",
+      "publication_year": 1998
+    },
+    {
+      "id": "https://openalex.org/W1972312897",
+      "doi": "https://doi.org/10.1086/310389",
+      "display_name": "On the Relative Rates of Decay of the Optical and Soft X-Ray Fluxes in Dwarf Nova Outbursts",
+      "publication_year": 1996
+    },
+    {
+      "id": "https://openalex.org/W2079067038",
+      "doi": "https://doi.org/10.1086/303703",
+      "display_name": "A Laboratory for Magnetized Accretion Disk Model: Ultraviolet and X‐Ray Emission from Cataclysmic Variable GK Persei",
+      "publication_year": 1997
+    },
+    {
+      "id": "https://openalex.org/W2009475252",
+      "doi": "https://doi.org/10.1093/pasj/55.2.489",
+      "display_name": "Grazing Eclipsing Dwarf Nova CW Monocerotis: Dwarf Nova-Type Outburst in a Possible Intermediate Polar?",
+      "publication_year": 2003
+    },
+    {
+      "id": "https://openalex.org/W2044071066",
+      "doi": "https://doi.org/10.1111/j.1365-2966.2004.07236.x",
+      "display_name": "The behaviour of quiescent accretion discs in dwarf novae",
+      "publication_year": 2003
+    },
+    {
+      "id": "https://openalex.org/W3098475871",
+      "doi": null,
+      "display_name": "A Laboratory for Magnetized Accretion Disk Model: Ultraviolet and X-ray Emission from Cataclysmic Variable GK Persei",
+      "publication_year": 1996
+    },
+    {
+      "id": "https://openalex.org/W1493637185",
+      "doi": "https://doi.org/10.48550/arxiv.0806.1995",
+      "display_name": "Multiple time scales in cataclysmic binaries. The low-field magnetic dwarf nova DO Draconis",
+      "publication_year": 2008
+    },
+    {
+      "id": "https://openalex.org/W3104795279",
+      "doi": null,
+      "display_name": "Cataclysmic Variables in the SUPERBLINK Proper Motion Survey1",
+      "publication_year": 2016
+    },
+    {
+      "id": "https://openalex.org/W3122229891",
+      "doi": null,
+      "display_name": "The behaviour of quiescent accretion discs in dwarf novae",
+      "publication_year": 2003
+    },
+    {
+      "id": "https://openalex.org/W1585767618",
+      "doi": "https://doi.org/10.1023/a:1002424919466",
+      "display_name": "Orbital Light Curve of the Peculiar Binary V Sagittae in ExtendedHigh States of Brightness",
+      "publication_year": 2000
+    },
+    {
+      "id": "https://openalex.org/W1668482092",
+      "doi": "https://doi.org/10.1007/978-94-011-0858-4_9",
+      "display_name": "On the Sequencing of Long and Short Outbursts in Dwarf Novae",
+      "publication_year": 1994
+    },
+    {
+      "id": "https://openalex.org/W57962048",
+      "doi": "https://doi.org/10.1007/978-94-011-0335-0_97",
+      "display_name": "Four Topics in Accretion Disk Theory",
+      "publication_year": 1995
+    },
+    {
+      "id": "https://openalex.org/W1542420143",
+      "doi": "https://doi.org/10.1007/978-94-011-3988-5_49",
+      "display_name": "The EUVE Observations of Dwarf Novae",
+      "publication_year": 1996
+    },
+    {
+      "id": "https://openalex.org/W191728697",
+      "doi": "https://doi.org/10.1007/978-94-011-0335-0_99",
+      "display_name": "On the Outburst Behaviour of Dwarf Novae above the Period Gap",
+      "publication_year": 1995
+    },
+    {
+      "id": "https://openalex.org/W4395478104",
+      "doi": "https://doi.org/10.2139/ssrn.4805871",
+      "display_name": "New Aspects of Spectral Behavior of Two Dwarf Novae SS Cyg and WX Hyi Between Quiescence and Outburst States with International Ultraviolet Explorer (IUE)",
+      "publication_year": 2024
+    },
+    {
+      "id": "https://openalex.org/W4402642238",
+      "doi": "https://doi.org/10.31857/s0004629924020057",
+      "display_name": "Study of the rapid variability of a dwarf nova SS Cyg at different brightness levels",
+      "publication_year": 2024
+    },
+    {
+      "id": "https://openalex.org/W7140218694",
+      "doi": "https://doi.org/10.3847/1538-3881/ae4d41",
+      "display_name": "ASASSN-16dv: Superhumps in a Long-period X-Ray-luminous Dwarf Nova",
+      "publication_year": 2026
+    }
+  ],
+  "request_url": "https://api.openalex.org/works?filter=cites:W2071470637&per-page=100&select=id,doi,display_name,publication_year",
+  "http_status": 200
+}

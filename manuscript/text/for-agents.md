@@ -1,7 +1,7 @@
 ---
 document: agent-facing paper
 study: Frozen SS Cyg forecast comparison
-status: first full drafts of all products (A10l), awaiting Codex's semantic review and Barry's review
+status: first full drafts semantically reviewed and corrected (A10m); awaiting Barry's review
 human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
 claims_ledger: manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
 interpretation: manuscript/estimands.md (what each analysis bounds; allowed and forbidden phrasings)
@@ -35,18 +35,18 @@ wins and this file is wrong: fix it in the same commit.
   [0.0281]{.C01 .V003}, over [441]{.C01 .V004} issuances in 1960–2017 (C01–C03). The run followed a
   post-access format repair (C05).
 - **Is it robust?** Every protocol sensitivity kept a positive lower bound (C09). Eight of ten block
-  means are positive, and the decision fails at an SE multiplier of [1.427]{.C25} (C25). These are
+  means are positive, and the strict SE failure boundary is approximately [1.42705]{.C25} (C25). These are
   checks of one comparison, not new confirmations.
 - **Did every predeclared secondary agree?** No. 1993–2017 is inconclusive (C07), and so is the
   frozen 12-day class rule (C08). There was no era test, so do not infer disappearance.
 - **What carries the information?** In exploratory post-result fits, a long/short indicator is
-  favoured over continuous duration (C21). Part of the gain is a level correction (C20). The class
+  favoured over continuous duration (C21). A global recentering defines a descriptive score contrast, without removing within-period drift (C20). The class
   rule's weakness is sensitive to its coding against the fixed baseline (C22). None of this is held-out.
 - **Is it memory, or a mechanism?** Not established. Alternation (C24) and a coexisting slow state
   are both compatible (C12, C13; supplement S3.4).
 - **Is it new?** The association, alternation and 12-day split are CM92's (C40). The preregistered
   probabilistic held-out test is new to our knowledge, but one held-out point-forecast study exists
-  (C41, still provisional).
+  (C41, supported bounded search).
 
 ## 3. Vocabulary that the files use
 
@@ -56,11 +56,11 @@ wins and this file is wrong: fix it in the same commit.
 | C1/7 d | Coverage rule: a visit gap over seven days ends coverage |
 | Issuance | One forecast per observation-time end confirmation (`causal_confirmations`) |
 | Prefix | The rows in the 400 days before an emission; the only predictor source |
-| M0, M2, M3 | Constant, timing (previous gap q, recent level L) and timing-plus-duration lognormal clocks |
+| M0, M2, M3 | Constant, timing (standardised log previous gap q, standardised recent log-gap level L) and timing-plus-duration lognormal clocks |
 | P3 | Lagged-duration placebo; identical to M2 because its development coefficient is zero |
 | Fallback | Rows without a covered previous gap; M0 for both models; gain exactly zero |
 | Type rule | 12-day uncentred indicator plus centred within-type duration; frozen secondary |
-| Blocks | Six-year calendar clusters anchored at JD 2436934.5 |
+| Blocks | Fixed blocks of 6 times 365.25 days anchored at JD 2436934.5 |
 | Development, evaluation | 1910–1959 fit; 1960–2017 frozen test; 2018 onward closed |
 | Clock scale | Median of the untruncated lognormal clock; not an observed wait |
 
@@ -70,8 +70,8 @@ wins and this file is wrong: fix it in the same commit.
 |---|---|---|---|---|
 | Frozen parameters | 1910–1959 ledger | A10e fit scripts | `data/fits/a10e_1910_1959/frozen_parameters.json` | C04, C14 |
 | Primary and secondaries | Retained run `outputs/a10h_live_repair_5e39aeb` (not in Git) | `scripts/check_a10g_evaluation.py` | `data/provenance/a10i_evaluation_1960_2017/` | C01–C03, C05–C11, C15 |
-| Post-result review | Same run | `scripts/a10j_postresult_review.py` | `data/provenance/a10j_postresult_review/summary.json` | C06–C10, C20–C25 |
-| Independent audits | Same run | `scripts/a10k_exploratory_audit.py`, `scripts/a10k_secondary_audit.py` | `data/provenance/a10k_independent_review/` | C11–C13, C20–C25 |
+| Post-result review | Evaluation run plus retained 1910–1959 development ledger | `scripts/a10j_postresult_review.py` | `data/provenance/a10j_postresult_review/summary.json` | C06–C10, C20–C25 |
+| Independent audits | Evaluation run plus retained 1910–1959 development inputs | `scripts/a10k_exploratory_audit.py`, `scripts/a10k_secondary_audit.py` | `data/provenance/a10k_independent_review/` | C11–C13, C20–C25 |
 | Simulations | Synthetic | A10d/A10f scripts | `data/simulations/` | C30, C31, C33 |
 | Figures | Aggregates above | `manuscript/figures.py` | `manuscript/figures/`, `manuscript/figure-data/` | C01, C06–C08, C11, C21, C23 |
 | Prior art | CM92 scan, search logs | none | `references/evidence.csv`, A01 and A10l memos | C40, C41 |
@@ -103,7 +103,7 @@ governs. Add one whenever a review catches a misreading. -->
    evolve outside those files. Never edit an old receipt to match a newer checkout, or rerun the
    acquisition command to reproduce scores.
 7. **Metadata retrieval is not a source-level literature audit.** C40 was re-read on the original
-   scan in A10l; C41 remains provisional until an independent search check.
+   scan in A10l; C41 now records an independent bounded search (A10m), with source-access and indexing gaps.
 8. **The DOI does not timestamp the repair.** Preserve the failed attempt and the post-access format
    repair in every product that reports C01 (C05).
 9. **A draft is not a paper release.** Venue, submission, manuscript release and any future
@@ -119,12 +119,26 @@ governs. Add one whenever a review catches a misreading. -->
     mean, which carries Monte Carlo uncertainty. That says nothing about exceeding a known physical
     effect.
 
+13. **Use the predictors the coefficients were fitted to.** Both timing predictors are standardised
+    with frozen development centres/scales; a missing recent level is zero after standardisation.
+14. **A benchmark failure is not an extractor recovery failure.** The unseen waveform failed
+    qualification before X4 was scored. No real-event completeness guarantee follows.
+15. **Name the likelihood comparator.** The within-class statistic adds to the class model, whereas
+    class-only and continuous-duration statistics compare with level only (C21).
+16. **Round from the underlying result once.** C09's uniform-end lower bound must be rounded from
+    the full-precision evidence, rather than rounded again from an abbreviated ledger value.
+17. **A reproduction must preserve the evidence being checked.** Give A10j a scratch output and
+    supply the retained development inputs as well as the evaluation run (Supplement S5).
+18. **A score gain is not a measured physical state or observing utility.** Neither was modelled.
+
 ## 6. Checks before and after any change
 
 ```sh
 uv run --project manuscript --frozen python tools/refs.py build  # metadata refresh; uses network
 python3 manuscript/figures.py --check  # public assets; no raw observations needed
-python3 scripts/check_a10g_evaluation.py --directory outputs/a10h_live_repair_5e39aeb --output outputs/a10k_saved_score_audit.json
+python3 scripts/check_a10g_evaluation.py \
+  --directory outputs/a10h_live_repair_5e39aeb \
+  --output outputs/a10m_reproduction/score_audit.json
 make -C manuscript check          # claims, glyphs, makedoc lint and citation audit
 make -C manuscript                # PDF and DOCX into manuscript/build/, then the brief page check
 ```
@@ -140,7 +154,7 @@ Invariants to assert when touching analysis code:
 ## 7. Open edges
 
 - **Later-segment weakness (C07).** Real change, observing change and sampling are not
-  distinguished. An independent photometric extraction for recent decades would separate them.
+  distinguished. An independent photometric extraction for recent decades would test sensitivity to the extraction and observing record.
 - **Class versus continuous (C21, C22).** This needs a new frozen test whose indicator coding and
   intercept freedom are defined together. The closed 2018-onward block should serve as one stratum
   of a multi-star protocol, since alone it would hold roughly 65 forecasts at earlier rates (a
@@ -150,7 +164,7 @@ Invariants to assert when touching analysis code:
 - **Endpoint coupling.** Shared end-time error can create information in some constructions
   (D021). The uniform-end and delay sensitivities only probe it.
 - **Bibliography.** Hempelmann & Kurths (1990) and Grigorievskiy et al. (2014) have no DOI and are
-  cited as plain text until Barry adds Zotero entries. C41 awaits an independent search check.
+  cited as plain text until Barry adds Zotero entries. C41 is supported as an account of a bounded independent search; ADS and full-text gaps remain.
 
 ## 8. Conduct in this repository
 

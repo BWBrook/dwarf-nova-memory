@@ -34,6 +34,12 @@ waiting-time contrast.
 - **Not allowed:** physical memory, causation, confirmation of a disc mechanism, generality to
   dwarf novae, operational forecasts, a blind/untouched evaluation, well-calibrated predictions,
   or an additional confirmatory test chosen after inspection. The rule was an interval criterion.
+- **Measurement qualification:** the source-blind new waveform failed benchmark qualification
+  before X4 recovery was scored. X4 passed its conditional screen on a waveform family known
+  during development. Do not call the unperformed unseen-family recovery a failed X4 test, or
+  call the screen evidence of complete event recovery in the real archive.
+- **Practical utility:** the paired likelihood gain does not measure telescope-scheduling benefit
+  or the fraction of a physical disc state revealed by duration. Neither quantity was tested.
 
 ## Access record (C05)
 
@@ -134,9 +140,10 @@ Monte Carlo uncertainty and is not a second confirmatory target.
 - **Novelty (C41):** one prior held-out timing forecast exists: Grigorievskiy et al. (2014) scored
   point forecasts of outburst onset for V363 Lyr from Kepler photometry, with a single test outburst.
   Allowed: “to our knowledge, the first preregistered, frozen-parameter probabilistic evaluation of
-  dwarf-nova recurrence forecasts on held-out data, and the first test of whether the completed
-  outburst's duration adds forecast skill”. Not allowed: “the first out-of-sample forecast of
-  dwarf-nova outbursts”, or any unqualified priority claim. Searches are bounded (no ADS export).
+  dwarf-nova recurrence forecasts on held-out data, and the first held-out test of whether the completed
+  outburst's duration adds forecast skill beyond a specified timing-history baseline”. Not allowed: “the first out-of-sample forecast of
+  dwarf-nova outbursts”, or any unqualified priority claim. C41 is a supported statement about a bounded independent search, not universal priority.
+  No ADS export was available; observer/non-English coverage and some full texts remain incomplete.
 - **Physical reading (Cannizzo 1993):** in that disc-instability model tuned to SS Cyg, long
   outbursts accrete a larger share of the disc than short ones (about 30% against 3% at the model's
   default resolution, falling as resolution rises), and the depleted outer disc tends to make the

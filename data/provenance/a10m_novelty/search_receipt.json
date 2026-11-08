@@ -1,0 +1,386 @@
+{
+  "review_date": "2026-11-09",
+  "base_commit": "2ec353493b941ef190b63d74267375f29e119af6",
+  "tool": "web.run search_query",
+  "queries": [
+    {
+      "id": "Q01",
+      "batch": 1,
+      "phase": "independent",
+      "query": "\"dwarf nova\" \"forecast\" recurrence probabilistic",
+      "domains_filter": []
+    },
+    {
+      "id": "Q02",
+      "batch": 1,
+      "phase": "independent",
+      "query": "\"cataclysmic variable\" \"prediction\" \"outburst\" machine learning",
+      "domains_filter": []
+    },
+    {
+      "id": "Q03",
+      "batch": 1,
+      "phase": "independent",
+      "query": "\"dwarf novae\" \"recurrence\" \"prediction\" duration",
+      "domains_filter": []
+    },
+    {
+      "id": "Q04",
+      "batch": 1,
+      "phase": "independent",
+      "query": "Grigorievskiy 2014 V363 Lyr forecasting",
+      "domains_filter": []
+    },
+    {
+      "id": "Q05",
+      "batch": 2,
+      "phase": "independent",
+      "query": "\"dwarf nova\" \"probabilistic\" forecast",
+      "domains_filter": []
+    },
+    {
+      "id": "Q06",
+      "batch": 2,
+      "phase": "independent",
+      "query": "\"dwarf novae\" \"prediction\" \"outburst\" neural",
+      "domains_filter": []
+    },
+    {
+      "id": "Q07",
+      "batch": 2,
+      "phase": "independent",
+      "query": "\"Forecasting the Outbursts\" Aalto",
+      "domains_filter": []
+    },
+    {
+      "id": "Q08",
+      "batch": 2,
+      "phase": "independent",
+      "query": "\"SS Cygni\" \"forecasting\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q09",
+      "batch": 3,
+      "phase": "independent",
+      "query": "\"dwarf nova\" \"outburst\" \"forecasting\" -site:freederia.com",
+      "domains_filter": []
+    },
+    {
+      "id": "Q10",
+      "batch": 3,
+      "phase": "independent",
+      "query": "\"dwarf novae\" \"probabilistic\" \"prediction\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q11",
+      "batch": 3,
+      "phase": "independent",
+      "query": "\"SS Cygni\" \"predict\" \"duration\" recurrence",
+      "domains_filter": []
+    },
+    {
+      "id": "Q12",
+      "batch": 3,
+      "phase": "independent",
+      "query": "\"dwarf nova\" \"outburst\" \"Gaussian process\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q13",
+      "batch": 4,
+      "phase": "independent",
+      "query": "\"dwarf nova\" \"forecast\" \"neural\" -\"SS Cyg\" -\"SS Cygni\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q14",
+      "batch": 4,
+      "phase": "independent",
+      "query": "\"dwarf nova\" \"outburst prediction\" -\"SS Cyg\" -\"SS Cygni\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q15",
+      "batch": 4,
+      "phase": "independent",
+      "query": "\"dwarf novae\" \"preregistered\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q16",
+      "batch": 4,
+      "phase": "independent",
+      "query": "\"cataclysmic\" \"probabilistic forecasting\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q17",
+      "batch": 5,
+      "phase": "independent",
+      "query": "\"Forecasting the Outbursts of the Photometry\" citations",
+      "domains_filter": []
+    },
+    {
+      "id": "Q18",
+      "batch": 5,
+      "phase": "independent",
+      "query": "\"dwarf nova\" forecasting site:ui.adsabs.harvard.edu",
+      "domains_filter": []
+    },
+    {
+      "id": "Q19",
+      "batch": 5,
+      "phase": "independent",
+      "query": "\"cataclysmic variables\" forecast site:arxiv.org",
+      "domains_filter": []
+    },
+    {
+      "id": "Q20",
+      "batch": 5,
+      "phase": "independent",
+      "query": "\"dwarf novae\" \"recurrence\" \"machine learning\" site:academic.oup.com",
+      "domains_filter": []
+    },
+    {
+      "id": "Q21",
+      "batch": 6,
+      "phase": "reconciliation",
+      "query": "\"Cannizzo\" \"Mattei\" \"forecast\" \"1992\"",
+      "domains_filter": [
+        "ui.adsabs.harvard.edu",
+        "arxiv.org",
+        "academic.oup.com",
+        "iopscience.iop.org"
+      ]
+    },
+    {
+      "id": "Q22",
+      "batch": 6,
+      "phase": "reconciliation",
+      "query": "\"Grigorievskiy\" \"V363\" \"cited\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q23",
+      "batch": 6,
+      "phase": "reconciliation",
+      "query": "\"dwarf nova\" \"waiting time\" \"prediction\"",
+      "domains_filter": [
+        "ui.adsabs.harvard.edu",
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org"
+      ]
+    },
+    {
+      "id": "Q24",
+      "batch": 6,
+      "phase": "reconciliation",
+      "query": "\"dwarf nova\" \"hazard\"",
+      "domains_filter": [
+        "ui.adsabs.harvard.edu",
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org"
+      ]
+    },
+    {
+      "id": "Q25",
+      "batch": 7,
+      "phase": "reconciliation",
+      "query": "\"Price\" \"2007\" \"SS Cyg\" precursor",
+      "domains_filter": [
+        "ui.adsabs.harvard.edu",
+        "arxiv.org",
+        "academic.oup.com",
+        "iopscience.iop.org"
+      ]
+    },
+    {
+      "id": "Q26",
+      "batch": 7,
+      "phase": "reconciliation",
+      "query": "\"Study of Dwarf Novae by Fractal Methods\"",
+      "domains_filter": [
+        "journals.rcsi.science",
+        "ui.adsabs.harvard.edu",
+        "link.springer.com"
+      ]
+    },
+    {
+      "id": "Q27",
+      "batch": 7,
+      "phase": "reconciliation",
+      "query": "\"dwarf nova\" \"duration\" \"forecast skill\"",
+      "domains_filter": [
+        "ui.adsabs.harvard.edu",
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org"
+      ]
+    },
+    {
+      "id": "Q28",
+      "batch": 7,
+      "phase": "reconciliation",
+      "query": "\"dwarf nova\" \"recurrence\" \"survival analysis\" -\"SS Cyg\" -\"SS Cygni\"",
+      "domains_filter": [
+        "ui.adsabs.harvard.edu",
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org"
+      ]
+    },
+    {
+      "id": "Q29",
+      "batch": 8,
+      "phase": "reconciliation",
+      "query": "\"Study of Dwarf Novae by Fractal Methods\"",
+      "domains_filter": [
+        "journals.rcsi.science"
+      ]
+    },
+    {
+      "id": "Q30",
+      "batch": 8,
+      "phase": "reconciliation",
+      "query": "\"Price\" \"2007\" \"SS Cygni\" \"precursors\"",
+      "domains_filter": [
+        "arxiv.org",
+        "aavso.org"
+      ]
+    },
+    {
+      "id": "Q31",
+      "batch": 8,
+      "phase": "reconciliation",
+      "query": "\"dwarf nova\" \"Bayesian\" \"forecast\" -\"SS Cyg\" -\"SS Cygni\"",
+      "domains_filter": [
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org",
+        "ui.adsabs.harvard.edu"
+      ]
+    },
+    {
+      "id": "Q32",
+      "batch": 8,
+      "phase": "reconciliation",
+      "query": "\"dwarf nova\" \"survival\" \"recurrence\" -\"SS Cyg\" -\"SS Cygni\"",
+      "domains_filter": [
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org",
+        "ui.adsabs.harvard.edu"
+      ]
+    },
+    {
+      "id": "Q33",
+      "batch": 9,
+      "phase": "reconciliation",
+      "query": "Price SS Cygni precursor outbursts 2007 astronomical journal",
+      "domains_filter": []
+    },
+    {
+      "id": "Q34",
+      "batch": 9,
+      "phase": "reconciliation",
+      "query": "\"dwarf novae\" \"prediction\" \"log score\"",
+      "domains_filter": [
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org",
+        "ui.adsabs.harvard.edu"
+      ]
+    },
+    {
+      "id": "Q35",
+      "batch": 9,
+      "phase": "reconciliation",
+      "query": "\"dwarf novae\" \"prediction\" \"hazard\"",
+      "domains_filter": [
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org",
+        "ui.adsabs.harvard.edu"
+      ]
+    },
+    {
+      "id": "Q36",
+      "batch": 9,
+      "phase": "reconciliation",
+      "query": "\"outburst cycle of V363 Lyr\"",
+      "domains_filter": [
+        "ui.adsabs.harvard.edu",
+        "ibvs.konkoly.hu",
+        "arxiv.org"
+      ]
+    },
+    {
+      "id": "Q37",
+      "batch": 10,
+      "phase": "reconciliation",
+      "query": "\"On the Sequencing of Long and Short Outbursts in Dwarf Novae\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q38",
+      "batch": 10,
+      "phase": "reconciliation",
+      "query": "\"Time series, neural networks and the future of the Sun\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q39",
+      "batch": 10,
+      "phase": "reconciliation",
+      "query": "\"Outburst cycle of V363 Lyr\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q40",
+      "batch": 10,
+      "phase": "reconciliation",
+      "query": "\"Hill\" \"Waagen\" \"2005\" \"19.08\"",
+      "domains_filter": []
+    },
+    {
+      "id": "Q41",
+      "batch": 11,
+      "phase": "reconciliation",
+      "query": "\"Time series, neural networks and the future of the Sun\"",
+      "domains_filter": [
+        "sciencedirect.com",
+        "ui.adsabs.harvard.edu"
+      ]
+    },
+    {
+      "id": "Q42",
+      "batch": 11,
+      "phase": "reconciliation",
+      "query": "\"dwarf nova\" \"outburst\" \"forecast\"",
+      "domains_filter": [
+        "aavso.org",
+        "britastro.org"
+      ]
+    },
+    {
+      "id": "Q43",
+      "batch": 11,
+      "phase": "reconciliation",
+      "query": "\"dwarf novae\" \"duration\" \"predictive\" -\"SS Cyg\" -\"SS Cygni\"",
+      "domains_filter": [
+        "arxiv.org",
+        "academic.oup.com",
+        "aanda.org",
+        "ui.adsabs.harvard.edu"
+      ]
+    }
+  ],
+  "query_count": 43,
+  "chronology": "Q01-Q20 issued before reading A10l section 4 and references/search-log.md; Q21-Q43 followed reconciliation. A preliminary rg listing exposed C41 metadata, but not the full search memo.",
+  "routing": "Exact domains filters retained per query; [] means no domains parameter. Inline site operators, where present, remain in the query string. No archive/data endpoint was opened.",
+  "result_capture": "No exhaustive search-engine result export or deduplicated hit count. Unsolicited protected-outcome snippets excluded; no snippets or abstracts retained."
+}

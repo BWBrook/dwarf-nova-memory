@@ -1,6 +1,6 @@
 # Dwarf-nova recurrence: memory, changing activity and forecast reliability
 
-> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. No real-star forecast-skill result exists yet.
+> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. The first frozen SS Cyg forecast comparison is complete; draft products await the scientific lead's review.
 
 **A research repository led by Barry W. Brook. Seeded 5 November 2026; public from 7 November 2026.**
 
@@ -72,10 +72,10 @@ Small floating-point differences across runtimes need not give identical hashes.
 | Candidate targets | Provisional, with classification evidence and caveats; no final eligibility asserted |
 | Statistical design and simulation programme | Specified, including censoring, missing events and state alternatives |
 | Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation; X1–X4 extractors, with X4 conditionally qualified for magnitude-10 retrospective extraction; no operational extractor |
-| Archive adapter | Receipt-verified bounded native VStar/AID requests implemented for the SS Cyg open era; no time normalization or event inference |
-| M2/M3 and validated observational forecasting | [A10b](docs/audits/2026-11-08-a10b-model-controls.md) implements conditional M0–M3 and completes 56 synthetic control trials. Injected-effect prefix gain averages 0.00324 nats; individual-history intervals remain wide. AR-gap baseline, partial endpoint sensitivity and strict oracle matching remain limitations. [A10c](docs/audits/2026-11-08-a10c-controls-review.md) finds that a third of that gain came from forecasts with no previous-gap term, and that null coefficients are negative. It specifies a directional, matched M3 (null −0.0002, injected effect +0.0023 nats on the A10b scores), a placebo for shared slow state, and the path to the first real 1910–1959 fit. No operational or real-data forecast result |
-| Synthetic recovery | Earlier X1/X2/X3 failures retained. A04i's 4,800-history X4 screen passes at magnitude 10 on qualified v2 phase-aligned cadence; C1/7 d selected. The unseen waveform fails qualification and magnitude-9.5 diagnostics fail in later eras. This is conditional retrospective extraction, with no real-star predictive result |
-| Observational findings | Independent 1957 boundary differences adjudicated; first 1910–1959 development model fit complete on 330 issuances. No held-out skill result |
+| Archive adapter | Receipt-verified bounded native VStar/AID acquisitions through 2017; reported time convention retained; X4 supplies the separate event extraction |
+| M2/M3 and validated observational forecasting | [A10b](docs/audits/2026-11-08-a10b-model-controls.md) implements conditional M0–M3 and completes 56 synthetic control trials. Injected-effect prefix gain averages 0.00324 nats; individual-history intervals remain wide. AR-gap baseline, partial endpoint sensitivity and strict oracle matching remain limitations. [A10c](docs/audits/2026-11-08-a10c-controls-review.md) finds that a third of that gain came from forecasts with no previous-gap term, and that null coefficients are negative. It specifies a directional, matched M3 (null −0.0002, injected effect +0.0023 nats on the A10b scores), a placebo for shared slow state, and the path to the first real 1910–1959 fit. These historical controls precede the completed A10i retrospective result; no operational forecast claim |
+| Synthetic recovery | Earlier X1/X2/X3 failures retained. A04i's 4,800-history X4 screen passes at magnitude 10 on qualified v2 phase-aligned cadence; C1/7 d selected. The unseen waveform fails qualification and magnitude-9.5 diagnostics fail in later eras. This is conditional retrospective extraction, separate from the later A10i predictive result |
+| Observational findings | Independent 1957 boundary differences adjudicated; first 1910–1959 development model fit complete on 330 issuances. The A10i held-out result is complete under its fixed extraction and timing baseline |
 | Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |
 
 [A10d](docs/protocols/a10d-directional-oc-v1.md) implements the directional
@@ -87,8 +87,8 @@ most 2/40 or 0/20, and injected-effect power is 11/40 (27.5%). This does not
 certify a true five-percent error rate. Barry accepted that finite screen
 (D022), and the [first real development fit](docs/audits/2026-11-08-a10e-first-development-fit.md)
 is complete: 330 forecasts, a positive frozen duration offset, and similar
-endpoint/delay checks. This is in-sample evidence; held-out forecast skill is
-untested and 1960+ access remains closed. The positive coefficient and
+endpoint/delay checks. This was in-sample evidence before the single 1960–2017 evaluation described below; that
+evaluation is now complete and 2018 onward remains closed. The positive coefficient and
 lagged-duration comparisons do not identify physical memory or universally
 exclude endpoint artefacts.
 
@@ -119,11 +119,11 @@ does not replace the inconclusive predeclared type rule. The paper's
 Four scientific figures and a brief figure are reproducible with
 `make -C manuscript figures`; `make -C manuscript` checks the public assets
 and builds the PDF/DOCX previews without raw observations or archive access.
-The [article figure preview](manuscript/build/manuscript.pdf),
-[supplement preview](manuscript/build/supplement.pdf) and
+The [article](manuscript/build/manuscript.pdf),
+[supplement](manuscript/build/supplement.pdf) and
 [brief](manuscript/build/brief.pdf) are first full drafts
-([A10l](docs/audits/2026-11-09-a10l-sources-and-drafts.md)), awaiting Codex's
-semantic review and Barry's review. The bibliography
+([A10l](docs/audits/2026-11-09-a10l-sources-and-drafts.md)). The [A10m semantic/source review](docs/audits/2026-11-09-a10m-draft-review.md)
+corrects the draft interpretations and reproduction instructions; the products now await Barry's review. The bibliography
 has [generated DOI metadata and a separate unresolved identifier](references/README.md).
 
 The [protocol](https://doi.org/10.5281/zenodo.24053338) was published before

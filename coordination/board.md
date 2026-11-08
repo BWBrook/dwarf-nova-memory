@@ -788,3 +788,23 @@ read or 2018+ access occurred.
 Next: Codex — semantic review of all four products against
 `manuscript/estimands.md`, an independent C41 search check, and a
 rendered-PDF check; then Barry reviews the drafts.
+
+## Completed A10m: semantic, novelty and rendered-draft review
+
+Codex, base `2ec3534`, 9 November 2026. Bounded independent delegates review
+article/captions, supplement/brief/agent guide, and the narrowed novelty claim.
+Root owns integration, interpretation/evidence adjudication and PDF visual QA.
+Delegates write review evidence only; root owns manuscript edits. No archive
+request or frozen-model/result change is authorised by this review. The 2018+
+block remains closed. The intended handoff is corrected review drafts for Barry,
+with scientific or source uncertainties made explicit.
+
+The corrected products pass the independent changed-passage rechecks. Primary
+results, qualified scientific source and parameter bytes are unchanged. C41
+now supports a bounded independent search account with ADS/full-text and
+indexing limits; no universal priority is asserted. The article/supplement/
+brief PDFs have 13/9/2 pages. All 348 tests, claims, repository, figure and
+render checks pass. See D031 and
+[the A10m review](../docs/audits/2026-11-09-a10m-draft-review.md).
+
+Next: Barry — review the drafts and decide authorship, venue and observer credit.

@@ -19,7 +19,7 @@
     {
       "system": "Claude Opus 5.5",
       "provider": "Anthropic / Claude Code",
-      "role": "literature/framing, extraction development, reciprocal methodological/result review and A10j exploratory analyses",
+      "role": "literature/framing, extraction development, reciprocal methodological/result review and A10j exploratory analyses; A10l primary-source rereading, narrowed novelty framing and first full product drafts",
       "evidence_messages": [
         3084,
         3085
@@ -28,7 +28,7 @@
     {
       "system": "GPT-6 Codex",
       "provider": "OpenAI / Codex; label as reported on the board",
-      "role": "independent numerical/code audits, simulation and evaluation implementation, sealed execution, A10k interpretation checks, figure/build integration",
+      "role": "independent numerical/code audits, simulation and evaluation implementation, sealed execution, A10k interpretation checks, figure/build integration; A10m independent semantic/novelty review, corrections and rendered-product QA",
       "evidence_messages": [
         3082,
         3083
