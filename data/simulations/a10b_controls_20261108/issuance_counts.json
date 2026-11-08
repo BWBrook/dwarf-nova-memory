@@ -1,0 +1,6616 @@
+[
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 358,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 386,
+      "training_evidence": {
+        "interval:onset": 306,
+        "right_censored:coverage": 23,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 330
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 284,
+      "oracle_unknown_or_uncompleted": 102,
+      "retrospective_matched": 386
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 284,
+          "R0": 102
+        },
+        "M1": {
+          "M1": 284,
+          "R0": 102
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 280,
+          "R0": 102
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 280,
+          "R0": 102
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 353
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 353
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 353
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 385
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 353
+        },
+        "M3": {
+          "M0": 1,
+          "M1": 32,
+          "M3": 353
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 385
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 353
+        },
+        "M3": {
+          "M0": 1,
+          "M1": 32,
+          "M3": 353
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 385,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 385,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 352,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 352,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "null",
+      0
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 353,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 384,
+      "training_evidence": {
+        "interval:onset": 314,
+        "right_censored:coverage": 25
+      },
+      "training_issued": 339
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 274,
+      "oracle_unknown_or_uncompleted": 110,
+      "retrospective_matched": 384
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 273,
+          "R0": 110
+        },
+        "M1": {
+          "M1": 273,
+          "R0": 110
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 271,
+          "R0": 110
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 271,
+          "R0": 110
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 351
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 351
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 351
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 351
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 351
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 351
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "null",
+      1
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 356,
+        "right_censored:coverage": 35,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "evaluation_issued": 393,
+      "training_evidence": {
+        "interval:onset": 310,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 338
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 317,
+      "oracle_unknown_or_uncompleted": 76,
+      "retrospective_matched": 393
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 317,
+          "R0": 76
+        },
+        "M1": {
+          "M1": 317,
+          "R0": 76
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 315,
+          "R0": 76
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 315,
+          "R0": 76
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 392,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 392,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 356,
+          "R0": 1
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 392,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 392,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 356,
+          "R0": 1
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 392,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 392,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 356,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 392,
+          "R0": 1
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 391,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 36,
+          "M2": 1,
+          "M3": 355,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 392,
+          "R0": 1
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 391,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 36,
+          "M2": 1,
+          "M3": 355,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 392,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 392,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 356,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "null",
+      2
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 347,
+        "right_censored:coverage": 36
+      },
+      "evaluation_issued": 383,
+      "training_evidence": {
+        "interval:onset": 313,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 341
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 284,
+      "oracle_unknown_or_uncompleted": 99,
+      "retrospective_matched": 383
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 284,
+          "R0": 99
+        },
+        "M1": {
+          "M1": 284,
+          "R0": 99
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 281,
+          "R0": 99
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 281,
+          "R0": 99
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 353
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 353
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 353
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 353
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 353
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 383
+        },
+        "M1": {
+          "M1": 383
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 353
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "null",
+      3
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 350,
+        "right_censored:coverage": 33,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 384,
+      "training_evidence": {
+        "interval:onset": 313,
+        "right_censored:coverage": 27
+      },
+      "training_issued": 340
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 272,
+      "oracle_unknown_or_uncompleted": 112,
+      "retrospective_matched": 384
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 272,
+          "R0": 112
+        },
+        "M1": {
+          "M1": 272,
+          "R0": 112
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 268,
+          "R0": 112
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 268,
+          "R0": 112
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 383,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 383,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 348,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 348,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 383,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 383,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 348,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 348,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 384
+        },
+        "M1": {
+          "M1": 384
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 349
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 349
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "null",
+      4
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 355,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 386,
+      "training_evidence": {
+        "interval:onset": 309,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 338
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 299,
+      "oracle_unknown_or_uncompleted": 87,
+      "retrospective_matched": 386
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 299,
+          "R0": 86
+        },
+        "M1": {
+          "M1": 299,
+          "R0": 86
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 296,
+          "R0": 86
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 296,
+          "R0": 86
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 384,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 352,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 352,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 384,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 352,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 352,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M1": 385
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 353
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "null",
+      5
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 364,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 394,
+      "training_evidence": {
+        "interval:onset": 303,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 332
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 290,
+      "oracle_unknown_or_uncompleted": 104,
+      "retrospective_matched": 394
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 290,
+          "R0": 104
+        },
+        "M1": {
+          "M1": 290,
+          "R0": 104
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 288,
+          "R0": 104
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 288,
+          "R0": 104
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 394
+        },
+        "M1": {
+          "M1": 394
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 363
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 363
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 394
+        },
+        "M1": {
+          "M1": 394
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 363
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 363
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 394
+        },
+        "M1": {
+          "M1": 394
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 363
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 363
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "null",
+      6
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 365,
+        "right_censored:coverage": 34,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 400,
+      "training_evidence": {
+        "interval:onset": 313,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 342
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 293,
+      "oracle_unknown_or_uncompleted": 107,
+      "retrospective_matched": 400
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 293,
+          "R0": 107
+        },
+        "M1": {
+          "M1": 293,
+          "R0": 107
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 289,
+          "R0": 107
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 289,
+          "R0": 107
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 399,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 399,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 364,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 364,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 399,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 399,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 364,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 364,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 399,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 399,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 364,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 364,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "null",
+      7
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 354,
+        "right_censored:coverage": 31,
+        "right_censored:superseded": 1
+      },
+      "evaluation_issued": 386,
+      "training_evidence": {
+        "interval:onset": 307,
+        "right_censored:coverage": 31,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 339
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 270,
+      "oracle_unknown_or_uncompleted": 116,
+      "retrospective_matched": 386
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 270,
+          "R0": 116
+        },
+        "M1": {
+          "M1": 270,
+          "R0": 116
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 268,
+          "R0": 116
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 268,
+          "R0": 116
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 354
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 354
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 354
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 354
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 385,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 385,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 353,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 353,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "structured",
+      0
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 361,
+        "right_censored:coverage": 26,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 388,
+      "training_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 307,
+        "right_censored:coverage": 25,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 334
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 287,
+      "oracle_unknown_or_uncompleted": 101,
+      "retrospective_matched": 388
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 287,
+          "R0": 101
+        },
+        "M1": {
+          "M1": 287,
+          "R0": 101
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 284,
+          "R0": 101
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 284,
+          "R0": 101
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 388
+        },
+        "M1": {
+          "M1": 388
+        },
+        "M2": {
+          "M0": 37,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 37,
+          "M3": 351
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 388
+        },
+        "M1": {
+          "M1": 388
+        },
+        "M2": {
+          "M0": 37,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 37,
+          "M3": 351
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 388
+        },
+        "M1": {
+          "M1": 388
+        },
+        "M2": {
+          "M0": 37,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 37,
+          "M3": 351
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "structured",
+      1
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 359,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 389,
+      "training_evidence": {
+        "interval:onset": 318,
+        "right_censored:coverage": 22,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 341
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 272,
+      "oracle_unknown_or_uncompleted": 117,
+      "retrospective_matched": 388,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 272,
+          "R0": 117
+        },
+        "M1": {
+          "M1": 272,
+          "R0": 117
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 269,
+          "R0": 117
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 269,
+          "R0": 117
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 388
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 356
+        },
+        "M3": {
+          "M1": 33,
+          "M2": 1,
+          "M3": 355
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M0": 3,
+          "M1": 386
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 356
+        },
+        "M3": {
+          "M0": 1,
+          "M1": 32,
+          "M2": 2,
+          "M3": 354
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 388,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 388,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 355,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 355,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "structured",
+      2
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 357,
+        "right_censored:coverage": 29
+      },
+      "evaluation_issued": 386,
+      "training_evidence": {
+        "interval:onset": 327,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 355
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 283,
+      "oracle_unknown_or_uncompleted": 103,
+      "retrospective_matched": 386
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 283,
+          "R0": 103
+        },
+        "M1": {
+          "M1": 283,
+          "R0": 103
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 280,
+          "R0": 103
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 280,
+          "R0": 103
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 25,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 25,
+          "M3": 361
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 25,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 25,
+          "M3": 361
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 25,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 25,
+          "M3": 361
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "structured",
+      3
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 350,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 379,
+      "training_evidence": {
+        "interval:onset": 295,
+        "right_censored:coverage": 29
+      },
+      "training_issued": 324
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 274,
+      "oracle_unknown_or_uncompleted": 105,
+      "retrospective_matched": 378,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 274,
+          "R0": 105
+        },
+        "M1": {
+          "M1": 274,
+          "R0": 105
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 271,
+          "R0": 105
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 271,
+          "R0": 105
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 379
+        },
+        "M1": {
+          "M1": 379
+        },
+        "M2": {
+          "M0": 28,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 28,
+          "M3": 351
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 379
+        },
+        "M1": {
+          "M1": 379
+        },
+        "M2": {
+          "M0": 28,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 28,
+          "M3": 351
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 378,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 378,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 28,
+          "M2": 350,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 28,
+          "M3": 350,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "structured",
+      4
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 353,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 383,
+      "training_evidence": {
+        "interval:onset": 286,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 316
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 289,
+      "oracle_unknown_or_uncompleted": 94,
+      "retrospective_matched": 383
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 289,
+          "R0": 94
+        },
+        "M1": {
+          "M1": 289,
+          "R0": 94
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 285,
+          "R0": 94
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 285,
+          "R0": 94
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 382,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 382,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 348,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 348,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 382,
+          "R0": 1
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 381,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 348,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M2": 1,
+          "M3": 347,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 382,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 382,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 348,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 348,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "structured",
+      5
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 356,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "evaluation_issued": 385,
+      "training_evidence": {
+        "interval:onset": 302,
+        "right_censored:coverage": 30,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 333
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 285,
+      "oracle_unknown_or_uncompleted": 100,
+      "retrospective_matched": 385
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 285,
+          "R0": 100
+        },
+        "M1": {
+          "M1": 285,
+          "R0": 100
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 283,
+          "R0": 100
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 283,
+          "R0": 100
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M1": 385
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 351
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M0": 2,
+          "M1": 383
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 351
+        },
+        "M3": {
+          "M0": 1,
+          "M1": 33,
+          "M2": 1,
+          "M3": 350
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M1": 385
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 351
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "structured",
+      6
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 369,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 399,
+      "training_evidence": {
+        "interval:onset": 328,
+        "right_censored:coverage": 25,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 354
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 305,
+      "oracle_unknown_or_uncompleted": 94,
+      "retrospective_matched": 399
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 304,
+          "R0": 94
+        },
+        "M1": {
+          "M1": 304,
+          "R0": 94
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 301,
+          "R0": 94
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 301,
+          "R0": 94
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 398
+        },
+        "M1": {
+          "M1": 398
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 366
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 366
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 398
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 397
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 366
+        },
+        "M3": {
+          "M1": 32,
+          "M2": 1,
+          "M3": 365
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 398
+        },
+        "M1": {
+          "M1": 398
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 366
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 366
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "structured",
+      7
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 358,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 5
+      },
+      "evaluation_issued": 391,
+      "training_evidence": {
+        "interval:onset": 306,
+        "right_censored:coverage": 23,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 3
+      },
+      "training_issued": 333
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 284,
+      "oracle_unknown_or_uncompleted": 107,
+      "retrospective_matched": 387,
+      "retrospective_unmatched": 4
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 284,
+          "R0": 107
+        },
+        "M1": {
+          "M1": 284,
+          "R0": 107
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 280,
+          "R0": 107
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 280,
+          "R0": 107
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 387,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 387,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 354,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 354,
+          "R0": 4
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 387,
+          "R0": 4
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 386,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 354,
+          "R0": 4
+        },
+        "M3": {
+          "M0": 1,
+          "M1": 32,
+          "M3": 354,
+          "R0": 4
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 386,
+          "R0": 5
+        },
+        "M1": {
+          "M1": 386,
+          "R0": 5
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 353,
+          "R0": 5
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 353,
+          "R0": 5
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "gross",
+      0
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 355,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 6
+      },
+      "evaluation_issued": 392,
+      "training_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 314,
+        "right_censored:coverage": 25,
+        "right_censored:superseded": 8
+      },
+      "training_issued": 348
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 273,
+      "oracle_unknown_or_uncompleted": 119,
+      "retrospective_matched": 386,
+      "retrospective_unmatched": 6
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 272,
+          "R0": 119
+        },
+        "M1": {
+          "M1": 272,
+          "R0": 119
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 270,
+          "R0": 119
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 270,
+          "R0": 119
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 383,
+          "R0": 8
+        },
+        "M1": {
+          "M1": 383,
+          "R0": 8
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 351,
+          "R0": 8
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 351,
+          "R0": 8
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 383,
+          "R0": 8
+        },
+        "M1": {
+          "M1": 383,
+          "R0": 8
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 351,
+          "R0": 8
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 351,
+          "R0": 8
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 383,
+          "R0": 8
+        },
+        "M1": {
+          "M1": 383,
+          "R0": 8
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 351,
+          "R0": 8
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 351,
+          "R0": 8
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "gross",
+      1
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 358,
+        "right_censored:coverage": 35,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 4
+      },
+      "evaluation_issued": 398,
+      "training_evidence": {
+        "interval:onset": 310,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 5
+      },
+      "training_issued": 343
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 317,
+      "oracle_unknown_or_uncompleted": 81,
+      "retrospective_matched": 397,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 317,
+          "R0": 81
+        },
+        "M1": {
+          "M1": 317,
+          "R0": 81
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 315,
+          "R0": 81
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 315,
+          "R0": 81
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 395,
+          "R0": 3
+        },
+        "M1": {
+          "M1": 395,
+          "R0": 3
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 359,
+          "R0": 3
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 359,
+          "R0": 3
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 395,
+          "R0": 3
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 394,
+          "R0": 3
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 359,
+          "R0": 3
+        },
+        "M3": {
+          "M1": 36,
+          "M2": 1,
+          "M3": 358,
+          "R0": 3
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 395,
+          "R0": 3
+        },
+        "M1": {
+          "M1": 395,
+          "R0": 3
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 359,
+          "R0": 3
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 359,
+          "R0": 3
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "gross",
+      2
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 347,
+        "right_censored:coverage": 36,
+        "right_censored:superseded": 7
+      },
+      "evaluation_issued": 391,
+      "training_evidence": {
+        "interval:onset": 314,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 4
+      },
+      "training_issued": 346
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 283,
+      "oracle_unknown_or_uncompleted": 108,
+      "retrospective_matched": 387,
+      "retrospective_unmatched": 4
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 282,
+          "R0": 108
+        },
+        "M1": {
+          "M1": 282,
+          "R0": 108
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 279,
+          "R0": 108
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 279,
+          "R0": 108
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 386,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 386,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 356,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 356,
+          "R0": 4
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 386,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 386,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 356,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 356,
+          "R0": 4
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 386,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 386,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 356,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 356,
+          "R0": 4
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "gross",
+      3
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 350,
+        "right_censored:coverage": 33,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 7
+      },
+      "evaluation_issued": 391,
+      "training_evidence": {
+        "interval:onset": 314,
+        "right_censored:coverage": 27,
+        "right_censored:superseded": 7
+      },
+      "training_issued": 348
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 272,
+      "oracle_unknown_or_uncompleted": 119,
+      "retrospective_matched": 386,
+      "retrospective_unmatched": 5
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 272,
+          "R0": 119
+        },
+        "M1": {
+          "M1": 272,
+          "R0": 119
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 268,
+          "R0": 119
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 268,
+          "R0": 119
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 384,
+          "R0": 7
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 7
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 349,
+          "R0": 7
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 349,
+          "R0": 7
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 384,
+          "R0": 7
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 7
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 349,
+          "R0": 7
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 349,
+          "R0": 7
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 385,
+          "R0": 6
+        },
+        "M1": {
+          "M1": 385,
+          "R0": 6
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 350,
+          "R0": 6
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 350,
+          "R0": 6
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "gross",
+      4
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 355,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 5
+      },
+      "evaluation_issued": 391,
+      "training_evidence": {
+        "interval:onset": 309,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 6
+      },
+      "training_issued": 344
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 299,
+      "oracle_unknown_or_uncompleted": 92,
+      "retrospective_matched": 385,
+      "retrospective_unmatched": 6
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 299,
+          "R0": 91
+        },
+        "M1": {
+          "M1": 299,
+          "R0": 91
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 296,
+          "R0": 91
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 296,
+          "R0": 91
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 384,
+          "R0": 6
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 6
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 352,
+          "R0": 6
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 352,
+          "R0": 6
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 384,
+          "R0": 6
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 6
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 352,
+          "R0": 6
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 352,
+          "R0": 6
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 384,
+          "R0": 6
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 6
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 353,
+          "R0": 6
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 353,
+          "R0": 6
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "gross",
+      5
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 365,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 5
+      },
+      "evaluation_issued": 400,
+      "training_evidence": {
+        "interval:onset": 303,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 7
+      },
+      "training_issued": 339
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 290,
+      "oracle_unknown_or_uncompleted": 110,
+      "retrospective_matched": 396,
+      "retrospective_unmatched": 4
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 290,
+          "R0": 110
+        },
+        "M1": {
+          "M1": 290,
+          "R0": 110
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 288,
+          "R0": 110
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 288,
+          "R0": 110
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 396,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 396,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 365,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 365,
+          "R0": 4
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 396,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 396,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 365,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 365,
+          "R0": 4
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 396,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 396,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 365,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 365,
+          "R0": 4
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "gross",
+      6
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 364,
+        "right_censored:coverage": 34,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 5
+      },
+      "evaluation_issued": 404,
+      "training_evidence": {
+        "interval:onset": 313,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 6
+      },
+      "training_issued": 348
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 293,
+      "oracle_unknown_or_uncompleted": 111,
+      "retrospective_matched": 401,
+      "retrospective_unmatched": 3
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 293,
+          "R0": 111
+        },
+        "M1": {
+          "M1": 293,
+          "R0": 111
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 289,
+          "R0": 111
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 289,
+          "R0": 111
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 400,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 400,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 365,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 365,
+          "R0": 4
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 400,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 400,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 365,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 365,
+          "R0": 4
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 400,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 400,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 365,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 365,
+          "R0": 4
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "gross",
+      7
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 357,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "evaluation_issued": 386,
+      "training_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 304,
+        "right_censored:coverage": 23,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 3
+      },
+      "training_issued": 332
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 271,
+      "oracle_unknown_or_uncompleted": 115,
+      "retrospective_matched": 385,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 271,
+          "R0": 115
+        },
+        "M1": {
+          "M1": 271,
+          "R0": 115
+        },
+        "M2": {
+          "M0": 1,
+          "M2": 270,
+          "R0": 115
+        },
+        "M3": {
+          "M1": 1,
+          "M3": 270,
+          "R0": 115
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M1": 386
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 355
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 355
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 386
+        },
+        "M1": {
+          "M0": 2,
+          "M1": 384
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 355
+        },
+        "M3": {
+          "M1": 31,
+          "M2": 2,
+          "M3": 353
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 385,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 385,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 354,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 354,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "offset",
+      0
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 353,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 2
+      },
+      "evaluation_issued": 385,
+      "training_evidence": {
+        "interval:onset": 312,
+        "right_censored:coverage": 24
+      },
+      "training_issued": 336
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 275,
+      "oracle_unknown_or_uncompleted": 110,
+      "retrospective_matched": 383,
+      "retrospective_unmatched": 2
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 274,
+          "R0": 110
+        },
+        "M1": {
+          "M1": 274,
+          "R0": 110
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 272,
+          "R0": 110
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 272,
+          "R0": 110
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 384
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 383
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 33,
+          "M2": 1,
+          "M3": 350
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 384
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 383
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 351
+        },
+        "M3": {
+          "M1": 33,
+          "M2": 1,
+          "M3": 350
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 382,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 382,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 349,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 349,
+          "R0": 2
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "offset",
+      1
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 358,
+        "right_censored:coverage": 35,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "evaluation_issued": 395,
+      "training_evidence": {
+        "interval:onset": 311,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "training_issued": 341
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 280,
+      "oracle_unknown_or_uncompleted": 115,
+      "retrospective_matched": 394,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 280,
+          "R0": 115
+        },
+        "M1": {
+          "M1": 280,
+          "R0": 115
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 277,
+          "R0": 115
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 277,
+          "R0": 115
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 393,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 393,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 358,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 358,
+          "R0": 2
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 393,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 393,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 358,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 358,
+          "R0": 2
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 393,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 393,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 358,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 358,
+          "R0": 2
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "offset",
+      2
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 348,
+        "right_censored:coverage": 36,
+        "right_censored:superseded": 1
+      },
+      "evaluation_issued": 385,
+      "training_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 310,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "training_issued": 342
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 268,
+      "oracle_unknown_or_uncompleted": 117,
+      "retrospective_matched": 383,
+      "retrospective_unmatched": 2
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 268,
+          "R0": 117
+        },
+        "M1": {
+          "M1": 268,
+          "R0": 117
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 265,
+          "R0": 117
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 265,
+          "R0": 117
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 384,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 351,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 351,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 384,
+          "R0": 1
+        },
+        "M1": {
+          "M0": 3,
+          "M1": 381,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 351,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 33,
+          "M2": 3,
+          "M3": 348,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 381,
+          "R0": 4
+        },
+        "M1": {
+          "M1": 381,
+          "R0": 4
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 348,
+          "R0": 4
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 348,
+          "R0": 4
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "offset",
+      3
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 351,
+        "right_censored:coverage": 33,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 2
+      },
+      "evaluation_issued": 388,
+      "training_evidence": {
+        "interval:onset": 312,
+        "right_censored:coverage": 29
+      },
+      "training_issued": 341
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 253,
+      "oracle_unknown_or_uncompleted": 135,
+      "retrospective_matched": 386,
+      "retrospective_unmatched": 2
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 253,
+          "R0": 134
+        },
+        "M1": {
+          "M1": 253,
+          "R0": 134
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 249,
+          "R0": 134
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 249,
+          "R0": 134
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 387
+        },
+        "M1": {
+          "M1": 387
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 354
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 354
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 387
+        },
+        "M1": {
+          "M0": 3,
+          "M1": 384
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 354
+        },
+        "M3": {
+          "M0": 1,
+          "M1": 32,
+          "M2": 2,
+          "M3": 352
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 385,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 385,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 352,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 352,
+          "R0": 2
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "offset",
+      4
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 358,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 389,
+      "training_evidence": {
+        "interval:onset": 309,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 338
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 270,
+      "oracle_unknown_or_uncompleted": 119,
+      "retrospective_matched": 389
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 270,
+          "R0": 118
+        },
+        "M1": {
+          "M1": 270,
+          "R0": 118
+        },
+        "M2": {
+          "M0": 1,
+          "M2": 269,
+          "R0": 118
+        },
+        "M3": {
+          "M1": 1,
+          "M3": 269,
+          "R0": 118
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 387,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 387,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 356,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 387,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 387,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 356,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 388
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 387
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 357
+        },
+        "M3": {
+          "M0": 1,
+          "M1": 30,
+          "M3": 357
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "offset",
+      5
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 2,
+        "interval:onset": 366,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 398,
+      "training_evidence": {
+        "interval:onset": 301,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "training_issued": 331
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 261,
+      "oracle_unknown_or_uncompleted": 137,
+      "retrospective_matched": 398
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 260,
+          "R0": 136
+        },
+        "M1": {
+          "M1": 260,
+          "R0": 136
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 258,
+          "R0": 136
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 258,
+          "R0": 136
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 395,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 395,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 29,
+          "M2": 366,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 29,
+          "M3": 366,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 395,
+          "R0": 1
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 394,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 29,
+          "M2": 366,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 29,
+          "M2": 1,
+          "M3": 365,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 396
+        },
+        "M1": {
+          "M1": 396
+        },
+        "M2": {
+          "M0": 29,
+          "M2": 367
+        },
+        "M3": {
+          "M1": 29,
+          "M3": 367
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "offset",
+      6
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 364,
+        "right_censored:coverage": 34,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 400,
+      "training_evidence": {
+        "interval:onset": 313,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 342
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 265,
+      "oracle_unknown_or_uncompleted": 135,
+      "retrospective_matched": 398,
+      "retrospective_unmatched": 2
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 265,
+          "R0": 134
+        },
+        "M1": {
+          "M1": 265,
+          "R0": 134
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 261,
+          "R0": 134
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 261,
+          "R0": 134
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 398,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 398,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 364,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 364,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 398,
+          "R0": 1
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 397,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 364,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M2": 1,
+          "M3": 363,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 396,
+          "R0": 3
+        },
+        "M1": {
+          "M1": 396,
+          "R0": 3
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 362,
+          "R0": 3
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 362,
+          "R0": 3
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "offset",
+      7
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 163,
+        "right_censored:coverage": 200
+      },
+      "evaluation_issued": 363,
+      "training_evidence": {
+        "interval:onset": 141,
+        "right_censored:coverage": 173
+      },
+      "training_issued": 314
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 300,
+      "oracle_unknown_or_uncompleted": 63,
+      "retrospective_matched": 363
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 300,
+          "R0": 63
+        },
+        "M1": {
+          "M1": 300,
+          "R0": 63
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 296,
+          "R0": 63
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 296,
+          "R0": 63
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 363
+        },
+        "M1": {
+          "M1": 363
+        },
+        "M2": {
+          "M0": 190,
+          "M2": 173
+        },
+        "M3": {
+          "M1": 190,
+          "M3": 173
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 363
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 362
+        },
+        "M2": {
+          "M0": 190,
+          "M2": 173
+        },
+        "M3": {
+          "M0": 1,
+          "M1": 189,
+          "M3": 173
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 362,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 362,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 190,
+          "M2": 172,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 190,
+          "M3": 172,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "adaptive",
+      0
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 179,
+        "right_censored:coverage": 190
+      },
+      "evaluation_issued": 370,
+      "training_evidence": {
+        "interval:onset": 145,
+        "right_censored:coverage": 174
+      },
+      "training_issued": 319
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 307,
+      "oracle_unknown_or_uncompleted": 63,
+      "retrospective_matched": 370
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 306,
+          "R0": 63
+        },
+        "M1": {
+          "M1": 306,
+          "R0": 63
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 304,
+          "R0": 63
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 304,
+          "R0": 63
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 369
+        },
+        "M1": {
+          "M1": 369
+        },
+        "M2": {
+          "M0": 173,
+          "M2": 196
+        },
+        "M3": {
+          "M1": 173,
+          "M3": 196
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 369
+        },
+        "M1": {
+          "M1": 369
+        },
+        "M2": {
+          "M0": 173,
+          "M2": 196
+        },
+        "M3": {
+          "M1": 173,
+          "M3": 196
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 369
+        },
+        "M1": {
+          "M1": 369
+        },
+        "M2": {
+          "M0": 173,
+          "M2": 196
+        },
+        "M3": {
+          "M1": 173,
+          "M3": 196
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "adaptive",
+      1
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 186,
+        "right_censored:coverage": 185,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 372,
+      "training_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 161,
+        "right_censored:coverage": 155,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 318
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 331,
+      "oracle_unknown_or_uncompleted": 41,
+      "retrospective_matched": 372
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 331,
+          "R0": 41
+        },
+        "M1": {
+          "M1": 331,
+          "R0": 41
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 329,
+          "R0": 41
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 329,
+          "R0": 41
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 372
+        },
+        "M1": {
+          "M1": 372
+        },
+        "M2": {
+          "M0": 174,
+          "M2": 198
+        },
+        "M3": {
+          "M1": 174,
+          "M3": 198
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 372
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 371
+        },
+        "M2": {
+          "M0": 174,
+          "M2": 198
+        },
+        "M3": {
+          "M1": 174,
+          "M2": 1,
+          "M3": 197
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 372
+        },
+        "M1": {
+          "M1": 372
+        },
+        "M2": {
+          "M0": 174,
+          "M2": 198
+        },
+        "M3": {
+          "M1": 174,
+          "M3": 198
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "adaptive",
+      2
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 2,
+        "interval:onset": 179,
+        "right_censored:coverage": 183
+      },
+      "evaluation_issued": 364,
+      "training_evidence": {
+        "interval:onset": 158,
+        "right_censored:coverage": 168,
+        "right_censored:superseded": 1
+      },
+      "training_issued": 327
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 300,
+      "oracle_unknown_or_uncompleted": 64,
+      "retrospective_matched": 363,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 299,
+          "R0": 63
+        },
+        "M1": {
+          "M1": 299,
+          "R0": 63
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 296,
+          "R0": 63
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 296,
+          "R0": 63
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 362
+        },
+        "M1": {
+          "M1": 362
+        },
+        "M2": {
+          "M0": 168,
+          "M2": 194
+        },
+        "M3": {
+          "M1": 168,
+          "M3": 194
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 362
+        },
+        "M1": {
+          "M1": 362
+        },
+        "M2": {
+          "M0": 168,
+          "M2": 194
+        },
+        "M3": {
+          "M1": 168,
+          "M3": 194
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 361,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 361,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 168,
+          "M2": 193,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 168,
+          "M3": 193,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "adaptive",
+      3
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 178,
+        "right_censored:coverage": 180,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 360,
+      "training_evidence": {
+        "interval:onset": 151,
+        "right_censored:coverage": 175
+      },
+      "training_issued": 326
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 286,
+      "oracle_unknown_or_uncompleted": 74,
+      "retrospective_matched": 360
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 285,
+          "R0": 74
+        },
+        "M1": {
+          "M1": 285,
+          "R0": 74
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 281,
+          "R0": 74
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 281,
+          "R0": 74
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 358,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 358,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 167,
+          "M2": 191,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 167,
+          "M3": 191,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 358,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 358,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 167,
+          "M2": 191,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 167,
+          "M3": 191,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 359
+        },
+        "M1": {
+          "M1": 359
+        },
+        "M2": {
+          "M0": 167,
+          "M2": 192
+        },
+        "M3": {
+          "M1": 167,
+          "M3": 192
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "adaptive",
+      4
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 189,
+        "right_censored:coverage": 181,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 372,
+      "training_evidence": {
+        "interval:onset": 134,
+        "right_censored:coverage": 184
+      },
+      "training_issued": 318
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 323,
+      "oracle_unknown_or_uncompleted": 49,
+      "retrospective_matched": 372
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 323,
+          "R0": 48
+        },
+        "M1": {
+          "M1": 323,
+          "R0": 48
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 319,
+          "R0": 48
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 319,
+          "R0": 48
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 370,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 370,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 168,
+          "M2": 202,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 168,
+          "M3": 202,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 370,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 370,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 168,
+          "M2": 202,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 168,
+          "M3": 202,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 371
+        },
+        "M1": {
+          "M1": 371
+        },
+        "M2": {
+          "M0": 169,
+          "M2": 202
+        },
+        "M3": {
+          "M1": 169,
+          "M3": 202
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "adaptive",
+      5
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 157,
+        "right_censored:coverage": 217,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 375,
+      "training_evidence": {
+        "interval:onset": 146,
+        "right_censored:coverage": 173,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 320
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 310,
+      "oracle_unknown_or_uncompleted": 65,
+      "retrospective_matched": 375
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 310,
+          "R0": 65
+        },
+        "M1": {
+          "M1": 310,
+          "R0": 65
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 308,
+          "R0": 65
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 308,
+          "R0": 65
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 375
+        },
+        "M1": {
+          "M1": 375
+        },
+        "M2": {
+          "M0": 200,
+          "M2": 175
+        },
+        "M3": {
+          "M1": 200,
+          "M3": 175
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 375
+        },
+        "M1": {
+          "M1": 375
+        },
+        "M2": {
+          "M0": 200,
+          "M2": 175
+        },
+        "M3": {
+          "M1": 200,
+          "M3": 175
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 375
+        },
+        "M1": {
+          "M1": 375
+        },
+        "M2": {
+          "M0": 200,
+          "M2": 175
+        },
+        "M3": {
+          "M1": 200,
+          "M3": 175
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "adaptive",
+      6
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 176,
+        "right_censored:coverage": 202
+      },
+      "evaluation_issued": 379,
+      "training_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 133,
+        "right_censored:coverage": 188,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 323
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 317,
+      "oracle_unknown_or_uncompleted": 62,
+      "retrospective_matched": 379
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 316,
+          "R0": 62
+        },
+        "M1": {
+          "M1": 316,
+          "R0": 62
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 313,
+          "R0": 62
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 313,
+          "R0": 62
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 377,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 377,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 184,
+          "M2": 193,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 184,
+          "M3": 193,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 377,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 377,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 184,
+          "M2": 193,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 184,
+          "M3": 193,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 377,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 377,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 184,
+          "M2": 193,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 184,
+          "M3": 193,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "adaptive",
+      7
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 356,
+        "right_censored:coverage": 32,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 389,
+      "training_evidence": {
+        "interval:onset": 296,
+        "right_censored:coverage": 34,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 331
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 278,
+      "oracle_unknown_or_uncompleted": 111,
+      "retrospective_matched": 389
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 278,
+          "R0": 111
+        },
+        "M1": {
+          "M1": 278,
+          "R0": 111
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 275,
+          "R0": 111
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 275,
+          "R0": 111
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M1": 389
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 355
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 355
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M1": 389
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 355
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 355
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M1": 389
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 355
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 355
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 388
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 355
+        },
+        "M3": {
+          "M1": 34,
+          "M2": 1,
+          "M3": 354
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 388
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 355
+        },
+        "M3": {
+          "M1": 34,
+          "M2": 1,
+          "M3": 354
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 388,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 388,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 354,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 354,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "alternative",
+      0
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 359,
+        "right_censored:coverage": 30,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 390,
+      "training_evidence": {
+        "interval:onset": 313,
+        "right_censored:coverage": 34,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 348
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 299,
+      "oracle_unknown_or_uncompleted": 91,
+      "retrospective_matched": 390
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 299,
+          "R0": 91
+        },
+        "M1": {
+          "M1": 299,
+          "R0": 91
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 296,
+          "R0": 91
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 296,
+          "R0": 91
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 360
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M1": 389
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 359
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 359
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 360
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 360
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M1": 389
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 359
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 359
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 360
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "alternative",
+      1
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 385,
+        "right_censored:coverage": 26
+      },
+      "evaluation_issued": 411,
+      "training_evidence": {
+        "interval:onset": 315,
+        "right_censored:coverage": 25
+      },
+      "training_issued": 340
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 301,
+      "oracle_unknown_or_uncompleted": 110,
+      "retrospective_matched": 411
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 301,
+          "R0": 110
+        },
+        "M1": {
+          "M1": 301,
+          "R0": 110
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 298,
+          "R0": 110
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 298,
+          "R0": 110
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 409,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 409,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 379,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 379,
+          "R0": 2
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 409,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 409,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 379,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 379,
+          "R0": 2
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 409,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 409,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 379,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 379,
+          "R0": 2
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 409,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 409,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 379,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 379,
+          "R0": 2
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 409,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 409,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 379,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 379,
+          "R0": 2
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 411
+        },
+        "M1": {
+          "M1": 411
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 381
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 381
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "alternative",
+      2
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 357,
+        "right_censored:coverage": 33,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 391,
+      "training_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 309,
+        "right_censored:coverage": 29
+      },
+      "training_issued": 339
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 284,
+      "oracle_unknown_or_uncompleted": 107,
+      "retrospective_matched": 390,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 284,
+          "R0": 107
+        },
+        "M1": {
+          "M1": 284,
+          "R0": 107
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 281,
+          "R0": 107
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 281,
+          "R0": 107
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 391
+        },
+        "M1": {
+          "M1": 391
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 357
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 356
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 356
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 391
+        },
+        "M1": {
+          "M1": 391
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 357
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 391
+        },
+        "M1": {
+          "M1": 391
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 357
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 356
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 356
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 390,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 390,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 356,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 356,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "alternative",
+      3
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 374,
+        "right_censored:coverage": 24,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 399,
+      "training_evidence": {
+        "interval:onset": 315,
+        "right_censored:coverage": 23,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 339
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 301,
+      "oracle_unknown_or_uncompleted": 98,
+      "retrospective_matched": 399
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 301,
+          "R0": 98
+        },
+        "M1": {
+          "M1": 301,
+          "R0": 98
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 297,
+          "R0": 98
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 297,
+          "R0": 98
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 399
+        },
+        "M1": {
+          "M1": 399
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 363
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 363
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 399
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 398
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 363
+        },
+        "M3": {
+          "M1": 36,
+          "M2": 1,
+          "M3": 362
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 399
+        },
+        "M1": {
+          "M1": 399
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 363
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 363
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "alternative",
+      4
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 369,
+        "right_censored:coverage": 33,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 403,
+      "training_evidence": {
+        "interval:onset": 302,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 332
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 295,
+      "oracle_unknown_or_uncompleted": 108,
+      "retrospective_matched": 403
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 295,
+          "R0": 108
+        },
+        "M1": {
+          "M1": 295,
+          "R0": 108
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 291,
+          "R0": 108
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 291,
+          "R0": 108
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 403
+        },
+        "M1": {
+          "M1": 403
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 368
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 368
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 403
+        },
+        "M1": {
+          "M1": 403
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 368
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 368
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 403
+        },
+        "M1": {
+          "M1": 403
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 368
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 368
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "alternative",
+      5
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 366,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 396,
+      "training_evidence": {
+        "interval:onset": 300,
+        "right_censored:coverage": 27,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "training_issued": 329
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 293,
+      "oracle_unknown_or_uncompleted": 103,
+      "retrospective_matched": 395,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 293,
+          "R0": 103
+        },
+        "M1": {
+          "M1": 293,
+          "R0": 103
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 290,
+          "R0": 103
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 290,
+          "R0": 103
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 395,
+          "R0": 1
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 394,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 361,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M2": 1,
+          "M3": 360,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 395,
+          "R0": 1
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 394,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 361,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M2": 1,
+          "M3": 360,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 395,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 395,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 34,
+          "M2": 361,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 34,
+          "M3": 361,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "alternative",
+      6
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 359,
+        "right_censored:coverage": 31,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 391,
+      "training_evidence": {
+        "interval:onset": 289,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1,
+        "right_censored:superseded": 1
+      },
+      "training_issued": 319
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 298,
+      "oracle_unknown_or_uncompleted": 93,
+      "retrospective_matched": 389,
+      "retrospective_unmatched": 2
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 298,
+          "R0": 93
+        },
+        "M1": {
+          "M1": 298,
+          "R0": 93
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 294,
+          "R0": 93
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 294,
+          "R0": 93
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 390,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 390,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 354,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 354,
+          "R0": 1
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 390,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 390,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 354,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 354,
+          "R0": 1
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 389,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 389,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 36,
+          "M2": 353,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 36,
+          "M3": 353,
+          "R0": 2
+        }
+      }
+    },
+    "task": [
+      "v2-phase",
+      "alternative",
+      7
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 357,
+        "right_censored:coverage": 32,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 390,
+      "training_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 307,
+        "right_censored:coverage": 30,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 339
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 280,
+      "oracle_unknown_or_uncompleted": 110,
+      "retrospective_matched": 390
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 280,
+          "R0": 110
+        },
+        "M1": {
+          "M1": 280,
+          "R0": 110
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 277,
+          "R0": 110
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 277,
+          "R0": 110
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 357
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 357
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 357
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 357
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 357
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 357
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 357
+        }
+      }
+    },
+    "task": [
+      "v4-phase",
+      "null",
+      0
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 359,
+        "right_censored:coverage": 31,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 392,
+      "training_evidence": {
+        "interval:onset": 303,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 333
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 275,
+      "oracle_unknown_or_uncompleted": 117,
+      "retrospective_matched": 392
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 274,
+          "R0": 117
+        },
+        "M1": {
+          "M1": 274,
+          "R0": 117
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 272,
+          "R0": 117
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 272,
+          "R0": 117
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 391
+        },
+        "M1": {
+          "M1": 391
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 360
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M1": 389
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 359
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 359
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 391
+        },
+        "M1": {
+          "M1": 391
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 360
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 391
+        },
+        "M1": {
+          "M1": 391
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 360
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 389
+        },
+        "M1": {
+          "M1": 389
+        },
+        "M2": {
+          "M0": 30,
+          "M2": 359
+        },
+        "M3": {
+          "M1": 30,
+          "M3": 359
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 390,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 390,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 359,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 359,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v4-phase",
+      "null",
+      1
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 366,
+        "right_censored:coverage": 25,
+        "right_censored:superseded": 1
+      },
+      "evaluation_issued": 392,
+      "training_evidence": {
+        "interval:onset": 308,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 338
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 273,
+      "oracle_unknown_or_uncompleted": 119,
+      "retrospective_matched": 391,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 273,
+          "R0": 119
+        },
+        "M1": {
+          "M1": 273,
+          "R0": 119
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 271,
+          "R0": 119
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 271,
+          "R0": 119
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M1": 392
+        },
+        "M2": {
+          "M0": 27,
+          "M2": 365
+        },
+        "M3": {
+          "M1": 27,
+          "M3": 365
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 391
+        },
+        "M1": {
+          "M1": 391
+        },
+        "M2": {
+          "M0": 27,
+          "M2": 364
+        },
+        "M3": {
+          "M1": 27,
+          "M3": 364
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M1": 392
+        },
+        "M2": {
+          "M0": 27,
+          "M2": 365
+        },
+        "M3": {
+          "M1": 27,
+          "M3": 365
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 391
+        },
+        "M2": {
+          "M0": 27,
+          "M2": 365
+        },
+        "M3": {
+          "M1": 27,
+          "M2": 1,
+          "M3": 364
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 391
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 390
+        },
+        "M2": {
+          "M0": 27,
+          "M2": 364
+        },
+        "M3": {
+          "M1": 27,
+          "M2": 1,
+          "M3": 363
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 391,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 391,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 27,
+          "M2": 364,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 27,
+          "M3": 364,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v4-phase",
+      "null",
+      2
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 353,
+        "right_censored:coverage": 28,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 382,
+      "training_evidence": {
+        "interval:onset": 304,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 334
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 279,
+      "oracle_unknown_or_uncompleted": 103,
+      "retrospective_matched": 380,
+      "retrospective_unmatched": 2
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 279,
+          "R0": 103
+        },
+        "M1": {
+          "M1": 279,
+          "R0": 103
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 276,
+          "R0": 103
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 276,
+          "R0": 103
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 349
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 349
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 349
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 349
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 349
+        },
+        "M3": {
+          "M1": 33,
+          "M3": 349
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 381
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 349
+        },
+        "M3": {
+          "M1": 33,
+          "M2": 1,
+          "M3": 348
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M0": 1,
+          "M1": 381
+        },
+        "M2": {
+          "M0": 33,
+          "M2": 349
+        },
+        "M3": {
+          "M1": 33,
+          "M2": 1,
+          "M3": 348
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 380,
+          "R0": 2
+        },
+        "M1": {
+          "M1": 380,
+          "R0": 2
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 348,
+          "R0": 2
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 348,
+          "R0": 2
+        }
+      }
+    },
+    "task": [
+      "v4-phase",
+      "null",
+      3
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 362,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 392,
+      "training_evidence": {
+        "interval:onset": 313,
+        "right_censored:coverage": 34,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 348
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 275,
+      "oracle_unknown_or_uncompleted": 117,
+      "retrospective_matched": 391,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 275,
+          "R0": 117
+        },
+        "M1": {
+          "M1": 275,
+          "R0": 117
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 271,
+          "R0": 117
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 271,
+          "R0": 117
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M1": 392
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 361
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 359
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 359
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M1": 392
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 361
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M1": 392
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 361
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 359
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 359
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 391,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 391,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 360,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 360,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v4-phase",
+      "alternative",
+      0
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 351,
+        "right_censored:coverage": 34
+      },
+      "evaluation_issued": 385,
+      "training_evidence": {
+        "interval:onset": 304,
+        "right_censored:coverage": 25,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 330
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 273,
+      "oracle_unknown_or_uncompleted": 112,
+      "retrospective_matched": 384,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 273,
+          "R0": 112
+        },
+        "M1": {
+          "M1": 273,
+          "R0": 112
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 271,
+          "R0": 112
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 271,
+          "R0": 112
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M1": 385
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 353
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M1": 385
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 353
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M1": 385
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 353
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M1": 385
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 353
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 385
+        },
+        "M1": {
+          "M1": 385
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 353
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 353
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 384,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 384,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 352,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 352,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v4-phase",
+      "alternative",
+      1
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 363,
+        "right_censored:coverage": 32
+      },
+      "evaluation_issued": 395,
+      "training_evidence": {
+        "interval:onset": 305,
+        "right_censored:coverage": 29,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 335
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 288,
+      "oracle_unknown_or_uncompleted": 107,
+      "retrospective_matched": 395
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 288,
+          "R0": 107
+        },
+        "M1": {
+          "M1": 288,
+          "R0": 107
+        },
+        "M2": {
+          "M0": 3,
+          "M2": 285,
+          "R0": 107
+        },
+        "M3": {
+          "M1": 3,
+          "M3": 285,
+          "R0": 107
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 395
+        },
+        "M1": {
+          "M1": 395
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 360
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 395
+        },
+        "M1": {
+          "M1": 395
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 360
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 395
+        },
+        "M1": {
+          "M1": 395
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 360
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 395
+        },
+        "M1": {
+          "M1": 395
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 360
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 395
+        },
+        "M1": {
+          "M1": 395
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 360
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 395
+        },
+        "M1": {
+          "M1": 395
+        },
+        "M2": {
+          "M0": 35,
+          "M2": 360
+        },
+        "M3": {
+          "M1": 35,
+          "M3": 360
+        }
+      }
+    },
+    "task": [
+      "v4-phase",
+      "alternative",
+      2
+    ]
+  },
+  {
+    "counts": {
+      "evaluation_evidence": {
+        "interval:onset": 345,
+        "right_censored:coverage": 36,
+        "right_censored:record_end": 1
+      },
+      "evaluation_issued": 382,
+      "training_evidence": {
+        "interval:onset": 302,
+        "right_censored:coverage": 30,
+        "right_censored:record_end": 1
+      },
+      "training_issued": 333
+    },
+    "diagnostic_mapping_counts": {
+      "oracle_completed_unique": 289,
+      "oracle_unknown_or_uncompleted": 93,
+      "retrospective_matched": 381,
+      "retrospective_unmatched": 1
+    },
+    "evaluation_routes": {
+      "oracle_point": {
+        "M0": {
+          "M0": 289,
+          "R0": 93
+        },
+        "M1": {
+          "M1": 289,
+          "R0": 93
+        },
+        "M2": {
+          "M0": 2,
+          "M2": 287,
+          "R0": 93
+        },
+        "M3": {
+          "M1": 2,
+          "M3": 287,
+          "R0": 93
+        }
+      },
+      "prefix_point": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 350
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 350
+        }
+      },
+      "prefix_point_L2": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 350
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 350
+        }
+      },
+      "prefix_type_within": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 350
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 350
+        }
+      },
+      "prefix_uniform_end": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 350
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 350
+        }
+      },
+      "prefix_uniform_end_L2": {
+        "M0": {
+          "M0": 382
+        },
+        "M1": {
+          "M1": 382
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 350
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 350
+        }
+      },
+      "retrospective_point": {
+        "M0": {
+          "M0": 381,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 381,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 32,
+          "M2": 349,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 32,
+          "M3": 349,
+          "R0": 1
+        }
+      }
+    },
+    "task": [
+      "v4-phase",
+      "alternative",
+      3
+    ]
+  }
+]

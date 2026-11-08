@@ -323,6 +323,14 @@ proposals, not a record of approvals the user has not given.
   and the declared mark fallback. Record geometry diagnostics. Re-freeze,
   repeat concordance, and replay all 56 tasks using the original control
   random streams. No generator, model coefficient or favorable seed is tuned.
+- Execution: repaired freeze `4fc8d2e` completes all 56 trials, 105,509 scored
+  variant-issuances and 1,360 fits after fresh exact concordance. Independent
+  arithmetic and aggregate checks pass. The injected-effect prefix gain is
+  0.00324 nats/forecast (trial SD 0.00321); all eight individual diagnostic
+  intervals include zero. This is a development result, not final power or
+  real-star evidence. Strict oracle matching, rare point-order failures,
+  stronger timing-only comparisons and coarsening/inference calibration
+  remain for A10. The L2 variant delays issuance, not training evidence.
 
 ## New decision template
 

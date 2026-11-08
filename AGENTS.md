@@ -59,9 +59,15 @@ baseline is previous log gap, not an identified latent activity model.
 Point and shared-end bracket sensitivities, common unknown-anchor fallback
 and synthetic controls are development work, not full measurement/missed-event
 inference. Prefix causality does not rule out measurement-induced skill.
-The initial A10b control run is retained as aborted/incomplete after a
-nonpositive derived-mark error. Its explicit missing-mark repair requires a
-new source freeze and full original-stream replay, with domain diagnostics.
+The initial A10b run is retained as aborted/incomplete after a nonpositive
+derived-mark error. Repaired freeze `4fc8d2e` repeats independent concordance
+and completes all 56 trials on the original random streams: 105,509 variant
+scores and 1,360 fits reconcile. Injected-effect prefix gain averages 0.00324
+nats, with wide individual-history intervals. Rare point-order failures use
+mark fallback. Strict oracle matching leaves 25.9% of its scored issuances on
+R0, so it cannot measure skill lost through extraction. The two-day variant
+delays issuance, not training-record availability. See the A10b audit; stronger
+timing-only baselines and final inference calibration remain unresolved.
 A10 remains unfrozen. No frozen operational
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code

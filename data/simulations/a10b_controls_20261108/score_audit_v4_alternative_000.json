@@ -1,0 +1,1255 @@
+{
+  "audit_failures": [],
+  "case": "alternative",
+  "counts": {
+    "evaluation_evidence": {
+      "interval:onset": 362,
+      "right_censored:coverage": 29,
+      "right_censored:record_end": 1
+    },
+    "evaluation_issued": 392,
+    "training_evidence": {
+      "interval:onset": 313,
+      "right_censored:coverage": 34,
+      "right_censored:record_end": 1
+    },
+    "training_issued": 348
+  },
+  "details": {
+    "oracle_point": {
+      "badmark_id_mismatch": [],
+      "duration_domain_diagnostics": {
+        "endpoint_mode": "point",
+        "interval_only_overlap_count": 0,
+        "interval_only_overlap_emission_indices": [],
+        "known_landmark_count": 275,
+        "min_margin": 5.07502522226423,
+        "missing_mark_count": 117,
+        "missing_mark_emission_indices": [
+          356,
+          359,
+          361,
+          364,
+          370,
+          373,
+          378,
+          382,
+          387,
+          399,
+          400,
+          402,
+          406,
+          409,
+          411,
+          412,
+          414,
+          416,
+          417,
+          418,
+          420,
+          423,
+          426,
+          429,
+          433,
+          434,
+          439,
+          443,
+          448,
+          449,
+          450,
+          454,
+          455,
+          462,
+          463,
+          464,
+          466,
+          468,
+          475,
+          477,
+          481,
+          482,
+          485,
+          488,
+          489,
+          494,
+          496,
+          497,
+          498,
+          500,
+          505,
+          506,
+          510,
+          511,
+          512,
+          513,
+          515,
+          516,
+          517,
+          522,
+          524,
+          528,
+          531,
+          532,
+          534,
+          535,
+          539,
+          544,
+          565,
+          571,
+          573,
+          574,
+          576,
+          580,
+          581,
+          585,
+          590,
+          596,
+          597,
+          602,
+          608,
+          611,
+          613,
+          616,
+          619,
+          620,
+          623,
+          624,
+          626,
+          632,
+          642,
+          643,
+          644,
+          650,
+          659,
+          662,
+          667,
+          673,
+          674,
+          682,
+          685,
+          686,
+          688,
+          693,
+          695,
+          700,
+          701,
+          704,
+          711,
+          712,
+          723,
+          727,
+          730,
+          732,
+          733,
+          735,
+          738
+        ],
+        "nodes": 5,
+        "nonpositive_mark_count": 0,
+        "nonpositive_mark_emission_indices": [],
+        "point_invalid_count": 0,
+        "point_invalid_emission_indices": [],
+        "variant_missing_landmark_count": 117,
+        "variant_missing_landmark_emission_indices": [
+          356,
+          359,
+          361,
+          364,
+          370,
+          373,
+          378,
+          382,
+          387,
+          399,
+          400,
+          402,
+          406,
+          409,
+          411,
+          412,
+          414,
+          416,
+          417,
+          418,
+          420,
+          423,
+          426,
+          429,
+          433,
+          434,
+          439,
+          443,
+          448,
+          449,
+          450,
+          454,
+          455,
+          462,
+          463,
+          464,
+          466,
+          468,
+          475,
+          477,
+          481,
+          482,
+          485,
+          488,
+          489,
+          494,
+          496,
+          497,
+          498,
+          500,
+          505,
+          506,
+          510,
+          511,
+          512,
+          513,
+          515,
+          516,
+          517,
+          522,
+          524,
+          528,
+          531,
+          532,
+          534,
+          535,
+          539,
+          544,
+          565,
+          571,
+          573,
+          574,
+          576,
+          580,
+          581,
+          585,
+          590,
+          596,
+          597,
+          602,
+          608,
+          611,
+          613,
+          616,
+          619,
+          620,
+          623,
+          624,
+          626,
+          632,
+          642,
+          643,
+          644,
+          650,
+          659,
+          662,
+          667,
+          673,
+          674,
+          682,
+          685,
+          686,
+          688,
+          693,
+          695,
+          700,
+          701,
+          704,
+          711,
+          712,
+          723,
+          727,
+          730,
+          732,
+          733,
+          735,
+          738
+        ]
+      },
+      "gain_estimate_errors": {
+        "gain_M1_M0": 0.0,
+        "gain_M2_M0": 0.0,
+        "gain_M3_M2": 0.0
+      },
+      "gains_from_scores": {
+        "gain_M1_M0": 0.010608082686731952,
+        "gain_M2_M0": 0.05575492276798505,
+        "gain_M3_M2": 0.0009722663729140378
+      },
+      "independent_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.010608082686731952,
+          "lower": -0.00693243782931789,
+          "n": 392,
+          "se": 0.008380467715651024,
+          "upper": 0.028148603202781793
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.05575492276798505,
+          "lower": 0.018212187961139936,
+          "n": 392,
+          "se": 0.017937077563811528,
+          "upper": 0.09329765757483016
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.0009722663729140378,
+          "lower": -0.014117025908949752,
+          "n": 392,
+          "se": 0.007209325783945415,
+          "upper": 0.01606155865477783
+        }
+      },
+      "interval_errors": {
+        "gain_M1_M0": {
+          "estimate": 0.0,
+          "lower": 3.469446951953614e-18,
+          "se": 1.734723475976807e-18,
+          "upper": 0.0
+        },
+        "gain_M2_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M3_M2": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        }
+      },
+      "json_estimates": {
+        "gain_M1_M0": 0.010608082686731952,
+        "gain_M2_M0": 0.05575492276798505,
+        "gain_M3_M2": 0.0009722663729140378
+      },
+      "json_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "estimate": 0.010608082686731952,
+          "lower": -0.0069324378293178866,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.008380467715651022,
+          "upper": 0.028148603202781793
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "estimate": 0.05575492276798505,
+          "lower": 0.018212187961139936,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.017937077563811528,
+          "upper": 0.09329765757483016
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "estimate": 0.0009722663729140378,
+          "lower": -0.014117025908949752,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.007209325783945415,
+          "upper": 0.01606155865477783
+        }
+      },
+      "max_error": 0.0,
+      "observed_duration_badmark_ids": [],
+      "observed_positive_stored_duration_ids": [],
+      "route_counts": {
+        "M0": {
+          "M0": 275,
+          "R0": 117
+        },
+        "M1": {
+          "M1": 275,
+          "R0": 117
+        },
+        "M2": {
+          "M0": 4,
+          "M2": 271,
+          "R0": 117
+        },
+        "M3": {
+          "M1": 4,
+          "M3": 271,
+          "R0": 117
+        }
+      },
+      "rows": 392,
+      "sample_errors": [],
+      "saved_badmark_ids": []
+    },
+    "prefix_point": {
+      "badmark_id_mismatch": [],
+      "duration_domain_diagnostics": {
+        "endpoint_mode": "point",
+        "interval_only_overlap_count": 0,
+        "interval_only_overlap_emission_indices": [],
+        "known_landmark_count": 392,
+        "min_margin": 1.7388599018086097,
+        "missing_mark_count": 0,
+        "missing_mark_emission_indices": [],
+        "nodes": 5,
+        "nonpositive_mark_count": 0,
+        "nonpositive_mark_emission_indices": [],
+        "point_invalid_count": 0,
+        "point_invalid_emission_indices": [],
+        "variant_missing_landmark_count": 0,
+        "variant_missing_landmark_emission_indices": []
+      },
+      "gain_estimate_errors": {
+        "gain_M1_M0": 0.0,
+        "gain_M2_M0": 0.0,
+        "gain_M3_M2": 0.0
+      },
+      "gains_from_scores": {
+        "gain_M1_M0": 0.020207259693709092,
+        "gain_M2_M0": 0.04280184673722021,
+        "gain_M3_M2": 0.007339119446079646
+      },
+      "independent_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.020207259693709092,
+          "lower": 0.0014521620556040282,
+          "n": 392,
+          "se": 0.008960765452553325,
+          "upper": 0.038962357331814156
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.04280184673722021,
+          "lower": -0.041284459571214856,
+          "n": 392,
+          "se": 0.04017455324095929,
+          "upper": 0.1268881530456553
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.007339119446079646,
+          "lower": -0.011958196876164177,
+          "n": 392,
+          "se": 0.009219825391686249,
+          "upper": 0.02663643576832347
+        }
+      },
+      "interval_errors": {
+        "gain_M1_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M2_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M3_M2": {
+          "estimate": 0.0,
+          "lower": 3.469446951953614e-18,
+          "se": 1.734723475976807e-18,
+          "upper": 3.469446951953614e-18
+        }
+      },
+      "json_estimates": {
+        "gain_M1_M0": 0.020207259693709092,
+        "gain_M2_M0": 0.04280184673722021,
+        "gain_M3_M2": 0.007339119446079646
+      },
+      "json_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "estimate": 0.020207259693709092,
+          "lower": 0.0014521620556040282,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.008960765452553325,
+          "upper": 0.038962357331814156
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "estimate": 0.04280184673722021,
+          "lower": -0.041284459571214856,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.04017455324095929,
+          "upper": 0.1268881530456553
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "estimate": 0.007339119446079646,
+          "lower": -0.011958196876164173,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.009219825391686247,
+          "upper": 0.026636435768323467
+        }
+      },
+      "max_error": 0.0,
+      "observed_duration_badmark_ids": [],
+      "observed_positive_stored_duration_ids": [],
+      "route_counts": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M1": 392
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 361
+        }
+      },
+      "rows": 392,
+      "sample_errors": [],
+      "saved_badmark_ids": []
+    },
+    "prefix_point_L2": {
+      "badmark_id_mismatch": [],
+      "duration_domain_diagnostics": {
+        "endpoint_mode": "point",
+        "interval_only_overlap_count": 0,
+        "interval_only_overlap_emission_indices": [],
+        "known_landmark_count": 392,
+        "min_margin": 1.7388599018086097,
+        "missing_mark_count": 0,
+        "missing_mark_emission_indices": [],
+        "nodes": 5,
+        "nonpositive_mark_count": 0,
+        "nonpositive_mark_emission_indices": [],
+        "point_invalid_count": 0,
+        "point_invalid_emission_indices": [],
+        "variant_missing_landmark_count": 0,
+        "variant_missing_landmark_emission_indices": []
+      },
+      "gain_estimate_errors": {
+        "gain_M1_M0": 0.0,
+        "gain_M2_M0": 0.0,
+        "gain_M3_M2": 0.0
+      },
+      "gains_from_scores": {
+        "gain_M1_M0": 0.020339218414204177,
+        "gain_M2_M0": 0.04079516136188912,
+        "gain_M3_M2": 0.007527872661193451
+      },
+      "independent_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "cluster_start": 19415.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.020339218414204177,
+          "lower": 0.0016624953419960876,
+          "n": 390,
+          "se": 0.008923319840912167,
+          "upper": 0.03901594148641227
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "cluster_start": 19415.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.04079516136188912,
+          "lower": -0.04365460510600231,
+          "n": 390,
+          "se": 0.040348206361997645,
+          "upper": 0.12524492782978056
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "cluster_start": 19415.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.007527872661193451,
+          "lower": -0.011662248844119035,
+          "n": 390,
+          "se": 0.009168610109804722,
+          "upper": 0.02671799416650594
+        }
+      },
+      "interval_errors": {
+        "gain_M1_M0": {
+          "estimate": 0.0,
+          "lower": 3.469446951953614e-18,
+          "se": 1.734723475976807e-18,
+          "upper": 6.938893903907228e-18
+        },
+        "gain_M2_M0": {
+          "estimate": 0.0,
+          "lower": 1.3877787807814457e-17,
+          "se": 6.938893903907228e-18,
+          "upper": 0.0
+        },
+        "gain_M3_M2": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        }
+      },
+      "json_estimates": {
+        "gain_M1_M0": 0.020339218414204177,
+        "gain_M2_M0": 0.04079516136188912,
+        "gain_M3_M2": 0.007527872661193451
+      },
+      "json_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "estimate": 0.020339218414204177,
+          "lower": 0.0016624953419960911,
+          "n": 390,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.008923319840912165,
+          "upper": 0.03901594148641226
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "estimate": 0.04079516136188912,
+          "lower": -0.043654605106002324,
+          "n": 390,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.04034820636199765,
+          "upper": 0.12524492782978056
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "estimate": 0.007527872661193451,
+          "lower": -0.011662248844119035,
+          "n": 390,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.009168610109804722,
+          "upper": 0.02671799416650594
+        }
+      },
+      "max_error": 0.0,
+      "observed_duration_badmark_ids": [],
+      "observed_positive_stored_duration_ids": [],
+      "route_counts": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 359
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 359
+        }
+      },
+      "rows": 390,
+      "sample_errors": [],
+      "saved_badmark_ids": []
+    },
+    "prefix_type_within": {
+      "badmark_id_mismatch": [],
+      "duration_domain_diagnostics": {
+        "endpoint_mode": "point",
+        "interval_only_overlap_count": 0,
+        "interval_only_overlap_emission_indices": [],
+        "known_landmark_count": 392,
+        "min_margin": 1.7388599018086097,
+        "missing_mark_count": 0,
+        "missing_mark_emission_indices": [],
+        "nodes": 5,
+        "nonpositive_mark_count": 0,
+        "nonpositive_mark_emission_indices": [],
+        "point_invalid_count": 0,
+        "point_invalid_emission_indices": [],
+        "variant_missing_landmark_count": 0,
+        "variant_missing_landmark_emission_indices": []
+      },
+      "gain_estimate_errors": {
+        "gain_M1_M0": 3.469446951953614e-18,
+        "gain_M2_M0": 0.0,
+        "gain_M3_M2": 0.0
+      },
+      "gains_from_scores": {
+        "gain_M1_M0": 0.019615993363788845,
+        "gain_M2_M0": 0.04280184673722021,
+        "gain_M3_M2": 0.007650982443980665
+      },
+      "independent_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.019615993363788845,
+          "lower": 0.0018665286848998201,
+          "n": 392,
+          "se": 0.00848029655536221,
+          "upper": 0.037365458042677865
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.04280184673722021,
+          "lower": -0.041284459571214856,
+          "n": 392,
+          "se": 0.04017455324095929,
+          "upper": 0.1268881530456553
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.007650982443980665,
+          "lower": -0.011339008475197445,
+          "n": 392,
+          "se": 0.009072992199579149,
+          "upper": 0.026640973363158776
+        }
+      },
+      "interval_errors": {
+        "gain_M1_M0": {
+          "estimate": 3.469446951953614e-18,
+          "lower": 3.469446951953614e-18,
+          "se": 0.0,
+          "upper": 6.938893903907228e-18
+        },
+        "gain_M2_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M3_M2": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        }
+      },
+      "json_estimates": {
+        "gain_M1_M0": 0.019615993363788848,
+        "gain_M2_M0": 0.04280184673722021,
+        "gain_M3_M2": 0.007650982443980665
+      },
+      "json_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "estimate": 0.019615993363788848,
+          "lower": 0.0018665286848998236,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.00848029655536221,
+          "upper": 0.03736545804267787
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "estimate": 0.04280184673722021,
+          "lower": -0.041284459571214856,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.04017455324095929,
+          "upper": 0.1268881530456553
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "estimate": 0.007650982443980665,
+          "lower": -0.011339008475197445,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.009072992199579149,
+          "upper": 0.026640973363158776
+        }
+      },
+      "max_error": 0.0,
+      "observed_duration_badmark_ids": [],
+      "observed_positive_stored_duration_ids": [],
+      "route_counts": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M1": 392
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 361
+        }
+      },
+      "rows": 392,
+      "sample_errors": [],
+      "saved_badmark_ids": []
+    },
+    "prefix_uniform_end": {
+      "badmark_id_mismatch": [],
+      "duration_domain_diagnostics": {
+        "endpoint_mode": "uniform_end",
+        "interval_only_overlap_count": 0,
+        "interval_only_overlap_emission_indices": [],
+        "known_landmark_count": 392,
+        "min_margin": 1.2465073585772188,
+        "missing_mark_count": 0,
+        "missing_mark_emission_indices": [],
+        "nodes": 5,
+        "nonpositive_mark_count": 0,
+        "nonpositive_mark_emission_indices": [],
+        "point_invalid_count": 0,
+        "point_invalid_emission_indices": [],
+        "variant_missing_landmark_count": 0,
+        "variant_missing_landmark_emission_indices": []
+      },
+      "gain_estimate_errors": {
+        "gain_M1_M0": 0.0,
+        "gain_M2_M0": 0.0,
+        "gain_M3_M2": 0.0
+      },
+      "gains_from_scores": {
+        "gain_M1_M0": 0.019608084003936703,
+        "gain_M2_M0": 0.04336049733547964,
+        "gain_M3_M2": 0.007129701800206232
+      },
+      "independent_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.019608084003936703,
+          "lower": 0.0001123774265423122,
+          "n": 392,
+          "se": 0.009314611810759033,
+          "upper": 0.039103790581331094
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.04336049733547964,
+          "lower": -0.04103094838840235,
+          "n": 392,
+          "se": 0.04032034201715813,
+          "upper": 0.12775194305936163
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.007129701800206232,
+          "lower": -0.012052587758500809,
+          "n": 392,
+          "se": 0.009164868181187632,
+          "upper": 0.026311991358913274
+        }
+      },
+      "interval_errors": {
+        "gain_M1_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M2_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M3_M2": {
+          "estimate": 0.0,
+          "lower": 6.938893903907228e-18,
+          "se": 3.469446951953614e-18,
+          "upper": 6.938893903907228e-18
+        }
+      },
+      "json_estimates": {
+        "gain_M1_M0": 0.019608084003936703,
+        "gain_M2_M0": 0.04336049733547964,
+        "gain_M3_M2": 0.007129701800206232
+      },
+      "json_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "estimate": 0.019608084003936703,
+          "lower": 0.0001123774265423122,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.009314611810759033,
+          "upper": 0.039103790581331094
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "estimate": 0.04336049733547964,
+          "lower": -0.04103094838840235,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.04032034201715813,
+          "upper": 0.12775194305936163
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "estimate": 0.007129701800206232,
+          "lower": -0.012052587758500802,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.009164868181187629,
+          "upper": 0.026311991358913267
+        }
+      },
+      "max_error": 0.0,
+      "observed_duration_badmark_ids": [],
+      "observed_positive_stored_duration_ids": [],
+      "route_counts": {
+        "M0": {
+          "M0": 392
+        },
+        "M1": {
+          "M1": 392
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 361
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 361
+        }
+      },
+      "rows": 392,
+      "sample_errors": [],
+      "saved_badmark_ids": []
+    },
+    "prefix_uniform_end_L2": {
+      "badmark_id_mismatch": [],
+      "duration_domain_diagnostics": {
+        "endpoint_mode": "uniform_end",
+        "interval_only_overlap_count": 0,
+        "interval_only_overlap_emission_indices": [],
+        "known_landmark_count": 392,
+        "min_margin": 1.2465073585772188,
+        "missing_mark_count": 0,
+        "missing_mark_emission_indices": [],
+        "nodes": 5,
+        "nonpositive_mark_count": 0,
+        "nonpositive_mark_emission_indices": [],
+        "point_invalid_count": 0,
+        "point_invalid_emission_indices": [],
+        "variant_missing_landmark_count": 0,
+        "variant_missing_landmark_emission_indices": []
+      },
+      "gain_estimate_errors": {
+        "gain_M1_M0": 3.469446951953614e-18,
+        "gain_M2_M0": 0.0,
+        "gain_M3_M2": 0.0
+      },
+      "gains_from_scores": {
+        "gain_M1_M0": 0.020043414215608398,
+        "gain_M2_M0": 0.04131718767897259,
+        "gain_M3_M2": 0.007607515163374891
+      },
+      "independent_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "cluster_start": 19415.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.020043414215608398,
+          "lower": 0.0007066201497712178,
+          "n": 390,
+          "se": 0.009238686973095314,
+          "upper": 0.039380208281445575
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "cluster_start": 19415.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.04131718767897259,
+          "lower": -0.04339451033712964,
+          "n": 390,
+          "se": 0.04047335138728253,
+          "upper": 0.1260288856950748
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "cluster_start": 19415.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.007607515163374891,
+          "lower": -0.011338962230263153,
+          "n": 390,
+          "se": 0.009052202411975697,
+          "upper": 0.026553992557012938
+        }
+      },
+      "interval_errors": {
+        "gain_M1_M0": {
+          "estimate": 3.469446951953614e-18,
+          "lower": 6.938893903907228e-18,
+          "se": 1.734723475976807e-18,
+          "upper": 0.0
+        },
+        "gain_M2_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M3_M2": {
+          "estimate": 0.0,
+          "lower": 3.469446951953614e-18,
+          "se": 1.734723475976807e-18,
+          "upper": 3.469446951953614e-18
+        }
+      },
+      "json_estimates": {
+        "gain_M1_M0": 0.0200434142156084,
+        "gain_M2_M0": 0.04131718767897259,
+        "gain_M3_M2": 0.007607515163374891
+      },
+      "json_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "estimate": 0.0200434142156084,
+          "lower": 0.0007066201497712248,
+          "n": 390,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.009238686973095312,
+          "upper": 0.039380208281445575
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "estimate": 0.04131718767897259,
+          "lower": -0.04339451033712964,
+          "n": 390,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.04047335138728253,
+          "upper": 0.1260288856950748
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "estimate": 0.007607515163374891,
+          "lower": -0.01133896223026315,
+          "n": 390,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.009052202411975695,
+          "upper": 0.026553992557012934
+        }
+      },
+      "max_error": 0.0,
+      "observed_duration_badmark_ids": [],
+      "observed_positive_stored_duration_ids": [],
+      "route_counts": {
+        "M0": {
+          "M0": 390
+        },
+        "M1": {
+          "M1": 390
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 359
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 359
+        }
+      },
+      "rows": 390,
+      "sample_errors": [],
+      "saved_badmark_ids": []
+    },
+    "retrospective_point": {
+      "badmark_id_mismatch": [],
+      "duration_domain_diagnostics": {
+        "endpoint_mode": "point",
+        "interval_only_overlap_count": 0,
+        "interval_only_overlap_emission_indices": [],
+        "known_landmark_count": 391,
+        "min_margin": 1.6923192288304563,
+        "missing_mark_count": 1,
+        "missing_mark_emission_indices": [
+          515
+        ],
+        "nodes": 5,
+        "nonpositive_mark_count": 0,
+        "nonpositive_mark_emission_indices": [],
+        "point_invalid_count": 0,
+        "point_invalid_emission_indices": [],
+        "variant_missing_landmark_count": 1,
+        "variant_missing_landmark_emission_indices": [
+          515
+        ]
+      },
+      "gain_estimate_errors": {
+        "gain_M1_M0": 0.0,
+        "gain_M2_M0": 0.0,
+        "gain_M3_M2": 0.0
+      },
+      "gains_from_scores": {
+        "gain_M1_M0": 0.01760931374839575,
+        "gain_M2_M0": 0.043432822695430084,
+        "gain_M3_M2": 0.0058539830432670775
+      },
+      "independent_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.01760931374839575,
+          "lower": -0.008722580453665384,
+          "n": 392,
+          "se": 0.012580789096332232,
+          "upper": 0.04394120795045688
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.043432822695430084,
+          "lower": -0.04217232755639144,
+          "n": 392,
+          "se": 0.04090022284814201,
+          "upper": 0.1290379729472516
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "cluster_start": 19413.699720440993,
+          "cluster_width": 1095.75,
+          "estimate": 0.0058539830432670775,
+          "lower": -0.0165069674922463,
+          "n": 392,
+          "se": 0.010683561179536824,
+          "upper": 0.028214933578780455
+        }
+      },
+      "interval_errors": {
+        "gain_M1_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M2_M0": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        },
+        "gain_M3_M2": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "se": 0.0,
+          "upper": 0.0
+        }
+      },
+      "json_estimates": {
+        "gain_M1_M0": 0.01760931374839575,
+        "gain_M2_M0": 0.043432822695430084,
+        "gain_M3_M2": 0.0058539830432670775
+      },
+      "json_intervals": {
+        "gain_M1_M0": {
+          "blocks": 20,
+          "estimate": 0.01760931374839575,
+          "lower": -0.008722580453665384,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.012580789096332232,
+          "upper": 0.04394120795045688
+        },
+        "gain_M2_M0": {
+          "blocks": 20,
+          "estimate": 0.043432822695430084,
+          "lower": -0.04217232755639144,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.04090022284814201,
+          "upper": 0.1290379729472516
+        },
+        "gain_M3_M2": {
+          "blocks": 20,
+          "estimate": 0.0058539830432670775,
+          "lower": -0.0165069674922463,
+          "n": 392,
+          "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+          "se": 0.010683561179536824,
+          "upper": 0.028214933578780455
+        }
+      },
+      "max_error": 0.0,
+      "observed_duration_badmark_ids": [],
+      "observed_positive_stored_duration_ids": [],
+      "route_counts": {
+        "M0": {
+          "M0": 391,
+          "R0": 1
+        },
+        "M1": {
+          "M1": 391,
+          "R0": 1
+        },
+        "M2": {
+          "M0": 31,
+          "M2": 360,
+          "R0": 1
+        },
+        "M3": {
+          "M1": 31,
+          "M3": 360,
+          "R0": 1
+        }
+      },
+      "rows": 392,
+      "sample_errors": [],
+      "saved_badmark_ids": []
+    }
+  },
+  "family": "v4-phase",
+  "independent_evaluation_evidence": {
+    "interval:onset": 362,
+    "right_censored:coverage": 29,
+    "right_censored:record_end": 1
+  },
+  "independent_evaluation_issued": 392,
+  "max_abs_score_error": 5.240252676230739e-14,
+  "max_interval_error": 1.3877787807814457e-17,
+  "numerical_fixture": {
+    "available": true,
+    "max_abs_error": 2.2737367544323206e-13,
+    "points": [
+      -8.0,
+      -12.0,
+      -30.0,
+      -50.0,
+      12.0
+    ]
+  },
+  "replicate": 0,
+  "route_mismatch_count": 0,
+  "score_error_count_gt_1e-9": 0,
+  "score_rows": 2740,
+  "scores_sha256": "11d96cd9eb83fe594fd913c98b317cf791caaaa46cb6352083a33324419fd27d",
+  "scores_source": "outputs/a10b_controls_repaired_20261108/scores.jsonl",
+  "scores_source_kind": "growing-stream snapshot",
+  "trial": "outputs/a10b_controls_repaired_20261108/v4-phase-alternative-000.json"
+}

@@ -181,3 +181,10 @@ Only after these results and independent reconciliation should a larger
 operating-characteristic grid be designed. Do not call this pilot the A10
 freeze, operational replay, model selection on real correlations, or a result
 about the reserved star history.
+
+Execution record: repaired source `4fc8d2e` completed all 56 trials, 105,509
+variant-issuances and 1,360 fits. Independent score and aggregate audits pass;
+the [A10b report](../audits/2026-11-08-a10b-model-controls.md) records the
+preserved aborted run, geometry/matching limitations and actual precision.
+The two-day sensitivity shifts issuance, not training-record availability;
+it is not a full reporting-lag replay. These results do not freeze A10.

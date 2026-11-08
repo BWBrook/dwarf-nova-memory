@@ -1,0 +1,95 @@
+{
+  "count_scope": "variant-issuances repeat the same issuance across variants; not unique physical events",
+  "failed_trials": [],
+  "model_fits_reconciled": 1360,
+  "nonpositive_mark_variant_issuances": 38,
+  "original_successful_trial_exact_replays": [
+    {
+      "exact": true,
+      "original_result_sha256": "9080a76819de15f777644bdda2645845512f31125d6064decec1438ea8177c00",
+      "replayed_result_subset_sha256": "9080a76819de15f777644bdda2645845512f31125d6064decec1438ea8177c00",
+      "task": [
+        "v2-phase",
+        "null",
+        4
+      ]
+    },
+    {
+      "exact": true,
+      "original_result_sha256": "0a662571da3328312811411a9d1715b6e96d884b01d92d8eb76e74ae0cfc953d",
+      "replayed_result_subset_sha256": "0a662571da3328312811411a9d1715b6e96d884b01d92d8eb76e74ae0cfc953d",
+      "task": [
+        "v2-phase",
+        "null",
+        5
+      ]
+    },
+    {
+      "exact": true,
+      "original_result_sha256": "04cb4760afa1c7c791a00991f14b9a679d49f32d61c9683926e0d5b730c749f7",
+      "replayed_result_subset_sha256": "04cb4760afa1c7c791a00991f14b9a679d49f32d61c9683926e0d5b730c749f7",
+      "task": [
+        "v2-phase",
+        "null",
+        6
+      ]
+    },
+    {
+      "exact": true,
+      "original_result_sha256": "69675cffadfde528be88d91a116892dfd0b8ec36f1ad3c7958f079b1ce97c7ac",
+      "replayed_result_subset_sha256": "69675cffadfde528be88d91a116892dfd0b8ec36f1ad3c7958f079b1ce97c7ac",
+      "task": [
+        "v2-phase",
+        "null",
+        7
+      ]
+    },
+    {
+      "exact": true,
+      "original_result_sha256": "e325f261ac2fce47b4e25712690fb1b98226edceeb0075115d6f931d355a2992",
+      "replayed_result_subset_sha256": "e325f261ac2fce47b4e25712690fb1b98226edceeb0075115d6f931d355a2992",
+      "task": [
+        "v2-phase",
+        "structured",
+        0
+      ]
+    },
+    {
+      "exact": true,
+      "original_result_sha256": "d653d11333a8aeb1ef612fd1a5415681f89405156d8999a6372b89b2b9f16a64",
+      "replayed_result_subset_sha256": "d653d11333a8aeb1ef612fd1a5415681f89405156d8999a6372b89b2b9f16a64",
+      "task": [
+        "v2-phase",
+        "structured",
+        1
+      ]
+    },
+    {
+      "exact": true,
+      "original_result_sha256": "a07aed3d5605f24690452c1773fdf23c5083ca54a0e613f5d2ba8c70731437a1",
+      "replayed_result_subset_sha256": "a07aed3d5605f24690452c1773fdf23c5083ca54a0e613f5d2ba8c70731437a1",
+      "task": [
+        "v2-phase",
+        "structured",
+        3
+      ]
+    },
+    {
+      "exact": true,
+      "original_result_sha256": "a8d00022be47275138816e906fe43b2738ca1ef5e2062286f441c19b36f6578f",
+      "replayed_result_subset_sha256": "a8d00022be47275138816e906fe43b2738ca1ef5e2062286f441c19b36f6578f",
+      "task": [
+        "v2-phase",
+        "structured",
+        4
+      ]
+    }
+  ],
+  "point_invalid_variant_issuances": 7,
+  "score_rows": 105509,
+  "seed_base": "a10b-controls|bd8fa238e0811699cf22311596b9bcd606570638",
+  "source_freeze": "4fc8d2eafa803b4890b90346d906a7ac13878d39",
+  "trials": 56,
+  "unknown_landmark_variant_issuances": 5830,
+  "variant_route_populations_reconciled": 272
+}

@@ -18,22 +18,21 @@ claims and handovers.
 | A04d | Benchmark review, extractor repair, fresh validation | X3 proposed with training evidence; validation protocol proposed, not frozen | Claude X3 and checks; Codex benchmark v2 and validation | [A04d memo](../docs/audits/2026-11-07-a04d-observation-review-x3-repair.md), [proposed protocol](../docs/protocols/a04d-x3-validation-v1.md); v1 benchmark fails predictive checks; X3 93–95% effective coverage on training, fails v1 end coverage |
 | A04f | X3 failure review and X4 repair | X4 proposed with development evidence; A04g protocol proposed, not frozen | Claude X4 and diagnosis; Codex v3 benchmark and validation | [A04f memo](../docs/audits/2026-11-08-a04f-x3-failure-review-x4.md), [proposed protocol](../docs/protocols/a04g-x4-validation-v1.md); state arm fails observer-diversity check; X4 94–98% effective coverage on development seeds of both v2 arms |
 | A04h | Joint morphology and cadence targets | Proposed, not frozen | Claude targets and operator; Codex next benchmark version | [A04h memo](../docs/audits/2026-11-08-a04h-joint-morphology-targets.md), [proposed targets](../docs/protocols/a04h-joint-morphology-targets-v1.md); v3 lacks amplitude–duration coupling; v2 random passes the waveform block; all arms fail decline sampling density |
-| A10a | Restriction review, prefix-causal predictors, precision | Proposed, not frozen | Claude protocol, ledger code and pilot; Codex models and controls | [A10a memo](../docs/audits/2026-11-08-a10a-prefix-predictors-review.md), [proposed protocol](../docs/protocols/a10-prefix-causal-predictors-v1.md); magnitude 10 structural (0.5 mag margins clear the peak distribution only there); causality costs ~0.05 d on real 1910–1959 rows; single-star forecast-gain test ~1/3 power at r≈0.12, estimand decision with Barry |
-| A10b | Model implementation, repaired ledger and full-chain synthetic controls | In progress | Codex with independent code/method references | D018 keeps forecast gain confirmatory; [development specification](../docs/protocols/a10b-model-controls-v1.md); no real focal fit or reserved-data access |
+| A10a | Restriction review, prefix-causal predictors, precision | Proposed, not frozen | Claude protocol, ledger code and pilot; Codex models and controls | [A10a memo](../docs/audits/2026-11-08-a10a-prefix-predictors-review.md), [proposed protocol](../docs/protocols/a10-prefix-causal-predictors-v1.md); magnitude 10 structural (0.5 mag margins clear the peak distribution only there); causality costs ~0.05 d on real 1910–1959 rows; single-star forecast-gain test ~1/3 power at r≈0.12, estimand resolved by D018; A10b review/control evidence now available |
+| A10b | Model implementation, repaired ledger and full-chain synthetic controls | Complete development pilot; review pending | Codex with independent code/method references | D018 keeps forecast gain confirmatory; [development specification](../docs/protocols/a10b-model-controls-v1.md); no real focal fit or reserved-data access |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
 | A08 | Implement observational M0, then M1 | After A07 | Agent implementer + other reviewer | Censoring, boundary propagation, calibration |
 | A09 | Add past-only M2/M3 and identifiability simulation | After A08 | Rotate roles | Same state architecture, no future smoothing |
-| A10 | Freeze evaluation | D018 fixes forecast-gain confirmation; ledger/model/control work pending | Scientific lead | Cutoffs, ledger, final targets and score |
+| A10 | Freeze evaluation | D018 fixes forecast-gain confirmation; prototype/controls complete, baseline/inference pending | Scientific lead | Cutoffs, ledger, final targets and score |
 
 ## Current blocking information
 
 The requested SS Cyg stream through native JD 2436934.0 is acquired in 12
 hashed exports, with 72,635 unique native IDs. Early coverage varies sharply.
 The three boundary disagreements are adjudicated. A04i conditionally qualifies
-X4 at magnitude 10/C1 for retrospective extraction. A10b is implementing and
-testing the forecast chain; operational availability, observation/coarsening
+X4 at magnitude 10/C1 for retrospective extraction. A10b completes a synthetic prototype/control pilot of the forecast chain; operational availability, observation/coarsening
 effects, baseline architecture and final operating characteristics remain
 unresolved. D018 retains forecast gain as confirmatory despite low expected
 single-star power.
@@ -423,7 +422,7 @@ Closing result commit: `b3741b3`; tests and gitleaks CI both pass. Board
 messages 3027 (full handoff) and 3028 (A10 boundary) record the result;
 the reviewed correspondence snapshot is refreshed through those posts.
 
-## Active tranche — A10b model and observation-process development, 8 November 2026
+## Completed tranche — A10b model and observation-process development, 8 November 2026
 
 Codex on `main`, base `5476d00`. D018 records Barry's explicit choice to keep
 forecast gain confirmatory; the coefficient is secondary. D019 and
@@ -444,6 +443,27 @@ onset despite valid point durations. The missing-mark repair retains timing
 and all issuances. Re-freeze, repeat concordance and replay all 56 trials with
 the original random streams; do not combine successful subsets. No real
 photometry is read or real duration–following-gap association fitted here.
+
+Outcome: repaired source `4fc8d2e` repeats all 100 independent concordance
+histories at both delays, then completes the full 56-trial original-stream
+replay. All 105,509 variant score rows, 272 route populations and 1,360 fits
+reconcile; independent audits reproduce 132 gain groups and 36 paired
+contrasts exactly. Eight previously successful trials reproduce exactly.
+The [A10b memo](../docs/audits/2026-11-08-a10b-model-controls.md) links compact
+public tables, independent checkers and a checksum-verified 85-file shared
+payload manifest. Local checks: 257 tests, seed validator and numerical
+reproduction. No real focal fit or protected-data access occurred.
+
+Injected-effect prefix gain averages 0.00324 nats (trial SD 0.00321); all
+eight individual diagnostic intervals include zero. This is recovery of
+small average gain, not final power calibration. The AR-gap timing comparator
+learns the serial control, but does not represent every hidden activity model.
+Three evaluation prefix point-order failures use mark fallback. Strict oracle
+matching leaves 25.9% of its scored rows on R0; it is not a skill-loss upper
+bound. The two-day diagnostic delays issuance, not training-data availability.
+
+Next: Claude — review these limits, settle the stronger timing-only comparator
+and the next real-development-fit tranche before the evaluation freeze.
 
 ## Completed tranche — A10a, 8 November 2026
 

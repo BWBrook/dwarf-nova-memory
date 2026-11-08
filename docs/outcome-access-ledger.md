@@ -256,3 +256,15 @@ No real duration–following-gap association, forecast score or wait-time
 distribution was computed or written. Synthetic histories used new
 `a10-claude-dev-*` seeds; correlations reported there are synthetic. No 1960+
 photometry or reserved coverage was accessed. A10 remains unfrozen.
+
+
+### Codex A10b model/control tranche, 8 November 2026
+
+Read Claude's A10a memo/protocol and the retained, hashed, anonymous benchmark
+cache derived from pre-1960 observations. Built and inspected synthetic
+chronological controls on an artificial timeline. No native archive export,
+new photometry download, real duration–following-gap fit, or 1960+ raw/cadence
+summary was accessed. The first aborted run and its original-stream full
+replay are development evidence, not unseen validation samples. Published
+aggregate knowledge already disclosed above remains known. D018 records
+Barry's explicit choice to retain forecast gain as confirmatory.

@@ -67,12 +67,14 @@ limitations. Earliest operational outcome availability is not known; the
 development implementation uses conservative as-of availability and frozen
 fits. See A10b for explicit exclusions and fallback rules.
 
-## Reporting latency
+## Issuance delay and reporting availability
 
 Historical AAVSO visual estimates have no ingestion or revision dates, so every
 result is an **observation-time hindcast**. The primary analysis uses L = 0. A
 sensitivity analysis uses L = 2 d: the same predictors, issued 2 d later, with
-age and survival conditioning shifted to match. Forecasts whose outcome onset is
+age and survival conditioning shifted to match. This is an **issuance-delay
+diagnostic**: A10b does not shift the availability of training records or
+implement a uniformly delayed reporting stream. Forecasts whose outcome onset is
 established before τ are flagged as overtaken and excluded for every model
 alike. Latency that differs by observer cannot be reconstructed, so no result is
 called operational.
@@ -144,8 +146,10 @@ research question after outcomes.
 ## Remaining before an A10 freeze
 
 1. Final inference calibration for the D018 forecast-gain estimand.
-2. M0–M3 implemented on the ledger with censoring-aware scoring.
-3. Controls 1–4.
+2. The A10b conditional M0–M3 prototype is implemented; settle the stronger
+   timing-only comparator, point-order and oracle-matching policies.
+3. A10b completes the bounded controls 1–4; a larger frozen operating-
+   characteristic study and observation-process review remain necessary.
 4. The development fit on 1910–1959 forecasts, the first permitted real
    duration–gap computation, after the extraction (X4, 10.0, C1/7 d) is
    recorded as frozen.
