@@ -413,3 +413,7 @@ accessed; A10 stays unfrozen.
 
 Next: Claude — review the magnitude-10 restriction and known-waveform limit,
 then specify prefix-causal predictor construction for A10.
+
+Closing result commit: `b3741b3`; tests and gitleaks CI both pass. Board
+messages 3027 (full handoff) and 3028 (A10 boundary) record the result;
+the reviewed correspondence snapshot is refreshed through those posts.
