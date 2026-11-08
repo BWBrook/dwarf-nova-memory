@@ -80,11 +80,15 @@ Small floating-point differences across runtimes need not give identical hashes.
 
 [A10d](docs/protocols/a10d-directional-oc-v1.md) implements the directional
 M3/P3 offsets against a fixed q-plus-local-history M2, independent v3 prefix
-features, and the 360-trial operating-characteristic runner. Development
-concordance and score checks pass; production calibration has not yet run.
-The first real development fit remains gated. The positive coefficient and
-lagged-duration comparisons do not identify physical memory or universally
-exclude endpoint artefacts.
+features, and the 360-trial operating-characteristic runner. The
+[completed A10d audit](docs/audits/2026-11-08-a10d-directional-oc.md) passes
+the finite observed-rate/joint-MC screen: gated null confirmations are at
+most 2/40 or 0/20, and injected-effect power is 11/40 (27.5%). This does not
+certify a true five-percent error rate. The first real development fit remains
+closed pending the gate-policy clarification raised before outcomes. The
+positive coefficient and lagged-duration comparisons do not identify physical
+memory or universally exclude endpoint artefacts. No real association or
+1960+ data was accessed.
 
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
 uses *true complete simulated event histories*. The observation schedule is a

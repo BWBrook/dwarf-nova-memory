@@ -1,0 +1,163 @@
+{
+  "aggregate": {
+    "audit_failures": [],
+    "computed": {
+      "calibration": [
+        {
+          "case": "null",
+          "family": "v2-phase",
+          "lower_tail_p": 0.777191875660597,
+          "pass": true,
+          "population": "overall",
+          "successes": 37,
+          "tested": true,
+          "total": 40
+        },
+        {
+          "case": "null",
+          "family": "v2-phase",
+          "lower_tail_p": 0.5154188583079994,
+          "pass": true,
+          "population": "interior",
+          "successes": 24,
+          "tested": true,
+          "total": 27
+        },
+        {
+          "case": "alternative",
+          "family": "v2-phase",
+          "lower_tail_p": 0.20627266871283936,
+          "pass": true,
+          "population": "overall",
+          "successes": 34,
+          "tested": true,
+          "total": 40
+        },
+        {
+          "case": "alternative",
+          "family": "v2-phase",
+          "lower_tail_p": 0.15978031612147833,
+          "pass": true,
+          "population": "interior",
+          "successes": 31,
+          "tested": true,
+          "total": 37
+        }
+      ],
+      "complete": true,
+      "formal_certification_pass": false,
+      "null_rate_checks": [
+        {
+          "case": "null",
+          "certification_pass": false,
+          "exact_lower95": 0.0,
+          "exact_upper95": 0.08809730287880241,
+          "family": "v2-phase",
+          "mc_se": 0.0,
+          "one_sided_upper95": 0.0721575245055146,
+          "rate": 0.0,
+          "screen_pass": true,
+          "successes": 0,
+          "total": 40
+        },
+        {
+          "case": "structured",
+          "certification_pass": false,
+          "exact_lower95": 0.0006327449320494005,
+          "exact_upper95": 0.13158585848276577,
+          "family": "v2-phase",
+          "mc_se": 0.024685522072664372,
+          "one_sided_upper95": 0.11318836094473755,
+          "rate": 0.025,
+          "screen_pass": true,
+          "successes": 1,
+          "total": 40
+        },
+        {
+          "case": "gross",
+          "certification_pass": false,
+          "exact_lower95": 0.006113646599350819,
+          "exact_upper95": 0.16919686395941763,
+          "family": "v2-phase",
+          "mc_se": 0.034460121880225555,
+          "one_sided_upper95": 0.149151961273213,
+          "rate": 0.05,
+          "screen_pass": true,
+          "successes": 2,
+          "total": 40
+        },
+        {
+          "case": "offset",
+          "certification_pass": false,
+          "exact_lower95": 0.0,
+          "exact_upper95": 0.08809730287880241,
+          "family": "v2-phase",
+          "mc_se": 0.0,
+          "one_sided_upper95": 0.0721575245055146,
+          "rate": 0.0,
+          "screen_pass": true,
+          "successes": 0,
+          "total": 40
+        },
+        {
+          "case": "adaptive",
+          "certification_pass": false,
+          "exact_lower95": 0.0,
+          "exact_upper95": 0.08809730287880241,
+          "family": "v2-phase",
+          "mc_se": 0.0,
+          "one_sided_upper95": 0.0721575245055146,
+          "rate": 0.0,
+          "screen_pass": true,
+          "successes": 0,
+          "total": 40
+        },
+        {
+          "case": "null",
+          "certification_pass": false,
+          "exact_lower95": 0.0,
+          "exact_upper95": 0.1684334709830853,
+          "family": "v4-phase",
+          "mc_se": 0.0,
+          "one_sided_upper95": 0.13910834066826516,
+          "rate": 0.0,
+          "screen_pass": true,
+          "successes": 0,
+          "total": 20
+        }
+      ],
+      "real_fit_automatic": false,
+      "screen_pass": true
+    },
+    "receipt_status": "completed",
+    "records": 360,
+    "reference_method_counts": {
+      "analytic_zero_identity": 16,
+      "matched_58y_replicas_joint_mc": 64
+    },
+    "reference_record_count": 80,
+    "score_files": 360,
+    "trial_interval_count": 360
+  },
+  "auditor_sha256": {
+    "scripts/check_a10d_aggregate.py": "0e56c90c7a6aa152c1c9f2540347b52580e11f0481b2d98182cfdf24296bae36",
+    "scripts/check_a10d_scores.py": "8904d5116e2e83bd2334f4e935cf60825c17517afbf6f7a91a197dcf97304c22"
+  },
+  "bulk_archive": {
+    "bytes": 605168799,
+    "files": 757,
+    "id": "a10d-20261108-8f5df44",
+    "manifest_sha256": "b9adb18748225e81cd679362f8f0ee3d0ea595503554e085544b91e8e00f4c4d"
+  },
+  "full_audit_sha256": "cdeee797dd16a24e557e8d00f4bf5c38b33fceec5143d72ff3775f2d0edd9078",
+  "numerical": {
+    "failures": 0,
+    "histories": 10,
+    "max_abs_score_error": 1.1368683772161603e-13,
+    "score_rows": 22980
+  },
+  "real_data_fit": false,
+  "reserved_data_access": false,
+  "source_freeze": "8f5df44b950ec5781ba1e31e074e56976909a051",
+  "total_score_rows": 823070
+}

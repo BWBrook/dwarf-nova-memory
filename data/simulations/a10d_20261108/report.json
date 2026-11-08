@@ -1,0 +1,1311 @@
+{
+  "calibration": [
+    {
+      "case": "null",
+      "cluster_years": 3,
+      "interior": {
+        "exact_lower95": 0.6626891359757556,
+        "exact_upper95": 0.9581126035262327,
+        "mc_se": 0.06836727459191831,
+        "one_sided_upper95": 0.9477667593178314,
+        "rate": 0.8518518518518519,
+        "successes": 23,
+        "trials": 27
+      },
+      "interior_undercoverage_p": 0.28210201230814724,
+      "meaning": "no undercoverage detected by predeclared joint-MC screens; not a coverage guarantee",
+      "overall": {
+        "exact_lower95": 0.7633626001239001,
+        "exact_upper95": 0.9720745847057807,
+        "mc_se": 0.04743416490252569,
+        "one_sided_upper95": 0.9651151461234829,
+        "rate": 0.9,
+        "successes": 36,
+        "trials": 40
+      },
+      "pass": true,
+      "undercoverage_p": 0.5768693469069976
+    },
+    {
+      "case": "null",
+      "cluster_years": 6,
+      "interior": {
+        "exact_lower95": 0.708413075726448,
+        "exact_upper95": 0.976472545619146,
+        "mc_se": 0.060481228216868604,
+        "one_sided_upper95": 0.9690216067659646,
+        "rate": 0.8888888888888888,
+        "successes": 24,
+        "trials": 27
+      },
+      "interior_undercoverage_p": 0.5154188583079993,
+      "meaning": "no undercoverage detected by predeclared joint-MC screens; not a coverage guarantee",
+      "overall": {
+        "exact_lower95": 0.796135251267101,
+        "exact_upper95": 0.9842578201489585,
+        "mc_se": 0.041645828122394195,
+        "one_sided_upper95": 0.9792463985242987,
+        "rate": 0.925,
+        "successes": 37,
+        "trials": 40
+      },
+      "pass": true,
+      "undercoverage_p": 0.7771918756605969
+    },
+    {
+      "case": "alternative",
+      "cluster_years": 3,
+      "interior": {
+        "exact_lower95": 0.7122522026894278,
+        "exact_upper95": 0.954628007658006,
+        "mc_se": 0.05620272917946338,
+        "one_sided_upper95": 0.9452071630063382,
+        "rate": 0.8648648648648649,
+        "successes": 32,
+        "trials": 37
+      },
+      "interior_undercoverage_p": 0.3094535637428829,
+      "meaning": "no undercoverage detected by predeclared joint-MC screens; not a coverage guarantee",
+      "overall": {
+        "exact_lower95": 0.7319670826382796,
+        "exact_upper95": 0.9581403738613833,
+        "mc_se": 0.05229125165837972,
+        "one_sided_upper95": 0.9494296716591741,
+        "rate": 0.875,
+        "successes": 35,
+        "trials": 40
+      },
+      "pass": true,
+      "undercoverage_p": 0.37098230346579897
+    },
+    {
+      "case": "alternative",
+      "cluster_years": 6,
+      "interior": {
+        "exact_lower95": 0.6798629241323288,
+        "exact_upper95": 0.9380742786666036,
+        "mc_se": 0.06059738539651173,
+        "one_sided_upper95": 0.9269390977198539,
+        "rate": 0.8378378378378378,
+        "successes": 31,
+        "trials": 37
+      },
+      "interior_undercoverage_p": 0.15978031612147836,
+      "meaning": "no undercoverage detected by predeclared joint-MC screens; not a coverage guarantee",
+      "overall": {
+        "exact_lower95": 0.7016473331604235,
+        "exact_upper95": 0.9428977418454741,
+        "mc_se": 0.05645794895318108,
+        "one_sided_upper95": 0.9325990594772913,
+        "rate": 0.85,
+        "successes": 34,
+        "trials": 40
+      },
+      "pass": true,
+      "undercoverage_p": 0.20627266871283956
+    }
+  ],
+  "cases": [
+    {
+      "beta": {
+        "at_bound_metadata": 21,
+        "exact_zero": 21,
+        "max": 0.06062687297435612,
+        "mean": 0.013514678285484194,
+        "median": 0.0,
+        "min": 0.0,
+        "sd": 0.0199625450308902
+      },
+      "case": "adaptive",
+      "comparisons": [
+        {
+          "case": "adaptive",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.0008218574870947985,
+          "mean_n": 371.625,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.0026332461947849825,
+          "variant": "primary"
+        },
+        {
+          "case": "adaptive",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.0008010778679318627,
+          "mean_n": 371.625,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.001749161701719755,
+          "variant": "primary"
+        },
+        {
+          "case": "adaptive",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v2-phase",
+          "mean_gain": -2.077961916293578e-05,
+          "mean_n": 371.625,
+          "rejections": {
+            "exact_lower95": 0.027925415294219307,
+            "exact_upper95": 0.23663739987609986,
+            "mc_se": 0.047434164902525694,
+            "one_sided_upper95": 0.21439763851614463,
+            "rate": 0.1,
+            "successes": 4,
+            "trials": 40
+          },
+          "trial_sd": 0.00324044215656612,
+          "variant": "primary"
+        },
+        {
+          "case": "adaptive",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v2-phase",
+          "mean_gain": -0.0062730660552941814,
+          "mean_n": 371.625,
+          "rejections": {
+            "exact_lower95": 0.0006327449320494191,
+            "exact_upper95": 0.13158585848276572,
+            "mc_se": 0.024685522072664372,
+            "one_sided_upper95": 0.11318836094473754,
+            "rate": 0.025,
+            "successes": 1,
+            "trials": 40
+          },
+          "trial_sd": 0.010975283018774665,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 14,
+        "interval:onset": 7028,
+        "right_censored:coverage": 7813,
+        "right_censored:record_end": 19,
+        "right_censored:superseded": 5
+      },
+      "family": "v2-phase",
+      "interval_halfwidth": {
+        "mean": 0.0023745784135361216,
+        "median": 0.0
+      },
+      "mean_evaluation_issued": 371.975,
+      "positive_gain_trials": 7,
+      "secondary_evaluation_beta": {
+        "mean": -0.0013156854918192904,
+        "negative": 19,
+        "sd": 0.03551217121689218
+      },
+      "trials": 40
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 3,
+        "exact_zero": 3,
+        "max": 0.07137111293616685,
+        "mean": 0.0339388194785036,
+        "median": 0.035894219095816346,
+        "min": 0.0,
+        "sd": 0.019837336997916004
+      },
+      "case": "alternative",
+      "comparisons": [
+        {
+          "case": "alternative",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v2-phase",
+          "mean_gain": 0.004519560867443926,
+          "mean_n": 390.9,
+          "rejections": {
+            "exact_lower95": 0.1460089919638657,
+            "exact_upper95": 0.43888290717904815,
+            "mc_se": 0.07060010623221469,
+            "one_sided_upper95": 0.41387744322649855,
+            "rate": 0.275,
+            "successes": 11,
+            "trials": 40
+          },
+          "trial_sd": 0.008660032035165972,
+          "variant": "primary"
+        },
+        {
+          "case": "alternative",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.0008235691123810223,
+          "mean_n": 390.9,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.002058360738428957,
+          "variant": "primary"
+        },
+        {
+          "case": "alternative",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v2-phase",
+          "mean_gain": 0.005343129979824949,
+          "mean_n": 390.9,
+          "rejections": {
+            "exact_lower95": 0.126914798932845,
+            "exact_upper95": 0.4119619801514299,
+            "mc_se": 0.06846531968814576,
+            "one_sided_upper95": 0.3870602400920182,
+            "rate": 0.25,
+            "successes": 10,
+            "trials": 40
+          },
+          "trial_sd": 0.008408926714318221,
+          "variant": "primary"
+        },
+        {
+          "case": "alternative",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v2-phase",
+          "mean_gain": 0.040452589749899855,
+          "mean_n": 390.9,
+          "rejections": {
+            "exact_lower95": 0.5880380198485702,
+            "exact_upper95": 0.873085201067155,
+            "mc_se": 0.06846531968814576,
+            "one_sided_upper95": 0.857630117142979,
+            "rate": 0.75,
+            "successes": 30,
+            "trials": 40
+          },
+          "trial_sd": 0.03535073582284316,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 3,
+        "interval:onset": 14379,
+        "right_censored:coverage": 1212,
+        "right_censored:record_end": 33,
+        "right_censored:superseded": 12
+      },
+      "family": "v2-phase",
+      "interval_halfwidth": {
+        "mean": 0.010979018170064135,
+        "median": 0.009745494008367286
+      },
+      "mean_evaluation_issued": 390.975,
+      "positive_gain_trials": 31,
+      "secondary_evaluation_beta": {
+        "mean": 0.04056693357346979,
+        "negative": 1,
+        "sd": 0.018143233053983805
+      },
+      "trials": 40
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 11,
+        "exact_zero": 11,
+        "max": 0.057518725064982595,
+        "mean": 0.017049960506630133,
+        "median": 0.011767267500384152,
+        "min": 0.0,
+        "sd": 0.017487861179641465
+      },
+      "case": "gross",
+      "comparisons": [
+        {
+          "case": "gross",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v2-phase",
+          "mean_gain": 0.00045646156813176865,
+          "mean_n": 396.925,
+          "rejections": {
+            "exact_lower95": 0.006113646599350838,
+            "exact_upper95": 0.16919686395941763,
+            "mc_se": 0.034460121880225555,
+            "one_sided_upper95": 0.14915196127321298,
+            "rate": 0.05,
+            "successes": 2,
+            "trials": 40
+          },
+          "trial_sd": 0.0027058402881330887,
+          "variant": "primary"
+        },
+        {
+          "case": "gross",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.0015936509871631137,
+          "mean_n": 396.925,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.0037622180241551778,
+          "variant": "primary"
+        },
+        {
+          "case": "gross",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v2-phase",
+          "mean_gain": 0.0020501125552948823,
+          "mean_n": 396.925,
+          "rejections": {
+            "exact_lower95": 0.027925415294219307,
+            "exact_upper95": 0.23663739987609986,
+            "mc_se": 0.047434164902525694,
+            "one_sided_upper95": 0.21439763851614463,
+            "rate": 0.1,
+            "successes": 4,
+            "trials": 40
+          },
+          "trial_sd": 0.004750314046693116,
+          "variant": "primary"
+        },
+        {
+          "case": "gross",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v2-phase",
+          "mean_gain": -0.0033315570780132996,
+          "mean_n": 396.925,
+          "rejections": {
+            "exact_lower95": 0.006113646599350838,
+            "exact_upper95": 0.16919686395941763,
+            "mc_se": 0.034460121880225555,
+            "one_sided_upper95": 0.14915196127321298,
+            "rate": 0.05,
+            "successes": 2,
+            "trials": 40
+          },
+          "trial_sd": 0.006354231555757021,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 11,
+        "interval:onset": 14431,
+        "right_censored:coverage": 1175,
+        "right_censored:record_end": 36,
+        "right_censored:superseded": 235
+      },
+      "family": "v2-phase",
+      "interval_halfwidth": {
+        "mean": 0.004255806848326619,
+        "median": 0.0024971685033403574
+      },
+      "mean_evaluation_issued": 397.2,
+      "positive_gain_trials": 18,
+      "secondary_evaluation_beta": {
+        "mean": 0.011568141541173024,
+        "negative": 10,
+        "sd": 0.021678057249594335
+      },
+      "trials": 40
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 13,
+        "exact_zero": 13,
+        "max": 0.04775583168635074,
+        "mean": 0.009477531265165765,
+        "median": 0.004159249697027885,
+        "min": 0.0,
+        "sd": 0.012341914234254993
+      },
+      "case": "null",
+      "comparisons": [
+        {
+          "case": "null",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.00043766886942077983,
+          "mean_n": 390.875,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.0019870311576958566,
+          "variant": "primary"
+        },
+        {
+          "case": "null",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.0016397037930445152,
+          "mean_n": 390.875,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.0040272834829262645,
+          "variant": "primary"
+        },
+        {
+          "case": "null",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v2-phase",
+          "mean_gain": 0.0012020349236237353,
+          "mean_n": 390.875,
+          "rejections": {
+            "exact_lower95": 0.027925415294219307,
+            "exact_upper95": 0.23663739987609986,
+            "mc_se": 0.047434164902525694,
+            "one_sided_upper95": 0.21439763851614463,
+            "rate": 0.1,
+            "successes": 4,
+            "trials": 40
+          },
+          "trial_sd": 0.004700403310283898,
+          "variant": "primary"
+        },
+        {
+          "case": "null",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v2-phase",
+          "mean_gain": -0.003833468715173348,
+          "mean_n": 390.875,
+          "rejections": {
+            "exact_lower95": 0.0006327449320494191,
+            "exact_upper95": 0.13158585848276572,
+            "mc_se": 0.024685522072664372,
+            "one_sided_upper95": 0.11318836094473754,
+            "rate": 0.025,
+            "successes": 1,
+            "trials": 40
+          },
+          "trial_sd": 0.006624430646491107,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 6,
+        "interval:onset": 14415,
+        "right_censored:coverage": 1177,
+        "right_censored:record_end": 36,
+        "right_censored:superseded": 7
+      },
+      "family": "v2-phase",
+      "interval_halfwidth": {
+        "mean": 0.0023143530605309335,
+        "median": 0.001215572967510791
+      },
+      "mean_evaluation_issued": 391.025,
+      "positive_gain_trials": 11,
+      "secondary_evaluation_beta": {
+        "mean": 0.0011209093875968604,
+        "negative": 19,
+        "sd": 0.01998132052392744
+      },
+      "trials": 40
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 20,
+        "exact_zero": 20,
+        "max": 0.057548479849123466,
+        "mean": 0.009539846293354491,
+        "median": 0.0005007631543598373,
+        "min": 0.0,
+        "sd": 0.014668672024894346
+      },
+      "case": "offset",
+      "comparisons": [
+        {
+          "case": "offset",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.00041774068927448677,
+          "mean_n": 391.05,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.0018042224800196762,
+          "variant": "primary"
+        },
+        {
+          "case": "offset",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.001459393854080553,
+          "mean_n": 391.05,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.004179824023356184,
+          "variant": "primary"
+        },
+        {
+          "case": "offset",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v2-phase",
+          "mean_gain": 0.0010416531648060662,
+          "mean_n": 391.05,
+          "rejections": {
+            "exact_lower95": 0.01574217985104153,
+            "exact_upper95": 0.20386474873289895,
+            "mc_se": 0.04164582812239421,
+            "one_sided_upper95": 0.18258685001590122,
+            "rate": 0.075,
+            "successes": 3,
+            "trials": 40
+          },
+          "trial_sd": 0.0045170246271731655,
+          "variant": "primary"
+        },
+        {
+          "case": "offset",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v2-phase",
+          "mean_gain": -0.0037312694219879617,
+          "mean_n": 391.05,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.007043834514060699,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 10,
+        "interval:onset": 14390,
+        "right_censored:coverage": 1175,
+        "right_censored:record_end": 34,
+        "right_censored:superseded": 43
+      },
+      "family": "v2-phase",
+      "interval_halfwidth": {
+        "mean": 0.0025370324628786445,
+        "median": 0.00011337387999491166
+      },
+      "mean_evaluation_issued": 391.3,
+      "positive_gain_trials": 8,
+      "secondary_evaluation_beta": {
+        "mean": 0.0021402733460925637,
+        "negative": 17,
+        "sd": 0.02086111948046945
+      },
+      "trials": 40
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 4,
+        "exact_zero": 4,
+        "max": 0.08791122599583782,
+        "mean": 0.03394955953520863,
+        "median": 0.03193588775745969,
+        "min": 0.0,
+        "sd": 0.023603614703620636
+      },
+      "case": "slow_090",
+      "comparisons": [
+        {
+          "case": "slow_090",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v2-phase",
+          "mean_gain": 0.0019061880240377233,
+          "mean_n": 388.625,
+          "rejections": {
+            "exact_lower95": 0.05710225815452586,
+            "exact_upper95": 0.29835266683957645,
+            "mc_se": 0.05645794895318108,
+            "one_sided_upper95": 0.27474450501397046,
+            "rate": 0.15,
+            "successes": 6,
+            "trials": 40
+          },
+          "trial_sd": 0.007541657748595465,
+          "variant": "primary"
+        },
+        {
+          "case": "slow_090",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v2-phase",
+          "mean_gain": 0.0012713477194063276,
+          "mean_n": 388.625,
+          "rejections": {
+            "exact_lower95": 0.05710225815452586,
+            "exact_upper95": 0.29835266683957645,
+            "mc_se": 0.05645794895318108,
+            "one_sided_upper95": 0.27474450501397046,
+            "rate": 0.15,
+            "successes": 6,
+            "trials": 40
+          },
+          "trial_sd": 0.007359949230783735,
+          "variant": "primary"
+        },
+        {
+          "case": "slow_090",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v2-phase",
+          "mean_gain": 0.0006348403046313953,
+          "mean_n": 388.625,
+          "rejections": {
+            "exact_lower95": 0.01574217985104153,
+            "exact_upper95": 0.20386474873289895,
+            "mc_se": 0.04164582812239421,
+            "one_sided_upper95": 0.18258685001590122,
+            "rate": 0.075,
+            "successes": 3,
+            "trials": 40
+          },
+          "trial_sd": 0.009462759009788227,
+          "variant": "primary"
+        },
+        {
+          "case": "slow_090",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v2-phase",
+          "mean_gain": 0.008929943563893301,
+          "mean_n": 388.625,
+          "rejections": {
+            "exact_lower95": 0.1460089919638657,
+            "exact_upper95": 0.43888290717904815,
+            "mc_se": 0.07060010623221469,
+            "one_sided_upper95": 0.41387744322649855,
+            "rate": 0.275,
+            "successes": 11,
+            "trials": 40
+          },
+          "trial_sd": 0.013440959934257762,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 9,
+        "interval:onset": 14308,
+        "right_censored:coverage": 1196,
+        "right_censored:record_end": 33,
+        "right_censored:superseded": 8
+      },
+      "family": "v2-phase",
+      "interval_halfwidth": {
+        "mean": 0.009166138855754952,
+        "median": 0.008180589686165373
+      },
+      "mean_evaluation_issued": 388.85,
+      "positive_gain_trials": 25,
+      "secondary_evaluation_beta": {
+        "mean": 0.02873500047794903,
+        "negative": 0,
+        "sd": 0.01920761340883776
+      },
+      "trials": 40
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 7,
+        "exact_zero": 7,
+        "max": 0.06755185340469029,
+        "mean": 0.02386803649126761,
+        "median": 0.02431787772558002,
+        "min": 0.0,
+        "sd": 0.01816457739664432
+      },
+      "case": "slow_098",
+      "comparisons": [
+        {
+          "case": "slow_098",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v2-phase",
+          "mean_gain": 0.004991599324638219,
+          "mean_n": 391.45,
+          "rejections": {
+            "exact_lower95": 0.07338272935208517,
+            "exact_upper95": 0.32779013336158586,
+            "mc_se": 0.060078074203489575,
+            "one_sided_upper95": 0.3037056670034146,
+            "rate": 0.175,
+            "successes": 7,
+            "trials": 40
+          },
+          "trial_sd": 0.00971249910512044,
+          "variant": "primary"
+        },
+        {
+          "case": "slow_098",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v2-phase",
+          "mean_gain": 0.002735786615610902,
+          "mean_n": 391.45,
+          "rejections": {
+            "exact_lower95": 0.07338272935208517,
+            "exact_upper95": 0.32779013336158586,
+            "mc_se": 0.060078074203489575,
+            "one_sided_upper95": 0.3037056670034146,
+            "rate": 0.175,
+            "successes": 7,
+            "trials": 40
+          },
+          "trial_sd": 0.006357597947311847,
+          "variant": "primary"
+        },
+        {
+          "case": "slow_098",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v2-phase",
+          "mean_gain": 0.0022558127090273163,
+          "mean_n": 391.45,
+          "rejections": {
+            "exact_lower95": 0.05710225815452586,
+            "exact_upper95": 0.29835266683957645,
+            "mc_se": 0.05645794895318108,
+            "one_sided_upper95": 0.27474450501397046,
+            "rate": 0.15,
+            "successes": 6,
+            "trials": 40
+          },
+          "trial_sd": 0.00888004306671677,
+          "variant": "primary"
+        },
+        {
+          "case": "slow_098",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v2-phase",
+          "mean_gain": 0.014070980001111708,
+          "mean_n": 391.45,
+          "rejections": {
+            "exact_lower95": 0.18572896676334982,
+            "exact_upper95": 0.49129487547844847,
+            "mc_se": 0.07405656621799313,
+            "one_sided_upper95": 0.46629509870540314,
+            "rate": 0.325,
+            "successes": 13,
+            "trials": 40
+          },
+          "trial_sd": 0.01935775626387921,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 8,
+        "interval:onset": 14387,
+        "right_censored:coverage": 1231,
+        "right_censored:record_end": 34,
+        "right_censored:superseded": 6
+      },
+      "family": "v2-phase",
+      "interval_halfwidth": {
+        "mean": 0.008100931742909937,
+        "median": 0.00757234432214309
+      },
+      "mean_evaluation_issued": 391.65,
+      "positive_gain_trials": 27,
+      "secondary_evaluation_beta": {
+        "mean": 0.024850704021586616,
+        "negative": 3,
+        "sd": 0.016797513067714313
+      },
+      "trials": 40
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 18,
+        "exact_zero": 18,
+        "max": 0.03967212893594203,
+        "mean": 0.007713419376113468,
+        "median": 0.0007853256374500688,
+        "min": 0.0,
+        "sd": 0.010920073542708728
+      },
+      "case": "structured",
+      "comparisons": [
+        {
+          "case": "structured",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v2-phase",
+          "mean_gain": -0.001846419848430672,
+          "mean_n": 392.4,
+          "rejections": {
+            "exact_lower95": 0.0006327449320494191,
+            "exact_upper95": 0.13158585848276572,
+            "mc_se": 0.024685522072664372,
+            "one_sided_upper95": 0.11318836094473754,
+            "rate": 0.025,
+            "successes": 1,
+            "trials": 40
+          },
+          "trial_sd": 0.004717399925024544,
+          "variant": "primary"
+        },
+        {
+          "case": "structured",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v2-phase",
+          "mean_gain": 0.00012665582171827327,
+          "mean_n": 392.4,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.08809730287880237,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.07215752450551455,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 40
+          },
+          "trial_sd": 0.0013600415551192865,
+          "variant": "primary"
+        },
+        {
+          "case": "structured",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v2-phase",
+          "mean_gain": -0.0019730756701489454,
+          "mean_n": 392.4,
+          "rejections": {
+            "exact_lower95": 0.0006327449320494191,
+            "exact_upper95": 0.13158585848276572,
+            "mc_se": 0.024685522072664372,
+            "one_sided_upper95": 0.11318836094473754,
+            "rate": 0.025,
+            "successes": 1,
+            "trials": 40
+          },
+          "trial_sd": 0.005088479175851085,
+          "variant": "primary"
+        },
+        {
+          "case": "structured",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v2-phase",
+          "mean_gain": 0.04024372314101961,
+          "mean_n": 392.4,
+          "rejections": {
+            "exact_lower95": 0.45801475223261096,
+            "exact_upper95": 0.772737277518174,
+            "mc_se": 0.07654655446197431,
+            "one_sided_upper95": 0.7527053230816265,
+            "rate": 0.625,
+            "successes": 25,
+            "trials": 40
+          },
+          "trial_sd": 0.025439362659908083,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 6,
+        "interval:onset": 14460,
+        "right_censored:coverage": 1201,
+        "right_censored:record_end": 28,
+        "right_censored:superseded": 7
+      },
+      "family": "v2-phase",
+      "interval_halfwidth": {
+        "mean": 0.002702492381573868,
+        "median": 0.0003333092331802864
+      },
+      "mean_evaluation_issued": 392.55,
+      "positive_gain_trials": 5,
+      "secondary_evaluation_beta": {
+        "mean": -0.007745877732006636,
+        "negative": 26,
+        "sd": 0.019825095182464694
+      },
+      "trials": 40
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 1,
+        "exact_zero": 1,
+        "max": 0.06281592679836538,
+        "mean": 0.029052487956063116,
+        "median": 0.027937066337946955,
+        "min": 0.0,
+        "sd": 0.019785691929398108
+      },
+      "case": "alternative",
+      "comparisons": [
+        {
+          "case": "alternative",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v4-phase",
+          "mean_gain": 0.0015061828866193634,
+          "mean_n": 391.65,
+          "rejections": {
+            "exact_lower95": 0.11893159040572769,
+            "exact_upper95": 0.5427891822762891,
+            "mc_se": 0.10246950765959598,
+            "one_sided_upper95": 0.5078184066147933,
+            "rate": 0.3,
+            "successes": 6,
+            "trials": 20
+          },
+          "trial_sd": 0.006326544757622241,
+          "variant": "primary"
+        },
+        {
+          "case": "alternative",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v4-phase",
+          "mean_gain": -0.0007727042036061755,
+          "mean_n": 391.65,
+          "rejections": {
+            "exact_lower95": 0.0012650894979498038,
+            "exact_upper95": 0.24873276277202777,
+            "mc_se": 0.04873397172404482,
+            "one_sided_upper95": 0.2161061642068473,
+            "rate": 0.05,
+            "successes": 1,
+            "trials": 20
+          },
+          "trial_sd": 0.002866457115393388,
+          "variant": "primary"
+        },
+        {
+          "case": "alternative",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v4-phase",
+          "mean_gain": 0.0022788870902255387,
+          "mean_n": 391.65,
+          "rejections": {
+            "exact_lower95": 0.08657146910143461,
+            "exact_upper95": 0.49104587170795744,
+            "mc_se": 0.09682458365518543,
+            "one_sided_upper95": 0.4555824040017489,
+            "rate": 0.25,
+            "successes": 5,
+            "trials": 20
+          },
+          "trial_sd": 0.006723077865072458,
+          "variant": "primary"
+        },
+        {
+          "case": "alternative",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v4-phase",
+          "mean_gain": 0.042776459439185344,
+          "mean_n": 391.65,
+          "rejections": {
+            "exact_lower95": 0.45721081772371086,
+            "exact_upper95": 0.8810684095942722,
+            "mc_se": 0.10246950765959599,
+            "one_sided_upper95": 0.8604462509976136,
+            "rate": 0.7,
+            "successes": 14,
+            "trials": 20
+          },
+          "trial_sd": 0.024210408304697,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 1,
+        "interval:onset": 7235,
+        "right_censored:coverage": 585,
+        "right_censored:record_end": 13
+      },
+      "family": "v4-phase",
+      "interval_halfwidth": {
+        "mean": 0.00941538008571369,
+        "median": 0.005550643305220971
+      },
+      "mean_evaluation_issued": 391.7,
+      "positive_gain_trials": 14,
+      "secondary_evaluation_beta": {
+        "mean": 0.028389653502675628,
+        "negative": 0,
+        "sd": 0.016381892569717196
+      },
+      "trials": 20
+    },
+    {
+      "beta": {
+        "at_bound_metadata": 13,
+        "exact_zero": 13,
+        "max": 0.03687283541469775,
+        "mean": 0.006734484594578956,
+        "median": 0.0,
+        "min": 0.0,
+        "sd": 0.01228932507310001
+      },
+      "case": "null",
+      "comparisons": [
+        {
+          "case": "null",
+          "cluster_years": 6,
+          "comparison": "gain_M3_M2",
+          "family": "v4-phase",
+          "mean_gain": -0.0009208603873639747,
+          "mean_n": 389.0,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.1684334709830853,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.13910834066826516,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 20
+          },
+          "trial_sd": 0.0027046658778501513,
+          "variant": "primary"
+        },
+        {
+          "case": "null",
+          "cluster_years": 6,
+          "comparison": "gain_P3_M2",
+          "family": "v4-phase",
+          "mean_gain": -0.0012926701382439936,
+          "mean_n": 389.0,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.1684334709830853,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.13910834066826516,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 20
+          },
+          "trial_sd": 0.0027901894058698627,
+          "variant": "primary"
+        },
+        {
+          "case": "null",
+          "cluster_years": 6,
+          "comparison": "gain_M3_P3",
+          "family": "v4-phase",
+          "mean_gain": 0.00037180975088001904,
+          "mean_n": 389.0,
+          "rejections": {
+            "exact_lower95": 0.0012650894979498038,
+            "exact_upper95": 0.24873276277202777,
+            "mc_se": 0.04873397172404482,
+            "one_sided_upper95": 0.2161061642068473,
+            "rate": 0.05,
+            "successes": 1,
+            "trials": 20
+          },
+          "trial_sd": 0.0042182885009761925,
+          "variant": "primary"
+        },
+        {
+          "case": "null",
+          "cluster_years": 6,
+          "comparison": "gain_M2_M0",
+          "family": "v4-phase",
+          "mean_gain": -0.003938860705384113,
+          "mean_n": 389.0,
+          "rejections": {
+            "exact_lower95": 0.0,
+            "exact_upper95": 0.1684334709830853,
+            "mc_se": 0.0,
+            "one_sided_upper95": 0.13910834066826516,
+            "rate": 0.0,
+            "successes": 0,
+            "trials": 20
+          },
+          "trial_sd": 0.006574666941060678,
+          "variant": "primary"
+        }
+      ],
+      "evaluation_evidence_totals": {
+        "excluded:ambiguous_survival": 7,
+        "interval:onset": 7161,
+        "right_censored:coverage": 601,
+        "right_censored:record_end": 17,
+        "right_censored:superseded": 1
+      },
+      "family": "v4-phase",
+      "interval_halfwidth": {
+        "mean": 0.0016941554599326203,
+        "median": 0.0
+      },
+      "mean_evaluation_issued": 389.35,
+      "positive_gain_trials": 2,
+      "secondary_evaluation_beta": {
+        "mean": -0.0033100318964271206,
+        "negative": 14,
+        "sd": 0.015919255747719355
+      },
+      "trials": 20
+    }
+  ],
+  "concordance_identity": {
+    "receipt_sha256": "664d03ba345570bc634a10b9bac1b947ac56f5400f4d084ec778d5f9dc993512",
+    "records_sha256": "42053f6bce26db9eca53a28532985b6244c50039a8ecef5f3847a2731ab7172e"
+  },
+  "elapsed_seconds": 2179.2355120390002,
+  "environment": {
+    "numpy": "2.5.4",
+    "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.39",
+    "python": "3.14.4 (main, Apr 14 2026, 14:26:14) [Clang 22.1.3 ]",
+    "scipy": "1.18.1"
+  },
+  "formal_certification_pass": false,
+  "input_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+  "null_rate_checks": [
+    {
+      "case": "adaptive",
+      "certification_pass": false,
+      "exact_lower95": 0.0,
+      "exact_upper95": 0.08809730287880237,
+      "family": "v2-phase",
+      "mc_se": 0.0,
+      "one_sided_upper95": 0.07215752450551455,
+      "rate": 0.0,
+      "screen_pass": true,
+      "successes": 0,
+      "trials": 40
+    },
+    {
+      "case": "gross",
+      "certification_pass": false,
+      "exact_lower95": 0.006113646599350838,
+      "exact_upper95": 0.16919686395941763,
+      "family": "v2-phase",
+      "mc_se": 0.034460121880225555,
+      "one_sided_upper95": 0.14915196127321298,
+      "rate": 0.05,
+      "screen_pass": true,
+      "successes": 2,
+      "trials": 40
+    },
+    {
+      "case": "null",
+      "certification_pass": false,
+      "exact_lower95": 0.0,
+      "exact_upper95": 0.08809730287880237,
+      "family": "v2-phase",
+      "mc_se": 0.0,
+      "one_sided_upper95": 0.07215752450551455,
+      "rate": 0.0,
+      "screen_pass": true,
+      "successes": 0,
+      "trials": 40
+    },
+    {
+      "case": "offset",
+      "certification_pass": false,
+      "exact_lower95": 0.0,
+      "exact_upper95": 0.08809730287880237,
+      "family": "v2-phase",
+      "mc_se": 0.0,
+      "one_sided_upper95": 0.07215752450551455,
+      "rate": 0.0,
+      "screen_pass": true,
+      "successes": 0,
+      "trials": 40
+    },
+    {
+      "case": "structured",
+      "certification_pass": false,
+      "exact_lower95": 0.0006327449320494191,
+      "exact_upper95": 0.13158585848276572,
+      "family": "v2-phase",
+      "mc_se": 0.024685522072664372,
+      "one_sided_upper95": 0.11318836094473754,
+      "rate": 0.025,
+      "screen_pass": true,
+      "successes": 1,
+      "trials": 40
+    },
+    {
+      "case": "null",
+      "certification_pass": false,
+      "exact_lower95": 0.0,
+      "exact_upper95": 0.1684334709830853,
+      "family": "v4-phase",
+      "mc_se": 0.0,
+      "one_sided_upper95": 0.13910834066826516,
+      "rate": 0.0,
+      "screen_pass": true,
+      "successes": 0,
+      "trials": 20
+    }
+  ],
+  "payload_receipt_sha256": "be0e25cd6d5432ca4cf3283991e698ca4b205c7424d16aff88e01abe02ae6f82",
+  "payload_records_sha256": "92f2c319c65662c412a5a394a14ad87eb7e322892acc0aa908d8af001ca42848",
+  "payload_summary_sha256": "c1d869caca6154cb600963feaee376c94144c5da4a73fa674e82100a210f67b5",
+  "real_fit_automatic": false,
+  "scope": "synthetic operating-characteristic screen, not a real-star forecast result or size certificate",
+  "screen_pass": true,
+  "seed_base": "a10c-oc|8f5df44b950ec5781ba1e31e074e56976909a051",
+  "source_freeze": "8f5df44b950ec5781ba1e31e074e56976909a051",
+  "trials": 360
+}

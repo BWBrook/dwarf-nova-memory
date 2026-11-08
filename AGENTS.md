@@ -82,11 +82,17 @@ the separate ledger prototype does not infer missed events, a filtered latent
 state, parameter uncertainty or a physical accretion-disc model. Do not imply otherwise.
 
 A10d implements the amended directional offset models and independent v3
-features, with development concordance complete and the 360-trial production
-calibration pending. D021 records why positive endpoint artefacts remain
+features. Source freeze `8f5df44` passes 100-history concordance and completes
+all 360 synthetic OC trials; independent numerical and aggregate audits pass.
+The finite observed-rate/joint-MC screen passes, with 27.5% injected-effect
+power. It is not a formal five-percent size certificate. The real fit remains
+closed pending the pre-outcome gate-policy clarification. D021 records why
+positive endpoint artefacts remain
 possible, why the lagged mark is not identifying, and how the finite synthetic
 screen differs from size certification. The source-freeze protocol is
-`docs/protocols/a10d-directional-oc-v1.md`; real fitting remains gated.
+`docs/protocols/a10d-directional-oc-v1.md`; the completed report is
+`docs/audits/2026-11-08-a10d-directional-oc.md`. No real association or 1960+
+access has occurred.
 
 ## Scientific invariants
 

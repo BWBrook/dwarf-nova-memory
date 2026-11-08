@@ -112,6 +112,8 @@ def route_for(model_name: str, feature: dict[str, Any], endpoint: bool,
             return "M2"
         return "M3" if current_mark else "M2"
     if model_name == "P3":
+        if beta_zero:
+            return "M2"
         return "P3" if previous_duration_available(feature) else "M2"
     raise ValueError(f"unknown route model {model_name}")
 
@@ -243,14 +245,20 @@ def check_trial(trial_path: Path, scores_path: Path) -> dict[str, Any]:
         expected_ids: set[int] = set()
         route_counts: dict[str, Counter[str]] = {name: Counter() for name in ("M0", "M2", "M3", "P3")}
         for emission_index, feature in features.items():
+            evidence = evidences.get(emission_index)
+            if evidence is None or evidence.get("kind") == "excluded":
+                continue
             endpoint_nodes_value = endpoint_nodes(feature, spec["endpoint_mode"], int(spec["nodes"])) \
                 if feature.get("landmark_available") is True else None
             endpoint = endpoint_nodes_value is not None
             current_mark = current_durations(feature, endpoint_nodes_value) is not None
-            beta_model = spec["models"]["M3"].get("coefficients", {})
-            beta_zero = all(abs(float(beta_model.get(term, 0.0))) <= TOL
-                            for term in ("beta", "beta_type", "beta_within"))
-            routes = {name: route_for(name, feature, endpoint, current_mark, beta_zero)
+            beta_zero = {}
+            for model_name in ("M3", "P3"):
+                coefficients = spec["models"][model_name].get("coefficients", {})
+                additional = [float(coefficients[term]) for term in ("beta", "beta_type", "beta_within")
+                              if term in coefficients]
+                beta_zero[model_name] = bool(additional) and all(value == 0.0 for value in additional)
+            routes = {name: route_for(name, feature, endpoint, current_mark, beta_zero.get(name, False))
                       for name in ("M0", "M2", "M3", "P3")}
             # The placebo is scored only on the joint-valid mark population.
             if spec.get("joint_marks") and not (endpoint and q_available(feature)
@@ -279,10 +287,13 @@ def check_trial(trial_path: Path, scores_path: Path) -> dict[str, Any]:
                 if feature.get("landmark_available") is True else None
             endpoint = endpoint_nodes_value is not None
             current_mark = current_durations(feature, endpoint_nodes_value) is not None
-            beta_model = spec["models"]["M3"].get("coefficients", {})
-            beta_zero = all(abs(float(beta_model.get(term, 0.0))) <= TOL
-                            for term in ("beta", "beta_type", "beta_within"))
-            routes = {name: route_for(name, feature, endpoint, current_mark, beta_zero)
+            beta_zero = {}
+            for model_name in ("M3", "P3"):
+                coefficients = spec["models"][model_name].get("coefficients", {})
+                additional = [float(coefficients[term]) for term in ("beta", "beta_type", "beta_within")
+                              if term in coefficients]
+                beta_zero[model_name] = bool(additional) and all(value == 0.0 for value in additional)
+            routes = {name: route_for(name, feature, endpoint, current_mark, beta_zero.get(name, False))
                       for name in ("M0", "M2", "M3", "P3")}
             for name, route in routes.items():
                 if row.get(f"{name}_route") != route:
@@ -310,10 +321,18 @@ def check_trial(trial_path: Path, scores_path: Path) -> dict[str, Any]:
             if routes["M2"] == "M0" and abs(float(row["M3"]) - float(row["M2"])) > TOL:
                 nesting_errors += 1
             model_m3 = spec["models"]["M3"]
-            beta_values = [float(model_m3["coefficients"].get(term, 0.0))
-                           for term in ("beta", "beta_type", "beta_within")]
-            if all(abs(beta) <= TOL for beta in beta_values) and routes["M3"] in ("M2", "M3"):
+            beta_values = [float(model_m3["coefficients"][term])
+                           for term in ("beta", "beta_type", "beta_within")
+                           if term in model_m3["coefficients"]]
+            if beta_values and all(beta == 0.0 for beta in beta_values) and routes["M3"] in ("M2", "M3"):
                 if abs(float(row["M3"]) - float(row["M2"])) > TOL:
+                    nesting_errors += 1
+            model_p3 = spec["models"]["P3"]
+            p3_beta_values = [float(model_p3["coefficients"][term])
+                              for term in ("beta", "beta_type", "beta_within")
+                              if term in model_p3["coefficients"]]
+            if p3_beta_values and all(beta == 0.0 for beta in p3_beta_values) and routes["P3"] in ("M2", "P3"):
+                if abs(float(row["P3"]) - float(row["M2"])) > TOL:
                     nesting_errors += 1
         score_rows += len(saved)
         if gain_errors:

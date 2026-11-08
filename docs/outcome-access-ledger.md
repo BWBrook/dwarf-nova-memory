@@ -277,3 +277,15 @@ synthetic score rows and trial records in `outputs/a10b_controls_repaired_202611
 New synthetic truth catalogues used `a10c-claude-truth-*` seeds. No native
 archive export, real photometry, real duration–gap association or 1960+ data
 was accessed. A10 remains unfrozen.
+
+
+### Codex A10d directional calibration, 8 November 2026
+
+Used only the retained hashed anonymous pre-1960-derived benchmark cache for
+360 synthetic OC histories, independent synthetic feature concordance and
+matched reference replicas. No native archive export or new photometry was
+opened. The finite observed-rate/joint-MC screen passes, but D021's gate-policy
+clarification remains unanswered: no first real duration–following-gap fit
+was made. No 1960+ observation, coverage summary or forecast was accessed.
+Generation freeze: `8f5df44b950ec5781ba1e31e074e56976909a051`. All reported
+associations and scores in the A10d memo are synthetic.

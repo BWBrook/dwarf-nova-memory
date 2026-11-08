@@ -526,7 +526,7 @@ retrospective difference measures availability cost, not true endpoint error.
 
 
 
-## Active tranche — A10d directional forecast calibration, 8 November 2026
+## A10d synthetic screen complete; real fit closed, 8 November 2026
 
 Codex, base `c9aab07`: review A10c, implement a matched directional forecast
 family, repeat independent concordance, run the 360-trial OC grid, and make
@@ -539,8 +539,16 @@ All component work is integrated; 296 tests pass. The first 100-history
 development concordance and three full-history smokes complete, but their
 slow-state checks are superseded: pre-freeze review caught a renewal clock
 advancing with the new rather than previous episode's duration/gap. The clock
-is repaired and has an exact truth-chronology regression; fresh frozen-source
-concordance and development smokes will precede production.
+is repaired and has an exact truth-chronology regression. Source freeze
+`8f5df44` repeats 100-history concordance exactly, passes all 296 tests and
+green CI, and completes three corrected full-history smokes. Independent
+recalculation of their 6,766 scores agrees within 1.1e-13. The forced
+six-reference smoke also completes. The fixed 360-trial grid completes
+without failures. Its finite screen passes: six null rates ≤.05; power
+11/40 (27.5%); joint-MC containment 37/40 null and 34/40 alternative, with
+interior calibration also screened. Independent auditing inventories all
+823,070 variant score rows and reconciles 360 primary intervals and 80 calibration records;
+22,980 representative scores independently agree within 1.14e-13.
 
 D021 and [the amended specification](../docs/protocols/a10d-directional-oc-v1.md)
 record the exact positive-age-error counterexample, the limited lagged-mark
@@ -549,4 +557,10 @@ before OC outcomes, and matched 58-year references with finite-MC uncertainty.
 The 360-trial screen versus formal-size-certification question was put to
 Barry before qualification outcomes. Both policies will be calculated without
 post-result selection; no automatic real-data action is part of the runner.
-No real focal computation or reserved access has occurred.
+No real focal computation or reserved access has occurred. The rate-screen
+interpretation remains pending, so the first real fit is closed. Full outputs
+are archived outside Git with checksums; compact tables and the
+[A10d audit](../docs/audits/2026-11-08-a10d-directional-oc.md) are committed.
+Next: Claude — review A10d, including the positive-artifact counterexample,
+state sensitivity and finite-gate interpretation; Barry's policy choice is
+still needed before the real development fit.

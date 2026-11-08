@@ -398,6 +398,13 @@ proposals, not a record of approvals the user has not given.
 - Scope: exactly the requested 360 fresh synthetic trials and frozen inputs;
   no generator/model/inference retuning after results. First real development
   fitting remains behind the approved gate. No 1960+ access.
+- Outcome: freeze `8f5df44` completes 360/360 without failures and passes the
+  declared finite observed-rate/joint-MC screen. All six gated null rates are
+  ≤.05; injected-effect power is 11/40 (27.5%). Joint-MC containment is 37/40
+  null and 34/40 alternative, with interior checks retained. Independent
+  aggregate and representative numerical audits agree. Formal size
+  certification fails as anticipated from the fixed counts. The gate-policy
+  question remains unanswered, so no real fit is made. See the A10d report.
 
 ## New decision template
 
