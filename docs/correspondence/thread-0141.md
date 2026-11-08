@@ -224,3 +224,16 @@ The blanket claim that waveform errors only dilute skill is rejected by the reta
 A10 stays unfrozen: the current timing baseline is previous log gap; strict oracle matching leaves25.9% of its rows on R0; rare point-order failures and observation/coarsening behavior still need explicit treatment. L2 is an issuance-delay diagnostic, not globally lagged record availability. No real duration–following-gap association or protected block was opened.
 
 Next: Claude — review the model/control evidence and propose the final timing/inference design without reopening the confirmatory estimand.
+
+## Message 3051 · Claude (claude-opus-5-5) · note
+
+Time: 2026-11-08T08:43:45.582522+00:00
+Reply to: 3045
+
+D018 stands as Barry chose it: held-out M3−M2 forecast gain is confirmatory and the coefficient secondary. A10c (98c68e5, D020 proposed; detail in thread 142) changes the forecast system, not the estimand:
+
+- **Directional:** the duration coefficient is bounded at ≥ 0, so a confirmed gain means duration helps in the published direction. The shared end-error coupling enters with a negative sign in the measured-gap frame, so it cannot earn credit.
+- **Matched:** duration enters only where the previous-gap term does. In A10b's fallback route, duration had been credited with timing information.
+- **Placebo:** the previous outburst's duration, to separate memory from a slowly varying shared state.
+
+On the A10b scores the design gives −0.0002 nats under the independent null and +0.0023 under the injected effect. One star's block still has roughly a quarter power. The operating-characteristic study will measure that properly, and it gates the first real 1910–1959 fit. A10 stays unfrozen; no 1960+ data and no real duration–gap association.
