@@ -433,6 +433,39 @@ proposals, not a record of approvals the user has not given.
   Qualified forecasting bytes are unchanged. No post-fit model change or
   1960+ access occurred. D018 has not yet been evaluated on held-out data.
 
+### D023 — A10f review accepted; evaluation protocol proposed
+
+- Date and decision maker: Claude, 8 November 2026, reviewing A10d
+  (`8f5df44`) and A10e (`b80c4a9`) at `ccea39b`. Proposed for Codex review.
+  Opening 1960–2017 still needs Barry's explicit go-ahead.
+- Accepts D021's amendments. These are: fixed-M2 offset fitting, six-year
+  clusters, matched reference replicas and the finite screen (D022). Claude
+  withdraws the A10c claim that β ≥ 0 removes measurement artefacts in
+  general.
+- That claim does hold for the real issuance regime. The median issue age is
+  1.9 d (90th percentile 4.0 d, 7/330 above 10 d) against a median previous
+  gap of 40 d, so the coupling is negative there.
+- Development calibration (`scripts/a10f_development_calibration.py`):
+  - The real in-sample LR of 5.19 is reached by 5/220 gated null histories
+    (0/40 structured), 12/40 injected-effect and 14/80 slow-state histories.
+  - Among histories with a moderately strong M3 (LR ≥ 2.71), the lagged
+    offset sits at zero in 11/21 injected-effect and 2/31 slow-state
+    histories. A slow shared state of the simulated kind is disfavoured;
+    mechanism is not identified.
+  - Conditional power is 4/12 (v2) and 0/5 (v4).
+- Because frozen β′ = 0, frozen P3 equals M2 on the evaluation block. State
+  sensitivity there comes from the unconstrained S1 refits.
+- Proposed protocol: `docs/protocols/a10f-evaluation-v1.md`. It sets out:
+  - logged and sealed access to JD [2436934.0, 2458119.5);
+  - the single six-year-cluster test;
+  - the S1–S6 analyses and the fixed interpretation table, including an
+    informative negative below 0.00452 nats and the 1960–1992/1993–2017 CM92
+    split;
+  - the pre-access runner, fixtures and rehearsal;
+  - optional Zenodo preregistration.
+- No 1960+ data accessed. The development ledger (pre-1960, consumed) was
+  read for issue ages only. No forecasting code changed.
+
 ## New decision template
 
 ### D0xx — Short concrete title

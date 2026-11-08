@@ -67,6 +67,16 @@ for each v2/v4 timing process: six 400-year histories each, with new
 `a10c-claude-truth-*` seeds (`scripts/a10c_truth_associations.py`). Neither is
 validation evidence.
 
+## A10f (Claude, development calibration)
+
+`a10f_development_calibration_20261108.json` places the real 1910–1959
+development fit among the 360 A10d synthetic development fits: likelihood
+ratio, β, lagged-mark bound status and M2 slopes for each case. It also gives
+held-out confirmation among development-similar histories and real issue ages
+(`scripts/a10f_development_calibration.py`). The script reads the retained
+A10d trial records and the A10e development ledger, both outside Git, and the
+committed A10e summary. It is not validation evidence and uses no 1960+ data.
+
 ## A04h (Claude, morphology only)
 
 `a04h_morphology_targets_20261108.json` holds the real 1910–1959 target vector

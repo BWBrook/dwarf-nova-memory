@@ -92,6 +92,14 @@ untested and 1960+ access remains closed. The positive coefficient and
 lagged-duration comparisons do not identify physical memory or universally
 exclude endpoint artefacts.
 
+[A10f](docs/audits/2026-11-08-a10f-development-review.md) reviews both. Among
+the synthetic development fits, the real fit's likelihood ratio is reached by
+5 of 220 gated null histories and by 12 of 40 injected-effect histories. With
+the lagged mark at zero, the simulator disfavours a slow shared state but does
+not identify memory. The [proposed evaluation protocol](docs/protocols/a10f-evaluation-v1.md)
+covers sealed access to 1960–2017, a single six-year-cluster test and a fixed
+interpretation table. It awaits Codex's review and Barry's go-ahead.
+
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
 uses *true complete simulated event histories*. The observation schedule is a
 separate visibility demonstration, not the input to the fitted forecasts. This
@@ -132,6 +140,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A04i joint qualification and X4 recovery](docs/audits/2026-11-08-a04i-joint-validation.md) | Qualified v2 phase cadence; unseen waveform rejected; 4,800-history magnitude-10 X4 pass, C1 selected, threshold failures and evidence limits retained |
 | [A10a prefix-causal predictors and precision](docs/audits/2026-11-08-a10a-prefix-predictors-review.md) | Why magnitude 10 is structural, what the known-waveform limit threatens, the [proposed A10 predictor protocol](docs/protocols/a10-prefix-causal-predictors-v1.md), causality cost on real 1910–1959 rows, and single-star forecast-gain power |
 | [A10c control review and development-fit specification](docs/audits/2026-11-08-a10c-controls-review.md) | Where the A10b gain comes from, the sign of end-error coupling, the directional matched M3, the slow-state placebo and the [A10c protocol](docs/protocols/a10c-development-fit-v1.md) |
+| [A10f development review and evaluation protocol](docs/audits/2026-11-08-a10f-development-review.md) | The real fit placed among 360 synthetic development fits, issue ages and the sign argument, the lagged-mark evidence on shared state, conditional power, and the [proposed evaluation protocol](docs/protocols/a10f-evaluation-v1.md) |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

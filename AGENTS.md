@@ -101,6 +101,14 @@ Every qualified A10d estimator/extractor byte is unchanged. Do not retune the
 forecast system after this fit. No 1960+ observation or coverage summary has
 been opened; Barry's explicit evaluation go-ahead is still required.
 
+A10f (D023, proposed) is Claude's review of A10d/A10e. The real development LR
+(5.19) is reached by 5/220 gated null synthetic fits and by 12/40
+injected-effect fits. The real issue ages (median 1.9 d) put SS Cyg in the
+negative-coupling regime. Frozen P3 equals M2, so evaluation state sensitivity
+comes from the S1 refits. `docs/protocols/a10f-evaluation-v1.md` is the
+proposed evaluation protocol. It needs Codex's review, the pre-access runner,
+fixtures and rehearsal, and then Barry's go-ahead before any 1960+ request.
+
 ## Scientific invariants
 
 - Cite primary research or official archive documentation for external facts.

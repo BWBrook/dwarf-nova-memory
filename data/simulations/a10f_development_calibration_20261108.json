@@ -1,0 +1,382 @@
+{
+ "a10d_receipt_sha256": "be0e25cd6d5432ca4cf3283991e698ca4b205c7424d16aff88e01abe02ae6f82",
+ "cases": [
+  {
+   "beta_at_least_real": 5,
+   "case": "adaptive",
+   "dev_lr_at_least_real": 0,
+   "dev_lr_ge_2.706": {
+    "confirmed": 0,
+    "lag_beta_zero": 2,
+    "trials": 2
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 0,
+    "lag_beta_zero": 0,
+    "mean_heldout_gain": null,
+    "trials": 0
+   },
+   "family": "v2-phase",
+   "lag_beta_zero": 21,
+   "local_slope_mean_sd": [
+    -0.013038873228930076,
+    0.03411421570456321
+   ],
+   "mark_scale_mean": 0.41087609450751117,
+   "q_slope_mean_sd": [
+    -0.005777566669458782,
+    0.043496049483977395
+   ],
+   "sigma_mean": 0.35194591912736006,
+   "training_issued_mean": 319.625,
+   "trials": 40
+  },
+  {
+   "beta_at_least_real": 11,
+   "case": "alternative",
+   "dev_lr_at_least_real": 12,
+   "dev_lr_ge_2.706": {
+    "confirmed": 6,
+    "lag_beta_zero": 11,
+    "trials": 21
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 4,
+    "lag_beta_zero": 8,
+    "mean_heldout_gain": 0.006425588035124182,
+    "trials": 12
+   },
+   "family": "v2-phase",
+   "lag_beta_zero": 17,
+   "local_slope_mean_sd": [
+    0.0038296751223256187,
+    0.020217319748454823
+   ],
+   "mark_scale_mean": 0.3841684037723568,
+   "q_slope_mean_sd": [
+    0.1169113383584061,
+    0.028367432122838238
+   ],
+   "sigma_mean": 0.3325181356825337,
+   "training_issued_mean": 336.05,
+   "trials": 40
+  },
+  {
+   "beta_at_least_real": 3,
+   "case": "gross",
+   "dev_lr_at_least_real": 3,
+   "dev_lr_ge_2.706": {
+    "confirmed": 0,
+    "lag_beta_zero": 5,
+    "trials": 6
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 0,
+    "lag_beta_zero": 3,
+    "mean_heldout_gain": -0.0009982748650326908,
+    "trials": 3
+   },
+   "family": "v2-phase",
+   "lag_beta_zero": 19,
+   "local_slope_mean_sd": [
+    -0.005593626532349962,
+    0.018850344511133096
+   ],
+   "mark_scale_mean": 0.39866273330317603,
+   "q_slope_mean_sd": [
+    0.0005030827473388597,
+    0.025585149320627755
+   ],
+   "sigma_mean": 0.3562790411497724,
+   "training_issued_mean": 340.175,
+   "trials": 40
+  },
+  {
+   "beta_at_least_real": 1,
+   "case": "null",
+   "dev_lr_at_least_real": 0,
+   "dev_lr_ge_2.706": {
+    "confirmed": 0,
+    "lag_beta_zero": 2,
+    "trials": 3
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 0,
+    "lag_beta_zero": 0,
+    "mean_heldout_gain": null,
+    "trials": 0
+   },
+   "family": "v2-phase",
+   "lag_beta_zero": 19,
+   "local_slope_mean_sd": [
+    -0.006645350663944146,
+    0.018830896083819364
+   ],
+   "mark_scale_mean": 0.38539014620313117,
+   "q_slope_mean_sd": [
+    -0.0019379234687873926,
+    0.023856157122713592
+   ],
+   "sigma_mean": 0.3512157756375585,
+   "training_issued_mean": 334.675,
+   "trials": 40
+  },
+  {
+   "beta_at_least_real": 2,
+   "case": "offset",
+   "dev_lr_at_least_real": 2,
+   "dev_lr_ge_2.706": {
+    "confirmed": 0,
+    "lag_beta_zero": 2,
+    "trials": 3
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 0,
+    "lag_beta_zero": 1,
+    "mean_heldout_gain": -0.002381414716986492,
+    "trials": 2
+   },
+   "family": "v2-phase",
+   "lag_beta_zero": 19,
+   "local_slope_mean_sd": [
+    -0.004782987247233132,
+    0.02091761132143615
+   ],
+   "mark_scale_mean": 0.378304061293706,
+   "q_slope_mean_sd": [
+    -0.0012181922608192563,
+    0.027943862289143123
+   ],
+   "sigma_mean": 0.35232240235461354,
+   "training_issued_mean": 335.425,
+   "trials": 40
+  },
+  {
+   "beta_at_least_real": 10,
+   "case": "slow_090",
+   "dev_lr_at_least_real": 10,
+   "dev_lr_ge_2.706": {
+    "confirmed": 2,
+    "lag_beta_zero": 1,
+    "trials": 19
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 1,
+    "lag_beta_zero": 1,
+    "mean_heldout_gain": -0.0009995448488504606,
+    "trials": 10
+   },
+   "family": "v2-phase",
+   "lag_beta_zero": 4,
+   "local_slope_mean_sd": [
+    0.03955919979621654,
+    0.025825127706231684
+   ],
+   "mark_scale_mean": 0.37751301819215694,
+   "q_slope_mean_sd": [
+    0.027156255514731907,
+    0.021512388920073008
+   ],
+   "sigma_mean": 0.3454576042044662,
+   "training_issued_mean": 336.875,
+   "trials": 40
+  },
+  {
+   "beta_at_least_real": 5,
+   "case": "slow_098",
+   "dev_lr_at_least_real": 4,
+   "dev_lr_ge_2.706": {
+    "confirmed": 1,
+    "lag_beta_zero": 1,
+    "trials": 12
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 1,
+    "lag_beta_zero": 0,
+    "mean_heldout_gain": 0.014338904878931682,
+    "trials": 4
+   },
+   "family": "v2-phase",
+   "lag_beta_zero": 6,
+   "local_slope_mean_sd": [
+    0.04110517212245566,
+    0.035496712910096706
+   ],
+   "mark_scale_mean": 0.37867494045400724,
+   "q_slope_mean_sd": [
+    0.019774006312430176,
+    0.02729085971222743
+   ],
+   "sigma_mean": 0.3404445254560019,
+   "training_issued_mean": 333.5,
+   "trials": 40
+  },
+  {
+   "beta_at_least_real": 0,
+   "case": "structured",
+   "dev_lr_at_least_real": 0,
+   "dev_lr_ge_2.706": {
+    "confirmed": 0,
+    "lag_beta_zero": 1,
+    "trials": 2
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 0,
+    "lag_beta_zero": 0,
+    "mean_heldout_gain": null,
+    "trials": 0
+   },
+   "family": "v2-phase",
+   "lag_beta_zero": 27,
+   "local_slope_mean_sd": [
+    0.004954843712117526,
+    0.02414920592859114
+   ],
+   "mark_scale_mean": 0.3861154437913886,
+   "q_slope_mean_sd": [
+    0.11241395458842626,
+    0.023146824152723046
+   ],
+   "sigma_mean": 0.3324437033443072,
+   "training_issued_mean": 337.1,
+   "trials": 40
+  },
+  {
+   "beta_at_least_real": 4,
+   "case": "alternative",
+   "dev_lr_at_least_real": 5,
+   "dev_lr_ge_2.706": {
+    "confirmed": 1,
+    "lag_beta_zero": 4,
+    "trials": 8
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 0,
+    "lag_beta_zero": 4,
+    "mean_heldout_gain": -0.005602321817826303,
+    "trials": 5
+   },
+   "family": "v4-phase",
+   "lag_beta_zero": 5,
+   "local_slope_mean_sd": [
+    0.006285597868340003,
+    0.017093420324738835
+   ],
+   "mark_scale_mean": 0.3918037259839465,
+   "q_slope_mean_sd": [
+    0.09988800006614132,
+    0.02619746215644497
+   ],
+   "sigma_mean": 0.33173157741589876,
+   "training_issued_mean": 335.75,
+   "trials": 20
+  },
+  {
+   "beta_at_least_real": 0,
+   "case": "null",
+   "dev_lr_at_least_real": 0,
+   "dev_lr_ge_2.706": {
+    "confirmed": 0,
+    "lag_beta_zero": 1,
+    "trials": 2
+   },
+   "dev_lr_ge_real": {
+    "confirmed": 0,
+    "lag_beta_zero": 0,
+    "mean_heldout_gain": null,
+    "trials": 0
+   },
+   "family": "v4-phase",
+   "lag_beta_zero": 6,
+   "local_slope_mean_sd": [
+    -0.0042110414974931235,
+    0.022452988936937777
+   ],
+   "mark_scale_mean": 0.37284823538722145,
+   "q_slope_mean_sd": [
+    -0.0014079329771327362,
+    0.023618400579745277
+   ],
+   "sigma_mean": 0.3536875869145384,
+   "training_issued_mean": 333.95,
+   "trials": 20
+  }
+ ],
+ "pooled": {
+  "confirmed_given_dev_lr_ge_real": {
+   "v2_alternative": {
+    "exact_95": [
+     0.09924609114958328,
+     0.6511244935811844
+    ],
+    "one_sided_upper_95": 0.6091376982290366,
+    "rate": 0.3333333333333333,
+    "successes": 4,
+    "trials": 12
+   }
+  },
+  "gated_null_confirmations": {
+   "exact_95": [
+    0.002821022949031469,
+    0.03933186817676205
+   ],
+   "one_sided_upper_95": 0.03486474537570138,
+   "rate": 0.013636363636363636,
+   "successes": 3,
+   "trials": 220
+  },
+  "gated_null_dev_lr_at_least_real": {
+   "exact_95": [
+    0.007419721338892091,
+    0.05223804913608216
+   ],
+   "one_sided_upper_95": 0.04718976701431988,
+   "rate": 0.022727272727272728,
+   "successes": 5,
+   "trials": 220
+  },
+  "lag_zero_given_dev_lr_ge_2.706": {
+   "v2_alternative": {
+    "exact_95": [
+     0.2978068387836441,
+     0.7428693735935925
+    ],
+    "one_sided_upper_95": 0.7141995219128238,
+    "rate": 0.5238095238095238,
+    "successes": 11,
+    "trials": 21
+   },
+   "v2_slow_state": {
+    "exact_95": [
+     0.007910983461854705,
+     0.21421615716340225
+    ],
+    "one_sided_upper_95": 0.18946446742553866,
+    "rate": 0.06451612903225806,
+    "successes": 2,
+    "trials": 31
+   }
+  },
+  "note": "gated null cases share random streams (null/gross/offset/adaptive), so pooled intervals understate uncertainty"
+ },
+ "real": {
+  "beta": 0.04659658037107343,
+  "dev_lr": 5.193545296369393,
+  "lag_beta": 0.0,
+  "local_slope": 0.051335907380916625,
+  "mark_scale": 0.38294184198218767,
+  "q_slope": 0.07801595244522026,
+  "scored": 330,
+  "sigma": 0.34636170156690677
+ },
+ "real_issue_ages": {
+  "max_d": 26.0,
+  "median_d": 1.8771832315251231,
+  "n": 330,
+  "over_10_d": 7,
+  "p90_d": 4.01201126165688,
+  "previous_gap_median_d": 40.49490924552083,
+  "previous_gap_p10_d": 24.3347933255136
+ },
+ "scope": "development-stage calibration of the real 1910-1959 fit against A10d synthetic development fits; no 1960+ data"
+}

@@ -20,13 +20,15 @@ claims and handovers.
 | A04h | Joint morphology and cadence targets | Proposed, not frozen | Claude targets and operator; Codex next benchmark version | [A04h memo](../docs/audits/2026-11-08-a04h-joint-morphology-targets.md), [proposed targets](../docs/protocols/a04h-joint-morphology-targets-v1.md); v3 lacks amplitude–duration coupling; v2 random passes the waveform block; all arms fail decline sampling density |
 | A10a | Restriction review, prefix-causal predictors, precision | Proposed, not frozen | Claude protocol, ledger code and pilot; Codex models and controls | [A10a memo](../docs/audits/2026-11-08-a10a-prefix-predictors-review.md), [proposed protocol](../docs/protocols/a10-prefix-causal-predictors-v1.md); magnitude 10 structural (0.5 mag margins clear the peak distribution only there); causality costs ~0.05 d on real 1910–1959 rows; single-star forecast-gain test ~1/3 power at r≈0.12, estimand resolved by D018; A10b review/control evidence now available |
 | A10b | Model implementation, repaired ledger and full-chain synthetic controls | Complete development pilot; reviewed in A10c | Codex with independent code/method references | D018 keeps forecast gain confirmatory; [development specification](../docs/protocols/a10b-model-controls-v1.md); no real focal fit or reserved-data access |
-| A10c | Control review; forecast system, OC study and development-fit specification | Proposed, not frozen | Claude review/spec; Codex implementation, OC study and real 1910–1959 fit | [A10c memo](../docs/audits/2026-11-08-a10c-controls-review.md), [protocol](../docs/protocols/a10c-development-fit-v1.md), D020; fallback routing gave duration credit for missing timing; null coefficients negative (end-error coupling); directional matched M3 gives −0.0002 null, +0.0023 injected on A10b scores |
+| A10c | Control review; forecast system, OC study and development-fit specification | Implemented and amended in A10d/A10e | Claude review/spec; Codex implementation, OC study and real 1910–1959 fit | [A10c memo](../docs/audits/2026-11-08-a10c-controls-review.md), [protocol](../docs/protocols/a10c-development-fit-v1.md), D020; fallback routing gave duration credit for missing timing; null coefficients negative (end-error coupling); directional matched M3 gives −0.0002 null, +0.0023 injected on A10b scores |
+| A10d/A10e | Directional forecasts, 360-trial OC screen, first real 1910–1959 fit | Complete; reviewed in A10f | Codex | [A10d audit](../docs/audits/2026-11-08-a10d-directional-oc.md), [A10e report](../docs/audits/2026-11-08-a10e-first-development-fit.md); D021, D022; power 27.5%; real β=0.0466, P3 at zero; parameters `ce4ef8d5…` |
+| A10f | Development review and evaluation protocol | Proposed for Codex review; go-ahead pending Barry | Claude protocol; Codex runner, fixtures, rehearsal and sealed run | [A10f memo](../docs/audits/2026-11-08-a10f-development-review.md), [protocol](../docs/protocols/a10f-evaluation-v1.md), D023; real dev LR reached by 5/220 gated nulls, 12/40 injected; slow state disfavoured by lagged-mark bound; conditional power ~1/3 |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
 | A08 | Implement observational M0, then M1 | After A07 | Agent implementer + other reviewer | Censoring, boundary propagation, calibration |
 | A09 | Add past-only M2/M3 and identifiability simulation | After A08 | Rotate roles | Same state architecture, no future smoothing |
-| A10 | Freeze evaluation | D018 fixes forecast-gain confirmation; A10c specifies the system, OC gate and development fit; then evaluation protocol and Barry's go-ahead | Scientific lead | Cutoffs, ledger, final targets and score |
+| A10 | Freeze evaluation | D018 fixes forecast-gain confirmation; system, gate and development fit done (A10c–e); A10f evaluation protocol proposed | Scientific lead | Codex review and pre-access work, then Barry's go-ahead to open 1960–2017 |
 
 ## Current blocking information
 
@@ -590,3 +592,35 @@ Git; parameters, compact profiles and the
 No model was retuned and no 1960+ data was opened.
 Next: Claude — review A10d/A10e and prepare the evaluation freeze tied to
 the exact parameter hash; Barry must authorize later data access.
+
+
+## A10f development review and evaluation protocol, 8 November 2026
+
+Claude, `main`, base `ccea39b`. Owns `scripts/a10f_development_calibration.py`
+and its output in `data/simulations/`, the
+[A10f memo](../docs/audits/2026-11-08-a10f-development-review.md), the
+[A10f evaluation protocol](../docs/protocols/a10f-evaluation-v1.md), D023 and
+the status updates. Reads the retained A10d trial records and the consumed
+pre-1960 development ledger (both outside Git). Writes no forecasting code.
+
+A10d and A10e are accepted as executed, with all D021 amendments. Findings:
+
+- Real issue ages are early (median 1.9 d against 40 d gaps). End-error
+  coupling is negative here, so the directional bound does its job, although
+  it is not a general theorem.
+- The real development likelihood ratio (5.19) is reached by 5/220 gated null
+  histories (0/40 structured), 12/40 injected-effect histories and 14/80
+  slow-state histories.
+- With the lagged mark at zero, the simulator disfavours a slow shared state
+  by about 8 to 1. Mechanism stays unidentified, and frozen P3 equals M2 on
+  the evaluation block.
+- Power conditional on the development fit is 4/12, about one chance in
+  three at best.
+
+The protocol fixes sealed access, the single six-year-cluster test, S1–S6 and
+the interpretation table before access. That table includes an informative
+negative and the CM92 era split. Pre-access work: runner, independent checker,
+adapter fixtures and a synthetic rehearsal. No 1960+ data accessed.
+
+Next: Codex — review A10f, build the runner, checker, fixtures and rehearsal,
+and freeze; then Barry's go-ahead opens 1960–2017.

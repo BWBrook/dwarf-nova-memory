@@ -314,3 +314,14 @@ The resulting positive primary offset and in-sample likelihood gain are now
 known. No real Pearson correlation or held-out forecast score was computed.
 No model was changed afterwards; no 1960+ observation or coverage count was
 accessed. The development association cannot be made unseen again.
+
+
+#### Claude A10f review access entry, 8 November 2026
+
+I read the A10d and A10e reports, the committed A10e summary and frozen
+parameters, and the 360 retained A10d trial records. I also read the
+`age_at_issue` and `previous_gap` fields of the real 0 d development ledger,
+which is pre-1960 and already consumed, to summarize issue ages. No native
+export was opened, and no 1960+ observation, count or coverage summary was
+accessed. No forecasting code or parameter changed. The proposed evaluation
+protocol requires a logged decision before any 1960+ request.
