@@ -1,5 +1,5 @@
 {
-  "status": "authorized",
+  "status": "completed",
   "approved_by": "Barry W. Brook",
   "approval_verbatim": "Zenodo first, then open (recommended)",
   "question_verbatim": "All pre-access work is pushed: freeze fc40973, 342 tests, independent rehearsal and CI passed. The A10g protocol explicitly requires your go-ahead before opening 1960\u20132017. Which route do you authorize? I recommend publishing the prepared 0.7 MB protocol-only Zenodo package first, then running the single sealed evaluation. Data from 2018 onward stays closed.",
@@ -31,5 +31,12 @@
     "review": "independent methodological code-path and synthetic invariance review accepted",
     "rehearsal": "data/provenance/a10g_rehearsal_5e39aeb/audit.json",
     "recorded_at_utc": "2026-11-08T12:48:58.344844+00:00"
-  }
+  },
+  "execution_status": "completed",
+  "completed_run": "outputs/a10h_live_repair_5e39aeb",
+  "execution_commit": "d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
+  "primary_written_utc": "2026-11-08T13:06:58.640683+00:00",
+  "primary_result": "data/provenance/a10i_evaluation_1960_2017/primary.json",
+  "access_consumed": true,
+  "completion_note": "The authorized single comparison is complete. This current record cannot enable another live transport; execution authority is preserved at d7151e0. Saved-data reproduction remains available; 2018 onward remains closed."
 }

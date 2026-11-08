@@ -1,0 +1,16 @@
+{
+  "execution_commit": "d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
+  "files_sha256": {
+    "archive.json": "e93e30a31e3edd03855df068d756ddff0616bb0120dcf02ddd9b100161126fb8",
+    "audit.json": "0db9829a419db24b61bf54f946b10f6b93446b8a25fbb231691259dc51ebfcdc",
+    "environment.json": "9aeb3ea53e72dccf2db9d90a6c6ac9b390c6704899244e93700c71ec1235f5b5",
+    "native-audit.json": "3341381b72e31f344f9cd66dcaef65c2043ea2e11aa328edb62fd58f6c180864",
+    "primary.json": "caee226d7729ec55e3421561c493cce5fb748458230cafb59e10796df8ea4ac0",
+    "run-receipt.json": "b9eee23957db51af3c7b9ba26adbdb6ae26cf057c3be3be8c4b55a304fbaf4d9",
+    "summary.json": "0c71cadbb4c98aa4b1a50a8070009a8461783d1b9d6d6ee0870533175c1af717"
+  },
+  "original_protocol_freeze": "fc409738222ded5a9bf78288c969e956b59d23f4",
+  "post_access_repair_freeze_sha1": "5e39aeb772c427ef29671c1a9c80b22c05519b58",
+  "protocol_doi": "10.5281/zenodo.24053338",
+  "scope": "aggregate real evaluation evidence only; native observations, observer identities, per-event labels and per-issuance scores remain in the internal archive"
+}

@@ -2,132 +2,59 @@
 
 ## Mission and present state
 
-Develop a defensible, bounded astronomical study of incremental predictive
-information in dwarf-nova outburst histories. Barry W. Brook is the scientific
-lead. This repository is a researched starting framework, not an approved final
-protocol and not a completed analysis. Read `README.md`, `docs/01-research-brief.md`,
-`docs/02-literature-review.md`, `docs/05-statistical-design.md` and the coordination
-files before changing scientific assumptions.
+Develop a defensible, bounded study of incremental predictive information in
+dwarf-nova outburst histories. Barry W. Brook leads the science. Read
+`README.md`, the brief/literature/statistical-design documents, current
+protocols and coordination decisions before changing scientific assumptions.
 
-The requested SS Cyg native stream from 1896-01-01 through JD 2436934.0
-(1959-12-31 noon under the presumed convention) is retained in 12 hashed
-acquisitions outside Git; the manifest and A04 comparison report record scope.
-Native visual JD is presumed UT-based and geocentric; the 0.006 d convention
-sensitivity does not bound all historical record errors. A04 supplies Claude's
-1956–1958 judgements and a sealed independent 1957 subset, with unresolved
-boundary differences, now adjudicated (`data/annotations/`). Two candidate
-extractors (`src/dnmem/extract.py`, A04b) have completed conditional synthetic
-recovery screening (A04c); neither passes the frozen effective-coverage gate.
-A04d found that the A04c benchmark fails predictive checks against open-era
-light curves, traced every X1 boundary miss to one misclassified vote, and
-proposes X3 (`src/dnmem/extract_x3.py`: fitted crossing intervals, 7 d split
-rule) for fresh validation. A04e completed 7,600 histories on an independently
-authored, morphology-qualified benchmark. Unchanged X3 improves conditional
-coverage but fails global qualification under both coverage rules, principally
-through effective coverage in state-compatible cadence. The causal wrapper's
-1910–1929 unsafe-emission rate remains inconclusive. The original-v1 end
-failure is retained. X3 is a tested candidate, not an accepted extractor;
-see the A04e report and D015. A04f traced X3's losses to single-observer
-outbursts (inflated by the state arm's donor rule, which fails an
-observer-diversity check), conditional undercoverage and tail re-arming of the
-causal rule, and proposes X4 (`src/dnmem/extract_x4.py`) for A04g validation
-on an unseen benchmark family. A04g freeze `b83d76a` repaired observer
-diversity but failed one v3 morphology gate in 384 fresh qualification
-histories. X4 recovery was not run and the validation namespace is unused;
-see the A04g report and D016. A04h found a v3 fixed-amplitude geometry defect
-(real short outbursts have fainter measured cores; duration–core-level
-Spearman −0.65) and
-proposes joint waveform and cadence targets with tolerances from sampling
-spread at the real sample size; every current cadence arm fails the cadence
-block. A04i uses a corrected 334-episode same-era target and a finite
-waveform/cadence qualification: v2 with phase-aligned cadence passes, while
-the source-blind new waveform fails. Unchanged X4 then passes all decisive
-magnitude-10 recovery cells in 4,800 histories under both global rules;
-C1/7 d is selected by the frozen preference. Magnitude-9.5 diagnostics fail
-in the later eras, and some alternative-bias comparisons are inconclusive.
-This supports conditional retrospective extraction on a waveform Claude
-had already studied; it is not unseen-waveform or operational validation.
-See the A04i report and D017. A10a specifies prefix-causal forecast
-predictors (`src/dnmem/prefix_features.py`) and a truth-free live-forecast
-evidence rule. On real 1910–1959 rows, causality changes durations by about
-0.05 d. A precision model gives a single-star paired forecast-gain test about
-one-third power at the expected effect. Barry retained forecast gain as
-confirmatory (D018), with the coefficient secondary. A10b repairs latency,
-as-of evidence and invalid previous-gap handling, with an independent ledger
-reference and conditional M0–M3 prototype (`ledger_forecast.py`). The timing
-baseline is previous log gap, not an identified latent activity model.
-Point and shared-end bracket sensitivities, common unknown-anchor fallback
-and synthetic controls are development work, not full measurement/missed-event
-inference. Prefix causality does not rule out measurement-induced skill.
-The initial A10b run is retained as aborted/incomplete after a nonpositive
-derived-mark error. Repaired freeze `4fc8d2e` repeats independent concordance
-and completes all 56 trials on the original random streams: 105,509 variant
-scores and 1,360 fits reconcile. Injected-effect prefix gain averages 0.00324
-nats, with wide individual-history intervals. Rare point-order failures use
-mark fallback. Strict oracle matching leaves 25.9% of its scored issuances on
-R0, so it cannot measure skill lost through extraction. The two-day variant
-delays issuance, not training-record availability. See the A10b audit; stronger
-timing-only baselines and final inference calibration remain unresolved.
-A10c (D020, proposed) re-aggregates the A10b scores. Forecasts lacking a covered
-previous gap let duration stand in for timing, and null duration coefficients
-are negative through shared end-error coupling. It specifies a directional,
-matched M3 (β ≥ 0, duration only where the previous-gap term is present),
-a local-level comparator, a lagged-duration placebo, a gated synthetic OC
-study, and then the first real 1910–1959 fit (`docs/protocols/a10c-development-fit-v1.md`).
-The later-data evaluation remains unfrozen. No operational extractor or
-normalized observation release exists. Every committed photometry or seed forecast fixture
-under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
-in `forecast.py` still fits only M0/M1 complete oracle cycles for the seed demo;
-the separate ledger prototype does not infer missed events, a filtered latent
-state, parameter uncertainty or a physical accretion-disc model. Do not imply otherwise.
+The first frozen real SS Cyg forecast comparison is complete. Across 441
+1960–2017 issuances, M3−M2 gain is 0.01653 nats, with six-year-cluster 90%
+interval [0.00495,0.02812], meeting the single predeclared rule. The later
+1993–2017 segment and type/within-type variant are inconclusive. This is
+incremental information under a specific frozen visual extraction/timing
+baseline, not physical-memory identification or a general dwarf-nova result.
+See `docs/audits/2026-11-09-a10i-sealed-evaluation.md` and its aggregate
+artifacts in `data/provenance/a10i_evaluation_1960_2017/`.
 
-A10d implements the amended directional offset models and independent v3
-features. Source freeze `8f5df44` passes 100-history concordance and completes
-all 360 synthetic OC trials; independent numerical and aggregate audits pass.
-The finite observed-rate/joint-MC screen passes, with 27.5% injected-effect
-power. It is not a formal five-percent size certificate. D021 records the
-positive-endpoint counterexample and non-identifying lagged-mark comparator.
-
-D022 records Barry's subsequent acceptance of the 360-trial observed≤5%
-screen. A10e freeze `b80c4a9` then completes the first real 1910–1959 fit on
-330 issuances at both delays, after exact candidate/reference concordance.
-Primary duration offset β=.04660 is positive; P3 is at zero. These are
-in-sample working-model results, not held-out skill or physical-memory
-identification. Conditional fixed-M2 likelihood-support profiles are not
-calibrated confidence intervals. See the A10e memo and
-`data/fits/a10e_1910_1959/frozen_parameters.json`, SHA-256
+Protocol DOI 10.5281/zenodo.24053338 was published before access under D025.
+Original source freeze fc40973; parameter SHA-256
 `ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3`.
-Every qualified A10d estimator/extractor byte is unchanged. Do not retune the
-forecast system after this fit. No 1960+ observation or coverage summary has
-been opened; Barry's explicit evaluation go-ahead is still required.
+The first attempt failed before scoring on literal missing uncertainty `None`.
+D026's exact-token adapter repair preserves every row/string and changes an
+analysis-unused field. Independent code-path/synthetic invariance review,
+344 tests and a fresh full rehearsal precede repair freeze 5e39aeb and pushed
+execution authority d7151e0. The run completes after this post-access format
+repair; the evaluation cannot be called untouched. All original 26 forecasting
+sources, parameters and protocol bytes are unchanged. Preserve every failure,
+receipt and frozen output; do not retune or overwrite this comparison.
 
-A10f (D023, proposed) reviewed the development fit and drafted evaluation.
-A10g (D024) retains its descriptive counts but corrects median-age sign proof,
-pooled iid-binomial inference and model-odds wording. It implements a sealed
-native-acquisition/evaluation runner, genuine joint S1, descriptive selected-
-onset CDFs and censoring-aware coverage bounds, plus independent score checks.
-Any ledger/evidence mismatch halts before scoring. The six-year primary test
-and frozen forecasts/parameters remain unchanged. Its protocol is
-`docs/protocols/a10g-sealed-evaluation-v1.md`. Source freeze `fc40973` completed a full synthetic native-format rehearsal:
-377 scored issuances, all secondaries complete, independent numerical audit
-passes. All 342 tests and CI on Python 3.11–3.13 pass. Two earlier numerical
-S1 failures are preserved; the final evaluation-only profiler uses bounded
-scalar search for one nuisance dimension and three-point gradients for larger
-searches, with strict optimizer checks. The original 26 sources and parameters
-are unchanged. See `docs/audits/2026-11-08-a10g-evaluation-freeze.md`. D025 records Barry's explicit “Zenodo first, then open” choice. Protocol
-DOI10.5281/zenodo.24053338 is published and its public bytes verified.
-The committed/pushed DOI-bound `coordination/evaluation_access.json` enables
-the single frozen 1960–2017 evaluation. No 2018+ request, source retuning,
-raw-data release or manuscript release is authorized. Until the primary file
-is written, inspect no observation, count, coverage summary or intermediate
-result. The run receipt is the authority for execution status.
+X4 at magnitude 10, C1/7-day coverage, prefix-causal features and the frozen
+working lognormal models define the estimand. Retain failed X1–X3 benchmarks
+and known-waveform/measurement limitations. Candidate/reference ledger AND
+evidence concordance must hold before any score; independent scalar numerical
+checks verify all 2,641 actual variant scores within 1.91e-13. S1 association
+profiles condition on a fixed evaluation M2 and are not calibrated confidence
+intervals or mechanism tests. Absolute predictions overcover in this sample.
+The finite simulation screen did not certify a true 5% error rate.
 
-D026: the first authorized live attempt failed before any primary result on
-native `uncert="None"`. The block's untouched status is consumed. Only an
-exact-token uncertainty-validation repair is permitted; that field is unused
-by every forecasting path. The failed attempt must remain preserved, and the
-continuation/result must be labeled post-access format repair with its new
-source freeze. No parameter, original 26 source or protocol byte changes.
+Raw AAVSO acquisitions through 2017, original pre-1960 context/cache and full
+outputs are hashed and retained outside Git. No raw export, observer identity,
+new event catalog or per-issuance score table is released by this result.
+Native visual JD is presumed UT-based/geocentric; convention sensitivity does
+not bound all historical errors. Historical upload/revision availability is
+unknown: call this observation-time retrospective, never operational replay.
+No physical disc model or missed-event inference is implemented. Fixtures and
+seed photometry remain synthetic; the committed fit/evaluation aggregates
+are real and clearly labeled.
+
+**2018 onward remains closed.** No later archive row, count, coverage summary
+or light curve may be requested or inspected without a new explicit decision.
+The single authorized comparison is complete; current access status is marked
+completed, with the execution authority retained at d7151e0. Saved-data
+reproduction and clearly labeled exploratory work cannot become a second
+confirmation. Next is Claude's scientific review, preserving era/type and
+mechanism limits beside the headline. Raw-data/manuscript releases still need
+Barry's applicable authorization and the observer-credit/terms review.
 
 ## Scientific invariants
 

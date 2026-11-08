@@ -1,0 +1,65 @@
+{
+  "audit_failures": [],
+  "checker": "check_a10g_evaluation",
+  "complete": true,
+  "details": {
+    "delay_2": {
+      "expected_rows": 441,
+      "max_abs_score_error": 1.9095836023552692e-13,
+      "observed_rows": 441
+    },
+    "joint_placebo": {
+      "expected_rows": 436,
+      "max_abs_score_error": 1.7053025658242404e-13,
+      "observed_rows": 436
+    },
+    "primary": {
+      "expected_rows": 441,
+      "max_abs_score_error": 1.7053025658242404e-13,
+      "observed_rows": 441
+    },
+    "q_only": {
+      "expected_rows": 441,
+      "max_abs_score_error": 1.7053025658242404e-13,
+      "observed_rows": 441
+    },
+    "type_within": {
+      "expected_rows": 441,
+      "max_abs_score_error": 1.7053025658242404e-13,
+      "observed_rows": 441
+    },
+    "uniform_end": {
+      "expected_rows": 441,
+      "max_abs_score_error": 5.417888360170764e-14,
+      "observed_rows": 441
+    }
+  },
+  "directory": "outputs/a10h_live_repair_5e39aeb",
+  "mode": "live",
+  "primary_calculated": {
+    "blocks": 10,
+    "cluster_counts": [
+      53,
+      49,
+      50,
+      46,
+      43,
+      39,
+      43,
+      46,
+      41,
+      31
+    ],
+    "confirmed": true,
+    "estimate": 0.016533512177436503,
+    "interval": "one-sided 95% lower bound / two-sided 90% interval",
+    "lower": 0.004947716309598671,
+    "n": 441,
+    "origin": 2436934.5,
+    "reference_gain": 0.004519560867443926,
+    "se": 0.006320284834306242,
+    "upper": 0.028119308045274335,
+    "upper_below_reference": false,
+    "years": 6
+  }
+}

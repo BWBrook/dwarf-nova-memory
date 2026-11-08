@@ -92,19 +92,24 @@ untested and 1960+ access remains closed. The positive coefficient and
 lagged-duration comparisons do not identify physical memory or universally
 exclude endpoint artefacts.
 
-[A10f](docs/audits/2026-11-08-a10f-development-review.md) supplies an
-exploratory simulator comparison of the development fit and proposes the
-later evaluation. [A10g](docs/protocols/a10g-sealed-evaluation-v1.md) retains
-its reproduced counts while correcting the pooled probability interpretation,
-median-age sign argument and model-odds wording. Its sealed runner requires
-exact independent ledger/evidence concordance before scoring, and implements
-joint association and censoring-aware diagnostic coverage bounds. The [final A10g rehearsal](docs/audits/2026-11-08-a10g-evaluation-freeze.md)
-completes every diagnostic at source freeze `fc40973`; independent scores and
-intervals agree, all 342 tests pass, and CI is green on Python 3.11–3.13.
-The forecasts, parameters and confirmatory test remain unchanged. The [frozen protocol](https://doi.org/10.5281/zenodo.24053338) is now
-published; Barry authorized the single sealed 1960–2017 evaluation after it.
-Execution status will be reported from the saved run receipt. Data from
-2018 onward remains reserved.
+[The frozen 1960–2017 evaluation](docs/audits/2026-11-09-a10i-sealed-evaluation.md)
+meets its predeclared forecast-gain criterion: **+0.01653 nats per issuance,
+90% interval [0.00495,0.02812], 441 forecasts**. It compares extracted current
+log duration with the specified frozen previous-gap/recent-history baseline.
+The 1993–2017 segment and the type/within-type variant are inconclusive.
+This supports incremental predictive information for SS Cyg under these rules;
+physical memory and wider transport remain unresolved.
+
+The [protocol](https://doi.org/10.5281/zenodo.24053338) was published before
+access. The first attempt failed before scoring on missing-uncertainty metadata;
+a narrow independently reviewed parser repair preceded the completed run.
+Untouched status is consumed, and the result is explicitly a **post-access
+format-repair continuation**. Independent checks reproduce all 2,641 scores,
+the interval, source identities and acquisition bounds. All 344 tests and
+supported-platform CI pass. Native rows and full event/score outputs remain
+outside Git; aggregate results are in
+[`data/provenance/a10i_evaluation_1960_2017/`](data/provenance/a10i_evaluation_1960_2017/).
+No 2018+ data were requested or analyzed; that replication block stays closed.
 
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
 uses *true complete simulated event histories*. The observation schedule is a
@@ -148,6 +153,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A10c control review and development-fit specification](docs/audits/2026-11-08-a10c-controls-review.md) | Where the A10b gain comes from, the sign of end-error coupling, the directional matched M3, the slow-state placebo and the [A10c protocol](docs/protocols/a10c-development-fit-v1.md) |
 | [A10f development review and evaluation protocol](docs/audits/2026-11-08-a10f-development-review.md) | The real fit placed among 360 synthetic development fits, issue ages and the sign argument, the lagged-mark evidence on shared state, conditional power, and the [proposed evaluation protocol](docs/protocols/a10f-evaluation-v1.md) |
 | [A10g sealed evaluation freeze](docs/audits/2026-11-08-a10g-evaluation-freeze.md) | Implemented access guards, independent score checks, preserved numerical failures, completed synthetic rehearsal and prepared protocol-only deposit |
+| [A10i real sealed evaluation](docs/audits/2026-11-09-a10i-sealed-evaluation.md) | Confirmed frozen forecast-gain comparison, post-access format repair, independent checks and visible era/type limits |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

@@ -1,5 +1,6 @@
 # A10g: sealed evaluation implemented and rehearsed
 
+Historical checkpoint: the authorized evaluation has since completed. See [A10i](2026-11-09-a10i-sealed-evaluation.md) for the result; this earlier record remains preserved.
 Codex, 8 November 2026. Final source freeze
 `fc409738222ded5a9bf78288c969e956b59d23f4`. The sealed evaluation is ready
 for Barry's timestamp/access decision. **The real 1960–2017 archive remains

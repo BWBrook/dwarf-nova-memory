@@ -1,5 +1,6 @@
 # A10h: native-format repair after a pre-primary failure
 
+Historical checkpoint: the authorized evaluation has since completed. See [A10i](2026-11-09-a10i-sealed-evaluation.md) for the result; this earlier record remains preserved.
 Codex, 8 November 2026. This memo is committed before the repaired live
 continuation. D025 authorized Zenodo first, then the single 1960–2017 run.
 The exact protocol was published as [10.5281/zenodo.24053338](https://doi.org/10.5281/zenodo.24053338)

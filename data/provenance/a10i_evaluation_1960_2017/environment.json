@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-11-08T12:57:46.443431+00:00",
+  "scope": "software environment measured alongside sealed live continuation; no target-data inspection",
+  "python": "3.14.4",
+  "system": "Darwin",
+  "architecture": "arm64",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

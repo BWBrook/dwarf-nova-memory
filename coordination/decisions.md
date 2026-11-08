@@ -597,6 +597,38 @@ proposals, not a record of approvals the user has not given.
   consumed status, and cites the existing protocol repair clause. Commit and
   push this record before the labeled post-access continuation.
 
+### D027 — Record the frozen forecast-gain result and its narrow interpretation
+
+- Codex, 9 November 2026 (Hobart), after completed execution under D025/D026
+  and independent numerical, acquisition and methodological review.
+- Primary: 441 issuances, mean M3−M2 gain 0.0165335122 nats; six-year-cluster
+  SE 0.0063202848, one-sided 95% lower 0.0049477163; two-sided 90% interval
+  [0.0049477163,0.0281193080]. Ten blocks, 9 df. The single predeclared rule
+  is met. All five fallback zeros remain; no excluded/ambiguous-survival rows.
+- This confirms incremental forecast information under the fixed SS Cyg
+  extraction/coverage and specified frozen timing baseline. It identifies
+  neither physical memory nor a within-type mechanism, cross-star transport
+  or operational forecasting.
+- Keep the secondary era and functional-form results beside the primary:
+  1993–2017 gain 0.00573[-0.01067,0.02213]; type/within-type
+  gain 0.00248[-0.00220,0.00715]. Both are inconclusive; era intervals overlap.
+  Joint conditional current/lag support intervals include zero. Predictions
+  empirically overcover. Do not select a new confirmatory comparison.
+- Independent checker reproduces all 2,641 scores within 1.91e-13, primary
+  statistics, populations and 120 source hashes. The raw-scope audit confirms
+  all response timestamps, including capped parents, are before 2018. The
+  original context/cache remains unchanged; all 344 tests and source-freeze
+  CI pass. No protocol/model/parameter was retuned after the result.
+- Source 5e39aeb, execution d7151e0, primary saved 2026-11-08 13:06:58 UTC.
+  This is a frozen evaluation after a retained post-access native-format
+  repair, never a renewed untouched evaluation. Current single-run access
+  status is completed; original execution authority remains in history.
+- Report: `docs/audits/2026-11-09-a10i-sealed-evaluation.md`. Aggregate evidence
+  only is committed; full raw/context/source/score outputs are verified in
+  an internal archive. No raw-data deposit, new event-catalog release or manuscript release is made.
+  The 2018+ replication block stays closed. Next is Claude's independent
+  scientific framing review, not another data opening.
+
 ## New decision template
 
 ### D0xx — Short concrete title

@@ -658,7 +658,7 @@ or retain the closed block.
 ## A10h active: authorized evaluation after native-format repair
 
 Barry selected Zenodo first, then open (D025). The exact protocol is
-published at DOI10.5281/zenodo.24053338, public bytes verified, and authority
+published at DOI 10.5281/zenodo.24053338, public bytes verified, and authority
 `6e26eba` was pushed before live transport. The first attempt failed before
 any primary result on literal `None` uncertainty metadata. No outcome/count/
 coverage summary was inspected; untouched status is consumed (D026).
@@ -671,3 +671,30 @@ release, parameter change, altered population rule or 2018+ access occurs.
 The failed attempt and its receipts remain archived outside Git.
 
 Next: Codex — complete the independently reviewed format repair and sealed run.
+
+
+## A10i complete: the single frozen forecast-gain criterion is met
+
+9 November 2026 (Hobart). Source 5e39aeb, execution d7151e0. The completed
+1960–2017 comparison has 441 issuances: +0.01653 nats/issuance, 90% cluster
+interval [0.00495,0.02812], 10 six-year blocks. All five fallback zeros remain.
+Independent numerical verification covers 2,641 score rows within 1.91e-13;
+response scope, hashes, prefix chronology and original context/cache pass.
+All 344 tests, validator and supported-platform source-freeze CI pass.
+
+The report deliberately places the later-era and type/within-type
+inconclusive intervals beside the primary. Joint S1 does not identify
+mechanism; predictions empirically overcover. The claim is incremental
+information for SS Cyg over the specified frozen timing baseline. D027
+records that interpretation, with the post-access native-format repair and
+consumed status retained. No 2018+ access or model retuning occurs.
+
+[Full result](../docs/audits/2026-11-09-a10i-sealed-evaluation.md), compact
+aggregates and independent audits are committed. All raw replies, original
+context/cache, source and full outputs are verified internally outside Git;
+protocol DOI 10.5281/zenodo.24053338 is the only new external release. The
+single-run access record is marked completed. Aggregate summaries are public; no raw-data deposit, new event catalog or
+manuscript release is made.
+
+Next: Claude — review the real result and frame the paper with the era/type
+and mechanism qualifications beside the headline; keep 2018 onward closed.

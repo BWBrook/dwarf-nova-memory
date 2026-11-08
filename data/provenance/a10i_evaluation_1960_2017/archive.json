@@ -1,0 +1,12 @@
+{
+  "archive_id": "a10i-20261109-5e39aeb",
+  "archive_sha256": "8e9d626904ba5e680f76122b10de5e01ba01a19302ec2c6da3cfffacc20c5884",
+  "archive_bytes": 14897643,
+  "inventory_sha256": "1d77661ec9ffbdaf82bc9063b9fc5cb28ab0de64f658665f1c04e0a9469c5ed0",
+  "member_files": 184,
+  "uncompressed_member_bytes": 132501444,
+  "scope": "real raw data and complete outputs retained internally outside Git; source, original context/cache and failed attempt included",
+  "status": "verified internal archive",
+  "verification": "local and remote whole-file SHA256 plus every member verified; archive permissions0600",
+  "count_definition": "184 inventoried payload files; inventory.json adds one archive member"
+}

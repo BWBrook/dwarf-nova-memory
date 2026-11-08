@@ -1,0 +1,1323 @@
+{
+  "execution_commit": "d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
+  "post_access_repair": "D026 exact None uncertainty sentinel; field unused by forecasts; original failure preserved; no outcomes/counts informed repair",
+  "primary": {
+    "blocks": 10,
+    "confirmed": true,
+    "df": 9,
+    "estimate": 0.016533512177436503,
+    "interval": "one-sided 95% lower bound / two-sided 90% interval",
+    "issued": 441,
+    "lower": 0.00494771630959865,
+    "n": 441,
+    "origin": 2436934.5,
+    "reference_gain": 0.004519560867443926,
+    "routes": {
+      "M0": {
+        "M0": 441
+      },
+      "M2": {
+        "M0": 5,
+        "M2": 436
+      },
+      "M3": {
+        "M0": 5,
+        "M3": 436
+      },
+      "P3": {
+        "M0": 5,
+        "M2": 436
+      }
+    },
+    "scope": "single confirmatory frozen-parameter comparison; observational-time retrospective",
+    "se": 0.006320284834306242,
+    "upper": 0.028119308045274356,
+    "upper_below_reference": false,
+    "years": 6
+  },
+  "public_data_policy": "aggregate estimates and diagnostics only; no native rows, observer identities, event catalog or per-issuance score table released",
+  "scope": "one primary forecast-gain test; all other analyses secondary; observed-time retrospective SS Cyg only",
+  "secondary": {
+    "association": {
+      "cutoff": 2458119.5,
+      "interpretation": {
+        "forecast_claim": "none",
+        "limits": "Association estimates are conditional on the fixed evaluation M2 baseline, the extracted score-eligible rows, and the working landmark likelihood.",
+        "mechanism_claim": "none"
+      },
+      "joint": {
+        "baseline_model": "the staged evaluation M2 fit on all timing-eligible rows",
+        "bounds": [
+          [
+            -5.0,
+            5.0
+          ],
+          [
+            -5.0,
+            5.0
+          ]
+        ],
+        "coefficients": {
+          "current_duration": 0.03044525973538333,
+          "previous_duration": -0.022125807781666777
+        },
+        "failed_starts": [],
+        "fit_status": "optimized",
+        "frozen_m2_nuisance": true,
+        "identifiability": {
+          "active_design_rows": 436,
+          "all_free_coefficients_design_identified": true,
+          "coefficient_status": {
+            "current_duration": "design_identified",
+            "previous_duration": "design_identified"
+          },
+          "condition_number": 1.7913350622313706,
+          "design_rank": 2,
+          "free_parameter_count": 2,
+          "full_column_rank": true,
+          "rank_tolerance": 2.5784085333264306e-09,
+          "singular_values": [
+            25.784085333264304,
+            14.393781418617712
+          ]
+        },
+        "interval_scope": "CONDITIONAL fixed-M2 likelihood support; the other mark offset is reoptimized. This is not a serial-dependence- or measurement-calibrated confidence interval.",
+        "joint_valid_count": 436,
+        "likelihood_ratio_cutoff": 3.841,
+        "objective": 1658.2006928451428,
+        "profile_diagnostics": {
+          "frozen_objective": 1658.2006928451428,
+          "full_optimizer_message": "L-BFGS-B jac=3-point rel_step=6.0554544523933395e-06",
+          "full_reoptimization_improvement": 4.547473508864641e-13,
+          "full_reoptimization_objective": 1658.2006928451424,
+          "material_improvement_tolerance": 0.0016592006928451428
+        },
+        "profiles": {
+          "current_duration": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "coefficient_identified": true,
+            "estimate": 0.03044525973538333,
+            "likelihood_support_interval": {
+              "lower": -0.0006263435628039253,
+              "lower_clipped_to_bound": false,
+              "upper": 0.06151567094067509,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "current_duration",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          },
+          "previous_duration": {
+            "at_lower_bound": false,
+            "at_upper_bound": false,
+            "coefficient_identified": true,
+            "estimate": -0.022125807781666777,
+            "likelihood_support_interval": {
+              "lower": -0.05339768268629935,
+              "lower_clipped_to_bound": false,
+              "upper": 0.009129377822428678,
+              "upper_clipped_to_bound": false
+            },
+            "parameter": "previous_duration",
+            "status": "profiled",
+            "working_bounds": [
+              -5.0,
+              5.0
+            ]
+          }
+        },
+        "scalar_objective_difference": -4.547473508864641e-13,
+        "status": "fitted",
+        "successful_starts": [
+          {
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1658.200692845143,
+            "solution": [
+              0.03044526920240167,
+              -0.022125798735130608
+            ],
+            "start": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1658.2006928451433,
+            "solution": [
+              0.030445255752770517,
+              -0.02212581060761427
+            ],
+            "start": [
+              0.1,
+              0.1
+            ]
+          },
+          {
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "objective": 1658.2006928451428,
+            "solution": [
+              0.03044525973538333,
+              -0.022125807781666777
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ]
+          }
+        ],
+        "support_delta_negative_log_likelihood": 1.9205,
+        "timing_eligible_count": 436,
+        "transforms": {
+          "current": {
+            "fixed_constant": false,
+            "log_duration_center": 2.2576068092414285,
+            "log_duration_scale": 0.39160591423084773
+          },
+          "previous": {
+            "fixed_constant": false,
+            "log_duration_center": 2.2591804286348314,
+            "log_duration_scale": 0.39142907214851724
+          }
+        }
+      },
+      "schema_version": "a10f-evaluation-association-v1",
+      "scope": "evaluation-only conditional association diagnostic; no model or coefficient enters the frozen confirmatory forecasts",
+      "staged": {
+        "bundle": {
+          "counts": {
+            "excluded": 0,
+            "interval": 435,
+            "right_censored": 6
+          },
+          "directional": false,
+          "endpoint_mode": "point",
+          "joint_marks": false,
+          "local_level": true,
+          "mark_mode": "log_duration",
+          "metadata": {
+            "base_model": "M2 fixed for M3/P3 offsets",
+            "conditional_likelihood": "landmark survival with interval and right-censor terms",
+            "frozen": true,
+            "joint_marks": false,
+            "training_cutoff": 2458119.5
+          },
+          "models": {
+            "M0": {
+              "centers": {},
+              "coefficients": {},
+              "intercept": 3.5752058101490873,
+              "metadata": {
+                "convergence": {
+                  "boundary_parameters": [],
+                  "gradient_finite": true,
+                  "gradient_finite_free": true,
+                  "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                  "objective": 1740.7267874411411,
+                  "starts": [
+                    {
+                      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                      "objective": 1740.7267874411411,
+                      "success": true
+                    },
+                    {
+                      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                      "objective": 1740.7267874692784,
+                      "success": true
+                    }
+                  ],
+                  "success": true
+                },
+                "fit_kind": "conditional_landmark",
+                "fixed_terms": [],
+                "n_fit": 441
+              },
+              "n_fit": 441,
+              "name": "M0",
+              "scales": {},
+              "sigma": 0.3185519786605553,
+              "terms": []
+            },
+            "M2": {
+              "centers": {
+                "earlier_level": 3.588573000479335,
+                "previous_gap": 3.585502924313785
+              },
+              "coefficients": {
+                "earlier_level": 0.05716752895261309,
+                "previous_gap": 0.12470923919220096
+              },
+              "intercept": 3.5749116935853764,
+              "metadata": {
+                "baseline_training_count": 436,
+                "convergence": {
+                  "boundary_parameters": [],
+                  "gradient_finite": true,
+                  "gradient_finite_free": true,
+                  "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                  "objective": 1664.0626703560772,
+                  "starts": [
+                    {
+                      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                      "objective": 1664.0626703701753,
+                      "success": true
+                    },
+                    {
+                      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                      "objective": 1664.0626703560772,
+                      "success": true
+                    }
+                  ],
+                  "success": true
+                },
+                "fit_kind": "conditional_landmark",
+                "fixed_terms": [],
+                "n_fit": 436
+              },
+              "n_fit": 436,
+              "name": "M2",
+              "scales": {
+                "earlier_level": 0.2150970283617639,
+                "previous_gap": 0.3133893148315859
+              },
+              "sigma": 0.27773344012254203,
+              "terms": [
+                "previous_gap",
+                "earlier_level"
+              ]
+            },
+            "M3": {
+              "centers": {
+                "earlier_level": 3.588573000479335,
+                "mark": 2.2576068092414285,
+                "previous_gap": 3.585502924313785
+              },
+              "coefficients": {
+                "beta": 0.042093430057006276,
+                "earlier_level": 0.05716752895261309,
+                "previous_gap": 0.12470923919220096
+              },
+              "intercept": 3.5749116935853764,
+              "metadata": {
+                "at_bound": false,
+                "base_model": "M2",
+                "baseline_training_count": 436,
+                "beta": [
+                  0.042093430057006276
+                ],
+                "directional": false,
+                "failed_starts": [],
+                "fit_kind": "fixed_m2_mark_offset",
+                "fit_status": "optimized",
+                "fixed_beta_indices": [],
+                "joint_marks": false,
+                "mark_kind": "current",
+                "mark_mode": "log_duration",
+                "n_fit": 436,
+                "selected_zero_objective": 1664.0626703560772,
+                "successful_starts": [
+                  {
+                    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                    "objective": 1659.1629443079223,
+                    "start": [
+                      0.1
+                    ]
+                  },
+                  {
+                    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                    "objective": 1659.1629443079228,
+                    "start": [
+                      1.0
+                    ]
+                  }
+                ],
+                "unidentifiable": false,
+                "valid_mark_count": 436
+              },
+              "n_fit": 436,
+              "name": "M3",
+              "scales": {
+                "earlier_level": 0.2150970283617639,
+                "mark": 0.39160591423084773,
+                "previous_gap": 0.3133893148315859
+              },
+              "sigma": 0.27773344012254203,
+              "terms": [
+                "previous_gap",
+                "earlier_level",
+                "beta"
+              ]
+            },
+            "P3": {
+              "centers": {
+                "earlier_level": 3.588573000479335,
+                "mark": 2.2591804286348314,
+                "previous_gap": 3.585502924313785
+              },
+              "coefficients": {
+                "beta": -0.03835774775743515,
+                "earlier_level": 0.05716752895261309,
+                "previous_gap": 0.12470923919220096
+              },
+              "intercept": 3.5749116935853764,
+              "metadata": {
+                "at_bound": false,
+                "base_model": "M2",
+                "baseline_training_count": 436,
+                "beta": [
+                  -0.03835774775743515
+                ],
+                "directional": false,
+                "failed_starts": [],
+                "fit_kind": "fixed_m2_mark_offset",
+                "fit_status": "optimized",
+                "fixed_beta_indices": [],
+                "joint_marks": false,
+                "mark_kind": "previous",
+                "mark_mode": "log_duration",
+                "n_fit": 436,
+                "selected_zero_objective": 1664.0626703560772,
+                "successful_starts": [
+                  {
+                    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                    "objective": 1660.044552245392,
+                    "start": [
+                      0.1
+                    ]
+                  },
+                  {
+                    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                    "objective": 1660.0445522453922,
+                    "start": [
+                      1.0
+                    ]
+                  }
+                ],
+                "unidentifiable": false,
+                "valid_mark_count": 436
+              },
+              "n_fit": 436,
+              "name": "P3",
+              "scales": {
+                "earlier_level": 0.2150970283617639,
+                "mark": 0.39142907214851724,
+                "previous_gap": 0.3133893148315859
+              },
+              "sigma": 0.27773344012254203,
+              "terms": [
+                "previous_gap",
+                "earlier_level",
+                "beta"
+              ]
+            }
+          },
+          "nodes": 5,
+          "r0": {
+            "centers": {},
+            "coefficients": {},
+            "intercept": 3.5342532083831486,
+            "metadata": {
+              "convergence": {
+                "boundary_parameters": [],
+                "gradient_finite": true,
+                "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                "objective": 1745.7789151314978,
+                "starts": [
+                  {
+                    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                    "objective": 1745.7789151314978,
+                    "success": true
+                  },
+                  {
+                    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+                    "objective": 1745.7789151317904,
+                    "success": true
+                  }
+                ],
+                "success": true
+              },
+              "counts": {
+                "excluded": 0,
+                "interval": 435,
+                "right_censored": 6
+              },
+              "fit_kind": "remaining_wait_at_issue",
+              "n_fit": 441
+            },
+            "n_fit": 441,
+            "name": "R0",
+            "scales": {},
+            "sigma": 0.3356501463276979,
+            "terms": []
+          }
+        },
+        "profile_metadata": {
+          "interpretation": {
+            "calibration_limit": "serial dependence and measurement uncertainty are not calibrated",
+            "mark_limit": "M3/P3 profiles hold fitted M2 nuisance parameters fixed exactly",
+            "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841"
+          },
+          "likelihood_ratio_cutoff": 3.841,
+          "schema_version": "a10d-fit-profile-v1",
+          "support_delta_negative_log_likelihood": 1.9205
+        },
+        "profiles": {
+          "M2": {
+            "diagnostics": {
+              "frozen_objective": 1664.0626703560772,
+              "full_optimizer_message": "L-BFGS-B jac=3-point rel_step=6.0554544523933395e-06",
+              "full_reoptimization_improvement": 4.7975845518521965e-11,
+              "full_reoptimization_objective": 1664.0626703560292,
+              "material_improvement_tolerance": 0.0016650626703560772
+            },
+            "fit_kind": "conditional_landmark",
+            "frozen_objective": 1664.0626703560772,
+            "interval_scope": "working-model likelihood support; serial and measurement uncertainty are not calibrated",
+            "objective_scalar_difference": 1.3642420526593924e-12,
+            "profiles": {
+              "earlier_level": {
+                "at_lower_bound": false,
+                "at_upper_bound": false,
+                "estimate": 0.05716752895261309,
+                "likelihood_support_interval": {
+                  "lower": 0.027854262675299855,
+                  "lower_clipped_to_bound": false,
+                  "upper": 0.0864772189512398,
+                  "upper_clipped_to_bound": false
+                },
+                "parameter": "earlier_level",
+                "status": "profiled",
+                "working_bounds": [
+                  -5.0,
+                  5.0
+                ]
+              },
+              "intercept": {
+                "at_lower_bound": false,
+                "at_upper_bound": false,
+                "estimate": 3.5749116935853764,
+                "likelihood_support_interval": {
+                  "lower": 3.5484660067682072,
+                  "lower_clipped_to_bound": false,
+                  "upper": 3.601315061104755,
+                  "upper_clipped_to_bound": false
+                },
+                "parameter": "intercept",
+                "status": "profiled",
+                "working_bounds": [
+                  -2.0,
+                  8.0
+                ]
+              },
+              "log_sigma": {
+                "at_lower_bound": false,
+                "at_upper_bound": false,
+                "estimate": -1.281093473760832,
+                "likelihood_support_interval": {
+                  "lower": -1.3475452021047956,
+                  "lower_clipped_to_bound": false,
+                  "upper": -1.2116952494070417,
+                  "upper_clipped_to_bound": false
+                },
+                "parameter": "log_sigma",
+                "status": "profiled",
+                "working_bounds": [
+                  -4.0,
+                  2.0
+                ]
+              },
+              "previous_gap": {
+                "at_lower_bound": false,
+                "at_upper_bound": false,
+                "estimate": 0.12470923919220096,
+                "likelihood_support_interval": {
+                  "lower": 0.09563498754043705,
+                  "lower_clipped_to_bound": false,
+                  "upper": 0.15379660386581545,
+                  "upper_clipped_to_bound": false
+                },
+                "parameter": "previous_gap",
+                "status": "profiled",
+                "working_bounds": [
+                  -5.0,
+                  5.0
+                ]
+              }
+            },
+            "row_count": 436
+          },
+          "M3": {
+            "baseline_model": "M2",
+            "diagnostics": {
+              "frozen_objective": 1659.1629443079223,
+              "full_optimizer_message": "bounded_scalar xatol=1e-10; selected=interior",
+              "full_reoptimization_improvement": 4.547473508864641e-13,
+              "full_reoptimization_objective": 1659.1629443079219,
+              "material_improvement_tolerance": 0.0016601629443079222
+            },
+            "fit_kind": "fixed_m2_mark_offset",
+            "frozen_m2_nuisance": true,
+            "frozen_objective": 1659.1629443079223,
+            "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+            "objective_scalar_difference": 9.094947017729282e-13,
+            "profiles": {
+              "beta": {
+                "at_lower_bound": false,
+                "at_upper_bound": false,
+                "estimate": 0.042093430057006276,
+                "likelihood_support_interval": {
+                  "lower": 0.015740130439238942,
+                  "lower_clipped_to_bound": false,
+                  "upper": 0.06844792176766912,
+                  "upper_clipped_to_bound": false
+                },
+                "parameter": "beta",
+                "status": "profiled",
+                "working_bounds": [
+                  -5.0,
+                  5.0
+                ]
+              }
+            },
+            "row_count": 436
+          },
+          "P3": {
+            "baseline_model": "M2",
+            "diagnostics": {
+              "frozen_objective": 1660.044552245392,
+              "full_optimizer_message": "bounded_scalar xatol=1e-10; selected=interior",
+              "full_reoptimization_improvement": 0.0,
+              "full_reoptimization_objective": 1660.044552245392,
+              "material_improvement_tolerance": 0.001661044552245392
+            },
+            "fit_kind": "fixed_m2_mark_offset",
+            "frozen_m2_nuisance": true,
+            "frozen_objective": 1660.044552245392,
+            "interval_scope": "CONDITIONAL fixed-M2 likelihood-support interval; not a full nuisance-adjusted confidence interval; serial and measurement uncertainty are not calibrated",
+            "objective_scalar_difference": 0.0,
+            "profiles": {
+              "beta": {
+                "at_lower_bound": false,
+                "at_upper_bound": false,
+                "estimate": -0.03835774775743515,
+                "likelihood_support_interval": {
+                  "lower": -0.06488568898439437,
+                  "lower_clipped_to_bound": false,
+                  "upper": -0.011836959087848965,
+                  "upper_clipped_to_bound": false
+                },
+                "parameter": "beta",
+                "status": "profiled",
+                "working_bounds": [
+                  -5.0,
+                  5.0
+                ]
+              }
+            },
+            "row_count": 436
+          }
+        }
+      }
+    },
+    "calibration": {
+      "interpretation": "resolved-onset mid-CDF deciles are descriptive under outcome selection, not a uniformity test; coverage bounds retain interval and right censoring",
+      "models": {
+        "M0": {
+          "central_intervals": {
+            "0.5": {
+              "coverage_lower_bound": 0.4943310657596372,
+              "coverage_upper_bound": 0.5850340136054422,
+              "covered": 218,
+              "n": 441,
+              "not_covered": 183,
+              "undetermined": 40
+            },
+            "0.9": {
+              "coverage_lower_bound": 0.8752834467120182,
+              "coverage_upper_bound": 0.9410430839002267,
+              "covered": 386,
+              "n": 441,
+              "not_covered": 26,
+              "undetermined": 29
+            }
+          },
+          "resolved_onset_mid_cdf_deciles": [
+            61,
+            45,
+            54,
+            48,
+            51,
+            44,
+            53,
+            43,
+            21,
+            15
+          ],
+          "resolved_onsets": 435,
+          "right_censored": 6,
+          "scored": 441
+        },
+        "M2": {
+          "central_intervals": {
+            "0.5": {
+              "coverage_lower_bound": 0.5192743764172335,
+              "coverage_upper_bound": 0.6054421768707483,
+              "covered": 229,
+              "n": 441,
+              "not_covered": 174,
+              "undetermined": 38
+            },
+            "0.9": {
+              "coverage_lower_bound": 0.9183673469387755,
+              "coverage_upper_bound": 0.9682539682539683,
+              "covered": 405,
+              "n": 441,
+              "not_covered": 14,
+              "undetermined": 22
+            }
+          },
+          "resolved_onset_mid_cdf_deciles": [
+            34,
+            56,
+            48,
+            50,
+            50,
+            49,
+            56,
+            40,
+            38,
+            14
+          ],
+          "resolved_onsets": 435,
+          "right_censored": 6,
+          "scored": 441
+        },
+        "M3": {
+          "central_intervals": {
+            "0.5": {
+              "coverage_lower_bound": 0.546485260770975,
+              "coverage_upper_bound": 0.6167800453514739,
+              "covered": 241,
+              "n": 441,
+              "not_covered": 169,
+              "undetermined": 31
+            },
+            "0.9": {
+              "coverage_lower_bound": 0.9229024943310657,
+              "coverage_upper_bound": 0.9795918367346939,
+              "covered": 407,
+              "n": 441,
+              "not_covered": 9,
+              "undetermined": 25
+            }
+          },
+          "resolved_onset_mid_cdf_deciles": [
+            32,
+            54,
+            59,
+            35,
+            45,
+            65,
+            54,
+            32,
+            48,
+            11
+          ],
+          "resolved_onsets": 435,
+          "right_censored": 6,
+          "scored": 441
+        }
+      }
+    },
+    "era_split": {
+      "1960_1992": {
+        "blocks": 6,
+        "confirmed": true,
+        "estimate": 0.023983208669572265,
+        "interval": "one-sided 95% lower bound / two-sided 90% interval",
+        "lower": 0.00910883372629225,
+        "n": 261,
+        "origin": 2436934.5,
+        "se": 0.007381646584829533,
+        "upper": 0.03885758361285228,
+        "years": 6
+      },
+      "1993_2017": {
+        "blocks": 5,
+        "confirmed": false,
+        "estimate": 0.005731452263839645,
+        "interval": "one-sided 95% lower bound / two-sided 90% interval",
+        "lower": -0.010666564885628976,
+        "n": 180,
+        "origin": 2448988.5,
+        "se": 0.007691930421380693,
+        "upper": 0.02212946941330827,
+        "years": 6
+      }
+    },
+    "failures": [],
+    "interpretation": "all association/robustness/era/calibration outputs are secondary; none replaces the single primary test",
+    "inventory": {
+      "0": {
+        "evidence": {
+          "interval:onset": 51,
+          "right_censored:coverage": 2
+        },
+        "issued": 53,
+        "routes": {
+          "M0": {
+            "M0": 53
+          },
+          "M2": {
+            "M0": 3,
+            "M2": 50
+          },
+          "M3": {
+            "M0": 3,
+            "M3": 50
+          },
+          "P3": {
+            "M0": 3,
+            "M2": 50
+          }
+        },
+        "scored": 53
+      },
+      "1": {
+        "evidence": {
+          "interval:onset": 47,
+          "right_censored:coverage": 2
+        },
+        "issued": 49,
+        "routes": {
+          "M0": {
+            "M0": 49
+          },
+          "M2": {
+            "M0": 2,
+            "M2": 47
+          },
+          "M3": {
+            "M0": 2,
+            "M3": 47
+          },
+          "P3": {
+            "M0": 2,
+            "M2": 47
+          }
+        },
+        "scored": 49
+      },
+      "2": {
+        "evidence": {
+          "interval:onset": 49,
+          "right_censored:superseded": 1
+        },
+        "issued": 50,
+        "routes": {
+          "M0": {
+            "M0": 50
+          },
+          "M2": {
+            "M2": 50
+          },
+          "M3": {
+            "M3": 50
+          },
+          "P3": {
+            "M2": 50
+          }
+        },
+        "scored": 50
+      },
+      "3": {
+        "evidence": {
+          "interval:onset": 46
+        },
+        "issued": 46,
+        "routes": {
+          "M0": {
+            "M0": 46
+          },
+          "M2": {
+            "M2": 46
+          },
+          "M3": {
+            "M3": 46
+          },
+          "P3": {
+            "M2": 46
+          }
+        },
+        "scored": 46
+      },
+      "4": {
+        "evidence": {
+          "interval:onset": 43
+        },
+        "issued": 43,
+        "routes": {
+          "M0": {
+            "M0": 43
+          },
+          "M2": {
+            "M2": 43
+          },
+          "M3": {
+            "M3": 43
+          },
+          "P3": {
+            "M2": 43
+          }
+        },
+        "scored": 43
+      },
+      "5": {
+        "evidence": {
+          "interval:onset": 39
+        },
+        "issued": 39,
+        "routes": {
+          "M0": {
+            "M0": 39
+          },
+          "M2": {
+            "M2": 39
+          },
+          "M3": {
+            "M3": 39
+          },
+          "P3": {
+            "M2": 39
+          }
+        },
+        "scored": 39
+      },
+      "6": {
+        "evidence": {
+          "interval:onset": 43
+        },
+        "issued": 43,
+        "routes": {
+          "M0": {
+            "M0": 43
+          },
+          "M2": {
+            "M2": 43
+          },
+          "M3": {
+            "M3": 43
+          },
+          "P3": {
+            "M2": 43
+          }
+        },
+        "scored": 43
+      },
+      "7": {
+        "evidence": {
+          "interval:onset": 46
+        },
+        "issued": 46,
+        "routes": {
+          "M0": {
+            "M0": 46
+          },
+          "M2": {
+            "M2": 46
+          },
+          "M3": {
+            "M3": 46
+          },
+          "P3": {
+            "M2": 46
+          }
+        },
+        "scored": 46
+      },
+      "8": {
+        "evidence": {
+          "interval:onset": 41
+        },
+        "issued": 41,
+        "routes": {
+          "M0": {
+            "M0": 41
+          },
+          "M2": {
+            "M2": 41
+          },
+          "M3": {
+            "M3": 41
+          },
+          "P3": {
+            "M2": 41
+          }
+        },
+        "scored": 41
+      },
+      "9": {
+        "evidence": {
+          "interval:onset": 30,
+          "right_censored:record_end": 1
+        },
+        "issued": 31,
+        "routes": {
+          "M0": {
+            "M0": 31
+          },
+          "M2": {
+            "M2": 31
+          },
+          "M3": {
+            "M3": 31
+          },
+          "P3": {
+            "M2": 31
+          }
+        },
+        "scored": 31
+      }
+    },
+    "robustness": {
+      "delay_2": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.11673842634970204,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.06644154184019796,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.027437962830049078,
+          "upper": 0.16703531085920612,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.016493418890984147,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.004941513744756036,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.006301796763546394,
+          "upper": 0.028045324037212258,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.016493418890984147,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.004941513744756036,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.006301796763546394,
+          "upper": 0.028045324037212258,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "joint_placebo": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.11809923422431885,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.06589905407530568,
+          "n": 436,
+          "origin": 2436934.5,
+          "se": 0.028476248909211237,
+          "upper": 0.17029941437333201,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.01672311667488417,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.004897755987873174,
+          "n": 436,
+          "origin": 2436934.5,
+          "se": 0.006450972264908789,
+          "upper": 0.028548477361895162,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.01672311667488417,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.004897755987873174,
+          "n": 436,
+          "origin": 2436934.5,
+          "se": 0.006450972264908789,
+          "upper": 0.028548477361895162,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 436,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "primary": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.11676024063900912,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.06633472764149688,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.02750813225917518,
+          "upper": 0.16718575363652138,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.016533512177436503,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.00494771630959865,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.006320284834306242,
+          "upper": 0.028119308045274356,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.016533512177436503,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.00494771630959865,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.006320284834306242,
+          "upper": 0.028119308045274356,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "primary_three_year": {
+        "blocks": 20,
+        "confirmed": true,
+        "estimate": 0.016533512177436503,
+        "interval": "one-sided 95% lower bound / two-sided 90% interval",
+        "lower": 0.005851966898484906,
+        "n": 441,
+        "origin": 2436934.5,
+        "se": 0.006177400144037226,
+        "upper": 0.027215057456388102,
+        "years": 3
+      },
+      "q_only": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.09367188326201599,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.062478698956625764,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.017016509866738187,
+          "upper": 0.12486506756740622,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.01699147684511763,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0053676984733375815,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.006341005054684132,
+          "upper": 0.02861525521689768,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.01699147684511763,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0053676984733375815,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.006341005054684132,
+          "upper": 0.02861525521689768,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "type_within": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.11676024063900912,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.06633472764149688,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.02750813225917518,
+          "upper": 0.16718575363652138,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.002478268090079619,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.002195506222485899,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.0025496379569986865,
+          "upper": 0.007152042402645137,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.002478268090079619,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.002195506222485899,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.0025496379569986865,
+          "upper": 0.007152042402645137,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "uniform_end": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.11635261073967482,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.06603373735574547,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.027449958203620194,
+          "upper": 0.16667148412360416,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.0165758067697772,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.00444547865427204,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.006617338135260407,
+          "upper": 0.028706134885282356,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": true,
+          "estimate": 0.0165758067697772,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.00444547865427204,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.006617338135260407,
+          "upper": 0.028706134885282356,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 441,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      }
+    },
+    "standardized_features": {
+      "features": {
+        "L": {
+          "mean": -0.3720006282322958,
+          "n": 436,
+          "sd": 0.9702978241570099
+        },
+        "q": {
+          "mean": -0.2517899923998665,
+          "n": 436,
+          "sd": 0.8870945080483421
+        },
+        "x": {
+          "mean": -0.2378809665063406,
+          "n": 436,
+          "sd": 1.0226250341404663
+        }
+      },
+      "missing_L_imputed_zero": 0,
+      "reference": "training transforms are frozen; zero/one reference applies to the original observed training predictor population, not necessarily to a selected/censored evaluation subset"
+    }
+  },
+  "source_freeze": "5e39aeb772c427ef29671c1a9c80b22c05519b58"
+}

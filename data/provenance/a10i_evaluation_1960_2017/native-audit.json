@@ -1,0 +1,44 @@
+{
+  "run": "outputs/a10h_live_repair_5e39aeb",
+  "run_receipt_sha256": "d341824530198f7b9d5d167ea92f526a98599a664a9d7130126393ad38de14b9",
+  "pre_1960_context": {
+    "read_for_prefix_context": true,
+    "evaluation_acquisition_namespace_separate": true,
+    "original_bytes_match_head_manifest": true,
+    "files_checked": 12,
+    "manifest_rows_unchanged_in_git_diff": true
+  },
+  "evaluation_counts_excluding_pre_1960_context": {
+    "validated_leaves": 63,
+    "native_rows_after_leaf_deduplication": 500479,
+    "analysis_rows_band_Vis_validation_V_only": 249356,
+    "duplicate_obsids_removed": 81
+  },
+  "cap_parent_jd_only_audit": {
+    "parents_checked": 4,
+    "all_parent_jd_rows_within_requested_inclusive_bounds_and_before_stop": true,
+    "parents": [
+      {
+        "requested_bounds_pass": true,
+        "jd_rows_outside_bounds": 0,
+        "requested_end_before_stop": true
+      },
+      {
+        "requested_bounds_pass": true,
+        "jd_rows_outside_bounds": 0,
+        "requested_end_before_stop": true
+      },
+      {
+        "requested_bounds_pass": true,
+        "jd_rows_outside_bounds": 0,
+        "requested_end_before_stop": true
+      },
+      {
+        "requested_bounds_pass": true,
+        "jd_rows_outside_bounds": 0,
+        "requested_end_before_stop": true
+      }
+    ]
+  },
+  "cutoff": 2458119.5
+}

@@ -406,3 +406,21 @@ cites the original D025 approval, D026 repair, original failed run and consumed
 status. No real magnitude, outcome, event count, coverage summary, fitted
 coefficient or score was used to choose the change. The next command is a
 post-access format-repair continuation, not a renewed untouched first look.
+
+
+### A10i completed result and first outcome inspection
+
+The repaired run completes with acquisition 13:00:33 UTC, native verification
+13:00:35 UTC, exact candidate/reference concordance 13:06:58.627 UTC, primary
+written 13:06:58.641 UTC, and secondary completion 13:07:02 UTC on 8 November 2026.
+Only after the completed receipt/primary-exists check did Codex and delegates
+read actual primary, secondary and provenance summaries. The primary gain is
+now known: +0.01653 nats, 90% interval [0.00495,0.02812], 441 issuances; the
+predeclared criterion is met. No 2018+ data were requested or analyzed.
+
+Independent audits verify 2,641 scores, all 120 source hashes, source/time
+bounds (also capped-parent JD columns), and unchanged pre-1960 context/cache.
+No source/model/parameter change followed result inspection. D027 preserves
+the narrow predictive claim, secondary era/type limitations, and consumed
+post-access-repair status. Current live authority is marked completed;
+execution authority remains at d7151e0. Future 2018+ access remains closed.
