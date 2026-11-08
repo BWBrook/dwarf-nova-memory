@@ -375,3 +375,13 @@ qualification vectors. X4 scoring follows only if both predictive blocks
 and all diversity gates pass. No second tuning grid is allowed this version.
 Calibration, qualification and recovery have not run at this entry.
 No reserved data or real duration–following-gap association is accessed.
+
+Source/calibration update: reviewed source `036c619` is public; its tests
+and gitleaks CI pass. Clean-source preparation reproduces the exact 334
+features and 398 profiles. All ten configurations completed their 16
+real-sized records (480 era histories). Minimum fixed-scale objectives
+select unchanged `v2-00` (31.94) and `v4-05` (62.09). These are calibration
+objectives, not predictive p-values or X4 results. Every attempt is hashed,
+with raw feature vectors and compact summaries in
+`data/simulations/a04i_calibration_20261108.json`. The selected configs and
+input/calibration chain are frozen before fresh qualification.

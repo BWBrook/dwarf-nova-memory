@@ -1,0 +1,4096 @@
+{
+  "attempts": [
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v2-00",
+        "family": "v2",
+        "noise_multiplier": 0.95,
+        "pair_id": "v2-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_sd": 0.2,
+          "decline_rate_median": 0.4,
+          "low_amplitude_probability": 0.05,
+          "low_peak_magnitude_max": 9.5,
+          "low_peak_magnitude_min": 9.0,
+          "minimum_decline_rate": 0.12,
+          "minimum_rise_rate": 0.15,
+          "peak_magnitude_max": 8.8,
+          "peak_magnitude_min": 8.0,
+          "quiet_magnitude": 11.8,
+          "reference_threshold": 10.0,
+          "rise_rate_log_sd": 0.65,
+          "rise_rate_median": 0.95
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2247,
+            "median": 15,
+            "share_le_2": 0.019581664441477527
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2305,
+            "median": 16,
+            "share_le_2": 0.10368763557483732
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1159,
+            "median": 13,
+            "share_le_2": 0.10612597066436583
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.8039524099057711,
+        "below_fit_fraction": 0.734523889966943,
+        "core_level_mean": 8.637912610975535,
+        "duration_median": 10.251771624018147,
+        "end_residual_sd_median": 0.22555210061957515,
+        "end_slope_median": 0.3357931437958748,
+        "episodes_per_year": 6.63911353804452,
+        "log_below_above_slope_ratio": -0.08965457919134316,
+        "rho_duration_core_level": -0.544980818183657,
+        "rho_duration_end_slope": 0.06828425687504858,
+        "rho_duration_rise_slope": 0.07481326872851415,
+        "rise_slope_median": 0.7360804849217815
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.02764665868728104,
+        "below_fit_fraction": 0.019913594647793662,
+        "core_level_mean": 0.02065860856984315,
+        "duration_median": 0.47442319522648757,
+        "end_residual_sd_median": 0.004280455529918984,
+        "end_slope_median": 0.0043130669122777065,
+        "episodes_per_year": 0.12187408775518271,
+        "log_below_above_slope_ratio": 0.047080425860211994,
+        "rho_duration_core_level": 0.04477248019690128,
+        "rho_duration_end_slope": 0.05804013104569427,
+        "rho_duration_rise_slope": 0.05878193455359516,
+        "rise_slope_median": 0.03279620382657955
+      },
+      "objective": 31.939621047009997,
+      "private_attempt_sha256": "289a3923aedb65c9d95e49f42189eed9beb98dc5d27966010dd1eb34a96884e9",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.8100890207715133,
+            "below_fit_fraction": 0.7181008902077152,
+            "core_level_mean": 8.627846975088968,
+            "duration_median": 9.889506423613057,
+            "end_residual_sd_median": 0.2281817596971603,
+            "end_slope_median": 0.3363146408858867,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": -0.08536211502851258,
+            "rho_duration_core_level": -0.5738359412812323,
+            "rho_duration_end_slope": 0.01883324787773644,
+            "rho_duration_rise_slope": 0.054545234702946054,
+            "rise_slope_median": 0.7115636092572268
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.8102409638554217,
+            "below_fit_fraction": 0.7620481927710844,
+            "core_level_mean": 8.670744680851064,
+            "duration_median": 10.24606609379407,
+            "end_residual_sd_median": 0.23409102960370287,
+            "end_slope_median": 0.33628591758947946,
+            "episodes_per_year": 6.640363606494538,
+            "log_below_above_slope_ratio": -0.10510777886617258,
+            "rho_duration_core_level": -0.5596191409340605,
+            "rho_duration_end_slope": 0.12602494994609578,
+            "rho_duration_rise_slope": 0.002064108403915435,
+            "rise_slope_median": 0.7423693243952995
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.8237082066869301,
+            "below_fit_fraction": 0.7811550151975684,
+            "core_level_mean": 8.610751748251749,
+            "duration_median": 11.12118372763507,
+            "end_residual_sd_median": 0.22873079967674717,
+            "end_slope_median": 0.33424238232875847,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": -0.053777020776025294,
+            "rho_duration_core_level": -0.508247784131781,
+            "rho_duration_end_slope": 0.029801618731758947,
+            "rho_duration_rise_slope": -0.022712087842869065,
+            "rise_slope_median": 0.7123420986838693
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.7934131736526946,
+            "below_fit_fraction": 0.7425149700598802,
+            "core_level_mean": 8.606998239436619,
+            "duration_median": 10.377430653315969,
+            "end_residual_sd_median": 0.22266016365084057,
+            "end_slope_median": 0.3382532673610511,
+            "episodes_per_year": 6.680365796895107,
+            "log_below_above_slope_ratio": -0.07931827200843213,
+            "rho_duration_core_level": -0.5326965885168301,
+            "rho_duration_end_slope": -0.010552444848653718,
+            "rho_duration_rise_slope": 0.05160897742885579,
+            "rise_slope_median": 0.7471313586203905
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.8140243902439024,
+            "below_fit_fraction": 0.7286585365853658,
+            "core_level_mean": 8.660235507246377,
+            "duration_median": 9.622633986058645,
+            "end_residual_sd_median": 0.22497183522307368,
+            "end_slope_median": 0.34235238952110636,
+            "episodes_per_year": 6.560359225693399,
+            "log_below_above_slope_ratio": -0.0785331137939684,
+            "rho_duration_core_level": -0.523655362622141,
+            "rho_duration_end_slope": 0.11861735116329172,
+            "rho_duration_rise_slope": 0.14811841550779603,
+            "rise_slope_median": 0.7639257339927563
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.8024316109422492,
+            "below_fit_fraction": 0.7446808510638298,
+            "core_level_mean": 8.611977351916376,
+            "duration_median": 10.008004517760128,
+            "end_residual_sd_median": 0.22481821122736736,
+            "end_slope_median": 0.3407303028226297,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": -0.0720144549112026,
+            "rho_duration_core_level": -0.5065264734136853,
+            "rho_duration_end_slope": 0.10315974913290349,
+            "rho_duration_rise_slope": 0.0016713144098770983,
+            "rise_slope_median": 0.7803886037250362
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.78419452887538,
+            "below_fit_fraction": 0.7173252279635258,
+            "core_level_mean": 8.632175090252707,
+            "duration_median": 10.205157377757132,
+            "end_residual_sd_median": 0.22542971009741464,
+            "end_slope_median": 0.33712047834485903,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": -0.10247146375224302,
+            "rho_duration_core_level": -0.5338192057082987,
+            "rho_duration_end_slope": 0.017288340022569702,
+            "rho_duration_rise_slope": 0.09361845051500224,
+            "rise_slope_median": 0.6911904936392637
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.8042813455657493,
+            "below_fit_fraction": 0.7431192660550459,
+            "core_level_mean": 8.635203180212015,
+            "duration_median": 10.107340149115771,
+            "end_residual_sd_median": 0.21765655730749278,
+            "end_slope_median": 0.33370977847578553,
+            "episodes_per_year": 6.540358130493114,
+            "log_below_above_slope_ratio": -0.14328387660075473,
+            "rho_duration_core_level": -0.5995748042406678,
+            "rho_duration_end_slope": 0.00909894666185308,
+            "rho_duration_rise_slope": 0.11841274776525457,
+            "rise_slope_median": 0.7076714038476983
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.8108108108108109,
+            "below_fit_fraction": 0.7237237237237237,
+            "core_level_mean": 8.639381720430107,
+            "duration_median": 9.999783450737596,
+            "end_residual_sd_median": 0.22726524600830467,
+            "end_slope_median": 0.32746678404868024,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": -0.14914313989662376,
+            "rho_duration_core_level": -0.5996400824503936,
+            "rho_duration_end_slope": 0.025446265571498802,
+            "rho_duration_rise_slope": 0.1569342605096104,
+            "rise_slope_median": 0.7874521699193677
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.7477477477477478,
+            "below_fit_fraction": 0.7147147147147147,
+            "core_level_mean": 8.653125,
+            "duration_median": 9.910498324083164,
+            "end_residual_sd_median": 0.22300248036569445,
+            "end_slope_median": 0.33687445014619366,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": -0.14387529117882986,
+            "rho_duration_core_level": -0.5808747574933726,
+            "rho_duration_end_slope": 0.11865322275594746,
+            "rho_duration_rise_slope": 0.11229874012385223,
+            "rise_slope_median": 0.6878577928721403
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.7719298245614035,
+            "below_fit_fraction": 0.7105263157894737,
+            "core_level_mean": 8.634882671480144,
+            "duration_median": 9.603312585852109,
+            "end_residual_sd_median": 0.22135225432232244,
+            "end_slope_median": 0.3347887359991997,
+            "episodes_per_year": 6.840374558497386,
+            "log_below_above_slope_ratio": -0.10697753841023797,
+            "rho_duration_core_level": -0.4377416506640582,
+            "rho_duration_end_slope": -0.0067962946709964655,
+            "rho_duration_rise_slope": 0.05032526671870934,
+            "rise_slope_median": 0.7012688673516778
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.8312883435582822,
+            "below_fit_fraction": 0.7515337423312883,
+            "core_level_mean": 8.633259717314488,
+            "duration_median": 10.017404245678335,
+            "end_residual_sd_median": 0.22503980303843948,
+            "end_slope_median": 0.33866616111803344,
+            "episodes_per_year": 6.52035703529283,
+            "log_below_above_slope_ratio": -0.17325288339280026,
+            "rho_duration_core_level": -0.5239685638926999,
+            "rho_duration_end_slope": 0.05205340004485388,
+            "rho_duration_rise_slope": 0.06351863139907868,
+            "rise_slope_median": 0.7511398367815967
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.7784615384615384,
+            "below_fit_fraction": 0.7384615384615385,
+            "core_level_mean": 8.675557620817845,
+            "duration_median": 10.296459648758173,
+            "end_residual_sd_median": 0.21972215776174714,
+            "end_slope_median": 0.3365329496557392,
+            "episodes_per_year": 6.500355940092545,
+            "log_below_above_slope_ratio": -0.05879262215753372,
+            "rho_duration_core_level": -0.6199565158527078,
+            "rho_duration_end_slope": 0.11671133420253814,
+            "rho_duration_rise_slope": 0.13778968059713953,
+            "rise_slope_median": 0.7230791489768601
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.8126888217522659,
+            "below_fit_fraction": 0.7311178247734139,
+            "core_level_mean": 8.618070175438596,
+            "duration_median": 10.932800948387012,
+            "end_residual_sd_median": 0.23047642044415528,
+            "end_slope_median": 0.32584033681043206,
+            "episodes_per_year": 6.620362511294253,
+            "log_below_above_slope_ratio": -0.04892531055002312,
+            "rho_duration_core_level": -0.5225950857662284,
+            "rho_duration_end_slope": 0.1452596553874542,
+            "rho_duration_rise_slope": -0.0034029917480830566,
+            "rise_slope_median": 0.7368302077669026
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.8719512195121951,
+            "below_fit_fraction": 0.7378048780487805,
+            "core_level_mean": 8.644257950530035,
+            "duration_median": 11.136085683945566,
+            "end_residual_sd_median": 0.22468804267181117,
+            "end_slope_median": 0.33398593702844953,
+            "episodes_per_year": 6.560359225693399,
+            "log_below_above_slope_ratio": 0.006983546522472292,
+            "rho_duration_core_level": -0.5407791899904271,
+            "rho_duration_end_slope": 0.16133061524099798,
+            "rho_duration_rise_slope": 0.13518826514865745,
+            "rise_slope_median": 0.7867716355289915
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.7959770114942529,
+            "below_fit_fraction": 0.7068965517241379,
+            "core_level_mean": 8.652134146341464,
+            "duration_median": 10.554678167798556,
+            "end_residual_sd_median": 0.23074713881692815,
+            "end_slope_median": 0.3395257885977133,
+            "episodes_per_year": 6.960381129699094,
+            "log_below_above_slope_ratio": -0.04062193226060287,
+            "rho_duration_core_level": -0.5561619439799274,
+            "rho_duration_end_slope": 0.06761815278092771,
+            "rho_duration_rise_slope": 0.09703328601648366,
+            "rise_slope_median": 0.7463054733894261
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-00",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.333,
+          "peak_duration_coupling": -0.045,
+          "peak_level": 8.32,
+          "peak_scatter": 0.22,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.667
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2232,
+            "median": 15.0,
+            "share_le_2": 0.029121863799283155
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2302,
+            "median": 15.0,
+            "share_le_2": 0.09687228496959166
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1143,
+            "median": 13,
+            "share_le_2": 0.11023622047244094
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.7888555711280841,
+        "below_fit_fraction": 0.7098624576931546,
+        "core_level_mean": 8.638851898591358,
+        "duration_median": 9.962375289578631,
+        "end_residual_sd_median": 0.22729189619630322,
+        "end_slope_median": 0.29647878283621926,
+        "episodes_per_year": 6.631613127344414,
+        "log_below_above_slope_ratio": 0.0999347726236322,
+        "rho_duration_core_level": -0.7269922936555546,
+        "rho_duration_end_slope": 0.07469699276424213,
+        "rho_duration_rise_slope": 0.02646244357466548,
+        "rise_slope_median": 0.5588669747854341
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.014454912290364883,
+        "below_fit_fraction": 0.023346891200084794,
+        "core_level_mean": 0.017904539894687942,
+        "duration_median": 0.4493825456172234,
+        "end_residual_sd_median": 0.006662973336063938,
+        "end_slope_median": 0.005797627820894223,
+        "episodes_per_year": 0.15353907745897996,
+        "log_below_above_slope_ratio": 0.0481212380134798,
+        "rho_duration_core_level": 0.028654884711202925,
+        "rho_duration_end_slope": 0.06025913973378573,
+        "rho_duration_rise_slope": 0.05942143343880516,
+        "rise_slope_median": 0.02634394620834397
+      },
+      "objective": 91.26961154611507,
+      "private_attempt_sha256": "2cfbd2761141beb909168e9a5aa9e95365f46e140918ac9ddd1278ef21d75674",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.7817109144542773,
+            "below_fit_fraction": 0.7286135693215339,
+            "core_level_mean": 8.654787234042553,
+            "duration_median": 9.553720337338746,
+            "end_residual_sd_median": 0.22190599317234486,
+            "end_slope_median": 0.3035857720178273,
+            "episodes_per_year": 6.780371272896532,
+            "log_below_above_slope_ratio": 0.10352784203322658,
+            "rho_duration_core_level": -0.6867093402349669,
+            "rho_duration_end_slope": 0.009487479718158533,
+            "rho_duration_rise_slope": 0.029065774144951293,
+            "rise_slope_median": 0.5453794822887369
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.7734138972809668,
+            "below_fit_fraction": 0.7613293051359517,
+            "core_level_mean": 8.651177536231884,
+            "duration_median": 9.681804453255609,
+            "end_residual_sd_median": 0.2195531354368455,
+            "end_slope_median": 0.29302427596055236,
+            "episodes_per_year": 6.620362511294253,
+            "log_below_above_slope_ratio": 0.18954726221197438,
+            "rho_duration_core_level": -0.7561957604044923,
+            "rho_duration_end_slope": 0.08941857351545125,
+            "rho_duration_rise_slope": 0.06510344231958717,
+            "rise_slope_median": 0.5368233112480861
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.7846153846153846,
+            "below_fit_fraction": 0.6923076923076923,
+            "core_level_mean": 8.626523297491039,
+            "duration_median": 9.669690920272842,
+            "end_residual_sd_median": 0.23327936291175097,
+            "end_slope_median": 0.29620843410351766,
+            "episodes_per_year": 6.500355940092545,
+            "log_below_above_slope_ratio": 0.03782089846977408,
+            "rho_duration_core_level": -0.7010143055561018,
+            "rho_duration_end_slope": 0.07169355584882323,
+            "rho_duration_rise_slope": 0.0021326808693230837,
+            "rise_slope_median": 0.5818572906432573
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.7706422018348624,
+            "below_fit_fraction": 0.709480122324159,
+            "core_level_mean": 8.631318681318682,
+            "duration_median": 10.01167247700505,
+            "end_residual_sd_median": 0.22333282232963717,
+            "end_slope_median": 0.287915330479634,
+            "episodes_per_year": 6.540358130493114,
+            "log_below_above_slope_ratio": 0.1198799589793285,
+            "rho_duration_core_level": -0.6979404472503808,
+            "rho_duration_end_slope": 0.04464087099127713,
+            "rho_duration_rise_slope": 0.08074441907522627,
+            "rise_slope_median": 0.5950065068844813
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.7874251497005988,
+            "below_fit_fraction": 0.7095808383233533,
+            "core_level_mean": 8.647491039426523,
+            "duration_median": 9.453061918378808,
+            "end_residual_sd_median": 0.22846460007267672,
+            "end_slope_median": 0.2870512611871317,
+            "episodes_per_year": 6.680365796895107,
+            "log_below_above_slope_ratio": 0.07410695976928194,
+            "rho_duration_core_level": -0.7244302221511507,
+            "rho_duration_end_slope": -0.016680629784775386,
+            "rho_duration_rise_slope": -0.0019542137435217895,
+            "rise_slope_median": 0.5858292512885843
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.7964601769911505,
+            "below_fit_fraction": 0.7404129793510325,
+            "core_level_mean": 8.632671480144404,
+            "duration_median": 9.413917729165405,
+            "end_residual_sd_median": 0.23520160371361476,
+            "end_slope_median": 0.296131559408069,
+            "episodes_per_year": 6.780371272896532,
+            "log_below_above_slope_ratio": 0.08181181800408946,
+            "rho_duration_core_level": -0.7697669328310487,
+            "rho_duration_end_slope": 0.1564668380767363,
+            "rho_duration_rise_slope": 0.10675809260011943,
+            "rise_slope_median": 0.5032702699597273
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.7854984894259819,
+            "below_fit_fraction": 0.6978851963746223,
+            "core_level_mean": 8.628429602888087,
+            "duration_median": 10.217208666959777,
+            "end_residual_sd_median": 0.2223900000000005,
+            "end_slope_median": 0.30684181218057016,
+            "episodes_per_year": 6.620362511294253,
+            "log_below_above_slope_ratio": 0.141304760381,
+            "rho_duration_core_level": -0.7026097713360893,
+            "rho_duration_end_slope": 0.08616068092915208,
+            "rho_duration_rise_slope": 0.01816526801534298,
+            "rise_slope_median": 0.5684904021893749
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.7820895522388059,
+            "below_fit_fraction": 0.6805970149253732,
+            "core_level_mean": 8.671863957597173,
+            "duration_median": 10.091041882522404,
+            "end_residual_sd_median": 0.2223900000000005,
+            "end_slope_median": 0.30454802606344766,
+            "episodes_per_year": 6.700366892095392,
+            "log_below_above_slope_ratio": 0.06450033594212706,
+            "rho_duration_core_level": -0.7452646978834069,
+            "rho_duration_end_slope": 0.07527373122937757,
+            "rho_duration_rise_slope": 0.0765331678828793,
+            "rise_slope_median": 0.5368378998244006
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.8148148148148148,
+            "below_fit_fraction": 0.6944444444444444,
+            "core_level_mean": 8.65985576923077,
+            "duration_median": 9.38532651879359,
+            "end_residual_sd_median": 0.23136177944686576,
+            "end_slope_median": 0.2925335422781263,
+            "episodes_per_year": 6.48035484489226,
+            "log_below_above_slope_ratio": 0.08913966640072885,
+            "rho_duration_core_level": -0.7297749286991955,
+            "rho_duration_end_slope": 0.07154989034183665,
+            "rho_duration_rise_slope": 0.01795082523783099,
+            "rise_slope_median": 0.5870746726914537
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.774294670846395,
+            "below_fit_fraction": 0.7053291536050157,
+            "core_level_mean": 8.604075091575092,
+            "duration_median": 11.067531854147092,
+            "end_residual_sd_median": 0.2258246661997939,
+            "end_slope_median": 0.29737633231521143,
+            "episodes_per_year": 6.380349368890836,
+            "log_below_above_slope_ratio": 0.13192009293196758,
+            "rho_duration_core_level": -0.6772495147544322,
+            "rho_duration_end_slope": 0.1260334182891659,
+            "rho_duration_rise_slope": 0.10250886876245485,
+            "rise_slope_median": 0.5552036058852012
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.782991202346041,
+            "below_fit_fraction": 0.7126099706744868,
+            "core_level_mean": 8.629634353741496,
+            "duration_median": 10.03676724806428,
+            "end_residual_sd_median": 0.22643368878880266,
+            "end_slope_median": 0.3036537717263168,
+            "episodes_per_year": 6.820373463297101,
+            "log_below_above_slope_ratio": 0.04591827018636067,
+            "rho_duration_core_level": -0.7518561966991975,
+            "rho_duration_end_slope": 0.09105146607883201,
+            "rho_duration_rise_slope": 0.014224912463092012,
+            "rise_slope_median": 0.5857913501626446
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.7706422018348624,
+            "below_fit_fraction": 0.6972477064220184,
+            "core_level_mean": 8.626003649635036,
+            "duration_median": 10.359245098661631,
+            "end_residual_sd_median": 0.2187868240952942,
+            "end_slope_median": 0.29138564571133385,
+            "episodes_per_year": 6.540358130493114,
+            "log_below_above_slope_ratio": 0.14071073054400665,
+            "rho_duration_core_level": -0.7355620932734024,
+            "rho_duration_end_slope": -0.01794790570396189,
+            "rho_duration_rise_slope": 0.08485751042844333,
+            "rise_slope_median": 0.5720496338132732
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.7936046511627907,
+            "below_fit_fraction": 0.6656976744186046,
+            "core_level_mean": 8.66296928327645,
+            "duration_median": 9.954814218101092,
+            "end_residual_sd_median": 0.22400166790885373,
+            "end_slope_median": 0.29557802647182896,
+            "episodes_per_year": 6.880376748897955,
+            "log_below_above_slope_ratio": 0.1882220761344104,
+            "rho_duration_core_level": -0.7241170916066176,
+            "rho_duration_end_slope": 0.07466173736859595,
+            "rho_duration_rise_slope": 0.01104396660935662,
+            "rise_slope_median": 0.5498951964204666
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.8117647058823529,
+            "below_fit_fraction": 0.7323529411764705,
+            "core_level_mean": 8.638310580204777,
+            "duration_median": 9.859426868497394,
+            "end_residual_sd_median": 0.22684626369042216,
+            "end_slope_median": 0.2935402352265366,
+            "episodes_per_year": 6.8003723680968164,
+            "log_below_above_slope_ratio": 0.08498076865358302,
+            "rho_duration_core_level": -0.7133967425929671,
+            "rho_duration_end_slope": 0.051389488409190505,
+            "rho_duration_rise_slope": -0.08266394558251289,
+            "rise_slope_median": 0.5556364038973312
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.80625,
+            "below_fit_fraction": 0.715625,
+            "core_level_mean": 8.637633928571429,
+            "duration_median": 10.505540843936615,
+            "end_residual_sd_median": 0.24400494703207287,
+            "end_slope_median": 0.2959782762097539,
+            "episodes_per_year": 6.400350464091121,
+            "log_below_above_slope_ratio": 0.040783485415823155,
+            "rho_duration_core_level": -0.7695785736071695,
+            "rho_duration_end_slope": 0.22188713221016218,
+            "rho_duration_rise_slope": -0.09888556684017143,
+            "rise_slope_median": 0.5648179317442736
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.8054711246200608,
+            "below_fit_fraction": 0.7142857142857143,
+            "core_level_mean": 8.618884892086331,
+            "duration_median": 10.137233598157763,
+            "end_residual_sd_median": 0.23289298434187522,
+            "end_slope_median": 0.29830822403965007,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": 0.06478143592043295,
+            "rho_duration_core_level": -0.7464100796082555,
+            "rho_duration_end_slope": 0.06006555670985201,
+            "rho_duration_rise_slope": -0.0021861050477535266,
+            "rise_slope_median": 0.5179083876256532
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-01",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.333,
+          "peak_duration_coupling": -0.055,
+          "peak_level": 8.37,
+          "peak_scatter": 0.25,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.667
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2226,
+            "median": 14.0,
+            "share_le_2": 0.02605570530098832
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2301,
+            "median": 15,
+            "share_le_2": 0.09908735332464146
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1142,
+            "median": 12.0,
+            "share_le_2": 0.10157618213660245
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.7813541104376611,
+        "below_fit_fraction": 0.7112871896915286,
+        "core_level_mean": 8.65641975295201,
+        "duration_median": 10.041218947015295,
+        "end_residual_sd_median": 0.22646247126785177,
+        "end_slope_median": 0.2965210879444003,
+        "episodes_per_year": 6.640363606494538,
+        "log_below_above_slope_ratio": 0.10357994866022643,
+        "rho_duration_core_level": -0.7334869833470097,
+        "rho_duration_end_slope": 0.06839979043517577,
+        "rho_duration_rise_slope": 0.03510172708236341,
+        "rise_slope_median": 0.5715816624811212
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.017193341652615438,
+        "below_fit_fraction": 0.023033016386759905,
+        "core_level_mean": 0.022416961098539235,
+        "duration_median": 0.4191856001586724,
+        "end_residual_sd_median": 0.0059720398939644365,
+        "end_slope_median": 0.005711709851991674,
+        "episodes_per_year": 0.16067408156806268,
+        "log_below_above_slope_ratio": 0.03660867794211657,
+        "rho_duration_core_level": 0.02310833072666478,
+        "rho_duration_end_slope": 0.048697179417946365,
+        "rho_duration_rise_slope": 0.06390262534150398,
+        "rise_slope_median": 0.02717846469820266
+      },
+      "objective": 87.25831651088028,
+      "private_attempt_sha256": "86ef3f2a6108e68c82ef38bea3b23a455213e1b6018b687d4528d0bf079ebc10",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.7667638483965015,
+            "below_fit_fraction": 0.7259475218658892,
+            "core_level_mean": 8.674454545454546,
+            "duration_median": 9.406509160296991,
+            "end_residual_sd_median": 0.222389999924394,
+            "end_slope_median": 0.30192143054119447,
+            "episodes_per_year": 6.8603756536976706,
+            "log_below_above_slope_ratio": 0.12959871297921702,
+            "rho_duration_core_level": -0.7172471803200382,
+            "rho_duration_end_slope": 0.03266168054516361,
+            "rho_duration_rise_slope": 0.007040097949188858,
+            "rise_slope_median": 0.5773593283602252
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.7636363636363637,
+            "below_fit_fraction": 0.7393939393939394,
+            "core_level_mean": 8.6640625,
+            "duration_median": 9.945344457635656,
+            "end_residual_sd_median": 0.22044029862458886,
+            "end_slope_median": 0.2862788566661212,
+            "episodes_per_year": 6.6003614160939685,
+            "log_below_above_slope_ratio": 0.11657113712220991,
+            "rho_duration_core_level": -0.7555541224373621,
+            "rho_duration_end_slope": 0.16999892569974134,
+            "rho_duration_rise_slope": 0.12486524664510613,
+            "rise_slope_median": 0.5798682738020537
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.7920489296636085,
+            "below_fit_fraction": 0.7033639143730887,
+            "core_level_mean": 8.646326164874552,
+            "duration_median": 9.694600721588358,
+            "end_residual_sd_median": 0.22766814110377023,
+            "end_slope_median": 0.29527983112495926,
+            "episodes_per_year": 6.540358130493114,
+            "log_below_above_slope_ratio": 0.07502451270483988,
+            "rho_duration_core_level": -0.7199232512001491,
+            "rho_duration_end_slope": 0.01793541098119667,
+            "rho_duration_rise_slope": 0.08750659259519708,
+            "rise_slope_median": 0.5744233702382185
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.764525993883792,
+            "below_fit_fraction": 0.7003058103975535,
+            "core_level_mean": 8.663858695652173,
+            "duration_median": 10.331248563714325,
+            "end_residual_sd_median": 0.23824005002137036,
+            "end_slope_median": 0.29962115745755624,
+            "episodes_per_year": 6.540358130493114,
+            "log_below_above_slope_ratio": 0.11428326795775678,
+            "rho_duration_core_level": -0.730009006755388,
+            "rho_duration_end_slope": 0.07410245376347072,
+            "rho_duration_rise_slope": -0.018336133877439046,
+            "rise_slope_median": 0.621390223176785
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.7831325301204819,
+            "below_fit_fraction": 0.6957831325301205,
+            "core_level_mean": 8.680300353356891,
+            "duration_median": 9.824437807314098,
+            "end_residual_sd_median": 0.22307492660591313,
+            "end_slope_median": 0.2934035514771446,
+            "episodes_per_year": 6.640363606494538,
+            "log_below_above_slope_ratio": 0.06447582533012981,
+            "rho_duration_core_level": -0.744186997094071,
+            "rho_duration_end_slope": 0.05720293707661673,
+            "rho_duration_rise_slope": -0.03278427512737379,
+            "rise_slope_median": 0.5902689401624542
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.8017751479289941,
+            "below_fit_fraction": 0.757396449704142,
+            "core_level_mean": 8.653533568904594,
+            "duration_median": 9.72333731141407,
+            "end_residual_sd_median": 0.21738012701880172,
+            "end_slope_median": 0.292987355357731,
+            "episodes_per_year": 6.760370177696246,
+            "log_below_above_slope_ratio": 0.170166872230456,
+            "rho_duration_core_level": -0.7936085927430471,
+            "rho_duration_end_slope": 0.14545738197024952,
+            "rho_duration_rise_slope": 0.08919875861595968,
+            "rise_slope_median": 0.5409145626269977
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.7627627627627628,
+            "below_fit_fraction": 0.7267267267267268,
+            "core_level_mean": 8.637271062271063,
+            "duration_median": 10.312939939787611,
+            "end_residual_sd_median": 0.22876373337854364,
+            "end_slope_median": 0.3066220614023514,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.17469955673658874,
+            "rho_duration_core_level": -0.7148586286817425,
+            "rho_duration_end_slope": 0.10099560179419925,
+            "rho_duration_rise_slope": 0.1602565955507132,
+            "rise_slope_median": 0.5565386532504619
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.7717717717717718,
+            "below_fit_fraction": 0.6846846846846847,
+            "core_level_mean": 8.686613475177305,
+            "duration_median": 10.138782682828605,
+            "end_residual_sd_median": 0.22346870947821057,
+            "end_slope_median": 0.30493678846102307,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.09429281637677073,
+            "rho_duration_core_level": -0.7364649398807993,
+            "rho_duration_end_slope": 0.011528913375570765,
+            "rho_duration_rise_slope": -0.05871254244142036,
+            "rise_slope_median": 0.530836589361579
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.7950310559006211,
+            "below_fit_fraction": 0.7236024844720497,
+            "core_level_mean": 8.689217557251908,
+            "duration_median": 9.43562164902687,
+            "end_residual_sd_median": 0.22118551024266797,
+            "end_slope_median": 0.289816896313578,
+            "episodes_per_year": 6.440352654491691,
+            "log_below_above_slope_ratio": 0.1201693237502103,
+            "rho_duration_core_level": -0.7048747124760724,
+            "rho_duration_end_slope": 0.036932968896828004,
+            "rho_duration_rise_slope": 0.04846491267607665,
+            "rise_slope_median": 0.6065306422572804
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.790625,
+            "below_fit_fraction": 0.69375,
+            "core_level_mean": 8.599272727272727,
+            "duration_median": 11.170727875782177,
+            "end_residual_sd_median": 0.22655588454811054,
+            "end_slope_median": 0.296063046218552,
+            "episodes_per_year": 6.400350464091121,
+            "log_below_above_slope_ratio": 0.09853646222465912,
+            "rho_duration_core_level": -0.7255956927110527,
+            "rho_duration_end_slope": 0.05427256095135823,
+            "rho_duration_rise_slope": 0.01898383652493967,
+            "rise_slope_median": 0.5490888004805152
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.7917888563049853,
+            "below_fit_fraction": 0.7126099706744868,
+            "core_level_mean": 8.649498327759197,
+            "duration_median": 10.074555292492732,
+            "end_residual_sd_median": 0.22974095745932316,
+            "end_slope_median": 0.29677132529361305,
+            "episodes_per_year": 6.820373463297101,
+            "log_below_above_slope_ratio": 0.07469065794718456,
+            "rho_duration_core_level": -0.6938754274652624,
+            "rho_duration_end_slope": 0.07056661758740926,
+            "rho_duration_rise_slope": -0.03447251723113792,
+            "rise_slope_median": 0.5766940247987971
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.7515151515151515,
+            "below_fit_fraction": 0.6575757575757576,
+            "core_level_mean": 8.63845802919708,
+            "duration_median": 10.261004268191755,
+            "end_residual_sd_median": 0.22614327404797588,
+            "end_slope_median": 0.3002081822919387,
+            "episodes_per_year": 6.6003614160939685,
+            "log_below_above_slope_ratio": 0.05686901619839695,
+            "rho_duration_core_level": -0.7400895687858877,
+            "rho_duration_end_slope": 0.011567027667012767,
+            "rho_duration_rise_slope": 0.054126891584658,
+            "rise_slope_median": 0.6133658077514407
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.7694524495677233,
+            "below_fit_fraction": 0.7118155619596542,
+            "core_level_mean": 8.663101374570447,
+            "duration_median": 9.952763207256794,
+            "end_residual_sd_median": 0.2330069936296777,
+            "end_slope_median": 0.2980001452671462,
+            "episodes_per_year": 6.940380034498809,
+            "log_below_above_slope_ratio": 0.13783898779274062,
+            "rho_duration_core_level": -0.727492879784618,
+            "rho_duration_end_slope": 0.09012992890323882,
+            "rho_duration_rise_slope": 0.09188844621513945,
+            "rise_slope_median": 0.5451459810828136
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.7941176470588235,
+            "below_fit_fraction": 0.7176470588235294,
+            "core_level_mean": 8.665154109589041,
+            "duration_median": 9.942305633448996,
+            "end_residual_sd_median": 0.22497064192762029,
+            "end_slope_median": 0.29447412228313236,
+            "episodes_per_year": 6.8003723680968164,
+            "log_below_above_slope_ratio": 0.09569030834599186,
+            "rho_duration_core_level": -0.7377544262308442,
+            "rho_duration_end_slope": 0.07487503862701307,
+            "rho_duration_rise_slope": -0.03244483249450959,
+            "rise_slope_median": 0.5411569710288637
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.8130841121495327,
+            "below_fit_fraction": 0.719626168224299,
+            "core_level_mean": 8.652173913043478,
+            "duration_median": 10.302154074423015,
+            "end_residual_sd_median": 0.23800374962426188,
+            "end_slope_median": 0.2880209208874143,
+            "episodes_per_year": 6.420351559291405,
+            "log_below_above_slope_ratio": 0.07017535748031885,
+            "rho_duration_core_level": -0.7525260152060083,
+            "rho_duration_end_slope": 0.12808465784704903,
+            "rho_duration_rise_slope": 0.0027434880301811424,
+            "rise_slope_median": 0.5611687919491006
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.7896341463414634,
+            "below_fit_fraction": 0.7103658536585366,
+            "core_level_mean": 8.639419642857144,
+            "duration_median": 10.143170507042669,
+            "end_residual_sd_median": 0.2223665426503982,
+            "end_slope_median": 0.2999317360669491,
+            "episodes_per_year": 6.560359225693399,
+            "log_below_above_slope_ratio": 0.06419636338615173,
+            "rho_duration_core_level": -0.7417302917798122,
+            "rho_duration_end_slope": 0.018084541276694482,
+            "rho_duration_rise_slope": 0.05330306810253532,
+            "rise_slope_median": 0.5805556393703517
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-02",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.333,
+          "peak_duration_coupling": -0.065,
+          "peak_level": 8.42,
+          "peak_scatter": 0.28,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.667
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2232,
+            "median": 14.0,
+            "share_le_2": 0.025985663082437275
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2289,
+            "median": 16,
+            "share_le_2": 0.09654871122761031
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1149,
+            "median": 12,
+            "share_le_2": 0.10095735422106179
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.7864728018297548,
+        "below_fit_fraction": 0.7099968732810658,
+        "core_level_mean": 8.667078648251824,
+        "duration_median": 10.09036540715897,
+        "end_residual_sd_median": 0.2266745233142767,
+        "end_slope_median": 0.29452715048037836,
+        "episodes_per_year": 6.631613127344414,
+        "log_below_above_slope_ratio": 0.0953508697766211,
+        "rho_duration_core_level": -0.7392227631228154,
+        "rho_duration_end_slope": 0.09044513824407073,
+        "rho_duration_rise_slope": 0.05345672954296837,
+        "rise_slope_median": 0.5593879043028973
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.014517611292270317,
+        "below_fit_fraction": 0.025437517118294634,
+        "core_level_mean": 0.018463361403547474,
+        "duration_median": 0.47481183091854423,
+        "end_residual_sd_median": 0.0044497866425727475,
+        "end_slope_median": 0.00715314163163896,
+        "episodes_per_year": 0.16050281762004653,
+        "log_below_above_slope_ratio": 0.04723424721053392,
+        "rho_duration_core_level": 0.028271336311111228,
+        "rho_duration_end_slope": 0.0530759615332219,
+        "rho_duration_rise_slope": 0.05028373930940951,
+        "rise_slope_median": 0.021487904116951787
+      },
+      "objective": 93.07952013867722,
+      "private_attempt_sha256": "2ab0c60005ab5868f4cee3f5c5094256ead127835ad10eb92a5f3a474e575f58",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.7988165680473372,
+            "below_fit_fraction": 0.7603550295857988,
+            "core_level_mean": 8.695126353790613,
+            "duration_median": 9.531372046796605,
+            "end_residual_sd_median": 0.22587421125024426,
+            "end_slope_median": 0.29898521238991244,
+            "episodes_per_year": 6.760370177696246,
+            "log_below_above_slope_ratio": 0.15439080470885083,
+            "rho_duration_core_level": -0.7553227967673812,
+            "rho_duration_end_slope": 0.018529934693243887,
+            "rho_duration_rise_slope": 0.06314511232544019,
+            "rise_slope_median": 0.5676600086600306
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.7747747747747747,
+            "below_fit_fraction": 0.7537537537537538,
+            "core_level_mean": 8.695659722222222,
+            "duration_median": 10.028580928454176,
+            "end_residual_sd_median": 0.22496899817331392,
+            "end_slope_median": 0.29808801693851905,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.06732858447160411,
+            "rho_duration_core_level": -0.7826302152878237,
+            "rho_duration_end_slope": 0.19496947656753952,
+            "rho_duration_rise_slope": 0.06392529709906035,
+            "rise_slope_median": 0.5543002104672772
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.7901234567901234,
+            "below_fit_fraction": 0.7160493827160493,
+            "core_level_mean": 8.646047794117647,
+            "duration_median": 9.868404604843818,
+            "end_residual_sd_median": 0.22992051326133367,
+            "end_slope_median": 0.2916527022444376,
+            "episodes_per_year": 6.48035484489226,
+            "log_below_above_slope_ratio": 0.12909931748288966,
+            "rho_duration_core_level": -0.6832916763769191,
+            "rho_duration_end_slope": 0.05196241030736109,
+            "rho_duration_rise_slope": 0.14180261305464797,
+            "rise_slope_median": 0.587629484473785
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.7963525835866262,
+            "below_fit_fraction": 0.723404255319149,
+            "core_level_mean": 8.659767025089605,
+            "duration_median": 10.642285954672843,
+            "end_residual_sd_median": 0.2282410849314227,
+            "end_slope_median": 0.28889086505021444,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": 0.17752160712488493,
+            "rho_duration_core_level": -0.7403758041673288,
+            "rho_duration_end_slope": 0.09233081393469028,
+            "rho_duration_rise_slope": 0.02952742987949828,
+            "rise_slope_median": 0.5668883051408103
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.8115501519756839,
+            "below_fit_fraction": 0.7051671732522796,
+            "core_level_mean": 8.677490942028985,
+            "duration_median": 9.568863559979945,
+            "end_residual_sd_median": 0.2223900000000005,
+            "end_slope_median": 0.29036120071400806,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": 0.06957657506108846,
+            "rho_duration_core_level": -0.7509069650814677,
+            "rho_duration_end_slope": 0.12790394793533932,
+            "rho_duration_rise_slope": 0.03227525316404051,
+            "rise_slope_median": 0.5776054488409855
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.7952522255192879,
+            "below_fit_fraction": 0.6943620178041543,
+            "core_level_mean": 8.667154255319149,
+            "duration_median": 9.698383106151596,
+            "end_residual_sd_median": 0.22838419014173214,
+            "end_slope_median": 0.28969701036269263,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": 0.06220807470803503,
+            "rho_duration_core_level": -0.7926372370347922,
+            "rho_duration_end_slope": 0.09561260097761343,
+            "rho_duration_rise_slope": 0.15028453122829885,
+            "rise_slope_median": 0.5527806904367527
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.7560240963855421,
+            "below_fit_fraction": 0.7018072289156626,
+            "core_level_mean": 8.656636363636364,
+            "duration_median": 11.037528680404648,
+            "end_residual_sd_median": 0.23139781928006092,
+            "end_slope_median": 0.30209074901357474,
+            "episodes_per_year": 6.640363606494538,
+            "log_below_above_slope_ratio": 0.14626586614763143,
+            "rho_duration_core_level": -0.7296062984438964,
+            "rho_duration_end_slope": 0.11225779227757246,
+            "rho_duration_rise_slope": 0.11143286180309153,
+            "rise_slope_median": 0.5502585227108312
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.781437125748503,
+            "below_fit_fraction": 0.7005988023952096,
+            "core_level_mean": 8.695494699646643,
+            "duration_median": 10.105207966058515,
+            "end_residual_sd_median": 0.2280315909221754,
+            "end_slope_median": 0.30098182704947507,
+            "episodes_per_year": 6.680365796895107,
+            "log_below_above_slope_ratio": 0.04547753441266922,
+            "rho_duration_core_level": -0.738571218228386,
+            "rho_duration_end_slope": 0.1027439098040163,
+            "rho_duration_rise_slope": 0.03985038882262106,
+            "rise_slope_median": 0.5461447677230572
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.8080495356037152,
+            "below_fit_fraction": 0.718266253869969,
+            "core_level_mean": 8.677725563909775,
+            "duration_median": 9.608723435318097,
+            "end_residual_sd_median": 0.220349435858007,
+            "end_slope_median": 0.2890543101359859,
+            "episodes_per_year": 6.460353749691976,
+            "log_below_above_slope_ratio": 0.13599156515087946,
+            "rho_duration_core_level": -0.6997168523570934,
+            "rho_duration_end_slope": 0.022853824548739802,
+            "rho_duration_rise_slope": 0.020773464558828572,
+            "rise_slope_median": 0.5653228432763377
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.7857142857142857,
+            "below_fit_fraction": 0.6863354037267081,
+            "core_level_mean": 8.64438202247191,
+            "duration_median": 11.021432784502394,
+            "end_residual_sd_median": 0.23034809287544789,
+            "end_slope_median": 0.2980528172719304,
+            "episodes_per_year": 6.440352654491691,
+            "log_below_above_slope_ratio": 0.05853804510222657,
+            "rho_duration_core_level": -0.7530017864194267,
+            "rho_duration_end_slope": 0.015096393598988114,
+            "rho_duration_rise_slope": 0.1105580326719757,
+            "rise_slope_median": 0.5922102581330094
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.7764705882352941,
+            "below_fit_fraction": 0.6970588235294117,
+            "core_level_mean": 8.65251736111111,
+            "duration_median": 9.994587671244517,
+            "end_residual_sd_median": 0.22376951619958763,
+            "end_slope_median": 0.3027402758145618,
+            "episodes_per_year": 6.8003723680968164,
+            "log_below_above_slope_ratio": 0.017477524284021346,
+            "rho_duration_core_level": -0.7256443334981657,
+            "rho_duration_end_slope": 0.049211744865893824,
+            "rho_duration_rise_slope": 0.0005186880434301489,
+            "rise_slope_median": 0.5735670767550977
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.7668711656441718,
+            "below_fit_fraction": 0.6748466257668712,
+            "core_level_mean": 8.643244485294117,
+            "duration_median": 10.191786175710149,
+            "end_residual_sd_median": 0.22012469726732836,
+            "end_slope_median": 0.3008352530748666,
+            "episodes_per_year": 6.52035703529283,
+            "log_below_above_slope_ratio": 0.1373038008847767,
+            "rho_duration_core_level": -0.7483050774883515,
+            "rho_duration_end_slope": 0.08498849887346266,
+            "rho_duration_rise_slope": 0.056636259342578876,
+            "rise_slope_median": 0.5764125695583665
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.7861271676300579,
+            "below_fit_fraction": 0.6734104046242775,
+            "core_level_mean": 8.680927835051547,
+            "duration_median": 9.690827180398628,
+            "end_residual_sd_median": 0.22324866151830083,
+            "end_slope_median": 0.29999999999999893,
+            "episodes_per_year": 6.920378939298525,
+            "log_below_above_slope_ratio": 0.102224844508551,
+            "rho_duration_core_level": -0.739141259323761,
+            "rho_duration_end_slope": 0.09770600816541734,
+            "rho_duration_rise_slope": 0.022075447504167407,
+            "rise_slope_median": 0.5597991171298848
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.7877906976744186,
+            "below_fit_fraction": 0.7441860465116279,
+            "core_level_mean": 8.663333333333334,
+            "duration_median": 9.89706194458995,
+            "end_residual_sd_median": 0.22239000000000042,
+            "end_slope_median": 0.2795281820563453,
+            "episodes_per_year": 6.880376748897955,
+            "log_below_above_slope_ratio": 0.060634942748953424,
+            "rho_duration_core_level": -0.7007650348212747,
+            "rho_duration_end_slope": 0.16842612800081205,
+            "rho_duration_rise_slope": -0.007627193136668893,
+            "rise_slope_median": 0.5130033990810747
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.7924528301886793,
+            "below_fit_fraction": 0.7012578616352201,
+            "core_level_mean": 8.669833948339484,
+            "duration_median": 10.257828444824554,
+            "end_residual_sd_median": 0.23266686472100712,
+            "end_slope_median": 0.28292439722914253,
+            "episodes_per_year": 6.360348273690551,
+            "log_below_above_slope_ratio": 0.04953102524174429,
+            "rho_duration_core_level": -0.7507042941913316,
+            "rho_duration_end_slope": 0.1510254029875939,
+            "rho_duration_rise_slope": 0.023332224974965836,
+            "rise_slope_median": 0.5226229420238298
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.7757575757575758,
+            "below_fit_fraction": 0.7090909090909091,
+            "core_level_mean": 8.647916666666667,
+            "duration_median": 10.302972030593082,
+            "end_residual_sd_median": 0.23468669662846436,
+            "end_slope_median": 0.2985515883403879,
+            "episodes_per_year": 6.6003614160939685,
+            "log_below_above_slope_ratio": 0.11204380438713131,
+            "rho_duration_core_level": -0.736943360477647,
+            "rho_duration_end_slope": 0.06150332436684769,
+            "rho_duration_rise_slope": -0.003202738648482393,
+            "rise_slope_median": 0.5440008244352256
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-03",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.37,
+          "peak_duration_coupling": -0.045,
+          "peak_level": 8.32,
+          "peak_scatter": 0.22,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.8
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2231,
+            "median": 14,
+            "share_le_2": 0.02510085163603765
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2283,
+            "median": 16,
+            "share_le_2": 0.08716600963644328
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1151,
+            "median": 12,
+            "share_le_2": 0.10425716768027801
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.7857247711994666,
+        "below_fit_fraction": 0.6903105499129174,
+        "core_level_mean": 8.579811521294106,
+        "duration_median": 10.20289811676048,
+        "end_residual_sd_median": 0.22400959342879032,
+        "end_slope_median": 0.321332729282503,
+        "episodes_per_year": 6.647864017194645,
+        "log_below_above_slope_ratio": 0.09928180972403741,
+        "rho_duration_core_level": -0.7219742067790642,
+        "rho_duration_end_slope": 0.05029796962334128,
+        "rho_duration_rise_slope": 0.029346367852427824,
+        "rise_slope_median": 0.6303634529304376
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.012732397909404199,
+        "below_fit_fraction": 0.02622687744751109,
+        "core_level_mean": 0.02183732919903913,
+        "duration_median": 0.5262550180319597,
+        "end_residual_sd_median": 0.005672305613477512,
+        "end_slope_median": 0.0057429112004564915,
+        "episodes_per_year": 0.14893766891133306,
+        "log_below_above_slope_ratio": 0.030420157878967666,
+        "rho_duration_core_level": 0.02928019432683745,
+        "rho_duration_end_slope": 0.036994060581905026,
+        "rho_duration_rise_slope": 0.05529141840227293,
+        "rise_slope_median": 0.02510854289800068
+      },
+      "objective": 75.08204596824824,
+      "private_attempt_sha256": "eb0ac56a46a9bec6e89aa0dccf7bcd87b2a6d722c9d45cca698b02d03e5c64fb",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.7946428571428571,
+            "below_fit_fraction": 0.7172619047619048,
+            "core_level_mean": 8.60711743772242,
+            "duration_median": 9.368007358512841,
+            "end_residual_sd_median": 0.23275107905314565,
+            "end_slope_median": 0.3245121373865814,
+            "episodes_per_year": 6.720367987295677,
+            "log_below_above_slope_ratio": 0.0999089620578653,
+            "rho_duration_core_level": -0.7273253599657292,
+            "rho_duration_end_slope": -0.013886210221793635,
+            "rho_duration_rise_slope": 0.06913506110408765,
+            "rise_slope_median": 0.6329856375824763
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.7657657657657657,
+            "below_fit_fraction": 0.7267267267267268,
+            "core_level_mean": 8.591090425531915,
+            "duration_median": 10.1061877226457,
+            "end_residual_sd_median": 0.21460329657847832,
+            "end_slope_median": 0.320340038841149,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.10850592516599492,
+            "rho_duration_core_level": -0.7235458017851534,
+            "rho_duration_end_slope": 0.09312424077524749,
+            "rho_duration_rise_slope": 0.08214624511065195,
+            "rise_slope_median": 0.6179562009906292
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.7811550151975684,
+            "below_fit_fraction": 0.7173252279635258,
+            "core_level_mean": 8.563913427561838,
+            "duration_median": 9.87893254798837,
+            "end_residual_sd_median": 0.22172777605288008,
+            "end_slope_median": 0.3185254124341548,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": 0.10461335673321868,
+            "rho_duration_core_level": -0.7050826585930925,
+            "rho_duration_end_slope": 0.012440869215158731,
+            "rho_duration_rise_slope": 0.016325154901656827,
+            "rise_slope_median": 0.6183607047398105
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.7824773413897281,
+            "below_fit_fraction": 0.6676737160120846,
+            "core_level_mean": 8.559727272727272,
+            "duration_median": 10.453698341734707,
+            "end_residual_sd_median": 0.2306854353261172,
+            "end_slope_median": 0.31938653989764376,
+            "episodes_per_year": 6.620362511294253,
+            "log_below_above_slope_ratio": 0.1497334215107201,
+            "rho_duration_core_level": -0.6700324883116378,
+            "rho_duration_end_slope": 0.03546837768590482,
+            "rho_duration_rise_slope": 0.04405483229012641,
+            "rise_slope_median": 0.6462826825314179
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.7863501483679525,
+            "below_fit_fraction": 0.6735905044510386,
+            "core_level_mean": 8.588616071428572,
+            "duration_median": 10.008363123284653,
+            "end_residual_sd_median": 0.22384742763288082,
+            "end_slope_median": 0.3154195900195839,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": 0.15619193332585998,
+            "rho_duration_core_level": -0.7551621704406326,
+            "rho_duration_end_slope": 0.044839164879609775,
+            "rho_duration_rise_slope": 0.009516678575614597,
+            "rise_slope_median": 0.6756398651310582
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.788235294117647,
+            "below_fit_fraction": 0.7294117647058823,
+            "core_level_mean": 8.587854609929078,
+            "duration_median": 9.62526718818117,
+            "end_residual_sd_median": 0.22250932359674763,
+            "end_slope_median": 0.31889861011450865,
+            "episodes_per_year": 6.8003723680968164,
+            "log_below_above_slope_ratio": 0.06659054387376771,
+            "rho_duration_core_level": -0.7783133144537804,
+            "rho_duration_end_slope": 0.10042351511027778,
+            "rho_duration_rise_slope": 0.13242719901472527,
+            "rise_slope_median": 0.5873520076966107
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.7927927927927928,
+            "below_fit_fraction": 0.6936936936936937,
+            "core_level_mean": 8.575220070422535,
+            "duration_median": 10.889602770796046,
+            "end_residual_sd_median": 0.23034629392411185,
+            "end_slope_median": 0.3285276718118094,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.10636183733958726,
+            "rho_duration_core_level": -0.7296376130338288,
+            "rho_duration_end_slope": 0.016391714197271742,
+            "rho_duration_rise_slope": 0.057377101728725045,
+            "rise_slope_median": 0.6191857607684348
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.8011869436201781,
+            "below_fit_fraction": 0.7062314540059347,
+            "core_level_mean": 8.610089285714286,
+            "duration_median": 9.92215104517527,
+            "end_residual_sd_median": 0.2193979450330079,
+            "end_slope_median": 0.3118199495881397,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": 0.07037335591461448,
+            "rho_duration_core_level": -0.7365525721565105,
+            "rho_duration_end_slope": 0.0804893258954886,
+            "rho_duration_rise_slope": -0.04228484634788033,
+            "rise_slope_median": 0.6563984201374622
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.7732919254658385,
+            "below_fit_fraction": 0.6956521739130435,
+            "core_level_mean": 8.602067669172932,
+            "duration_median": 9.997174389194697,
+            "end_residual_sd_median": 0.22238999999999987,
+            "end_slope_median": 0.32769071758526636,
+            "episodes_per_year": 6.440352654491691,
+            "log_below_above_slope_ratio": 0.09483928688059724,
+            "rho_duration_core_level": -0.6876433314079275,
+            "rho_duration_end_slope": 0.0740012079359671,
+            "rho_duration_rise_slope": 0.01153878218134142,
+            "rise_slope_median": 0.678089193204631
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.7819314641744548,
+            "below_fit_fraction": 0.6542056074766355,
+            "core_level_mean": 8.535167910447761,
+            "duration_median": 11.52911722054705,
+            "end_residual_sd_median": 0.2331630817032299,
+            "end_slope_median": 0.32747009457782517,
+            "episodes_per_year": 6.420351559291405,
+            "log_below_above_slope_ratio": 0.13297040951573394,
+            "rho_duration_core_level": -0.7044693665880077,
+            "rho_duration_end_slope": 0.08355508587197193,
+            "rho_duration_rise_slope": 0.07307648088297287,
+            "rise_slope_median": 0.6094219413428649
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.8141592920353983,
+            "below_fit_fraction": 0.6578171091445427,
+            "core_level_mean": 8.590118243243243,
+            "duration_median": 10.304860051022843,
+            "end_residual_sd_median": 0.22120888234587235,
+            "end_slope_median": 0.32159704021644675,
+            "episodes_per_year": 6.780371272896532,
+            "log_below_above_slope_ratio": 0.055763959921185616,
+            "rho_duration_core_level": -0.7215831643714102,
+            "rho_duration_end_slope": 0.042528703533785996,
+            "rho_duration_rise_slope": 0.04066404626647895,
+            "rise_slope_median": 0.6475484049943548
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.7846153846153846,
+            "below_fit_fraction": 0.64,
+            "core_level_mean": 8.544146126760563,
+            "duration_median": 10.820592778967693,
+            "end_residual_sd_median": 0.22544862001983118,
+            "end_slope_median": 0.318862316507324,
+            "episodes_per_year": 6.500355940092545,
+            "log_below_above_slope_ratio": 0.11657571358880577,
+            "rho_duration_core_level": -0.7108055918387743,
+            "rho_duration_end_slope": 0.010684015529630431,
+            "rho_duration_rise_slope": 0.05976420495184659,
+            "rise_slope_median": 0.6269389656772141
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.7936046511627907,
+            "below_fit_fraction": 0.6918604651162791,
+            "core_level_mean": 8.597791666666666,
+            "duration_median": 9.907565958797932,
+            "end_residual_sd_median": 0.21447993726587603,
+            "end_slope_median": 0.3188118975802912,
+            "episodes_per_year": 6.880376748897955,
+            "log_below_above_slope_ratio": 0.10232012595591111,
+            "rho_duration_core_level": -0.7302039213973212,
+            "rho_duration_end_slope": 0.08567716034778494,
+            "rho_duration_rise_slope": 0.06478651166068881,
+            "rise_slope_median": 0.6324681823363207
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.7771260997067448,
+            "below_fit_fraction": 0.6950146627565983,
+            "core_level_mean": 8.580267857142857,
+            "duration_median": 10.10774810356088,
+            "end_residual_sd_median": 0.2268299904915049,
+            "end_slope_median": 0.3241701912942276,
+            "episodes_per_year": 6.820373463297101,
+            "log_below_above_slope_ratio": 0.0816267653475367,
+            "rho_duration_core_level": -0.6750425536231156,
+            "rho_duration_end_slope": 0.022465276015496794,
+            "rho_duration_rise_slope": -0.05983789778373173,
+            "rise_slope_median": 0.6011509149134698
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.790625,
+            "below_fit_fraction": 0.690625,
+            "core_level_mean": 8.582590909090909,
+            "duration_median": 10.344573191949166,
+            "end_residual_sd_median": 0.2237736122336658,
+            "end_slope_median": 0.3129843494058435,
+            "episodes_per_year": 6.400350464091121,
+            "log_below_above_slope_ratio": 0.05147642472698979,
+            "rho_duration_core_level": -0.742892765054531,
+            "rho_duration_end_slope": 0.09614249158807422,
+            "rho_duration_rise_slope": -0.025291306681441212,
+            "rise_slope_median": 0.6202119819045643
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.7636363636363637,
+            "below_fit_fraction": 0.6878787878787879,
+            "core_level_mean": 8.561205357142857,
+            "duration_median": 9.98252807580866,
+            "end_residual_sd_median": 0.22099079360329565,
+            "end_slope_median": 0.3323071112592528,
+            "episodes_per_year": 6.6003614160939685,
+            "log_below_above_slope_ratio": 0.09065693372621007,
+            "rho_duration_core_level": -0.7532946354435749,
+            "rho_duration_end_slope": 0.02042257561358378,
+            "rho_duration_rise_slope": -0.06385636221701796,
+            "rise_slope_median": 0.6158243829356818
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-04",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.37,
+          "peak_duration_coupling": -0.055,
+          "peak_level": 8.37,
+          "peak_scatter": 0.25,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.8
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2233,
+            "median": 14,
+            "share_le_2": 0.02328705776981639
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2296,
+            "median": 16.0,
+            "share_le_2": 0.0901567944250871
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1144,
+            "median": 13.0,
+            "share_le_2": 0.10227272727272728
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.788639520526984,
+        "below_fit_fraction": 0.685841504640927,
+        "core_level_mean": 8.598029579993678,
+        "duration_median": 10.13549542704277,
+        "end_residual_sd_median": 0.22290377199638514,
+        "end_slope_median": 0.32121796970618766,
+        "episodes_per_year": 6.656614496344769,
+        "log_below_above_slope_ratio": 0.11671463726050609,
+        "rho_duration_core_level": -0.7290274187852067,
+        "rho_duration_end_slope": 0.0846832967028734,
+        "rho_duration_rise_slope": 0.02412535752089461,
+        "rise_slope_median": 0.638675866312667
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.019067692815714257,
+        "below_fit_fraction": 0.019991067913335957,
+        "core_level_mean": 0.017773575132613885,
+        "duration_median": 0.41484809358413577,
+        "end_residual_sd_median": 0.004862708238762311,
+        "end_slope_median": 0.00816838623127485,
+        "episodes_per_year": 0.14297052773725627,
+        "log_below_above_slope_ratio": 0.03624068345658104,
+        "rho_duration_core_level": 0.026452308830065156,
+        "rho_duration_end_slope": 0.07364294148393487,
+        "rho_duration_rise_slope": 0.056253447230218113,
+        "rise_slope_median": 0.031151186725420426
+      },
+      "objective": 69.74500486119838,
+      "private_attempt_sha256": "55c0181b9aca237a245e2a8644f9a933b2730b702eda891f2bdb3ddbbb7191de",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.7863501483679525,
+            "below_fit_fraction": 0.6973293768545994,
+            "core_level_mean": 8.610133928571429,
+            "duration_median": 9.703289283905178,
+            "end_residual_sd_median": 0.22291610106174917,
+            "end_slope_median": 0.3299220380030183,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": 0.1646998837744652,
+            "rho_duration_core_level": -0.6934359167219459,
+            "rho_duration_end_slope": -0.0241321118611379,
+            "rho_duration_rise_slope": 0.12803797991472385,
+            "rise_slope_median": 0.6631027097186186
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.7824773413897281,
+            "below_fit_fraction": 0.6948640483383686,
+            "core_level_mean": 8.600580357142857,
+            "duration_median": 10.109103410271928,
+            "end_residual_sd_median": 0.22253408421779092,
+            "end_slope_median": 0.31429106430299714,
+            "episodes_per_year": 6.620362511294253,
+            "log_below_above_slope_ratio": 0.09877980849068761,
+            "rho_duration_core_level": -0.7310533457882477,
+            "rho_duration_end_slope": 0.08360440722826992,
+            "rho_duration_rise_slope": 0.007474105267740925,
+            "rise_slope_median": 0.6247601019299321
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.8220858895705522,
+            "below_fit_fraction": 0.6871165644171779,
+            "core_level_mean": 8.57876838235294,
+            "duration_median": 9.625721066608094,
+            "end_residual_sd_median": 0.23189225814643083,
+            "end_slope_median": 0.3238515871583005,
+            "episodes_per_year": 6.52035703529283,
+            "log_below_above_slope_ratio": 0.09463653085835749,
+            "rho_duration_core_level": -0.7028040254667315,
+            "rho_duration_end_slope": 0.14583195878789693,
+            "rho_duration_rise_slope": 0.05326527101106163,
+            "rise_slope_median": 0.6295353421851775
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.7537993920972644,
+            "below_fit_fraction": 0.6717325227963525,
+            "core_level_mean": 8.589590909090909,
+            "duration_median": 10.340184153523296,
+            "end_residual_sd_median": 0.2223900000000005,
+            "end_slope_median": 0.3262411347856915,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": 0.10542513013827531,
+            "rho_duration_core_level": -0.7283432824076101,
+            "rho_duration_end_slope": 0.029205550547013962,
+            "rho_duration_rise_slope": 0.12113326726885154,
+            "rise_slope_median": 0.635992045809985
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.7827380952380952,
+            "below_fit_fraction": 0.6875,
+            "core_level_mean": 8.605,
+            "duration_median": 9.831692629028112,
+            "end_residual_sd_median": 0.22134523132072703,
+            "end_slope_median": 0.30824499423258955,
+            "episodes_per_year": 6.720367987295677,
+            "log_below_above_slope_ratio": 0.07805699283333203,
+            "rho_duration_core_level": -0.7441794960958358,
+            "rho_duration_end_slope": 0.14576591027744493,
+            "rho_duration_rise_slope": 0.019628746738602765,
+            "rise_slope_median": 0.6418036863483767
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.8071216617210683,
+            "below_fit_fraction": 0.7270029673590505,
+            "core_level_mean": 8.611578947368422,
+            "duration_median": 9.809394860872999,
+            "end_residual_sd_median": 0.22802469797117125,
+            "end_slope_median": 0.3230804589240191,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": 0.14135368626825628,
+            "rho_duration_core_level": -0.7722279799782473,
+            "rho_duration_end_slope": 0.15460979262792085,
+            "rho_duration_rise_slope": 0.09362336922617917,
+            "rise_slope_median": 0.5833761306360508
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.7807807807807807,
+            "below_fit_fraction": 0.7177177177177178,
+            "core_level_mean": 8.605897887323943,
+            "duration_median": 10.77400024374947,
+            "end_residual_sd_median": 0.22581805754614237,
+            "end_slope_median": 0.3343156731053434,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.11466644219797709,
+            "rho_duration_core_level": -0.7211299005106744,
+            "rho_duration_end_slope": 0.11927790840527053,
+            "rho_duration_rise_slope": -0.0018468336296321866,
+            "rise_slope_median": 0.6508798401965297
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.8141592920353983,
+            "below_fit_fraction": 0.6873156342182891,
+            "core_level_mean": 8.614982578397212,
+            "duration_median": 9.97504809149541,
+            "end_residual_sd_median": 0.22763906781718446,
+            "end_slope_median": 0.31439065051093235,
+            "episodes_per_year": 6.780371272896532,
+            "log_below_above_slope_ratio": 0.08014313150212864,
+            "rho_duration_core_level": -0.7191072520429763,
+            "rho_duration_end_slope": 0.08369675642930155,
+            "rho_duration_rise_slope": -0.10266174216755049,
+            "rise_slope_median": 0.6326497087377337
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.7919254658385093,
+            "below_fit_fraction": 0.6677018633540373,
+            "core_level_mean": 8.625,
+            "duration_median": 9.803823654307052,
+            "end_residual_sd_median": 0.21500439549167483,
+            "end_slope_median": 0.31665440202724804,
+            "episodes_per_year": 6.440352654491691,
+            "log_below_above_slope_ratio": 0.1342161435404132,
+            "rho_duration_core_level": -0.7529473874910193,
+            "rho_duration_end_slope": -0.05914650935027914,
+            "rho_duration_rise_slope": 0.019887458867968614,
+            "rise_slope_median": 0.7338442510827267
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.7561728395061729,
+            "below_fit_fraction": 0.6975308641975309,
+            "core_level_mean": 8.565267527675276,
+            "duration_median": 11.092879596166313,
+            "end_residual_sd_median": 0.22031370516689444,
+            "end_slope_median": 0.32725766261011285,
+            "episodes_per_year": 6.48035484489226,
+            "log_below_above_slope_ratio": 0.1888054969028769,
+            "rho_duration_core_level": -0.725433681638291,
+            "rho_duration_end_slope": 0.0578946786749133,
+            "rho_duration_rise_slope": 0.016383589319490136,
+            "rise_slope_median": 0.6239552686491776
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.7888563049853372,
+            "below_fit_fraction": 0.6715542521994134,
+            "core_level_mean": 8.591323024054983,
+            "duration_median": 10.016241301316768,
+            "end_residual_sd_median": 0.2139395509540723,
+            "end_slope_median": 0.3232709088862164,
+            "episodes_per_year": 6.820373463297101,
+            "log_below_above_slope_ratio": 0.058124140217011004,
+            "rho_duration_core_level": -0.7031740715147543,
+            "rho_duration_end_slope": 0.008963258242688114,
+            "rho_duration_rise_slope": 0.01809437262096636,
+            "rise_slope_median": 0.6249999997817213
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.7957317073170732,
+            "below_fit_fraction": 0.6554878048780488,
+            "core_level_mean": 8.583098591549296,
+            "duration_median": 10.677408460294828,
+            "end_residual_sd_median": 0.22554873089480482,
+            "end_slope_median": 0.31962030376587847,
+            "episodes_per_year": 6.560359225693399,
+            "log_below_above_slope_ratio": 0.1428664172240326,
+            "rho_duration_core_level": -0.7271429494379803,
+            "rho_duration_end_slope": 0.024400350160490223,
+            "rho_duration_rise_slope": 0.038038843620604626,
+            "rise_slope_median": 0.6388262750474858
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.8115942028985508,
+            "below_fit_fraction": 0.6579710144927536,
+            "core_level_mean": 8.61949152542373,
+            "duration_median": 10.133267894154415,
+            "end_residual_sd_median": 0.2223900000000005,
+            "end_slope_median": 0.3076482034918775,
+            "episodes_per_year": 6.90037784409824,
+            "log_below_above_slope_ratio": 0.07359312088095235,
+            "rho_duration_core_level": -0.7462235858710689,
+            "rho_duration_end_slope": 0.1252680102915952,
+            "rho_duration_rise_slope": 0.011092043133771897,
+            "rise_slope_median": 0.6399843267148501
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.7800586510263929,
+            "below_fit_fraction": 0.6862170087976539,
+            "core_level_mean": 8.588928571428571,
+            "duration_median": 10.01777684665285,
+            "end_residual_sd_median": 0.22600698699545949,
+            "end_slope_median": 0.3228539372647976,
+            "episodes_per_year": 6.820373463297101,
+            "log_below_above_slope_ratio": 0.15568679374352962,
+            "rho_duration_core_level": -0.6770731120219958,
+            "rho_duration_end_slope": 0.15933994823123382,
+            "rho_duration_rise_slope": -0.015723521829064783,
+            "rise_slope_median": 0.6349929057766379
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.7919254658385093,
+            "below_fit_fraction": 0.6987577639751553,
+            "core_level_mean": 8.609431407942239,
+            "duration_median": 10.365395839209668,
+            "end_residual_sd_median": 0.21619456566378734,
+            "end_slope_median": 0.3141886555675007,
+            "episodes_per_year": 6.440352654491691,
+            "log_below_above_slope_ratio": 0.12099178620984728,
+            "rho_duration_core_level": -0.7671362301469374,
+            "rho_duration_end_slope": 0.20630195423401138,
+            "rho_duration_rise_slope": -0.0028383381324557796,
+            "rise_slope_median": 0.6500195668393957
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.7724550898203593,
+            "below_fit_fraction": 0.6676646706586826,
+            "core_level_mean": 8.56939964157706,
+            "duration_median": 9.892699501127936,
+            "end_residual_sd_median": 0.22450291869427186,
+            "end_slope_median": 0.3336558406624793,
+            "episodes_per_year": 6.680365796895107,
+            "log_below_above_slope_ratio": 0.11538869138595476,
+            "rho_duration_core_level": -0.753026483428991,
+            "rho_duration_end_slope": 0.0940508843193407,
+            "rho_duration_rise_slope": -0.01758289089694455,
+            "rise_slope_median": 0.6100917015482741
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-05",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.37,
+          "peak_duration_coupling": -0.065,
+          "peak_level": 8.42,
+          "peak_scatter": 0.28,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.8
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2236,
+            "median": 14.0,
+            "share_le_2": 0.025491949910554562
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2295,
+            "median": 16,
+            "share_le_2": 0.09411764705882353
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1149,
+            "median": 12,
+            "share_le_2": 0.1114012184508268
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.7955143051099383,
+        "below_fit_fraction": 0.6882182804237394,
+        "core_level_mean": 8.615803283352268,
+        "duration_median": 10.133066269343544,
+        "end_residual_sd_median": 0.22510509095005093,
+        "end_slope_median": 0.3210358328414183,
+        "episodes_per_year": 6.646613948744627,
+        "log_below_above_slope_ratio": 0.12006007443351292,
+        "rho_duration_core_level": -0.7305845406839627,
+        "rho_duration_end_slope": 0.08344796206194582,
+        "rho_duration_rise_slope": 0.04691841718352639,
+        "rise_slope_median": 0.6284612746764837
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.019672488599606207,
+        "below_fit_fraction": 0.022374299881596692,
+        "core_level_mean": 0.018862540103982774,
+        "duration_median": 0.49607279003238697,
+        "end_residual_sd_median": 0.005562241891183263,
+        "end_slope_median": 0.005245426160170065,
+        "episodes_per_year": 0.1396679499622023,
+        "log_below_above_slope_ratio": 0.04163559102282667,
+        "rho_duration_core_level": 0.02014139376109691,
+        "rho_duration_end_slope": 0.05186950291629952,
+        "rho_duration_rise_slope": 0.05145647993187488,
+        "rise_slope_median": 0.022801803239491873
+      },
+      "objective": 62.092516647831175,
+      "private_attempt_sha256": "f5c04e470d39c8c28acba6da8f763ae773aaf8e3ad114a36704ff6964097a75c",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.7657657657657657,
+            "below_fit_fraction": 0.6906906906906907,
+            "core_level_mean": 8.641312056737588,
+            "duration_median": 9.469622948905453,
+            "end_residual_sd_median": 0.22933655338293868,
+            "end_slope_median": 0.32185171047319616,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.1721777870752283,
+            "rho_duration_core_level": -0.7189879863271137,
+            "rho_duration_end_slope": -0.03551995022166913,
+            "rho_duration_rise_slope": 0.13781062026884328,
+            "rise_slope_median": 0.6163856446728553
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.7837837837837838,
+            "below_fit_fraction": 0.7087087087087087,
+            "core_level_mean": 8.627659574468085,
+            "duration_median": 10.030573213472962,
+            "end_residual_sd_median": 0.2251177709935466,
+            "end_slope_median": 0.3152866704136301,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.10366273763990998,
+            "rho_duration_core_level": -0.7512177235334477,
+            "rho_duration_end_slope": 0.161540461560684,
+            "rho_duration_rise_slope": 0.024002026903635978,
+            "rise_slope_median": 0.6375682423599774
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.7957317073170732,
+            "below_fit_fraction": 0.7042682926829268,
+            "core_level_mean": 8.601090909090908,
+            "duration_median": 10.048305727541447,
+            "end_residual_sd_median": 0.2306536937515678,
+            "end_slope_median": 0.32539877958178887,
+            "episodes_per_year": 6.560359225693399,
+            "log_below_above_slope_ratio": 0.14434175148465692,
+            "rho_duration_core_level": -0.695359134486648,
+            "rho_duration_end_slope": 0.10663644577939643,
+            "rho_duration_rise_slope": 0.11138801357411222,
+            "rise_slope_median": 0.592040216542902
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.8140243902439024,
+            "below_fit_fraction": 0.6646341463414634,
+            "core_level_mean": 8.61285587188612,
+            "duration_median": 10.398542850045487,
+            "end_residual_sd_median": 0.21554548897048514,
+            "end_slope_median": 0.323008857193099,
+            "episodes_per_year": 6.560359225693399,
+            "log_below_above_slope_ratio": 0.14804572417007839,
+            "rho_duration_core_level": -0.7016066877830834,
+            "rho_duration_end_slope": 0.07798235548454399,
+            "rho_duration_rise_slope": 0.0432669616519174,
+            "rise_slope_median": 0.648643827574948
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.8071216617210683,
+            "below_fit_fraction": 0.6676557863501483,
+            "core_level_mean": 8.6353125,
+            "duration_median": 9.459727919194847,
+            "end_residual_sd_median": 0.2223899999999992,
+            "end_slope_median": 0.31000188171653076,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": 0.07611340521543757,
+            "rho_duration_core_level": -0.7533370385325073,
+            "rho_duration_end_slope": 0.09264516184146455,
+            "rho_duration_rise_slope": 0.06788344508508788,
+            "rise_slope_median": 0.6237845417570408
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.8076923076923077,
+            "below_fit_fraction": 0.7337278106508875,
+            "core_level_mean": 8.61245487364621,
+            "duration_median": 9.816136715002358,
+            "end_residual_sd_median": 0.23493566604853225,
+            "end_slope_median": 0.32087090312590605,
+            "episodes_per_year": 6.760370177696246,
+            "log_below_above_slope_ratio": 0.09388213627776189,
+            "rho_duration_core_level": -0.7577947645586829,
+            "rho_duration_end_slope": 0.034593503790950726,
+            "rho_duration_rise_slope": 0.08976946828814965,
+            "rise_slope_median": 0.6288400641761236
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.8078078078078078,
+            "below_fit_fraction": 0.7057057057057057,
+            "core_level_mean": 8.626457597173145,
+            "duration_median": 10.95646907784976,
+            "end_residual_sd_median": 0.22415185021713066,
+            "end_slope_median": 0.33318484858826464,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.17476174401099484,
+            "rho_duration_core_level": -0.7223443712041236,
+            "rho_duration_end_slope": 0.10072748159996482,
+            "rho_duration_rise_slope": 0.07265769665392437,
+            "rise_slope_median": 0.5995703944392794
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.798219584569733,
+            "below_fit_fraction": 0.6973293768545994,
+            "core_level_mean": 8.640964912280701,
+            "duration_median": 9.892458389280364,
+            "end_residual_sd_median": 0.2322161851914466,
+            "end_slope_median": 0.3232124162893479,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": 0.159927782659032,
+            "rho_duration_core_level": -0.7501945763841139,
+            "rho_duration_end_slope": 0.10269758254584634,
+            "rho_duration_rise_slope": -0.02001189631866208,
+            "rise_slope_median": 0.6062634140970271
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.7919254658385093,
+            "below_fit_fraction": 0.6863354037267081,
+            "core_level_mean": 8.637786259541985,
+            "duration_median": 9.65043308143504,
+            "end_residual_sd_median": 0.2287165751711629,
+            "end_slope_median": 0.3212507381142843,
+            "episodes_per_year": 6.440352654491691,
+            "log_below_above_slope_ratio": 0.14493301737714276,
+            "rho_duration_core_level": -0.7461972684351553,
+            "rho_duration_end_slope": 0.020181387207441476,
+            "rho_duration_rise_slope": 0.022546229516717996,
+            "rise_slope_median": 0.6698262977170131
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.794392523364486,
+            "below_fit_fraction": 0.6510903426791277,
+            "core_level_mean": 8.575896226415095,
+            "duration_median": 11.167308797128499,
+            "end_residual_sd_median": 0.23124743042625867,
+            "end_slope_median": 0.31781412216316385,
+            "episodes_per_year": 6.420351559291405,
+            "log_below_above_slope_ratio": 0.17409222108103098,
+            "rho_duration_core_level": -0.7059336951900668,
+            "rho_duration_end_slope": 0.06982978510577997,
+            "rho_duration_rise_slope": 0.05792955316645149,
+            "rise_slope_median": 0.6487018864076347
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.8005865102639296,
+            "below_fit_fraction": 0.6686217008797654,
+            "core_level_mean": 8.604827586206897,
+            "duration_median": 10.268689842894673,
+            "end_residual_sd_median": 0.21996889226381436,
+            "end_slope_median": 0.3172233654448906,
+            "episodes_per_year": 6.820373463297101,
+            "log_below_above_slope_ratio": 0.08785116896270233,
+            "rho_duration_core_level": -0.7178799462798561,
+            "rho_duration_end_slope": 0.015622239419901807,
+            "rho_duration_rise_slope": 0.014507887746303277,
+            "rise_slope_median": 0.6571152990074267
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.7706422018348624,
+            "below_fit_fraction": 0.654434250764526,
+            "core_level_mean": 8.601848591549295,
+            "duration_median": 10.77290908107534,
+            "end_residual_sd_median": 0.218937819645417,
+            "end_slope_median": 0.32684287776382004,
+            "episodes_per_year": 6.540358130493114,
+            "log_below_above_slope_ratio": 0.10702799866713363,
+            "rho_duration_core_level": -0.7300550651751937,
+            "rho_duration_end_slope": 0.11066379675576701,
+            "rho_duration_rise_slope": 0.10713531301766596,
+            "rise_slope_median": 0.6329260746549863
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.8391812865497076,
+            "below_fit_fraction": 0.695906432748538,
+            "core_level_mean": 8.627449324324324,
+            "duration_median": 10.098348353523761,
+            "end_residual_sd_median": 0.2232604651705585,
+            "end_slope_median": 0.3236506250713942,
+            "episodes_per_year": 6.840374558497386,
+            "log_below_above_slope_ratio": 0.09017084906024367,
+            "rho_duration_core_level": -0.7385726423773727,
+            "rho_duration_end_slope": 0.11434373653883578,
+            "rho_duration_rise_slope": 0.0524737043957927,
+            "rise_slope_median": 0.5928334262581768
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.7624633431085044,
+            "below_fit_fraction": 0.7008797653958945,
+            "core_level_mean": 8.601052631578947,
+            "duration_median": 9.83162193838507,
+            "end_residual_sd_median": 0.21870138427497018,
+            "end_slope_median": 0.31856943651685093,
+            "episodes_per_year": 6.820373463297101,
+            "log_below_above_slope_ratio": 0.11862498415579147,
+            "rho_duration_core_level": -0.7128104555764037,
+            "rho_duration_end_slope": 0.1218152058062224,
+            "rho_duration_rise_slope": -0.01996436846511809,
+            "rise_slope_median": 0.6322378542669472
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.8074534161490683,
+            "below_fit_fraction": 0.7018633540372671,
+            "core_level_mean": 8.61025641025641,
+            "duration_median": 10.293369755381718,
+            "end_residual_sd_median": 0.22224142732581786,
+            "end_slope_median": 0.3178542214081719,
+            "episodes_per_year": 6.440352654491691,
+            "log_below_above_slope_ratio": 0.029361301148984324,
+            "rho_duration_core_level": -0.7452360134972696,
+            "rho_duration_end_slope": 0.14955755752667935,
+            "rho_duration_rise_slope": -0.04997338865641283,
+            "rise_slope_median": 0.6250271063654869
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.781437125748503,
+            "below_fit_fraction": 0.6796407185628742,
+            "core_level_mean": 8.595627208480565,
+            "duration_median": 9.974542618379928,
+            "end_residual_sd_median": 0.22426025236716843,
+            "end_slope_median": 0.3205518715983534,
+            "episodes_per_year": 6.680365796895107,
+            "log_below_above_slope_ratio": 0.09598658195007786,
+            "rho_duration_core_level": -0.7418252816023647,
+            "rho_duration_end_slope": 0.09185064224932363,
+            "rho_duration_rise_slope": 0.03927340810801308,
+            "rise_slope_median": 0.6436161045259139
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-06",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.4,
+          "peak_duration_coupling": -0.045,
+          "peak_level": 8.32,
+          "peak_scatter": 0.22,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.95
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2226,
+            "median": 14.0,
+            "share_le_2": 0.022911051212938006
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2298,
+            "median": 16.0,
+            "share_le_2": 0.09355961705831158
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1159,
+            "median": 13,
+            "share_le_2": 0.10526315789473684
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.797783182575428,
+        "below_fit_fraction": 0.6718376540159244,
+        "core_level_mean": 8.536785183511551,
+        "duration_median": 10.16661939972255,
+        "end_residual_sd_median": 0.223917387173156,
+        "end_slope_median": 0.3427017456125642,
+        "episodes_per_year": 6.640363606494538,
+        "log_below_above_slope_ratio": 0.14523832742861545,
+        "rho_duration_core_level": -0.7138816820489835,
+        "rho_duration_end_slope": 0.04015933873024564,
+        "rho_duration_rise_slope": -0.008914820175811617,
+        "rise_slope_median": 0.7116296486262065
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.012375679549460068,
+        "below_fit_fraction": 0.020333939715371462,
+        "core_level_mean": 0.016937057104823953,
+        "duration_median": 0.4794474178225491,
+        "end_residual_sd_median": 0.005681297944156183,
+        "end_slope_median": 0.0064400787089931326,
+        "episodes_per_year": 0.137605984496728,
+        "log_below_above_slope_ratio": 0.0517431005186871,
+        "rho_duration_core_level": 0.02870747459636394,
+        "rho_duration_end_slope": 0.05384892214137547,
+        "rho_duration_rise_slope": 0.056851062980925744,
+        "rise_slope_median": 0.02767275036462717
+      },
+      "objective": 116.19246612845485,
+      "private_attempt_sha256": "e81fd0c3fe2e935185817852662dc00a312595a55c565a98b93fbbcf0e25d9a5",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.7844311377245509,
+            "below_fit_fraction": 0.6676646706586826,
+            "core_level_mean": 8.558259717314488,
+            "duration_median": 9.69489446748048,
+            "end_residual_sd_median": 0.2279345126295498,
+            "end_slope_median": 0.34608815874978155,
+            "episodes_per_year": 6.680365796895107,
+            "log_below_above_slope_ratio": 0.1634154473462164,
+            "rho_duration_core_level": -0.6821433974892901,
+            "rho_duration_end_slope": -0.060222898056967455,
+            "rho_duration_rise_slope": 0.02338013601532462,
+            "rise_slope_median": 0.6832739795393951
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.8012048192771084,
+            "below_fit_fraction": 0.713855421686747,
+            "core_level_mean": 8.538893884892087,
+            "duration_median": 10.160520376288332,
+            "end_residual_sd_median": 0.2236464406707838,
+            "end_slope_median": 0.33467690896301033,
+            "episodes_per_year": 6.640363606494538,
+            "log_below_above_slope_ratio": 0.09198474392747558,
+            "rho_duration_core_level": -0.7127393750259483,
+            "rho_duration_end_slope": 0.12435613345758513,
+            "rho_duration_rise_slope": -0.07340492926260055,
+            "rise_slope_median": 0.7355542750114936
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.790273556231003,
+            "below_fit_fraction": 0.6778115501519757,
+            "core_level_mean": 8.502053571428572,
+            "duration_median": 10.12976325629279,
+            "end_residual_sd_median": 0.21928870940100778,
+            "end_slope_median": 0.3395729195907675,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": 0.18601644906465312,
+            "rho_duration_core_level": -0.6719893443713288,
+            "rho_duration_end_slope": 0.0046004038993406405,
+            "rho_duration_rise_slope": -0.036369925705067176,
+            "rise_slope_median": 0.6645242023922873
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.7951807228915663,
+            "below_fit_fraction": 0.6867469879518072,
+            "core_level_mean": 8.519711538461538,
+            "duration_median": 10.489769552252255,
+            "end_residual_sd_median": 0.22238999999999987,
+            "end_slope_median": 0.35149604630702375,
+            "episodes_per_year": 6.640363606494538,
+            "log_below_above_slope_ratio": 0.17282769686605534,
+            "rho_duration_core_level": -0.6903161959494502,
+            "rho_duration_end_slope": -0.04241036105442885,
+            "rho_duration_rise_slope": -0.02258218728806964,
+            "rise_slope_median": 0.7332095363985375
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.7886904761904762,
+            "below_fit_fraction": 0.6666666666666666,
+            "core_level_mean": 8.55730633802817,
+            "duration_median": 9.782161257578991,
+            "end_residual_sd_median": 0.22269377792627285,
+            "end_slope_median": 0.34484486208363635,
+            "episodes_per_year": 6.720367987295677,
+            "log_below_above_slope_ratio": 0.08587489695136327,
+            "rho_duration_core_level": -0.7316646168689933,
+            "rho_duration_end_slope": 0.0912871483625476,
+            "rho_duration_rise_slope": -0.0162734766788995,
+            "rise_slope_median": 0.7512805570875283
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.8018018018018018,
+            "below_fit_fraction": 0.6756756756756757,
+            "core_level_mean": 8.53589965397924,
+            "duration_median": 9.668537051649764,
+            "end_residual_sd_median": 0.22625998872811837,
+            "end_slope_median": 0.3463669050506987,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.11504813350324027,
+            "rho_duration_core_level": -0.7577437036835456,
+            "rho_duration_end_slope": 0.058846715000785615,
+            "rho_duration_rise_slope": 0.10064262461421385,
+            "rise_slope_median": 0.6845805252467703
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.8095238095238095,
+            "below_fit_fraction": 0.6547619047619048,
+            "core_level_mean": 8.534086879432625,
+            "duration_median": 10.74885933205951,
+            "end_residual_sd_median": 0.22763777981763372,
+            "end_slope_median": 0.34902186126105966,
+            "episodes_per_year": 6.720367987295677,
+            "log_below_above_slope_ratio": 0.20521451310162694,
+            "rho_duration_core_level": -0.6937634844056787,
+            "rho_duration_end_slope": 0.08853076145290503,
+            "rho_duration_rise_slope": 0.0779329489643391,
+            "rise_slope_median": 0.6912044491942699
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.7946428571428571,
+            "below_fit_fraction": 0.6577380952380952,
+            "core_level_mean": 8.567029616724739,
+            "duration_median": 10.078805064316839,
+            "end_residual_sd_median": 0.22809230748710996,
+            "end_slope_median": 0.3423645629234482,
+            "episodes_per_year": 6.720367987295677,
+            "log_below_above_slope_ratio": 0.09531182293320628,
+            "rho_duration_core_level": -0.7658947637237392,
+            "rho_duration_end_slope": -0.023418018384461337,
+            "rho_duration_rise_slope": -0.10282700331526215,
+            "rise_slope_median": 0.7216399001206792
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.7708978328173375,
+            "below_fit_fraction": 0.6656346749226006,
+            "core_level_mean": 8.53639846743295,
+            "duration_median": 9.827333054039627,
+            "end_residual_sd_median": 0.21841547146554607,
+            "end_slope_median": 0.34246557921018234,
+            "episodes_per_year": 6.460353749691976,
+            "log_below_above_slope_ratio": 0.11986143373742977,
+            "rho_duration_core_level": -0.7043536999871525,
+            "rho_duration_end_slope": 0.03319945265246178,
+            "rho_duration_rise_slope": 0.029947693736427604,
+            "rise_slope_median": 0.7233133104678424
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.8111455108359134,
+            "below_fit_fraction": 0.6439628482972136,
+            "core_level_mean": 8.515942028985508,
+            "duration_median": 11.366636736318469,
+            "end_residual_sd_median": 0.21657561269058714,
+            "end_slope_median": 0.33727511973838936,
+            "episodes_per_year": 6.460353749691976,
+            "log_below_above_slope_ratio": 0.2283999583269809,
+            "rho_duration_core_level": -0.6913171272528689,
+            "rho_duration_end_slope": 0.05378499787059775,
+            "rho_duration_rise_slope": 0.01427113669568147,
+            "rise_slope_median": 0.6619548208031315
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.7865497076023392,
+            "below_fit_fraction": 0.6374269005847953,
+            "core_level_mean": 8.528800675675676,
+            "duration_median": 10.117868789588101,
+            "end_residual_sd_median": 0.22193640877621412,
+            "end_slope_median": 0.34099945501355694,
+            "episodes_per_year": 6.840374558497386,
+            "log_below_above_slope_ratio": 0.16453178410739935,
+            "rho_duration_core_level": -0.7330820157376251,
+            "rho_duration_end_slope": 0.004243281471004243,
+            "rho_duration_rise_slope": -0.027406382869730034,
+            "rise_slope_median": 0.7441776699913654
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.796923076923077,
+            "below_fit_fraction": 0.6892307692307692,
+            "core_level_mean": 8.528496503496504,
+            "duration_median": 10.839369542663917,
+            "end_residual_sd_median": 0.2213412960255294,
+            "end_slope_median": 0.3478260869846906,
+            "episodes_per_year": 6.500355940092545,
+            "log_below_above_slope_ratio": 0.1875791688467965,
+            "rho_duration_core_level": -0.7581546402897311,
+            "rho_duration_end_slope": 0.0484575040540738,
+            "rho_duration_rise_slope": 0.04234433563443291,
+            "rise_slope_median": 0.7237366166958075
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.804093567251462,
+            "below_fit_fraction": 0.6608187134502924,
+            "core_level_mean": 8.546751644736842,
+            "duration_median": 9.658744427957572,
+            "end_residual_sd_median": 0.22357605526929186,
+            "end_slope_median": 0.32756808161419115,
+            "episodes_per_year": 6.840374558497386,
+            "log_below_above_slope_ratio": 0.1343688001169865,
+            "rho_duration_core_level": -0.7031808212544303,
+            "rho_duration_end_slope": 0.1037252095879835,
+            "rho_duration_rise_slope": 0.025117623569853642,
+            "rise_slope_median": 0.7291559256762679
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.8235294117647058,
+            "below_fit_fraction": 0.6794117647058824,
+            "core_level_mean": 8.541550522648084,
+            "duration_median": 9.93525083689019,
+            "end_residual_sd_median": 0.22253458834287726,
+            "end_slope_median": 0.3450323810816447,
+            "episodes_per_year": 6.8003723680968164,
+            "log_below_above_slope_ratio": 0.19684258340943891,
+            "rho_duration_core_level": -0.6897668322834953,
+            "rho_duration_end_slope": 0.08838548982120241,
+            "rho_duration_rise_slope": -0.05511626603657192,
+            "rise_slope_median": 0.7240168861566059
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.8056426332288401,
+            "below_fit_fraction": 0.7053291536050157,
+            "core_level_mean": 8.550924295774648,
+            "duration_median": 10.228173562558368,
+            "end_residual_sd_median": 0.24091982096873285,
+            "end_slope_median": 0.33655352854497284,
+            "episodes_per_year": 6.380349368890836,
+            "log_below_above_slope_ratio": 0.038031707140609106,
+            "rho_duration_core_level": -0.7221234572451153,
+            "rho_duration_end_slope": 0.05558305574741425,
+            "rho_duration_rise_slope": -0.06988367083153812,
+            "rise_slope_median": 0.7193703513965692
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.8,
+            "below_fit_fraction": 0.6666666666666666,
+            "core_level_mean": 8.526457597173145,
+            "duration_median": 9.939223087625578,
+            "end_residual_sd_median": 0.21943542457124154,
+            "end_slope_median": 0.3510754726839732,
+            "episodes_per_year": 6.6003614160939685,
+            "log_below_above_slope_ratio": 0.13850409947836895,
+            "rho_duration_core_level": -0.713873437215344,
+            "rho_duration_end_slope": 0.013600543801886083,
+            "rho_duration_rise_slope": -0.05240978005551997,
+            "rise_slope_median": 0.6950813718407527
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-07",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.4,
+          "peak_duration_coupling": -0.055,
+          "peak_level": 8.37,
+          "peak_scatter": 0.25,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.95
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2230,
+            "median": 14.0,
+            "share_le_2": 0.025560538116591928
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2294,
+            "median": 16.0,
+            "share_le_2": 0.09241499564080209
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1159,
+            "median": 12,
+            "share_le_2": 0.10094909404659189
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.7971356637812587,
+        "below_fit_fraction": 0.6693912922683497,
+        "core_level_mean": 8.557408062391685,
+        "duration_median": 10.160177649224352,
+        "end_residual_sd_median": 0.22020569179671742,
+        "end_slope_median": 0.3400051310219127,
+        "episodes_per_year": 6.647864017194645,
+        "log_below_above_slope_ratio": 0.13915787716522082,
+        "rho_duration_core_level": -0.7197794308592916,
+        "rho_duration_end_slope": 0.06068569393419514,
+        "rho_duration_rise_slope": 0.02039838554518127,
+        "rise_slope_median": 0.7006876396344142
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.015836475416339795,
+        "below_fit_fraction": 0.022057879570180485,
+        "core_level_mean": 0.01678254335634114,
+        "duration_median": 0.523511593992825,
+        "end_residual_sd_median": 0.0042723955506387915,
+        "end_slope_median": 0.008462669391281489,
+        "episodes_per_year": 0.1496522165522035,
+        "log_below_above_slope_ratio": 0.03588206609377578,
+        "rho_duration_core_level": 0.020848304135839844,
+        "rho_duration_end_slope": 0.058580715517881854,
+        "rho_duration_rise_slope": 0.06642803880845183,
+        "rise_slope_median": 0.023474208889578373
+      },
+      "objective": 100.17016261485333,
+      "private_attempt_sha256": "52add45101cb3be444556fe0c72fa814f6d3eb4f9545f1e8657e08682d2a3e86",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.7899408284023669,
+            "below_fit_fraction": 0.6804733727810651,
+            "core_level_mean": 8.578802447552448,
+            "duration_median": 9.428746192948893,
+            "end_residual_sd_median": 0.21535615966636185,
+            "end_slope_median": 0.3451987468334343,
+            "episodes_per_year": 6.760370177696246,
+            "log_below_above_slope_ratio": 0.13243195926372037,
+            "rho_duration_core_level": -0.7291510459575855,
+            "rho_duration_end_slope": 0.028391145202395093,
+            "rho_duration_rise_slope": 0.0592064682837376,
+            "rise_slope_median": 0.677597299962595
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.8,
+            "below_fit_fraction": 0.6848484848484848,
+            "core_level_mean": 8.576438848920864,
+            "duration_median": 9.946297956747003,
+            "end_residual_sd_median": 0.22023981432929043,
+            "end_slope_median": 0.3360002120383727,
+            "episodes_per_year": 6.6003614160939685,
+            "log_below_above_slope_ratio": 0.15187618631472877,
+            "rho_duration_core_level": -0.7268104826232332,
+            "rho_duration_end_slope": 0.09297602687433196,
+            "rho_duration_rise_slope": 0.007986107144081255,
+            "rise_slope_median": 0.6643715769333889
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.7666666666666667,
+            "below_fit_fraction": 0.6606060606060606,
+            "core_level_mean": 8.542963286713286,
+            "duration_median": 9.933930745581165,
+            "end_residual_sd_median": 0.2185288484837703,
+            "end_slope_median": 0.3457425381020892,
+            "episodes_per_year": 6.6003614160939685,
+            "log_below_above_slope_ratio": 0.08748976919896925,
+            "rho_duration_core_level": -0.7121152408102062,
+            "rho_duration_end_slope": 0.020909257622993182,
+            "rho_duration_rise_slope": 0.05203875072296125,
+            "rise_slope_median": 0.6690240875600857
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.7933130699088146,
+            "below_fit_fraction": 0.7021276595744681,
+            "core_level_mean": 8.532047872340426,
+            "duration_median": 10.474744464969262,
+            "end_residual_sd_median": 0.21710907527731232,
+            "end_slope_median": 0.3358587130615507,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": 0.11921890084463342,
+            "rho_duration_core_level": -0.7242922332378579,
+            "rho_duration_end_slope": -0.0035237948559987678,
+            "rho_duration_rise_slope": 0.028835861778339654,
+            "rise_slope_median": 0.712672352955672
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.8017751479289941,
+            "below_fit_fraction": 0.6686390532544378,
+            "core_level_mean": 8.569254385964912,
+            "duration_median": 10.005921716452576,
+            "end_residual_sd_median": 0.22776857325948335,
+            "end_slope_median": 0.3312157872435782,
+            "episodes_per_year": 6.760370177696246,
+            "log_below_above_slope_ratio": 0.1426910827973721,
+            "rho_duration_core_level": -0.7442444441020261,
+            "rho_duration_end_slope": -0.0196499961110679,
+            "rho_duration_rise_slope": -0.006862275516586556,
+            "rise_slope_median": 0.6909319261051603
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.7946428571428571,
+            "below_fit_fraction": 0.6755952380952381,
+            "core_level_mean": 8.57145979020979,
+            "duration_median": 9.641043293406256,
+            "end_residual_sd_median": 0.22600091536144634,
+            "end_slope_median": 0.33954235035670727,
+            "episodes_per_year": 6.720367987295677,
+            "log_below_above_slope_ratio": 0.08589981480659209,
+            "rho_duration_core_level": -0.7592593889085776,
+            "rho_duration_end_slope": 0.09198191091012123,
+            "rho_duration_rise_slope": 0.11584425377312144,
+            "rise_slope_median": 0.6595595611315556
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.7946428571428571,
+            "below_fit_fraction": 0.7083333333333334,
+            "core_level_mean": 8.54995644599303,
+            "duration_median": 10.73735031997785,
+            "end_residual_sd_median": 0.21958657522869368,
+            "end_slope_median": 0.3540976540982692,
+            "episodes_per_year": 6.720367987295677,
+            "log_below_above_slope_ratio": 0.14164160951280239,
+            "rho_duration_core_level": -0.7122408756368168,
+            "rho_duration_end_slope": 0.05232325384984909,
+            "rho_duration_rise_slope": 0.0773247112319627,
+            "rise_slope_median": 0.7033326892569925
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.8,
+            "below_fit_fraction": 0.6507462686567164,
+            "core_level_mean": 8.567114695340502,
+            "duration_median": 9.99837226443924,
+            "end_residual_sd_median": 0.22014363641435286,
+            "end_slope_median": 0.34662904574367326,
+            "episodes_per_year": 6.700366892095392,
+            "log_below_above_slope_ratio": 0.1335453810945773,
+            "rho_duration_core_level": -0.7325867074188704,
+            "rho_duration_end_slope": 0.0987509314820416,
+            "rho_duration_rise_slope": -0.028574970557242917,
+            "rise_slope_median": 0.7081753925152008
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.7770897832817337,
+            "below_fit_fraction": 0.6501547987616099,
+            "core_level_mean": 8.57604961832061,
+            "duration_median": 9.830832318868488,
+            "end_residual_sd_median": 0.21828084475194862,
+            "end_slope_median": 0.32766739576672654,
+            "episodes_per_year": 6.460353749691976,
+            "log_below_above_slope_ratio": 0.18160257511303252,
+            "rho_duration_core_level": -0.6940052056632859,
+            "rho_duration_end_slope": 0.01068666608443005,
+            "rho_duration_rise_slope": 0.05044926123153079,
+            "rise_slope_median": 0.7251603125396867
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.7950310559006211,
+            "below_fit_fraction": 0.6490683229813664,
+            "core_level_mean": 8.531744604316547,
+            "duration_median": 11.525189579930156,
+            "end_residual_sd_median": 0.22318380559333728,
+            "end_slope_median": 0.3556187767602933,
+            "episodes_per_year": 6.440352654491691,
+            "log_below_above_slope_ratio": 0.13411673049018902,
+            "rho_duration_core_level": -0.6867835474893357,
+            "rho_duration_end_slope": 0.08091360085429766,
+            "rho_duration_rise_slope": -0.041186239317331154,
+            "rise_slope_median": 0.7107217072987242
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.804093567251462,
+            "below_fit_fraction": 0.6432748538011696,
+            "core_level_mean": 8.551621160409557,
+            "duration_median": 10.039528725668788,
+            "end_residual_sd_median": 0.22132234540471302,
+            "end_slope_median": 0.3322590993195246,
+            "episodes_per_year": 6.840374558497386,
+            "log_below_above_slope_ratio": 0.16297406491022615,
+            "rho_duration_core_level": -0.6958386036290319,
+            "rho_duration_end_slope": -0.019109454002138048,
+            "rho_duration_rise_slope": 0.004683498655662423,
+            "rise_slope_median": 0.7193794986452549
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.8092307692307692,
+            "below_fit_fraction": 0.6276923076923077,
+            "core_level_mean": 8.542825704225352,
+            "duration_median": 10.84437836962752,
+            "end_residual_sd_median": 0.21544394731020375,
+            "end_slope_median": 0.3294641817530724,
+            "episodes_per_year": 6.500355940092545,
+            "log_below_above_slope_ratio": 0.18033958217885884,
+            "rho_duration_core_level": -0.739994394874171,
+            "rho_duration_end_slope": 0.027175422041274315,
+            "rho_duration_rise_slope": 0.15628673724584732,
+            "rise_slope_median": 0.733854268586561
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.8088235294117647,
+            "below_fit_fraction": 0.6735294117647059,
+            "core_level_mean": 8.579387417218543,
+            "duration_median": 9.784781427355483,
+            "end_residual_sd_median": 0.21830849608534184,
+            "end_slope_median": 0.33892358291756297,
+            "episodes_per_year": 6.8003723680968164,
+            "log_below_above_slope_ratio": 0.19363426584273272,
+            "rho_duration_core_level": -0.7066187695469123,
+            "rho_duration_end_slope": 0.18026552715740815,
+            "rho_duration_rise_slope": 0.04738810526192543,
+            "rise_slope_median": 0.7260717476884379
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.8046647230320699,
+            "below_fit_fraction": 0.6618075801749271,
+            "core_level_mean": 8.557330508474577,
+            "duration_median": 9.843435185961425,
+            "end_residual_sd_median": 0.222027836692473,
+            "end_slope_median": 0.3328005322233099,
+            "episodes_per_year": 6.8603756536976706,
+            "log_below_above_slope_ratio": 0.16923733469903432,
+            "rho_duration_core_level": -0.6950588375891805,
+            "rho_duration_end_slope": 0.08791060825462241,
+            "rho_duration_rise_slope": -0.06632938269517138,
+            "rise_slope_median": 0.7040459202717306
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.8364779874213837,
+            "below_fit_fraction": 0.6886792452830188,
+            "core_level_mean": 8.551205357142857,
+            "duration_median": 10.335578611586243,
+            "end_residual_sd_median": 0.22717868835784277,
+            "end_slope_median": 0.3446063731790144,
+            "episodes_per_year": 6.360348273690551,
+            "log_below_above_slope_ratio": 0.06720273461487086,
+            "rho_duration_core_level": -0.7398208291548634,
+            "rho_duration_end_slope": 0.1532033917873101,
+            "rho_duration_rise_slope": -0.0936325844178662,
+            "rise_slope_median": 0.6857058853940092
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.7777777777777778,
+            "below_fit_fraction": 0.6846846846846847,
+            "core_level_mean": 8.540326855123675,
+            "duration_median": 10.192711214069277,
+            "end_residual_sd_median": 0.21281150653090739,
+            "end_slope_median": 0.3444571069534241,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.14262404296119324,
+            "rho_duration_core_level": -0.7176502871067126,
+            "rho_duration_end_slope": 0.08776660579525203,
+            "rho_duration_rise_slope": -0.03708413410207132,
+            "rise_slope_median": 0.7203980073055718
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    },
+    {
+      "configuration": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-08",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.4,
+          "peak_duration_coupling": -0.065,
+          "peak_level": 8.42,
+          "peak_scatter": 0.28,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.95
+        }
+      },
+      "diversity": {
+        "1910_1929": {
+          "passed": true,
+          "real": {
+            "episodes": 141,
+            "median": 14,
+            "share_le_2": 0.02127659574468085
+          },
+          "summary": {
+            "episodes": 2232,
+            "median": 14.0,
+            "share_le_2": 0.023745519713261647
+          }
+        },
+        "1930_1949": {
+          "passed": true,
+          "real": {
+            "episodes": 129,
+            "median": 16,
+            "share_le_2": 0.10077519379844961
+          },
+          "summary": {
+            "episodes": 2302,
+            "median": 16.0,
+            "share_le_2": 0.08731537793223285
+          }
+        },
+        "1950_1959": {
+          "passed": true,
+          "real": {
+            "episodes": 76,
+            "median": 14.0,
+            "share_le_2": 0.11842105263157894
+          },
+          "summary": {
+            "episodes": 1151,
+            "median": 13,
+            "share_le_2": 0.09904430929626412
+          }
+        }
+      },
+      "feature_mean": {
+        "above_fit_fraction": 0.7944567468713443,
+        "below_fit_fraction": 0.6599132129046891,
+        "core_level_mean": 8.583371157070435,
+        "duration_median": 10.138671108063136,
+        "end_residual_sd_median": 0.22465524396347752,
+        "end_slope_median": 0.33765477926999476,
+        "episodes_per_year": 6.646613948744627,
+        "log_below_above_slope_ratio": 0.160172102696515,
+        "rho_duration_core_level": -0.7275127198709783,
+        "rho_duration_end_slope": 0.07405968085013977,
+        "rho_duration_rise_slope": 0.01735411425268303,
+        "rise_slope_median": 0.6905029608231892
+      },
+      "feature_sd": {
+        "above_fit_fraction": 0.01901097308163407,
+        "below_fit_fraction": 0.024386699380085926,
+        "core_level_mean": 0.016680090882471965,
+        "duration_median": 0.4486598262174636,
+        "end_residual_sd_median": 0.004447947389967657,
+        "end_slope_median": 0.005674645302223466,
+        "episodes_per_year": 0.14710779458989295,
+        "log_below_above_slope_ratio": 0.050563537451899336,
+        "rho_duration_core_level": 0.02587319024706101,
+        "rho_duration_end_slope": 0.0656789495290877,
+        "rho_duration_rise_slope": 0.06639934333007748,
+        "rise_slope_median": 0.01754114467429227
+      },
+      "objective": 94.27796723095818,
+      "private_attempt_sha256": "0d7bceb439d8e235e119cd1bc1a43bc7d4db11ca2c54783a54bdf238b8ede5a5",
+      "raw_feature_vectors": [
+        {
+          "replicate": 0,
+          "statistics": {
+            "above_fit_fraction": 0.799410029498525,
+            "below_fit_fraction": 0.6991150442477876,
+            "core_level_mean": 8.61070205479452,
+            "duration_median": 9.694073929218575,
+            "end_residual_sd_median": 0.22524440041151123,
+            "end_slope_median": 0.33955054131519447,
+            "episodes_per_year": 6.780371272896532,
+            "log_below_above_slope_ratio": 0.20028795830400425,
+            "rho_duration_core_level": -0.7119481225457515,
+            "rho_duration_end_slope": -0.05531155098663805,
+            "rho_duration_rise_slope": 0.0062753309027141465,
+            "rise_slope_median": 0.6873921399689709
+          },
+          "valid": true
+        },
+        {
+          "replicate": 1,
+          "statistics": {
+            "above_fit_fraction": 0.7740963855421686,
+            "below_fit_fraction": 0.6957831325301205,
+            "core_level_mean": 8.61088129496403,
+            "duration_median": 10.13865085307043,
+            "end_residual_sd_median": 0.2243728944463665,
+            "end_slope_median": 0.34106609457196874,
+            "episodes_per_year": 6.640363606494538,
+            "log_below_above_slope_ratio": 0.18879018227326194,
+            "rho_duration_core_level": -0.76653839979037,
+            "rho_duration_end_slope": 0.15078304107720403,
+            "rho_duration_rise_slope": -0.039653000213538334,
+            "rise_slope_median": 0.7257635592202123
+          },
+          "valid": true
+        },
+        {
+          "replicate": 2,
+          "statistics": {
+            "above_fit_fraction": 0.7781155015197568,
+            "below_fit_fraction": 0.6474164133738601,
+            "core_level_mean": 8.57338850174216,
+            "duration_median": 9.931719138519838,
+            "end_residual_sd_median": 0.22149329065390042,
+            "end_slope_median": 0.3479124830421697,
+            "episodes_per_year": 6.580360320893684,
+            "log_below_above_slope_ratio": 0.17346567505299343,
+            "rho_duration_core_level": -0.6936953893225796,
+            "rho_duration_end_slope": 0.11667203842681266,
+            "rho_duration_rise_slope": 0.05436753910657325,
+            "rise_slope_median": 0.6627957010649187
+          },
+          "valid": true
+        },
+        {
+          "replicate": 3,
+          "statistics": {
+            "above_fit_fraction": 0.7687687687687688,
+            "below_fit_fraction": 0.6216216216216216,
+            "core_level_mean": 8.55531914893617,
+            "duration_median": 10.609561262885109,
+            "end_residual_sd_median": 0.22982680758910287,
+            "end_slope_median": 0.3370985901847584,
+            "episodes_per_year": 6.660364701694823,
+            "log_below_above_slope_ratio": 0.15866986967262578,
+            "rho_duration_core_level": -0.7262684757266856,
+            "rho_duration_end_slope": 0.06723896940633248,
+            "rho_duration_rise_slope": 0.014063775295574886,
+            "rise_slope_median": 0.7141237106383149
+          },
+          "valid": true
+        },
+        {
+          "replicate": 4,
+          "statistics": {
+            "above_fit_fraction": 0.8328358208955224,
+            "below_fit_fraction": 0.6656716417910448,
+            "core_level_mean": 8.592508710801393,
+            "duration_median": 9.713850389234722,
+            "end_residual_sd_median": 0.22422349685044582,
+            "end_slope_median": 0.33750365422192985,
+            "episodes_per_year": 6.700366892095392,
+            "log_below_above_slope_ratio": 0.07829215835119302,
+            "rho_duration_core_level": -0.742248204125053,
+            "rho_duration_end_slope": 0.056644258012416786,
+            "rho_duration_rise_slope": -0.024714554126318834,
+            "rise_slope_median": 0.6794683883464685
+          },
+          "valid": true
+        },
+        {
+          "replicate": 5,
+          "statistics": {
+            "above_fit_fraction": 0.8308605341246291,
+            "below_fit_fraction": 0.6943620178041543,
+            "core_level_mean": 8.579931972789115,
+            "duration_median": 9.672398124588653,
+            "end_residual_sd_median": 0.21893304120000062,
+            "end_slope_median": 0.34212324597911226,
+            "episodes_per_year": 6.7403690824959615,
+            "log_below_above_slope_ratio": 0.11999638391523805,
+            "rho_duration_core_level": -0.7508117031608699,
+            "rho_duration_end_slope": 0.03318545430575029,
+            "rho_duration_rise_slope": 0.11971600844919231,
+            "rise_slope_median": 0.6672679088586926
+          },
+          "valid": true
+        },
+        {
+          "replicate": 6,
+          "statistics": {
+            "above_fit_fraction": 0.8,
+            "below_fit_fraction": 0.6805970149253732,
+            "core_level_mean": 8.579137323943662,
+            "duration_median": 11.091558223823085,
+            "end_residual_sd_median": 0.21662334943756653,
+            "end_slope_median": 0.34541568988261995,
+            "episodes_per_year": 6.700366892095392,
+            "log_below_above_slope_ratio": 0.178184228898849,
+            "rho_duration_core_level": -0.7088077491520378,
+            "rho_duration_end_slope": 0.10081958610802781,
+            "rho_duration_rise_slope": 0.12345381168910581,
+            "rise_slope_median": 0.6816598596274521
+          },
+          "valid": true
+        },
+        {
+          "replicate": 7,
+          "statistics": {
+            "above_fit_fraction": 0.781437125748503,
+            "below_fit_fraction": 0.655688622754491,
+            "core_level_mean": 8.60270390070922,
+            "duration_median": 10.02225740707945,
+            "end_residual_sd_median": 0.22938986217941296,
+            "end_slope_median": 0.338251880698124,
+            "episodes_per_year": 6.680365796895107,
+            "log_below_above_slope_ratio": 0.1086054069032746,
+            "rho_duration_core_level": -0.7400628128919801,
+            "rho_duration_end_slope": 0.033310577013449104,
+            "rho_duration_rise_slope": -0.10437398602470586,
+            "rise_slope_median": 0.685716382587773
+          },
+          "valid": true
+        },
+        {
+          "replicate": 8,
+          "statistics": {
+            "above_fit_fraction": 0.7863777089783281,
+            "below_fit_fraction": 0.6501547987616099,
+            "core_level_mean": 8.589488636363637,
+            "duration_median": 9.796561210649088,
+            "end_residual_sd_median": 0.2304931170861568,
+            "end_slope_median": 0.32975005576950306,
+            "episodes_per_year": 6.460353749691976,
+            "log_below_above_slope_ratio": 0.1960670291279944,
+            "rho_duration_core_level": -0.6818533681947857,
+            "rho_duration_end_slope": 0.03749105118720916,
+            "rho_duration_rise_slope": 0.08123488384770092,
+            "rise_slope_median": 0.682388531226652
+          },
+          "valid": true
+        },
+        {
+          "replicate": 9,
+          "statistics": {
+            "above_fit_fraction": 0.8099688473520249,
+            "below_fit_fraction": 0.6573208722741433,
+            "core_level_mean": 8.571774193548388,
+            "duration_median": 11.013663896592334,
+            "end_residual_sd_median": 0.22338546673022106,
+            "end_slope_median": 0.33959750427470003,
+            "episodes_per_year": 6.420351559291405,
+            "log_below_above_slope_ratio": 0.18215283569938998,
+            "rho_duration_core_level": -0.7709394943978449,
+            "rho_duration_end_slope": 0.1988589553468446,
+            "rho_duration_rise_slope": 0.014053052210946947,
+            "rise_slope_median": 0.6745545146316457
+          },
+          "valid": true
+        },
+        {
+          "replicate": 10,
+          "statistics": {
+            "above_fit_fraction": 0.7810650887573964,
+            "below_fit_fraction": 0.621301775147929,
+            "core_level_mean": 8.588013698630137,
+            "duration_median": 10.243744428618811,
+            "end_residual_sd_median": 0.22004905255661267,
+            "end_slope_median": 0.3391564091530464,
+            "episodes_per_year": 6.760370177696246,
+            "log_below_above_slope_ratio": 0.11488755486072351,
+            "rho_duration_core_level": -0.7001785935929943,
+            "rho_duration_end_slope": 0.02155877659233364,
+            "rho_duration_rise_slope": -0.023702355792376926,
+            "rise_slope_median": 0.6834763617836703
+          },
+          "valid": true
+        },
+        {
+          "replicate": 11,
+          "statistics": {
+            "above_fit_fraction": 0.7932098765432098,
+            "below_fit_fraction": 0.6358024691358025,
+            "core_level_mean": 8.561042402826855,
+            "duration_median": 10.498750862432644,
+            "end_residual_sd_median": 0.22580238420214493,
+            "end_slope_median": 0.3336615538740668,
+            "episodes_per_year": 6.48035484489226,
+            "log_below_above_slope_ratio": 0.18565989448287396,
+            "rho_duration_core_level": -0.7473833956653452,
+            "rho_duration_end_slope": 0.009360723688388368,
+            "rho_duration_rise_slope": 0.06737267193355868,
+            "rise_slope_median": 0.7006038131837957
+          },
+          "valid": true
+        },
+        {
+          "replicate": 12,
+          "statistics": {
+            "above_fit_fraction": 0.7928994082840237,
+            "below_fit_fraction": 0.6420118343195266,
+            "core_level_mean": 8.59532284768212,
+            "duration_median": 9.92760733468458,
+            "end_residual_sd_median": 0.22885352563218847,
+            "end_slope_median": 0.32612776011558686,
+            "episodes_per_year": 6.760370177696246,
+            "log_below_above_slope_ratio": 0.08073516331913438,
+            "rho_duration_core_level": -0.711955999172059,
+            "rho_duration_end_slope": 0.08302165459331358,
+            "rho_duration_rise_slope": 0.049994914329569935,
+            "rise_slope_median": 0.7140713442200851
+          },
+          "valid": true
+        },
+        {
+          "replicate": 13,
+          "statistics": {
+            "above_fit_fraction": 0.791907514450867,
+            "below_fit_fraction": 0.6589595375722543,
+            "core_level_mean": 8.58498322147651,
+            "duration_median": 9.800731110037304,
+            "end_residual_sd_median": 0.2310732518576949,
+            "end_slope_median": 0.33067912645195563,
+            "episodes_per_year": 6.920378939298525,
+            "log_below_above_slope_ratio": 0.22106655102669714,
+            "rho_duration_core_level": -0.7165330972216567,
+            "rho_duration_end_slope": 0.17280731044790473,
+            "rho_duration_rise_slope": -0.08952487721546018,
+            "rise_slope_median": 0.7061750965104894
+          },
+          "valid": true
+        },
+        {
+          "replicate": 14,
+          "statistics": {
+            "above_fit_fraction": 0.8119122257053292,
+            "below_fit_fraction": 0.677115987460815,
+            "core_level_mean": 8.575136363636364,
+            "duration_median": 10.159926920896396,
+            "end_residual_sd_median": 0.21989453385017377,
+            "end_slope_median": 0.34006840554553597,
+            "episodes_per_year": 6.380349368890836,
+            "log_below_above_slope_ratio": 0.2527836542007077,
+            "rho_duration_core_level": -0.7240640587807236,
+            "rho_duration_end_slope": 0.11188906670340498,
+            "rho_duration_rise_slope": -0.019166072286796197,
+            "rise_slope_median": 0.6914945033068807
+          },
+          "valid": true
+        },
+        {
+          "replicate": 15,
+          "statistics": {
+            "above_fit_fraction": 0.7784431137724551,
+            "below_fit_fraction": 0.655688622754491,
+            "core_level_mean": 8.563604240282686,
+            "duration_median": 9.90368263667915,
+            "end_residual_sd_median": 0.22482542873214076,
+            "end_slope_median": 0.33451347323964375,
+            "episodes_per_year": 6.680365796895107,
+            "log_below_above_slope_ratio": 0.1231090970552787,
+            "rho_duration_core_level": -0.7469146541949171,
+            "rho_duration_end_slope": 0.04662498167948199,
+            "rho_duration_rise_slope": 0.04826868593718793,
+            "rise_slope_median": 0.6910955579950047
+          },
+          "valid": true
+        }
+      ],
+      "valid_records": 16
+    }
+  ],
+  "input_manifest": {
+    "calibration_attempts_sha256": {
+      "v2-00.json": "289a3923aedb65c9d95e49f42189eed9beb98dc5d27966010dd1eb34a96884e9",
+      "v4-00.json": "2cfbd2761141beb909168e9a5aa9e95365f46e140918ac9ddd1278ef21d75674",
+      "v4-01.json": "86ef3f2a6108e68c82ef38bea3b23a455213e1b6018b687d4528d0bf079ebc10",
+      "v4-02.json": "2ab0c60005ab5868f4cee3f5c5094256ead127835ad10eb92a5f3a474e575f58",
+      "v4-03.json": "eb0ac56a46a9bec6e89aa0dccf7bcd87b2a6d722c9d45cca698b02d03e5c64fb",
+      "v4-04.json": "55c0181b9aca237a245e2a8644f9a933b2730b702eda891f2bdb3ddbbb7191de",
+      "v4-05.json": "f5c04e470d39c8c28acba6da8f763ae773aaf8e3ad114a36704ff6964097a75c",
+      "v4-06.json": "e81fd0c3fe2e935185817852662dc00a312595a55c565a98b93fbbcf0e25d9a5",
+      "v4-07.json": "52add45101cb3be444556fe0c72fa814f6d3eb4f9545f1e8657e08682d2a3e86",
+      "v4-08.json": "0d7bceb439d8e235e119cd1bc1a43bc7d4db11ca2c54783a54bdf238b8ede5a5"
+    },
+    "calibration_receipt_sha256": "d32dc346eb87fdf8ccbd6858025a962624789e9d1d2aeff7138ff86964676e43",
+    "calibration_source_commit": "036c619cac660deb9602730609a202aef9ef35fe",
+    "grid_sha256": "41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e",
+    "original_inputs_sha256": "572f24f553c7be443c888483ede4c50c67979b05ce75901eeb0470512fa72811",
+    "preparation_receipt_sha256": "95a365afc807bb857c0d2fbfa51f662cda65803951026876d3d5db320a520137",
+    "prepared_inputs_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+    "selected_config_sha256": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505"
+  },
+  "preparation": {
+    "code_source_sha256": {
+      "configs/a04e_benchmark.json": "aa0302035e86a3c0edd2681753d2cae41587cafa186f9392441d6882d7dfed34",
+      "configs/a04i_grid.json": "41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e",
+      "data/simulations/a04h_morphology_targets_20261108.json": "62f4d0c8d5ace67d494fb18e7e8e150f7010c6fe9dfcfcf8f61bd1abac4dc7c6",
+      "docs/protocols/a04i-joint-validation-v1.md": "049bc54de8b78c04cb944139b7c523a31649580ef81bf4240407618c8f23e124",
+      "scripts/a04h_morphology_targets.py": "f589b8215d0d64d06bb2891afa8ffe6c9ed79417a8a3cc9dd9a9cd01b767a376",
+      "scripts/a04i_pipeline.py": "bedd10c25769a38afcdd95eb8a038b60256dcd4b2b5d94139ddd874e15c3fce0",
+      "scripts/a04i_predictive_gate.py": "911b37a1123bfa42527fc690f100b0194ab24de5c632ee9c7467d2135b752530",
+      "src/dnmem/aavso.py": "480ef10ad5eb19f7daf5050b79f194f6de3d9783375621065377cf607b522ef1",
+      "src/dnmem/coverage.py": "fe09b8134f3131dc3c3b1d2192270f4534916d54da3f7a3012ed4bf01016860c",
+      "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+      "src/dnmem/injection_observe.py": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+      "src/dnmem/injection_truth.py": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+      "src/dnmem/injection_truth_v2.py": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa",
+      "src/dnmem/injection_truth_v4.py": "5bfb2d9030467aaa45a7f46668a0c14d14426e35db8862b900fbc58d607c5bbc",
+      "src/dnmem/joint_benchmark.py": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04",
+      "src/dnmem/phase_cadence.py": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+      "src/dnmem/x4_benchmark.py": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca",
+      "src/dnmem/x4_cadence.py": "22eb8eaf92f4e1f3d923452bc78f941a41bd342fe95ab61ff356282dfc317d07"
+    },
+    "diversity": {
+      "1910_1929": {
+        "episodes": 141,
+        "median": 14,
+        "share_le_2": 0.02127659574468085
+      },
+      "1930_1949": {
+        "episodes": 129,
+        "median": 16,
+        "share_le_2": 0.10077519379844961
+      },
+      "1950_1959": {
+        "episodes": 76,
+        "median": 14.0,
+        "share_le_2": 0.11842105263157894
+      }
+    },
+    "exposure_years": 49.997262149212865,
+    "inputs_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+    "operator_sha256": "f589b8215d0d64d06bb2891afa8ffe6c9ed79417a8a3cc9dd9a9cd01b767a376",
+    "original_inputs_sha256": "572f24f553c7be443c888483ede4c50c67979b05ce75901eeb0470512fa72811",
+    "preparation_commit": "036c619cac660deb9602730609a202aef9ef35fe",
+    "profile_builder_sha256": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+    "profile_summary": {
+      "profiles": 398,
+      "selected_rows": 72122,
+      "skipped": {
+        "insufficient_phase_anchors": 41
+      },
+      "x1_episodes": 439
+    },
+    "real_counts": {
+      "1910_1929": 141,
+      "1930_1949": 123,
+      "1950_1959": 70
+    },
+    "real_targets": {
+      "above_fit_fraction": 0.8323353293413174,
+      "below_fit_fraction": 0.7844311377245509,
+      "core_level_mean": 8.682351916376307,
+      "duration_median": 9.804499999852851,
+      "end_residual_sd_median": 0.22196458323149051,
+      "end_slope_median": 0.3333333335402927,
+      "episodes_per_year": 6.680365796895107,
+      "log_below_above_slope_ratio": -0.014067779882024428,
+      "rho_duration_core_level": -0.650405670240477,
+      "rho_duration_end_slope": 0.047020986240978946,
+      "rho_duration_rise_slope": -0.02451568356162211,
+      "rise_slope_median": 0.666666666563187
+    },
+    "source_sha256": {
+      "aavso_ss_cyg_1896_1900_20261107": "bb3a3d4168c3fee91488798a68d080e9ad5ae2e3014b9530da8afab47460a210",
+      "aavso_ss_cyg_1900_1910_20261107": "cc74ccdbca0403af1d791718d1a1387718a9ff8dbe5940f97dc583b0e891e8b1",
+      "aavso_ss_cyg_1904_1907_20261107": "579e144485fe9f703cf5425853ef178296c789571743e7adc581324a94354bcb",
+      "aavso_ss_cyg_1910_1920_20261107": "3ab53cf2877382243bd609f2000fd8721729ef2ed2b7b53adeb0857d80399aee",
+      "aavso_ss_cyg_1920_1930_20261107": "d0411463e58d162de213487244032082de5ed4b0137da6a5ad56b868193f7352",
+      "aavso_ss_cyg_1924_1927_20261107": "398537e920a7636382dddb9e068fe500e312a693ce190abef92252cb38a6d739",
+      "aavso_ss_cyg_1930_1940_20261107": "5d3917fe1ddf2c4407e3e2511b90e9ffcad3e7f918718cd4c67e9f9f344c1a58",
+      "aavso_ss_cyg_1940_1950_20261107": "58b9e68e7ce85101441bd6d9e619b153371fba3164fd1a6faea90711951495b7",
+      "aavso_ss_cyg_1944_1947_20261107": "e0ed47d4761bd08462f306d0b634d0bb444fc892ba91e877bea44d5a316226eb",
+      "aavso_ss_cyg_1950_1956_20261107": "8f645708716e8809b3d681effbacd08fa935c3643b9e50f1d08e7e2a6705e563",
+      "aavso_ss_cyg_1956_1959_20261107": "1840efeaa141ffd62899b54f6c078e823dede90437d7f44f5b7904f40c8ad87f",
+      "aavso_ss_cyg_1959_end_20261107": "7118b04fd946b8bc1b98c7c1212d5eee70406fba448a0830085e2bce0c24a1fb"
+    }
+  },
+  "profile_counts_by_era": {
+    "1910_1929": {
+      "profiles": 142,
+      "skipped": 1,
+      "x1_episodes": 143
+    },
+    "1930_1949": {
+      "profiles": 118,
+      "skipped": 15,
+      "x1_episodes": 133
+    },
+    "1950_1959": {
+      "profiles": 73,
+      "skipped": 4,
+      "x1_episodes": 77
+    },
+    "pre1910": {
+      "profiles": 65,
+      "skipped": 21,
+      "x1_episodes": 86
+    }
+  },
+  "receipt": {
+    "commit": "036c619cac660deb9602730609a202aef9ef35fe",
+    "configuration_count": 10,
+    "fixed_objective_scales": {
+      "above_fit_fraction": 0.0186,
+      "below_fit_fraction": 0.0193,
+      "core_level_mean": 0.0193,
+      "duration_median": 0.5158,
+      "end_residual_sd_median": 0.0061,
+      "end_slope_median": 0.0058,
+      "episodes_per_year": 0.1033,
+      "log_below_above_slope_ratio": 0.0423,
+      "rho_duration_core_level": 0.0467,
+      "rho_duration_end_slope": 0.062,
+      "rho_duration_rise_slope": 0.0681,
+      "rise_slope_median": 0.0292
+    },
+    "grid_sha256": "41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e",
+    "inputs_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+    "python": "3.15.0 (main, Oct  9 2026, 11:16:41) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "replicates_per_configuration": 16,
+    "seed_base": "a04i-calibration-20261108",
+    "selected": {
+      "v2-phase": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v2-00",
+        "family": "v2",
+        "noise_multiplier": 0.95,
+        "pair_id": "v2-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_sd": 0.2,
+          "decline_rate_median": 0.4,
+          "low_amplitude_probability": 0.05,
+          "low_peak_magnitude_max": 9.5,
+          "low_peak_magnitude_min": 9.0,
+          "minimum_decline_rate": 0.12,
+          "minimum_rise_rate": 0.15,
+          "peak_magnitude_max": 8.8,
+          "peak_magnitude_min": 8.0,
+          "quiet_magnitude": 11.8,
+          "reference_threshold": 10.0,
+          "rise_rate_log_sd": 0.65,
+          "rise_rate_median": 0.95
+        }
+      },
+      "v4-phase": {
+        "cadence_config": {
+          "donor_pool_size": 8,
+          "era_radius_days": 1826.25,
+          "history_grid_days": 0.25,
+          "season_window_days": 75.0
+        },
+        "configuration_id": "v4-05",
+        "family": "v4",
+        "noise_multiplier": 0.95,
+        "pair_id": "v4-phase",
+        "phase": "phase",
+        "shape_config": {
+          "decline_rate_log_spread": 0.23,
+          "decline_rate_median": 0.37,
+          "peak_duration_coupling": -0.065,
+          "peak_level": 8.42,
+          "peak_scatter": 0.28,
+          "rise_rate_log_spread": 0.65,
+          "rise_rate_median": 0.8
+        }
+      }
+    },
+    "source_sha256": {
+      "configs/a04e_benchmark.json": "aa0302035e86a3c0edd2681753d2cae41587cafa186f9392441d6882d7dfed34",
+      "configs/a04i_grid.json": "41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e",
+      "data/simulations/a04h_morphology_targets_20261108.json": "62f4d0c8d5ace67d494fb18e7e8e150f7010c6fe9dfcfcf8f61bd1abac4dc7c6",
+      "docs/protocols/a04i-joint-validation-v1.md": "049bc54de8b78c04cb944139b7c523a31649580ef81bf4240407618c8f23e124",
+      "scripts/a04h_morphology_targets.py": "f589b8215d0d64d06bb2891afa8ffe6c9ed79417a8a3cc9dd9a9cd01b767a376",
+      "scripts/a04i_pipeline.py": "bedd10c25769a38afcdd95eb8a038b60256dcd4b2b5d94139ddd874e15c3fce0",
+      "scripts/a04i_predictive_gate.py": "911b37a1123bfa42527fc690f100b0194ab24de5c632ee9c7467d2135b752530",
+      "src/dnmem/aavso.py": "480ef10ad5eb19f7daf5050b79f194f6de3d9783375621065377cf607b522ef1",
+      "src/dnmem/coverage.py": "fe09b8134f3131dc3c3b1d2192270f4534916d54da3f7a3012ed4bf01016860c",
+      "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+      "src/dnmem/injection_observe.py": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+      "src/dnmem/injection_truth.py": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+      "src/dnmem/injection_truth_v2.py": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa",
+      "src/dnmem/injection_truth_v4.py": "5bfb2d9030467aaa45a7f46668a0c14d14426e35db8862b900fbc58d607c5bbc",
+      "src/dnmem/joint_benchmark.py": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04",
+      "src/dnmem/phase_cadence.py": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+      "src/dnmem/x4_benchmark.py": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca",
+      "src/dnmem/x4_cadence.py": "22eb8eaf92f4e1f3d923452bc78f941a41bd342fe95ab61ff356282dfc317d07"
+    },
+    "stage": "a04i-calibration"
+  },
+  "scope": "A04i single finite morphology-only calibration; no X4 scores"
+}

@@ -1,0 +1,21 @@
+{
+  "calibration_attempts_sha256": {
+    "v2-00.json": "289a3923aedb65c9d95e49f42189eed9beb98dc5d27966010dd1eb34a96884e9",
+    "v4-00.json": "2cfbd2761141beb909168e9a5aa9e95365f46e140918ac9ddd1278ef21d75674",
+    "v4-01.json": "86ef3f2a6108e68c82ef38bea3b23a455213e1b6018b687d4528d0bf079ebc10",
+    "v4-02.json": "2ab0c60005ab5868f4cee3f5c5094256ead127835ad10eb92a5f3a474e575f58",
+    "v4-03.json": "eb0ac56a46a9bec6e89aa0dccf7bcd87b2a6d722c9d45cca698b02d03e5c64fb",
+    "v4-04.json": "55c0181b9aca237a245e2a8644f9a933b2730b702eda891f2bdb3ddbbb7191de",
+    "v4-05.json": "f5c04e470d39c8c28acba6da8f763ae773aaf8e3ad114a36704ff6964097a75c",
+    "v4-06.json": "e81fd0c3fe2e935185817852662dc00a312595a55c565a98b93fbbcf0e25d9a5",
+    "v4-07.json": "52add45101cb3be444556fe0c72fa814f6d3eb4f9545f1e8657e08682d2a3e86",
+    "v4-08.json": "0d7bceb439d8e235e119cd1bc1a43bc7d4db11ca2c54783a54bdf238b8ede5a5"
+  },
+  "calibration_receipt_sha256": "d32dc346eb87fdf8ccbd6858025a962624789e9d1d2aeff7138ff86964676e43",
+  "calibration_source_commit": "036c619cac660deb9602730609a202aef9ef35fe",
+  "grid_sha256": "41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e",
+  "original_inputs_sha256": "572f24f553c7be443c888483ede4c50c67979b05ce75901eeb0470512fa72811",
+  "preparation_receipt_sha256": "95a365afc807bb857c0d2fbfa51f662cda65803951026876d3d5db320a520137",
+  "prepared_inputs_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+  "selected_config_sha256": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505"
+}
