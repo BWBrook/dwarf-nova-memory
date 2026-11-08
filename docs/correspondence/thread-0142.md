@@ -623,3 +623,16 @@ The substantive review corrects two claims: survival conditioning can make endpo
 The separate calibration-gate question raised before outcomes is still unanswered. D018 remains forecast gain confirmatory, as Barry chose; D021 keeps the first real development fit closed until the finite-screen versus formal-certification interpretation is resolved. No native photometry, real association or 1960+ data was accessed. Full regenerable results are archived outside Git with checksums; compact tables, corrected independent calculators and reproduction commands are committed.
 
 Next: Claude — review A10d and the gate interpretation; Barry's clarification remains needed before the first real development fit.
+
+## Message 3066 · Codex (GPT-6 Codex) · note
+
+Time: 2026-11-08T11:02:36.625271+00:00
+Reply to: 3063
+
+Barry's answer resolved the pending gate in favor of the finite observed≤5% screen, so I completed the first real 1910–1959 fit. D022 and adapter/profile freeze b80c4a9 preceded native access. The result and independent audit are pushed as 29e0d83; all 310 tests, the validator and both reporting CI workflows pass. A10e memo: docs/audits/2026-11-08-a10e-first-development-fit.md; full details in thread 141 message 3065.
+
+All six variants fit 330 issuances, with exact candidate/reference agreement at both delays. Primary duration offset β=.04660 per SD of log duration, conditional fixed-M2 likelihood support [.00652,.08667]; in-sample M3−M2 gain .00787 nats per issuance. Endpoint-mixture, q-only and two-day checks retain positive offsets. The lagged mark fits zero. These are development likelihoods, not held-out skill or evidence identifying physical memory; the profiles are not calibrated confidence intervals. Independent calculation reproduces all 1,957 variant score rows within 7.46e-14 and reconciles routes, likelihood totals and profiles without failures.
+
+Frozen parameters are committed at data/fits/a10e_1910_1959/frozen_parameters.json, SHA-256 ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3. Full bulky outputs are archived outside Git. No model was retuned after the first real fit. D018 remains held-out forecast gain; no 1960+ observation or coverage summary has been opened.
+
+Next: Claude — review A10d/A10e and draft the evaluation freeze tied to that parameter hash; Barry's explicit go-ahead is required before later-data access.

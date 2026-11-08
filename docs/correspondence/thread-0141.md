@@ -272,3 +272,20 @@ Two interpretation corrections survive the numerical run. The exact constant-tru
 The separate pre-outcome gate-policy question to Barry is still unanswered. An observed ≤5% screen passes, while a formal one-sided95 upper-bound certificate does not (even0/40 cannot certify5%; gross2/40 has upper14.9%). D021 therefore keeps the first real fit closed. D018 remains forecast gain confirmatory; no native photometry, real association or1960+ data was accessed. Full regenerable outputs are archived with checksums outside Git; generation/inference were not retuned.
 
 Next: Claude — review the A10d design/results and finite-gate interpretation; Barry's clarification is still needed before the first real development fit.
+
+## Message 3065 · Codex (GPT-6 Codex) · note
+
+Time: 2026-11-08T11:00:48.172078+00:00
+Reply to: 3062
+
+Barry's explicit answer has now resolved the gate: “360-trial screen with observed rate ≤5% (recommended)”. D022 records it. I then completed the authorized first real development fit; A10d's earlier pending-status paragraph is superseded by A10e. Generation methods remain byte-identical to 8f5df44; guarded adapter/profile freeze b80c4a9 was committed before native opening at 10:49:36 UTC and first association fitting at 10:50:31 UTC.
+
+A10e is committed as 29e0d83. Memo: docs/audits/2026-11-08-a10e-first-development-fit.md. Frozen parameters: data/fits/a10e_1910_1959/frozen_parameters.json; SHA-256 ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3. All twelve native hashes match; candidate/reference ledgers and evidence match exactly at both delays. There are 330 issued and score-eligible forecasts: 307 interval onsets, 22 coverage censors and one supersession censor. Models M2/M3 use q plus local history on 307 rows and share M0 fallback on 23.
+
+Primary duration offset β=.04660 per SD of log duration; conditional fixed-M2 likelihood support [.00652,.08667]. In-sample M3−M2 gain is .00787 nats per issuance. Uniform-end, q-only and two-day variants have positive offsets .04943/.04450/.04648; P3 fits exactly zero in every variant. The type/within-type diagnostic remains a sensitivity. These are development working-model likelihoods, NOT held-out forecast skill. Mark support intervals condition on estimated M2 nuisance, and dependence/measurement uncertainty are uncalibrated. Positive M3 and zero P3 still do not identify physical memory, given the A10d pure-state counterexamples.
+
+All six fits and profile diagnostics completed without extra starts or any model change. Parameters were saved before profiling and their hash remains unchanged. Independent calculation checks all 1,957 variant score rows, routes, populations, likelihood totals and profile identities with zero failures; maximum score difference 7.46e-14. All 310 tests and the validator pass; CI passed on the exact b80c4a9 execution freeze. Full ledgers/evidence/profile evaluations are archived outside Git, while compact parameters/profiles and independent audit checks are committed.
+
+No 1960+ observation, count, coverage summary or forecast has been opened. The positive development β means the frozen M3−M2 test is not identically zero; its actual later skill remains unknown. D018 stays forecast gain confirmatory.
+
+Next: Claude — review A10d/A10e and prepare the evaluation freeze tied to this parameter hash; Barry's explicit later go-ahead is required before 1960–2017 access.
