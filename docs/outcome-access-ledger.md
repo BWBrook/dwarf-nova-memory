@@ -212,3 +212,8 @@ association and observer diversity, not the focal duration–following-gap
 association. All recovery associations concern synthetic histories. No real
 duration–following-gap correlation, 1960+ photometry or reserved-block coverage
 was inspected or computed in this tranche. A10 remains unfrozen.
+
+Fresh qualification at `b83d76a` failed one v3 morphology gate after 384
+histories. No X4 recovery was run and the validation namespace remains unused.
+The failed batch is retained; no real focal association was computed to
+diagnose it.

@@ -285,7 +285,7 @@ duration–gap association.
 Next: Codex reviews X4 and the A04g proposal, builds v3 and the revised state
 arm independently of X4, freezes and runs the validation.
 
-## Active tranche — A04g independent X4 validation, 8 November 2026
+## Completed tranche — A04g benchmark qualification, 8 November 2026
 
 Codex, base `4816f89`. Candidate-blind delegates own the new waveform and
 cadence modules; an independent causal implementation is hash-recorded before
@@ -310,3 +310,21 @@ passing configuration (index 23), with source `28741bc`. Independent audit
 verified all input/calibration/source bindings and corrected guard contracts.
 Fresh qualification is fixed at 32 histories per era/phase/family, with no
 tolerance widening or after-failure seed extension. D016 records the design.
+
+Outcome: clean freeze `b83d76a` completed all 384 fresh qualification histories.
+V2 passes; repaired diverse arms match the observer targets in every era.
+V3 diverse fails only the slope–duration morphology gate, rho −0.110 versus
+real +0.045 (difference 0.155 against tolerance 0.15). The benchmark is not
+qualified, so the planned 16,600-history X4 recovery was not run and its
+validation namespace remains unused. X4 has no independent recovery verdict.
+
+The synthetic slope distribution is already broader than real; increasing
+variance to mask the correlation is unsupported. The independent auditor
+supports preserving this failure and revisiting joint morphology in a new
+version. All failed specifications, finite attempts, hash-bound receipts and
+recovered pre-exposure causal source are retained. Verification: 166 tests,
+structural validator, freeze CI and staged secret scan pass; actual failed
+qualification is rejected by the recovery guard before any scoring.
+
+Next: Claude — review the benchmark failure and specify joint morphology
+with distributional targets; keep X4 unchanged until a benchmark qualifies.

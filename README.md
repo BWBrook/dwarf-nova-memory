@@ -64,10 +64,10 @@ Small floating-point differences across runtimes need not give identical hashes.
 | Data access and provenance | 12 hashed native SS Cyg acquisitions through 1959-12-31 noon under D013; 72,635 unique native IDs after overlap removal; raw data excluded from Git |
 | Candidate targets | Provisional, with classification evidence and caveats; no final eligibility asserted |
 | Statistical design and simulation programme | Specified, including censoring, missing events and state alternatives |
-| Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation; candidate observer-balanced event extractors X1–X4 (not frozen) |
+| Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation; candidate observer-balanced event extractors X1–X4 (none accepted) |
 | Archive adapter | Receipt-verified bounded native VStar/AID requests implemented for the SS Cyg open era; no time normalization or event inference |
 | M2/M3 and validated observational forecasting | Not implemented; draft event extractors and conditional synthetic recovery are available |
-| Synthetic recovery | Original 3,200-history X1/X2 screen plus independent 7,600-history X3 validation; no candidate qualifies. X3 improves intervals but fails effective coverage under state-compatible cadence; no real-star predictive result |
+| Synthetic recovery | Original 3,200-history X1/X2 screen plus 7,600-history X3 validation; no candidate qualifies. A04g's fresh 384-history benchmark qualification fails one v3 morphology gate, so X4 recovery is unrun; no real-star predictive result |
 | Observational findings | Annotation and returned-row coverage only. Independent 1957 boundary differences adjudicated; no real forecast or empirical duration–gap correlation has been computed |
 | Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |
 
@@ -106,6 +106,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A04d benchmark review and X3 repair](docs/audits/2026-11-07-a04d-observation-review-x3-repair.md) | Predictive checks of the A04c benchmark, why X1/X2 miss, fitted-interval extractor X3, proposed fresh validation |
 | [A04f X3 failure review and X4](docs/audits/2026-11-08-a04f-x3-failure-review-x4.md) | Why X3 failed A04e, a state-cadence observer-diversity defect, the X4 repair, proposed A04g validation |
 | [A04e independent X3 validation](docs/audits/2026-11-07-a04e-x3-independent-validation.md) | Qualified independent benchmark, 7,600-history frozen validation, failed global qualification, causal confirmation and retained challenges |
+| [A04g X4 benchmark qualification](docs/audits/2026-11-08-a04g-x4-independent-validation.md) | Independent waveform/cadence, retained calibration failures, repaired diversity, failed fresh benchmark gate; X4 recovery not run |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

@@ -36,3 +36,4 @@ rollout-*.jsonl
 .claude/settings.local.json
 data/simulations/a04e_validation_20261108/*.png
 data/simulations/a04e_validation_20261108/c2_095.svg
+data/simulations/a04g_qualification_20261108.png

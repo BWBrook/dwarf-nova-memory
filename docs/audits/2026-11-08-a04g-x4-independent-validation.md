@@ -89,8 +89,73 @@ acceptance/rejection regression now checks that contract. Decision code,
 candidate, inputs and every calibration attempt are bound to source/hash
 records; runtime bytes are checked again after execution.
 
-Qualification and recovery results are pending. No X4 recovery verdict is
-recorded at this stage.
+## Fresh qualification result: benchmark not qualified
+
+The final source freeze is
+`b83d76a6eb43b5145f72cbcfaad32fac2678e11b`. Fresh qualification completed all
+384 histories (32 per era/family/phase). **V3 fails one frozen morphology
+check in diverse cadence. X4 recovery was not run, so there is no independent
+X4 recovery verdict.** The planned 16,600-history recovery grid was not
+executed and its validation namespace remains unused.
+
+The [public qualification record](../../data/simulations/a04g_qualification_20261108.json)
+retains every check, nearby-threshold summary, per-era diversity result and
+full-receipt/attempt hashes. No tolerance or seed extension followed failure.
+
+| Measured feature | Real | v2 random | v2 diverse | v3 random | v3 diverse |
+|---|---:|---:|---:|---:|---:|
+| Median rise speed, mag/day | 0.667 | 0.673 | 0.697 | 0.732 | 0.750 |
+| Median end speed, mag/day | 0.333 | 0.333 | 0.326 | 0.333 | 0.330 |
+| Median end residual SD, mag | 0.222 | 0.219 | 0.219 | 0.241 | 0.236 |
+| End-speed–duration Spearman | +0.045 | +0.053 | +0.025 | −0.075 | **−0.110** |
+| Morphology gates | — | Pass | Pass | Pass | **Fail** |
+
+The permitted rho difference is 0.15: the lower bound is −0.105. V3 diverse
+has absolute difference 0.155, missing that boundary by 0.005. Its other six
+morphology checks pass. This is a narrow failed gate, not proof of a large
+physical discrepancy and not a reason to round the result into a pass.
+The independent auditor recommended preserving the failure with X4 untested.
+
+![Fresh benchmark qualification and measured slope distributions](../../data/simulations/a04g_qualification_20261108.svg)
+
+Both repaired diverse arms pass the unchanged observer gates in every era:
+
+| Era | Real median / share ≤2 | v2 diverse | v3 diverse |
+|---|---|---|---|
+| 1910–1929 | 14.5 / 2.11% | 15 / 1.73% | 15 / 1.64% |
+| 1930–1949 | 16 / 10.08% | 16 / 8.80% | 15 / 9.33% |
+| 1950–1959 | 14 / 11.84% | 13 / 8.50% | 14 / 8.49% |
+
+No donor fallback occurs in these batches. Additional donor-derived missing
+days are 1.72–2.25% of originally observed days, depending on family/era;
+they remain missing. The random arms reproduce the known 1930–1949 median
+mismatch and are not diversity-qualified, as specified before qualification.
+
+### Why I did not widen the grid or rerun seeds
+
+The measured end-slope distribution already has more spread in v3 than real:
+
+| Quantile | Real | v3 random | v3 diverse |
+|---|---:|---:|---:|
+| 10% | 0.237 | 0.226 | 0.217 |
+| 25% | 0.293 | 0.281 | 0.271 |
+| 50% | 0.333 | 0.333 | 0.330 |
+| 75% | 0.391 | 0.400 | 0.393 |
+| 90% | 0.429 | 0.469 | 0.464 |
+
+Increasing intrinsic decline spread merely to attenuate rho is not justified
+by that evidence. The diagnostic short/long medians are 0.333/0.341 in real
+data and 0.335/0.317 in v3 diverse cadence (the morphology diagnostic splits
+at 11 d). This shows residual dependence in the simulated measured features;
+it does not isolate waveform geometry from selection/cadence as the sole
+cause. V3 adapts curvature for approximately 39% of generated events while
+preserving tangent slopes, peaks and D/Q. Future work should test a separately
+versioned joint morphology design with prespecified distributional targets,
+not search spread parameters or random seeds for an acceptable rho.
+
+The recovery runner independently rejects this actual failed receipt with
+`qualification did not pass` before creating an output directory or scoring
+a candidate. No candidate widening, repair or label access followed it.
 
 ## Scope and reproduction
 
@@ -117,3 +182,36 @@ An extraction pass would still be conditional synthetic evidence. It would
 not establish real forecast skill, physical memory, operational reporting
 latency or predictor availability at emission. A10 remains unfrozen; 1960+
 photometry/reserved coverage remain closed.
+
+## Reproduction, checks and next tranche
+
+```bash
+python3 scripts/calibrate_x4_benchmark.py qualify \
+  --inputs outputs/a04g_inputs_20261108/inputs.json \
+  --parameters configs/a04g_benchmark.json \
+  --calibration outputs/a04g_calibration_20261108/receipt.json \
+  --freeze-commit b83d76a6eb43b5145f72cbcfaad32fac2678e11b \
+  --output outputs/a04g_qualification_20261108 --workers 4
+```
+
+The failed directory is immutable; use a fresh destination to reproduce.
+Qualification requires the clean freeze at HEAD. The source commits,
+calibration recipe and configuration/receipt hashes identify the historical
+execution. Local checks passed 166 tests, seed structural validation and the
+staged secret scan. CI at the freeze passed on Python 3.11–3.13. Independent
+review verified source/input/calibration bindings, the causal implementation,
+receipt contracts and the scientific stop decision. A passing test suite
+does not override the failed morphology gate.
+
+Final independent receipt review checked all fourteen recorded benchmark
+source hashes against the freeze and verified the public record's source-file
+hashes and exact morphology/diversity fields. The parent also checked all
+nineteen declared recovery runtime files remain byte-identical to the freeze.
+The unused recovery output directory does not exist. These checks confirm
+the recorded qualification failure, not X4 recovery performance.
+
+Next: Claude reviews the retained qualification failure and proposes a fresh
+joint morphology specification, keeping X4 unchanged. Independent X4 recovery
+remains outstanding; the observer-diversity repair can be reused subject to
+fresh qualification in that version. No real D–Q result, A05 extraction
+catalogue or A10 protocol has been produced here.

@@ -215,8 +215,13 @@ proposals, not a record of approvals the user has not given.
   [completed protocol](../docs/protocols/a04g-x4-independent-validation-v1.md)
   and [A04g report](../docs/audits/2026-11-08-a04g-x4-independent-validation.md)
   state exact scope and residual assumptions.
-- Status: calibration complete; source/input chain independently checked;
-  final freeze and fresh benchmark qualification precede any X4 recovery.
+- Status: final freeze `b83d76a`; all 384 fresh qualification histories
+  completed. V2 and repaired observer diversity pass. V3 diverse fails the
+  slope–duration rho gate (−0.110 versus real +0.045; difference 0.155
+  exceeds 0.15). Benchmark not qualified; X4 recovery not run and its
+  validation namespace unused. No tolerance widening, extra seeds or
+  variance search follows this failure. Independent review supports closing
+  this version and a separately specified joint morphology design next.
 
 ## New decision template
 
