@@ -1,0 +1,10 @@
+{
+  "archive_id": "a10h-failed-20261108-fc40973",
+  "archive_sha256": "a578650973c1662db3016e40e61631738ab9bc08eeab7e448e38b1e8fab00e56",
+  "archive_bytes": 300290,
+  "inventory_sha256": "4bfdd64f0a4bbe3fbac3c7dc465e734860a1cd4072e01926f2be58ffeca4d585",
+  "files": 27,
+  "scope": "raw failed attempt retained outside Git; no primary result; post-access repair required",
+  "status": "verified internal archive",
+  "verification": "local and remote whole-file SHA256 plus every member verified"
+}

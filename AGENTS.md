@@ -122,6 +122,13 @@ raw-data release or manuscript release is authorized. Until the primary file
 is written, inspect no observation, count, coverage summary or intermediate
 result. The run receipt is the authority for execution status.
 
+D026: the first authorized live attempt failed before any primary result on
+native `uncert="None"`. The block's untouched status is consumed. Only an
+exact-token uncertainty-validation repair is permitted; that field is unused
+by every forecasting path. The failed attempt must remain preserved, and the
+continuation/result must be labeled post-access format repair with its new
+source freeze. No parameter, original 26 source or protocol byte changes.
+
 ## Scientific invariants
 
 - Cite primary research or official archive documentation for external facts.

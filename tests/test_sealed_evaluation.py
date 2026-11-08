@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 from dnmem.evaluation import evaluate_frozen
 from dnmem.evaluation_acquire import acquire
-from dnmem.evaluation_native import RowCapError,select_analysis_rows
+from dnmem.evaluation_native import RowCapError,parse_native_bytes,select_analysis_rows
 from dnmem.evaluation_rehearsal import native_payload
 from dnmem.prefix_features import forecast_ledger,outcome_evidence
 from test_prefix_features import outbursts
@@ -41,6 +41,22 @@ class SealedEvaluationTests(unittest.TestCase):
             x.pop('prefix_last_jd');y.pop('prefix_last_jd')
         self.assertEqual(a,b)
         self.assertEqual(outcome_evidence(raw,a,stop=200.),outcome_evidence(filtered,b,stop=200.))
+
+    def test_missing_uncertainty_sentinel_changes_no_forecast_or_outcome(self):
+        from dnmem.directional_forecast import DirectionalBundle
+        start,stop=2436935.,2437135.
+        blank=[{**r,'JD':str(float(r['JD'])+start),'uncert':''} for r in outbursts()]
+        absent=[{**r,'uncert':'None'} for r in blank]
+        left,_=parse_native_bytes(native_payload(blank),start_jd=start,end_jd=stop)
+        right,_=parse_native_bytes(native_payload(absent),start_jd=start,end_jd=stop)
+        a,b=forecast_ledger(left),forecast_ledger(right)
+        ea,eb=outcome_evidence(left,a,stop=stop),outcome_evidence(right,b,stop=stop)
+        self.assertTrue(a)
+        self.assertEqual(a,b)
+        self.assertEqual(ea,eb)
+        params=json.loads((ROOT/'data/fits/a10e_1910_1959/frozen_parameters.json').read_text())
+        model=DirectionalBundle.from_dict(params['primary'])
+        self.assertEqual(model.scores(a,ea),model.scores(b,eb))
 
     def test_response_is_receipted_before_parse_and_cap_parents_are_retained(self):
         row={'obsID':'synthetic','JD':'2436934.5','mag':'12','uncert':'','fainterThan':'0','band':'Vis.','by':'SIM','val':'V'}

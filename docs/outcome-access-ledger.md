@@ -382,3 +382,15 @@ SHA-256. The tracked DOI-bound access file is now recorded for commit/push
 before any live transport. At this checkpoint no real evaluation row,
 coverage count, score or event count has been opened. The next command will
 run sealed from acquisition through the primary result under source fc40973.
+
+
+### First live attempt failed before a primary result
+
+Under published protocol DOI10.5281/zenodo.24053338 and pushed authorization
+`6e26eba`, acquisition began at 2026-11-08 12:38:28 UTC. At 12:39:51 it
+stopped on literal `None` in a native uncertainty field, before any ledger
+or primary result existed. No real outcome, event count or coverage summary
+was inspected. The block is nevertheless consumed and cannot regain
+untouched status. D026 records the independently reviewed exact-sentinel
+parser repair. Raw responses, hash receipts, log and the failed run remain
+retained; subsequent execution must be labeled post-access repair.

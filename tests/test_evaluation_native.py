@@ -102,6 +102,38 @@ class EvaluationNativeTests(unittest.TestCase):
                 end_jd=math.nextafter(EVALUATION_CUTOFF_JD, -math.inf),
             )
 
+    def test_none_uncertainty_is_missing_without_numeric_coercion(self):
+        visual = row("visual-none", EVALUATION_START_JD + 0.1)
+        visual["uncert"] = "None"
+        nonvisual = row("nonvisual-none", EVALUATION_START_JD + 0.2)
+        nonvisual["uncert"] = "None"
+        nonvisual["band"] = "CCD"
+        parsed, _ = parse_native_bytes(
+            native_payload([visual, nonvisual]),
+            start_jd=EVALUATION_START_JD,
+            end_jd=EVALUATION_START_JD + 1,
+        )
+        self.assertEqual(parsed[0]["uncert"], "None")
+        self.assertEqual([item["obsID"] for item in select_analysis_rows(parsed)], ["visual-none"])
+
+        numeric_zero = row("numeric-zero", EVALUATION_START_JD + 0.3)
+        numeric_zero["uncert"] = "0"
+        parsed, _ = parse_native_bytes(
+            native_payload([numeric_zero]),
+            start_jd=EVALUATION_START_JD,
+            end_jd=EVALUATION_START_JD + 1,
+        )
+        self.assertEqual(parsed[0]["uncert"], "0")
+        for invalid in ("nan", "-1", "not-a-number", " None "):
+            bad = row("invalid-uncert", EVALUATION_START_JD + 0.4)
+            bad["uncert"] = invalid
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError):
+                parse_native_bytes(
+                    native_payload([bad]),
+                    start_jd=EVALUATION_START_JD,
+                    end_jd=EVALUATION_START_JD + 1,
+                )
+
     def test_empty_response_requires_explicit_zero_count(self):
         empty = b"<VSXObject><Name>SS Cyg</Name><AUID>000-BCP-220</AUID><Count>0</Count></VSXObject>"
         rows, metadata = parse_native_bytes(

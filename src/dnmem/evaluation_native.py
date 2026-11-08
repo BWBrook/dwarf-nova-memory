@@ -35,6 +35,7 @@ _REQUIRED_COLUMNS = {
     "by",
     "val",
 }
+_MISSING_UNCERTAINTY = {"", "None"}
 
 
 class RowCapError(ValueError):
@@ -220,7 +221,7 @@ def parse_native_bytes(
             raise ValueError("nonfinite native magnitude") from exc
         if not math.isfinite(magnitude) or row["fainterThan"] not in {"0", "1"}:
             raise ValueError("unresolved magnitude or limiting-measurement representation")
-        if row["uncert"]:
+        if row["uncert"] not in _MISSING_UNCERTAINTY:
             try:
                 uncertainty = float(row["uncert"])
             except (TypeError, ValueError) as exc:

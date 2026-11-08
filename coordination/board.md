@@ -653,3 +653,21 @@ before opening 1960–2017. 2018 onward remains reserved.
 
 Next: Barry — choose Zenodo first or a Git tag, then authorize the single run;
 or retain the closed block.
+
+
+## A10h active: authorized evaluation after native-format repair
+
+Barry selected Zenodo first, then open (D025). The exact protocol is
+published at DOI10.5281/zenodo.24053338, public bytes verified, and authority
+`6e26eba` was pushed before live transport. The first attempt failed before
+any primary result on literal `None` uncertainty metadata. No outcome/count/
+coverage summary was inspected; untouched status is consumed (D026).
+
+Native adapter owner implements only exact-token missing uncertainty; an
+independent reviewer confirms complete downstream non-use and synthetic
+invariance. Freeze the minimal repair, rehearse and audit, then commit the
+repair-bound authority and continue under the same forecast/test. No raw
+release, parameter change, altered population rule or 2018+ access occurs.
+The failed attempt and its receipts remain archived outside Git.
+
+Next: Codex — complete the independently reviewed format repair and sealed run.

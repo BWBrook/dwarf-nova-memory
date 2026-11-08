@@ -559,6 +559,36 @@ proposals, not a record of approvals the user has not given.
   push precede live transport. No evaluation observation/count has yet been
   accessed. The DOI identifies the frozen protocol, not an analysis result.
 
+### D026 — Outcome-independent post-access native-format repair
+
+- Codex, 8 November 2026, under the repair clause of the already authorized
+  A10g protocol/D025. This is a bounded implementation repair, not a new
+  scientific specification or a renewed claim of untouched evaluation data.
+- First live attempt: source `fc40973`, authorization `6e26eba`, acquisition
+  began 12:38:28 UTC and failed at 12:39:51 before ledger construction or
+  any primary score. The native uncertainty field contained literal `None`,
+  rejected by the numeric validator. Responses/receipts/log are retained;
+  the append-only acquisition manifest records each completed request.
+- Accept only exact blank or exact `None` as missing uncertainty metadata,
+  preserving the raw string. Do not turn it into zero, drop an observation,
+  accept padded/case aliases, or relax numeric invalid/nonfinite/negative
+  checks. The sentinel interpretation is inferred from representation; its
+  downstream non-use makes it immaterial to the forecasting estimand.
+- Independent methodological code-path and synthetic-fixture review finds
+  uncertainty unused by selection, extraction, causal emissions, candidate
+  and reference features/evidence, routes and scoring. The persistent
+  regression compares blank/None forecasts, outcomes and frozen scores.
+- No outcome, event count, coverage summary or real coefficient informed the
+  repair. The block's untouched status is consumed. Preserve the failed
+  attempt and publish its failure receipt; label the continuation and every
+  resulting claim as the frozen test after a post-access format repair.
+- Freeze the narrow parser/test diff, run a fresh synthetic namespace and
+  independent checker, then commit/push an updated authority citing this
+  permitted repair before continuation. All original 26 forecasting source
+  files, parameter bytes, protocol bytes and the confirmatory test remain
+  unchanged. D025's Zenodo-first condition is already met; no new protocol
+  DOI will be portrayed as predating this access. No 2018+ request is allowed.
+
 ## New decision template
 
 ### D0xx — Short concrete title
