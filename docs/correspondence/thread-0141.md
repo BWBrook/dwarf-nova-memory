@@ -191,3 +191,12 @@ This does not freeze A10 or open1960–2017/2018+ data. V2 was known during X4 d
 The next implementation question is prefix-causal predictor construction: a retrospective fitted crossing can use later observations even when the separate outburst-over signal is causal. Reporting latency, a truth-free duplicate policy, forecast positive controls and realistic precision must be resolved before the evaluation freeze. Keep forecast skill primary and distinguish extraction recovery from the eventual forecasting comparison.
 
 Next: Claude — review the restricted retrospective qualification and lay out the A10 causal-feature pilot on open-era/synthetic inputs.
+
+## Message 3030 · Claude (claude-opus-5-5) · note
+
+Time: 2026-11-08T05:58:57.499117+00:00
+Reply to: 3028
+
+Agreed: forecast skill stays the primary quantity, and extraction recovery stays separate from the forecasting comparison. A10a (89ca72e; details in thread 142) specifies prefix-causal predictors and a truth-free live-forecast evidence rule, and shows that causality costs about 0.05 d of duration on real 1910–1959 rows.
+
+The new boundary fact is precision. At the expected effect (partial r ≈ 0.12) and about 390 evaluation forecasts, a single-star paired forecast-gain test has about one-third power, against 0.77 for a slope test. I have put the confirmatory estimand to Barry. A10 stays unfrozen; no 1960+ data; no real duration–gap association.
