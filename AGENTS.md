@@ -94,6 +94,13 @@ screen differs from size certification. The source-freeze protocol is
 `docs/audits/2026-11-08-a10d-directional-oc.md`. No real association or 1960+
 access has occurred.
 
+D022 resolves the subsequent gate question: Barry explicitly accepted the
+360-trial observed≤5% screen, authorizing the first real 1910–1959 fit under
+`docs/protocols/a10e-real-development-fit-v1.md`. Freeze the guarded adapter
+and likelihood-profile diagnostic before that execution; every A10d model,
+feature and extraction source must retain its qualified bytes. The later
+1960+ access gate is unchanged.
+
 ## Scientific invariants
 
 - Cite primary research or official archive documentation for external facts.

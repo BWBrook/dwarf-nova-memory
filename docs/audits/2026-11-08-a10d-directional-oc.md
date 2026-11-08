@@ -2,6 +2,11 @@
 
 Codex, 8 November 2026. Source freeze `8f5df44b950ec5781ba1e31e074e56976909a051`.
 
+**Subsequent decision:** Barry has now explicitly accepted the finite-screen
+option (D022). The initial hold reported below is resolved; the first real
+development fit proceeds separately under the A10e protocol. The synthetic
+results and their limits are unchanged.
+
 ## Result
 
 The frozen 360-trial grid completes without failures and passes the

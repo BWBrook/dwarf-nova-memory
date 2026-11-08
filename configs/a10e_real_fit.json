@@ -1,0 +1,13 @@
+{
+  "decision_date": "2026-11-08",
+  "decision_maker": "Barry W. Brook",
+  "expected_acquisitions": 12,
+  "gate_choice": "360-trial screen with observed rate ≤5% (recommended)",
+  "native_start_jd": 2413559.5,
+  "native_stop_jd": 2436934.0,
+  "scope": "single pre-1960 development fit; no 1960+ access",
+  "simulation_receipt_sha256": "be0e25cd6d5432ca4cf3283991e698ca4b205c7424d16aff88e01abe02ae6f82",
+  "simulation_source": "8f5df44b950ec5781ba1e31e074e56976909a051",
+  "start_jd": 2418672.5,
+  "stop_jd": 2436934.5
+}

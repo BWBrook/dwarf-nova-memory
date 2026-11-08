@@ -289,3 +289,13 @@ clarification remains unanswered: no first real duration–following-gap fit
 was made. No 1960+ observation, coverage summary or forecast was accessed.
 Generation freeze: `8f5df44b950ec5781ba1e31e074e56976909a051`. All reported
 associations and scores in the A10d memo are synthetic.
+
+
+### Codex A10e authorization checkpoint, 8 November 2026
+
+After A10d reporting commit `1026cff`, Barry explicitly selected the finite
+360-trial observed≤5% screen, which passed (D022). This authorizes the first
+1910–1959 development fit. Before opening native rows or computing that
+association, the adapter, source/window guards and profile diagnostics are
+being frozen under the A10e protocol. The run receipt will record source
+commit, native hashes and first-fit UTC. No 1960+ access is authorized.

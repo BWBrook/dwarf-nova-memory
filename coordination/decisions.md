@@ -406,6 +406,27 @@ proposals, not a record of approvals the user has not given.
   certification fails as anticipated from the fixed counts. The gate-policy
   question remains unanswered, so no real fit is made. See the A10d report.
 
+### D022 — Barry accepts the finite OC screen; first real development fit authorized
+
+- Decision maker and date: Barry W. Brook, 8 November 2026, direct reply to
+  the pre-outcome gate question, received after the A10d reporting commit.
+- Exact selected answer: “360-trial screen with observed rate ≤5%
+  (recommended)”. The question explicitly stated that passing permits the
+  pre-1960 fit but does not certify a true five-percent error rate.
+- The accepted screen passed in freeze `8f5df44`: all 360 trials complete,
+  every gated null observed rate ≤.05, and the predeclared finite-reference
+  calibration checks pass. D021's pending interpretation is resolved; its
+  formal-certification alternative is not adopted.
+- Execute the first 1910–1959 development fit under
+  `docs/protocols/a10e-real-development-fit-v1.md`. Freeze adapter/profile
+  sources first; require all A10d model/feature/extraction bytes unchanged.
+  Native acquisitions must retain their twelve accepted hashes and strict
+  pre-1960 scope. Publish frozen parameters and diagnostic likelihood
+  profiles, labeled according to their conditional support interpretation.
+- D018 remains held-out forecast gain. This opens no 1960+ observation,
+  coverage summary or evaluation block. No native record or real association
+  was inspected between receiving this answer and recording this decision.
+
 ## New decision template
 
 ### D0xx — Short concrete title
