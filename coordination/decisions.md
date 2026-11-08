@@ -496,6 +496,16 @@ proposals, not a record of approvals the user has not given.
   Zenodo protocol deposit is yet approved. No2018+ request is permitted.
   Full protocol: `docs/protocols/a10g-sealed-evaluation-v1.md`.
 
+- Rehearsal implementation correction: source freeze79b5eae completed the
+  synthetic58-year primary and independent audit, but discarded R0/M0
+  profiling aborted the whole S1 diagnostic. Synthetic-only diagnosis found
+  required M2/M3/P3 and joint profiles succeed; no likelihood pathology or
+  identification failure explains the discarded-model numerical status.
+  Restrict the evaluation-only profiling call to emitted models, preserving
+  every optimizer success criterion and all26 original source identities.
+  Record the first run, create a new freeze/namespace, and rerun the full
+  synthetic rehearsal before asking to open the later block.
+
 ## New decision template
 
 ### D0xx — Short concrete title

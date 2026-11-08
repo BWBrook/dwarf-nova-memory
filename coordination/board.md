@@ -633,7 +633,7 @@ calibration, protocol amendments, rehearsal and final evidence. Disjoint
 delegates own the native adapter/fixtures, source-independent primary checker,
 and scientific audit plus genuine joint S1 diagnostic. No real1960+ access
 is authorized or attempted. Forecast parameters and all26 A10d source hashes
-remain fixed. Current pre-freeze suite:336 tests and validator pass.
+remain fixed. Initial freeze79b5eae passed339 tests, the validator and CI.
 
 The review requires four pre-access repairs: genuine simultaneous joint S1;
 concordance hard-stop before scores; explicit interval/right-censor coverage
@@ -642,4 +642,20 @@ interpretation. Original A10f counts reproduce but pooled binomial inference,
 median-age sign proof and model-odds wording are not retained. The new
 [protocol](../docs/protocols/a10g-sealed-evaluation-v1.md) preserves the primary
 forecast/test and requires explicit committed later-data authority. Next is
-the frozen-source native-format rehearsal and independent score audit.
+the final rehearsal report and a decision on later-data access.
+
+The first frozen native-format rehearsal (79b5eae) completed397 synthetic
+forecasts. Independent scores/intervals agree within9.24e-14; all120 source
+hashes match. S1 aborted while profiling unused R0/M0 models whose profiles
+are discarded. Required M2/M3/P3 and joint diagnostics succeed in a separate
+synthetic-only diagnosis. Preserve the first run and restrict S1 to required
+profiles before a new freeze/rehearsal; no optimizer success check, original26
+source or forecast parameter changes. Compact first-attempt evidence is in
+`data/provenance/a10g_rehearsal_79b5eae/`; full outputs are hash-verified
+outside Git. No real evaluation archive was requested.
+
+The evaluation-only repair is implemented and independently diagnosed on the
+preserved synthetic stream: all required M2/M3/P3 profiles and the369-row,
+rank2 joint fit complete. The added regression forbids unused R0/M0 profiling.
+No optimizer, original A10d source, or forecast parameter changed. The repaired
+freeze will run a fresh commit-derived rehearsal before access is considered.

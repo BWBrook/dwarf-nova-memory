@@ -1,0 +1,11 @@
+{
+  "archive_id": "a10g-20261108-79b5eae",
+  "archive_sha256": "7934a8b26f9d98c03f653f0081813e5f543aed90e0286bcbdb245bbeda4f471a",
+  "archive_bytes": 1301296,
+  "inventory_sha256": "bdeadd36e2bdafb2a1fe430ce203f2a1f4a00670324f94c0b483fae4e03a50c5",
+  "verified_member_files": 137,
+  "uncompressed_member_bytes": 12162131,
+  "storage": "project shared archive, outside Git",
+  "verification": "local and remote whole-file SHA256 and every tar member verified",
+  "status": "preserved first synthetic rehearsal; S1 failure; superseded pending repaired freeze"
+}

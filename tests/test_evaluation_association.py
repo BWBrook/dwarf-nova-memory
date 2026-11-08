@@ -21,6 +21,7 @@ from dnmem.evaluation_association import (
     _prepare_joint_offset,
     evaluation_association,
 )
+from dnmem.fit_profiles import _base_model_profile, _mark_profile
 
 
 def association_fixture(
@@ -137,6 +138,30 @@ class EvaluationAssociationTests(unittest.TestCase):
         self.assertAlmostEqual(
             prepared.objective(np.zeros(2)), current.objective(np.zeros(1)), places=11
         )
+
+    def test_association_profiles_only_required_models_and_serializes_joint(self):
+        ledger, evidence, cutoff = association_fixture(n=55)
+        with patch(
+            "dnmem.fit_profiles._r0_profile",
+            side_effect=AssertionError("R0 profile is not an S1 diagnostic"),
+        ), patch(
+            "dnmem.evaluation_association._base_model_profile",
+            wraps=_base_model_profile,
+        ) as base_profile, patch(
+            "dnmem.evaluation_association._mark_profile",
+            wraps=_mark_profile,
+        ) as mark_profile:
+            result = evaluation_association(ledger, evidence, cutoff)
+
+        base_profile.assert_called_once()
+        self.assertEqual(base_profile.call_args.args[0], "M2")
+        self.assertEqual(
+            [call.args[0] for call in mark_profile.call_args_list], ["M3", "P3"]
+        )
+        self.assertEqual(set(result["staged"]["profiles"]), {"M2", "M3", "P3"})
+        self.assertEqual(result["joint"]["status"], "fitted")
+        self.assertTrue(result["joint"]["identifiability"]["full_column_rank"])
+        json.dumps(result, allow_nan=False)
 
     def test_constant_and_collinear_marks_are_not_reported_as_separately_identified(self):
         ledger, evidence, cutoff = association_fixture(n=70, constant_current=True)

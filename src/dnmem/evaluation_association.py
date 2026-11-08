@@ -24,7 +24,14 @@ from .directional_forecast import (
     _prepare_offset,
     fit_directional,
 )
-from .fit_profiles import _DELTA_NLL, _LR_CUTOFF, _Profiler, _rows, profile_bundle
+from .fit_profiles import (
+    _DELTA_NLL,
+    _LR_CUTOFF,
+    _Profiler,
+    _base_model_profile,
+    _mark_profile,
+    _rows,
+)
 from .ledger_forecast import ForecastModel, _conditional_node_loglik
 
 
@@ -340,6 +347,33 @@ def _joint_association(
     }
 
 
+def _required_profiles(
+    bundle: DirectionalBundle,
+    ledger: Sequence[Mapping[str, Any]],
+    evidence: Sequence[Mapping[str, Any]],
+) -> dict[str, Any]:
+    serialized_before = copy.deepcopy(bundle.to_dict())
+    _, _, q_rows = _rows(bundle, ledger, evidence)
+    result = {
+        "schema_version": "a10d-fit-profile-v1",
+        "likelihood_ratio_cutoff": _LR_CUTOFF,
+        "support_delta_negative_log_likelihood": _DELTA_NLL,
+        "models": {
+            "M2": _base_model_profile("M2", bundle.models["M2"], q_rows, bundle),
+            "M3": _mark_profile("M3", bundle, q_rows),
+            "P3": _mark_profile("P3", bundle, q_rows),
+        },
+        "interpretation": {
+            "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841",
+            "calibration_limit": "serial dependence and measurement uncertainty are not calibrated",
+            "mark_limit": "M3/P3 profiles hold fitted M2 nuisance parameters fixed exactly",
+        },
+    }
+    if bundle.to_dict() != serialized_before:
+        raise RuntimeError("required association profiles mutated the fitted bundle")
+    return result
+
+
 def evaluation_association(
     ledger: Sequence[Mapping[str, Any]],
     evidence: Sequence[Mapping[str, Any]],
@@ -353,7 +387,7 @@ def evaluation_association(
     ledger_before = copy.deepcopy(ledger)
     evidence_before = copy.deepcopy(evidence)
     staged = fit_directional(ledger, evidence, cutoff, directional=False)
-    staged_profile = profile_bundle(staged, ledger, evidence)
+    staged_profile = _required_profiles(staged, ledger, evidence)
     result = {
         "schema_version": "a10f-evaluation-association-v1",
         "scope": (
