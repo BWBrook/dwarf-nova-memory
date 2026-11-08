@@ -527,6 +527,29 @@ proposals, not a record of approvals the user has not given.
   `docs/audits/2026-11-08-a10g-evaluation-freeze.md`. D024 does not open the
   real evaluation block; Barry's timestamp/access decision remains pending.
 
+### D025 — Barry authorizes Zenodo timestamp, then the sealed evaluation
+
+- Barry W. Brook, 8 November 2026, answering the A10g access choice after
+  report `b56abfd` and reviewed snapshot `7b0eb3b`.
+- Verbatim selected answer: “Zenodo first, then open (recommended)”.
+  The question explicitly specified publishing the prepared 0.7 MB
+  protocol-only package first, then running the single sealed 1960–2017
+  evaluation; 2018 onward stays closed.
+- Publish the exact reviewed protocol package, SHA-256
+  `9cc7c7e7203619fbb4322f43b9af6e7207b59644367b06434673be555b9cd357`,
+  with checked creator metadata. Source freeze is
+  `fc409738222ded5a9bf78288c969e956b59d23f4`; protocol SHA-256
+  `ddfa46d14f35e213690e0d5e7d03a7a635a71b637d024a810d2f192929789232`.
+  Forecast parameters retain SHA-256
+  `ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3`.
+- After publication, record its DOI and this verbatim authority in the
+  tracked access file, commit and push before native access or transport.
+  Run the unchanged sealed command once; no pre-primary observation,
+  coverage or result inspection is permitted. All mismatch/failure rules
+  and the single six-year-cluster confirmatory test remain unchanged.
+- No real evaluation archive has been opened at this decision checkpoint.
+  This authorizes no 2018+ request, raw-data release or manuscript release.
+
 ## New decision template
 
 ### D0xx — Short concrete title

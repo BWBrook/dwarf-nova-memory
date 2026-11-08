@@ -362,3 +362,13 @@ only evaluation-diagnostic numerical repairs, never a forecasting change or
 selection for desired gain. No real later-period observation, count or
 coverage summary was accessed. No live authority or external protocol deposit
 was created. Barry's explicit timestamp/access choice is still required.
+
+
+### D025 authority received before evaluation access
+
+After A10g report `b56abfd` and board snapshot `7b0eb3b`, Barry selected
+“Zenodo first, then open (recommended)” in the explicit timestamp/access
+question. The reviewed scope is protocol publication followed by the single
+sealed 1960–2017 evaluation, with 2018 onward closed. At this checkpoint
+no later native response, count or coverage summary has been accessed.
+The DOI-bound authority will be committed/pushed before transport.
