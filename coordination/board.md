@@ -1,6 +1,6 @@
 # Shared task board
 
-Updated: 7 November 2026. Discussion lives in the `dwarf-nova-memory` board
+Updated: 8 November 2026. Discussion lives in the `dwarf-nova-memory` board
 section (snapshots in `docs/correspondence/`); this table is the record of
 claims and handovers.
 
@@ -19,20 +19,24 @@ claims and handovers.
 | A04f | X3 failure review and X4 repair | X4 proposed with development evidence; A04g protocol proposed, not frozen | Claude X4 and diagnosis; Codex v3 benchmark and validation | [A04f memo](../docs/audits/2026-11-08-a04f-x3-failure-review-x4.md), [proposed protocol](../docs/protocols/a04g-x4-validation-v1.md); state arm fails observer-diversity check; X4 94–98% effective coverage on development seeds of both v2 arms |
 | A04h | Joint morphology and cadence targets | Proposed, not frozen | Claude targets and operator; Codex next benchmark version | [A04h memo](../docs/audits/2026-11-08-a04h-joint-morphology-targets.md), [proposed targets](../docs/protocols/a04h-joint-morphology-targets-v1.md); v3 lacks amplitude–duration coupling; v2 random passes the waveform block; all arms fail decline sampling density |
 | A10a | Restriction review, prefix-causal predictors, precision | Proposed, not frozen | Claude protocol, ledger code and pilot; Codex models and controls | [A10a memo](../docs/audits/2026-11-08-a10a-prefix-predictors-review.md), [proposed protocol](../docs/protocols/a10-prefix-causal-predictors-v1.md); magnitude 10 structural (0.5 mag margins clear the peak distribution only there); causality costs ~0.05 d on real 1910–1959 rows; single-star forecast-gain test ~1/3 power at r≈0.12, estimand decision with Barry |
+| A10b | Model implementation, repaired ledger and full-chain synthetic controls | In progress | Codex with independent code/method references | D018 keeps forecast gain confirmatory; [development specification](../docs/protocols/a10b-model-controls-v1.md); no real focal fit or reserved-data access |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
 | A08 | Implement observational M0, then M1 | After A07 | Agent implementer + other reviewer | Censoring, boundary propagation, calibration |
 | A09 | Add past-only M2/M3 and identifiability simulation | After A08 | Rotate roles | Same state architecture, no future smoothing |
-| A10 | Freeze evaluation | Predictor ledger proposed (A10a); confirmatory estimand awaits scientific lead | Scientific lead | Cutoffs, ledger, final targets and score |
+| A10 | Freeze evaluation | D018 fixes forecast-gain confirmation; ledger/model/control work pending | Scientific lead | Cutoffs, ledger, final targets and score |
 
 ## Current blocking information
 
 The requested SS Cyg stream through native JD 2436934.0 is acquired in 12
 hashed exports, with 72,635 unique native IDs. Early coverage varies sharply.
-The three boundary disagreements are adjudicated. Conditional synthetic
-screening fails qualification; extraction/eligibility, confirmation, usable
-forecast counts, other targets and operating characteristics remain unresolved.
+The three boundary disagreements are adjudicated. A04i conditionally qualifies
+X4 at magnitude 10/C1 for retrospective extraction. A10b is implementing and
+testing the forecast chain; operational availability, observation/coarsening
+effects, baseline architecture and final operating characteristics remain
+unresolved. D018 retains forecast gain as confirmatory despite low expected
+single-star power.
 UT/geocentric timing is presumed; a
 convention sensitivity is not a bound on historical record errors. The 1960–2017 candidate
 evaluation is sealed at the raw-data level under D013, with published aggregate
@@ -418,6 +422,24 @@ then specify prefix-causal predictor construction for A10.
 Closing result commit: `b3741b3`; tests and gitleaks CI both pass. Board
 messages 3027 (full handoff) and 3028 (A10 boundary) record the result;
 the reviewed correspondence snapshot is refreshed through those posts.
+
+## Active tranche — A10b model and observation-process development, 8 November 2026
+
+Codex on `main`, base `5476d00`. D018 records Barry's explicit choice to keep
+forecast gain confirmatory; the coefficient is secondary. D019 and
+[the development specification](../docs/protocols/a10b-model-controls-v1.md)
+define this bounded tranche. Root owns integration/docs/pipeline; independent
+delegates authored the ledger reference, model component and adaptive stress
+controller in disjoint files. Their source access and scope are recorded in
+the specification and tests. All component work is integrated.
+
+Before production: 255 tests, structural checks and the numerical seed
+reproduction pass. Independent review corrected a ragged-endpoint likelihood
+defect and strengthened the trace/provenance contracts. Development concordance
+smokes pass on v2 and v4; no production model scores have been computed.
+Freeze source before the 100-history independent concordance, then run every
+one of the 56 prescribed full-chain trials. No real photometry is read and no
+real duration–following-gap association is fitted in this tranche.
 
 ## Completed tranche — A10a, 8 November 2026
 

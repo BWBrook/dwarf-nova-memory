@@ -1,6 +1,7 @@
 from pathlib import Path
 import sys
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
@@ -27,6 +28,37 @@ def outbursts(events=((100.0, 112.0), (150.0, 160.0)), nights=range(60, 200), sk
 
 
 class PrefixCausalityTests(unittest.TestCase):
+    def test_nonpositive_previous_gap_is_unavailable(self):
+        def episode(onset, end, peak):
+            return {"onset_t": onset, "onset_lo": onset-.5, "onset_hi": onset+.5,
+                    "end_t": end, "end_lo": end-.5, "end_hi": end+.5, "peak_t": peak,
+                    "onset_method": "fixture", "end_method": "fixture", "peak_mag": 8.5,
+                    "confirmed_event": True, "confirmation": "fixture", "n_onset_fit": 3, "n_end_fit": 3}
+        from dnmem.prefix_features import forecast_features
+        with patch("dnmem.prefix_features.x4_episodes", return_value=[episode(1.,20.,8.),episode(10.,30.,25.)]):
+            f = forecast_features(outbursts(nights=range(45)),
+                                  {"emission_index": 0, "emitted_at": 40., "bright_first_at": 24.})
+        self.assertIsNone(f["previous_gap"])
+        self.assertIsNone(f["previous_gap_covered"])
+
+    def test_windows_select_issue_times_after_latency(self):
+        rows = outbursts()
+        first = forecast_ledger(rows)[0]
+        t = first["emitted_at"]
+        self.assertEqual(forecast_ledger(rows, latency=2, start=t-.5, stop=t+.5), [])
+        late = forecast_ledger(rows, latency=2, start=t+1.5, stop=t+2.5)
+        self.assertEqual(len(late), 1)
+        self.assertEqual(late[0]["emission_index"], first["emission_index"])
+
+    def test_window_does_not_change_repeat_flag(self):
+        tail = [obs(n+.6+.1*k, 8.8, who) for n in (114, 115) for k, who in enumerate("ab")]
+        rows = [r for r in outbursts() if not 114 <= float(r["JD"]) < 116] + tail
+        full = forecast_ledger(rows)
+        repeat = full[1]
+        subset = forecast_ledger(rows, start=repeat["issue_time"]-.1, stop=repeat["issue_time"]+.1)
+        self.assertEqual(subset, [repeat])
+        self.assertTrue(repeat["repeat_of_previous"])
+
     def test_no_later_row_can_change_a_forecast(self):
         rows = outbursts()
         first = forecast_ledger(rows)[0]
@@ -62,6 +94,50 @@ class PrefixCausalityTests(unittest.TestCase):
 
 
 class OutcomeEvidenceTests(unittest.TestCase):
+    def test_delayed_issue_preserves_full_monitoring_hole(self):
+        rows = outbursts(skip=range(114, 122))
+        ledger = forecast_ledger(rows, latency=2)
+        first = outcome_evidence(rows, ledger, stop=200)[0]
+        self.assertEqual((first["kind"], first["reason"]), ("right_censored", "coverage"))
+        self.assertEqual(first["censor_at"], ledger[0]["issue_time"])
+
+    def test_overtaken_onset_is_not_replaced_with_a_later_one(self):
+        episodes = [{"confirmed_event": True, "peak_t": 12., "onset_lo": 9.5, "onset_hi": 10.5,
+                     "onset_t": 10., "onset_method": "fixture"},
+                    {"confirmed_event": True, "peak_t": 22., "onset_lo": 19.5, "onset_hi": 20.5,
+                     "onset_t": 20., "onset_method": "fixture"}]
+        ledger = [{"emission_index": 0, "emitted_at": 8., "issue_time": 12.}]
+        with patch("dnmem.prefix_features.x4_episodes", return_value=episodes):
+            evidence = outcome_evidence(outbursts(nights=range(30)), ledger, stop=30)[0]
+        self.assertEqual((evidence["kind"], evidence["reason"]), ("excluded", "overtaken"))
+        self.assertTrue(evidence["overtaken"])
+        self.assertIsNone(evidence["onset_index"])
+
+    def test_straddling_onset_does_not_assert_survival(self):
+        episode = {"confirmed_event": True, "peak_t": 14., "onset_lo": 11.5, "onset_hi": 12.5,
+                   "onset_t": 11.9, "onset_method": "fixture"}
+        ledger = [{"emission_index": 0, "emitted_at": 8., "issue_time": 12.}]
+        with patch("dnmem.prefix_features.x4_episodes", return_value=[episode]):
+            evidence = outcome_evidence(outbursts(nights=range(30)), ledger, stop=30)[0]
+        self.assertEqual(evidence["kind"], "excluded")
+        self.assertTrue(evidence["survival_ambiguous"])
+
+    def test_training_cutoff_blocks_later_outcome_fits(self):
+        rows = outbursts()
+        ledger = forecast_ledger(rows, stop=140)
+        poison = [r if float(r["JD"]) <= 140 else {**r, "mag": "8.0"} for r in rows]
+        expected = outcome_evidence(rows, ledger, stop=140)
+        self.assertEqual(expected, outcome_evidence(poison, ledger, stop=140))
+        self.assertEqual(expected[0]["kind"], "right_censored")
+        self.assertEqual(expected[0]["computed_as_of"], 140)
+        self.assertEqual(expected[0]["evidence_available_at"], 140)
+
+    def test_nonchronological_issues_are_rejected(self):
+        rows = outbursts()
+        ledger = forecast_ledger(rows)
+        with self.assertRaises(ValueError):
+            outcome_evidence(rows, [ledger[1], ledger[0]])
+
     def test_outcome_is_the_next_confirmed_onset(self):
         rows = outbursts()
         ledger = forecast_ledger(rows)

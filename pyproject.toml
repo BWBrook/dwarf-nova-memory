@@ -12,6 +12,7 @@ dependencies = []
 
 [project.optional-dependencies]
 plot = ["matplotlib>=3.7,<4"]
+analysis = ["numpy>=2,<3", "scipy>=1.15,<2"]
 
 [project.scripts]
 dnmem = "dnmem.cli:main"

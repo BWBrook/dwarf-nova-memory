@@ -24,13 +24,12 @@ value, with realistic competing explanations and observation uncertainty.
    [the roadmap](docs/08-implementation-roadmap.md). The first useful result is an
    audited feasibility pack, not a full population fit.
 
-### Run immediately, without downloads or package installation
+### Run the seed without package installation
 
 Python 3.11 or newer is sufficient for the demo, validators and tests. Run these
 commands from this directory:
 
 ```bash
-python -m unittest discover -s tests -v
 python scripts/validate_seed.py
 python scripts/check_demo_reproduction.py
 python scripts/validate_photometry.py data/fixtures/synthetic_photometry.csv
@@ -43,6 +42,14 @@ Optional plotting requires Matplotlib:
 
 ```bash
 python scripts/plot_demo.py outputs/my_first_demo
+```
+
+Full tests and the censoring-aware forecast prototype use the locked analysis
+environment (NumPy/SciPy):
+
+```bash
+uv sync --extra analysis
+uv run --frozen --extra analysis python -m unittest discover -s tests -v
 ```
 
 An installable package is also provided (`python -m pip install -e .`); that step
@@ -66,7 +73,7 @@ Small floating-point differences across runtimes need not give identical hashes.
 | Statistical design and simulation programme | Specified, including censoring, missing events and state alternatives |
 | Runnable code | Synthetic histories, sampled toy photometry, M0/M1 oracle forecasts, probability helpers, CSV validation; X1–X4 extractors, with X4 conditionally qualified for magnitude-10 retrospective extraction; no operational extractor |
 | Archive adapter | Receipt-verified bounded native VStar/AID requests implemented for the SS Cyg open era; no time normalization or event inference |
-| M2/M3 and validated observational forecasting | Not implemented; prefix-causal predictor ledger and truth-free outcome evidence proposed (A10a), with no forecast model yet |
+| M2/M3 and validated observational forecasting | A10b implements conditional M0–M3, an AR-gap timing baseline, common unknown-anchor fallback and shared-end sensitivity. Synthetic concordance/controls precede any real fit; no operational or validated real forecast result |
 | Synthetic recovery | Earlier X1/X2/X3 failures retained. A04i's 4,800-history X4 screen passes at magnitude 10 on qualified v2 phase-aligned cadence; C1/7 d selected. The unseen waveform fails qualification and magnitude-9.5 diagnostics fail in later eras. This is conditional retrospective extraction, with no real-star predictive result |
 | Observational findings | Annotation and returned-row coverage only. Independent 1957 boundary differences adjudicated; no real forecast or empirical duration–gap correlation has been computed |
 | Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |

@@ -271,6 +271,51 @@ proposals, not a record of approvals the user has not given.
   does not re-derive individual photometry-to-score calculations.
   Full result and limits: `docs/audits/2026-11-08-a04i-joint-validation.md`.
 
+### D018 — Forecast gain remains confirmatory
+
+- Date and decision maker: Barry, 8 November 2026, current chat response to
+  Codex's question distinguishing predictive gain from a model coefficient.
+  Exact selected reply: **“Forecast gain confirmatory (recommended)”**.
+- Evidence and alternatives: A10a's Gaussian power calculation (about 32%
+  score-test versus 77% coefficient-test power at r=0.12 and 390 forecasts)
+  checks numerically. These are tests of different estimands. A coefficient
+  fitted on evaluation outcomes is conditional association under a frozen
+  specification, not a more powerful test of frozen forecast improvement.
+- Choice: held-out M3–M2 forecast gain stays confirmatory, with its interval
+  and expected precision; duration coefficients remain secondary. A weak
+  result must not be interpreted as evidence of no predictive information.
+- No reserved observations or real duration–following-gap association were
+  accessed before this decision. A10 remains unfrozen.
+
+### D019 — A10b ledger repairs and synthetic model-development envelope
+
+- Date and decision maker: Codex, 8 November 2026, review of A10a at `5476d00`.
+- Accept the magnitude-10/C1 retrospective extraction definition and unchanged
+  X4 bytes at `352a09e` as the A05 reference. This does not certify an
+  operational extractor or open any protected block.
+- Prefix causality does not eliminate measurement-induced forecast information:
+  shared end/age error can make a measured mark useful with constant true
+  duration. The independent six-state example is retained. A10a's claim that
+  waveform errors can only dilute skill is withdrawn for subsequent work.
+- Repair issue-window filtering, overtaken onset assignment, coverage holes
+  spanning issue, ambiguous survival and training-label cutoff leakage in
+  `a10-prefix-v2`. Keep issued forecasts and explicit common exclusions;
+  train only on newly extracted as-of evidence, including right censoring.
+- Implement conditional M0–M3 plus common unknown-anchor R0, a shared-end
+  sensitivity and type/within-type diagnostic. These are statistical
+  prototypes, not an identified observation/latent-state likelihood.
+- Freeze source before 100 independent short-history ledger/evidence
+  comparisons at both latencies, then the fixed 56-trial synthetic development
+  grid. Full specification: `docs/protocols/a10b-model-controls-v1.md`.
+  Preserve failed fits and all controls. No production scores before the
+  exact concordance set passes. Small trial counts do not establish final
+  operating characteristics; stronger timing-only baselines, coarsening,
+  complete measurement propagation and inference calibration remain A10 work.
+- No raw archive access, real focal correlation, other-star acquisition or
+  reserved data is part of this envelope. Barry's D018 decision is independent
+  of control outcomes. An additional generator-tuning cycle is not authorized
+  by this specification.
+
 ## New decision template
 
 ### D0xx — Short concrete title

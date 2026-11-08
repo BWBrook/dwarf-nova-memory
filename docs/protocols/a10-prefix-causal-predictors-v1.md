@@ -1,8 +1,9 @@
 # A10 prefix-causal predictors, outcome evidence and precision
 
-Claude, 8 November 2026. Status: **proposed**. Codex reviews it and runs the
-positive-control validation. Barry decides the confirmatory estimand (see
-Precision). Evidence: the
+Claude, 8 November 2026; reviewed by Codex in A10b. Status: **proposed, revised
+for development**. Barry's D018 decision keeps forecast gain confirmatory and
+the coefficient secondary. The repaired `a10-prefix-v2` and bounded model
+controls are specified in [A10b](a10b-model-controls-v1.md). Evidence: the
 [A10a memo](../audits/2026-11-08-a10a-prefix-predictors-review.md). This
 protocol covers SS Cyg at magnitude 10.0 with X4 (`352a09e`) and the C1/7 d
 coverage rule that A04i qualified. It does not freeze A10 and does not open
@@ -35,17 +36,19 @@ bright evidence (`end_hi ≥ bright_first_at − 1.15 d`). The ledger records:
 
 **Contract:** no row with JD > emitted_at can change any ledger field.
 `tests/test_prefix_features.py` enforces this with poisoned future rows. A
-forecast without a prefix episode is kept. Its mark is missing, and every model
-must use a declared fallback for missing marks; the primary fallback is the
-baseline model's forecast.
+forecast without a prefix episode is kept. Its mark is missing. Missing marks
+use the corresponding baseline; an unavailable end anchor uses the same
+issue-anchored remaining-wait R0 forecast for every model.
 
 ## Outcome evidence
 
-`outcome_evidence` uses retrospective X4 on the full record. It is scoring
-evidence only, never a predictor. Each forecast is live from its issue time
-until the next forecast is issued. It is scored on the next retrospectively
-confirmed onset after τ, as the interval [max(onset_lo, τ), onset_hi], if that
-onset is established before the first of:
+`outcome_evidence` uses retrospective X4 through an explicit as-of cutoff. It
+is scoring evidence only, never a predictor. Training recomputes it at the
+training cutoff, with no later rows. The next onset is assigned relative to
+the emission before latency: an overtaken onset is flagged, not replaced with
+a later one. A bracket straddling issue does not establish survival and is
+commonly excluded, retaining its ledger entry. Eligible forecasts are scored
+on the original onset interval if it is established before the first of:
 
 - **coverage loss**: the start of the first gap longer than 7 d between visits
   after τ (C1/7 d);
@@ -55,12 +58,14 @@ onset is established before the first of:
 
 Otherwise the forecast is right-censored at the earliest of those times.
 
-This is the truth-free duplicate policy. It uses only the observation record
-and the extraction rules, never synthetic truth. Each confirmed onset scores at
-most one forecast. Whether a forecast exists, and when it ends, never depends on
-the length of the wait it predicts. A repeat emission issues a new forecast with
-the merged episode's prefix predictors. Sensitivity analysis: drop forecasts
-flagged `repeat_of_previous`.
+This truth-free duplicate policy uses the observation record and extraction
+rules, never synthetic truth. Each confirmed onset scores at most one forecast.
+Keep whole gaps crossing issue when applying coverage loss. These rules define
+a restricted issuance estimand; they do not prove independent censoring or
+physical-cycle survival. Repeat/false emissions remain observation-process
+limitations. Earliest operational outcome availability is not known; the
+development implementation uses conservative as-of availability and frozen
+fits. See A10b for explicit exclusions and fallback rules.
 
 ## Reporting latency
 
@@ -99,9 +104,12 @@ threshold changes which outbursts are counted, not only how they are measured.
 Run on fresh seeds with the v2-phase benchmark, with the full ledger → evidence
 → model → score chain:
 
-1. **Null and structured controls:** the mean paired gain of the mark model
-   over its baseline is no greater than zero within Monte Carlo error. Repeat
-   under the gross-error and persistent-offset stresses.
+1. **Null and structured controls:** distinguish no true duration information
+   from no direct duration effect. A measured mark can correct age error or
+   proxy latent activity left in a timing-only baseline. Report the complete
+   chain's gains and Monte Carlo uncertainty, including gross-error,
+   persistent-offset and adaptive-effort stresses; do not equate compatibility
+   with zero with proof of absence. A10b supplies the bounded development grid.
 2. **Positive control:** under the latent alternative (copula 0.13), report the
    gain and its sampling SD at the evaluation block size, and compare oracle
    (true D, true end), retrospective and prefix predictors.
@@ -129,12 +137,13 @@ from the open-era rate, not counted):
 Roughly 1,000 evaluation forecasts are needed before the paired score test
 reaches about 60% power. One star's 1960–2017 block cannot be expected to make
 the forecast gain statistically decisive, even if the published association
-holds. The confirmatory estimand must be chosen with that known; see the A10a
-memo's decision request.
+holds. Barry chose to retain forecast gain as confirmatory (D018). The
+coefficient remains secondary; lower power does not authorize changing the
+research question after outcomes.
 
 ## Remaining before an A10 freeze
 
-1. The confirmatory estimand.
+1. Final inference calibration for the D018 forecast-gain estimand.
 2. M0–M3 implemented on the ledger with censoring-aware scoring.
 3. Controls 1–4.
 4. The development fit on 1910–1959 forecasts, the first permitted real

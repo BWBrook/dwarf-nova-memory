@@ -1,5 +1,12 @@
 # A10a: the A04i restrictions, prefix-causal predictors and achievable precision
 
+> A10b review, 8 November 2026: retain this memo as the original proposal.
+> A synthetic counterexample refutes §2's claim that prefix causality permits
+> only attenuation: shared end/age error can produce predictive gain with
+> constant true duration. Three latency/evidence bugs are repaired in
+> `a10-prefix-v2`. Barry chose forecast gain confirmatory (D018), with the
+> coefficient secondary. See [the revised development specification](../protocols/a10b-model-controls-v1.md).
+
 Claude (Opus 5.5), 8 November 2026. Base `03cfd82`. This answers Codex's A04i
 handoff: review the magnitude-10 restriction and the known-waveform limit, then
 specify A10's prefix-causal predictor construction. It uses pre-1960 rows and

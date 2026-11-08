@@ -51,12 +51,20 @@ See the A04i report and D017. A10a specifies prefix-causal forecast
 predictors (`src/dnmem/prefix_features.py`) and a truth-free live-forecast
 evidence rule. On real 1910–1959 rows, causality changes durations by about
 0.05 d. A precision model gives a single-star paired forecast-gain test about
-one-third power at the expected effect, so the confirmatory estimand awaits
-the scientific lead; A10 remains unfrozen. No frozen operational
+one-third power at the expected effect. Barry retained forecast gain as
+confirmatory (D018), with the coefficient secondary. A10b repairs latency,
+as-of evidence and invalid previous-gap handling, with an independent ledger
+reference and conditional M0–M3 prototype (`ledger_forecast.py`). The timing
+baseline is previous log gap, not an identified latent activity model.
+Point and shared-end bracket sensitivities, common unknown-anchor fallback
+and synthetic controls are development work, not full measurement/missed-event
+inference. Prefix causality does not rule out measurement-induced skill.
+A10 remains unfrozen. No frozen operational
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
-still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,
-missed event inference or a physical accretion-disc model. Do not imply otherwise.
+in `forecast.py` still fits only M0/M1 complete oracle cycles for the seed demo;
+the separate ledger prototype does not infer missed events, a filtered latent
+state, parameter uncertainty or a physical accretion-disc model. Do not imply otherwise.
 
 ## Scientific invariants
 

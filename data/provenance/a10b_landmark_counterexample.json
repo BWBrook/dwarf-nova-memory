@@ -1,0 +1,336 @@
+{
+  "counterexample": {
+    "data_generating_null": "true duration is constant; Q is sampled independently of duration",
+    "retained_probability_after_issue_before_onset": 0.75,
+    "target_definitions": {
+      "true_gap_Q": "true next-onset time minus true current end",
+      "remaining_time_R_equals_Q_minus_A": "true next-onset time minus issue time",
+      "measured_gap_Qhat_equals_Q_minus_end_error": "true next-onset time minus estimated current end"
+    },
+    "gains_by_target": {
+      "true_gap_Q": {
+        "baseline_conditional_entropy_nats": 0.5493061443340548,
+        "mark_model_conditional_entropy_nats": 0.46209812037329684,
+        "oracle_expected_log_score_gain_nats": 0.08720802396075794,
+        "baseline_strata": [
+          {
+            "stratum": [
+              0.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "3.0": 0.5,
+              "5.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0
+            ],
+            "weight": 0.5,
+            "outcome_probabilities": {
+              "3.0": 0.3333333333333333,
+              "5.0": 0.6666666666666666
+            }
+          },
+          {
+            "stratum": [
+              4.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "5.0": 1.0
+            }
+          }
+        ],
+        "mark_strata": [
+          {
+            "stratum": [
+              0.0,
+              7.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "3.0": 0.5,
+              "5.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0,
+              5.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "3.0": 0.5,
+              "5.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0,
+              7.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "5.0": 1.0
+            }
+          },
+          {
+            "stratum": [
+              4.0,
+              5.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "5.0": 1.0
+            }
+          }
+        ]
+      },
+      "remaining_time_R_equals_Q_minus_A": {
+        "baseline_conditional_entropy_nats": 0.5493061443340548,
+        "mark_model_conditional_entropy_nats": 0.46209812037329684,
+        "oracle_expected_log_score_gain_nats": 0.08720802396075794,
+        "baseline_strata": [
+          {
+            "stratum": [
+              0.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "1.0": 0.5,
+              "3.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0
+            ],
+            "weight": 0.5,
+            "outcome_probabilities": {
+              "1.0": 0.6666666666666666,
+              "3.0": 0.3333333333333333
+            }
+          },
+          {
+            "stratum": [
+              4.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "1.0": 1.0
+            }
+          }
+        ],
+        "mark_strata": [
+          {
+            "stratum": [
+              0.0,
+              7.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "1.0": 0.5,
+              "3.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0,
+              5.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "1.0": 0.5,
+              "3.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0,
+              7.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "1.0": 1.0
+            }
+          },
+          {
+            "stratum": [
+              4.0,
+              5.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "1.0": 1.0
+            }
+          }
+        ]
+      },
+      "measured_gap_Qhat_equals_Q_minus_end_error": {
+        "baseline_conditional_entropy_nats": 0.5493061443340548,
+        "mark_model_conditional_entropy_nats": 0.46209812037329684,
+        "oracle_expected_log_score_gain_nats": 0.08720802396075794,
+        "baseline_strata": [
+          {
+            "stratum": [
+              0.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "1.0": 0.5,
+              "3.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0
+            ],
+            "weight": 0.5,
+            "outcome_probabilities": {
+              "3.0": 0.6666666666666666,
+              "5.0": 0.3333333333333333
+            }
+          },
+          {
+            "stratum": [
+              4.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "5.0": 1.0
+            }
+          }
+        ],
+        "mark_strata": [
+          {
+            "stratum": [
+              0.0,
+              7.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "1.0": 0.5,
+              "3.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0,
+              5.0
+            ],
+            "weight": 0.3333333333333333,
+            "outcome_probabilities": {
+              "3.0": 0.5,
+              "5.0": 0.5
+            }
+          },
+          {
+            "stratum": [
+              2.0,
+              7.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "3.0": 1.0
+            }
+          },
+          {
+            "stratum": [
+              4.0,
+              5.0
+            ],
+            "weight": 0.16666666666666666,
+            "outcome_probabilities": {
+              "5.0": 1.0
+            }
+          }
+        ]
+      }
+    },
+    "states": [
+      {
+        "true_duration": 5.0,
+        "true_age": 2.0,
+        "true_gap": 3.0,
+        "end_error": 0.0,
+        "observed_age": 2.0,
+        "observed_duration": 5.0,
+        "remaining_time": 1.0,
+        "measured_gap": 3.0,
+        "probability": 0.16666666666666666
+      },
+      {
+        "true_duration": 5.0,
+        "true_age": 2.0,
+        "true_gap": 5.0,
+        "end_error": 0.0,
+        "observed_age": 2.0,
+        "observed_duration": 5.0,
+        "remaining_time": 3.0,
+        "measured_gap": 5.0,
+        "probability": 0.16666666666666666
+      },
+      {
+        "true_duration": 5.0,
+        "true_age": 2.0,
+        "true_gap": 3.0,
+        "end_error": 2.0,
+        "observed_age": 0.0,
+        "observed_duration": 7.0,
+        "remaining_time": 1.0,
+        "measured_gap": 1.0,
+        "probability": 0.16666666666666666
+      },
+      {
+        "true_duration": 5.0,
+        "true_age": 2.0,
+        "true_gap": 5.0,
+        "end_error": 2.0,
+        "observed_age": 0.0,
+        "observed_duration": 7.0,
+        "remaining_time": 3.0,
+        "measured_gap": 3.0,
+        "probability": 0.16666666666666666
+      },
+      {
+        "true_duration": 5.0,
+        "true_age": 4.0,
+        "true_gap": 5.0,
+        "end_error": 0.0,
+        "observed_age": 4.0,
+        "observed_duration": 5.0,
+        "remaining_time": 1.0,
+        "measured_gap": 5.0,
+        "probability": 0.16666666666666666
+      },
+      {
+        "true_duration": 5.0,
+        "true_age": 4.0,
+        "true_gap": 5.0,
+        "end_error": 2.0,
+        "observed_age": 2.0,
+        "observed_duration": 7.0,
+        "remaining_time": 1.0,
+        "measured_gap": 3.0,
+        "probability": 0.16666666666666666
+      }
+    ]
+  },
+  "gaussian_power": {
+    "r": 0.12,
+    "n": 390,
+    "one_sided_alpha": 0.05,
+    "ideal_gain_nats": 0.0072523431014408606,
+    "exact_oracle_score_sd_per_case": 0.12,
+    "score_noncentrality_normal_approx": 1.1935191713943571,
+    "score_power_normal_approx": 0.3258742576468309,
+    "slope_noncentrality_normal_approx": 2.3809307358323486,
+    "slope_power_normal_approx": 0.7691581136090133,
+    "interpretation": {
+      "score": "tests positive out-of-sample expected log-score gain for frozen forecasts",
+      "slope": "tests a positive association after estimating the slope from evaluation outcomes"
+    }
+  }
+}

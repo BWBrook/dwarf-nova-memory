@@ -1,0 +1,20 @@
+{
+  "scope": "bounded synthetic development pilot, not final operating-characteristic calibration",
+  "concordance_histories": 100,
+  "concordance_years_per_history": 3,
+  "concordance_latencies": [0, 2],
+  "training_source_years": 50,
+  "evaluation_source_years": 58,
+  "seam_days": 30,
+  "primary_latency_days": 0,
+  "families": {
+    "v2-phase": {"replicates": 8, "cases": ["null", "structured", "gross", "offset", "adaptive", "alternative"]},
+    "v4-phase": {"replicates": 4, "cases": ["null", "alternative"]}
+  },
+  "variants": ["prefix_point", "prefix_uniform_end", "retrospective_point", "oracle_point"],
+  "type_within_subset": {"cases": ["null", "alternative"], "first_replicates": 4},
+  "latency_two_day_subset": {"cases": ["null", "alternative"], "first_replicates": 4, "variants": ["prefix_point_L2", "prefix_uniform_end_L2"]},
+  "endpoint_nodes": 5,
+  "paired_interval_calendar_block_years": 3,
+  "confirmatory_quantity": "held-out forecast gain M3 minus M2; coefficient secondary, Barry 2026-11-08"
+}

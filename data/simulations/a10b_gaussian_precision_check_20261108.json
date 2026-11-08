@@ -1,0 +1,43 @@
+{
+  "model": "A10 precision statement: how well can one star's block resolve a small duration effect?",
+  "seed": "a10-claude-precision-20261108",
+  "train_forecasts": 300,
+  "replicates": 5000,
+  "rows": [
+    {
+      "r": 0.0,
+      "evaluation_forecasts": 390,
+      "ideal_gain_nats": -0.0,
+      "approx_score_z": 0.0,
+      "approx_slope_z": 0.0,
+      "slope_test_power": 0.049,
+      "frozen_mean_gain_nats": -0.00164,
+      "frozen_gain_sd": 0.00381,
+      "frozen_p_gain_positive": 0.346,
+      "frozen_score_test_power": 0.029,
+      "online_mean_gain_nats": -0.00105,
+      "online_gain_sd": 0.00196,
+      "online_p_gain_positive": 0.196,
+      "online_score_test_power": 0.006
+    },
+    {
+      "r": 0.12,
+      "evaluation_forecasts": 390,
+      "ideal_gain_nats": 0.00725,
+      "approx_score_z": 1.185,
+      "approx_slope_z": 2.37,
+      "slope_test_power": 0.763,
+      "frozen_mean_gain_nats": 0.00555,
+      "frozen_gain_sd": 0.00736,
+      "frozen_p_gain_positive": 0.828,
+      "frozen_score_test_power": 0.328,
+      "online_mean_gain_nats": 0.0062,
+      "online_gain_sd": 0.00647,
+      "online_p_gain_positive": 0.849,
+      "online_score_test_power": 0.226
+    }
+  ],
+  "audit_scope": "Extension/rerun of the existing A10a Gaussian program on its original namespace, not an independently authored simulation or a full-chain validation. Independent analytic power and landmark counterexample are separate.",
+  "source_script": "scripts/a10_precision.py",
+  "source_sha256": "632cf576650a8e69c7ab11f6c237955d8ac7f4cdf3782508fd53a18ecb22e509"
+}
