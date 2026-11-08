@@ -1,0 +1,209 @@
+{
+  "C11_coverage": {
+    "M0": {
+      "0.5": {
+        "coverage_lower_bound": 0.4943310657596372,
+        "coverage_upper_bound": 0.5850340136054422,
+        "covered": 218,
+        "n": 441,
+        "not_covered": 183,
+        "undetermined": 40
+      },
+      "0.9": {
+        "coverage_lower_bound": 0.8752834467120182,
+        "coverage_upper_bound": 0.9410430839002267,
+        "covered": 386,
+        "n": 441,
+        "not_covered": 26,
+        "undetermined": 29
+      }
+    },
+    "M2": {
+      "0.5": {
+        "coverage_lower_bound": 0.5192743764172335,
+        "coverage_upper_bound": 0.6054421768707483,
+        "covered": 229,
+        "n": 441,
+        "not_covered": 174,
+        "undetermined": 38
+      },
+      "0.9": {
+        "coverage_lower_bound": 0.9183673469387755,
+        "coverage_upper_bound": 0.9682539682539683,
+        "covered": 405,
+        "n": 441,
+        "not_covered": 14,
+        "undetermined": 22
+      }
+    },
+    "M3": {
+      "0.5": {
+        "coverage_lower_bound": 0.546485260770975,
+        "coverage_upper_bound": 0.6167800453514739,
+        "covered": 241,
+        "n": 441,
+        "not_covered": 169,
+        "undetermined": 31
+      },
+      "0.9": {
+        "coverage_lower_bound": 0.9229024943310657,
+        "coverage_upper_bound": 0.9795918367346939,
+        "covered": 407,
+        "n": 441,
+        "not_covered": 9,
+        "undetermined": 25
+      }
+    }
+  },
+  "C12_C13_association": {
+    "M2_independent_reoptimization_improvement": 5.934452929068357e-11,
+    "M2_nll_scalar_difference": 2.2737367544323206e-13,
+    "M2_reoptimized_parameter_max_abs_difference": 1.7992425438428938e-07,
+    "condition_number_from_correlation": 1.7913350622313706,
+    "joint": {
+      "current_duration": {
+        "estimate": 0.03044526989982024,
+        "saved_endpoint_max_abs_error": 1.6612415043582018e-07,
+        "support": [
+          -0.0006263020845415859,
+          0.06151550481652465
+        ]
+      },
+      "previous_duration": {
+        "estimate": -0.022125802064229292,
+        "saved_endpoint_max_abs_error": 7.209495902354979e-08,
+        "support": [
+          -0.05339761059134033,
+          0.0091294334777042
+        ]
+      }
+    },
+    "joint_condition_number": 1.7913350622313706,
+    "joint_design_correlation": -0.5248143497088429,
+    "joint_nll_difference": -4.547473508864641e-13,
+    "n": 436,
+    "separate": {
+      "current": {
+        "estimate": 0.042093435424122236,
+        "nll_at_saved_estimate_difference": 2.2737367544323206e-13,
+        "saved_endpoint_max_abs_error": 2.824433504716728e-07,
+        "support": [
+          0.015739895438519957,
+          0.06844763932431865
+        ]
+      },
+      "previous": {
+        "estimate": -0.038357744776184644,
+        "nll_at_saved_estimate_difference": -2.2737367544323206e-13,
+        "saved_endpoint_max_abs_error": 2.728598579304631e-07,
+        "support": [
+          -0.06488568877974471,
+          -0.011837231947706896
+        ]
+      }
+    }
+  },
+  "C24_alternation": {
+    "development": {
+      "corr_log_duration_lag1": -0.40063996218948417,
+      "p_long_after_long": 0.17880794701986755,
+      "p_long_after_short": 0.7039106145251397,
+      "pairs": 330,
+      "repeat_flag_count_in_pair_population": 0,
+      "transitions_rows_previous_columns_current": [
+        [
+          53,
+          126
+        ],
+        [
+          124,
+          27
+        ]
+      ]
+    },
+    "evaluation": {
+      "corr_log_duration_lag1": -0.523332261766473,
+      "p_long_after_long": 0.14948453608247422,
+      "p_long_after_short": 0.6639676113360324,
+      "pairs": 441,
+      "repeat_flag_count_in_pair_population": 1,
+      "transitions_rows_previous_columns_current": [
+        [
+          83,
+          164
+        ],
+        [
+          165,
+          29
+        ]
+      ]
+    }
+  },
+  "C25_block_statistics": {
+    "SE_inflation_failure_boundary": 1.4270501885272726,
+    "block_means": [
+      0.02642418029755121,
+      0.04200892375358721,
+      0.04228395549960423,
+      0.002759467533133106,
+      0.01671729749618472,
+      -0.01291071936834832,
+      -0.009179131911129628,
+      0.027433240562095767,
+      0.0035050393399281327,
+      0.011773162111739753
+    ],
+    "blocks": 10,
+    "blocks_positive": 8,
+    "critical_t_from_incomplete_beta": 1.8331129326562363,
+    "leave_one_block_out_range": [
+      0.013240616611941905,
+      0.019390042103520102
+    ],
+    "lower_at_1_42_SE": 8.168204510675126e-05,
+    "lower_at_1_43_SE": -3.417591357162547e-05,
+    "mean_gain": 0.016533512177436503,
+    "median_gain": 0.00784598804034653,
+    "n": 441,
+    "se": 0.006320284834306244,
+    "share_positive_gains": 0.5396825396825397,
+    "strict_rule_note": "The positive-bound rule passes only below the boundary, not at equality; 1.43 is a rounded boundary and does not itself pass."
+  },
+  "analytic_slow_state_counterexample": {
+    "current_duration_gap_partial_covariance_given_previous_gap": 0.005769018722014213,
+    "definition": "log duration X=a*S+b*A; log gap Y=c*S+d*A; independent unit-variance stationary AR(1) components S,A; baseline conditions on previous Y.",
+    "duration_lag_correlation": -0.5299999999999999,
+    "interpretation": "Negative duration alternation and a negative separate lag association can coexist with dominant slow-state gap variation and current association; signs alone do not allocate mechanism.",
+    "lag_duration_gap_partial_covariance_given_previous_gap": -0.0006464136509594376,
+    "parameters": {
+      "a": 0.175,
+      "b": 0.35,
+      "c": 0.3,
+      "d": 0.001,
+      "rho_a": -0.9,
+      "rho_s": 0.95
+    },
+    "scope": "Analytic non-entailment example only; not fitted to data, not a competing empirical result.",
+    "slow_state_share_of_current_duration_gap_covariance": 0.9933774834437086,
+    "slow_state_share_of_current_partial_covariance": 0.8874603192750142,
+    "slow_state_share_of_gap_variance": 0.9999888890123443
+  },
+  "input_sha256": {
+    "A10j_summary": "b1087aaaeb8a6618cc25b2d534671908206762e326650b7b8fdcc88b70cd216d",
+    "development_ledger": "7355a842ca192cd3ceff787464da9ef5d696c4939c1d376295eceb41683fcebe",
+    "evidence-0.0.json": "af78b93906bc7cef3e365b7e327bb88e932c64815a69650d2113f0b11ef53d62",
+    "frozen_parameters.json": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+    "ledger-0.0.json": "be96e2fa620b882ebffdcc5d7e4eeb8f427ac773976f4478c965de3023e25d20",
+    "primary-scores.json": "9e8628d1406216afbe0aa5a22e346612646c20d518f9b49cd007716ebc950443",
+    "secondary.json": "fdb0b2564e64b5bc94ef5fe419b40fc4adae61a1765255bc859d93e518dd3d97"
+  },
+  "interpretation": {
+    "C11": "Support the numeric bracket-based observed-coverage bounds, conditional on the extracted onset brackets; they are partial identification in this realized sample, not confidence intervals, guaranteed physical-onset coverage or a formal calibration test.",
+    "C12": "Support the numeric conditional profiles. Replace follows from alternation with is compatible with alternation plus a current-mark association; the conditional coefficient is not causally decomposed.",
+    "C13": "Support the numeric joint profiles and modest full-rank condition number. The 436-row joint design has correlation -0.524814, distinct from the 441-pair C24 population. Correlation does not uniquely explain the zero-crossing intervals or establish nonidentifiability.",
+    "C24": "Support descriptive duration-pair alternation at forecast issuances, including one repeat-flagged record; this is not an independent unique-outburst catalog. A negative marginal correlation and lag coefficient do not exclude a slow positive latent component coexisting with a stronger alternating component.",
+    "C25": "Support the numbers with a rounding correction: failure threshold about 1.427 times SE; a 42% increase passes, an exact 43% increase fails. Influence and rescaling do not validate dependence assumptions."
+  },
+  "scope": "Independent secondary/exploratory aggregate verification on already opened data only; no 2018+ access or candidate analysis imports",
+  "script_sha256": "ca4d244f7c0e246220349cd7b564845521ec99d5586d849a62429781bc4c1239"
+}

@@ -1,0 +1,1139 @@
+{
+  "development_refits": {
+    "1910-1959": {
+      "level": {
+        "nll": 1024.0313433585893,
+        "optimization": [
+          {
+            "evaluations": 12,
+            "message": "Optimization terminated successfully.",
+            "nll": 1024.0313433585893,
+            "solution": [
+              3.5632043570597114e-07
+            ],
+            "start": [
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 21,
+            "message": "Optimization terminated successfully.",
+            "nll": 1024.0313433585895,
+            "solution": [
+              3.5632044088682413e-07
+            ],
+            "start": [
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 82,
+            "message": "Optimization terminated successfully.",
+            "nll": 1024.0313433585893,
+            "solution": [
+              3.563605969719298e-07
+            ],
+            "start": [
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          3.5632043570597114e-07
+        ],
+        "start_objective_spread": 2.2737367544323206e-13
+      },
+      "raw": {
+        "lr_vs_level": 5.193545878217037,
+        "nll": 1021.4345704194808,
+        "optimization": [
+          {
+            "evaluations": 209,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.4345704194809,
+            "solution": [
+              1.550694966858364e-05,
+              0.0465965864185156
+            ],
+            "start": [
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 106,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.4345704194808,
+            "solution": [
+              1.550573002504332e-05,
+              0.04659659085969305
+            ],
+            "start": [
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 118,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.4345704194809,
+            "solution": [
+              1.5507132689032395e-05,
+              0.04659658486001426
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          1.550573002504332e-05,
+          0.04659659085969305
+        ],
+        "start_objective_spread": 1.1368683772161603e-13
+      },
+      "timing_rows": 307,
+      "type": {
+        "lr_vs_level": 5.172058986989896,
+        "nll": 1021.4453138650944,
+        "optimization": [
+          {
+            "evaluations": 130,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.4453138650945,
+            "solution": [
+              -0.04224461622195339,
+              0.09280797338713381
+            ],
+            "start": [
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 141,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.4453138650944,
+            "solution": [
+              -0.04224461687495555,
+              0.09280797426115273
+            ],
+            "start": [
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 121,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.4453138650945,
+            "solution": [
+              -0.04224461851730555,
+              0.09280797573454033
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.04224461687495555,
+          0.09280797426115273
+        ],
+        "start_objective_spread": 1.1368683772161603e-13
+      },
+      "type_within": {
+        "lr_vs_level": 5.538294517829399,
+        "lr_within_given_type": 0.36623553083950355,
+        "nll": 1021.2621960996746,
+        "optimization": [
+          {
+            "evaluations": 279,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.2621960996746,
+            "solution": [
+              -0.04252840683210869,
+              0.09305317284928873,
+              0.012368935086509995
+            ],
+            "start": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 316,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.2621960996746,
+            "solution": [
+              -0.04252840543216647,
+              0.09305318117415001,
+              0.012368934619472674
+            ],
+            "start": [
+              0.1,
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 288,
+            "message": "Optimization terminated successfully.",
+            "nll": 1021.2621960996746,
+            "solution": [
+              -0.04252841754152102,
+              0.09305319509760997,
+              0.01236893641033919
+            ],
+            "start": [
+              -0.1,
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.04252840683210869,
+          0.09305317284928873,
+          0.012368935086509995
+        ],
+        "start_objective_spread": 0.0
+      }
+    }
+  },
+  "independence": "No dnmem module, check_a10d_scores, or a10j_postresult_review imported; fresh vector log-CDF/survival likelihood, direct covariates, Powell multistart fits, independent CR1 assembly.",
+  "level": {
+    "best_M2_level_shift": -0.046793247389121516,
+    "level_after_centered": {
+      "1960-1992": {
+        "blocks": 6,
+        "estimate": 0.0052852121826629656,
+        "lower_90": -0.00028181312246036705,
+        "n": 261,
+        "se": 0.0027627253910113858,
+        "upper_90": 0.010852237487786298
+      },
+      "1960-2017": {
+        "blocks": 10,
+        "estimate": 0.0037078885199331793,
+        "lower_90": 0.0002283815539929285,
+        "n": 441,
+        "se": 0.0018981410822836422,
+        "upper_90": 0.00718739548587343
+      },
+      "1993-2017": {
+        "blocks": 5,
+        "estimate": 0.0014207692089749893,
+        "lower_90": -0.0029287382789068956,
+        "n": 180,
+        "se": 0.0020402533220393623,
+        "upper_90": 0.005770276696856874
+      }
+    },
+    "level_first": {
+      "1960-1992": {
+        "blocks": 6,
+        "estimate": 0.005273818334854921,
+        "lower_90": -0.0004390578262121435,
+        "n": 261,
+        "se": 0.002835106212173751,
+        "upper_90": 0.010986694495921986
+      },
+      "1960-2017": {
+        "blocks": 10,
+        "estimate": 0.003695763965193177,
+        "lower_90": 0.0001300947889253377,
+        "n": 441,
+        "se": 0.001945144302212235,
+        "upper_90": 0.007261433141461016
+      },
+      "1993-2017": {
+        "blocks": 5,
+        "estimate": 0.0014075851291836482,
+        "lower_90": -0.003482016234142033,
+        "n": 180,
+        "se": 0.0022935988621165756,
+        "upper_90": 0.00629718649250933
+      }
+    },
+    "mark_level_shift": -0.011084439574561324,
+    "mean_standardized_log_duration": -0.23788096650634055,
+    "mean_unchanged_type_offset": 0.017283977857185356,
+    "original_scale_excess_relative_to_corrected_scale": 0.04790532951806359,
+    "primary": {
+      "1960-1992": {
+        "blocks": 6,
+        "estimate": 0.023983208669572695,
+        "lower_90": 0.009108833726293116,
+        "n": 261,
+        "se": 0.0073816465848293164,
+        "upper_90": 0.03885758361285227
+      },
+      "1960-2017": {
+        "blocks": 10,
+        "estimate": 0.016533512177437044,
+        "lower_90": 0.004947716309599478,
+        "n": 441,
+        "se": 0.006320284834306086,
+        "upper_90": 0.028119308045274613
+      },
+      "1993-2017": {
+        "blocks": 5,
+        "estimate": 0.00573145226384035,
+        "lower_90": -0.010666564885628341,
+        "n": 180,
+        "se": 0.007691930421380727,
+        "upper_90": 0.022129469413309042
+      }
+    },
+    "recentered_mark": {
+      "1960-1992": {
+        "blocks": 6,
+        "estimate": 0.01869799648690973,
+        "lower_90": 0.0065276123534706715,
+        "n": 261,
+        "se": 0.006039747876279734,
+        "upper_90": 0.030868380620348787
+      },
+      "1960-2017": {
+        "blocks": 10,
+        "estimate": 0.012825623657503865,
+        "lower_90": 0.0035888915647504568,
+        "n": 441,
+        "se": 0.00503882326517063,
+        "upper_90": 0.022062355750257272
+      },
+      "1993-2017": {
+        "blocks": 5,
+        "estimate": 0.004310683054865362,
+        "lower_90": -0.01198900071367219,
+        "n": 180,
+        "se": 0.007645804507660361,
+        "upper_90": 0.020610366823402913
+      }
+    },
+    "reduction_relative_to_original_clock_scale": 0.04571532195574912,
+    "remaining_after_level": {
+      "1960-1992": {
+        "blocks": 6,
+        "estimate": 0.018709390334717774,
+        "lower_90": 0.00651041323339884,
+        "n": 261,
+        "se": 0.006053937594133793,
+        "upper_90": 0.030908367436036706
+      },
+      "1960-2017": {
+        "blocks": 10,
+        "estimate": 0.01283774821224387,
+        "lower_90": 0.0036416336687415257,
+        "n": 441,
+        "se": 0.005016665574540949,
+        "upper_90": 0.022033862755746213
+      },
+      "1993-2017": {
+        "blocks": 5,
+        "estimate": 0.004323867134656703,
+        "lower_90": -0.012120652654716768,
+        "n": 180,
+        "se": 0.007713743733764637,
+        "upper_90": 0.02076838692403017
+      }
+    },
+    "same_best_level_raw": {
+      "1960-1992": {
+        "blocks": 6,
+        "estimate": 0.019892752582138237,
+        "lower_90": 0.0050389525199558294,
+        "n": 261,
+        "se": 0.007371435970846319,
+        "upper_90": 0.034746552644320645
+      },
+      "1960-2017": {
+        "blocks": 10,
+        "estimate": 0.01239298716013096,
+        "lower_90": 0.0009791016321522693,
+        "n": 441,
+        "se": 0.006226504283857526,
+        "upper_90": 0.023806872688109652
+      },
+      "1993-2017": {
+        "blocks": 5,
+        "estimate": 0.0015183272982204096,
+        "lower_90": -0.01515692975196022,
+        "n": 180,
+        "se": 0.007821977243924501,
+        "upper_90": 0.01819358434840104
+      }
+    },
+    "same_best_level_type": {
+      "1960-1992": {
+        "blocks": 6,
+        "estimate": 0.010037602515611208,
+        "lower_90": 0.0004620430320575169,
+        "n": 261,
+        "se": 0.0047520246214809644,
+        "upper_90": 0.0196131619991649
+      },
+      "1960-2017": {
+        "blocks": 10,
+        "estimate": 0.009047416241141606,
+        "lower_90": 0.004086898129798439,
+        "n": 441,
+        "se": 0.002706062470551241,
+        "upper_90": 0.014007934352484774
+      },
+      "1993-2017": {
+        "blocks": 5,
+        "estimate": 0.007611646143160683,
+        "lower_90": -0.006306065435282308,
+        "n": 180,
+        "se": 0.006528476468247689,
+        "upper_90": 0.02152935772160367
+      }
+    }
+  },
+  "limitations": {
+    "decomposition_interaction": 1.2124554740002708e-05,
+    "decomposition_is_not_temporal_drift_removal": true,
+    "estimated_level_and_refits_reuse_evaluation_outcomes": true,
+    "intervals_ignore_estimated_level_and_center_uncertainty": true,
+    "level_fraction_in_first_ordering": 0.2235316928145922,
+    "no_within_type_equivalence_or_absence_test": true,
+    "short_forecast_total": 245,
+    "short_forecasts_with_negative_whole_offset": 181,
+    "type_contrast_is_untruncated_working_clock_location_ratio": true,
+    "type_lr_comparison_is_nonnested_in_sample": true,
+    "whole_type_within_rule_can_shorten_short_forecasts": true
+  },
+  "max_abs_frozen_score_error": 6.128431095930864e-14,
+  "numeric_comparison_to_A10j": {
+    "development_refit_differences": {
+      "clock_scale_ratio": 1.097251014600054,
+      "raw_lr_difference": 1.1368683772161603e-12,
+      "type_contrast_difference": -4.161271460745297e-08,
+      "type_lr_difference": 4.547473508864641e-13,
+      "within_lr_difference": 2.0463630789890885e-12
+    },
+    "level_max_absolute_differences": {
+      "best_level": 1.4398711493945893e-08,
+      "level_first": 1.891715950552708e-15,
+      "mark_level": 1.734723475976807e-18,
+      "primary": 1.2004286453759505e-15,
+      "recentered_mark": 7.528699885739343e-16,
+      "remaining_after_level": 2.138914045879403e-15,
+      "same_best_level_raw": 1.4712153596080357e-09,
+      "same_best_level_type": 2.448709301300367e-09,
+      "xbar": 5.551115123125783e-17
+    },
+    "refit_differences": {
+      "1960-1992": {
+        "clock_scale_ratio": 1.1773094283587042,
+        "illustrative_scale_difference_at_36_days": 6.383139420913349,
+        "raw_lr_difference": 3.865352482534945e-12,
+        "type_contrast_difference": -3.072550125438056e-08,
+        "type_lr_difference": 6.821210263296962e-13,
+        "within_lr_difference": 1.1368683772161603e-12
+      },
+      "1960-2017": {
+        "clock_scale_ratio": 1.1381055304395336,
+        "illustrative_scale_difference_at_36_days": 4.971799095823209,
+        "raw_lr_difference": 5.4569682106375694e-12,
+        "type_contrast_difference": -6.596737905928407e-09,
+        "type_lr_difference": -9.094947017729282e-13,
+        "within_lr_difference": 4.547473508864641e-13
+      },
+      "1993-2017": {
+        "clock_scale_ratio": 1.0814231932910399,
+        "illustrative_scale_difference_at_36_days": 2.931234958477435,
+        "raw_lr_difference": 9.094947017729282e-13,
+        "type_contrast_difference": 4.659198457601654e-09,
+        "type_lr_difference": -2.2737367544323206e-13,
+        "within_lr_difference": 6.821210263296962e-13
+      }
+    }
+  },
+  "provenance": {
+    "base_checkout_commit": "b96bd5b1ab821c16867946ba1752dcdddac14f85",
+    "inputs": {
+      "data/provenance/a10j_postresult_review/summary.json": "b1087aaaeb8a6618cc25b2d534671908206762e326650b7b8fdcc88b70cd216d",
+      "outputs/a10e_development_b80c4a9/evidence-0.0.json": "4e4a302949e78c971a4855d9eb4f2341097299d433ff17fc0589a3c9c09fa439",
+      "outputs/a10e_development_b80c4a9/frozen_parameters.json": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+      "outputs/a10e_development_b80c4a9/ledger-0.0.json": "7355a842ca192cd3ceff787464da9ef5d696c4939c1d376295eceb41683fcebe",
+      "outputs/a10e_development_b80c4a9/primary-scores.json": "10a23504602e9a1dbaff7cd7c4df36004923dc1bfab3608996e8c573eaafcd3b",
+      "outputs/a10e_development_b80c4a9/type_within-scores.json": "3b5ee2863bc2d5da84e2722ebdcf4daae73228847194e6b0bc755b4b1a69b475",
+      "outputs/a10h_live_repair_5e39aeb/evidence-0.0.json": "af78b93906bc7cef3e365b7e327bb88e932c64815a69650d2113f0b11ef53d62",
+      "outputs/a10h_live_repair_5e39aeb/frozen_parameters.json": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+      "outputs/a10h_live_repair_5e39aeb/ledger-0.0.json": "be96e2fa620b882ebffdcc5d7e4eeb8f427ac773976f4478c965de3023e25d20",
+      "outputs/a10h_live_repair_5e39aeb/primary-scores.json": "9e8628d1406216afbe0aa5a22e346612646c20d518f9b49cd007716ebc950443",
+      "outputs/a10h_live_repair_5e39aeb/type_within-scores.json": "91e0fb3757a36a6e1aadb6a022f5ee3bf16da59859fec8d890441b3528a3179a"
+    },
+    "numpy": "2.5.4",
+    "python": "3.14.4",
+    "scipy": "1.18.1",
+    "script_sha256": "b856bd6721990d8e0c434dcea8217396a39359389079e1fa595a35e61a0db457",
+    "source_commit_with_matching_script": null
+  },
+  "refits": {
+    "1960-1992": {
+      "level": {
+        "nll": 960.5883557457453,
+        "optimization": [
+          {
+            "evaluations": 44,
+            "message": "Optimization terminated successfully.",
+            "nll": 960.5883557457453,
+            "solution": [
+              -0.065171637391499
+            ],
+            "start": [
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 60,
+            "message": "Optimization terminated successfully.",
+            "nll": 960.5883557457453,
+            "solution": [
+              -0.06517163739149893
+            ],
+            "start": [
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 105,
+            "message": "Optimization terminated successfully.",
+            "nll": 960.5883557457453,
+            "solution": [
+              -0.06517163115742762
+            ],
+            "start": [
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.065171637391499
+        ],
+        "start_objective_spread": 0.0
+      },
+      "raw": {
+        "lr_vs_level": 11.303127409143599,
+        "nll": 954.9367920411735,
+        "optimization": [
+          {
+            "evaluations": 138,
+            "message": "Optimization terminated successfully.",
+            "nll": 954.9367920411736,
+            "solution": [
+              -0.04791229324495895,
+              0.07340803245791841
+            ],
+            "start": [
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 121,
+            "message": "Optimization terminated successfully.",
+            "nll": 954.9367920411735,
+            "solution": [
+              -0.04791229503247753,
+              0.07340804204926707
+            ],
+            "start": [
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 166,
+            "message": "Optimization terminated successfully.",
+            "nll": 954.9367920411735,
+            "solution": [
+              -0.04791229620604736,
+              0.07340804229927468
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.04791229503247753,
+          0.07340804204926707
+        ],
+        "start_objective_spread": 1.1368683772161603e-13
+      },
+      "timing_rows": 256,
+      "type": {
+        "lr_vs_level": 13.50384463135265,
+        "nll": 953.836433430069,
+        "optimization": [
+          {
+            "evaluations": 215,
+            "message": "Optimization terminated successfully.",
+            "nll": 953.836433430069,
+            "solution": [
+              -0.1334317844147051,
+              0.1632316895288815
+            ],
+            "start": [
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 193,
+            "message": "Optimization terminated successfully.",
+            "nll": 953.836433430069,
+            "solution": [
+              -0.13343177549211052,
+              0.16323168742566485
+            ],
+            "start": [
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 117,
+            "message": "Optimization terminated successfully.",
+            "nll": 953.836433430069,
+            "solution": [
+              -0.1334317799399003,
+              0.16323168658109033
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.1334317844147051,
+          0.1632316895288815
+        ],
+        "start_objective_spread": 0.0
+      },
+      "type_within": {
+        "lr_vs_level": 13.504676693274178,
+        "lr_within_given_type": 0.0008320619215282932,
+        "nll": 953.8360173991082,
+        "optimization": [
+          {
+            "evaluations": 476,
+            "message": "Optimization terminated successfully.",
+            "nll": 953.8360173991082,
+            "solution": [
+              -0.13376939417293424,
+              0.16341937044233787,
+              -0.0007781246044150561
+            ],
+            "start": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 474,
+            "message": "Optimization terminated successfully.",
+            "nll": 953.8360173991082,
+            "solution": [
+              -0.1337693891552499,
+              0.16341936032053073,
+              -0.000778124129169132
+            ],
+            "start": [
+              0.1,
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 331,
+            "message": "Optimization terminated successfully.",
+            "nll": 953.8360173991082,
+            "solution": [
+              -0.13376938026420832,
+              0.163419367299653,
+              -0.0007781258802993878
+            ],
+            "start": [
+              -0.1,
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.13376939417293424,
+          0.16341937044233787,
+          -0.0007781246044150561
+        ],
+        "start_objective_spread": 0.0
+      }
+    },
+    "1960-2017": {
+      "level": {
+        "nll": 1688.0702369114265,
+        "optimization": [
+          {
+            "evaluations": 49,
+            "message": "Optimization terminated successfully.",
+            "nll": 1688.0702369114265,
+            "solution": [
+              -0.046793247389121516
+            ],
+            "start": [
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 48,
+            "message": "Optimization terminated successfully.",
+            "nll": 1688.070236911427,
+            "solution": [
+              -0.04679325258015708
+            ],
+            "start": [
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 104,
+            "message": "Optimization terminated successfully.",
+            "nll": 1688.0702369114265,
+            "solution": [
+              -0.046793247219753455
+            ],
+            "start": [
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.046793247389121516
+        ],
+        "start_objective_spread": 4.547473508864641e-13
+      },
+      "raw": {
+        "lr_vs_level": 11.686372607924113,
+        "nll": 1682.2270506074644,
+        "optimization": [
+          {
+            "evaluations": 151,
+            "message": "Optimization terminated successfully.",
+            "nll": 1682.2270506074644,
+            "solution": [
+              -0.033641457549185044,
+              0.05598507594786517
+            ],
+            "start": [
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 235,
+            "message": "Optimization terminated successfully.",
+            "nll": 1682.2270506074647,
+            "solution": [
+              -0.03364147017534682,
+              0.055985064947509364
+            ],
+            "start": [
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 225,
+            "message": "Optimization terminated successfully.",
+            "nll": 1682.2270506074647,
+            "solution": [
+              -0.033641464502798736,
+              0.0559850762412017
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.033641457549185044,
+          0.05598507594786517
+        ],
+        "start_objective_spread": 2.2737367544323206e-13
+      },
+      "timing_rows": 436,
+      "type": {
+        "lr_vs_level": 14.698355406162591,
+        "nll": 1680.7210592083452,
+        "optimization": [
+          {
+            "evaluations": 249,
+            "message": "Optimization terminated successfully.",
+            "nll": 1680.7210592083452,
+            "solution": [
+              -0.10370096827857463,
+              0.1293650646555853
+            ],
+            "start": [
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 222,
+            "message": "Optimization terminated successfully.",
+            "nll": 1680.7210592083452,
+            "solution": [
+              -0.10370096931762267,
+              0.12936506746133106
+            ],
+            "start": [
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 134,
+            "message": "Optimization terminated successfully.",
+            "nll": 1680.7210592083454,
+            "solution": [
+              -0.10370096448618649,
+              0.1293650576947102
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.10370096827857463,
+          0.1293650646555853
+        ],
+        "start_objective_spread": 2.2737367544323206e-13
+      },
+      "type_within": {
+        "lr_vs_level": 14.86678408523494,
+        "lr_within_given_type": 0.16842867907234904,
+        "nll": 1680.636844868809,
+        "optimization": [
+          {
+            "evaluations": 468,
+            "message": "Optimization terminated successfully.",
+            "nll": 1680.636844868809,
+            "solution": [
+              -0.10875857671583246,
+              0.1324621887254264,
+              -0.00900854480814268
+            ],
+            "start": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 423,
+            "message": "Optimization terminated successfully.",
+            "nll": 1680.636844868809,
+            "solution": [
+              -0.10875857813219961,
+              0.13246219553621566,
+              -0.009008551936661342
+            ],
+            "start": [
+              0.1,
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 308,
+            "message": "Optimization terminated successfully.",
+            "nll": 1680.636844868809,
+            "solution": [
+              -0.10875857016431612,
+              0.13246219277233107,
+              -0.009008537919337102
+            ],
+            "start": [
+              -0.1,
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.10875857671583246,
+          0.1324621887254264,
+          -0.00900854480814268
+        ],
+        "start_objective_spread": 0.0
+      }
+    },
+    "1993-2017": {
+      "level": {
+        "nll": 726.6358530670673,
+        "optimization": [
+          {
+            "evaluations": 92,
+            "message": "Optimization terminated successfully.",
+            "nll": 726.6358530670675,
+            "solution": [
+              -0.020965286235112988
+            ],
+            "start": [
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 66,
+            "message": "Optimization terminated successfully.",
+            "nll": 726.6358530670673,
+            "solution": [
+              -0.020965293039063873
+            ],
+            "start": [
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 34,
+            "message": "Optimization terminated successfully.",
+            "nll": 726.6358530670675,
+            "solution": [
+              -0.020965294394206493
+            ],
+            "start": [
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.020965293039063873
+        ],
+        "start_objective_spread": 2.2737367544323206e-13
+      },
+      "raw": {
+        "lr_vs_level": 1.837857426228311,
+        "nll": 725.7169243539531,
+        "optimization": [
+          {
+            "evaluations": 141,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.7169243539531,
+            "solution": [
+              -0.013085199745847648,
+              0.033565921586737435
+            ],
+            "start": [
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 137,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.7169243539531,
+            "solution": [
+              -0.013085205590491812,
+              0.03356592268928149
+            ],
+            "start": [
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 229,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.7169243539533,
+            "solution": [
+              -0.013085184397427962,
+              0.03356591965782296
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.013085199745847648,
+          0.033565921586737435
+        ],
+        "start_objective_spread": 2.2737367544323206e-13
+      },
+      "timing_rows": 180,
+      "type": {
+        "lr_vs_level": 2.262117902690761,
+        "nll": 725.5047941157219,
+        "optimization": [
+          {
+            "evaluations": 217,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.504794115722,
+            "solution": [
+              -0.057782378765454896,
+              0.0782779473284768
+            ],
+            "start": [
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 149,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.5047941157219,
+            "solution": [
+              -0.057782371657176215,
+              0.07827794520298284
+            ],
+            "start": [
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 106,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.504794115722,
+            "solution": [
+              -0.057782386257255555,
+              0.07827795039834938
+            ],
+            "start": [
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.057782371657176215,
+          0.07827794520298284
+        ],
+        "start_objective_spread": 1.1368683772161603e-13
+      },
+      "type_within": {
+        "lr_vs_level": 2.320238786430764,
+        "lr_within_given_type": 0.05812088374000268,
+        "nll": 725.4757336738519,
+        "optimization": [
+          {
+            "evaluations": 449,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.475733673852,
+            "solution": [
+              -0.06495046943293034,
+              0.08309405881796267,
+              -0.009453450460731523
+            ],
+            "start": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 354,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.4757336738519,
+            "solution": [
+              -0.06495046998304636,
+              0.08309405713096392,
+              -0.009453465746927923
+            ],
+            "start": [
+              0.1,
+              0.1,
+              0.1
+            ],
+            "success": true
+          },
+          {
+            "evaluations": 478,
+            "message": "Optimization terminated successfully.",
+            "nll": 725.4757336738519,
+            "solution": [
+              -0.06495046649024692,
+              0.08309404984179812,
+              -0.009453462164131874
+            ],
+            "start": [
+              -0.1,
+              -0.1,
+              -0.1
+            ],
+            "success": true
+          }
+        ],
+        "parameters": [
+          -0.06495046998304636,
+          0.08309405713096392,
+          -0.009453465746927923
+        ],
+        "start_objective_spread": 1.1368683772161603e-13
+      }
+    }
+  },
+  "scope": "Independent verification of exploratory C20--C23 only; no new confirmation or 2018+ access"
+}

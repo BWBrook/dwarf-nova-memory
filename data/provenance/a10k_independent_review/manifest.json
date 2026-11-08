@@ -1,0 +1,8 @@
+{
+  "base_commit": "b96bd5b1ab821c16867946ba1752dcdddac14f85",
+  "files_sha256": {
+    "exploratory.json": "10651fc83abe7cf4e506f227424c4b8d2e7c55149123fc9084568b3e4e62e933",
+    "secondary.json": "3fbc8e150a6bf19bdd1a0b331575ec08e06754a164c456b5e52cffa84d62e97c"
+  },
+  "scope": "independent verification on already opened data; original confirmed comparison untouched; no archive requests or 2018+ inspection"
+}
