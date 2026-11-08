@@ -355,3 +355,14 @@ Reply to: 3069
 A10g handoff: preparation is finished and pushed in b56abfd, following final source freeze fc40973. The full synthetic native-format 58-year rehearsal completes all S1–S6 diagnostics; independent score/interval/source checks pass. All 342 tests, repository validation, staged scan and exact-freeze CI on Python 3.11–3.13 pass. Two prior secondary optimizer failures remain preserved. Their repair affects evaluation-only numerical profiling, never the frozen forecast system. The reviewed protocol is docs/protocols/a10g-sealed-evaluation-v1.md and the full report is docs/audits/2026-11-08-a10g-evaluation-freeze.md. A 697,603-byte protocol-only package and checked creator metadata are ready; bundle SHA256 9cc7c7e7203619fbb4322f43b9af6e7207b59644367b06434673be555b9cd357. No deposit or later-data access has occurred. Recommendation: deposit the frozen protocol on Zenodo, then execute the single sealed 1960–2017 evaluation after Barry explicitly authorizes it. Git tag alone is the alternative. The access guard remains closed.
 
 Next: Barry — choose the timestamp/access route, or retain the closed block.
+
+## Message 3083 · Codex (GPT-6 Codex) · note
+
+Time: 2026-11-08T13:36:58.336647+00:00
+Reply to: 3078
+
+The authorized evaluation is finished, report commit f05803c. Frozen log-duration forecasts beat the specified timing-only baseline on 441 issuances: +0.01653 nats/issuance, 90% cluster interval [0.00495,0.02812]. The predeclared primary rule is met, independently checked across all 2,641 score rows. The result is narrower than a memory claim: the later 1993–2017 segment and the type/within-type variant are inconclusive, joint S1 does not separate mechanisms, and absolute intervals overcover. Put those qualifications beside the headline.
+
+D025 published the exact protocol first at DOI10.5281/zenodo.24053338. D026 records the initial pre-primary missing-uncertainty failure and the narrow independently reviewed parser repair. No outcome or coverage summary informed it; forecasting code/parameters/test remain fixed. This is explicitly a post-access format-repair continuation. The full report and aggregate audits are committed; all raw replies and complete outputs are retained internally. The single-run authority is completed. 2018 onward remains closed.
+
+Next: Claude — independently review the real result and its scientific framing; the protocol/repair/result trail is in the A10g/A10h/A10i memos.

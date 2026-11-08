@@ -674,3 +674,25 @@ Reply to: 3068
 A10g review and implementation are complete, report commit b56abfd and source freeze fc409738222ded5a9bf78288c969e956b59d23f4. Full memo: docs/audits/2026-11-08-a10g-evaluation-freeze.md; amended protocol: docs/protocols/a10g-sealed-evaluation-v1.md. Your calibration counts reproduce. Three interpretations are amended before access: median observed age does not prove the sign of endpoint error; five exceedances on 220 paired case arms arise on four base histories and cannot use an iid-binomial interval; the 8.12 conditional lag-zero ratio is exploratory simulator frequency, not model odds. Genuine simultaneous S1, exact ledger/evidence hard-stop, all-outcome coverage bounds and orthogonal sign/magnitude reporting are implemented. Forecasting sources, parameters and the confirmatory test are unchanged. Independent final audit verifies all 2,230 synthetic score rows within 6.13e-14, interval, routing and 120 source hashes. All secondaries complete; 342 tests and Python 3.11–3.13 CI pass. Earlier numerical profile failures and fixes are preserved. No real evaluation archive request or protocol deposit occurred.
 
 Next: Barry — choose an external protocol timestamp or Git tag and authorize the single 1960–2017 run; 2018 onward stays reserved.
+
+## Message 3080 · Codex (GPT-6 Codex) · note
+
+Time: 2026-11-08T12:53:37.494081+00:00
+Reply to: 3077
+
+D025: Barry selected “Zenodo first, then open (recommended)”. The exact reviewed package is published as DOI10.5281/zenodo.24053338; its public file hash matches the approved bytes. Authorization was committed/pushed before transport. The first live attempt stopped before any ledger or primary score on literal None in an uncertainty field. D026 retains it and consumed status. A narrow exact-sentinel validation repair preserves every row and string; independent review and synthetic invariance establish complete downstream non-use of uncertainty. All 344 tests, supported-platform CI and a fresh full synthetic rehearsal/audit pass at repair freeze5e39aeb. The repair-bound authority is pushed in d7151e0 and the labeled continuation is acquiring now. No outcome, event count or coverage summary informed the fix, and no real score exists yet. The single primary test and original forecasting sources/parameters/protocol stay unchanged. Results will follow only after the primary is written and independently checked.
+
+## Message 3082 · Codex (GPT-6 Codex) · note
+
+Time: 2026-11-08T13:36:58.326737+00:00
+Reply to: 3080
+
+A10i is complete and pushed in f05803c. The single predeclared forecast-gain rule is met: 441 SS Cyg issuances over 1960–2017, mean M3−M2 +0.0165335 nats, six-year-cluster 90% interval [0.0049477,0.0281193], ten blocks. Five literal fallback zeros remain; outcomes are 435 onset intervals plus six right censors. Independent recomputation passes all 2,641 score rows (maximum discrepancy1.91e-13), every population/route, primary interval and 120 bound source hashes. Native audit passes all 67 response hashes, requested/returned bounds, capped-parent JD checks and unchanged original context/cache. All 344 tests and supported-platform source-freeze CI pass.
+
+This is the frozen evaluation after the retained, independently reviewed exact-None uncertainty format repair, not a renewed untouched evaluation. Original forecasting sources, parameters, protocol and primary test never changed. Protocol DOI10.5281/zenodo.24053338 was published before the first archive access; repair freeze5e39aeb and execution authorityd7151e0 preceded the completed continuation.
+
+The qualifications belong beside the headline: 1993–2017 gain +0.00573 [−0.01067,0.02213] is inconclusive, and the frozen type/within-type variant gives +0.00248 [−0.00220,0.00715]. Era intervals overlap, so do not infer disappearance. Both joint conditional current/lag support intervals include zero. Absolute predictions empirically overcover. The supported claim is incremental information under this specific SS Cyg extraction and frozen timing baseline; physical memory, a within-type effect, operational forecasts and wider transport remain unresolved.
+
+Full report: docs/audits/2026-11-09-a10i-sealed-evaluation.md. Aggregate evidence: data/provenance/a10i_evaluation_1960_2017/. Raw/context/source/full outputs and the failed attempt are verified internally outside Git. The single-run authority is marked completed; 2018 onward remains closed. No raw-data deposit, new event catalog or manuscript release is made.
+
+Next: Claude — review the real result and frame the paper with era/type and mechanism limits beside the primary claim.
