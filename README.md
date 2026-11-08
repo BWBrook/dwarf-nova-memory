@@ -101,23 +101,37 @@ This supports incremental predictive information for SS Cyg under these rules;
 physical memory and wider transport remain unresolved.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
-result by a separate route. Two exploratory findings shape the paper:
+result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
+also reproduces the exploratory and secondary numbers, with narrower interpretations:
 
-- about a fifth of the gain reflects a level offset between periods;
-- the information is carried by whether the outburst was long or short, with
-  nothing detectable within type.
+- a global level/recentering contrast describes part of the gain, without
+  removing drift within the evaluation period;
+- a long/short indicator has the larger exploratory in-sample likelihood;
+  this does not establish that all information is in type or that within-type
+  effects are absent.
 
-The predeclared type rule's low score traces to an uncentred indicator. The
-paper's [interpretation specification](manuscript/estimands.md) and
-[claims ledger](manuscript/claims.csv) are seeded.
+The uncentred type component and fixed baseline interact; the within-type
+component can still shorten forecasts. The evaluation-fitted level adjustment
+does not replace the inconclusive predeclared type rule. The paper's
+[interpretation specification](manuscript/estimands.md) and
+[claims ledger](manuscript/claims.csv) govern the figure captions and drafting.
+
+Four scientific figures and a brief figure are reproducible with
+`make -C manuscript figures`; `make -C manuscript` checks the public assets
+and builds the PDF/DOCX previews without raw observations or archive access.
+The [article figure preview](manuscript/build/manuscript.pdf),
+[supplement preview](manuscript/build/supplement.pdf) and
+[brief preview](manuscript/build/brief.pdf) are explicitly scaffolds: substantive
+prose awaits Claude's reciprocal interpretation/source review. The bibliography
+has [generated DOI metadata and a separate unresolved identifier](references/README.md).
 
 The [protocol](https://doi.org/10.5281/zenodo.24053338) was published before
 access. The first attempt failed before scoring on missing-uncertainty metadata;
 a narrow independently reviewed parser repair preceded the completed run.
 Untouched status is consumed, and the result is explicitly a **post-access
 format-repair continuation**. Independent checks reproduce all 2,641 scores,
-the interval, source identities and acquisition bounds. All 344 tests and
-supported-platform CI pass. Native rows and full event/score outputs remain
+the interval, source identities and acquisition bounds. A10k passes all 348
+local tests and the repository, claims and document checks. Native rows and full event/score outputs remain
 outside Git; aggregate results are in
 [`data/provenance/a10i_evaluation_1960_2017/`](data/provenance/a10i_evaluation_1960_2017/).
 No 2018+ data were requested or analyzed; that replication block stays closed.
@@ -166,6 +180,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A10g sealed evaluation freeze](docs/audits/2026-11-08-a10g-evaluation-freeze.md) | Implemented access guards, independent score checks, preserved numerical failures, completed synthetic rehearsal and prepared protocol-only deposit |
 | [A10i real sealed evaluation](docs/audits/2026-11-09-a10i-sealed-evaluation.md) | Confirmed frozen forecast-gain comparison, post-access format repair, independent checks and visible era/type limits |
 | [A10j result review](docs/audits/2026-11-09-a10j-result-review.md) | Independent recomputation, exploratory level/type decomposition, and the paper's framing, estimands and claims ledger |
+| [A10k claims and figures](docs/audits/2026-11-09-a10k-claims-and-figures.md) | Independent secondary/exploratory verification, narrowed interpretations, reproducible figures and document previews |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

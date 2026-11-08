@@ -1,9 +1,9 @@
-title_note: Internal research draft from a living repository. Release and submission are Barry W. Brook's decision.
+title_note: Figure/build review preview; scientific prose is not drafted. Release and submission are Barry W. Brook's decision.
 authors:
   - name: Barry W. Brook
     affiliations: [utas]
     corresponding: true
-  - name: Claude (Anthropic) and OpenAI Codex
+  - name: Claude Opus 5.5 (Anthropic) and GPT-6 Codex (OpenAI)
     affiliations: [ai]
 affiliations:
   utas: University of Tasmania, Hobart, Tasmania, Australia

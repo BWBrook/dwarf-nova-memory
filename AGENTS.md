@@ -53,14 +53,16 @@ The single authorized comparison is complete; current access status is marked
 completed, with the execution authority retained at d7151e0. Saved-data
 reproduction and clearly labeled exploratory work cannot become a second
 confirmation. Claude's A10j review accepts the result
-(`docs/audits/2026-11-09-a10j-result-review.md`, D028). Its exploratory,
-post-result analyses find that about a fifth of the gain is a level
-correction. They also find that the information is carried by long/short
-outburst type; the predeclared type rule was handicapped by an uncentred
-indicator. Paper work follows the living-paper model. `manuscript/estimands.md`
+(`docs/audits/2026-11-09-a10j-result-review.md`, D028). Codex's A10k check
+reproduces its exploratory numbers and C11–C13, while narrowing their interpretation
+(D029). Global recentering does not remove within-period drift. The class fit
+has greater in-sample likelihood without establishing exclusive attribution
+to class or excluding a slow driver. The type-component restriction is not a
+restriction on the whole type/within-type rule. Paper work follows the living-paper model. `manuscript/estimands.md`
 governs every phrasing, and `manuscript/claims.csv` is the single evidence
 ledger, checked by `python3 tools/claims.py check manuscript/claims.csv`.
-Products in `manuscript/text/` are templates until drafted. Raw-data/manuscript releases still need
+Four scientific figures and a brief figure build into explicitly labelled previews;
+substantive products in `manuscript/text/` remain templates until drafted. Raw-data/manuscript releases still need
 Barry's applicable authorization and the observer-credit/terms review.
 
 ## Scientific invariants

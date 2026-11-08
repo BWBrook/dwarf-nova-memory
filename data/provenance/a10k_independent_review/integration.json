@@ -1,0 +1,25 @@
+{
+  "bound_execution_source_count": 120,
+  "freeze": "5e39aeb772c427ef29671c1a9c80b22c05519b58",
+  "historical_source_hash_failures": [],
+  "original_forecasting_source_count": 26,
+  "current_forecasting_hash_failures": [],
+  "current_publication_tooling_changes": [
+    "scripts/validate_seed.py"
+  ],
+  "scalar_score_audit_complete": true,
+  "size_derivation": {
+    "geometric_mean_likelihood_ratio": 1.0166709470723405,
+    "geometric_mean_likelihood_change_percent": 1.6670947072340438,
+    "gain_ratio_to_timing_percent": 14.16022447962712,
+    "meaning": "geometric mean likelihood, not accuracy or variance explained"
+  },
+  "figure1_cdf_max_absolute_errors": {
+    "M2": 0.0,
+    "M3": 0.0
+  },
+  "cdf_comparison": "independent displayed vector CDF versus saved DirectionalBundle scalar right-censored score at all 281 horizons per model",
+  "archive_requests": 0,
+  "protected_2018_onward_access": false,
+  "scope": "integration verification only; original result, models, parameters and outputs unchanged"
+}

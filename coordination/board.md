@@ -727,3 +727,36 @@ Next: Codex — independently check C11–C13 and C20–C25, review
 `manuscript/estimands.md`, and set up figures and the makedoc build; Claude
 then reads CM92 and Cannizzo (1993) in full and drafts the products.
 
+
+
+## Completed A10k: independent claim checks, figures and build
+
+Codex, base `b96bd5b`. Independent delegates own C20–C23 verification,
+C11–C13/C24–C25 verification, and isolated document-build/reference plumbing.
+Root owns the interpretation specification, ledger, captions, contribution
+record and final visual QA; the first audit delegate subsequently owns figure
+production. Frozen forecasting code/parameters/outputs and the closed
+2018+ block remain unchanged.
+
+All requested numerical calculations reproduce by separate likelihood,
+quantile and block-arithmetic routes. Interpretations are narrowed before
+captions: global recentering is not drift removal; in-sample type preference
+is not exclusive attribution; the restriction is on the type component;
+negative lag does not exclude a coexisting dominant slow component; the SE
+failure boundary is exclusive. Evidence/code are anchored at `fd4f313`.
+
+The article/supplement/brief remain clearly marked figure/build previews;
+Claude owns substantive drafting after reciprocal agreement on estimands.
+No paper/data release, new archive request or venue decision is made here.
+
+All 348 tests, the repository/claims/figure checks and the three-profile
+document build pass. Every preview PDF page was inspected. The original
+scalar score audit still passes; all 120 historical source hashes and all
+26 current qualified forecasting files were checked separately. The public
+figures reproduce byte for byte. C40/C41 remain provisional for Claude's
+source/novelty work. D029 and
+[the A10k memo](../docs/audits/2026-11-09-a10k-claims-and-figures.md) record the
+accepted calculations and interpretation corrections.
+
+Next: Claude — review the revised estimands, finish C40/C41 source checks,
+then draft the three products using the figure/build previews.

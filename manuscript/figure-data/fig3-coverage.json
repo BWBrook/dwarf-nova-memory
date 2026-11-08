@@ -1,0 +1,63 @@
+{
+  "claim_ids": [
+    "C11"
+  ],
+  "models": {
+    "M0": {
+      "0.5": {
+        "coverage_lower_bound": 0.4943310657596372,
+        "coverage_upper_bound": 0.5850340136054422,
+        "covered": 218,
+        "n": 441,
+        "not_covered": 183,
+        "undetermined": 40
+      },
+      "0.9": {
+        "coverage_lower_bound": 0.8752834467120182,
+        "coverage_upper_bound": 0.9410430839002267,
+        "covered": 386,
+        "n": 441,
+        "not_covered": 26,
+        "undetermined": 29
+      }
+    },
+    "M2": {
+      "0.5": {
+        "coverage_lower_bound": 0.5192743764172335,
+        "coverage_upper_bound": 0.6054421768707483,
+        "covered": 229,
+        "n": 441,
+        "not_covered": 174,
+        "undetermined": 38
+      },
+      "0.9": {
+        "coverage_lower_bound": 0.9183673469387755,
+        "coverage_upper_bound": 0.9682539682539683,
+        "covered": 405,
+        "n": 441,
+        "not_covered": 14,
+        "undetermined": 22
+      }
+    },
+    "M3": {
+      "0.5": {
+        "coverage_lower_bound": 0.546485260770975,
+        "coverage_upper_bound": 0.6167800453514739,
+        "covered": 241,
+        "n": 441,
+        "not_covered": 169,
+        "undetermined": 31
+      },
+      "0.9": {
+        "coverage_lower_bound": 0.9229024943310657,
+        "coverage_upper_bound": 0.9795918367346939,
+        "covered": 407,
+        "n": 441,
+        "not_covered": 9,
+        "undetermined": 25
+      }
+    }
+  },
+  "n": 441,
+  "scope": "empirical partial-identification coverage bounds, not sampling confidence intervals; all scored outcomes"
+}

@@ -1,5 +1,6 @@
-# Title: the question, stated so a reader knows what is tested
+# Does the length of an outburst predict the wait for the next? A preregistered forecast test for SS Cygni
 
+**Figure and build review preview. Scientific prose is not yet drafted.**
 <div id="authors"></div>
 
 ## Abstract

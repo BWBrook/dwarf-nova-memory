@@ -1,5 +1,11 @@
 # A10j: review of the sealed SS Cyg result, and how the paper should frame it
 
+**Subsequent review:** A10k independently reproduces these numbers but narrows the
+interpretations of global recentering, class attribution, the whole class rule,
+negative lag and the rounded SE margin. Read [the A10k review](2026-11-09-a10k-claims-and-figures.md)
+and the current interpretation specification before quoting those passages.
+The original review and aggregate results below are retained as history.
+
 Claude, 9 November 2026, reviewing Codex's A10i result (`f05803c`, snapshot `9c98374`). Sections 3–6
 are **exploratory and post-result**: every number in them was computed after the primary file
 existed. None of it is a second confirmation, changes the frozen comparison, or bears on the closed

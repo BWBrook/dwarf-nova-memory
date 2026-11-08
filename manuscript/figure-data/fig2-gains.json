@@ -1,0 +1,144 @@
+{
+  "blocks": [
+    {
+      "block": 0,
+      "end_jd": 2439126.0,
+      "interval": "none; descriptive means only",
+      "mean_gain": 0.02642418029755121,
+      "n": 53,
+      "nominal_year_label": "1960\u20131965",
+      "start_jd": 2436934.5
+    },
+    {
+      "block": 1,
+      "end_jd": 2441317.5,
+      "interval": "none; descriptive means only",
+      "mean_gain": 0.04200892375358721,
+      "n": 49,
+      "nominal_year_label": "1966\u20131971",
+      "start_jd": 2439126.0
+    },
+    {
+      "block": 2,
+      "end_jd": 2443509.0,
+      "interval": "none; descriptive means only",
+      "mean_gain": 0.04228395549960423,
+      "n": 50,
+      "nominal_year_label": "1972\u20131977",
+      "start_jd": 2441317.5
+    },
+    {
+      "block": 3,
+      "end_jd": 2445700.5,
+      "interval": "none; descriptive means only",
+      "mean_gain": 0.002759467533133106,
+      "n": 46,
+      "nominal_year_label": "1978\u20131983",
+      "start_jd": 2443509.0
+    },
+    {
+      "block": 4,
+      "end_jd": 2447892.0,
+      "interval": "none; descriptive means only",
+      "mean_gain": 0.01671729749618472,
+      "n": 43,
+      "nominal_year_label": "1984\u20131989",
+      "start_jd": 2445700.5
+    },
+    {
+      "block": 5,
+      "end_jd": 2450083.5,
+      "interval": "none; descriptive means only",
+      "mean_gain": -0.01291071936834832,
+      "n": 39,
+      "nominal_year_label": "1990\u20131995",
+      "start_jd": 2447892.0
+    },
+    {
+      "block": 6,
+      "end_jd": 2452275.0,
+      "interval": "none; descriptive means only",
+      "mean_gain": -0.009179131911129628,
+      "n": 43,
+      "nominal_year_label": "1996\u20132001",
+      "start_jd": 2450083.5
+    },
+    {
+      "block": 7,
+      "end_jd": 2454466.5,
+      "interval": "none; descriptive means only",
+      "mean_gain": 0.027433240562095767,
+      "n": 46,
+      "nominal_year_label": "2002\u20132007",
+      "start_jd": 2452275.0
+    },
+    {
+      "block": 8,
+      "end_jd": 2456658.0,
+      "interval": "none; descriptive means only",
+      "mean_gain": 0.0035050393399281327,
+      "n": 41,
+      "nominal_year_label": "2008\u20132013",
+      "start_jd": 2454466.5
+    },
+    {
+      "block": 9,
+      "end_jd": 2458119.5,
+      "interval": "none; descriptive means only",
+      "mean_gain": 0.011773162111739753,
+      "n": 31,
+      "nominal_year_label": "2014\u20132017",
+      "start_jd": 2456658.0
+    }
+  ],
+  "claim_ids": [
+    "C01",
+    "C06",
+    "C07",
+    "C08",
+    "C25"
+  ],
+  "cluster_days": 2191.5,
+  "comparisons": [
+    {
+      "estimate": 0.016533512177436503,
+      "kind": "sole primary",
+      "lower": 0.00494771630959865,
+      "n": 441,
+      "name": "Primary 1960\u20132017",
+      "upper": 0.028119308045274356
+    },
+    {
+      "estimate": 0.023983208669572265,
+      "kind": "secondary",
+      "lower": 0.00910883372629225,
+      "n": 261,
+      "name": "1960\u20131992 segment",
+      "upper": 0.03885758361285228
+    },
+    {
+      "estimate": 0.005731452263839645,
+      "kind": "secondary",
+      "lower": -0.010666564885628976,
+      "n": 180,
+      "name": "1993\u20132017 segment",
+      "upper": 0.02212946941330827
+    },
+    {
+      "estimate": 0.002478268090079619,
+      "kind": "secondary",
+      "lower": -0.002195506222485899,
+      "n": 441,
+      "name": "Type/within-type rule",
+      "upper": 0.007152042402645137
+    }
+  ],
+  "derived_units": {
+    "gain_ratio_to_timing_percent": 14.16022447962712,
+    "geometric_mean_likelihood_change_percent": 1.6670947072340438,
+    "geometric_mean_likelihood_ratio": 1.0166709470723405,
+    "interpretation": "geometric-mean evidence likelihood and log-score-gain ratio; neither accuracy nor variance explained"
+  },
+  "scope": "one pooled primary comparison; all block means and other contrasts descriptive/secondary",
+  "year_labels": "nominal; exact boundaries are in JD"
+}

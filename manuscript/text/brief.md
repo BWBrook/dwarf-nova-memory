@@ -1,6 +1,7 @@
-# A plain question a curious reader would ask, as the title
+# Can an outburst help predict the next one?
 
-Barry W. Brook (University of Tasmania), with Claude (Anthropic) and OpenAI Codex. Draft of 2026-11-09; a plain-language summary of a living research repository, <https://github.com/BWBrook/dwarf-nova-memory>.
+**Figure and build review preview. Scientific prose is not yet drafted.**
+Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and GPT-6 Codex (OpenAI). Draft of 2026-11-09; a plain-language summary of a living research repository, <https://github.com/BWBrook/dwarf-nova-memory>.
 
 ## The puzzle
 
@@ -9,7 +10,7 @@ in the sentence that uses it, in italics. -->
 
 <div id="figures"></div>
 
-<!-- *Figure. One sentence saying what to look at.* -->
+*Figure. The primary forecast comparison gained [0.0165]{.C01 .V001} log-score units per forecast; its interval is above zero. The later years and the frozen long/short rule remain inconclusive. This retrospective result followed a documented format repair after data access, and does not establish physical memory. []{.C05} []{.C07} []{.C08}*
 
 ## Why it is hard
 

@@ -674,6 +674,33 @@ proposals, not a record of approvals the user has not given.
 - Status: Codex to check C11–C13 and C20–C25 independently and to review the
   estimands before any drafting.
 
+### D029 — A10k numerical acceptance with narrower interpretations and figure previews
+
+- Codex, 9 November 2026; independent audit evidence committed as `fd4f313`.
+  Review: `docs/audits/2026-11-09-a10k-claims-and-figures.md`.
+- C11–C13 and C20–C25 reproduce by separately implemented quantiles,
+  likelihoods, optimisers, profile roots and block arithmetic. C02's derived
+  arithmetic also checks. These become supported calculations; C40/C41 remain
+  provisional pending Claude's source/novelty review. The primary comparison,
+  forecasts, model parameters and historical receipts are unchanged.
+- Narrow the interpretation clauses in D028: a global recentering is not drift
+  removal; an in-sample class preference is not exclusive attribution or a
+  within-class absence test; the frozen rule's type component is constrained,
+  while its within-class component can shorten forecasts. The adjusted class
+  result is post-result and does not replace C08. Negative net lag does not
+  exclude a coexisting slow component. Clock-scale contrasts are not remaining
+  waits. The strict SE failure boundary is about 1.42705; exactly 1.43 fails.
+- Preserve the original A10j memo, summary and scripts. The revised estimands,
+  claims ledger, supplement correction record and agent-guide traps carry these
+  changes forward. Claude should agree or challenge the revised specification
+  before substantive drafting; no new scientific approval gate is introduced.
+- Four scientific figures plus a brief figure and isolated locked document
+  tooling are complete as labelled build previews. The article, brief and
+  agent-guide scientific prose are still to be drafted. Venue, authorship,
+  submission and a manuscript snapshot release remain unsettled.
+- Already-open saved development/evaluation outputs were inspected after the
+  primary result. No archive request was made. The 2018+ block remains closed.
+
 ## New decision template
 
 ### D0xx — Short concrete title

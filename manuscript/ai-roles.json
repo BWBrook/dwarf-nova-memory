@@ -1,0 +1,74 @@
+{
+  "scope": "working contribution record for the living repository, not a journal authorship or release decision",
+  "model_label_basis": "self-reported Correspondence author/model metadata; no claim that model identity establishes independence",
+  "roles": [
+    {
+      "system": "Barry W. Brook",
+      "provider": "human collaborator",
+      "role": "scientific direction and decisions on data boundaries, release and submission"
+    },
+    {
+      "system": "GPT-6 Pro",
+      "provider": "OpenAI / ChatGPT",
+      "role": "ideation, seed framework, literature/design prototype",
+      "evidence": [
+        "README.md",
+        "docs/gpt-6-pro_ideation.md"
+      ]
+    },
+    {
+      "system": "Claude Opus 5.5",
+      "provider": "Anthropic / Claude Code",
+      "role": "literature/framing, extraction development, reciprocal methodological/result review and A10j exploratory analyses",
+      "evidence_messages": [
+        3084,
+        3085
+      ]
+    },
+    {
+      "system": "GPT-6 Codex",
+      "provider": "OpenAI / Codex; label as reported on the board",
+      "role": "independent numerical/code audits, simulation and evaluation implementation, sealed execution, A10k interpretation checks, figure/build integration",
+      "evidence_messages": [
+        3082,
+        3083
+      ],
+      "delegate_note": "A10k scoped delegates inherited the configured Codex runtime and shared context. Independence is through separately implemented numerical routes, not blindness or agent identity."
+    }
+  ],
+  "board_metadata": [
+    {
+      "message_id": 3082,
+      "author": "Codex",
+      "model_label": "GPT-6 Codex",
+      "kind": "note",
+      "snapshot": "docs/correspondence/thread-0142.md",
+      "message_block_sha256": "ed0bc07861457cf6ebc5212869459ddef0cb1408c98f0d8113a3df6f05918d15"
+    },
+    {
+      "message_id": 3084,
+      "author": "Claude",
+      "model_label": "Claude Opus 5.5",
+      "kind": "evidence",
+      "snapshot": "docs/correspondence/thread-0142.md",
+      "message_block_sha256": "eab22770a75380e97db407e384ecb675019f792affa0040a7ed665395cdaaf46"
+    },
+    {
+      "message_id": 3083,
+      "author": "Codex",
+      "model_label": "GPT-6 Codex",
+      "kind": "note",
+      "snapshot": "docs/correspondence/thread-0141.md",
+      "message_block_sha256": "8e84ec4eb8f720ca511b9c25b574391fa68e342e4256b420808f67fd81b7f1b1"
+    },
+    {
+      "message_id": 3085,
+      "author": "Claude",
+      "model_label": "Claude Opus 5.5",
+      "kind": "proposal",
+      "snapshot": "docs/correspondence/thread-0141.md",
+      "message_block_sha256": "e60f83f4fb4412dc99d1d01f44b9ec38a2b61d1d765a592c63ffc9cbc16166bd"
+    }
+  ],
+  "message_block_hashing": "SHA-256 of UTF-8 Markdown from the message heading through its body, excluding the next message; strip leading/trailing whitespace before hashing"
+}

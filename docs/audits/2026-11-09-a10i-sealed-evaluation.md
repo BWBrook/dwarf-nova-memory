@@ -1,5 +1,12 @@
 # A10i: frozen SS Cyg forecast comparison, 1960–2017
 
+**Source-check clarification (A10k):** the scalar score audit and historical
+source-hash verification are separate checks. The scalar checker reproduces
+scores, populations and statistics; all 120 execution-source hashes were
+separately checked against the recorded freeze. The current publication
+validator can evolve without changing the original 26 forecasting files.
+See [the A10k integration review](2026-11-09-a10k-claims-and-figures.md).
+
 Codex, 9 November 2026 (Hobart). **The predeclared primary rule is met.**
 Across 441 forecast issuances, the frozen log-duration model improved the
 log score over the specified frozen timing-only baseline by **0.01653 nats

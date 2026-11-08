@@ -1,3 +1,726 @@
 ---
-references: []
+references:
+- id: ak2002StatisticalAnalysisLongterm
+  citation-key: ak2002StatisticalAnalysisLongterm
+  type: article-journal
+  title: Statistical analysis of the long-term visual light curve parameters of dwarf novae
+  author:
+  - family: Ak
+    given: T.
+  - family: Ozkan
+    given: M. T.
+  - family: Mattei
+    given: J. A.
+  issued:
+    date-parts:
+    - - 2002
+  container-title: Astronomy &amp; Astrophysics
+  volume: '389'
+  issue: '2'
+  page: 478–484
+  publisher: EDP Sciences
+  DOI: 10.1051/0004-6361:20020600
+- id: bath1983OutburstPeriodenergyRelations
+  citation-key: bath1983OutburstPeriodenergyRelations
+  type: article-journal
+  title: Outburst period–energy relations in cataclysmic novae
+  author:
+  - family: Bath
+    given: G. T.
+  - family: van Paradijs
+    given: J.
+  issued:
+    date-parts:
+    - - 1983
+  container-title: Nature
+  volume: '305'
+  issue: '5929'
+  page: 33–36
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1038/305033a0
+- id: burkner2020ApproximateLeavefutureoutCrossvalidation
+  citation-key: burkner2020ApproximateLeavefutureoutCrossvalidation
+  type: article-journal
+  title: Approximate leave-future-out cross-validation for Bayesian time series models
+  author:
+  - family: Bürkner
+    given: Paul-Christian
+  - family: Gabry
+    given: Jonah
+  - family: Vehtari
+    given: Aki
+  issued:
+    date-parts:
+    - - 2020
+  container-title: Journal of Statistical Computation and Simulation
+  volume: '90'
+  issue: '14'
+  page: 2499–2523
+  publisher: Informa UK Limited
+  DOI: 10.1080/00949655.2020.1783262
+- id: cannizzo1988ChaosSSCygni
+  citation-key: cannizzo1988ChaosSSCygni
+  type: article-journal
+  title: Chaos in SS Cygni?
+  author:
+  - family: Cannizzo
+    given: John K.
+  - family: Goodings
+    given: D. A.
+  issued:
+    date-parts:
+    - - 1988
+  container-title: The Astrophysical Journal
+  volume: '334'
+  page: L31
+  publisher: American Astronomical Society
+  DOI: 10.1086/185306
+- id: cannizzo1992LongtermBehaviorSS
+  citation-key: cannizzo1992LongtermBehaviorSS
+  type: article-journal
+  title: On the long-term behavior of SS Cygni
+  author:
+  - family: Cannizzo
+    given: John K.
+  - family: Mattei
+    given: Janet A.
+  issued:
+    date-parts:
+    - - 1992
+  container-title: The Astrophysical Journal
+  volume: '401'
+  page: '642'
+  publisher: American Astronomical Society
+  DOI: 10.1086/172092
+- id: cannizzo1993AccretionDiskLimit
+  citation-key: cannizzo1993AccretionDiskLimit
+  type: article-journal
+  title: 'The Accretion Disk Limit Cycle Model: Toward an Understanding of the Long-Term Behavior of SS Cygni'
+  author:
+  - family: Cannizzo
+    given: John K.
+  issued:
+    date-parts:
+    - - 1993
+  container-title: The Astrophysical Journal
+  volume: '419'
+  page: '318'
+  publisher: American Astronomical Society
+  DOI: 10.1086/173486
+- id: cannizzo1998StudyOutburstsSS
+  citation-key: cannizzo1998StudyOutburstsSS
+  type: article-journal
+  title: A Study of the Outbursts in SS Cygni
+  author:
+  - family: Cannizzo
+    given: John K.
+  - family: Mattei
+    given: Janet A.
+  issued:
+    date-parts:
+    - - 1998
+  container-title: The Astrophysical Journal
+  volume: '505'
+  issue: '1'
+  page: 344–351
+  publisher: American Astronomical Society
+  DOI: 10.1086/306165
+- id: cannizzo2012KEPLERLIGHTCURVES
+  citation-key: cannizzo2012KEPLERLIGHTCURVES
+  type: article-journal
+  title: 'THE*KEPLER*LIGHT CURVES OF V1504 CYGNI AND V344 LYRAE: A STUDY OF THE OUTBURST PROPERTIES'
+  author:
+  - family: Cannizzo
+    given: John K.
+  - family: Smale
+    given: Alan P.
+  - family: Wood
+    given: Matt A.
+  - family: Still
+    given: Martin D.
+  - family: Howell
+    given: Steve B.
+  issued:
+    date-parts:
+    - - 2012
+  container-title: The Astrophysical Journal
+  volume: '747'
+  issue: '2'
+  page: '117'
+  publisher: American Astronomical Society
+  DOI: 10.1088/0004-637x/747/2/117
+- id: cannizzo2012SHAPELONGOUTBURSTS
+  citation-key: cannizzo2012SHAPELONGOUTBURSTS
+  type: article-journal
+  title: THE SHAPE OF LONG OUTBURSTS IN U GEM TYPE DWARF NOVAE FROM AAVSO DATA
+  author:
+  - family: Cannizzo
+    given: John K.
+  issued:
+    date-parts:
+    - - 2012
+  container-title: The Astrophysical Journal
+  volume: '757'
+  issue: '2'
+  page: '174'
+  publisher: American Astronomical Society
+  DOI: 10.1088/0004-637x/757/2/174
+- id: coppejans2016StatisticalPropertiesDwarf
+  citation-key: coppejans2016StatisticalPropertiesDwarf
+  type: article-journal
+  title: 'Statistical properties of dwarf novae-type cataclysmic variables: the outburst catalogue'
+  author:
+  - family: Coppejans
+    given: Deanne L.
+  - family: Körding
+    given: Elmar G.
+  - family: Knigge
+    given: Christian
+  - family: Pretorius
+    given: Magaretha L.
+  - family: Woudt
+    given: Patrick A.
+  - family: Groot
+    given: Paul J.
+  - family: Van Eck
+    given: Cameron L.
+  - family: Drake
+    given: Andrew J.
+  issued:
+    date-parts:
+    - - 2016
+  container-title: Monthly Notices of the Royal Astronomical Society
+  volume: '456'
+  issue: '4'
+  page: 4441–4454
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/mnras/stv2921
+- id: george2015EffectDataGaps
+  citation-key: george2015EffectDataGaps
+  type: article-journal
+  title: Effect of data gaps on correlation dimension computed from light curves of variable stars
+  author:
+  - family: George
+    given: Sandip V.
+  - family: Ambika
+    given: G.
+  - family: Misra
+    given: R.
+  issued:
+    date-parts:
+    - - 2015
+  container-title: Astrophysics and Space Science
+  volume: '360'
+  issue: '1'
+  article-number: '5'
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1007/s10509-015-2516-z
+- id: gneiting2007StrictlyProperScoring
+  citation-key: gneiting2007StrictlyProperScoring
+  type: article-journal
+  title: Strictly Proper Scoring Rules, Prediction, and Estimation
+  author:
+  - family: Gneiting
+    given: Tilmann
+  - family: Raftery
+    given: Adrian E
+  issued:
+    date-parts:
+    - - 2007
+  container-title: Journal of the American Statistical Association
+  volume: '102'
+  issue: '477'
+  page: 359–378
+  publisher: Informa UK Limited
+  DOI: 10.1198/016214506000001437
+- id: graf1999AssessmentComparisonPrognostic
+  citation-key: graf1999AssessmentComparisonPrognostic
+  type: article-journal
+  title: Assessment and comparison of prognostic classification schemes for survival data
+  author:
+  - family: Graf
+    given: Erika
+  - family: Schmoor
+    given: Claudia
+  - family: Sauerbrei
+    given: Willi
+  - family: Schumacher
+    given: Martin
+  issued:
+    date-parts:
+    - - 1999
+  container-title: Statistics in Medicine
+  volume: '18'
+  issue: 17-18
+  page: 2529–2545
+  publisher: Wiley
+  DOI: 10.1002/(sici)1097-0258(19990915/30)18:17/18<2529::aid-sim274>3.0.co;2-5
+- id: hameury2020ModellingHysteresesObserved
+  citation-key: hameury2020ModellingHysteresesObserved
+  type: article-journal
+  title: Modelling hystereses observed during dwarf nova outbursts
+  author:
+  - family: Hameury
+    given: J.-M.
+  - family: Knigge
+    given: C.
+  - family: Lasota
+    given: J.-P.
+  - family: Hambsch
+    given: F.-J.
+  - family: James
+    given: R.
+  issued:
+    date-parts:
+    - - 2020
+  container-title: Astronomy &amp; Astrophysics
+  volume: '636'
+  page: A1
+  publisher: EDP Sciences
+  DOI: 10.1051/0004-6361/202037631
+- id: hameury2020ReviewDiscInstability
+  citation-key: hameury2020ReviewDiscInstability
+  type: article-journal
+  title: A review of the disc instability model for dwarf novae, soft X-ray transients and related objects
+  author:
+  - family: Hameury
+    given: J.M.
+  issued:
+    date-parts:
+    - - 2020
+  container-title: Advances in Space Research
+  volume: '66'
+  issue: '5'
+  page: 1004–1024
+  publisher: Elsevier BV
+  DOI: 10.1016/j.asr.2019.10.022
+- id: jordan2024TwodimensionalSimulationsDisks
+  citation-key: jordan2024TwodimensionalSimulationsDisks
+  type: article-journal
+  title: Two-dimensional simulations of disks in close binaries
+  author:
+  - family: Jordan
+    given: L. M.
+  - family: Wehner
+    given: D.
+  - family: Kuiper
+    given: R.
+  issued:
+    date-parts:
+    - - 2024
+  container-title: Astronomy &amp; Astrophysics
+  volume: '689'
+  page: A354
+  publisher: EDP Sciences
+  DOI: 10.1051/0004-6361/202348726
+- id: kato2019ThreeZCamelopardalistype
+  citation-key: kato2019ThreeZCamelopardalistype
+  type: article-journal
+  title: Three Z Camelopardalis-type dwarf novae exhibiting IW Andromedae-type phenomenon
+  author:
+  - family: Kato
+    given: Taichi
+  issued:
+    date-parts:
+    - - 2019
+  container-title: Publications of the Astronomical Society of Japan
+  volume: '71'
+  issue: '1'
+  article-number: '20'
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/pasj/psy138
+- id: kimura2021NatureAnomalousEvent
+  citation-key: kimura2021NatureAnomalousEvent
+  type: article-journal
+  title: On the nature of the anomalous event in 2021 in the dwarf nova SS Cygni and its multi-wavelength transition
+  author:
+  - family: Kimura
+    given: Mariko
+  - family: Yamada
+    given: Shinya
+  - family: Nakaniwa
+    given: Nozomi
+  - family: Makita
+    given: Yoshihiro
+  - family: Negoro
+    given: Hitoshi
+  - family: Shidatsu
+    given: Megumi
+  - family: Kato
+    given: Taichi
+  - family: Enoto
+    given: Teruaki
+  - family: Isogai
+    given: Keisuke
+  - family: Mihara
+    given: Tatehiro
+  - family: Akazawa
+    given: Hidehiko
+  - family: Gendreau
+    given: Keith C
+  - family: Hambsch
+    given: Franz-Josef
+  - family: Dubovsky
+    given: Pavol A
+  - family: Kudzej
+    given: Igor
+  - family: Kasai
+    given: Kiyoshi
+  - family: Tordai
+    given: Tamás
+  - family: Pavlenko
+    given: Elena
+  - family: Sosnovskij
+    given: Aleksei A
+  - family: Babina
+    given: Julia V
+  - family: Antonyuk
+    given: Oksana I
+  - family: Itoh
+    given: Hiroshi
+  - family: Maehara
+    given: Hiroyuki
+  issued:
+    date-parts:
+    - - 2021
+  container-title: Publications of the Astronomical Society of Japan
+  volume: '73'
+  issue: '5'
+  page: 1262–1279
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/pasj/psab073
+- id: lasota2001DiscInstabilityModel
+  citation-key: lasota2001DiscInstabilityModel
+  type: article-journal
+  title: The disc instability model of dwarf novae and low-mass X-ray binary transients
+  author:
+  - family: Lasota
+    given: Jean-Pierre
+  issued:
+    date-parts:
+    - - 2001
+  container-title: New Astronomy Reviews
+  volume: '45'
+  issue: '7'
+  page: 449–508
+  publisher: Elsevier BV
+  DOI: 10.1016/s1387-6473(01)00112-9
+- id: medagangoda2026MagneticModulationPeriod
+  citation-key: medagangoda2026MagneticModulationPeriod
+  type: article-journal
+  title: "Magnetic Modulation Beneath the Period Gap: Evidence Through\n                    ER UMa\n                    Dwarf Nova Supercycles"
+  author:
+  - family: Medagangoda
+    given: Indika
+  - family: Piyadasa
+    given: Theekshana
+  - family: Adassuriya
+    given: Janaka
+  - family: Jayaratne
+    given: K. P. S. Chandana
+  issued:
+    date-parts:
+    - - 2026
+  container-title: Astronomische Nachrichten
+  volume: '347'
+  issue: '7'
+  article-number: e70107
+  publisher: Wiley
+  DOI: 10.1002/asna.70107
+- id: oppenheimer1998AnalysisAAVSOObservations
+  citation-key: oppenheimer1998AnalysisAAVSOObservations
+  type: article-journal
+  title: An Analysis of AAVSO Observations of Z Camelopardalis
+  author:
+  - family: Oppenheimer
+    given: Benjamin D.
+  - family: Kenyon
+    given: Scott J.
+  - family: Mattei
+    given: Janet A.
+  issued:
+    date-parts:
+    - - 1998
+  container-title: The Astronomical Journal
+  volume: '115'
+  issue: '3'
+  page: 1175–1189
+  publisher: American Astronomical Society
+  DOI: 10.1086/300250
+- id: osaki2013CauseSuperoutburstSU
+  citation-key: osaki2013CauseSuperoutburstSU
+  type: article-journal
+  title: The Cause of the Superoutburst in SU UMa Stars is Finally Revealed by Kepler Light Curve of V1504 Cygni
+  author:
+  - family: Osaki
+    given: Yoji
+  - family: Kato
+    given: Taichi
+  issued:
+    date-parts:
+    - - 2013
+  container-title: Publications of the Astronomical Society of Japan
+  volume: '65'
+  issue: '3'
+  article-number: '50'
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/pasj/65.3.50
+- id: otulakowska-hypka2013SupercycleLengthsActive
+  citation-key: otulakowska-hypka2013SupercycleLengthsActive
+  type: article-journal
+  title: On supercycle lengths of active SU UMa stars
+  author:
+  - family: Otulakowska-Hypka
+    given: M.
+  - family: Olech
+    given: A.
+  issued:
+    date-parts:
+    - - 2013
+  container-title: Monthly Notices of the Royal Astronomical Society
+  volume: '433'
+  issue: '2'
+  page: 1338–1343
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/mnras/stt815
+- id: otulakowska-hypka2016StatisticalAnalysisProperties
+  citation-key: otulakowska-hypka2016StatisticalAnalysisProperties
+  type: article-journal
+  title: Statistical analysis of properties of dwarf novae outbursts
+  author:
+  - family: Otulakowska-Hypka
+    given: Magdalena
+  - family: Olech
+    given: Arkadiusz
+  - family: Patterson
+    given: Joseph
+  issued:
+    date-parts:
+    - - 2016
+  container-title: Monthly Notices of the Royal Astronomical Society
+  volume: '460'
+  issue: '3'
+  page: 2526–2541
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/mnras/stw1120
+- id: price2007SSCygniOutburst
+  citation-key: price2007SSCygniOutburst
+  type: article-journal
+  title: SS Cygni Outburst Predictors and Long Term Quasi-periodic Behavior
+  author:
+  - family: Price
+    given: A.
+  - family: Henden
+    given: A. A.
+  - family: Foster
+    given: G.
+  - family: Petriew
+    given: V.
+  - family: Huziak
+    given: R.
+  - family: James
+    given: R.
+  - family: Koppelman
+    given: M. D.
+  - family: Blackwell
+    given: J.
+  - family: Boyd
+    given: D.
+  - family: Brady
+    given: S.
+  - family: Cook
+    given: Lewis M.
+  - family: Crawford
+    given: T.
+  - family: Dillon
+    given: B.
+  - family: Gary
+    given: B. L.
+  - family: Goff
+    given: B.
+  - family: Graham
+    given: K.
+  - family: Holland
+    given: K.
+  - family: Jones
+    given: J.
+  - family: Miles
+    given: R.
+  - family: Starkey
+    given: D.
+  - family: Robinson
+    given: S.
+  - family: Vanmunster
+    given: T.
+  - family: Walker
+    given: G.
+  issued:
+    date-parts:
+    - - 2007
+  container-title: Publications of the Astronomical Society of the Pacific
+  volume: '119'
+  issue: '862'
+  page: 1361–1366
+  publisher: IOP Publishing
+  DOI: 10.1086/524413
+- id: ross2017TurbulentFluctuationsExcitation
+  citation-key: ross2017TurbulentFluctuationsExcitation
+  type: article-journal
+  title: Turbulent fluctuations and the excitation of Z Cam outbursts
+  author:
+  - family: Ross
+    given: Johnathan
+  - family: Latter
+    given: Henrik N.
+  issued:
+    date-parts:
+    - - 2017
+  container-title: Monthly Notices of the Royal Astronomical Society
+  volume: '470'
+  issue: '1'
+  page: 34–47
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/mnras/stx1212
+- id: scaringi2026AccretingWhiteDwarfs
+  citation-key: scaringi2026AccretingWhiteDwarfs
+  type: article-journal
+  title: 'Accreting White Dwarfs: An Unreview'
+  author:
+  - family: Scaringi
+    given: Simone
+  - family: Knigge
+    given: Christian
+  - family: de Martino
+    given: Domitilla
+  issued:
+    date-parts:
+    - - 2026
+  container-title: Space Science Reviews
+  volume: '222'
+  issue: '3'
+  article-number: '32'
+  publisher: Springer Science and Business Media LLC
+  DOI: 10.1007/s11214-026-01290-x
+- id: simon2018LongtermActivityDwarf
+  citation-key: simon2018LongtermActivityDwarf
+  type: paper-conference
+  title: The long-term activity of dwarf novae and soft X-ray transients
+  author:
+  - family: Simon
+    given: Vojtech
+  issued:
+    date-parts:
+    - - 2018
+  container-title: Proceedings of The Golden Age of Cataclysmic Variables and Related Objects IV — PoS(GOLDEN 2017)
+  page: '035'
+  publisher: Sissa Medialab
+  DOI: 10.22323/1.315.0035
+- id: simon2022ActivityDwarfNova
+  citation-key: simon2022ActivityDwarfNova
+  type: article-journal
+  title: The activity of the dwarf nova RU Pegasi with rapidly changing outburst types
+  author:
+  - family: Šimon
+    given: Vojtěch
+  issued:
+    date-parts:
+    - - 2022
+  container-title: Monthly Notices of the Royal Astronomical Society
+  volume: '510'
+  issue: '3'
+  page: 3430–3436
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/mnras/stab3577
+- id: talts2018ValidatingBayesianInference
+  citation-key: talts2018ValidatingBayesianInference
+  type: article
+  title: Validating Bayesian Inference Algorithms with Simulation-Based Calibration
+  author:
+  - family: Talts
+    given: Sean
+  - family: Betancourt
+    given: Michael
+  - family: Simpson
+    given: Daniel
+  - family: Vehtari
+    given: Aki
+  - family: Gelman
+    given: Andrew
+  issued:
+    date-parts:
+    - - 2018
+  publisher: arXiv
+  DOI: 10.48550/arxiv.1804.06788
+- id: turnbull1976EmpiricalDistributionFunction
+  citation-key: turnbull1976EmpiricalDistributionFunction
+  type: article-journal
+  title: The Empirical Distribution Function with Arbitrarily Grouped, Censored and Truncated Data
+  author:
+  - family: Turnbull
+    given: Bruce W.
+  issued:
+    date-parts:
+    - - 1976
+  container-title: 'Journal of the Royal Statistical Society Series B: Statistical Methodology'
+  volume: '38'
+  issue: '3'
+  page: 290–295
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1111/j.2517-6161.1976.tb01597.x
+- id: vanderwoerd1987RecurrenceBehaviorOutbursts
+  citation-key: vanderwoerd1987RecurrenceBehaviorOutbursts
+  type: article-journal
+  title: Recurrence behavior of outbursts in VW Hyi
+  author:
+  - family: van der Woerd
+    given: H.
+  - family: van Paradijs
+    given: J.
+  issued:
+    date-parts:
+    - - 1987
+  container-title: Monthly Notices of the Royal Astronomical Society
+  volume: '224'
+  issue: '2'
+  page: 271–281
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/mnras/224.2.271
+- id: vogt2023PhotometricLongtermVariations
+  citation-key: vogt2023PhotometricLongtermVariations
+  type: article-journal
+  title: Photometric long-term variations of dwarf novae during quiescence
+  author:
+  - family: Vogt
+    given: N
+  - family: Vega-Manubens
+    given: I
+  issued:
+    date-parts:
+    - - 2023
+  container-title: Monthly Notices of the Royal Astronomical Society
+  volume: '525'
+  issue: '3'
+  page: 3682–3692
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1093/mnras/stad2464
+- id: wheatley2003XrayExtremeultravioletFlux
+  citation-key: wheatley2003XrayExtremeultravioletFlux
+  type: article-journal
+  title: The X-ray and extreme-ultraviolet flux evolution of SS Cygni throughout outburst
+  author:
+  - family: Wheatley
+    given: Peter J.
+  - family: Mauche
+    given: Christopher W.
+  - family: Mattei
+    given: Janet A.
+  issued:
+    date-parts:
+    - - 2003
+  container-title: Monthly Notices of the Royal Astronomical Society
+  volume: '345'
+  issue: '1'
+  page: 49–61
+  publisher: Oxford University Press (OUP)
+  DOI: 10.1046/j.1365-8711.2003.06936.x
 ...

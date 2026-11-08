@@ -1,1 +1,8 @@
 binding_id,claim_id,evidence,selector,value_column,estimand,display_values
+V001,C01,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C01"", ""field"": ""estimate""}}",value,primary mean paired log-score gain,[0.0165]
+V002,C01,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C01"", ""field"": ""lower""}}",value,primary lower interval endpoint,[0.0049]
+V003,C01,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C01"", ""field"": ""upper""}}",value,primary upper interval endpoint,[0.0281]
+V004,C01,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C01"", ""field"": ""n""}}",value,primary scored issuance count,[441]
+V005,C21,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C21"", ""field"": ""evaluation_type_lr""}}",value,exploratory evaluation type-only LR versus level-only,[14.7]
+V006,C21,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C21"", ""field"": ""evaluation_continuous_lr""}}",value,exploratory evaluation continuous-duration LR versus level-only,[11.7]
+V007,C21,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C21"", ""field"": ""evaluation_within_given_type_lr""}}",value,exploratory evaluation extra within-type LR,[0.17]

@@ -15,9 +15,50 @@ import tomllib
 ROOT = Path(__file__).resolve().parents[1]
 
 
+_CSL_ID = re.compile(r"^- id: ([A-Za-z][A-Za-z0-9_:.-]*)$")
+_CITATION_GROUP = re.compile(r"\[([^\]\n]*@[A-Za-z][^\]\n]*)\]")
+_CITATION_KEY = re.compile(r"@([A-Za-z][\w:.-]*)")
+
+
+def csl_yaml_keys(content: str) -> set[str]:
+    """Read the controlled top-level ID form emitted by tools/refs.py."""
+    lines = [line for line in content.splitlines()
+             if line.strip() and line.strip() not in {"---", "..."}
+             and not line.lstrip().startswith("#")]
+    if not lines or lines[0] not in {"references:", "references: []"}:
+        raise ValueError("CSL-YAML must start with the generated references mapping")
+    if lines[0] == "references: []":
+        if len(lines) != 1:
+            raise ValueError("CSL-YAML empty references mapping has trailing records")
+        return set()
+    keys: set[str] = set()
+    for line in lines[1:]:
+        if line.startswith("- "):
+            match = _CSL_ID.fullmatch(line)
+            if match is None:
+                raise ValueError("unsupported CSL-YAML record header; expected '- id: CiteKey'")
+            key = match.group(1)
+            if key in keys:
+                raise ValueError(f"duplicate CSL-YAML ID: {key}")
+            keys.add(key)
+        elif re.match(r"^\s+(?:-\s+)?id\s*:", line):
+            raise ValueError("unsupported or duplicate indented CSL-YAML ID")
+        elif not line.startswith(" ") or not keys:
+            raise ValueError("unsupported CSL-YAML structure outside a generated record")
+    if not keys:
+        raise ValueError("CSL-YAML references mapping has no generated records")
+    return keys
+
+
+def unknown_citations(content: str, known_keys: set[str]) -> list[str]:
+    return sorted({key for group in _CITATION_GROUP.findall(content)
+                   for key in _CITATION_KEY.findall(group) if key not in known_keys})
+
+
 def main() -> None:
     problems: list[str] = []
     required = ["README.md", "AGENTS.md", "CLAUDE.md", "references/literature.bib",
+                "references/refs.yaml",
                 "references/evidence.csv", "references/search-log.md",
                 "configs/candidate_targets.csv", "configs/study_plan.json",
                 "docs/01-research-brief.md", "docs/02-literature-review.md",
@@ -45,14 +86,18 @@ def main() -> None:
     evidence_keys = [row["citekey"] for row in evidence]
     if set(evidence_keys) != set(keys) or len(evidence_keys) != len(set(evidence_keys)):
         problems.append("bibliography and evidence register must match one-to-one")
+    manuscript_keys: set[str] = set()
+    try:
+        manuscript_keys = csl_yaml_keys((ROOT / "references/refs.yaml").read_text(encoding="utf-8"))
+    except ValueError as exc:
+        problems.append(f"references/refs.yaml: {exc}")
+    known_keys = set(keys) | manuscript_keys
     for path in ROOT.rglob("*.md"):
-        if ".git" in path.parts:
+        if any(part in {".git", ".venv", ".cache", "__pycache__"} for part in path.parts):
             continue
         content = path.read_text(encoding="utf-8")
-        for group in re.findall(r"\[([^\]\n]*@[A-Za-z][^\]\n]*)\]", content):
-            for key in re.findall(r"@([A-Za-z][\w:.-]*)", group):
-                if key not in keys:
-                    problems.append(f"unknown citation {key}: {path.relative_to(ROOT)}")
+        for key in unknown_citations(content, known_keys):
+            problems.append(f"unknown citation {key}: {path.relative_to(ROOT)}")
         for dest in re.findall(r"\[[^\]\n]+\]\(([^\s)]+)\)", content):
             if dest.startswith(("http:", "https:", "mailto:", "#")):
                 continue
@@ -75,6 +120,7 @@ def main() -> None:
     if problems:
         raise SystemExit("\n".join(problems))
     print(json.dumps({"status": "structural checks passed", "references": len(keys),
+                      "manuscript_references": len(manuscript_keys),
                       "candidate_targets": len(candidates), "demo_csv_hashes": len(summary["sha256_csv"]),
                       "scope": "local links, citation keys, basic config structure and seed CSV integrity; not source truth or scientific adequacy"}, indent=2))
 

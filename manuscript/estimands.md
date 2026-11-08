@@ -1,134 +1,133 @@
 # What each analysis bounds: the allowed claims
 
-The interpretation specification for the SS Cyg paper. Every rendering (article, supplement, brief,
-agent guide) states each result only in these terms. Claude and Codex maintain it jointly and Barry
-reviews it; change it before changing the prose. First drafted by Claude on 9 November 2026 in the A10j
-review (`docs/audits/2026-11-09-a10j-result-review.md`). It awaits Codex's review.
+This specification governs the article, supplement, brief, figures and agent guide. Claude proposed
+it in A10j; Codex's A10k review independently reproduced the requested numbers and narrowed several
+interpretations before figure captions. The revisions below are ready for Claude's agreement before
+substantive drafting. Barry reviews the final research products. The primary estimand and test are
+unchanged. The review record is `docs/audits/2026-11-09-a10k-claims-and-figures.md`.
 
-A sentence passes only if its subject is the same object as the calculation. A caveat attached to a
-sentence does not rescue it if its noun has changed, for example from "forecast gain under this
-baseline" to "memory".
+A sentence must name the object that was calculated. A caveat cannot turn a forecast comparison into
+a mechanism test, an in-sample fit into validated prediction, or a clock parameter into an observed
+waiting-time contrast.
 
-## Primary forecast gain (claims C01–C04)
+## Primary forecast gain (C01–C04)
 
-- **Estimand:** the mean, over the 441 SS Cyg forecast issuances of 1960–2017, of the log-score
-  difference between two forecasts of the next outburst onset. Both forecasts are frozen working
-  lognormal landmark clocks fitted on 1910–1959 only. M3 adds the just-completed outburst's log
-  duration to M2, which uses the previous quiescent gap and the recent gap level. It covers AAVSO
-  visual (`Vis.`, validation `V`) observations, the X4 event extraction at magnitude 10, C1/7-day
-  coverage, issue at the end-of-outburst landmark, and observation-time replay. The interval is
-  six-year-cluster robust (CR1, Student t, 9 df).
-- **Allowed:** "In a preregistered, frozen-parameter retrospective forecast test, adding the
-  completed outburst's duration improved forecasts of the next SS Cyg outburst by 0.0165 nats per
-  forecast (90% interval 0.0049–0.0281; 441 forecasts, 1960–2017). The single predeclared criterion
-  was met." "Incremental predictive information beyond the specified timing baseline."
-  "Observation-time retrospective." Express the size also as about 1.7% higher predictive likelihood
-  per forecast, or as about 14% of what the timing baseline adds over a constant forecast.
-- **Conditions that travel with it:** one star, one frozen visual extraction, one baseline. The
-  post-access format repair (C05). The later segment and the type/within-type rule were inconclusive
-  (C06, C08), and the exploratory reading is that the information is between outburst types (C21).
-- **Not allowed:** "SS Cyg has memory"; "outburst duration determines (or causes, controls, sets) the
-  next quiescent interval"; "confirms the disc-instability model"; any statement about "dwarf novae"
-  in general; "operational forecasting" or "real-time forecasts"; "blind" or "untouched" holdout;
-  "statistically significant at p = …" (the rule is an interval criterion); "the forecasts are well
-  calibrated".
+- **Estimand:** the mean paired log-score difference over the 441 SS Cyg issuances in 1960–2017.
+  The target is the next extracted onset, conditional on the information at the observed
+  end-of-outburst issue landmark. Frozen working lognormal clocks were fitted on 1910–1959 only.
+  M2 uses the previous covered quiet gap and recent gap level; M3 adds current log duration.
+  The result is conditional on archived `Vis.`/validation-`V` observations, X4 at magnitude ten,
+  C1/seven-day coverage, score eligibility and observation-time replay. The interval uses CR1,
+  six-year clusters and Student t with nine degrees of freedom.
+- **Allowed:** “In a preregistered, frozen-parameter retrospective comparison, adding completed
+  outburst duration improved the next-onset forecasts of SS Cyg by 0.0165 nats per issuance
+  (90% interval 0.0049–0.0281; 441 issuances, 1960–2017). The predeclared rule was met.”
+  “Incremental information beyond the specified measured-history timing baseline.”
+- **Size in other units (C02):** exponentiating the mean log-score gain gives a geometric mean
+  likelihood ratio, about 1.017. This can be called about 1.7% higher geometric mean likelihood
+  for the scored evidence. It is not an accuracy percentage or the arithmetic mean probability
+  gain. The ratio to M2's mean gain over M0 is about 14%; this is not variance explained.
+- **Conditions beside the headline:** one star, one extraction, one frozen baseline; the
+  post-access repair (C05); the inconclusive later segment and type/within-type rule (C07, C08).
+- **Not allowed:** physical memory, causation, confirmation of a disc mechanism, generality to
+  dwarf novae, operational forecasts, a blind/untouched evaluation, well-calibrated predictions,
+  or an additional confirmatory test chosen after inspection. The rule was an interval criterion.
 
 ## Access record (C05)
 
-- **Estimand:** the procedural history of the evaluation.
-- **Allowed:** "The protocol was published (DOI 10.5281/zenodo.24053338) before the evaluation data
-  were requested. The first run failed before any scoring because the archive used a literal `None`
-  for missing uncertainty. One outcome-independent parser repair, to a field that no forecast uses,
-  preceded the completed run. The failed attempt is preserved."
-- **Not allowed:** "the DOI timestamps the analysis as run"; "the evaluation data were never
-  accessed before scoring"; omitting the repair from any product that reports the result.
+The protocol DOI predates the first evaluation request. That attempt failed before scoring on exact
+`uncert="None"`; an independently reviewed format repair accepted that missing-uncertainty field
+without dropping or altering an observation. No forecasting path uses uncertainty. The failed
+attempt remains preserved. Every product reporting the primary result states that the completed
+run followed this post-access format repair. The DOI does not timestamp the repaired code, and the
+evaluation cannot regain untouched status.
 
-## Secondary comparisons (C06–C11)
+## Predeclared secondary comparisons (C06–C11)
 
-- **Era split (C06, C07):** descriptive. 1960–1992 lies inside Cannizzo and Mattei's 1896–1992
-  pooled sample (CM92). It was held out of this fit, but CM92 had already published an association
-  that includes those years. 1993–2017 lies outside every published analysis of the duration–gap
-  sign known to the project.
-  - *Allowed:* "In 1993–2017 the gain was 0.0057 nats (−0.0107 to 0.0221): inconclusive."
-  - *Not allowed:* "the effect disappeared (or weakened) after 1992"; "replicated in independent
-    data"; "stronger in the early era" as a finding; any era-difference test (none was specified).
-- **Type/within-type rule (C08):**
-  - *Allowed:* "The predeclared type/within-type rule was inconclusive (0.0025 nats, −0.0022 to
-    0.0072). As frozen, its type term could lengthen forecasts after long outbursts but not shorten
-    them after short ones (C22)."
-  - *Not allowed:* "the information is not about outburst type"; "the type test contradicts the
-    primary".
-- **Sensitivities (C09):** uniform-end marks, previous-gap-only baseline, 2-day delay, joint-valid
-  rows and 3-year clusters all give 0.0165–0.0170 with positive lower bounds. They are sensitivities,
-  not further confirmations.
-- **Timing baseline (C10):** M2 beats the constant forecast by 0.117 nats. This shows a non-trivial
-  baseline, not that M2 is the best timing model.
-- **Calibration (C11):**
-  - *Allowed:* "Absolute predictive intervals overcover: nominal 50% intervals cover 55–62% and
-    nominal 90% cover 92–98% (partial-identification bounds)."
-  - *Not allowed:* "calibrated forecasts"; "coverage confidence intervals".
+- **Eras (C06, C07):** the estimates are descriptive. The early segment overlaps the CM92 record,
+  while the later segment is outside the published duration–gap sign analyses known to this
+  project. The later gain, 0.0057 [−0.0107,0.0221], is inconclusive. Era intervals overlap; there
+  was no prespecified era-difference test. Claim neither disappearance nor independent replication.
+- **Type/within-type rule (C08):** its frozen gain, 0.0025 [−0.0022,0.0072], is inconclusive. The
+  nonnegative uncentred type component is zero after short outbursts. The whole rule also has a
+  centred within-type term, and can shorten some short-outburst forecasts. C22 explores a shared
+  level adjustment; it does not replace C08 or establish a validated corrected type forecast.
+- **Sensitivities (C09):** uniform-end marks, previous-gap-only baseline, two-day delay,
+  joint-valid rows and three-year clusters give positive lower bounds. These probe the same
+  comparison and are not additional independent confirmations.
+- **Timing baseline (C10):** M2's gain over M0 is non-trivial. It does not establish that M2 is the
+  best activity model or eliminate latent-state explanations.
+- **Calibration (C11):** the realised sample has overcoverage: the nominal central intervals
+  cover more observations than their nominal fractions. The ranges are partial-identification
+  bounds conditional on extracted onset brackets and censoring, over all scored issuances.
+  They are neither confidence intervals for population coverage nor guaranteed coverage of true
+  physical onsets. Selected-onset mid-CDF deciles are descriptive; no uniformity test is claimed.
 
-## Association diagnostics (C12, C13)
+## Evaluation-only association diagnostics (C12, C13)
 
-- **Estimand:** evaluation-only offsets with M2 refitted to 1960–2017 and held fixed. These are
-  working-likelihood support intervals, not dependence- or measurement-calibrated confidence
-  intervals.
-- **Allowed:** "Fitted alone, the previous outburst's duration has a negative offset. That is what
-  long/short alternation (C24) and a positive current-type effect jointly imply. Fitted jointly, both
-  offsets' support intervals include zero."
-- **Not allowed:** "rules out a shared state"; "identifies memory"; "the lag test is significant".
+The signed offsets are fitted after the result, with evaluation M2 refitted and held fixed. Their
+LR support intervals do not propagate baseline, dependence or measurement uncertainty.
 
-## Exploratory post-result analyses (C20–C25)
+The separate negative lag coefficient is **compatible with** alternation and a positive current-mark
+association. Its origin is not causally decomposed. The joint design is correlated but full rank,
+with a modest condition number of 1.79. Both conditional support intervals include zero; correlation
+alone does not explain that result or establish coefficient nonidentifiability. These timings do
+not identify a physical mechanism. A negative net lag can coexist with a positive slow component;
+A10k supplies an analytic counterexample, not an empirical rival fit.
 
-All computed after the primary result existed, by Claude (A10j). Every product labels them
-"exploratory, post-result". None is a second confirmation, and none may be described as a test
-that passed.
+## Exploratory post-result calculations (C20–C25)
 
-- **Level versus slope (C20):** about a fifth of the frozen gain (0.0037 of 0.0165) comes from the
-  duration term partly correcting a level bias. The frozen M2 forecasts gaps about 4.6% too long in
-  1960–2017, and both durations and gaps are shorter than in 1910–1959. The remainder (0.0128) is
-  within-era information.
-  - *Not allowed:* "the gain is an artefact of drift"; "the gain is free of drift".
-- **Type versus within-type (C21):** with the frozen M2 nuisance and a free level, the long/short
-  type indicator explains the evaluation data better than continuous log duration (LR 14.7 vs 11.7
-  against level only). Within-type duration adds nothing detectable (LR 0.17). In 1910–1959, type
-  and continuous duration were equivalent (LR 5.17 vs 5.19). The gap after a long outburst is about
-  14% longer than after a short one in 1960–2017, and about 10% longer in 1910–1959.
-  - *Allowed:* "the predictive information is carried by outburst type".
-  - *Not allowed:* "we show that outburst type causes"; "confirmed type effect"; "within-type duration
-    has no effect" (only "added nothing detectable").
-- **Frozen type rule at a common level (C22):** given the same evaluation level shift as M2, the frozen
-  type rule gains 0.0091 nats (0.0041–0.0140). This diagnoses a parameterisation interaction. It does
-  not rescue the predeclared rule's result.
-- **Alternation (C24):** successive log durations correlate at −0.52 in 1960–2017 (−0.40 in
-  1910–1959, matching CM92's −0.400). A long outburst is followed by another long one 15% of the
-  time.
-  - *Not allowed:* "we discovered alternation" (CM92 prior art).
-- **Robustness of the headline (C25):** 8 of 10 six-year blocks positive; dropping any one block leaves
-  0.0132–0.0194; the criterion survives an SE up to 1.43 times larger.
+All are explicitly labelled **exploratory, post-result**. Refits and evaluation-fitted adjustments
+reuse the evaluation outcomes. Their descriptive intervals condition on those choices rather than
+propagate all their estimation uncertainty. None supplies another held-out confirmation.
 
-## Simulation operating characteristics (C30–C33)
+- **Global recentering and level shifts (C20):** shifting M2 by the frozen mark's evaluation mean
+  contribution gives about 0.00370 nats; globally recentering that mark gives a 0.01283-nat score
+  contrast. The two orderings differ by about 0.000012 nats, so this is an approximately additive,
+  ordering-dependent description. It is not a causal partition. A single global mean does not
+  remove drift within the evaluation period. Avoid “genuine/drift-free within-period information”.
+  The best evaluation log-location shift reduces the original untruncated clock scale by about
+  4.57%; it does not directly estimate empirical forecast bias or the conditional remaining wait.
+- **Duration classes (C21):** with historical M2 nuisance held fixed and a free level, the
+  type-only model reaches a larger in-sample likelihood than linear log duration (LR 14.7 versus
+  11.7 against level only). Those equally dimensional models are nonnested. Adding linear
+  within-type duration changes the likelihood little (LR 0.17); no equivalence/absence test was
+  performed. This is compatible with a parsimonious class interpretation, not proof that all
+  predictive information resides in type. The development fits were similar, not proven equivalent.
+  Exponentiating the type coefficient gives about a 14% ratio of **untruncated working-clock
+  scales**, conditional on model covariates. It is not directly an observed mean-gap difference or
+  a remaining-wait contrast. “About five days” is permissible only as an explicitly chosen
+  illustration at a 36-day clock scale, not an empirical gap estimate.
+- **Shared level adjustment (C22):** the frozen type-plus-within rule gains about 0.00905 nats
+  when both models receive M2's evaluation-fitted common level. This shows sensitivity to coding
+  and baseline calibration. It does not uniquely explain the original weak score or rescue C08.
+  The restriction concerns the type component alone. Future fixed-baseline contrasts should define
+  indicator coding and intercept freedom together; centring is not a universal rule for all models.
+- **Era-specific type refits (C23):** conditional fit estimates, without a temporal-change test.
+- **Alternation (C24):** these are positive-duration pairs at forecast issuances, including one
+  repeat-flagged record, not a catalog of independent unique consecutive outbursts. The joint
+  model's subset is different. Alternation is prior art. Negative marginal/lag relationships do
+  not by themselves exclude a dominant slow driver coexisting with a stronger alternating component.
+- **Block and SE diagnostics (C25):** eight block means are positive; leave-one-block-out
+  **means** stay positive. The strict rule fails at an SE multiplier of about 1.42705: a 42%
+  inflation still passes, an exact 43% does not. This arithmetic holds the estimate, t critical
+  value and block definition fixed. It does not validate dependence, compensate every uncertainty
+  source, or show that every omission retains the original interval decision.
 
-- **Allowed:** "Power at the simulated published-size effect was 27.5% (11 of 40; exact 95%
-  14.6–43.9%). Across 220 gated no-effect histories the rule confirmed three times; the histories share
-  random streams, so this is a finite screen, not a certified 5% error rate. Under the injected effect,
-  34 of 40 two-sided 90% intervals contained the target."
-- **Not allowed:** "the test has a 5% false-positive rate"; "certified size"; "well-powered".
+## Simulations and development (C14, C30–C33)
 
-## Development fit (C14)
+The development likelihood result is in-sample and overlaps CM92's record. A10d power and containment
+are scenario-specific. Pooled no-effect histories share streams: their count is a finite screen,
+not an iid error-rate estimate or certification of nominal size. The simulation reference mean has
+Monte Carlo uncertainty and is not a second confirmatory target.
 
-- **Allowed:** "In-sample on 1910–1959, the duration offset was 0.0466 per SD of log duration, LR 5.19
-  against M2." Label it in-sample and say that it overlaps CM92's sample.
-- **Not allowed:** citing it as evidence for the claim.
+## Prior art, novelty and future data (C40, C41)
 
-## Prior art and novelty (C40, C41)
+CM92's source extraction and the novelty search remain provisional until Claude's planned full-text
+and search review. Detailed physical interpretations of Cannizzo (1993) await that review. Any
+novelty wording remains “known to us” within the documented search limits; do not claim discovery of
+the old correlations, split or alternation. Bibliographic metadata retrieval is not a full-text check.
 
-- CM92 reported, for 705 SS Cyg outbursts from 1896 to 1992, r(D, following Q) = 0.223,
-  r(D_i, D_i+1) = −0.400, a bimodal duration split at 12 d, and the cycle-convention trap.
-  Cannizzo (1993) gives the disc-instability account of long/short alternation (full text still to be
-  read before any detailed statement).
-- **Allowed novelty:** "the first preregistered, frozen-parameter, held-out forecast evaluation of
-  dwarf-nova recurrence known to us"; "the duration–gap association, as forecast skill, holds in data
-  not used to fit the model".
-- **Not allowed:** "we discovered that duration predicts the following quiescence"; "first evidence of
-  memory"; "first study of SS Cyg outburst statistics".
+2018 onward stays closed. Forecast counts or precision projected from earlier rates are planning
+assumptions, never observed counts from that period. No future protocol, data opening, operational
+forecast publication or venue/submission decision is made by this figure/build milestone.
