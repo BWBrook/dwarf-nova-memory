@@ -98,8 +98,9 @@ later evaluation. [A10g](docs/protocols/a10g-sealed-evaluation-v1.md) retains
 its reproduced counts while correcting the pooled probability interpretation,
 median-age sign argument and model-odds wording. Its sealed runner requires
 exact independent ledger/evidence concordance before scoring, and implements
-joint association and censoring-aware diagnostic coverage bounds. Native-format
-synthetic rehearsals and independent numerical checks precede the final freeze.
+joint association and censoring-aware diagnostic coverage bounds. The [final A10g rehearsal](docs/audits/2026-11-08-a10g-evaluation-freeze.md)
+completes every diagnostic at source freeze `fc40973`; independent scores and
+intervals agree, all 342 tests pass, and CI is green on Python 3.11–3.13.
 The forecasts, parameters and confirmatory test remain unchanged. Real
 1960–2017 access and external protocol deposition await Barry's explicit choice;
 2018 onward remains reserved.
@@ -145,6 +146,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A10a prefix-causal predictors and precision](docs/audits/2026-11-08-a10a-prefix-predictors-review.md) | Why magnitude 10 is structural, what the known-waveform limit threatens, the [proposed A10 predictor protocol](docs/protocols/a10-prefix-causal-predictors-v1.md), causality cost on real 1910–1959 rows, and single-star forecast-gain power |
 | [A10c control review and development-fit specification](docs/audits/2026-11-08-a10c-controls-review.md) | Where the A10b gain comes from, the sign of end-error coupling, the directional matched M3, the slow-state placebo and the [A10c protocol](docs/protocols/a10c-development-fit-v1.md) |
 | [A10f development review and evaluation protocol](docs/audits/2026-11-08-a10f-development-review.md) | The real fit placed among 360 synthetic development fits, issue ages and the sign argument, the lagged-mark evidence on shared state, conditional power, and the [proposed evaluation protocol](docs/protocols/a10f-evaluation-v1.md) |
+| [A10g sealed evaluation freeze](docs/audits/2026-11-08-a10g-evaluation-freeze.md) | Implemented access guards, independent score checks, preserved numerical failures, completed synthetic rehearsal and prepared protocol-only deposit |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

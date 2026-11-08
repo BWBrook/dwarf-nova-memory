@@ -348,3 +348,17 @@ PDF and checked Barry's creator name/ORCID in Crossref. Neither request was
 for target photometry or evaluation outcomes. Both synthetic rehearsals so
 far use the anonymous pre-1960-derived benchmark cache only. The first two
 numerical S1 failures are retained; they do not authorize real-data access.
+
+
+### Codex A10g final synthetic rehearsal, 8 November 2026
+
+Final source freeze `fc40973` precedes synthetic transport at
+2026-11-08 12:22:49 UTC. Candidate/reference concordance passes at 12:23:46;
+the synthetic primary is written at 12:23:46 and secondaries finish at
+12:23:49. All six frozen variants and all named diagnostics complete, with
+independent numerical checks. Earlier rehearsals at `79b5eae` and `bfb2bc6`
+remain recorded with secondary numerical failures. Those failures motivated
+only evaluation-diagnostic numerical repairs, never a forecasting change or
+selection for desired gain. No real later-period observation, count or
+coverage summary was accessed. No live authority or external protocol deposit
+was created. Barry's explicit timestamp/access choice is still required.

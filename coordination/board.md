@@ -626,53 +626,30 @@ Next: Codex — review A10f, build the runner, checker, fixtures and rehearsal,
 and freeze; then Barry's go-ahead opens 1960–2017.
 
 
-## Active A10g: evaluation implementation and synthetic rehearsal
+## A10g evaluation freeze complete, 8 November 2026
 
-Codex, base `6de1d9f`. Owns integration, sealed driver, access/source guards,
-calibration, protocol amendments, rehearsal and final evidence. Disjoint
-delegates own the native adapter/fixtures, source-independent primary checker,
-and scientific audit plus genuine joint S1 diagnostic. No real1960+ access
-is authorized or attempted. Forecast parameters and all26 A10d source hashes
-remain fixed. Initial freeze79b5eae passed339 tests, the validator and CI.
+Codex reviewed A10f and implemented the amended sealed evaluation protocol.
+Final source freeze `fc409738222ded5a9bf78288c969e956b59d23f4` completes the
+synthetic native-format 58-year rehearsal: 377 primary issuances, 345 joint
+rows, all S1–S6 diagnostics complete. The independent checker verifies all
+2,230 score rows within 6.13e-14, the primary interval, routing, chronology
+and all 120 source identities. All 342 tests, validator, staged scan and
+Python 3.11–3.13 CI pass on the exact source freeze.
 
-The review requires four pre-access repairs: genuine simultaneous joint S1;
-concordance hard-stop before scores; explicit interval/right-censor coverage
-bounds and descriptive selected-onset mid-CDFs; orthogonal sign/magnitude
-interpretation. Original A10f counts reproduce but pooled binomial inference,
-median-age sign proof and model-odds wording are not retained. The new
-[protocol](../docs/protocols/a10g-sealed-evaluation-v1.md) preserves the primary
-forecast/test and requires explicit committed later-data authority. Next is
-the final rehearsal report and a decision on later-data access.
+The first two rehearsals (`79b5eae`, `bfb2bc6`) and their numerical failures
+remain preserved. The final secondary-only profiler uses a fixed method by
+nuisance dimension, strict optimizer success and objective/nesting checks.
+Both prior streams complete under that method. No original A10d source,
+frozen parameter or primary statistic changed. A10f interpretation corrections
+and genuine joint association are recorded in D024 and the
+[A10g report](../docs/audits/2026-11-08-a10g-evaluation-freeze.md).
 
-The first frozen native-format rehearsal (79b5eae) completed397 synthetic
-forecasts. Independent scores/intervals agree within9.24e-14; all120 source
-hashes match. S1 aborted while profiling unused R0/M0 models whose profiles
-are discarded. Required M2/M3/P3 and joint diagnostics succeed in a separate
-synthetic-only diagnosis. Preserve the first run and restrict S1 to required
-profiles before a new freeze/rehearsal; no optimizer success check, original26
-source or forecast parameter changes. Compact first-attempt evidence is in
-`data/provenance/a10g_rehearsal_79b5eae/`; full outputs are hash-verified
-outside Git. No real evaluation archive was requested.
+Compact evidence is in `data/provenance/a10g_rehearsal_fc40973/`; full outputs
+and the 697,603-byte protocol-only deposit package are verified outside Git.
+The metadata/manifest are in `data/provenance/a10g_protocol_package/`.
+No deposit, later-data request or live authorization has been made. The
+reviewed protocol requires Barry's timestamp choice and explicit go-ahead
+before opening 1960–2017. 2018 onward remains reserved.
 
-The evaluation-only repair is implemented and independently diagnosed on the
-preserved synthetic stream: all required M2/M3/P3 profiles and the369-row,
-rank2 joint fit complete. The added regression forbids unused R0/M0 profiling.
-No optimizer, original A10d source, or forecast parameter changed. The repaired
-freeze will run a fresh commit-derived rehearsal before access is considered.
-
-The second freeze bfb2bc6 also passes the independent primary audit, but a
-new seed exposes the same line-search status failure in a required joint
-profile. Linux3.11 CI independently exposes it in the M2 nuisance profile.
-Both attempts are preserved. Before the final freeze, replace the fragile
-finite-difference nuisance search with a declared evaluation-only numerical
-method, verify both saved synthetic histories and numerical fixtures, and
-rerun under a new source-derived namespace. The primary forecasts and all26
-qualified source identities remain fixed; no real evaluation access occurred.
-
-The fixed dimension-based evaluation profiler passes seven focused tests,
-including the platform-exposed fixture, analytic interior/boundary optima and
-forced failure checks. Both preserved synthetic histories now complete every
-required S1 profile and the rank-two joint fit; previously successful support
-endpoints reproduce. Full-suite verification and a fresh immutable-source
-rehearsal remain before the access decision. No forecasting source or parameter
-has changed.
+Next: Barry — choose Zenodo first or a Git tag, then authorize the single run;
+or retain the closed block.

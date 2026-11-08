@@ -108,8 +108,13 @@ native-acquisition/evaluation runner, genuine joint S1, descriptive selected-
 onset CDFs and censoring-aware coverage bounds, plus independent score checks.
 Any ledger/evidence mismatch halts before scoring. The six-year primary test
 and frozen forecasts/parameters remain unchanged. Its protocol is
-`docs/protocols/a10g-sealed-evaluation-v1.md`. Freeze and rehearse synthetically
-before any access. A committed verbatim Barry authorization and timestamp
+`docs/protocols/a10g-sealed-evaluation-v1.md`. Source freeze `fc40973` completed a full synthetic native-format rehearsal:
+377 scored issuances, all secondaries complete, independent numerical audit
+passes. All 342 tests and CI on Python 3.11–3.13 pass. Two earlier numerical
+S1 failures are preserved; the final evaluation-only profiler uses bounded
+scalar search for one nuisance dimension and three-point gradients for larger
+searches, with strict optimizer checks. The original 26 sources and parameters
+are unchanged. See `docs/audits/2026-11-08-a10g-evaluation-freeze.md`. A committed verbatim Barry authorization and timestamp
 choice are required before live transport. No1960+ archive data or Zenodo
 publication is authorized by the current preparation task.
 

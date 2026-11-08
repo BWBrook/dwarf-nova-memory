@@ -1,0 +1,12 @@
+{
+  "status": "local draft; no deposit created",
+  "freeze_commit": "fc409738222ded5a9bf78288c969e956b59d23f4",
+  "protocol_sha256": "ddfa46d14f35e213690e0d5e7d03a7a635a71b637d024a810d2f192929789232",
+  "parameters_sha256": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "bundle": "dwarf-nova-memory-a10g-protocol-fc40973.zip",
+  "bundle_sha256": "9cc7c7e7203619fbb4322f43b9af6e7207b59644367b06434673be555b9cd357",
+  "bundle_bytes": 697603,
+  "bundle_files": 208,
+  "metadata_sha256": "61cbc77bebca9a51d0fe864e2c09529d806b379e500da140491b27f170cbb6c9",
+  "creator_check_sha256": "08a6728246f48a79df84fff4017596c8712aaad388c3b416362871cc3fd7e087"
+}

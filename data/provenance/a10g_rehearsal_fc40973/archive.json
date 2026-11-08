@@ -1,0 +1,11 @@
+{
+  "archive_id": "a10g-20261108-fc40973",
+  "archive_sha256": "3e91ba13b34bab5eddf4f30ec030d6a6eabdb76d06436a98736b09e58504c922",
+  "archive_bytes": 1315280,
+  "inventory_sha256": "117584da1e0201281554a7e63e49a86aea82fd750dac5819809fbd51ae7e218d",
+  "verified_member_files": 137,
+  "uncompressed_member_bytes": 12445838,
+  "storage": "project shared archive, outside Git",
+  "status": "completed synthetic rehearsal; all secondary diagnostics complete",
+  "verification": "local and remote whole-file SHA256 and every tar member verified"
+}

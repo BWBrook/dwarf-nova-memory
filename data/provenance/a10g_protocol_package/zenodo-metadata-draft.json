@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "title": "Dwarf-Nova Memory: frozen protocol for a single SS Cyg forecast evaluation, 1960\u20132017",
+    "upload_type": "publication",
+    "publication_type": "other",
+    "creators": [
+      {
+        "name": "Brook, Barry W.",
+        "orcid": "0000-0002-2491-1517",
+        "affiliation": "University of Tasmania"
+      }
+    ],
+    "description": "<p>Pre-access evaluation protocol and frozen implementation for testing incremental forecast information from SS Cyg outburst duration. Source freeze fc409738222ded5a9bf78288c969e956b59d23f4; unchanged development parameters; one confirmatory six-year-cluster forecast-gain test. Covers observational-time retrospective evaluation for 1960\u20132017. 2018 onward remains reserved. Contains source, synthetic fixtures and frozen fitted parameters; no raw archive observations.</p><p>Codex (OpenAI, GPT-6) implemented the runner with separate adapter/score-checker delegates (gpt-5.6-luna) and a methodological delegate (gpt-5.6-sol). Claude Opus 5.5 (Anthropic, Claude Code) proposed and reviewed methods; GPT-6 Pro (OpenAI, ChatGPT) developed the seed framework. Barry W. Brook leads the science. See package documentation for input and implementation separation, known prior exposure, and the synthetic rehearsal including the retained earlier secondary failure and completed repaired rehearsal.</p><p>Project content is CC BY-SA 4.0; code is MIT licensed. This deposit timestamps the project protocol before authorized archive access; it does not assert universal outcome ignorance.</p>",
+    "access_right": "open",
+    "license": "cc-by-sa-4.0",
+    "version": "a10g-v1-fc40973",
+    "keywords": [
+      "dwarf novae",
+      "SS Cyg",
+      "forecast evaluation",
+      "preregistration"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/BWBrook/dwarf-nova-memory/tree/fc409738222ded5a9bf78288c969e956b59d23f4",
+        "relation": "isSupplementTo",
+        "resource_type": "software"
+      }
+    ]
+  }
+}

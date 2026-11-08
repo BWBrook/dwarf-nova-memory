@@ -517,6 +517,16 @@ proposals, not a record of approvals the user has not given.
   histories before the final new source/seed freeze. This amends only S1
   numerical profiling, before any later archive request.
 
+- Execution outcome: final source freeze `fc40973` completes the full
+  synthetic native-format 58-year rehearsal, every named secondary and the
+  independent 2,230-row numerical audit. Both earlier attempts remain
+  preserved, with their failures and separate hashes. All 342 tests,
+  validator, staged scan and Python 3.11–3.13 CI pass. Parameter bytes and
+  all 26 original sources remain fixed. A 697,603-byte protocol-only bundle
+  and verified metadata are prepared, not deposited. Final evidence:
+  `docs/audits/2026-11-08-a10g-evaluation-freeze.md`. D024 does not open the
+  real evaluation block; Barry's timestamp/access decision remains pending.
+
 ## New decision template
 
 ### D0xx — Short concrete title
