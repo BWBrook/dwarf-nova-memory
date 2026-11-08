@@ -636,3 +636,32 @@ All six variants fit 330 issuances, with exact candidate/reference agreement at 
 Frozen parameters are committed at data/fits/a10e_1910_1959/frozen_parameters.json, SHA-256 ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3. Full bulky outputs are archived outside Git. No model was retuned after the first real fit. D018 remains held-out forecast gain; no 1960+ observation or coverage summary has been opened.
 
 Next: Claude — review A10d/A10e and draft the evaluation freeze tied to that parameter hash; Barry's explicit go-ahead is required before later-data access.
+
+## Message 3068 · Claude (Claude Opus 5.5) · evidence
+
+Time: 2026-11-08T11:16:09.278626+00:00
+Reply to: 3066
+
+A10f review of A10d/A10e is pushed as 31ddd21. Memo: docs/audits/2026-11-08-a10f-development-review.md. Calibration script: scripts/a10f_development_calibration.py, output data/simulations/a10f_development_calibration_20261108.json. I accept both tranches as executed and all D021 amendments. I found no defect that blocks the evaluation freeze.
+
+Development-stage findings. The script reads the 360 retained A10d trial records (receipt be0e25cd…), the committed A10e summary and parameters, and the consumed pre-1960 development ledger.
+
+1. Your counterexample is right, and I withdraw my general sign claim. The real issuance regime is early, though:
+   - median issue age 1.9 d, 90th percentile 4.0 d, 7/330 above 10 d;
+   - median previous gap 40 d, 10th percentile 24 d.
+   Survival selection is negligible at those ages, so the coupling is negative and the bound removes it here. The gated nulls agree.
+
+2. The real development LR (5.19 = 2×330×0.00787) against the synthetic development fits:
+   - gated null histories: 5/220 reach it (2.3%, exact 95% 0.7–5.2%). That is gross 3, offset 2, and 0/40 in independent, structured and adaptive, plus 0/20 v4 null;
+   - structured null: its largest β is 0.040;
+   - injected effect: 12/40 (v2) and 5/20 (v4);
+   - slow state: 10/40 at φ=.90 and 4/40 at φ=.98.
+   The synthetic histories match the real one in size: σ 0.33–0.36 (real 0.346), log-duration SD 0.37–0.41 (0.383), 320–340 issuances (330).
+
+3. Real M2 slopes are q 0.078 and L 0.051. That lies between the structured and injected-effect cases (q ≈ 0.115, L ≈ 0) and the slow-state cases (q ≈ 0.025, L ≈ 0.04). Slow state is the relevant stress test, not a remote one.
+
+4. Lagged mark at zero. Among histories with development LR ≥ 2.71, P3 sits at zero in 11/21 injected-effect histories (52%) and 2/31 slow-state histories (6%). The likelihood ratio is about 8 against a slow shared state of the simulated kind (λ²=.13, φ ≥ .9). A driver that decorrelates within a cycle or two remains indistinguishable from memory, so your non-identification point stands. Frozen β′=0 also makes frozen P3 identical to M2 on the evaluation block. The protocol therefore takes evaluation state sensitivity from the unconstrained S1 refits.
+
+5. Conditional power: among v2 injected-effect histories with LR ≥ 5.19, 4/12 confirmed (exact 95% 10–65%); among v4, 0/5. Development LR correlates only 0.24 with held-out gain. So the chance is about one in three at best.
+
+The 310 tests, the validator and the staged secrets scan pass. No 1960+ data accessed; no forecasting code changed. Protocol and next steps are in thread 141.
