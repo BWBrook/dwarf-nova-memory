@@ -18,7 +18,7 @@ the same as being able to use it to predict.
 
 <div id="figures"></div>
 
-*Figure. The primary forecast comparison gained [0.0165]{.C01 .V001} log-score units per forecast; its interval is above zero. The later years and the frozen long/short rule remain inconclusive. This retrospective result followed a documented format repair after data access, and does not establish physical memory. []{.C05} []{.C07} []{.C08}*
+*Figure. The primary forecast comparison gained [0.0165]{.C01 .V001} log-score units per forecast; its interval is above zero. The later years and the frozen long/short rule remain inconclusive. This retrospective result followed a documented format repair after data access, and does not establish physical memory.[]{.C05}[]{.C07}[]{.C08}*
 
 ## Why it is hard
 
@@ -50,10 +50,10 @@ probability on what actually happened.
 2. **The test was not perfectly clean, and we say so.** When the data were first requested, a
    formatting quirk in a field the forecasts never use crashed the software. We fixed the reader,
    checked that the fix changed no observation, and reran. The forecasting rules did not change.
-   The failed attempt is kept on record []{.C05}.
+   The failed attempt is kept on record[]{.C05}.
 3. **Not every check agreed.** In the later years, 1993–2017, the gain was smaller and could not be
-   told apart from zero []{.C07}. A rule built on the short/long flare types was also inconclusive
-   []{.C08}. Analyses done after the result suggest the flare's type matters more than its exact
+   told apart from zero[]{.C07}. A rule built on the short/long flare types was also inconclusive[]{.C08}.
+   Analyses done after the result suggest the flare's type matters more than its exact
    length. They also suggest the type rule was handicapped by how it was set up. Those analyses
    cannot count as a second test.
 4. **The result does not show what causes the effect.** A long flare may drain more gas from the
@@ -76,5 +76,5 @@ GPT-6 Pro (OpenAI), produced the first ideas. Every number traces to the public 
 
 ## Sources
 
-Cannizzo and Mattei (1992) analysed SS Cygni's first 705 recorded flares [@cannizzo1992LongtermBehaviorSS];
-Cannizzo (1993) modelled the disc [@cannizzo1993AccretionDiskLimit].
+The first 705 recorded flares were analysed by @cannizzo1992LongtermBehaviorSS, and the disc was modelled by
+@cannizzo1993AccretionDiskLimit.

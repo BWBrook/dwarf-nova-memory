@@ -36,7 +36,7 @@ Rows were requested in bounded annual windows, ending strictly before 2018. Resp
 50,000-row service cap were bisected, and every response was hashed on receipt before parsing. The
 analysis uses rows in the `Vis.` band with validation flag `V`. The 1960–2017 evaluation window
 contains [63]{.C15} validated leaf responses. These hold [500,479]{.C15} rows after removing
-[81]{.C15} duplicate identifiers, of which [249,356]{.C15} meet the analysis selector []{.C15}.
+[81]{.C15} duplicate identifiers, of which [249,356]{.C15} meet the analysis selector[]{.C15}.
 
 X4 (`src/dnmem/extract_x4.py`, definition `a04f-x4-v1`) groups observer visits into candidate
 episodes brighter than visual magnitude 10. For each episode it forms a posterior for the
@@ -120,10 +120,10 @@ interval width may replace it.
 
 Before the development fit, a finite synthetic screen checked the design (A10d). At an effect sized
 to CM92's published correlations, [11]{.C30} of 40 simulated evaluations confirmed, with exact
-interval [0.146]{.C30} to [0.439]{.C30} []{.C30}. Pooled no-effect histories gave [3]{.C31}
-confirmations in 220 []{.C31}. These histories share random streams, so the count is a finite
+interval [0.146]{.C30} to [0.439]{.C30}[]{.C30}. Pooled no-effect histories gave [3]{.C31}
+confirmations in 220[]{.C31}. These histories share random streams, so the count is a finite
 screen, not an independent error rate or a certified size. The reference injected effect gave a
-mean gain of [0.0045]{.C33} nats []{.C33}. Barry accepted the finite screen before the first real
+mean gain of [0.0045]{.C33} nats[]{.C33}. Barry accepted the finite screen before the first real
 fit (D022).
 
 ### S2.7 Access, execution and repair
@@ -143,12 +143,12 @@ tests, independent review, the full test suite, a new full rehearsal and support
 passed before continuation (D026). All 26 original forecasting source files, the parameter bytes
 and the protocol bytes are unchanged. The repair freeze is `5e39aeb` and the execution commit
 `d7151e0`. No person or agent inspected real scores, outcomes, counts or coverage summaries before
-the primary file existed []{.C05}.
+the primary file existed[]{.C05}.
 
 Two independent ledger and evidence implementations had to agree exactly at both delays before any
 score. A separate checker reproduced all 2,641 variant score rows, with a maximum discrepancy of
-order $10^{-13}$, and the primary interval []{.C01}. Claude recomputed the interval by a separate
-route []{.C01}. The primary population and routing are in C03.
+order $10^{-13}$, and the primary interval[]{.C01}. Claude recomputed the interval by a separate
+route[]{.C01}. The primary population and routing are in C03.
 
 ## S3. Results and sensitivities
 
@@ -170,10 +170,10 @@ interval. Only the first row is confirmatory.
 | Three-year clusters | 441 | as primary | lower [0.0059]{.C09} |
 | Baseline M2 − M0 | 441 | [0.1168]{.C10} | [0.0663]{.C10} to [0.1672]{.C10} |
 
-The primary interval uses ten nonempty blocks and nine degrees of freedom []{.C01}. Eight have positive means. Leave-one-block-out means span [0.0132]{.C25} to
+The primary interval uses ten nonempty blocks and nine degrees of freedom[]{.C01}. Eight have positive means. Leave-one-block-out means span [0.0132]{.C25} to
 [0.0194]{.C25}, and [0.5397]{.C25} of individual issuance gains are positive. Holding the estimate,
 critical value and blocks fixed, the decision fails once the standard error is multiplied by
-[1.427]{.C25} or more []{.C25}. The boundary is strict: a 42% inflation passes and an exact 43%
+[1.427]{.C25} or more[]{.C25}. The boundary is strict: a 42% inflation passes and an exact 43%
 fails. None of these checks validates the cluster dependence assumption.
 
 The frozen P3 placebo equals M2, because its development lag coefficient sat at its bound of zero.
@@ -182,7 +182,7 @@ The planned memory placebo therefore carries no information.
 ### S3.2 Calibration
 
 M3's nominal 50% central intervals covered between [0.546]{.C11} and [0.617]{.C11} of outcomes;
-its nominal 90% intervals between [0.923]{.C11} and [0.980]{.C11} []{.C11}. Each range runs from
+its nominal 90% intervals between [0.923]{.C11} and [0.980]{.C11}[]{.C11}. Each range runs from
 definitely covered to possibly covered, given the extracted brackets and censoring, over all scored
 issuances. These are realised-sample bounds, not confidence intervals for a population rate, and
 they show overcoverage. Mid-CDF deciles of resolved onsets are descriptive; no uniformity test is
@@ -201,7 +201,7 @@ calibration.
 | Current duration, joint | [0.03045]{.C13} | [−0.00063]{.C13} to [0.06152]{.C13} |
 | Previous duration, joint | [−0.02213]{.C13} | [−0.05340]{.C13} to [0.00913]{.C13} |
 
-The joint design is correlated but has full rank, with condition number [1.79]{.C13} []{.C13}. Both
+The joint design is correlated but has full rank, with condition number [1.79]{.C13}[]{.C13}. Both
 joint support intervals include zero. Correlation alone neither explains that nor makes the
 coefficients nonidentifiable.
 
@@ -234,8 +234,7 @@ adjustment it describes. None supplies a further held-out confirmation.
   - within-class duration added to class, [0.17]{.C21 .V007}.
 
   The class contrast corresponds to a [14]{.C21 .V008}% larger untruncated working-clock scale after
-  long outbursts. In 1910–1959 the class and continuous fits were similar, with a smaller contrast
-  []{.C21}.
+  long outbursts. In 1910–1959 the class and continuous fits were similar, with a smaller contrast[]{.C21}.
 - **Shared level for the class rule (C22).** The frozen class rule's mean type offset is
   [0.01728]{.C22}. Giving both rules M2's evaluation-fitted level yields a gain of [0.00905]{.C22}
   ([0.00409]{.C22} to [0.01401]{.C22}). For 1993–2017 alone it yields [0.00761]{.C22}
@@ -252,12 +251,12 @@ adjustment it describes. None supplies a further held-out confirmation.
 ### S3.6 Development fit
 
 In 1910–1959 the duration offset was [0.0466]{.C14} per standard deviation, with likelihood-ratio
-statistic [5.1935]{.C14} against M2 []{.C14}. This fit is in-sample and overlaps CM92's record, so it
+statistic [5.1935]{.C14} against M2[]{.C14}. This fit is in-sample and overlaps CM92's record, so it
 is not evidence for the claim.
 
 ### S3.7 Prior art checked against the source
 
-Claude re-read CM92's Table 4 and its Fig. 5 subscript conventions on the original scan []{.C40}.
+Claude re-read CM92's Table 4 and its Fig. 5 subscript conventions on the original scan[]{.C40}.
 For [705]{.C40} outbursts (1896–1992), the correlations are:
 
 - duration with the following quiescence, [0.223]{.C40};
@@ -287,21 +286,21 @@ from Claude's A10j review before the products were drafted. Claude accepted all 
 
 | Earlier reading | Corrected scope | Evidence |
 |---|---|---|
-| Global recentering isolates drift-free information | It defines an approximately additive descriptive score contrast; within-period drift remains possible | []{.C20} |
-| All predictive information is in outburst type | A class indicator has greater in-sample likelihood; within-class equivalence was not tested | []{.C21} |
-| The entire frozen class rule cannot shorten short-event forecasts | That restriction concerns its type component; the within-class component can shorten them | []{.C08} []{.C22} |
-| Negative lag excludes a dominant slow driver | Alternation and a slow component can coexist; no mechanism allocation follows | []{.C12} []{.C13} []{.C24} |
-| A rounded SE boundary is a safe inclusive margin | The decision is strict; the rescaling boundary is exclusive and does not validate dependence | []{.C25} |
-| Frozen M2 forecasts are 4.6% too long | The best level shift reduces the untruncated clock scale by 4.57%; that is not a remaining-wait bias | []{.C20} |
-| The gap after a long outburst is about five days longer | A 14% clock-scale ratio; days need an explicitly chosen reference scale | []{.C21} |
+| Global recentering isolates drift-free information | It defines an approximately additive descriptive score contrast; within-period drift remains possible |[]{.C20} |
+| All predictive information is in outburst type | A class indicator has greater in-sample likelihood; within-class equivalence was not tested |[]{.C21} |
+| The entire frozen class rule cannot shorten short-event forecasts | That restriction concerns its type component; the within-class component can shorten them |[]{.C08}[]{.C22} |
+| Negative lag excludes a dominant slow driver | Alternation and a slow component can coexist; no mechanism allocation follows |[]{.C12}[]{.C13}[]{.C24} |
+| A rounded SE boundary is a safe inclusive margin | The decision is strict; the rescaling boundary is exclusive and does not validate dependence |[]{.C25} |
+| Frozen M2 forecasts are 4.6% too long | The best level shift reduces the untruncated clock scale by 4.57%; that is not a remaining-wait bias |[]{.C20} |
+| The gap after a long outburst is about five days longer | A 14% clock-scale ratio; days need an explicitly chosen reference scale |[]{.C21} |
 
 The original exploratory numbers are retained. These corrections do not alter the frozen primary
 comparison, its outcomes or the predeclared class-rule result.
 
 **Novelty wording narrowed in A10l.** The draft framing called this the first preregistered held-out
 forecast test of dwarf-nova recurrence. The refreshed search found a held-out point-forecast study
-of V363 Lyr (Grigorievskiy et al. 2014, ITISE proceedings, pp. 520–531), with a single test
-outburst. The claim now specifies preregistered, probabilistic and duration-based []{.C41}.
+of V363 Lyr by Grigorievskiy and colleagues, in the 2014 ITISE proceedings (pp. 520–531), with a single test
+outburst. The claim now specifies preregistered, probabilistic and duration-based[]{.C41}.
 
 ## S5. Reproduction and navigation
 

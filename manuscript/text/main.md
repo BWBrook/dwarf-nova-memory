@@ -17,7 +17,7 @@ the protocol with a DOI, and then scored forecasts issued at the end of each out
 interval [0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}; [441]{.C01 .V004} forecasts). The
 predeclared criterion was met. The gain corresponds to a [1.7]{.C02}% higher geometric mean
 likelihood of the observed outcomes. The evaluation was completed after a documented post-access
-repair to the parser, for a missing-uncertainty token that no forecast uses []{.C05}. Two predeclared
+repair to the parser, for a missing-uncertainty token that no forecast uses[]{.C05}. Two predeclared
 secondary comparisons were inconclusive. One was the later segment, 1993–2017
 ([0.0057]{.C07}; [−0.0107]{.C07} to [0.0221]{.C07}). The other was a rule built on the 12-day
 long/short outburst classes ([0.0025]{.C08}; [−0.0022]{.C08} to [0.0072]{.C08}). Exploratory fits
@@ -43,7 +43,7 @@ curve, built from visual estimates archived by the American Association of Varia
 (AAVSO), runs almost unbroken from 1896. Bath and van Paradijs described SS Cyg as a relaxation
 oscillator, with outburst energy related to the following waiting period
 [@bath1983OutburstPeriodenergyRelations]. Cannizzo and Mattei then analysed 705 outbursts from 1896 to
-1992 [@cannizzo1992LongtermBehaviorSS, hereafter CM92] []{.C40}. They showed that a correlation
+1992 [@cannizzo1992LongtermBehaviorSS, hereafter CM92][]{.C40}. They showed that a correlation
 between an outburst's duration and the "following cycle" largely reflects the cycle containing the
 duration. They recommended the quiet interval instead.
 
@@ -55,7 +55,7 @@ On that footing CM92 reported the following correlations:
 - durations split cleanly into two classes at about [12]{.C40} days.
 
 They read the positive correlation between successive quiet intervals as a hint of secular
-variation. Hempelmann and Kurths (1990, *Astronomy and Astrophysics* 232, 356) found short-range
+variation. A 1990 study by Hempelmann and Kurths (*Astronomy and Astrophysics* 232, 356) found short-range
 dependence and possible long-range memory in a symbolic sequence of outburst widths. Searches for
 low-dimensional chaos found no attractor [@cannizzo1988ChaosSSCygni]. Cannizzo's disc-instability
 calculations tuned to SS Cyg reproduce the alternation [@cannizzo1993AccretionDiskLimit]. In those
@@ -71,8 +71,8 @@ available when it is issued. It must beat a baseline that already knows the rece
 quiet intervals. A proper scoring rule must reward it for the whole predictive distribution, not
 for a point estimate [@gneiting2007StrictlyProperScoring]. Evaluation must also respect time order
 [@burkner2020ApproximateLeavefutureoutCrossvalidation]. The only held-out timing forecast of a dwarf
-nova we found is a machine-learning study of the Kepler light curve of V363 Lyr (Grigorievskiy et al.
-2014, ITISE proceedings). It scored point forecasts of onset position on a single test outburst. A
+nova we found is a machine-learning study of the Kepler light curve of V363 Lyr by Grigorievskiy and
+colleagues, in the 2014 ITISE proceedings. It scored point forecasts of onset position on a single test outburst. A
 search for short-term photometric precursors of SS Cyg outbursts found none
 [@price2007SSCygniOutburst].
 
@@ -80,7 +80,7 @@ We report a preregistered, frozen-parameter test of one question. Does a forecas
 completed outburst's duration assign higher probability to the next extracted onset than one that
 knows only the recent quiet intervals? To our knowledge this is the first preregistered probabilistic
 evaluation of dwarf-nova recurrence forecasts on held-out data, and the first test of whether the
-completed outburst's duration adds forecast skill []{.C41}. Section 2 sets out the evidence and design, Section 3
+completed outburst's duration adds forecast skill[]{.C41}. Section 2 sets out the evidence and design, Section 3
 the results, and Section 4 what they do and do not support. The supplement holds the definitions,
 methods, sensitivities and the record of corrections made during review.
 
@@ -90,7 +90,7 @@ methods, sensitivities and the record of corrections made during review.
 
 We used AAVSO International Database visual estimates of SS Cyg, keeping only rows in the `Vis.`
 band with validation flag `V`. The 1960–2017 evaluation window contains [249,356]{.C15} such rows,
-out of [500,479]{.C15} deduplicated archive rows []{.C15}. Earlier rows supplied the development fit
+out of [500,479]{.C15} deduplicated archive rows[]{.C15}. Earlier rows supplied the development fit
 (1910–1959) and the causal history before 1960. Raw observations and observer identities are not
 redistributed.
 
@@ -126,7 +126,7 @@ Each model is a lognormal clock for the quiet interval, conditioned on survival 
 - **M3:** M2 plus $\beta$ times the standardised log duration, with $\beta$ constrained to be non-negative.
 
 We fitted M2 on 1910–1959, then fitted $\beta$ with M2's parameters held fixed, and froze all parameters.
-The development fit gave $\beta$ = [0.0466]{.C04} per standard deviation of log duration []{.C14}.
+The development fit gave $\beta$ = [0.0466]{.C04} per standard deviation of log duration[]{.C14}.
 Forecasts without a covered previous gap use M0 for both models and contribute exactly zero to the
 contrast.
 
@@ -147,7 +147,7 @@ independently reviewed repair accepted that exact token without altering or drop
 observation. Synthetic invariance tests, the full test suite and a new rehearsal passed before the
 run continued. No magnitude, outcome, count or score informed the repair. The failed attempt is
 preserved. The evaluation therefore cannot be described as untouched, and the DOI timestamps the
-original protocol, not the repair []{.C05}. Data from 2018 onward remain closed.
+original protocol, not the repair[]{.C05}. Data from 2018 onward remain closed.
 
 **Table 1.** Pivotal inputs, what each shows directly, and what a stronger claim would also need.
 
@@ -176,7 +176,7 @@ right-censored cases. The baseline itself is not trivial: M2 beat the constant M
 [8]{.C25} of the ten blocks have positive means (Fig. 2A). Leaving out any one block gives means
 between [0.0132]{.C25} and [0.0194]{.C25}. With the estimate and critical value held fixed, the
 decision would fail only if the standard error were inflated by a factor of [1.427]{.C25} or
-more []{.C25}. Every protocol sensitivity kept a positive lower bound. That includes uniform end
+more[]{.C25}. Every protocol sensitivity kept a positive lower bound. That includes uniform end
 uncertainty ([0.0166]{.C09}, lower bound [0.0045]{.C09}), the previous-gap-only baseline
 ([0.0170]{.C09}, [0.0054]{.C09}), a two-day issue delay ([0.0165]{.C09}, [0.0049]{.C09}), the
 joint-valid rows ([0.0167]{.C09}, [0.0049]{.C09}) and three-year clusters (lower bound
@@ -189,7 +189,7 @@ information available at issue.
 
 The two era segments differ in estimate but not decisively (Fig. 2B). The segment 1960–1992 gave
 [0.0240]{.C06} ([0.0091]{.C06} to [0.0389]{.C06}; [261]{.C06} issuances). These years were held
-out of the fit, but they overlap the record behind CM92's published association []{.C06}. The
+out of the fit, but they overlap the record behind CM92's published association[]{.C06}. The
 segment 1993–2017, outside the published sign analyses we know of, gave [0.0057]{.C07}
 ([−0.0107]{.C07} to [0.0221]{.C07}; [180]{.C07} issuances). That is inconclusive. The intervals
 overlap, no era-difference test was specified, and the result is not evidence that the gain
@@ -209,9 +209,9 @@ operational forecasts.
 ### 3.3 Why the held-out gain exceeds the development expectation
 
 The development fit was in-sample and modest: a likelihood-ratio statistic of [5.19]{.C14} against
-M2 []{.C14}. In the operating-characteristic simulations, the reference injected effect gave a mean
+M2[]{.C14}. In the operating-characteristic simulations, the reference injected effect gave a mean
 gain of [0.0045]{.C33} nats, and at the published-size effect [11]{.C30} of 40 simulated evaluations
-confirmed []{.C30}. The realised gain is larger than this model-specific reference. The reference
+confirmed[]{.C30}. The realised gain is larger than this model-specific reference. The reference
 carries Monte Carlo uncertainty and was not a target, so this is not a claim that the effect exceeds
 a known physical size.
 
@@ -222,7 +222,7 @@ by about 4.6%; it is not an estimate of bias in the remaining-wait forecasts. Be
 standardised log duration is negative in the evaluation era, the duration term partly supplies this
 level correction. That accounts for [0.0037]{.C20} nats ([0.0001]{.C20} to [0.0073]{.C20}). After
 the duration is recentred at its evaluation mean, the score contrast is [0.0128]{.C20}
-([0.0036]{.C20} to [0.0221]{.C20}) []{.C20}. A single global mean does not remove drift within the
+([0.0036]{.C20} to [0.0221]{.C20})[]{.C20}. A single global mean does not remove drift within the
 period, and the two parts are a descriptive, approximately additive split, not a causal partition.
 
 ### 3.4 Exploratory: long/short class and alternation
@@ -234,28 +234,28 @@ common level, a long/short indicator alone reaches a likelihood-ratio statistic 
 [11.7]{.C21 .V006}. These equal-dimensional models are not nested. Adding linear within-class
 duration to the indicator changes the statistic by [0.17]{.C21 .V007}. The fit therefore favours a
 parsimonious class reading. It is not a test showing that duration within a class adds nothing. In
-the development years the two forms fit about equally well []{.C21}. The fitted class contrast
+the development years the two forms fit about equally well[]{.C21}. The fitted class contrast
 corresponds to a [14]{.C21 .V008}% larger untruncated clock scale after long outbursts, conditional
 on the other covariates. This is a model-scale ratio, not an observed difference in mean waiting
-times. Era-specific refits give larger class contrasts in 1960–1992 than in 1993–2017 []{.C23},
+times. Era-specific refits give larger class contrasts in 1960–1992 than in 1993–2017[]{.C23},
 without an era-change test.
 
 The predeclared class rule coded the class as an uncentred 0/1 indicator with a non-negative
 coefficient, added to a baseline whose level was fixed. The class component could therefore only
 lengthen forecasts after long outbursts, never shorten them after short ones. The rule's centred
-within-class term could still shorten some short-outburst forecasts []{.C08}. When both rules
+within-class term could still shorten some short-outburst forecasts[]{.C08}. When both rules
 receive M2's evaluation-fitted common level, the frozen class rule gains about [0.009]{.C22} nats
-([0.0041]{.C22} to [0.0140]{.C22}) []{.C22}. That shows sensitivity to coding and baseline
+([0.0041]{.C22} to [0.0140]{.C22})[]{.C22}. That shows sensitivity to coding and baseline
 calibration. It neither rescues the original inconclusive result nor validates a corrected rule.
 The lesson for future protocols is that indicator coding and intercept freedom must be specified
 together.
 
 Alternation is strong in the forecast record. The lag-one correlation of log duration is
 [−0.52]{.C24}. A long outburst followed a long one in [0.15]{.C24} of pairs and followed a short one
-in [0.66]{.C24} []{.C24}. Fitted separately on the evaluation data, with evaluation M2 refitted and
+in [0.66]{.C24}[]{.C24}. Fitted separately on the evaluation data, with evaluation M2 refitted and
 fixed, the current duration offset is positive ([0.042]{.C12}) and the previous outburst's is
-negative ([−0.038]{.C12}) []{.C12}. Fitted jointly, both conditional support intervals include zero
-[]{.C13}. The negative previous-duration coefficient is compatible with alternation combined with
+negative ([−0.038]{.C12})[]{.C12}. Fitted jointly, both conditional support intervals include zero[]{.C13}.
+The negative previous-duration coefficient is compatible with alternation combined with
 a positive current association. Its causes have not been separated.
 
 ## 4. Discussion
