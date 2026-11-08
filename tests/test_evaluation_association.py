@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 import numpy as np
-from scipy.optimize import OptimizeResult
+from scipy.optimize import OptimizeResult, minimize as scipy_minimize
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,13 +15,15 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from dnmem.directional_forecast import _prepare_offset, fit_directional
 from dnmem.evaluation_association import (
+    _EvaluationProfiler,
+    _evaluation_base_profile,
+    _evaluation_mark_profile,
     _joint_association,
     _joint_offset_objective,
     _joint_rows,
     _prepare_joint_offset,
     evaluation_association,
 )
-from dnmem.fit_profiles import _base_model_profile, _mark_profile
 
 
 def association_fixture(
@@ -145,11 +147,11 @@ class EvaluationAssociationTests(unittest.TestCase):
             "dnmem.fit_profiles._r0_profile",
             side_effect=AssertionError("R0 profile is not an S1 diagnostic"),
         ), patch(
-            "dnmem.evaluation_association._base_model_profile",
-            wraps=_base_model_profile,
+            "dnmem.evaluation_association._evaluation_base_profile",
+            wraps=_evaluation_base_profile,
         ) as base_profile, patch(
-            "dnmem.evaluation_association._mark_profile",
-            wraps=_mark_profile,
+            "dnmem.evaluation_association._evaluation_mark_profile",
+            wraps=_evaluation_mark_profile,
         ) as mark_profile:
             result = evaluation_association(ledger, evidence, cutoff)
 
@@ -162,6 +164,74 @@ class EvaluationAssociationTests(unittest.TestCase):
         self.assertEqual(result["joint"]["status"], "fitted")
         self.assertTrue(result["joint"]["identifiability"]["full_column_rank"])
         json.dumps(result, allow_nan=False)
+
+    def test_dimension_specific_profiler_handles_scalar_interior_and_boundary(self):
+        interior = _EvaluationProfiler(
+            lambda theta: float((theta[0] - 1.0) ** 2 + (theta[1] - 2.0) ** 2),
+            [1.0, 2.0],
+            [(1.0, 1.0), (0.0, 4.0)],
+            ["fixed", "free"],
+            {0: "analytic fixture"},
+        )
+        interior_point = interior._evaluate(0, 1.0)
+        self.assertAlmostEqual(interior_point["nuisance_optimum"][1], 2.0, places=7)
+        self.assertIn("selected=interior", interior_point["optimizer_message"])
+
+        boundary = _EvaluationProfiler(
+            lambda theta: float((theta[0] - 1.0) ** 2 + (theta[1] + 2.0) ** 2),
+            [1.0, 0.0],
+            [(1.0, 1.0), (0.0, 4.0)],
+            ["fixed", "free"],
+            {0: "analytic fixture"},
+        )
+        boundary_point = boundary._evaluate(0, 1.0)
+        self.assertEqual(boundary_point["nuisance_optimum"][1], 0.0)
+        self.assertIn("selected=lower_endpoint", boundary_point["optimizer_message"])
+
+    def test_dimension_specific_profiler_uses_central_gradient_and_fails_closed(self):
+        objective = lambda theta: float(np.sum((theta - np.array([1.0, -2.0])) ** 2))
+        with patch(
+            "dnmem.evaluation_association.minimize", wraps=scipy_minimize
+        ) as optimizer:
+            profiler = _EvaluationProfiler(
+                objective,
+                [1.0, -2.0],
+                [(-5.0, 5.0), (-5.0, 5.0)],
+                ["first", "second"],
+            )
+        self.assertEqual(optimizer.call_args.kwargs["jac"], "3-point")
+        self.assertIn("jac=3-point", profiler.diagnostics()["full_optimizer_message"])
+
+        failed = OptimizeResult(
+            success=False,
+            x=np.array([1.0, -2.0]),
+            fun=0.0,
+            jac=np.zeros(2),
+            message="forced central-gradient failure",
+        )
+        with patch("dnmem.evaluation_association.minimize", return_value=failed):
+            with self.assertRaisesRegex(ValueError, "central-gradient optimization failed"):
+                _EvaluationProfiler(
+                    objective,
+                    [1.0, -2.0],
+                    [(-5.0, 5.0), (-5.0, 5.0)],
+                    ["first", "second"],
+                )
+
+        nonfinite = OptimizeResult(
+            success=True,
+            x=float("nan"),
+            fun=float("nan"),
+            message="forced nonfinite scalar result",
+        )
+        with patch("dnmem.evaluation_association.minimize_scalar", return_value=nonfinite):
+            with self.assertRaisesRegex(ValueError, "invalid solution"):
+                _EvaluationProfiler(
+                    lambda theta: float((theta[0] - 1.0) ** 2),
+                    [1.0],
+                    [(-5.0, 5.0)],
+                    ["only"],
+                )
 
     def test_constant_and_collinear_marks_are_not_reported_as_separately_identified(self):
         ledger, evidence, cutoff = association_fixture(n=70, constant_current=True)

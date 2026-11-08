@@ -342,3 +342,9 @@ were not loaded into the evaluation or used to alter its window. This
 incidental documentation exposure is recorded rather than claiming universal
 outcome ignorance. The published CM92/Price exposure remains as disclosed.
 No1960+ raw evaluation data access or2018+ request is authorized.
+
+A10g preparation also read the full generic July 2026 AAVSO usage-guidelines
+PDF and checked Barry's creator name/ORCID in Crossref. Neither request was
+for target photometry or evaluation outcomes. Both synthetic rehearsals so
+far use the anonymous pre-1960-derived benchmark cache only. The first two
+numerical S1 failures are retained; they do not authorize real-data access.

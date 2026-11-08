@@ -506,6 +506,17 @@ proposals, not a record of approvals the user has not given.
   Record the first run, create a new freeze/namespace, and rerun the full
   synthetic rehearsal before asking to open the later block.
 
+- The second synthetic freeze bfb2bc6 independently passes primary scoring
+  but exposes the same finite-difference line-search failure in required
+  joint profiles; Linux3.11 CI also exposes it in M2 nuisance profiling.
+  Adopt one evaluation-only nuisance method by dimension: bounded scalar
+  with both endpoints for1D, L-BFGS-B with three-point gradients for2+D.
+  Success, bounds, recomputed objective, nesting and material-improvement
+  checks remain strict. No status-based retry or primary-estimator change.
+  Verify analytic fixtures, the platform-exposed fixture and both preserved
+  histories before the final new source/seed freeze. This amends only S1
+  numerical profiling, before any later archive request.
+
 ## New decision template
 
 ### D0xx — Short concrete title

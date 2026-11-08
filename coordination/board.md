@@ -659,3 +659,20 @@ preserved synthetic stream: all required M2/M3/P3 profiles and the369-row,
 rank2 joint fit complete. The added regression forbids unused R0/M0 profiling.
 No optimizer, original A10d source, or forecast parameter changed. The repaired
 freeze will run a fresh commit-derived rehearsal before access is considered.
+
+The second freeze bfb2bc6 also passes the independent primary audit, but a
+new seed exposes the same line-search status failure in a required joint
+profile. Linux3.11 CI independently exposes it in the M2 nuisance profile.
+Both attempts are preserved. Before the final freeze, replace the fragile
+finite-difference nuisance search with a declared evaluation-only numerical
+method, verify both saved synthetic histories and numerical fixtures, and
+rerun under a new source-derived namespace. The primary forecasts and all26
+qualified source identities remain fixed; no real evaluation access occurred.
+
+The fixed dimension-based evaluation profiler passes seven focused tests,
+including the platform-exposed fixture, analytic interior/boundary optima and
+forced failure checks. Both preserved synthetic histories now complete every
+required S1 profile and the rank-two joint fit; previously successful support
+endpoints reproduce. Full-suite verification and a fresh immutable-source
+rehearsal remain before the access decision. No forecasting source or parameter
+has changed.

@@ -100,8 +100,27 @@ transforms for the joint fit, bounds [−5,5], deterministic starts [0,0],
 [.1,.1], [−.1,−.1], and the existing lognormal landmark likelihood. Report
 convergence, row populations, transforms and design rank. Constant terms are
 fixed; rank-deficient joint designs do not get coefficient-specific intervals.
-The generic diagnostic profiles reoptimize the other mark coefficient while
-holding M2 fixed. All support intervals use LR cutoff 3.841 and are explicitly
+Evaluation-only diagnostic profiles reoptimize the other mark coefficient
+while holding M2 fixed. The numerical policy is chosen by free-nuisance
+dimension before access: one dimension uses bounded scalar minimization on
+the full declared interval, explicitly checking both closed endpoints; two
+or more dimensions use box-constrained L-BFGS-B with three-point numerical
+gradients. Zero dimensions evaluate directly. The frozen implementation
+records scalar xatol=1e-10, maxiter=1000; multidimensional relative step
+cuberoot(machine epsilon), ftol=1e-12, gtol=1e-8, maxiter=1000 and maxls=50.
+Recomputed objectives must agree within 1e-10×(1+absolute objective).
+The solver interfaces follow the official SciPy
+[`minimize_scalar`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize_scalar.html)
+and [`minimize`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html) documentation. Every optimizer must report success with a finite,
+in-bounds solution and a recomputed finite objective matching its reported
+value; multidimensional gradients must be finite. Existing profile nesting,
+likelihood-ratio and material-improvement checks remain mandatory. This is a
+fixed numerical method, not a retry after failed optimizer status. It repairs
+the secondary-only finite-difference failures retained from rehearsals `79b5eae`
+and `bfb2bc6`; the original A10d sources, estimator and forecasts stay unchanged.
+Conditional survival normalization does not justify a universal convexity
+claim; any remaining fit/profile failure is reported without retuning.
+All support intervals use LR cutoff 3.841 and are explicitly
 conditional working-model support, not calibrated confidence or mechanism
 identification. This is distinct from the old `joint_marks=True` pair of
 separate one-offset fits. None of these fitted forecasts enters the primary.

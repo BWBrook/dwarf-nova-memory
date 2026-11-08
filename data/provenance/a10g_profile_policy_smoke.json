@@ -1,0 +1,62 @@
+{
+  "algorithm": {
+    "multidimensional": "L-BFGS-B with jac=3-point",
+    "multidimensional_finite_diff_rel_step": 6.0554544523933395e-06,
+    "multidimensional_ftol": 1e-12,
+    "multidimensional_gtol": 1e-08,
+    "multidimensional_maxiter": 1000,
+    "multidimensional_maxls": 50,
+    "objective_recomputation_rtol": 1e-10,
+    "one_dimensional": "bounded scalar with explicit closed-endpoint comparison",
+    "one_dimensional_maxiter": 1000,
+    "one_dimensional_xatol": 1e-10
+  },
+  "scope": "Read-only reanalysis of preserved synthetic ledgers and evidence; no archive data",
+  "streams": {
+    "a10g_rehearsal_79b5eae": {
+      "finite_json": true,
+      "joint": {
+        "failed_starts": 0,
+        "full_rank": true,
+        "rank": 2,
+        "rows": 369,
+        "status": "fitted",
+        "successful_starts": 3
+      },
+      "max_abs_joint_endpoint_difference_vs_prior_success": {
+        "current_duration": 0.0,
+        "previous_duration": 0.0
+      },
+      "max_abs_m2_endpoint_difference_vs_prior_success": 0.0,
+      "prior_joint_failures": {},
+      "profile_rows": {
+        "M2": 369,
+        "M3": 369,
+        "P3": 369
+      }
+    },
+    "a10g_rehearsal_bfb2bc6": {
+      "finite_json": true,
+      "joint": {
+        "failed_starts": 0,
+        "full_rank": true,
+        "rank": 2,
+        "rows": 347,
+        "status": "fitted",
+        "successful_starts": 3
+      },
+      "max_abs_joint_endpoint_difference_vs_prior_success": {
+        "previous_duration": 0.0
+      },
+      "max_abs_m2_endpoint_difference_vs_prior_success": 0.0,
+      "prior_joint_failures": {
+        "current_duration": "ValueError: current_duration constrained optimization failed: ABNORMAL: "
+      },
+      "profile_rows": {
+        "M2": 347,
+        "M3": 347,
+        "P3": 347
+      }
+    }
+  }
+}

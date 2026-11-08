@@ -1,0 +1,745 @@
+{
+  "acquisition_count": 59,
+  "calibration": {
+    "M0": {
+      "central_intervals": {
+        "0.5": {
+          "coverage_lower_bound": 0.3671875,
+          "coverage_upper_bound": 0.5260416666666666,
+          "covered": 141,
+          "n": 384,
+          "not_covered": 182,
+          "undetermined": 61
+        },
+        "0.9": {
+          "coverage_lower_bound": 0.7890625,
+          "coverage_upper_bound": 0.9401041666666666,
+          "covered": 303,
+          "n": 384,
+          "not_covered": 23,
+          "undetermined": 58
+        }
+      },
+      "resolved_onset_mid_cdf_deciles": [
+        46,
+        28,
+        30,
+        36,
+        26,
+        26,
+        33,
+        37,
+        48,
+        35
+      ],
+      "resolved_onsets": 345,
+      "right_censored": 39,
+      "scored": 384
+    },
+    "M2": {
+      "central_intervals": {
+        "0.5": {
+          "coverage_lower_bound": 0.3489583333333333,
+          "coverage_upper_bound": 0.5260416666666666,
+          "covered": 134,
+          "n": 384,
+          "not_covered": 182,
+          "undetermined": 68
+        },
+        "0.9": {
+          "coverage_lower_bound": 0.7864583333333334,
+          "coverage_upper_bound": 0.9192708333333334,
+          "covered": 302,
+          "n": 384,
+          "not_covered": 31,
+          "undetermined": 51
+        }
+      },
+      "resolved_onset_mid_cdf_deciles": [
+        40,
+        30,
+        31,
+        30,
+        26,
+        40,
+        24,
+        33,
+        48,
+        43
+      ],
+      "resolved_onsets": 345,
+      "right_censored": 39,
+      "scored": 384
+    },
+    "M3": {
+      "central_intervals": {
+        "0.5": {
+          "coverage_lower_bound": 0.3541666666666667,
+          "coverage_upper_bound": 0.5208333333333334,
+          "covered": 136,
+          "n": 384,
+          "not_covered": 184,
+          "undetermined": 64
+        },
+        "0.9": {
+          "coverage_lower_bound": 0.78125,
+          "coverage_upper_bound": 0.921875,
+          "covered": 300,
+          "n": 384,
+          "not_covered": 30,
+          "undetermined": 54
+        }
+      },
+      "resolved_onset_mid_cdf_deciles": [
+        39,
+        27,
+        34,
+        35,
+        30,
+        30,
+        29,
+        31,
+        52,
+        38
+      ],
+      "resolved_onsets": 345,
+      "right_censored": 39,
+      "scored": 384
+    }
+  },
+  "freeze_commit": "bfb2bc6675ce6dabf3b2282a53fc528a0b18d4df",
+  "primary": {
+    "blocks": 10,
+    "confirmed": false,
+    "df": 9,
+    "estimate": -0.016164219536492073,
+    "interval": "one-sided 95% lower bound / two-sided 90% interval",
+    "issued": 384,
+    "lower": -0.04804495854989048,
+    "n": 384,
+    "origin": 2436934.5,
+    "reference_gain": 0.004519560867443926,
+    "routes": {
+      "M0": {
+        "M0": 384
+      },
+      "M2": {
+        "M0": 37,
+        "M2": 347
+      },
+      "M3": {
+        "M0": 37,
+        "M3": 347
+      },
+      "P3": {
+        "M0": 37,
+        "M2": 347
+      }
+    },
+    "scope": "single confirmatory frozen-parameter comparison; observational-time retrospective",
+    "se": 0.01739158479843478,
+    "upper": 0.015716519476906332,
+    "upper_below_reference": false,
+    "years": 6
+  },
+  "rehearsal": {
+    "case": "alternative",
+    "scope": "synthetic fixture dates, not archived 1960+ observations",
+    "seed_base": "a10f-rehearsal|bfb2bc6675ce6dabf3b2282a53fc528a0b18d4df",
+    "translation_days": 2417582
+  },
+  "scope": "synthetic native-format 58-year rehearsal; no held-out archive result",
+  "secondary": {
+    "association": {
+      "error_type": "ValueError",
+      "reason": "current_duration constrained optimization failed: ABNORMAL: ",
+      "status": "failed"
+    },
+    "era_split": {
+      "1960_1992": {
+        "blocks": 6,
+        "confirmed": false,
+        "estimate": -0.025882583405939293,
+        "interval": "one-sided 95% lower bound / two-sided 90% interval",
+        "lower": -0.08657962345832787,
+        "n": 216,
+        "origin": 2436934.5,
+        "se": 0.030121877397906664,
+        "upper": 0.03481445664644928,
+        "years": 6
+      },
+      "1993_2017": {
+        "blocks": 5,
+        "confirmed": false,
+        "estimate": -0.003669180275774219,
+        "interval": "one-sided 95% lower bound / two-sided 90% interval",
+        "lower": -0.018034626762303392,
+        "n": 168,
+        "origin": 2448988.5,
+        "se": 0.006738498553773669,
+        "upper": 0.010696266210754953,
+        "years": 6
+      }
+    },
+    "failures": [
+      "association"
+    ],
+    "interpretation": "all association/robustness/era/calibration outputs are secondary; none replaces the single primary test",
+    "inventory": {
+      "0": {
+        "evidence": {
+          "interval:onset": 36,
+          "right_censored:coverage": 3
+        },
+        "issued": 39,
+        "routes": {
+          "M0": {
+            "M0": 39
+          },
+          "M2": {
+            "M0": 3,
+            "M2": 36
+          },
+          "M3": {
+            "M0": 3,
+            "M3": 36
+          },
+          "P3": {
+            "M0": 3,
+            "M2": 36
+          }
+        },
+        "scored": 39
+      },
+      "1": {
+        "evidence": {
+          "interval:onset": 43
+        },
+        "issued": 43,
+        "routes": {
+          "M0": {
+            "M0": 43
+          },
+          "M2": {
+            "M2": 43
+          },
+          "M3": {
+            "M3": 43
+          },
+          "P3": {
+            "M2": 43
+          }
+        },
+        "scored": 43
+      },
+      "2": {
+        "evidence": {
+          "interval:onset": 39
+        },
+        "issued": 39,
+        "routes": {
+          "M0": {
+            "M0": 39
+          },
+          "M2": {
+            "M2": 39
+          },
+          "M3": {
+            "M3": 39
+          },
+          "P3": {
+            "M2": 39
+          }
+        },
+        "scored": 39
+      },
+      "3": {
+        "evidence": {
+          "interval:onset": 35,
+          "right_censored:coverage": 1
+        },
+        "issued": 36,
+        "routes": {
+          "M0": {
+            "M0": 36
+          },
+          "M2": {
+            "M0": 2,
+            "M2": 34
+          },
+          "M3": {
+            "M0": 2,
+            "M3": 34
+          },
+          "P3": {
+            "M0": 2,
+            "M2": 34
+          }
+        },
+        "scored": 36
+      },
+      "4": {
+        "evidence": {
+          "interval:onset": 35,
+          "right_censored:coverage": 6
+        },
+        "issued": 41,
+        "routes": {
+          "M0": {
+            "M0": 41
+          },
+          "M2": {
+            "M0": 5,
+            "M2": 36
+          },
+          "M3": {
+            "M0": 5,
+            "M3": 36
+          },
+          "P3": {
+            "M0": 5,
+            "M2": 36
+          }
+        },
+        "scored": 41
+      },
+      "5": {
+        "evidence": {
+          "interval:onset": 22,
+          "right_censored:coverage": 12
+        },
+        "issued": 34,
+        "routes": {
+          "M0": {
+            "M0": 34
+          },
+          "M2": {
+            "M0": 11,
+            "M2": 23
+          },
+          "M3": {
+            "M0": 11,
+            "M3": 23
+          },
+          "P3": {
+            "M0": 11,
+            "M2": 23
+          }
+        },
+        "scored": 34
+      },
+      "6": {
+        "evidence": {
+          "interval:onset": 31,
+          "right_censored:coverage": 6,
+          "right_censored:superseded": 1
+        },
+        "issued": 38,
+        "routes": {
+          "M0": {
+            "M0": 38
+          },
+          "M2": {
+            "M0": 5,
+            "M2": 33
+          },
+          "M3": {
+            "M0": 5,
+            "M3": 33
+          },
+          "P3": {
+            "M0": 5,
+            "M2": 33
+          }
+        },
+        "scored": 38
+      },
+      "7": {
+        "evidence": {
+          "interval:onset": 37,
+          "right_censored:coverage": 5
+        },
+        "issued": 42,
+        "routes": {
+          "M0": {
+            "M0": 42
+          },
+          "M2": {
+            "M0": 6,
+            "M2": 36
+          },
+          "M3": {
+            "M0": 6,
+            "M3": 36
+          },
+          "P3": {
+            "M0": 6,
+            "M2": 36
+          }
+        },
+        "scored": 42
+      },
+      "8": {
+        "evidence": {
+          "interval:onset": 39,
+          "right_censored:coverage": 4
+        },
+        "issued": 43,
+        "routes": {
+          "M0": {
+            "M0": 43
+          },
+          "M2": {
+            "M0": 5,
+            "M2": 38
+          },
+          "M3": {
+            "M0": 5,
+            "M3": 38
+          },
+          "P3": {
+            "M0": 5,
+            "M2": 38
+          }
+        },
+        "scored": 43
+      },
+      "9": {
+        "evidence": {
+          "interval:onset": 28,
+          "right_censored:record_end": 1
+        },
+        "issued": 29,
+        "routes": {
+          "M0": {
+            "M0": 29
+          },
+          "M2": {
+            "M2": 29
+          },
+          "M3": {
+            "M3": 29
+          },
+          "P3": {
+            "M2": 29
+          }
+        },
+        "scored": 29
+      }
+    },
+    "robustness": {
+      "delay_2": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.010810810043903546,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.040747724122388605,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.02812621811116801,
+          "upper": 0.062369344210195694,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.01603348745858835,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.04771378298187254,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.017282238840232535,
+          "upper": 0.015646808064695834,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.01603348745858835,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.04771378298187254,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.017282238840232535,
+          "upper": 0.015646808064695834,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "joint_placebo": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.01202521328329477,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.04543067109989815,
+          "n": 347,
+          "origin": 2436934.5,
+          "se": 0.03134334135100863,
+          "upper": 0.06948109766648769,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.01788778185018143,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.05300694919204651,
+          "n": 347,
+          "origin": 2436934.5,
+          "se": 0.019158212631764225,
+          "upper": 0.017231385491683647,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.01788778185018143,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.05300694919204651,
+          "n": 347,
+          "origin": 2436934.5,
+          "se": 0.019158212631764225,
+          "upper": 0.017231385491683647,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 347,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "primary": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.010866533878393972,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.04070595023619713,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.028133828088737007,
+          "upper": 0.062439017992985076,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.016164219536492073,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.04804495854989048,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.01739158479843478,
+          "upper": 0.015716519476906332,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.016164219536492073,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.04804495854989048,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.01739158479843478,
+          "upper": 0.015716519476906332,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "primary_three_year": {
+        "blocks": 20,
+        "confirmed": false,
+        "estimate": -0.016164219536492073,
+        "interval": "one-sided 95% lower bound / two-sided 90% interval",
+        "lower": -0.045967163608639616,
+        "n": 384,
+        "origin": 2436934.5,
+        "se": 0.01723577499285643,
+        "upper": 0.013638724535655466,
+        "years": 3
+      },
+      "q_only": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.007002368590305637,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.0570718680971422,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.034953785741177607,
+          "upper": 0.07107660527775347,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.019090378384612045,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.05306086477050298,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.018531584050670933,
+          "upper": 0.014880108001278893,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.019090378384612045,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.05306086477050298,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.018531584050670933,
+          "upper": 0.014880108001278893,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "type_within": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.010866533878393972,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.04070595023619713,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.028133828088737007,
+          "upper": 0.062439017992985076,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.0021458702606383818,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.01430110768120492,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.00663092666252331,
+          "upper": 0.010009367159928156,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": -0.0021458702606383818,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.01430110768120492,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.00663092666252331,
+          "upper": 0.010009367159928156,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      },
+      "uniform_end": {
+        "gain_M2_M0": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.010489560322245225,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.04160359211347993,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.028417863137455795,
+          "upper": 0.06258271275797038,
+          "years": 6
+        },
+        "gain_M3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0037028833032626504,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.009234773032811457,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.007057751928751627,
+          "upper": 0.016640539639336756,
+          "years": 6
+        },
+        "gain_M3_P3": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0037028833032626504,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": -0.009234773032811457,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.007057751928751627,
+          "upper": 0.016640539639336756,
+          "years": 6
+        },
+        "gain_P3_M2": {
+          "blocks": 10,
+          "confirmed": false,
+          "estimate": 0.0,
+          "interval": "one-sided 95% lower bound / two-sided 90% interval",
+          "lower": 0.0,
+          "n": 384,
+          "origin": 2436934.5,
+          "se": 0.0,
+          "upper": 0.0,
+          "years": 6
+        }
+      }
+    }
+  }
+}

@@ -92,19 +92,17 @@ untested and 1960+ access remains closed. The positive coefficient and
 lagged-duration comparisons do not identify physical memory or universally
 exclude endpoint artefacts.
 
-[A10f](docs/audits/2026-11-08-a10f-development-review.md) reviews both. Among
-the synthetic development fits, the real fit's likelihood ratio is reached by
-5 of 220 gated null histories and by 12 of 40 injected-effect histories. With
-the lagged mark at zero, the simulator disfavours a slow shared state but does
-not identify memory. The [proposed evaluation protocol](docs/protocols/a10f-evaluation-v1.md)
-covers sealed access to 1960–2017, a single six-year-cluster test and a fixed
-interpretation table. It awaits Codex's review and Barry's go-ahead.
-
-[A10g](docs/protocols/a10g-sealed-evaluation-v1.md) implements the sealed
-evaluation path, independent score checker and native-format synthetic
-rehearsal. It clarifies genuine joint association, censoring-aware diagnostic
-bounds and the single primary test. The forecasts and parameters are
-unchanged; no later-data access or external protocol deposit is approved.
+[A10f](docs/audits/2026-11-08-a10f-development-review.md) supplies an
+exploratory simulator comparison of the development fit and proposes the
+later evaluation. [A10g](docs/protocols/a10g-sealed-evaluation-v1.md) retains
+its reproduced counts while correcting the pooled probability interpretation,
+median-age sign argument and model-odds wording. Its sealed runner requires
+exact independent ledger/evidence concordance before scoring, and implements
+joint association and censoring-aware diagnostic coverage bounds. Native-format
+synthetic rehearsals and independent numerical checks precede the final freeze.
+The forecasts, parameters and confirmatory test remain unchanged. Real
+1960–2017 access and external protocol deposition await Barry's explicit choice;
+2018 onward remains reserved.
 
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
 uses *true complete simulated event histories*. The observation schedule is a

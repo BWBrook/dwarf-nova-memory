@@ -1,0 +1,11 @@
+{
+  "archive_id": "a10g-20261108-bfb2bc6",
+  "archive_sha256": "5ad3a2cda77d4a7baec40a222c6eb599e58aea3a45148677f78162f5f41d777c",
+  "archive_bytes": 1275496,
+  "inventory_sha256": "764f5c9fe81cb11680ad57744e2fbeda4bf082b743232dac422064ed00f03bf5",
+  "verified_member_files": 137,
+  "uncompressed_member_bytes": 12072135,
+  "storage": "project shared archive, outside Git",
+  "status": "preserved second synthetic rehearsal; required joint-profile failure; superseded pending numerical repair",
+  "verification": "local and remote whole-file SHA256 and every tar member verified"
+}

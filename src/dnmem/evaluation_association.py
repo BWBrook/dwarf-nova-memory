@@ -12,7 +12,7 @@ import math
 from typing import Any, Mapping, Sequence
 
 import numpy as np
-from scipy.optimize import minimize
+from scipy.optimize import minimize, minimize_scalar
 
 from .directional_forecast import (
     DirectionalBundle,
@@ -21,6 +21,8 @@ from .directional_forecast import (
     _mark_duration,
     _mark_transform,
     _m2_covariates,
+    _offset_objective,
+    _prepare_directional,
     _prepare_offset,
     fit_directional,
 )
@@ -28,16 +30,190 @@ from .fit_profiles import (
     _DELTA_NLL,
     _LR_CUTOFF,
     _Profiler,
-    _base_model_profile,
-    _mark_profile,
+    _conditional_scalar,
+    _mark_rows,
     _rows,
 )
-from .ledger_forecast import ForecastModel, _conditional_node_loglik
+from .ledger_forecast import _BOUNDS, ForecastModel, _conditional_node_loglik
 
 
 _JOINT_NAMES = ("current_duration", "previous_duration")
 _JOINT_STARTS = ((0.0, 0.0), (0.1, 0.1), (-0.1, -0.1))
 _JOINT_BOUNDS = (-5.0, 5.0)
+_PROFILE_SCALAR_XATOL = 1e-10
+_PROFILE_MAXITER = 1000
+_PROFILE_MAXLS = 50
+_PROFILE_FTOL = 1e-12
+_PROFILE_GTOL = 1e-8
+_PROFILE_REL_STEP = float(np.cbrt(np.finfo(float).eps))
+_PROFILE_OBJECTIVE_RTOL = 1e-10
+
+
+class _EvaluationProfiler(_Profiler):
+    def _validate_objective(
+        self,
+        objective: Any,
+        solution: np.ndarray,
+        reported: float,
+        bounds: Sequence[tuple[float, float]],
+        label: str,
+    ) -> float:
+        if (
+            solution.shape != (len(bounds),)
+            or not np.all(np.isfinite(solution))
+            or any(not lo <= value <= hi for value, (lo, hi) in zip(solution, bounds))
+            or not math.isfinite(reported)
+            or reported >= 1e99
+        ):
+            raise ValueError(f"{label} constrained optimization returned an invalid solution")
+        recomputed = float(objective(solution))
+        tolerance = _PROFILE_OBJECTIVE_RTOL * (1.0 + abs(recomputed))
+        if (
+            not math.isfinite(recomputed)
+            or recomputed >= 1e99
+            or abs(recomputed - reported) > tolerance
+        ):
+            raise ValueError(f"{label} constrained optimization objective did not verify")
+        return recomputed
+
+    def _solve_free(
+        self,
+        objective: Any,
+        start: np.ndarray,
+        bounds: Sequence[tuple[float, float]],
+        label: str,
+    ) -> tuple[np.ndarray, float, str]:
+        if len(start) == 1:
+            lo, hi = bounds[0]
+
+            def scalar(value: float) -> float:
+                return float(objective(np.array([float(value)], dtype=float)))
+
+            result = minimize_scalar(
+                scalar,
+                bounds=(lo, hi),
+                method="bounded",
+                options={"xatol": _PROFILE_SCALAR_XATOL, "maxiter": _PROFILE_MAXITER},
+            )
+            if not bool(result.success):
+                raise ValueError(
+                    f"{label} bounded-scalar optimization failed: {result.message}"
+                )
+            interior = np.array([float(result.x)], dtype=float)
+            interior_objective = self._validate_objective(
+                objective, interior, float(result.fun), bounds, label
+            )
+            candidates = [(interior_objective, interior, "interior")]
+            for endpoint, endpoint_label in ((lo, "lower_endpoint"), (hi, "upper_endpoint")):
+                endpoint_solution = np.array([endpoint], dtype=float)
+                endpoint_objective = float(objective(endpoint_solution))
+                endpoint_objective = self._validate_objective(
+                    objective,
+                    endpoint_solution,
+                    endpoint_objective,
+                    bounds,
+                    label,
+                )
+                candidates.append((endpoint_objective, endpoint_solution, endpoint_label))
+            value, solution, selected = min(
+                candidates, key=lambda candidate: (candidate[0], candidate[1][0])
+            )
+            return (
+                solution,
+                value,
+                f"bounded_scalar xatol={_PROFILE_SCALAR_XATOL:g}; selected={selected}",
+            )
+
+        result = minimize(
+            objective,
+            start,
+            method="L-BFGS-B",
+            jac="3-point",
+            bounds=bounds,
+            options={
+                "finite_diff_rel_step": _PROFILE_REL_STEP,
+                "maxiter": _PROFILE_MAXITER,
+                "maxls": _PROFILE_MAXLS,
+                "ftol": _PROFILE_FTOL,
+                "gtol": _PROFILE_GTOL,
+            },
+        )
+        if not bool(result.success):
+            raise ValueError(f"{label} central-gradient optimization failed: {result.message}")
+        solution = np.asarray(result.x, dtype=float)
+        value = self._validate_objective(
+            objective, solution, float(result.fun), bounds, label
+        )
+        gradient = np.asarray(result.jac, dtype=float) if result.jac is not None else np.array([])
+        if gradient.shape != solution.shape or not np.all(np.isfinite(gradient)):
+            raise ValueError(
+                f"{label} central-gradient optimization returned a nonfinite gradient"
+            )
+        return (
+            solution,
+            value,
+            f"L-BFGS-B jac=3-point rel_step={_PROFILE_REL_STEP:.17g}",
+        )
+
+    def _check_full_optimum(self) -> None:
+        free = [index for index, (lo, hi) in enumerate(self.bounds) if hi > lo]
+        if not free:
+            return
+
+        def reduced(values: np.ndarray) -> float:
+            theta = self.fitted.copy()
+            theta[free] = values
+            return self.objective(theta)
+
+        _, objective, message = self._solve_free(
+            reduced,
+            self.fitted[free],
+            [self.bounds[index] for index in free],
+            "full",
+        )
+        self.full_optimum_objective = objective
+        self.full_optimizer_message = message
+        self._check_better(objective, "full")
+
+    def _evaluate(self, index: int, value: float) -> dict[str, Any]:
+        lo, hi = self.bounds[index]
+        value = min(hi, max(lo, float(value)))
+        free = [
+            position
+            for position, (lower, upper) in enumerate(self.bounds)
+            if position != index and upper > lower
+        ]
+        theta = self.fitted.copy()
+        theta[index] = value
+        if free:
+
+            def reduced(values: np.ndarray) -> float:
+                candidate = theta.copy()
+                candidate[free] = values
+                return self.objective(candidate)
+
+            solution, objective, message = self._solve_free(
+                reduced,
+                theta[free],
+                [self.bounds[position] for position in free],
+                self.names[index],
+            )
+            theta[free] = solution
+        else:
+            objective = float(self.objective(theta))
+            if not math.isfinite(objective) or objective >= 1e99:
+                raise ValueError(f"{self.names[index]} constrained likelihood is invalid")
+            message = "no free nuisance parameters"
+        self._check_better(objective, self.names[index])
+        raw_likelihood_ratio = 2.0 * (objective - self.frozen_objective)
+        return {
+            "value": value,
+            "objective": objective,
+            "likelihood_ratio": max(0.0, raw_likelihood_ratio),
+            "raw_likelihood_ratio": raw_likelihood_ratio,
+            "nuisance_optimum": [float(component) for component in theta],
+            "optimizer_message": message,
+        }
 
 
 def _joint_rows(
@@ -286,7 +462,9 @@ def _joint_association(
     bounds = [(0.0, 0.0) if index in fixed else _JOINT_BOUNDS for index in range(2)]
     fixed_reasons = {index: "constant standardized mark on joint-valid rows" for index in fixed}
     identifiability = _identifiability(prepared, fixed)
-    profiler = _Profiler(prepared.objective, beta, bounds, _JOINT_NAMES, fixed_reasons)
+    profiler = _EvaluationProfiler(
+        prepared.objective, beta, bounds, _JOINT_NAMES, fixed_reasons
+    )
     if identifiability["full_column_rank"]:
         profiles = profiler.profiles()
         for index, name in enumerate(_JOINT_NAMES):
@@ -347,6 +525,135 @@ def _joint_association(
     }
 
 
+def _evaluation_base_profile(
+    name: str,
+    model: Any,
+    rows: Sequence[Mapping[str, Any]],
+    bundle: DirectionalBundle,
+) -> dict[str, Any]:
+    terms = tuple(model.terms)
+    prepared = _prepare_directional(
+        rows, terms, bundle._base_transform(), bundle.local_level
+    )
+    fitted = [
+        model.intercept,
+        *(model.coefficients[term] for term in terms),
+        math.log(model.sigma),
+    ]
+    names = ["intercept", *terms, "log_sigma"]
+    fixed_terms = set(model.metadata.get("fixed_terms", []))
+    fixed = {
+        index + 1: "constant or unidentifiable standardized predictor"
+        for index, term in enumerate(terms)
+        if term in fixed_terms
+    }
+    bounds = [
+        _BOUNDS[0],
+        *((0.0, 0.0) if term in fixed_terms else _BOUNDS[1] for term in terms),
+        _BOUNDS[3],
+    ]
+    vectorized = float(prepared.objective(np.asarray(fitted, dtype=float)))
+    scalar = _conditional_scalar(
+        rows, np.asarray(fitted, dtype=float), terms, bundle
+    )
+    if abs(vectorized - scalar) > 1e-8 * (1.0 + abs(vectorized)):
+        raise ValueError(f"{name} vectorized and scalar objectives disagree")
+    profiler = _EvaluationProfiler(
+        prepared.objective, fitted, bounds, names, fixed
+    )
+    return {
+        "fit_kind": model.metadata.get("fit_kind"),
+        "row_count": len(rows),
+        "frozen_objective": profiler.frozen_objective,
+        "objective_scalar_difference": vectorized - scalar,
+        "diagnostics": profiler.diagnostics(),
+        "interval_scope": (
+            "working-model likelihood support; serial and measurement uncertainty "
+            "are not calibrated"
+        ),
+        "profiles": profiler.profiles(),
+    }
+
+
+def _evaluation_mark_profile(
+    name: str,
+    bundle: DirectionalBundle,
+    q_rows: Sequence[Mapping[str, Any]],
+) -> dict[str, Any]:
+    model = bundle.models[name]
+    kind = "current" if name == "M3" else "previous"
+    rows = _mark_rows(q_rows, kind, bundle.joint_marks)
+    expected = int(model.metadata.get("n_fit", -1))
+    if len(rows) != expected:
+        raise ValueError(f"{name} profile mark population does not match frozen fit")
+    beta_names = (
+        ("beta",)
+        if bundle.mark_mode == "log_duration"
+        else ("beta_type", "beta_within")
+    )
+    fitted = [model.coefficients[term] for term in beta_names]
+    fixed_indices = set(
+        int(value) for value in model.metadata.get("fixed_beta_indices", [])
+    )
+    fixed = {
+        index: "constant or absent mark component" for index in fixed_indices
+    }
+    bounds = [
+        (0.0, 0.0)
+        if index in fixed_indices
+        else ((0.0, 5.0) if bundle.directional else (-5.0, 5.0))
+        for index in range(len(beta_names))
+    ]
+    base = bundle.models["M2"]
+    base_transform = bundle._base_transform()
+    mark_transform = bundle._mark_transform(model)
+    if not rows:
+        if len(fixed_indices) != len(beta_names):
+            raise ValueError(f"{name} has no profile rows but a free mark coefficient")
+        objective = lambda beta: 0.0
+        scalar = vectorized = 0.0
+    else:
+        prepared = _prepare_offset(
+            rows,
+            base,
+            base_transform,
+            mark_transform,
+            kind,
+            bundle.mark_mode,
+            bundle.local_level,
+        )
+        objective = prepared.objective
+        vectorized = float(objective(np.asarray(fitted, dtype=float)))
+        scalar = _offset_objective(
+            np.asarray(fitted, dtype=float),
+            rows,
+            base,
+            base_transform,
+            mark_transform,
+            kind,
+            bundle.mark_mode,
+            bundle.local_level,
+        )
+        if abs(vectorized - scalar) > 1e-8 * (1.0 + abs(vectorized)):
+            raise ValueError(f"{name} vectorized and scalar objectives disagree")
+    profiler = _EvaluationProfiler(objective, fitted, bounds, beta_names, fixed)
+    return {
+        "fit_kind": model.metadata.get("fit_kind"),
+        "row_count": len(rows),
+        "baseline_model": "M2",
+        "frozen_m2_nuisance": True,
+        "frozen_objective": profiler.frozen_objective,
+        "objective_scalar_difference": float(vectorized - scalar),
+        "diagnostics": profiler.diagnostics(),
+        "interval_scope": (
+            "CONDITIONAL fixed-M2 likelihood-support interval; not a full "
+            "nuisance-adjusted confidence interval; serial and measurement "
+            "uncertainty are not calibrated"
+        ),
+        "profiles": profiler.profiles(),
+    }
+
+
 def _required_profiles(
     bundle: DirectionalBundle,
     ledger: Sequence[Mapping[str, Any]],
@@ -359,9 +666,11 @@ def _required_profiles(
         "likelihood_ratio_cutoff": _LR_CUTOFF,
         "support_delta_negative_log_likelihood": _DELTA_NLL,
         "models": {
-            "M2": _base_model_profile("M2", bundle.models["M2"], q_rows, bundle),
-            "M3": _mark_profile("M3", bundle, q_rows),
-            "P3": _mark_profile("P3", bundle, q_rows),
+            "M2": _evaluation_base_profile(
+                "M2", bundle.models["M2"], q_rows, bundle
+            ),
+            "M3": _evaluation_mark_profile("M3", bundle, q_rows),
+            "P3": _evaluation_mark_profile("P3", bundle, q_rows),
         },
         "interpretation": {
             "support": "chi-square(1) 95% likelihood-ratio support using cutoff 3.841",

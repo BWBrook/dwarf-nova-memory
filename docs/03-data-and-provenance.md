@@ -105,3 +105,15 @@ Only then choose the first implementable adapter and extend to the pilot set und
 ## Source record
 
 URLs above were reviewed for this seed on 5 November 2026. No target photometry was retrieved. Current AAVSO migration and July 2026 guidelines supersede older access notes. The AAVSO API forbidden response and CRTS timeout are audit limitations, not assertions about general service availability. Provider documentation and live schemas should be revisited at the first acquisition and their versions recorded.
+
+
+### A10g terms check, 8 November 2026
+
+Read the full three-page [16 July 2026 AAVSO guidelines](https://aavso.org/wp-content/uploads/2026/07/Data-Usage-Guidelines-2026-07.pdf)
+during evaluation preparation. They describe free scientific access and
+request observer recognition, coauthorship where contributions are critical,
+archive acknowledgement, facility keywords and publication notification.
+Record these for the eventual paper's authorship/acknowledgement review.
+This document supplies no explicit raw-export redistribution licence; raw
+observations remain outside Git and the protocol-only deposit package.
+No observer or archive representative was contacted.
