@@ -14,3 +14,16 @@ keywords:
   - outburst recurrence
   - forecast evaluation
   - censoring
+
+version: "a10g-v1-fc40973"
+date-released: 2026-11-08
+preferred-citation:
+  type: report
+  title: "Dwarf-Nova Memory: frozen protocol for a single SS Cyg forecast evaluation, 1960–2017"
+  authors:
+    - family-names: Brook
+      given-names: Barry W.
+      orcid: "https://orcid.org/0000-0002-2491-1517"
+  year: 2026
+  doi: "10.5281/zenodo.24053338"
+  url: "https://zenodo.org/records/24053338"

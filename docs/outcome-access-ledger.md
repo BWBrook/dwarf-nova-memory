@@ -372,3 +372,13 @@ question. The reviewed scope is protocol publication followed by the single
 sealed 1960–2017 evaluation, with 2018 onward closed. At this checkpoint
 no later native response, count or coverage summary has been accessed.
 The DOI-bound authority will be committed/pushed before transport.
+
+
+### D025 deposited protocol and pre-transport authority
+
+Zenodo protocol DOI10.5281/zenodo.24053338 was published at
+2026-11-08 12:34:47 UTC; its public download matches the approved package
+SHA-256. The tracked DOI-bound access file is now recorded for commit/push
+before any live transport. At this checkpoint no real evaluation row,
+coverage count, score or event count has been opened. The next command will
+run sealed from acquisition through the primary result under source fc40973.

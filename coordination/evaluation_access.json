@@ -1,0 +1,18 @@
+{
+  "status": "authorized",
+  "approved_by": "Barry W. Brook",
+  "approval_verbatim": "Zenodo first, then open (recommended)",
+  "question_verbatim": "All pre-access work is pushed: freeze fc40973, 342 tests, independent rehearsal and CI passed. The A10g protocol explicitly requires your go-ahead before opening 1960\u20132017. Which route do you authorize? I recommend publishing the prepared 0.7 MB protocol-only Zenodo package first, then running the single sealed evaluation. Data from 2018 onward stays closed.",
+  "recorded_at_utc": "2026-11-08T12:37:07.710761+00:00",
+  "decision": "D025",
+  "freeze_commit": "fc409738222ded5a9bf78288c969e956b59d23f4",
+  "protocol_sha256": "ddfa46d14f35e213690e0d5e7d03a7a635a71b637d024a810d2f192929789232",
+  "parameters_sha256": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "start_jd": 2436934.5,
+  "stop_jd": 2458119.5,
+  "timestamp_mode": "zenodo",
+  "zenodo_doi": "10.5281/zenodo.24053338",
+  "publication_record": "https://zenodo.org/records/24053338",
+  "package_sha256": "9cc7c7e7203619fbb4322f43b9af6e7207b59644367b06434673be555b9cd357",
+  "access_rule": "one sealed observational-time retrospective evaluation; no inspection before primary written; no 2018+ request; preserve every failure"
+}

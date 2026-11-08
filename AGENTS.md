@@ -114,9 +114,13 @@ passes. All 342 tests and CI on Python 3.11–3.13 pass. Two earlier numerical
 S1 failures are preserved; the final evaluation-only profiler uses bounded
 scalar search for one nuisance dimension and three-point gradients for larger
 searches, with strict optimizer checks. The original 26 sources and parameters
-are unchanged. See `docs/audits/2026-11-08-a10g-evaluation-freeze.md`. A committed verbatim Barry authorization and timestamp
-choice are required before live transport. No1960+ archive data or Zenodo
-publication is authorized by the current preparation task.
+are unchanged. See `docs/audits/2026-11-08-a10g-evaluation-freeze.md`. D025 records Barry's explicit “Zenodo first, then open” choice. Protocol
+DOI10.5281/zenodo.24053338 is published and its public bytes verified.
+The committed/pushed DOI-bound `coordination/evaluation_access.json` enables
+the single frozen 1960–2017 evaluation. No 2018+ request, source retuning,
+raw-data release or manuscript release is authorized. Until the primary file
+is written, inspect no observation, count, coverage summary or intermediate
+result. The run receipt is the authority for execution status.
 
 ## Scientific invariants
 

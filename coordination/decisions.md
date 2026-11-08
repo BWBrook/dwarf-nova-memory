@@ -550,6 +550,15 @@ proposals, not a record of approvals the user has not given.
 - No real evaluation archive has been opened at this decision checkpoint.
   This authorizes no 2018+ request, raw-data release or manuscript release.
 
+- Protocol published before evaluation access as
+  [10.5281/zenodo.24053338](https://doi.org/10.5281/zenodo.24053338), created
+  2026-11-08 12:34:47 UTC. API reports submitted/done; unauthenticated public
+  download SHA-256 matches the exact approved bundle. The public receipt is
+  `data/provenance/a10g_protocol_package/publication.json`. The DOI-bound
+  authorization is `coordination/evaluation_access.json`; this commit and
+  push precede live transport. No evaluation observation/count has yet been
+  accessed. The DOI identifies the frozen protocol, not an analysis result.
+
 ## New decision template
 
 ### D0xx — Short concrete title

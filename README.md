@@ -101,8 +101,9 @@ exact independent ledger/evidence concordance before scoring, and implements
 joint association and censoring-aware diagnostic coverage bounds. The [final A10g rehearsal](docs/audits/2026-11-08-a10g-evaluation-freeze.md)
 completes every diagnostic at source freeze `fc40973`; independent scores and
 intervals agree, all 342 tests pass, and CI is green on Python 3.11–3.13.
-The forecasts, parameters and confirmatory test remain unchanged. Real
-1960–2017 access and external protocol deposition await Barry's explicit choice;
+The forecasts, parameters and confirmatory test remain unchanged. The [frozen protocol](https://doi.org/10.5281/zenodo.24053338) is now
+published; Barry authorized the single sealed 1960–2017 evaluation after it.
+Execution status will be reported from the saved run receipt. Data from
 2018 onward remains reserved.
 
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
