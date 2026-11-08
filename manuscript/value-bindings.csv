@@ -6,3 +6,4 @@ V004,C01,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C
 V005,C21,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C21"", ""field"": ""evaluation_type_lr""}}",value,exploratory evaluation type-only LR versus level-only,[14.7]
 V006,C21,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C21"", ""field"": ""evaluation_continuous_lr""}}",value,exploratory evaluation continuous-duration LR versus level-only,[11.7]
 V007,C21,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C21"", ""field"": ""evaluation_within_given_type_lr""}}",value,exploratory evaluation extra within-type LR,[0.17]
+V008,C21,manuscript/figure-data/claim-values.csv,"{""where"": {""claim_id"": ""C21"", ""field"": ""evaluation_clock_scale_change_percent""}}",value,exploratory evaluation long/short untruncated clock-scale change in percent,[14]

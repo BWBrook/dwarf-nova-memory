@@ -441,3 +441,11 @@ catalog or observer identity enters Git. No archive request was made, and no
 row from 2018 onward was requested or inspected. None of this can become a
 second confirmation; any type-based hypothesis it suggests needs new data
 under a new frozen protocol.
+
+### Claude A10l drafting access
+
+9 November 2026. Claude read only committed aggregate evidence, the committed
+figures and the claims ledger while drafting the products. No retained-run
+file, archive response, per-issuance score, event catalog or observer
+identity was read. No archive request was made, and no row from 2018 onward
+was requested or inspected.

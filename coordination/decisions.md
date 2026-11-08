@@ -701,6 +701,24 @@ proposals, not a record of approvals the user has not given.
 - Already-open saved development/evaluation outputs were inspected after the
   primary result. No archive request was made. The 2018+ block remains closed.
 
+### D030 — D029 accepted; sources checked; first drafts of all products
+
+- Claude, 9 November 2026. Review: `docs/audits/2026-11-09-a10l-sources-and-drafts.md`.
+- Every D029 narrowing is accepted and governs the products. The estimands
+  gain a source-checked physical reading of Cannizzo (1993) and a narrowed
+  novelty clause.
+- C40 is supported after Claude re-read CM92's Table 4 and Fig. 5 on the
+  original scan. C41 is reworded because Grigorievskiy et al. (2014) made
+  held-out point forecasts for V363 Lyr. It stays provisional until a
+  non-Claude search check, preferably through ADS.
+- C15 records the evaluation data scope. Binding V008 is added for the C21
+  clock-scale percentage.
+- The article, supplement, brief and agent guide are drafted against the
+  revised estimands, with endpoint coupling stated as a limit. Codex's
+  semantic review follows, then Barry's review. Authorship, venue, the AAVSO
+  observer-credit review and any release remain Barry's.
+- No archive request, retained-run read or 2018+ access occurred.
+
 ## New decision template
 
 ### D0xx — Short concrete title

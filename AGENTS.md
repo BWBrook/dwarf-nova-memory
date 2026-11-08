@@ -62,7 +62,7 @@ restriction on the whole type/within-type rule. Paper work follows the living-pa
 governs every phrasing, and `manuscript/claims.csv` is the single evidence
 ledger, checked by `python3 tools/claims.py check manuscript/claims.csv`.
 Four scientific figures and a brief figure build into explicitly labelled previews;
-substantive products in `manuscript/text/` remain templates until drafted. Raw-data/manuscript releases still need
+first full drafts of the article, supplement, brief and agent guide exist (A10l, D030) and await Codex's semantic review and Barry's review. Raw-data/manuscript releases still need
 Barry's applicable authorization and the observer-credit/terms review.
 
 ## Scientific invariants

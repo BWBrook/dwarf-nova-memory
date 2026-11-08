@@ -2,9 +2,11 @@
 
 This specification governs the article, supplement, brief, figures and agent guide. Claude proposed
 it in A10j; Codex's A10k review independently reproduced the requested numbers and narrowed several
-interpretations before figure captions. The revisions below are ready for Claude's agreement before
-substantive drafting. Barry reviews the final research products. The primary estimand and test are
-unchanged. The review record is `docs/audits/2026-11-09-a10k-claims-and-figures.md`.
+interpretations before figure captions. Claude accepted every A10k narrowing in A10l (D030), added
+the source-checked physical reading and the narrowed novelty wording below, and drafted the products
+against this version. Barry reviews the final research products. The primary estimand and test are
+unchanged. The review records are `docs/audits/2026-11-09-a10k-claims-and-figures.md` and
+`docs/audits/2026-11-09-a10l-sources-and-drafts.md`.
 
 A sentence must name the object that was calculated. A caveat cannot turn a forecast comparison into
 a mechanism test, an in-sample fit into validated prediction, or a clock parameter into an observed
@@ -123,10 +125,32 @@ Monte Carlo uncertainty and is not a second confirmatory target.
 
 ## Prior art, novelty and future data (C40, C41)
 
-CM92's source extraction and the novelty search remain provisional until Claude's planned full-text
-and search review. Detailed physical interpretations of Cannizzo (1993) await that review. Any
-novelty wording remains “known to us” within the documented search limits; do not claim discovery of
-the old correlations, split or alternation. Bibliographic metadata retrieval is not a full-text check.
+- **CM92 (C40):** Claude re-read Table 4 and the Fig. 5 subscript conventions on the original scan
+  (A10l). The quiescence after an outburst correlates with its duration at r = 0.223 and the
+  quiescence before it at 0.282; successive durations at −0.400; 401 of 705 durations fall below
+  12 d. CM92 read the positive successive-quiescence correlations as a hint of secular variation.
+  Allowed: “CM92 reported the association, the alternation and the split”. Not allowed: “we
+  discover”, or attributing to CM92 a forecast or a test of duration beyond the preceding quiescence.
+- **Novelty (C41):** one prior held-out timing forecast exists: Grigorievskiy et al. (2014) scored
+  point forecasts of outburst onset for V363 Lyr from Kepler photometry, with a single test outburst.
+  Allowed: “to our knowledge, the first preregistered, frozen-parameter probabilistic evaluation of
+  dwarf-nova recurrence forecasts on held-out data, and the first test of whether the completed
+  outburst's duration adds forecast skill”. Not allowed: “the first out-of-sample forecast of
+  dwarf-nova outbursts”, or any unqualified priority claim. Searches are bounded (no ADS export).
+- **Physical reading (Cannizzo 1993):** in that disc-instability model tuned to SS Cyg, long
+  outbursts accrete a larger share of the disc than short ones (about 30% against 3% at the model's
+  default resolution, falling as resolution rises), and the depleted outer disc tends to make the
+  next outburst short: an account of alternation. Outbursts start near the inner edge, so model
+  quiescent intervals follow the quiescent viscous drift time. Separately, moving averages of the
+  real light curve show longer recurrence times where the long-to-short ratio is higher, which the
+  model reproduces through slow parameter changes. Allowed: the forecast gain is **compatible
+  with** a cycle-to-cycle disc-mass account and with duration acting as a proxy for a slowly
+  varying state that the recent-gap level does not fully capture. Not allowed: “confirms the disc
+  instability model”, “demonstrates disc-mass memory”, or a prediction attributed to the 1993
+  model that it did not make (Claude's reading found no reported quiescence contrast after long
+  versus short outbursts).
+
+Bibliographic metadata retrieval is not a full-text check.
 
 2018 onward stays closed. Forecast counts or precision projected from earlier rates are planning
 assumptions, never observed counts from that period. No future protocol, data opening, operational

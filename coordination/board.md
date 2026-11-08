@@ -24,7 +24,9 @@ claims and handovers.
 | A10d/A10e | Directional forecasts, 360-trial OC screen, first real 1910–1959 fit | Complete; reviewed in A10f | Codex | [A10d audit](../docs/audits/2026-11-08-a10d-directional-oc.md), [A10e report](../docs/audits/2026-11-08-a10e-first-development-fit.md); D021, D022; power 27.5%; real β=0.0466, P3 at zero; parameters `ce4ef8d5…` |
 | A10f | Development review and evaluation protocol | Amended by Codex in A10g (D024); executed in A10i | Claude protocol; Codex runner, fixtures, rehearsal and sealed run | [A10f memo](../docs/audits/2026-11-08-a10f-development-review.md), [protocol](../docs/protocols/a10f-evaluation-v1.md), D023; real dev LR reached by 5/220 gated nulls, 12/40 injected; slow state disfavoured by lagged-mark bound; conditional power ~1/3 |
 | A10g–A10i | Sealed runner, checker, rehearsal, protocol DOI and the 1960–2017 run | Complete; reviewed in A10j | Codex | [A10g freeze](../docs/audits/2026-11-08-a10g-evaluation-freeze.md), [A10h repair](../docs/audits/2026-11-08-a10h-native-format-repair.md), [A10i result](../docs/audits/2026-11-09-a10i-sealed-evaluation.md); D024–D027; +0.01653 [0.00495, 0.02812], 441 forecasts; criterion met after post-access format repair |
-| A10j | Result review, exploratory decomposition, paper framing | Complete; exploratory claims await Codex's check | Claude | [A10j memo](../docs/audits/2026-11-09-a10j-result-review.md), D028, [estimands](../manuscript/estimands.md), [claims ledger](../manuscript/claims.csv); level part ≈ 1/5; information carried by long/short type; type rule hit by uncentred indicator |
+| A10j | Result review, exploratory decomposition, paper framing | Complete; numbers reproduced and interpretations narrowed in A10k | Claude | [A10j memo](../docs/audits/2026-11-09-a10j-result-review.md), D028, [estimands](../manuscript/estimands.md), [claims ledger](../manuscript/claims.csv); level part ≈ 1/5; information carried by long/short type; type rule hit by uncentred indicator |
+| A10k | Independent claim checks, figures and document build | Complete; accepted by Claude in A10l (D030) | Codex | [A10k memo](../docs/audits/2026-11-09-a10k-claims-and-figures.md), D029; C11–C13, C20–C25 supported; four figures and brief figure |
+| A10l | Source checks (CM92, Cannizzo 1993), novelty refresh, first drafts of all products | Drafts complete; awaiting Codex semantic review and C41 check | Claude | [A10l memo](../docs/audits/2026-11-09-a10l-sources-and-drafts.md), D030; C40 supported; C41 narrowed, still provisional |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -760,3 +762,29 @@ accepted calculations and interpretation corrections.
 
 Next: Claude — review the revised estimands, finish C40/C41 source checks,
 then draft the three products using the figure/build previews.
+
+## A10l: sources checked; all products drafted
+
+Claude, 9 November 2026. D029's narrower interpretations are accepted in
+full (D030). CM92's Table 4 and Fig. 5 conventions were re-read on the
+original scan, and C40 is now supported. Cannizzo (1993) was read in full. It
+explains alternation through disc depletion, and links recurrence time with the
+long-to-short ratio through slow parameter changes. No quiescence contrast
+after long versus short outbursts was found in it, so the products say
+"compatible with", never "confirms".
+
+The novelty refresh found one held-out point-forecast precedent, Grigorievskiy
+et al. (2014, V363 Lyr, a single test outburst). The claim is now qualified as
+preregistered and probabilistic, and C41 stays provisional pending an
+independent search check.
+
+First full drafts of the article, supplement, brief and agent guide are in
+`manuscript/text/`. Every quoted number is bound to the ledger. Endpoint
+coupling is added as a stated limit. Authorship, venue and Zotero entries
+for two references without DOIs remain Barry's. No archive request, retained-run
+read or 2018+ access occurred.
+[A10l memo](../docs/audits/2026-11-09-a10l-sources-and-drafts.md).
+
+Next: Codex — semantic review of all four products against
+`manuscript/estimands.md`, an independent C41 search check, and a
+rendered-PDF check; then Barry reviews the drafts.

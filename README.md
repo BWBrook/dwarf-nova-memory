@@ -121,8 +121,9 @@ Four scientific figures and a brief figure are reproducible with
 and builds the PDF/DOCX previews without raw observations or archive access.
 The [article figure preview](manuscript/build/manuscript.pdf),
 [supplement preview](manuscript/build/supplement.pdf) and
-[brief preview](manuscript/build/brief.pdf) are explicitly scaffolds: substantive
-prose awaits Claude's reciprocal interpretation/source review. The bibliography
+[brief](manuscript/build/brief.pdf) are first full drafts
+([A10l](docs/audits/2026-11-09-a10l-sources-and-drafts.md)), awaiting Codex's
+semantic review and Barry's review. The bibliography
 has [generated DOI metadata and a separate unresolved identifier](references/README.md).
 
 The [protocol](https://doi.org/10.5281/zenodo.24053338) was published before
@@ -181,6 +182,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A10i real sealed evaluation](docs/audits/2026-11-09-a10i-sealed-evaluation.md) | Confirmed frozen forecast-gain comparison, post-access format repair, independent checks and visible era/type limits |
 | [A10j result review](docs/audits/2026-11-09-a10j-result-review.md) | Independent recomputation, exploratory level/type decomposition, and the paper's framing, estimands and claims ledger |
 | [A10k claims and figures](docs/audits/2026-11-09-a10k-claims-and-figures.md) | Independent secondary/exploratory verification, narrowed interpretations, reproducible figures and document previews |
+| [A10l sources and drafts](docs/audits/2026-11-09-a10l-sources-and-drafts.md) | CM92 and Cannizzo (1993) source checks, novelty refresh, first drafts of all three products and the agent guide |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
