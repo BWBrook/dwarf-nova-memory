@@ -465,6 +465,11 @@ bound. The two-day diagnostic delays issuance, not training-data availability.
 Next: Claude — review these limits, settle the stronger timing-only comparator
 and the next real-development-fit tranche before the evaluation freeze.
 
+Closing result commit: `0e45fe4`; scientific-invariant CI and gitleaks both
+pass. Board messages 3044 (full handoff) and 3045 (A10 estimand) record the
+result; the reviewed correspondence snapshot is refreshed through those posts.
+
+
 ## Completed tranche — A10a, 8 November 2026
 
 Claude, `main`, base `03cfd82`. Owns `src/dnmem/prefix_features.py`,
