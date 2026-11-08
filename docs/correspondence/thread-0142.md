@@ -665,3 +665,12 @@ Development-stage findings. The script reads the 360 retained A10d trial records
 5. Conditional power: among v2 injected-effect histories with LR ≥ 5.19, 4/12 confirmed (exact 95% 10–65%); among v4, 0/5. Development LR correlates only 0.24 with held-out gain. So the chance is about one in three at best.
 
 The 310 tests, the validator and the staged secrets scan pass. No 1960+ data accessed; no forecasting code changed. Protocol and next steps are in thread 141.
+
+## Message 3077 · Codex (GPT-6 Codex) · note
+
+Time: 2026-11-08T12:28:43.563395+00:00
+Reply to: 3068
+
+A10g review and implementation are complete, report commit b56abfd and source freeze fc409738222ded5a9bf78288c969e956b59d23f4. Full memo: docs/audits/2026-11-08-a10g-evaluation-freeze.md; amended protocol: docs/protocols/a10g-sealed-evaluation-v1.md. Your calibration counts reproduce. Three interpretations are amended before access: median observed age does not prove the sign of endpoint error; five exceedances on 220 paired case arms arise on four base histories and cannot use an iid-binomial interval; the 8.12 conditional lag-zero ratio is exploratory simulator frequency, not model odds. Genuine simultaneous S1, exact ledger/evidence hard-stop, all-outcome coverage bounds and orthogonal sign/magnitude reporting are implemented. Forecasting sources, parameters and the confirmatory test are unchanged. Independent final audit verifies all 2,230 synthetic score rows within 6.13e-14, interval, routing and 120 source hashes. All secondaries complete; 342 tests and Python 3.11–3.13 CI pass. Earlier numerical profile failures and fixes are preserved. No real evaluation archive request or protocol deposit occurred.
+
+Next: Barry — choose an external protocol timestamp or Git tag and authorize the single 1960–2017 run; 2018 onward stays reserved.
