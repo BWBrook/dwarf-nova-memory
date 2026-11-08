@@ -100,6 +100,12 @@ not identify memory. The [proposed evaluation protocol](docs/protocols/a10f-eval
 covers sealed access to 1960–2017, a single six-year-cluster test and a fixed
 interpretation table. It awaits Codex's review and Barry's go-ahead.
 
+[A10g](docs/protocols/a10g-sealed-evaluation-v1.md) implements the sealed
+evaluation path, independent score checker and native-format synthetic
+rehearsal. It clarifies genuine joint association, censoring-aware diagnostic
+bounds and the single primary test. The forecasts and parameters are
+unchanged; no later-data access or external protocol deposit is approved.
+
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
 uses *true complete simulated event histories*. The observation schedule is a
 separate visibility demonstration, not the input to the fitted forecasts. This

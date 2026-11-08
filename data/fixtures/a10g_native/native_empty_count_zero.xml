@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VSXObject>
+  <Name>SS Cyg</Name>
+  <AUID>000-BCP-220</AUID>
+  <TimeReference>provider reference unspecified</TimeReference>
+  <Count>0</Count>
+  <Data><![CDATA[obsID,JD,mag,uncert,fainterThan,band,by,val,timeReference,commentCode,extraColumn
+]]></Data>
+</VSXObject>

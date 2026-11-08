@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VSXObject>
+  <Name>SS Cyg</Name>
+  <AUID>000-BCP-220</AUID>
+  <TimeReference>provider reference unspecified</TimeReference>
+  <CommentCode>synthetic fixture only</CommentCode>
+  <UnknownMetadata key="kept">do not discard</UnknownMetadata>
+  <Count>5</Count>
+  <Data><![CDATA[obsID,JD,mag,uncert,fainterThan,band,by,val,timeReference,commentCode,extraColumn
+lower,2436934.0,11.0,,0,Vis.,SIM,V,unknown,ALPHA,kept-lower
+ccd,2436934.1,11.1,0.1,0,CCD,SIM,V,UTC,BETA,kept-ccd
+nonv,2436934.2,11.2,,0,Vis.,SIM,C,local,GAMMA,kept-nonv
+limit,2436934.3,12.5,,1,Vis.,SIM,V,unknown,DELTA,kept-limit
+upper,2436934.5,11.4,,0,Vis.,SIM,V,unknown,EPSILON,kept-upper
+]]></Data>
+</VSXObject>

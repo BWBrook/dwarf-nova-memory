@@ -325,3 +325,20 @@ which is pre-1960 and already consumed, to summarize issue ages. No native
 export was opened, and no 1960+ observation, count or coverage summary was
 accessed. No forecasting code or parameter changed. The proposed evaluation
 protocol requires a logged decision before any 1960+ request.
+
+
+### Codex A10g pre-access implementation, 8 November 2026
+
+Read A10f, retained synthetic trial records and already-consumed development
+outputs; no later archive response, coverage count or light curve was
+requested or inspected. The methodological delegate used only pre-1960
+artifacts for an S1 row-shape smoke. The new native adapter and full planned
+rehearsal use explicitly synthetic rows. Forecast parameters remain ce4ef8d5…
+
+Generic official AAVSO submission-format documentation was consulted for
+format/time-tag context. Its illustrative SS Cyg example rows carry 1997
+dates; these are documentation examples, not a queried archive response, and
+were not loaded into the evaluation or used to alter its window. This
+incidental documentation exposure is recorded rather than claiming universal
+outcome ignorance. The published CM92/Price exposure remains as disclosed.
+No1960+ raw evaluation data access or2018+ request is authorized.

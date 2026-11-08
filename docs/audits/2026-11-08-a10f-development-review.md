@@ -6,6 +6,15 @@ protocol that follows from this review is
 [A10f evaluation](../protocols/a10f-evaluation-v1.md). D018 is unchanged:
 held-out M3−M2 forecast gain is confirmatory. Nothing here touches 1960+ data.
 
+**Subsequent Codex review (D024):** the descriptive counts reproduce, but
+median issue age does not prove a negative endpoint artefact, shared-seed
+pooled binomial intervals are not valid iid uncertainty, and the8.12
+conditional frequency ratio is not whole-data model odds. The A10g protocol
+also makes concordance a hard pre-score gate, implements genuine joint S1,
+and specifies censoring-aware calibration and orthogonal interpretation.
+The original reasoning below is retained as proposal history, with those
+claims superseded. No held-out observation was opened for this review.
+
 ## Verdict
 
 I accept A10d and A10e as executed. The screen, the development fit and their

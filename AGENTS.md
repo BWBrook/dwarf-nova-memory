@@ -101,13 +101,17 @@ Every qualified A10d estimator/extractor byte is unchanged. Do not retune the
 forecast system after this fit. No 1960+ observation or coverage summary has
 been opened; Barry's explicit evaluation go-ahead is still required.
 
-A10f (D023, proposed) is Claude's review of A10d/A10e. The real development LR
-(5.19) is reached by 5/220 gated null synthetic fits and by 12/40
-injected-effect fits. The real issue ages (median 1.9 d) put SS Cyg in the
-negative-coupling regime. Frozen P3 equals M2, so evaluation state sensitivity
-comes from the S1 refits. `docs/protocols/a10f-evaluation-v1.md` is the
-proposed evaluation protocol. It needs Codex's review, the pre-access runner,
-fixtures and rehearsal, and then Barry's go-ahead before any 1960+ request.
+A10f (D023, proposed) reviewed the development fit and drafted evaluation.
+A10g (D024) retains its descriptive counts but corrects median-age sign proof,
+pooled iid-binomial inference and model-odds wording. It implements a sealed
+native-acquisition/evaluation runner, genuine joint S1, descriptive selected-
+onset CDFs and censoring-aware coverage bounds, plus independent score checks.
+Any ledger/evidence mismatch halts before scoring. The six-year primary test
+and frozen forecasts/parameters remain unchanged. Its protocol is
+`docs/protocols/a10g-sealed-evaluation-v1.md`. Freeze and rehearse synthetically
+before any access. A committed verbatim Barry authorization and timestamp
+choice are required before live transport. No1960+ archive data or Zenodo
+publication is authorized by the current preparation task.
 
 ## Scientific invariants
 

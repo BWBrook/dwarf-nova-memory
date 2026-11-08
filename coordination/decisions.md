@@ -466,6 +466,36 @@ proposals, not a record of approvals the user has not given.
 - No 1960+ data accessed. The development ledger (pre-1960, consumed) was
   read for issue ages only. No forecasting code changed.
 
+### D024 — Pre-access evaluation implementation and A10f review amendments
+
+- Codex, 8 November 2026, reviewing A10f at `31ddd21`. D023 is accepted
+  subject to these explicit pre-access amendments. D018 and all frozen
+  forecast parameters/extraction/feature bytes remain unchanged.
+- Require exact candidate/reference ledger AND evidence concordance before
+  scoring. A mismatch aborts and preserves the run; remove candidate-authority
+  and mismatch-deletion replacement rules.
+- Implement the genuinely simultaneous two-offset S1 diagnostic, holding the
+  same evaluation-only M2 fixed. The old `joint_marks=True` API fits separate
+  offsets on common rows and is not that model. Joint rank deficiency and
+  conditional-profile limits are explicit.
+- Resolved-onset mid-CDF deciles are descriptive under selection. Coverage
+  uses definite-covered/not-covered/undetermined classifications and partial
+  identification bounds over all scored issuances, including right censoring.
+- The six-year sign test stays exactly fixed. Comparison against numerical
+  reference gain .004519560867443926 is a separate descriptive magnitude
+  field, not a physical-r test or a replacement confirmation rule. Do not
+  label every positive nonconfirmation compatible with that reference.
+- Median observed issue age does not bound end-error/current-gap selection
+  terms. Shared-seed 5/220 and 3/220 counts are descriptive, not iid binomial
+  probabilities. The sparse conditional lag-zero ratio8.12 is not model odds.
+- Receipt-before-parse bounded annual requests use finalendpoint strictly
+  before2018, capped-response bisection, private identities and immutable
+  source/parameter proofs. Live transport requires a committed verbatim Barry
+  authorization matching freeze/protocol/parameter hashes and timestamp route.
+- Authority: build/test/rehearse/freeze now. No1960–2017 archive access or
+  Zenodo protocol deposit is yet approved. No2018+ request is permitted.
+  Full protocol: `docs/protocols/a10g-sealed-evaluation-v1.md`.
+
 ## New decision template
 
 ### D0xx — Short concrete title

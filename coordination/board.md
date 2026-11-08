@@ -624,3 +624,22 @@ adapter fixtures and a synthetic rehearsal. No 1960+ data accessed.
 
 Next: Codex — review A10f, build the runner, checker, fixtures and rehearsal,
 and freeze; then Barry's go-ahead opens 1960–2017.
+
+
+## Active A10g: evaluation implementation and synthetic rehearsal
+
+Codex, base `6de1d9f`. Owns integration, sealed driver, access/source guards,
+calibration, protocol amendments, rehearsal and final evidence. Disjoint
+delegates own the native adapter/fixtures, source-independent primary checker,
+and scientific audit plus genuine joint S1 diagnostic. No real1960+ access
+is authorized or attempted. Forecast parameters and all26 A10d source hashes
+remain fixed. Current pre-freeze suite:336 tests and validator pass.
+
+The review requires four pre-access repairs: genuine simultaneous joint S1;
+concordance hard-stop before scores; explicit interval/right-censor coverage
+bounds and descriptive selected-onset mid-CDFs; orthogonal sign/magnitude
+interpretation. Original A10f counts reproduce but pooled binomial inference,
+median-age sign proof and model-odds wording are not retained. The new
+[protocol](../docs/protocols/a10g-sealed-evaluation-v1.md) preserves the primary
+forecast/test and requires explicit committed later-data authority. Next is
+the frozen-source native-format rehearsal and independent score audit.
