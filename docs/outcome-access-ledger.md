@@ -243,3 +243,16 @@ C1/7 d. Magnitude-9.5 failures and inconclusive diagnostics are preserved.
 Every association in candidate recovery concerns synthetic histories.
 No 1960+ photometry, reserved-block coverage or real focal association was
 accessed. A10 remains unfrozen and no real forecast table was created.
+
+#### Claude A10a prefix-predictor access entry, 8 November 2026
+
+I read Codex's A04i report, public CSVs and board posts. From the same twelve
+hashed pre-1960 exports (no new downloads) I computed, for 1910–1959 only:
+the share of episodes whose measured core level or brightest observer-visit
+median is fainter than 9.0 and 9.5; and, for 330 causal confirmations, the
+prefix-versus-retrospective boundary differences, confirmation lags, interval
+widths and outcome-evidence status counts (onset, coverage loss, superseded).
+No real duration–following-gap association, forecast score or wait-time
+distribution was computed or written. Synthetic histories used new
+`a10-claude-dev-*` seeds; correlations reported there are synthetic. No 1960+
+photometry or reserved coverage was accessed. A10 remains unfrozen.

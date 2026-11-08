@@ -44,6 +44,18 @@ X1 episode in real 1910–1959 rows with both v2 cadence arms, and counts real
 episodes confirmed by X4's single-observer rule (`--diversity`). Neither is
 validation evidence.
 
+## A10a (Claude, prefix predictors and precision)
+
+`a10_prefix_pilot_20261108.json` applies the proposed prefix-causal ledger and
+live-forecast evidence rule (`src/dnmem/prefix_features.py`) to real
+1910–1959 rows and to 72 v2-phase development histories (`a10-claude-dev-*`).
+Real-data entries are boundary, lag and evidence-status diagnostics only; no
+real duration–gap association is computed. Synthetic entries add correlation
+retention for true, retrospective and prefix durations
+(`scripts/a10_prefix_pilot.py`). `a10_precision_20261108.json` is the
+standardized Gaussian precision model for paired forecast gain and slope tests
+(`scripts/a10_precision.py`). Neither is validation evidence.
+
 ## A04h (Claude, morphology only)
 
 `a04h_morphology_targets_20261108.json` holds the real 1910–1959 target vector

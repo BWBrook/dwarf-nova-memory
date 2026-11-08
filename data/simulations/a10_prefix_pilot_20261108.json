@@ -1,0 +1,194 @@
+{
+  "definition": "dnmem.prefix_features a10-prefix-v1, X4 at 10.0, lookback 400 d, C1/7 d, latency 0",
+  "seed_base": "a10-claude-dev-20261108",
+  "real_1910_1959": {
+    "note": "boundary, lag and evidence-status diagnostics only; no duration-gap association",
+    "forecasts": 330,
+    "forecasts_per_year": 6.6,
+    "with_prefix_duration": 330,
+    "without_prefix_episode": 0,
+    "matched_to_retrospective_episode": 330,
+    "repeat_of_previous": 0,
+    "prefix_end_fit": 328,
+    "duration_prefix_minus_retro_d": {
+      "n": 330,
+      "median": 0.0,
+      "p10": -0.114,
+      "p90": 0.057,
+      "mean_abs": 0.048
+    },
+    "end_prefix_minus_retro_d": {
+      "n": 330,
+      "median": 0.0,
+      "p10": -0.114,
+      "p90": 0.057,
+      "mean_abs": 0.048
+    },
+    "end_width_prefix_d": {
+      "n": 330,
+      "median": 1.422,
+      "p10": 1.01,
+      "p90": 2.61,
+      "mean_abs": 1.711
+    },
+    "end_width_retro_d": {
+      "n": 330,
+      "median": 1.355,
+      "p10": 0.948,
+      "p90": 2.513,
+      "mean_abs": 1.664
+    },
+    "end_fit_points_lost": {
+      "n": 330,
+      "median": 1,
+      "p10": 0,
+      "p90": 8,
+      "mean_abs": 2.855
+    },
+    "age_at_issue_d": {
+      "n": 330,
+      "median": 1.896,
+      "p10": 1.128,
+      "p90": 4.071,
+      "mean_abs": 2.47
+    },
+    "previous_gap_available_covered": 308,
+    "outcome_reasons": {
+      "onset": 307,
+      "coverage": 22,
+      "superseded": 1
+    }
+  },
+  "synthetic_v2_phase_alternative": {
+    "histories": 36,
+    "forecasts": 4023,
+    "forecasts_without_true_event_per_year": 0.0017,
+    "outcome_reasons": {
+      "onset": 3671,
+      "coverage": 320,
+      "record_end": 29,
+      "superseded": 3
+    },
+    "by_era": {
+      "1910_1929": {
+        "histories": 12,
+        "forecasts_per_year": 6.933,
+        "true_events_per_year": 7.108,
+        "duration_prefix_minus_retro_d": {
+          "n": 1663,
+          "median": 0.0,
+          "p10": -0.155,
+          "p90": 0.064,
+          "mean_abs": 0.069
+        }
+      },
+      "1930_1949": {
+        "histories": 12,
+        "forecasts_per_year": 6.629,
+        "true_events_per_year": 7.083,
+        "duration_prefix_minus_retro_d": {
+          "n": 1581,
+          "median": 0.0,
+          "p10": -0.107,
+          "p90": 0.04,
+          "mean_abs": 0.054
+        }
+      },
+      "1950_1959": {
+        "histories": 12,
+        "forecasts_per_year": 6.402,
+        "true_events_per_year": 6.969,
+        "duration_prefix_minus_retro_d": {
+          "n": 762,
+          "median": 0.0,
+          "p10": -0.121,
+          "p90": 0.049,
+          "mean_abs": 0.051
+        }
+      }
+    },
+    "retention": {
+      "forecasts": 4004,
+      "r_log_duration_true_vs_log_gap_true": 0.203,
+      "r_log_duration_retro_vs_log_gap_true": 0.1944,
+      "r_log_duration_prefix_vs_log_gap_true": 0.1965,
+      "partial_r_true_given_previous_gap": 0.1125,
+      "partial_r_prefix_given_previous_gap": 0.127,
+      "partial_forecasts": 3648,
+      "issue_minus_true_end_d": {
+        "n": 4004,
+        "median": 1.865,
+        "p10": 1.0,
+        "p90": 4.104,
+        "mean_abs": 2.506
+      },
+      "r_log_duration_true_vs_lag": 0.028
+    }
+  },
+  "synthetic_v2_phase_null": {
+    "histories": 36,
+    "forecasts": 4023,
+    "forecasts_without_true_event_per_year": 0.01,
+    "outcome_reasons": {
+      "superseded": 2,
+      "onset": 3667,
+      "coverage": 328,
+      "record_end": 26
+    },
+    "by_era": {
+      "1910_1929": {
+        "histories": 12,
+        "forecasts_per_year": 6.85,
+        "true_events_per_year": 7.054,
+        "duration_prefix_minus_retro_d": {
+          "n": 1640,
+          "median": 0.0,
+          "p10": -0.153,
+          "p90": 0.054,
+          "mean_abs": 0.066
+        }
+      },
+      "1930_1949": {
+        "histories": 12,
+        "forecasts_per_year": 6.679,
+        "true_events_per_year": 7.096,
+        "duration_prefix_minus_retro_d": {
+          "n": 1595,
+          "median": 0.0,
+          "p10": -0.1,
+          "p90": 0.036,
+          "mean_abs": 0.048
+        }
+      },
+      "1950_1959": {
+        "histories": 12,
+        "forecasts_per_year": 6.468,
+        "true_events_per_year": 7.069,
+        "duration_prefix_minus_retro_d": {
+          "n": 771,
+          "median": 0.0,
+          "p10": -0.119,
+          "p90": 0.047,
+          "mean_abs": 0.055
+        }
+      }
+    },
+    "retention": {
+      "forecasts": 4004,
+      "r_log_duration_true_vs_log_gap_true": 0.007,
+      "r_log_duration_retro_vs_log_gap_true": -0.0009,
+      "r_log_duration_prefix_vs_log_gap_true": -0.0004,
+      "partial_r_true_given_previous_gap": 0.0069,
+      "partial_r_prefix_given_previous_gap": 0.0016,
+      "partial_forecasts": 3645,
+      "issue_minus_true_end_d": {
+        "n": 4004,
+        "median": 1.897,
+        "p10": 0.98,
+        "p90": 4.273,
+        "mean_abs": 2.578
+      },
+      "r_log_duration_true_vs_lag": 0.0158
+    }
+  }
+}

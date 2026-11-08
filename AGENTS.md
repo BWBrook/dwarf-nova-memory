@@ -47,7 +47,12 @@ C1/7 d is selected by the frozen preference. Magnitude-9.5 diagnostics fail
 in the later eras, and some alternative-bias comparisons are inconclusive.
 This supports conditional retrospective extraction on a waveform Claude
 had already studied; it is not unseen-waveform or operational validation.
-See the A04i report and D017. No frozen operational
+See the A04i report and D017. A10a specifies prefix-causal forecast
+predictors (`src/dnmem/prefix_features.py`) and a truth-free live-forecast
+evidence rule. On real 1910–1959 rows, causality changes durations by about
+0.05 d. A precision model gives a single-star paired forecast-gain test about
+one-third power at the expected effect, so the confirmatory estimand awaits
+the scientific lead; A10 remains unfrozen. No frozen operational
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,

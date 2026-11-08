@@ -18,12 +18,13 @@ claims and handovers.
 | A04d | Benchmark review, extractor repair, fresh validation | X3 proposed with training evidence; validation protocol proposed, not frozen | Claude X3 and checks; Codex benchmark v2 and validation | [A04d memo](../docs/audits/2026-11-07-a04d-observation-review-x3-repair.md), [proposed protocol](../docs/protocols/a04d-x3-validation-v1.md); v1 benchmark fails predictive checks; X3 93–95% effective coverage on training, fails v1 end coverage |
 | A04f | X3 failure review and X4 repair | X4 proposed with development evidence; A04g protocol proposed, not frozen | Claude X4 and diagnosis; Codex v3 benchmark and validation | [A04f memo](../docs/audits/2026-11-08-a04f-x3-failure-review-x4.md), [proposed protocol](../docs/protocols/a04g-x4-validation-v1.md); state arm fails observer-diversity check; X4 94–98% effective coverage on development seeds of both v2 arms |
 | A04h | Joint morphology and cadence targets | Proposed, not frozen | Claude targets and operator; Codex next benchmark version | [A04h memo](../docs/audits/2026-11-08-a04h-joint-morphology-targets.md), [proposed targets](../docs/protocols/a04h-joint-morphology-targets-v1.md); v3 lacks amplitude–duration coupling; v2 random passes the waveform block; all arms fail decline sampling density |
+| A10a | Restriction review, prefix-causal predictors, precision | Proposed, not frozen | Claude protocol, ledger code and pilot; Codex models and controls | [A10a memo](../docs/audits/2026-11-08-a10a-prefix-predictors-review.md), [proposed protocol](../docs/protocols/a10-prefix-causal-predictors-v1.md); magnitude 10 structural (0.5 mag margins clear the peak distribution only there); causality costs ~0.05 d on real 1910–1959 rows; single-star forecast-gain test ~1/3 power at r≈0.12, estimand decision with Barry |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
 | A08 | Implement observational M0, then M1 | After A07 | Agent implementer + other reviewer | Censoring, boundary propagation, calibration |
 | A09 | Add past-only M2/M3 and identifiability simulation | After A08 | Rotate roles | Same state architecture, no future smoothing |
-| A10 | Freeze evaluation | After recovery gates | Scientific lead | Cutoffs, ledger, final targets and score |
+| A10 | Freeze evaluation | Predictor ledger proposed (A10a); confirmatory estimand awaits scientific lead | Scientific lead | Cutoffs, ledger, final targets and score |
 
 ## Current blocking information
 
@@ -417,3 +418,26 @@ then specify prefix-causal predictor construction for A10.
 Closing result commit: `b3741b3`; tests and gitleaks CI both pass. Board
 messages 3027 (full handoff) and 3028 (A10 boundary) record the result;
 the reviewed correspondence snapshot is refreshed through those posts.
+
+## Completed tranche — A10a, 8 November 2026
+
+Claude, `main`, base `03cfd82`. Owns `src/dnmem/prefix_features.py`,
+`tests/test_prefix_features.py`, `scripts/a10_prefix_pilot.py`,
+`scripts/a10_precision.py`, their `data/simulations/a10_*` outputs, the
+proposed A10 predictor protocol and the A10a memo. X4 unchanged.
+
+Evidence: magnitude 10 qualifies because X4's 0.5 mag arming and
+confirmation margins clear the outburst peak distribution only there (9.5:
+13–15% of v2 and 6–8% of real outbursts peak within the margin; 10.0: 0.4% and
+1–2%). Under the A10 design, waveform misspecification dilutes the mark but
+cannot manufacture skill under the null (residual end-error coupling about
+−0.006). Prefix X4 on real 1910–1959 rows: 330 forecasts, all with a prefix
+episode, prefix − retrospective duration mean absolute 0.05 d; synthetic
+retention of the duration–gap correlation 97%. Precision model: at r = 0.12
+with 390 evaluation forecasts the paired forecast-gain test has 0.32 power,
+the slope test 0.77. No 1960+ data; no real duration–gap association.
+
+Next: Codex reviews the protocol, builds M0–M3 on the ledger and runs the
+null/positive/stress/concordance controls; Barry decides the confirmatory
+estimand.
+
