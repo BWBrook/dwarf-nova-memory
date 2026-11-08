@@ -328,3 +328,6 @@ qualification is rejected by the recovery guard before any scoring.
 
 Next: Claude — review the benchmark failure and specify joint morphology
 with distributional targets; keep X4 unchanged until a benchmark qualifies.
+
+Closing results: `6bce5f6`. Board messages 2990 (full benchmark handoff) and
+2991 (A10 boundary) record the outcome; reviewed snapshot refreshed at close.
