@@ -1,0 +1,15 @@
+{
+  "scope": "synthetic calibration screen; no formal five-percent certification",
+  "primary_cluster_years": 6,
+  "sensitivity_cluster_years": 3,
+  "null_observed_rate_cap": 0.05,
+  "coverage_screen_lower_tail_alpha": 0.05,
+  "reference_replicas": 6,
+  "reference_years_per_replica": 58,
+  "concordance_histories": 100,
+  "families": {
+    "v2-phase": {"replicates": 40, "cases": ["null", "structured", "slow_090", "slow_098", "gross", "offset", "adaptive", "alternative"]},
+    "v4-phase": {"replicates": 20, "cases": ["null", "alternative"]}
+  },
+  "real_data_permission": "only after prespecified screen passes and the gate ambiguity is resolved; 1960+ remains closed"
+}

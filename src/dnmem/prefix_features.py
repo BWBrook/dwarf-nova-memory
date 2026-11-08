@@ -7,11 +7,12 @@ X4 on the full record and is never an input to a predictor.
 """
 
 import math
+from bisect import bisect_right
 
 from dnmem.extract import visits
 from dnmem.extract_x4 import THRESHOLD, VISIT_SPAN, causal_confirmations, x4_episodes
 
-DEFINITION_VERSION = "a10-prefix-v2"
+DEFINITION_VERSION = "a10-prefix-v3"
 LOOKBACK = 400.0
 COVERAGE_HOLE = 7.0
 PREVIOUS_MARGIN = 30.0
@@ -26,6 +27,50 @@ def _longest_hole(times: list[float], start: float, stop: float) -> tuple[float,
     holes = [(b - a, a) for a, b in zip(anchors, anchors[1:])]
     longest = max(h for h, _ in holes)
     return longest, next((a for h, a in holes if h > COVERAGE_HOLE), None)
+
+
+def _point_duration(episode: dict | None) -> float | None:
+    """Return a usable point duration, treating nonpositive order as missing."""
+    if episode is None or episode.get("onset_t") is None or episode.get("end_t") is None:
+        return None
+    duration = episode["end_t"] - episode["onset_t"]
+    return duration if math.isfinite(duration) and duration > 0 else None
+
+
+def _starts_inside_window(episode: dict, prefix_start: float) -> bool:
+    onset_lo = episode.get("onset_lo")
+    return onset_lo is not None and onset_lo > prefix_start + PREVIOUS_MARGIN
+
+
+def _onset_inside_window(episode: dict, prefix_start: float) -> bool:
+    onset = episode.get("onset_t")
+    return onset is not None and onset > prefix_start + PREVIOUS_MARGIN
+
+
+def _earlier_gaps(episodes: list[dict], current: int, previous: dict | None,
+                  prefix_start: float, times: list[float]) -> list[float]:
+    """Log covered gaps between confirmed episodes up to the previous episode."""
+    if previous is None or previous.get("onset_t") is None:
+        return []
+    confirmed = [e for e in episodes[:current] if e.get("confirmed_event")]
+    gaps = []
+    for left, right in zip(confirmed, confirmed[1:]):
+        right_onset = right.get("onset_t")
+        if right_onset is None or right_onset > previous["onset_t"]:
+            continue
+        if not (_onset_inside_window(left, prefix_start)
+                and _onset_inside_window(right, prefix_start)):
+            continue
+        left_end = left.get("end_t")
+        if left_end is None or right_onset is None:
+            continue
+        gap = right_onset - left_end
+        if gap <= 0:
+            continue
+        longest, _ = _longest_hole(times, left_end, right_onset)
+        if longest <= COVERAGE_HOLE:
+            gaps.append(math.log(gap))
+    return gaps[-6:]
 
 
 def forecast_features(rows: list[dict], emission: dict, threshold: float = THRESHOLD,
@@ -51,26 +96,28 @@ def forecast_features(rows: list[dict], emission: dict, threshold: float = THRES
     if current is None:
         record.update({k: None for k in keys})
         record.update(duration=None, age_at_issue=None, previous_end_t=None, previous_gap=None,
-                      previous_gap_covered=None, previous_longest_hole=None)
+                      previous_gap_covered=None, previous_longest_hole=None,
+                      previous_duration=None, earlier_gaps=[])
         return record
     e = episodes[current]
     record.update({k: e[k] for k in keys})
-    ok = e["onset_t"] is not None and e["end_t"] is not None
-    record["duration"] = e["end_t"] - e["onset_t"] if ok else None
+    record["duration"] = _point_duration(e)
     record["age_at_issue"] = record["issue_time"] - e["end_t"] if e["end_t"] is not None else None
     record["landmark_available"] = bool(e["end_t"] is not None and math.isfinite(e["end_t"])
                                          and e["end_t"] <= cutoff)
-    earlier = [p for p in episodes[:current] if p["confirmed_event"] and p["end_t"] is not None
-               and p["onset_lo"] is not None and p["onset_lo"] > cutoff - lookback + PREVIOUS_MARGIN]
-    if earlier and e["onset_t"] is not None and earlier[-1]["end_t"] < e["onset_t"]:
-        p = earlier[-1]
-        times = sorted(v["t"] for v in visits(window, threshold))
+    earlier = [p for p in episodes[:current] if p.get("confirmed_event")
+               and p.get("end_t") is not None and _starts_inside_window(p, cutoff - lookback)]
+    p = earlier[-1] if earlier else None
+    times = sorted(v["t"] for v in visits(window, threshold))
+    record["previous_duration"] = _point_duration(p)
+    if p is not None and e["onset_t"] is not None and p["end_t"] < e["onset_t"]:
         longest, _ = _longest_hole(times, p["end_t"], e["onset_t"])
         record.update(previous_end_t=p["end_t"], previous_gap=e["onset_t"] - p["end_t"],
                       previous_gap_covered=longest <= COVERAGE_HOLE, previous_longest_hole=longest)
     else:
         record.update(previous_end_t=None, previous_gap=None, previous_gap_covered=None,
                       previous_longest_hole=None)
+    record["earlier_gaps"] = _earlier_gaps(episodes, current, p, cutoff - lookback, times)
     return record
 
 
@@ -84,8 +131,12 @@ def forecast_ledger(rows: list[dict], threshold: float = THRESHOLD, latency: flo
         raise ValueError("invalid issue window")
     ledger = []
     previous = None
+    indexed = sorted(rows, key=lambda r: float(r["JD"]))
+    row_times = [float(r["JD"]) for r in indexed]
     for emission in causal_confirmations(rows, threshold):
-        record = forecast_features(rows, emission, threshold, latency, lookback)
+        cutoff = emission["emitted_at"]
+        window = indexed[bisect_right(row_times, cutoff-lookback):bisect_right(row_times, cutoff)]
+        record = forecast_features(window, emission, threshold, latency, lookback)
         record["repeat_of_previous"] = bool(
             previous and record["onset_t"] is not None and previous["onset_t"] is not None
             and abs(record["onset_t"] - previous["onset_t"]) < 1.0)
@@ -105,6 +156,25 @@ def _coverage_loss(times: list[float], issue: float, stop: float) -> float | Non
                  if b - a > COVERAGE_HOLE and b > issue and a < stop), None)
 
 
+def _coverage_index(times: list[float], stop: float):
+    gaps = [(a, b) for a, b in zip(times, times[1:]) if b-a > COVERAGE_HOLE]
+    rights = [b for _, b in gaps]
+
+    def loss(issue):
+        if not times:
+            return issue if stop-issue > COVERAGE_HOLE else None
+        if issue < times[0] and times[0]-issue > COVERAGE_HOLE:
+            return issue
+        index = bisect_right(rights, issue)
+        if index < len(gaps):
+            return max(gaps[index][0], issue)
+        if stop-times[-1] > COVERAGE_HOLE:
+            return max(times[-1], issue)
+        return None
+
+    return loss
+
+
 def outcome_evidence(rows: list[dict], ledger: list[dict], threshold: float = THRESHOLD,
                      stop: float | None = None) -> list[dict]:
     """Common as-of evidence; excludes overtaken or ambiguous survival.
@@ -121,13 +191,15 @@ def outcome_evidence(rows: list[dict], ledger: list[dict], threshold: float = TH
     episodes = sorted((e for e in x4_episodes(rows, threshold) if e["confirmed_event"]),
                       key=lambda e: e["peak_t"])
     times = sorted(v["t"] for v in visits(rows, threshold))
+    coverage_loss = _coverage_index(times, record_end)
+    peak_times = [e["peak_t"] for e in episodes]
     out = []
     assigned = set()
     for i, f in enumerate(ledger):
         tau = f["issue_time"]
-        candidate = next(((j, e) for j, e in enumerate(episodes)
-                          if e["peak_t"] > f["emitted_at"] and e["onset_hi"] is not None
-                          and e["onset_hi"] > f["emitted_at"]), None)
+        candidate = next(((j, episodes[j]) for j in range(bisect_right(peak_times, f["emitted_at"]), len(episodes))
+                          if episodes[j]["onset_hi"] is not None
+                          and episodes[j]["onset_hi"] > f["emitted_at"]), None)
         nxt = candidate[1] if candidate else None
         evidence = {"emission_index": f["emission_index"], "issue_time": tau,
                     "computed_as_of": record_end, "evidence_available_at": record_end,
@@ -143,7 +215,7 @@ def outcome_evidence(rows: list[dict], ledger: list[dict], threshold: float = TH
         if evidence["kind"] is not None:
             out.append(evidence)
             continue
-        hole = _coverage_loss(times, tau, record_end)
+        hole = coverage_loss(tau)
         superseded = ledger[i + 1]["issue_time"] if i + 1 < len(ledger) else None
         stops = [(t, why) for t, why in ((hole, "coverage"), (superseded, "superseded"), (record_end, "record_end"))
                  if t is not None]

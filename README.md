@@ -78,6 +78,14 @@ Small floating-point differences across runtimes need not give identical hashes.
 | Observational findings | Annotation and returned-row coverage only. Independent 1957 boundary differences adjudicated; no real forecast or empirical duration–gap correlation has been computed |
 | Git | Public at [BWBrook/dwarf-nova-memory](https://github.com/BWBrook/dwarf-nova-memory); the GPT-6 Pro seed commit and `seed-v0.1.0` tag are preserved unchanged |
 
+[A10d](docs/protocols/a10d-directional-oc-v1.md) implements the directional
+M3/P3 offsets against a fixed q-plus-local-history M2, independent v3 prefix
+features, and the 360-trial operating-characteristic runner. Development
+concordance and score checks pass; production calibration has not yet run.
+The first real development fit remains gated. The positive coefficient and
+lagged-duration comparisons do not identify physical memory or universally
+exclude endpoint artefacts.
+
 The included `outputs/seed_demo/` is an illustrative run. Its forecast evaluation
 uses *true complete simulated event histories*. The observation schedule is a
 separate visibility demonstration, not the input to the fitted forecasts. This

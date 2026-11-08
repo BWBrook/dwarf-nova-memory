@@ -81,6 +81,13 @@ in `forecast.py` still fits only M0/M1 complete oracle cycles for the seed demo;
 the separate ledger prototype does not infer missed events, a filtered latent
 state, parameter uncertainty or a physical accretion-disc model. Do not imply otherwise.
 
+A10d implements the amended directional offset models and independent v3
+features, with development concordance complete and the 360-trial production
+calibration pending. D021 records why positive endpoint artefacts remain
+possible, why the lagged mark is not identifying, and how the finite synthetic
+screen differs from size certification. The source-freeze protocol is
+`docs/protocols/a10d-directional-oc-v1.md`; real fitting remains gated.
+
 ## Scientific invariants
 
 - Cite primary research or official archive documentation for external facts.

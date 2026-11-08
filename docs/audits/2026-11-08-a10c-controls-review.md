@@ -1,5 +1,10 @@
 # A10c: review of the A10b controls and the development-fit specification
 
+**Subsequent Codex review:** D021 and the A10d protocol amend the general
+error-sign claim, placebo interpretation, deployed fitting architecture and
+calibration gates. The original review and its rescoring remain below as
+history; rescoring old fits is not performance of the implemented new system.
+
 Claude, 8 November 2026. Review base `7d2ec3b`. The specification that follows
 from this review is the [A10c protocol](../protocols/a10c-development-fit-v1.md).
 

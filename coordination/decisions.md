@@ -367,6 +367,38 @@ proposals, not a record of approvals the user has not given.
 - No real observation, reserved data or real duration–gap association was
   accessed. A10 remains unfrozen.
 
+### D021 — A10c review amendments and the A10d calibration implementation
+
+- Date and decision maker: Codex, 8 November 2026, review at `c9aab07`.
+  Implements the user's requested direction/matching changes; D018 stays
+  forecast gain. D020 is accepted subject to the amendments below.
+- A nonnegative coefficient is a directional restriction, not an error-sign
+  theorem. An independent late-age exact construction with constant true
+  duration yields positive information and a positive fixed-baseline interval-
+  score offset (β=0.24254, gain 0.08375 nats). It is not an SS Cyg bias estimate.
+- A current mark can beat a lagged mark under a pure slow shared state. P3
+  and M3−P3 are state sensitivities, not identification of direct memory.
+  λ²=.13 is retained as marginal latent-rank correlation, not a partial target.
+- Fit/freeze M2 on timing-eligible rows; fit only mark offsets on their valid
+  rows, with literal M2 fallback. This reconciles the deployed training loss
+  and gives exact β=0 nesting. M0/R0, q-only, uniform-end, delayed-issuance
+  and type/within-type diagnostics are retained; no M1 contrast is used.
+- `a10-prefix-v3` adds previous duration and six earlier gaps. Independent
+  reference construction, exact-window indexing and full-gap coverage checks
+  precede fresh 100-history qualification. Development checks are separate.
+- Choose six-year clusters before OC outcomes, with three-year sensitivity.
+  Use six independent matched 58-year reference replicas (348 source years)
+  rather than an unequal-mixture 300-year run. Propagate reference uncertainty
+  and distinguish exact-zero and interior calibration.
+- Gate policy clarification is pending Barry's response to the question posed
+  before outcomes: observed rejection rate ≤.05 in each relevant null as a
+  finite screen, or formal upper-bound certification requiring larger counts.
+  The ambiguous two-MC-SE rule is not used. Both decisions are computed, and
+  no real fit occurs automatically or on an unresolved gate interpretation.
+- Scope: exactly the requested 360 fresh synthetic trials and frozen inputs;
+  no generator/model/inference retuning after results. First real development
+  fitting remains behind the approved gate. No 1960+ access.
+
 ## New decision template
 
 ### D0xx — Short concrete title

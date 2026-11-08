@@ -524,3 +524,29 @@ withdrawn: shared end/age error can make a measured duration improve remaining-
 time forecasts even when true duration is constant. The 0.05 d prefix versus
 retrospective difference measures availability cost, not true endpoint error.
 
+
+
+## Active tranche — A10d directional forecast calibration, 8 November 2026
+
+Codex, base `c9aab07`: review A10c, implement a matched directional forecast
+family, repeat independent concordance, run the 360-trial OC grid, and make
+the first 1910–1959 fit only after the approved gate passes. 1960+ remains
+closed pending Barry's explicit evaluation go-ahead. Root owns integration,
+statistics, protocol, runner, resource use and eventual gated real-fit adapter.
+Disjoint delegates own feature construction, independent reference extension,
+model implementation, slow-state streams and source-independent score checks.
+All component work is integrated; 296 tests pass. The first 100-history
+development concordance and three full-history smokes complete, but their
+slow-state checks are superseded: pre-freeze review caught a renewal clock
+advancing with the new rather than previous episode's duration/gap. The clock
+is repaired and has an exact truth-chronology regression; fresh frozen-source
+concordance and development smokes will precede production.
+
+D021 and [the amended specification](../docs/protocols/a10d-directional-oc-v1.md)
+record the exact positive-age-error counterexample, the limited lagged-mark
+interpretation, fixed-baseline offset fitting, six-year inference blocks chosen
+before OC outcomes, and matched 58-year references with finite-MC uncertainty.
+The 360-trial screen versus formal-size-certification question was put to
+Barry before qualification outcomes. Both policies will be calculated without
+post-result selection; no automatic real-data action is part of the runner.
+No real focal computation or reserved access has occurred.

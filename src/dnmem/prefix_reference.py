@@ -15,7 +15,7 @@ from dnmem.extract_x4 import x4_episodes
 from dnmem.extract_x4 import causal_confirmations
 
 
-DEFINITION_VERSION = "a10-prefix-v2"
+DEFINITION_VERSION = "a10-prefix-v3"
 _COVERAGE_DAYS = 7.0
 _BOUNDARY_MARGIN = VISIT_SPAN + 1.0
 
@@ -38,6 +38,17 @@ def _optional_number(value: Any) -> float | None:
     except (TypeError, ValueError):
         return None
     return result if math.isfinite(result) else None
+
+
+def _positive_duration(episode: Mapping[str, Any] | None) -> float | None:
+    """Return a finite positive point duration, or mark it unavailable."""
+    if episode is None:
+        return None
+    onset = _optional_number(episode.get("onset_t"))
+    end = _optional_number(episode.get("end_t"))
+    if onset is None or end is None or end <= onset:
+        return None
+    return end - onset
 
 
 def _jd(row: Mapping[str, Any]) -> float:
@@ -101,12 +112,14 @@ def _previous_fields(episodes: Sequence[Mapping[str, Any]], current: Mapping[str
         "previous_gap": None,
         "previous_longest_hole": None,
         "previous_gap_covered": None,
+        "previous_duration": None,
+        "earlier_gaps": [],
     }
     if current is None:
         return result
     current_onset = _optional_number(current.get("onset_t"))
     current_peak = _optional_number(current.get("peak_t"))
-    if current_onset is None or current_peak is None:
+    if current_peak is None:
         return result
     current_position = next((i for i, e in enumerate(episodes) if e is current), len(episodes))
     candidates = []
@@ -121,20 +134,56 @@ def _previous_fields(episodes: Sequence[Mapping[str, Any]], current: Mapping[str
         return result
     previous = max(candidates, key=lambda item: item[0])[1]
     previous_end = _optional_number(previous.get("end_t"))
-    if previous_end is None or current_onset <= previous_end:
-        return result
-    visit_times = sorted(_optional_number(v.get("t")) for v in visits(list(prefix_rows), threshold))
-    visit_times = [t for t in visit_times if t is not None and previous_end < t < current_onset]
-    times = [previous_end, *visit_times, current_onset]
-    spacings = [right - left for left, right in zip(times, times[1:])]
-    if not spacings:
-        return result
-    result.update(
-        previous_end_t=previous_end,
-        previous_gap=current_onset - previous_end,
-        previous_longest_hole=max(spacings),
-        previous_gap_covered=max(spacings) <= _COVERAGE_DAYS,
+    previous_onset = _optional_number(previous.get("onset_t"))
+    if previous_onset is not None and previous_onset > prefix_start + 30.0:
+        result["previous_duration"] = _positive_duration(previous)
+    visit_times = [_optional_number(v.get("t")) for v in visits(list(prefix_rows), threshold)]
+    visit_times = sorted(t for t in visit_times if t is not None)
+
+    def gap_metrics(end: float | None, onset: float | None) -> tuple[float, float, bool] | None:
+        if end is None or onset is None or onset <= end:
+            return None
+        inside = [t for t in visit_times if end < t < onset]
+        times = [end, *inside, onset]
+        spacings = [right - left for left, right in zip(times, times[1:])]
+        if not spacings:
+            return None
+        gap = onset - end
+        return gap, max(spacings), max(spacings) <= _COVERAGE_DAYS
+
+    metrics = gap_metrics(previous_end, current_onset)
+    if metrics is not None:
+        gap, longest_hole, covered = metrics
+        result.update(
+            previous_end_t=previous_end,
+            previous_gap=gap,
+            previous_longest_hole=longest_hole,
+            previous_gap_covered=covered,
+        )
+
+    # Earlier gaps are formed from the confirmed episode sequence, stopping
+    # before ``previous`` so the immediately preceding current gap is excluded.
+    confirmed = [episode for episode in episodes[:current_position]
+                 if episode.get("confirmed_event")]
+    previous_confirmed_position = next(
+        (i for i, episode in enumerate(confirmed) if episode is previous), None
     )
+    if previous_confirmed_position is not None:
+        earlier = []
+        for older, newer in zip(confirmed[:previous_confirmed_position],
+                                confirmed[1:previous_confirmed_position + 1]):
+            older_onset = _optional_number(older.get("onset_t"))
+            newer_onset = _optional_number(newer.get("onset_t"))
+            if (older_onset is None or newer_onset is None or previous_onset is None
+                    or older_onset <= prefix_start + 30.0
+                    or newer_onset <= prefix_start + 30.0
+                    or newer_onset > previous_onset):
+                continue
+            pair = gap_metrics(_optional_number(older.get("end_t")), newer_onset)
+            if pair is None:
+                continue
+            earlier.append(math.log(pair[0])) if pair[2] else None
+        result["earlier_gaps"] = earlier[-6:]
     return result
 
 
@@ -168,7 +217,7 @@ def forecast_features(rows: Sequence[Mapping[str, Any]], emission: Mapping[str, 
         "prefix_last_jd": max(prefix_jds) if prefix_jds else None,
         "episode_found": current is not None,
         **copied,
-        "duration": end_t - onset_t if onset_t is not None and end_t is not None else None,
+        "duration": _positive_duration(current),
         "age_at_issue": issue_time - end_t if end_t is not None else None,
         "landmark_available": current is not None and end_t is not None and end_t <= emitted_at,
     }
