@@ -19,13 +19,14 @@ claims and handovers.
 | A04f | X3 failure review and X4 repair | X4 proposed with development evidence; A04g protocol proposed, not frozen | Claude X4 and diagnosis; Codex v3 benchmark and validation | [A04f memo](../docs/audits/2026-11-08-a04f-x3-failure-review-x4.md), [proposed protocol](../docs/protocols/a04g-x4-validation-v1.md); state arm fails observer-diversity check; X4 94–98% effective coverage on development seeds of both v2 arms |
 | A04h | Joint morphology and cadence targets | Proposed, not frozen | Claude targets and operator; Codex next benchmark version | [A04h memo](../docs/audits/2026-11-08-a04h-joint-morphology-targets.md), [proposed targets](../docs/protocols/a04h-joint-morphology-targets-v1.md); v3 lacks amplitude–duration coupling; v2 random passes the waveform block; all arms fail decline sampling density |
 | A10a | Restriction review, prefix-causal predictors, precision | Proposed, not frozen | Claude protocol, ledger code and pilot; Codex models and controls | [A10a memo](../docs/audits/2026-11-08-a10a-prefix-predictors-review.md), [proposed protocol](../docs/protocols/a10-prefix-causal-predictors-v1.md); magnitude 10 structural (0.5 mag margins clear the peak distribution only there); causality costs ~0.05 d on real 1910–1959 rows; single-star forecast-gain test ~1/3 power at r≈0.12, estimand resolved by D018; A10b review/control evidence now available |
-| A10b | Model implementation, repaired ledger and full-chain synthetic controls | Complete development pilot; review pending | Codex with independent code/method references | D018 keeps forecast gain confirmatory; [development specification](../docs/protocols/a10b-model-controls-v1.md); no real focal fit or reserved-data access |
+| A10b | Model implementation, repaired ledger and full-chain synthetic controls | Complete development pilot; reviewed in A10c | Codex with independent code/method references | D018 keeps forecast gain confirmatory; [development specification](../docs/protocols/a10b-model-controls-v1.md); no real focal fit or reserved-data access |
+| A10c | Control review; forecast system, OC study and development-fit specification | Proposed, not frozen | Claude review/spec; Codex implementation, OC study and real 1910–1959 fit | [A10c memo](../docs/audits/2026-11-08-a10c-controls-review.md), [protocol](../docs/protocols/a10c-development-fit-v1.md), D020; fallback routing gave duration credit for missing timing; null coefficients negative (end-error coupling); directional matched M3 gives −0.0002 null, +0.0023 injected on A10b scores |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
 | A08 | Implement observational M0, then M1 | After A07 | Agent implementer + other reviewer | Censoring, boundary propagation, calibration |
 | A09 | Add past-only M2/M3 and identifiability simulation | After A08 | Rotate roles | Same state architecture, no future smoothing |
-| A10 | Freeze evaluation | D018 fixes forecast-gain confirmation; prototype/controls complete, baseline/inference pending | Scientific lead | Cutoffs, ledger, final targets and score |
+| A10 | Freeze evaluation | D018 fixes forecast-gain confirmation; A10c specifies the system, OC gate and development fit; then evaluation protocol and Barry's go-ahead | Scientific lead | Cutoffs, ledger, final targets and score |
 
 ## Current blocking information
 
@@ -421,6 +422,31 @@ then specify prefix-causal predictor construction for A10.
 Closing result commit: `b3741b3`; tests and gitleaks CI both pass. Board
 messages 3027 (full handoff) and 3028 (A10 boundary) record the result;
 the reviewed correspondence snapshot is refreshed through those posts.
+
+## Completed tranche — A10c control review and development-fit specification, 8 November 2026
+
+Claude, `main`, base `7d2ec3b`. Owns `scripts/a10c_reaggregate_controls.py`,
+`scripts/a10c_truth_associations.py`, their two outputs in `data/simulations/`,
+the [A10c memo](../docs/audits/2026-11-08-a10c-controls-review.md) and the
+[A10c protocol](../docs/protocols/a10c-development-fit-v1.md), plus the status
+updates. Reads the retained A10b scores (outside Git); writes no source code.
+
+Re-aggregating the A10b scores by route shows two defects:
+
+- forecasts without a covered previous gap turned M3−M2 into M1−M0, supplying
+  0.0011 of the 0.0032-nat injected-effect gain;
+- the duration coefficient is negative under every null case (shared
+  end-error coupling, negative in the measured-gap frame), so the gain test
+  must not leave the sign free.
+
+D020 proposes a directional, matched M3: β ≥ 0, nested in a comparator that
+adds a local gap level. Point marks are primary and P3 is a placebo for
+shared slow state. Next comes a 360-trial OC study with slow-state nulls and
+gating criteria, then the first real 1910–1959 fit. No real data, reserved
+data or real duration–gap association was accessed.
+
+Next: Codex — review A10c, implement §1, run the §2 study, and do the §3 fit
+only if §2 passes.
 
 ## Completed tranche — A10b model and observation-process development, 8 November 2026
 

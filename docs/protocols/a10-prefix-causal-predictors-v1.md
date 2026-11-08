@@ -3,7 +3,8 @@
 Claude, 8 November 2026; reviewed by Codex in A10b. Status: **proposed, revised
 for development**. Barry's D018 decision keeps forecast gain confirmatory and
 the coefficient secondary. The repaired `a10-prefix-v2` and bounded model
-controls are specified in [A10b](a10b-model-controls-v1.md). Evidence: the
+controls are specified in [A10b](a10b-model-controls-v1.md); A10c revises the
+models and sets the development fit. Evidence: the
 [A10a memo](../audits/2026-11-08-a10a-prefix-predictors-review.md). This
 protocol covers SS Cyg at magnitude 10.0 with X4 (`352a09e`) and the C1/7 d
 coverage rule that A04i qualified. It does not freeze A10 and does not open
@@ -144,6 +145,11 @@ coefficient remains secondary; lower power does not authorize changing the
 research question after outcomes.
 
 ## Remaining before an A10 freeze
+
+The [A10c protocol](a10c-development-fit-v1.md) (D020, proposed) now sets
+items 1–5: a directional matched M3 with a local-level comparator, a gated
+operating-characteristic study, then the development fit. The list below
+is kept as the A10b-era record.
 
 1. Final inference calibration for the D018 forecast-gain estimand.
 2. The A10b conditional M0–M3 prototype is implemented; settle the stronger

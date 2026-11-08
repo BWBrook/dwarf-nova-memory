@@ -56,6 +56,17 @@ retention for true, retrospective and prefix durations
 standardized Gaussian precision model for paired forecast gain and slope tests
 (`scripts/a10_precision.py`). Neither is validation evidence.
 
+## A10c (Claude, control re-aggregation and truth check)
+
+`a10c_reaggregated_controls_20261108.json` re-aggregates the retained A10b
+repaired-run scores (outside Git) by forecast route and fitted coefficient,
+and scores the proposed A10c design (matched routing, β ≥ 0) on them
+(`scripts/a10c_reaggregate_controls.py`). `a10c_truth_associations_20261108.json`
+gives duration–gap and gap–gap correlations in the magnitude-10 truth catalogue
+for each v2/v4 timing process: six 400-year histories each, with new
+`a10c-claude-truth-*` seeds (`scripts/a10c_truth_associations.py`). Neither is
+validation evidence.
+
 ## A04h (Claude, morphology only)
 
 `a04h_morphology_targets_20261108.json` holds the real 1910–1959 target vector

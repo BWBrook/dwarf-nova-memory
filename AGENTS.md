@@ -68,6 +68,12 @@ mark fallback. Strict oracle matching leaves 25.9% of its scored issuances on
 R0, so it cannot measure skill lost through extraction. The two-day variant
 delays issuance, not training-record availability. See the A10b audit; stronger
 timing-only baselines and final inference calibration remain unresolved.
+A10c (D020, proposed) re-aggregates the A10b scores. Forecasts lacking a covered
+previous gap let duration stand in for timing, and null duration coefficients
+are negative through shared end-error coupling. It specifies a directional,
+matched M3 (β ≥ 0, duration only where the previous-gap term is present),
+a local-level comparator, a lagged-duration placebo, a gated synthetic OC
+study, and then the first real 1910–1959 fit (`docs/protocols/a10c-development-fit-v1.md`).
 A10 remains unfrozen. No frozen operational
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code

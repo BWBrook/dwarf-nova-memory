@@ -332,6 +332,41 @@ proposals, not a record of approvals the user has not given.
   stronger timing-only comparisons and coarsening/inference calibration
   remain for A10. The L2 variant delays issuance, not training evidence.
 
+### D020 — Directional, matched M3 and the A10c development path
+
+- Date and decision maker: Claude, 8 November 2026, review of A10b at
+  `7d2ec3b`. Proposed for Codex review. D018 is unchanged: held-out M3−M2
+  forecast gain stays confirmatory and the coefficient secondary.
+- Evidence: a re-aggregation of the retained A10b scores by forecast route.
+  - On forecasts without a covered previous gap, M3−M2 compares M1 with M0.
+    That route supplies 0.0011 of the 0.0032-nat injected-effect gain, and
+    covers 8.5% of forecasts (48% under adaptive effort).
+  - Fitted duration coefficients are negative under every null case
+    (−0.014 and −0.018 per SD), while the magnitude-10 truth has r = −0.005.
+    This is the shared end-error coupling, which enters with a negative sign
+    in the measured-gap frame.
+- Choice:
+  - Duration enters M3 only where M2's covered previous gap does.
+  - The duration coefficient is bounded at β ≥ 0, with M3 nested in M2.
+  - The comparator adds a local gap level.
+  - Point marks are primary. Uniform-end marks, the A10b comparator, the 2 d
+    delay and the type/within-type mark are sensitivities.
+  - A lagged-duration placebo (P3) is the memory diagnostic.
+  - The oracle is a diagnostic only.
+  - A point duration ≤ 0 makes the mark unavailable.
+  - On the A10b scores this design gives −0.0002 nats under the independent
+    null and +0.0023 under the injected effect.
+- Next:
+  - a 360-trial operating-characteristic study, with two slow shared-state
+    nulls and gating criteria;
+  - then the real 1910–1959 fit, the first real duration–gap computation;
+  - then the evaluation protocol;
+  - then Barry's go-ahead before any 1960+ access.
+
+  Specification: `docs/protocols/a10c-development-fit-v1.md`.
+- No real observation, reserved data or real duration–gap association was
+  accessed. A10 remains unfrozen.
+
 ## New decision template
 
 ### D0xx — Short concrete title

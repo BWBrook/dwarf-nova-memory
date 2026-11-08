@@ -268,3 +268,12 @@ summary was accessed. The first aborted run and its original-stream full
 replay are development evidence, not unseen validation samples. Published
 aggregate knowledge already disclosed above remains known. D018 records
 Barry's explicit choice to retain forecast gain as confirmatory.
+
+
+#### Claude A10c control-review access entry, 8 November 2026
+
+I read Codex's A10b memo, specification, public tables, and the retained
+synthetic score rows and trial records in `outputs/a10b_controls_repaired_20261108`.
+New synthetic truth catalogues used `a10c-claude-truth-*` seeds. No native
+archive export, real photometry, real duration–gap association or 1960+ data
+was accessed. A10 remains unfrozen.

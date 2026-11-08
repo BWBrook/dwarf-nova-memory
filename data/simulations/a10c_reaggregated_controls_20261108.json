@@ -1,0 +1,4134 @@
+{
+  "source": "outputs/a10b_controls_repaired_20261108",
+  "note": "A10c: re-aggregate the A10b control scores by route and under the proposed A10c design.",
+  "groups": [
+    {
+      "family": "v2-phase",
+      "case": "adaptive",
+      "variant": "oracle_point",
+      "route_M1_share": 0.0082,
+      "beta_duration": {
+        "mean": -0.01573,
+        "trial_sd": 0.03055,
+        "mc95": [
+          -0.04127,
+          0.00981
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "negative_beta_trials": 7,
+      "reported": {
+        "mean": -0.00038,
+        "trial_sd": 0.00201,
+        "mc95": [
+          -0.00206,
+          0.00129
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00034,
+        "trial_sd": 0.00217,
+        "mc95": [
+          -0.00215,
+          0.00147
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -4e-05,
+        "trial_sd": 0.0002,
+        "mc95": [
+          -0.00021,
+          0.00013
+        ],
+        "positive": 6,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -8e-05,
+        "trial_sd": 0.00022,
+        "mc95": [
+          -0.00026,
+          0.0001
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 363,
+          "route_M1_share": 0.011019,
+          "beta_duration": -0.00649,
+          "reported": -0.000253,
+          "route_M3_part": -0.000288,
+          "route_M1_part": 3.5e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 369,
+          "route_M1_share": 0.00542,
+          "beta_duration": 0.01956,
+          "reported": -0.000587,
+          "route_M3_part": -0.000611,
+          "route_M1_part": 2.4e-05,
+          "a10c_design": -0.000611
+        },
+        {
+          "replicate": 2,
+          "issuances": 372,
+          "route_M1_share": 0.005376,
+          "beta_duration": -0.014915,
+          "reported": -9.4e-05,
+          "route_M3_part": -0.000107,
+          "route_M1_part": 1.3e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 362,
+          "route_M1_share": 0.008287,
+          "beta_duration": -0.002056,
+          "reported": 5.8e-05,
+          "route_M3_part": 5.6e-05,
+          "route_M1_part": 2e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 4,
+          "issuances": 359,
+          "route_M1_share": 0.011142,
+          "beta_duration": -0.00071,
+          "reported": 9.1e-05,
+          "route_M3_part": 0.000113,
+          "route_M1_part": -2.2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 371,
+          "route_M1_share": 0.010782,
+          "beta_duration": -0.036061,
+          "reported": -0.004696,
+          "route_M3_part": -0.004834,
+          "route_M1_part": 0.000138,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 375,
+          "route_M1_share": 0.005333,
+          "beta_duration": -0.00431,
+          "reported": -0.00021,
+          "route_M3_part": -0.00021,
+          "route_M1_part": 1e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 378,
+          "route_M1_share": 0.007937,
+          "beta_duration": -0.080872,
+          "reported": 0.002621,
+          "route_M3_part": 0.00315,
+          "route_M1_part": -0.000529,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "adaptive",
+      "variant": "prefix_point",
+      "route_M1_share": 0.4828,
+      "beta_duration": {
+        "mean": -0.00801,
+        "trial_sd": 0.04228,
+        "mc95": [
+          -0.04336,
+          0.02734
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "negative_beta_trials": 4,
+      "reported": {
+        "mean": -0.003,
+        "trial_sd": 0.00398,
+        "mc95": [
+          -0.00633,
+          0.00032
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00319,
+        "trial_sd": 0.00434,
+        "mc95": [
+          -0.00682,
+          0.00044
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.00019,
+        "trial_sd": 0.00145,
+        "mc95": [
+          -0.00103,
+          0.0014
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00129,
+        "trial_sd": 0.00143,
+        "mc95": [
+          -0.00249,
+          -0.0001
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 363,
+          "route_M1_share": 0.523416,
+          "beta_duration": -0.017444,
+          "reported": -0.000968,
+          "route_M3_part": -0.000935,
+          "route_M1_part": -3.3e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 369,
+          "route_M1_share": 0.468835,
+          "beta_duration": 0.047528,
+          "reported": -0.002462,
+          "route_M3_part": -0.002875,
+          "route_M1_part": 0.000414,
+          "a10c_design": -0.002875
+        },
+        {
+          "replicate": 2,
+          "issuances": 372,
+          "route_M1_share": 0.467742,
+          "beta_duration": 0.025767,
+          "reported": -0.00468,
+          "route_M3_part": -0.002051,
+          "route_M1_part": -0.002629,
+          "a10c_design": -0.002051
+        },
+        {
+          "replicate": 3,
+          "issuances": 362,
+          "route_M1_share": 0.464088,
+          "beta_duration": 0.027243,
+          "reported": -0.00321,
+          "route_M3_part": -0.003181,
+          "route_M1_part": -2.9e-05,
+          "a10c_design": -0.003181
+        },
+        {
+          "replicate": 4,
+          "issuances": 359,
+          "route_M1_share": 0.465181,
+          "beta_duration": 0.009381,
+          "reported": -0.002349,
+          "route_M3_part": -0.002242,
+          "route_M1_part": -0.000106,
+          "a10c_design": -0.002242
+        },
+        {
+          "replicate": 5,
+          "issuances": 371,
+          "route_M1_share": 0.45283,
+          "beta_duration": -0.072801,
+          "reported": -0.011366,
+          "route_M3_part": -0.013489,
+          "route_M1_part": 0.002123,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 375,
+          "route_M1_share": 0.533333,
+          "beta_duration": -0.05083,
+          "reported": -0.001558,
+          "route_M3_part": -0.001471,
+          "route_M1_part": -8.6e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 378,
+          "route_M1_share": 0.486772,
+          "beta_duration": -0.032943,
+          "reported": 0.00257,
+          "route_M3_part": 0.000721,
+          "route_M1_part": 0.001848,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "adaptive",
+      "variant": "prefix_uniform_end",
+      "route_M1_share": 0.4824,
+      "beta_duration": {
+        "mean": -0.01043,
+        "trial_sd": 0.0459,
+        "mc95": [
+          -0.04881,
+          0.02796
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "negative_beta_trials": 4,
+      "reported": {
+        "mean": -0.00257,
+        "trial_sd": 0.00384,
+        "mc95": [
+          -0.00578,
+          0.00064
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.003,
+        "trial_sd": 0.00412,
+        "mc95": [
+          -0.00644,
+          0.00044
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.00043,
+        "trial_sd": 0.00116,
+        "mc95": [
+          -0.00054,
+          0.00141
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00126,
+        "trial_sd": 0.00136,
+        "mc95": [
+          -0.0024,
+          -0.00012
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 363,
+          "route_M1_share": 0.520661,
+          "beta_duration": -0.016102,
+          "reported": -0.000716,
+          "route_M3_part": -0.000826,
+          "route_M1_part": 0.00011,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 369,
+          "route_M1_share": 0.468835,
+          "beta_duration": 0.048448,
+          "reported": -0.002009,
+          "route_M3_part": -0.002496,
+          "route_M1_part": 0.000487,
+          "a10c_design": -0.002496
+        },
+        {
+          "replicate": 2,
+          "issuances": 372,
+          "route_M1_share": 0.467742,
+          "beta_duration": 0.024627,
+          "reported": -0.003971,
+          "route_M3_part": -0.002776,
+          "route_M1_part": -0.001195,
+          "a10c_design": -0.002776
+        },
+        {
+          "replicate": 3,
+          "issuances": 362,
+          "route_M1_share": 0.464088,
+          "beta_duration": 0.027463,
+          "reported": -0.002668,
+          "route_M3_part": -0.00265,
+          "route_M1_part": -1.8e-05,
+          "a10c_design": -0.00265
+        },
+        {
+          "replicate": 4,
+          "issuances": 359,
+          "route_M1_share": 0.465181,
+          "beta_duration": 0.009685,
+          "reported": -0.002215,
+          "route_M3_part": -0.002156,
+          "route_M1_part": -5.9e-05,
+          "a10c_design": -0.002156
+        },
+        {
+          "replicate": 5,
+          "issuances": 371,
+          "route_M1_share": 0.45283,
+          "beta_duration": -0.07781,
+          "reported": -0.010592,
+          "route_M3_part": -0.012726,
+          "route_M1_part": 0.002135,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 375,
+          "route_M1_share": 0.533333,
+          "beta_duration": -0.066153,
+          "reported": -0.00145,
+          "route_M3_part": -0.001284,
+          "route_M1_part": -0.000166,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 378,
+          "route_M1_share": 0.486772,
+          "beta_duration": -0.03356,
+          "reported": 0.003072,
+          "route_M3_part": 0.000898,
+          "route_M1_part": 0.002173,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "adaptive",
+      "variant": "retrospective_point",
+      "route_M1_share": 0.4831,
+      "beta_duration": {
+        "mean": -0.00476,
+        "trial_sd": 0.0389,
+        "mc95": [
+          -0.03729,
+          0.02777
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "negative_beta_trials": 4,
+      "reported": {
+        "mean": -0.00265,
+        "trial_sd": 0.00392,
+        "mc95": [
+          -0.00592,
+          0.00063
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00305,
+        "trial_sd": 0.00443,
+        "mc95": [
+          -0.00675,
+          0.00065
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.0004,
+        "trial_sd": 0.00101,
+        "mc95": [
+          -0.00045,
+          0.00125
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00125,
+        "trial_sd": 0.00138,
+        "mc95": [
+          -0.00241,
+          -0.0001
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 363,
+          "route_M1_share": 0.523416,
+          "beta_duration": -0.015692,
+          "reported": -0.000941,
+          "route_M3_part": -0.000711,
+          "route_M1_part": -0.00023,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 369,
+          "route_M1_share": 0.468835,
+          "beta_duration": 0.042686,
+          "reported": -0.002646,
+          "route_M3_part": -0.00305,
+          "route_M1_part": 0.000404,
+          "a10c_design": -0.00305
+        },
+        {
+          "replicate": 2,
+          "issuances": 372,
+          "route_M1_share": 0.467742,
+          "beta_duration": 0.023255,
+          "reported": -0.002751,
+          "route_M3_part": -0.001889,
+          "route_M1_part": -0.000862,
+          "a10c_design": -0.001889
+        },
+        {
+          "replicate": 3,
+          "issuances": 362,
+          "route_M1_share": 0.464088,
+          "beta_duration": 0.027733,
+          "reported": -0.002871,
+          "route_M3_part": -0.002806,
+          "route_M1_part": -6.5e-05,
+          "a10c_design": -0.002806
+        },
+        {
+          "replicate": 4,
+          "issuances": 359,
+          "route_M1_share": 0.465181,
+          "beta_duration": 0.009706,
+          "reported": -0.002195,
+          "route_M3_part": -0.002275,
+          "route_M1_part": 8e-05,
+          "a10c_design": -0.002275
+        },
+        {
+          "replicate": 5,
+          "issuances": 371,
+          "route_M1_share": 0.455526,
+          "beta_duration": -0.073549,
+          "reported": -0.011502,
+          "route_M3_part": -0.0136,
+          "route_M1_part": 0.002099,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 375,
+          "route_M1_share": 0.533333,
+          "beta_duration": -0.009868,
+          "reported": 6.9e-05,
+          "route_M3_part": 4.7e-05,
+          "route_M1_part": 2.2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 378,
+          "route_M1_share": 0.486772,
+          "beta_duration": -0.042368,
+          "reported": 0.001673,
+          "route_M3_part": -8.7e-05,
+          "route_M1_part": 0.00176,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "alternative",
+      "variant": "oracle_point",
+      "route_M1_share": 0.0085,
+      "beta_duration": {
+        "mean": 0.03439,
+        "trial_sd": 0.0214,
+        "mc95": [
+          0.0165,
+          0.05228
+        ],
+        "positive": 8,
+        "trials": 8
+      },
+      "negative_beta_trials": 0,
+      "reported": {
+        "mean": 0.00158,
+        "trial_sd": 0.00628,
+        "mc95": [
+          -0.00367,
+          0.00683
+        ],
+        "positive": 6,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": 0.00128,
+        "trial_sd": 0.00613,
+        "mc95": [
+          -0.00384,
+          0.00641
+        ],
+        "positive": 6,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.0003,
+        "trial_sd": 0.00052,
+        "mc95": [
+          -0.00013,
+          0.00073
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 0.00128,
+        "trial_sd": 0.00613,
+        "mc95": [
+          -0.00384,
+          0.00641
+        ],
+        "positive": 6,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 389,
+          "route_M1_share": 0.007712,
+          "beta_duration": 0.042181,
+          "reported": 0.011769,
+          "route_M3_part": 0.010706,
+          "route_M1_part": 0.001062,
+          "a10c_design": 0.010706
+        },
+        {
+          "replicate": 1,
+          "issuances": 390,
+          "route_M1_share": 0.007692,
+          "beta_duration": 0.019991,
+          "reported": 0.001117,
+          "route_M3_part": 0.00077,
+          "route_M1_part": 0.000347,
+          "a10c_design": 0.00077
+        },
+        {
+          "replicate": 2,
+          "issuances": 411,
+          "route_M1_share": 0.007299,
+          "beta_duration": 0.065132,
+          "reported": 0.008154,
+          "route_M3_part": 0.007725,
+          "route_M1_part": 0.000429,
+          "a10c_design": 0.007725
+        },
+        {
+          "replicate": 3,
+          "issuances": 391,
+          "route_M1_share": 0.007673,
+          "beta_duration": 0.064519,
+          "reported": -0.008481,
+          "route_M3_part": -0.009313,
+          "route_M1_part": 0.000832,
+          "a10c_design": -0.009313
+        },
+        {
+          "replicate": 4,
+          "issuances": 399,
+          "route_M1_share": 0.010025,
+          "beta_duration": 0.034357,
+          "reported": -0.00342,
+          "route_M3_part": -0.003113,
+          "route_M1_part": -0.000307,
+          "a10c_design": -0.003113
+        },
+        {
+          "replicate": 5,
+          "issuances": 403,
+          "route_M1_share": 0.009926,
+          "beta_duration": 0.012368,
+          "reported": 0.001187,
+          "route_M3_part": 0.001455,
+          "route_M1_part": -0.000268,
+          "a10c_design": 0.001455
+        },
+        {
+          "replicate": 6,
+          "issuances": 396,
+          "route_M1_share": 0.007576,
+          "beta_duration": 0.011951,
+          "reported": 0.0021,
+          "route_M3_part": 0.001604,
+          "route_M1_part": 0.000496,
+          "a10c_design": 0.001604
+        },
+        {
+          "replicate": 7,
+          "issuances": 391,
+          "route_M1_share": 0.01023,
+          "beta_duration": 0.024624,
+          "reported": 0.000218,
+          "route_M3_part": 0.000419,
+          "route_M1_part": -0.000201,
+          "a10c_design": 0.000419
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "alternative",
+      "variant": "prefix_point",
+      "route_M1_share": 0.0849,
+      "beta_duration": {
+        "mean": 0.02401,
+        "trial_sd": 0.0209,
+        "mc95": [
+          0.00653,
+          0.04148
+        ],
+        "positive": 7,
+        "trials": 8
+      },
+      "negative_beta_trials": 1,
+      "reported": {
+        "mean": 0.00324,
+        "trial_sd": 0.00321,
+        "mc95": [
+          0.00056,
+          0.00592
+        ],
+        "positive": 7,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": 0.00218,
+        "trial_sd": 0.00244,
+        "mc95": [
+          0.00014,
+          0.00423
+        ],
+        "positive": 6,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.00106,
+        "trial_sd": 0.00133,
+        "mc95": [
+          -5e-05,
+          0.00217
+        ],
+        "positive": 6,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 0.00228,
+        "trial_sd": 0.00231,
+        "mc95": [
+          0.00035,
+          0.00422
+        ],
+        "positive": 6,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 389,
+          "route_M1_share": 0.087404,
+          "beta_duration": 0.015247,
+          "reported": 0.00577,
+          "route_M3_part": 0.004799,
+          "route_M1_part": 0.000972,
+          "a10c_design": 0.004799
+        },
+        {
+          "replicate": 1,
+          "issuances": 390,
+          "route_M1_share": 0.076923,
+          "beta_duration": 0.019746,
+          "reported": 0.003752,
+          "route_M3_part": 0.003914,
+          "route_M1_part": -0.000163,
+          "a10c_design": 0.003914
+        },
+        {
+          "replicate": 2,
+          "issuances": 411,
+          "route_M1_share": 0.072993,
+          "beta_duration": 0.057139,
+          "reported": 0.001958,
+          "route_M3_part": -0.000123,
+          "route_M1_part": 0.002081,
+          "a10c_design": -0.000123
+        },
+        {
+          "replicate": 3,
+          "issuances": 391,
+          "route_M1_share": 0.086957,
+          "beta_duration": 0.045437,
+          "reported": 0.000974,
+          "route_M3_part": 0.000419,
+          "route_M1_part": 0.000554,
+          "a10c_design": 0.000419
+        },
+        {
+          "replicate": 4,
+          "issuances": 399,
+          "route_M1_share": 0.090226,
+          "beta_duration": 0.021172,
+          "reported": 0.002296,
+          "route_M3_part": 0.000641,
+          "route_M1_part": 0.001655,
+          "a10c_design": 0.000641
+        },
+        {
+          "replicate": 5,
+          "issuances": 403,
+          "route_M1_share": 0.086849,
+          "beta_duration": -0.011094,
+          "reported": -0.001806,
+          "route_M3_part": -0.000813,
+          "route_M1_part": -0.000993,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 396,
+          "route_M1_share": 0.085859,
+          "beta_duration": 0.01327,
+          "reported": 0.00416,
+          "route_M3_part": 0.003068,
+          "route_M1_part": 0.001092,
+          "a10c_design": 0.003068
+        },
+        {
+          "replicate": 7,
+          "issuances": 391,
+          "route_M1_share": 0.092072,
+          "beta_duration": 0.031141,
+          "reported": 0.008836,
+          "route_M3_part": 0.005557,
+          "route_M1_part": 0.003279,
+          "a10c_design": 0.005557
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "alternative",
+      "variant": "prefix_uniform_end",
+      "route_M1_share": 0.0849,
+      "beta_duration": {
+        "mean": 0.03566,
+        "trial_sd": 0.02118,
+        "mc95": [
+          0.01795,
+          0.05336
+        ],
+        "positive": 8,
+        "trials": 8
+      },
+      "negative_beta_trials": 0,
+      "reported": {
+        "mean": 0.00713,
+        "trial_sd": 0.00763,
+        "mc95": [
+          0.00074,
+          0.01351
+        ],
+        "positive": 7,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": 0.00636,
+        "trial_sd": 0.00845,
+        "mc95": [
+          -0.00071,
+          0.01343
+        ],
+        "positive": 7,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.00077,
+        "trial_sd": 0.00156,
+        "mc95": [
+          -0.00054,
+          0.00208
+        ],
+        "positive": 6,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 0.00636,
+        "trial_sd": 0.00845,
+        "mc95": [
+          -0.00071,
+          0.01343
+        ],
+        "positive": 7,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 389,
+          "route_M1_share": 0.087404,
+          "beta_duration": 0.013602,
+          "reported": 0.005509,
+          "route_M3_part": 0.004552,
+          "route_M1_part": 0.000957,
+          "a10c_design": 0.004552
+        },
+        {
+          "replicate": 1,
+          "issuances": 390,
+          "route_M1_share": 0.076923,
+          "beta_duration": 0.034112,
+          "reported": 0.005114,
+          "route_M3_part": 0.005578,
+          "route_M1_part": -0.000463,
+          "a10c_design": 0.005578
+        },
+        {
+          "replicate": 2,
+          "issuances": 411,
+          "route_M1_share": 0.072993,
+          "beta_duration": 0.07421,
+          "reported": 0.004717,
+          "route_M3_part": 0.002929,
+          "route_M1_part": 0.001788,
+          "a10c_design": 0.002929
+        },
+        {
+          "replicate": 3,
+          "issuances": 391,
+          "route_M1_share": 0.086957,
+          "beta_duration": 0.058438,
+          "reported": -0.000254,
+          "route_M3_part": -0.00046,
+          "route_M1_part": 0.000206,
+          "a10c_design": -0.00046
+        },
+        {
+          "replicate": 4,
+          "issuances": 399,
+          "route_M1_share": 0.090226,
+          "beta_duration": 0.026914,
+          "reported": 0.003871,
+          "route_M3_part": 0.002438,
+          "route_M1_part": 0.001433,
+          "a10c_design": 0.002438
+        },
+        {
+          "replicate": 5,
+          "issuances": 403,
+          "route_M1_share": 0.086849,
+          "beta_duration": 0.02777,
+          "reported": 0.02474,
+          "route_M3_part": 0.026609,
+          "route_M1_part": -0.001869,
+          "a10c_design": 0.026609
+        },
+        {
+          "replicate": 6,
+          "issuances": 396,
+          "route_M1_share": 0.085859,
+          "beta_duration": 0.013188,
+          "reported": 0.003521,
+          "route_M3_part": 0.002784,
+          "route_M1_part": 0.000737,
+          "a10c_design": 0.002784
+        },
+        {
+          "replicate": 7,
+          "issuances": 391,
+          "route_M1_share": 0.092072,
+          "beta_duration": 0.037017,
+          "reported": 0.009808,
+          "route_M3_part": 0.006428,
+          "route_M1_part": 0.003381,
+          "a10c_design": 0.006428
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "alternative",
+      "variant": "retrospective_point",
+      "route_M1_share": 0.0849,
+      "beta_duration": {
+        "mean": 0.03846,
+        "trial_sd": 0.01875,
+        "mc95": [
+          0.02279,
+          0.05414
+        ],
+        "positive": 8,
+        "trials": 8
+      },
+      "negative_beta_trials": 0,
+      "reported": {
+        "mean": 0.00378,
+        "trial_sd": 0.00278,
+        "mc95": [
+          0.00145,
+          0.0061
+        ],
+        "positive": 7,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": 0.00398,
+        "trial_sd": 0.00322,
+        "mc95": [
+          0.00129,
+          0.00667
+        ],
+        "positive": 7,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00021,
+        "trial_sd": 0.00204,
+        "mc95": [
+          -0.00191,
+          0.0015
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 0.00398,
+        "trial_sd": 0.00322,
+        "mc95": [
+          0.00129,
+          0.00667
+        ],
+        "positive": 7,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 389,
+          "route_M1_share": 0.087404,
+          "beta_duration": 0.014055,
+          "reported": 0.004904,
+          "route_M3_part": 0.004833,
+          "route_M1_part": 7.1e-05,
+          "a10c_design": 0.004833
+        },
+        {
+          "replicate": 1,
+          "issuances": 390,
+          "route_M1_share": 0.076923,
+          "beta_duration": 0.048061,
+          "reported": 0.004741,
+          "route_M3_part": 0.005089,
+          "route_M1_part": -0.000348,
+          "a10c_design": 0.005089
+        },
+        {
+          "replicate": 2,
+          "issuances": 411,
+          "route_M1_share": 0.072993,
+          "beta_duration": 0.072843,
+          "reported": 0.000415,
+          "route_M3_part": -0.002237,
+          "route_M1_part": 0.002652,
+          "a10c_design": -0.002237
+        },
+        {
+          "replicate": 3,
+          "issuances": 391,
+          "route_M1_share": 0.086957,
+          "beta_duration": 0.053027,
+          "reported": -0.000586,
+          "route_M3_part": 0.00081,
+          "route_M1_part": -0.001395,
+          "a10c_design": 0.00081
+        },
+        {
+          "replicate": 4,
+          "issuances": 399,
+          "route_M1_share": 0.090226,
+          "beta_duration": 0.031155,
+          "reported": 0.003703,
+          "route_M3_part": 0.003609,
+          "route_M1_part": 9.4e-05,
+          "a10c_design": 0.003609
+        },
+        {
+          "replicate": 5,
+          "issuances": 403,
+          "route_M1_share": 0.086849,
+          "beta_duration": 0.034826,
+          "reported": 0.003407,
+          "route_M3_part": 0.007546,
+          "route_M1_part": -0.004139,
+          "a10c_design": 0.007546
+        },
+        {
+          "replicate": 6,
+          "issuances": 396,
+          "route_M1_share": 0.085859,
+          "beta_duration": 0.022164,
+          "reported": 0.008024,
+          "route_M3_part": 0.006279,
+          "route_M1_part": 0.001745,
+          "a10c_design": 0.006279
+        },
+        {
+          "replicate": 7,
+          "issuances": 391,
+          "route_M1_share": 0.092072,
+          "beta_duration": 0.031589,
+          "reported": 0.005603,
+          "route_M3_part": 0.005924,
+          "route_M1_part": -0.000321,
+          "a10c_design": 0.005924
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "gross",
+      "variant": "oracle_point",
+      "route_M1_share": 0.0076,
+      "beta_duration": {
+        "mean": -0.00508,
+        "trial_sd": 0.01856,
+        "mc95": [
+          -0.0206,
+          0.01045
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "negative_beta_trials": 5,
+      "reported": {
+        "mean": -0.00041,
+        "trial_sd": 0.00138,
+        "mc95": [
+          -0.00156,
+          0.00075
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00035,
+        "trial_sd": 0.0014,
+        "mc95": [
+          -0.00152,
+          0.00082
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -6e-05,
+        "trial_sd": 0.00013,
+        "mc95": [
+          -0.00017,
+          5e-05
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00033,
+        "trial_sd": 0.00139,
+        "mc95": [
+          -0.00149,
+          0.00083
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 391,
+          "route_M1_share": 0.01023,
+          "beta_duration": 0.014283,
+          "reported": 0.000764,
+          "route_M3_part": 0.000798,
+          "route_M1_part": -3.4e-05,
+          "a10c_design": 0.000798
+        },
+        {
+          "replicate": 1,
+          "issuances": 391,
+          "route_M1_share": 0.005115,
+          "beta_duration": 0.004488,
+          "reported": 0.000265,
+          "route_M3_part": 0.000271,
+          "route_M1_part": -5e-06,
+          "a10c_design": 0.000271
+        },
+        {
+          "replicate": 2,
+          "issuances": 398,
+          "route_M1_share": 0.005025,
+          "beta_duration": -0.000782,
+          "reported": 1.6e-05,
+          "route_M3_part": 1.8e-05,
+          "route_M1_part": -1e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 390,
+          "route_M1_share": 0.007692,
+          "beta_duration": 0.016759,
+          "reported": -0.003678,
+          "route_M3_part": -0.00369,
+          "route_M1_part": 1.2e-05,
+          "a10c_design": -0.00369
+        },
+        {
+          "replicate": 4,
+          "issuances": 391,
+          "route_M1_share": 0.01023,
+          "beta_duration": -0.033126,
+          "reported": -0.000258,
+          "route_M3_part": 0.000114,
+          "route_M1_part": -0.000372,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 390,
+          "route_M1_share": 0.007692,
+          "beta_duration": -0.008321,
+          "reported": 0.000378,
+          "route_M3_part": 0.000356,
+          "route_M1_part": 2.2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 400,
+          "route_M1_share": 0.005,
+          "beta_duration": -0.003333,
+          "reported": -0.000409,
+          "route_M3_part": -0.000411,
+          "route_M1_part": 2e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 404,
+          "route_M1_share": 0.009901,
+          "beta_duration": -0.030579,
+          "reported": -0.000322,
+          "route_M3_part": -0.000234,
+          "route_M1_part": -8.8e-05,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "gross",
+      "variant": "prefix_point",
+      "route_M1_share": 0.0837,
+      "beta_duration": {
+        "mean": -0.00494,
+        "trial_sd": 0.0219,
+        "mc95": [
+          -0.02325,
+          0.01337
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "negative_beta_trials": 4,
+      "reported": {
+        "mean": -0.00393,
+        "trial_sd": 0.00586,
+        "mc95": [
+          -0.00883,
+          0.00097
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.0035,
+        "trial_sd": 0.00572,
+        "mc95": [
+          -0.00828,
+          0.00129
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00043,
+        "trial_sd": 0.00056,
+        "mc95": [
+          -0.0009,
+          4e-05
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00082,
+        "trial_sd": 0.00264,
+        "mc95": [
+          -0.00302,
+          0.00139
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 391,
+          "route_M1_share": 0.084399,
+          "beta_duration": 0.017064,
+          "reported": 0.000289,
+          "route_M3_part": 0.000609,
+          "route_M1_part": -0.00032,
+          "a10c_design": 0.000609
+        },
+        {
+          "replicate": 1,
+          "issuances": 391,
+          "route_M1_share": 0.081841,
+          "beta_duration": 0.00038,
+          "reported": 8e-05,
+          "route_M3_part": 3.7e-05,
+          "route_M1_part": 4.3e-05,
+          "a10c_design": 3.7e-05
+        },
+        {
+          "replicate": 2,
+          "issuances": 398,
+          "route_M1_share": 0.090452,
+          "beta_duration": 0.007413,
+          "reported": -0.000452,
+          "route_M3_part": 0.000137,
+          "route_M1_part": -0.000589,
+          "a10c_design": 0.000137
+        },
+        {
+          "replicate": 3,
+          "issuances": 390,
+          "route_M1_share": 0.076923,
+          "beta_duration": 0.024851,
+          "reported": -0.007958,
+          "route_M3_part": -0.007325,
+          "route_M1_part": -0.000633,
+          "a10c_design": -0.007325
+        },
+        {
+          "replicate": 4,
+          "issuances": 391,
+          "route_M1_share": 0.089514,
+          "beta_duration": -0.011671,
+          "reported": -0.000884,
+          "route_M3_part": -0.00073,
+          "route_M1_part": -0.000154,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 390,
+          "route_M1_share": 0.082051,
+          "beta_duration": -0.013356,
+          "reported": 0.000301,
+          "route_M3_part": 0.000228,
+          "route_M1_part": 7.2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 400,
+          "route_M1_share": 0.0775,
+          "beta_duration": -0.042392,
+          "reported": -0.015839,
+          "route_M3_part": -0.015636,
+          "route_M1_part": -0.000204,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 404,
+          "route_M1_share": 0.086634,
+          "beta_duration": -0.021821,
+          "reported": -0.006957,
+          "route_M3_part": -0.0053,
+          "route_M1_part": -0.001657,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "gross",
+      "variant": "prefix_uniform_end",
+      "route_M1_share": 0.0833,
+      "beta_duration": {
+        "mean": -0.00414,
+        "trial_sd": 0.0263,
+        "mc95": [
+          -0.02613,
+          0.01785
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "negative_beta_trials": 5,
+      "reported": {
+        "mean": -0.00383,
+        "trial_sd": 0.00586,
+        "mc95": [
+          -0.00873,
+          0.00107
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00343,
+        "trial_sd": 0.00582,
+        "mc95": [
+          -0.0083,
+          0.00143
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.0004,
+        "trial_sd": 0.00045,
+        "mc95": [
+          -0.00077,
+          -2e-05
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00081,
+        "trial_sd": 0.00255,
+        "mc95": [
+          -0.00295,
+          0.00132
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 391,
+          "route_M1_share": 0.081841,
+          "beta_duration": 0.019674,
+          "reported": -0.00012,
+          "route_M3_part": 0.000466,
+          "route_M1_part": -0.000586,
+          "a10c_design": 0.000466
+        },
+        {
+          "replicate": 1,
+          "issuances": 391,
+          "route_M1_share": 0.081841,
+          "beta_duration": -0.002015,
+          "reported": -0.000164,
+          "route_M3_part": -0.000208,
+          "route_M1_part": 4.4e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 2,
+          "issuances": 398,
+          "route_M1_share": 0.090452,
+          "beta_duration": 0.018854,
+          "reported": -0.000312,
+          "route_M3_part": 0.00014,
+          "route_M1_part": -0.000452,
+          "a10c_design": 0.00014
+        },
+        {
+          "replicate": 3,
+          "issuances": 390,
+          "route_M1_share": 0.076923,
+          "beta_duration": 0.027562,
+          "reported": -0.007592,
+          "route_M3_part": -0.007122,
+          "route_M1_part": -0.000469,
+          "a10c_design": -0.007122
+        },
+        {
+          "replicate": 4,
+          "issuances": 391,
+          "route_M1_share": 0.089514,
+          "beta_duration": -0.011839,
+          "reported": -0.000556,
+          "route_M3_part": -0.000462,
+          "route_M1_part": -9.4e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 390,
+          "route_M1_share": 0.082051,
+          "beta_duration": -0.011077,
+          "reported": 0.000268,
+          "route_M3_part": 0.000336,
+          "route_M1_part": -6.8e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 400,
+          "route_M1_share": 0.0775,
+          "beta_duration": -0.052141,
+          "reported": -0.016292,
+          "route_M3_part": -0.016103,
+          "route_M1_part": -0.000189,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 404,
+          "route_M1_share": 0.086634,
+          "beta_duration": -0.022124,
+          "reported": -0.005873,
+          "route_M3_part": -0.004517,
+          "route_M1_part": -0.001356,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "gross",
+      "variant": "retrospective_point",
+      "route_M1_share": 0.0833,
+      "beta_duration": {
+        "mean": -0.00412,
+        "trial_sd": 0.01809,
+        "mc95": [
+          -0.01925,
+          0.01101
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "negative_beta_trials": 4,
+      "reported": {
+        "mean": -0.00287,
+        "trial_sd": 0.00404,
+        "mc95": [
+          -0.00625,
+          0.00051
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00245,
+        "trial_sd": 0.00364,
+        "mc95": [
+          -0.00549,
+          0.00059
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00042,
+        "trial_sd": 0.0007,
+        "mc95": [
+          -0.001,
+          0.00017
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00073,
+        "trial_sd": 0.00258,
+        "mc95": [
+          -0.00289,
+          0.00143
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 391,
+          "route_M1_share": 0.084399,
+          "beta_duration": 0.010891,
+          "reported": 0.000405,
+          "route_M3_part": 0.000766,
+          "route_M1_part": -0.000361,
+          "a10c_design": 0.000766
+        },
+        {
+          "replicate": 1,
+          "issuances": 391,
+          "route_M1_share": 0.081841,
+          "beta_duration": 0.003419,
+          "reported": 0.000244,
+          "route_M3_part": 0.00023,
+          "route_M1_part": 1.4e-05,
+          "a10c_design": 0.00023
+        },
+        {
+          "replicate": 2,
+          "issuances": 398,
+          "route_M1_share": 0.090452,
+          "beta_duration": 0.003909,
+          "reported": -1.3e-05,
+          "route_M3_part": 0.000258,
+          "route_M1_part": -0.000271,
+          "a10c_design": 0.000258
+        },
+        {
+          "replicate": 3,
+          "issuances": 390,
+          "route_M1_share": 0.076923,
+          "beta_duration": 0.025578,
+          "reported": -0.008228,
+          "route_M3_part": -0.007087,
+          "route_M1_part": -0.001141,
+          "a10c_design": -0.007087
+        },
+        {
+          "replicate": 4,
+          "issuances": 391,
+          "route_M1_share": 0.089514,
+          "beta_duration": -0.012642,
+          "reported": -0.000717,
+          "route_M3_part": -0.00089,
+          "route_M1_part": 0.000173,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 390,
+          "route_M1_share": 0.079487,
+          "beta_duration": -0.013413,
+          "reported": 0.000287,
+          "route_M3_part": 0.00023,
+          "route_M1_part": 5.7e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 400,
+          "route_M1_share": 0.0775,
+          "beta_duration": -0.026396,
+          "reported": -0.00771,
+          "route_M3_part": -0.007705,
+          "route_M1_part": -5e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 404,
+          "route_M1_share": 0.086634,
+          "beta_duration": -0.024308,
+          "reported": -0.007248,
+          "route_M3_part": -0.005439,
+          "route_M1_part": -0.001809,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "null",
+      "variant": "oracle_point",
+      "route_M1_share": 0.0077,
+      "beta_duration": {
+        "mean": -0.00747,
+        "trial_sd": 0.01743,
+        "mc95": [
+          -0.02204,
+          0.0071
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "negative_beta_trials": 6,
+      "reported": {
+        "mean": 0.00011,
+        "trial_sd": 0.0005,
+        "mc95": [
+          -0.00031,
+          0.00053
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": 0.00018,
+        "trial_sd": 0.00047,
+        "mc95": [
+          -0.00022,
+          0.00057
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -7e-05,
+        "trial_sd": 0.00013,
+        "mc95": [
+          -0.00017,
+          4e-05
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 0.00013,
+        "trial_sd": 0.00031,
+        "mc95": [
+          -0.00012,
+          0.00039
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.010363,
+          "beta_duration": 0.015057,
+          "reported": 0.000841,
+          "route_M3_part": 0.00088,
+          "route_M1_part": -3.9e-05,
+          "a10c_design": 0.00088
+        },
+        {
+          "replicate": 1,
+          "issuances": 383,
+          "route_M1_share": 0.005222,
+          "beta_duration": 0.00686,
+          "reported": 0.000184,
+          "route_M3_part": 0.000195,
+          "route_M1_part": -1.1e-05,
+          "a10c_design": 0.000195
+        },
+        {
+          "replicate": 2,
+          "issuances": 393,
+          "route_M1_share": 0.005089,
+          "beta_duration": -0.002222,
+          "reported": -3.7e-05,
+          "route_M3_part": -3.3e-05,
+          "route_M1_part": -4e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 383,
+          "route_M1_share": 0.007833,
+          "beta_duration": -0.002107,
+          "reported": 0.000377,
+          "route_M3_part": 0.00038,
+          "route_M1_part": -3e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 4,
+          "issuances": 384,
+          "route_M1_share": 0.010417,
+          "beta_duration": -0.033211,
+          "reported": -0.000442,
+          "route_M3_part": -7.3e-05,
+          "route_M1_part": -0.000369,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 385,
+          "route_M1_share": 0.007792,
+          "beta_duration": -0.004487,
+          "reported": 0.000197,
+          "route_M3_part": 0.000194,
+          "route_M1_part": 3e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 394,
+          "route_M1_share": 0.005076,
+          "beta_duration": -0.006015,
+          "reported": -0.000709,
+          "route_M3_part": -0.00069,
+          "route_M1_part": -2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 400,
+          "route_M1_share": 0.01,
+          "beta_duration": -0.033601,
+          "reported": 0.000471,
+          "route_M3_part": 0.000568,
+          "route_M1_part": -9.8e-05,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "null",
+      "variant": "prefix_point",
+      "route_M1_share": 0.0849,
+      "beta_duration": {
+        "mean": -0.01394,
+        "trial_sd": 0.02034,
+        "mc95": [
+          -0.03094,
+          0.00307
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "negative_beta_trials": 6,
+      "reported": {
+        "mean": -0.00268,
+        "trial_sd": 0.00355,
+        "mc95": [
+          -0.00565,
+          0.00028
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00221,
+        "trial_sd": 0.00321,
+        "mc95": [
+          -0.00489,
+          0.00048
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00047,
+        "trial_sd": 0.00077,
+        "mc95": [
+          -0.00112,
+          0.00017
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00022,
+        "trial_sd": 0.00045,
+        "mc95": [
+          -0.00059,
+          0.00016
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.085492,
+          "beta_duration": 0.017664,
+          "reported": -0.001596,
+          "route_M3_part": -0.001252,
+          "route_M1_part": -0.000344,
+          "a10c_design": -0.001252
+        },
+        {
+          "replicate": 1,
+          "issuances": 383,
+          "route_M1_share": 0.083551,
+          "beta_duration": -0.002658,
+          "reported": -0.000164,
+          "route_M3_part": -0.000227,
+          "route_M1_part": 6.4e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 2,
+          "issuances": 393,
+          "route_M1_share": 0.091603,
+          "beta_duration": -0.00921,
+          "reported": 0.000466,
+          "route_M3_part": 0.000508,
+          "route_M1_part": -4.2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 383,
+          "route_M1_share": 0.078329,
+          "beta_duration": 0.001711,
+          "reported": -0.000469,
+          "route_M3_part": -0.000481,
+          "route_M1_part": 1.2e-05,
+          "a10c_design": -0.000481
+        },
+        {
+          "replicate": 4,
+          "issuances": 384,
+          "route_M1_share": 0.091146,
+          "beta_duration": -0.041683,
+          "reported": -0.007326,
+          "route_M3_part": -0.005799,
+          "route_M1_part": -0.001528,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 385,
+          "route_M1_share": 0.083117,
+          "beta_duration": -0.014189,
+          "reported": 4.6e-05,
+          "route_M3_part": -1.3e-05,
+          "route_M1_part": 5.9e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 394,
+          "route_M1_share": 0.07868,
+          "beta_duration": -0.039043,
+          "reported": -0.008639,
+          "route_M3_part": -0.00847,
+          "route_M1_part": -0.000169,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 400,
+          "route_M1_share": 0.0875,
+          "beta_duration": -0.024075,
+          "reported": -0.003766,
+          "route_M3_part": -0.001915,
+          "route_M1_part": -0.001851,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "null",
+      "variant": "prefix_uniform_end",
+      "route_M1_share": 0.0846,
+      "beta_duration": {
+        "mean": -0.01685,
+        "trial_sd": 0.0234,
+        "mc95": [
+          -0.03641,
+          0.00272
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "negative_beta_trials": 6,
+      "reported": {
+        "mean": -0.00253,
+        "trial_sd": 0.00367,
+        "mc95": [
+          -0.0056,
+          0.00053
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00204,
+        "trial_sd": 0.00334,
+        "mc95": [
+          -0.00483,
+          0.00075
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00049,
+        "trial_sd": 0.00074,
+        "mc95": [
+          -0.00111,
+          0.00013
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.0002,
+        "trial_sd": 0.00055,
+        "mc95": [
+          -0.00067,
+          0.00026
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.082902,
+          "beta_duration": 0.019912,
+          "reported": -0.002223,
+          "route_M3_part": -0.001574,
+          "route_M1_part": -0.000649,
+          "a10c_design": -0.001574
+        },
+        {
+          "replicate": 1,
+          "issuances": 383,
+          "route_M1_share": 0.083551,
+          "beta_duration": -0.006291,
+          "reported": -0.00045,
+          "route_M3_part": -0.000519,
+          "route_M1_part": 6.9e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 2,
+          "issuances": 393,
+          "route_M1_share": 0.091603,
+          "beta_duration": -0.014844,
+          "reported": 0.001221,
+          "route_M3_part": 0.001145,
+          "route_M1_part": 7.6e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 383,
+          "route_M1_share": 0.078329,
+          "beta_duration": 0.000145,
+          "reported": 3.6e-05,
+          "route_M3_part": -3.4e-05,
+          "route_M1_part": 7.1e-05,
+          "a10c_design": -3.4e-05
+        },
+        {
+          "replicate": 4,
+          "issuances": 384,
+          "route_M1_share": 0.091146,
+          "beta_duration": -0.048786,
+          "reported": -0.007416,
+          "route_M3_part": -0.005692,
+          "route_M1_part": -0.001724,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 385,
+          "route_M1_share": 0.083117,
+          "beta_duration": -0.012156,
+          "reported": 9.2e-05,
+          "route_M3_part": 0.000171,
+          "route_M1_part": -7.9e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 394,
+          "route_M1_share": 0.07868,
+          "beta_duration": -0.048085,
+          "reported": -0.00871,
+          "route_M3_part": -0.008555,
+          "route_M1_part": -0.000154,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 400,
+          "route_M1_share": 0.0875,
+          "beta_duration": -0.024655,
+          "reported": -0.002801,
+          "route_M3_part": -0.00127,
+          "route_M1_part": -0.001531,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "null",
+      "variant": "retrospective_point",
+      "route_M1_share": 0.0849,
+      "beta_duration": {
+        "mean": -0.01321,
+        "trial_sd": 0.01736,
+        "mc95": [
+          -0.02772,
+          0.00131
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "negative_beta_trials": 6,
+      "reported": {
+        "mean": -0.00184,
+        "trial_sd": 0.00241,
+        "mc95": [
+          -0.00386,
+          0.00017
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00159,
+        "trial_sd": 0.0022,
+        "mc95": [
+          -0.00343,
+          0.00025
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00026,
+        "trial_sd": 0.00074,
+        "mc95": [
+          -0.00087,
+          0.00036
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00016,
+        "trial_sd": 0.0003,
+        "mc95": [
+          -0.00041,
+          9e-05
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.085492,
+          "beta_duration": 0.011036,
+          "reported": -0.000942,
+          "route_M3_part": -0.000555,
+          "route_M1_part": -0.000386,
+          "a10c_design": -0.000555
+        },
+        {
+          "replicate": 1,
+          "issuances": 383,
+          "route_M1_share": 0.083551,
+          "beta_duration": -0.000105,
+          "reported": 2.1e-05,
+          "route_M3_part": -5e-06,
+          "route_M1_part": 2.6e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 2,
+          "issuances": 393,
+          "route_M1_share": 0.091603,
+          "beta_duration": -0.013927,
+          "reported": 0.000321,
+          "route_M3_part": 1.3e-05,
+          "route_M1_part": 0.000308,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 383,
+          "route_M1_share": 0.078329,
+          "beta_duration": 0.00271,
+          "reported": -0.000592,
+          "route_M3_part": -0.000722,
+          "route_M1_part": 0.00013,
+          "a10c_design": -0.000722
+        },
+        {
+          "replicate": 4,
+          "issuances": 384,
+          "route_M1_share": 0.091146,
+          "beta_duration": -0.042001,
+          "reported": -0.006324,
+          "route_M3_part": -0.006138,
+          "route_M1_part": -0.000186,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 385,
+          "route_M1_share": 0.083117,
+          "beta_duration": -0.014249,
+          "reported": 5.2e-05,
+          "route_M3_part": -1e-05,
+          "route_M1_part": 6.2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 394,
+          "route_M1_share": 0.07868,
+          "beta_duration": -0.022618,
+          "reported": -0.003518,
+          "route_M3_part": -0.003528,
+          "route_M1_part": 1e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 400,
+          "route_M1_share": 0.0875,
+          "beta_duration": -0.026524,
+          "reported": -0.003772,
+          "route_M3_part": -0.001764,
+          "route_M1_part": -0.002008,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "offset",
+      "variant": "oracle_point",
+      "route_M1_share": 0.0064,
+      "beta_duration": {
+        "mean": -0.01031,
+        "trial_sd": 0.02027,
+        "mc95": [
+          -0.02726,
+          0.00664
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "negative_beta_trials": 5,
+      "reported": {
+        "mean": -0.00038,
+        "trial_sd": 0.00107,
+        "mc95": [
+          -0.00127,
+          0.00052
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00029,
+        "trial_sd": 0.001,
+        "mc95": [
+          -0.00113,
+          0.00054
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -8e-05,
+        "trial_sd": 0.00014,
+        "mc95": [
+          -0.0002,
+          4e-05
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 0.00017,
+        "trial_sd": 0.00047,
+        "mc95": [
+          -0.00022,
+          0.00056
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.002591,
+          "beta_duration": 0.013128,
+          "reported": 0.0013,
+          "route_M3_part": 0.001329,
+          "route_M1_part": -2.9e-05,
+          "a10c_design": 0.001329
+        },
+        {
+          "replicate": 1,
+          "issuances": 384,
+          "route_M1_share": 0.005208,
+          "beta_duration": 0.0054,
+          "reported": 2e-05,
+          "route_M3_part": 3.1e-05,
+          "route_M1_part": -1.1e-05,
+          "a10c_design": 3.1e-05
+        },
+        {
+          "replicate": 2,
+          "issuances": 395,
+          "route_M1_share": 0.007595,
+          "beta_duration": -0.007022,
+          "reported": -4.8e-05,
+          "route_M3_part": -3.6e-05,
+          "route_M1_part": -1.2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 385,
+          "route_M1_share": 0.007792,
+          "beta_duration": -0.001353,
+          "reported": 0.000236,
+          "route_M3_part": 0.000243,
+          "route_M1_part": -7e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 4,
+          "issuances": 387,
+          "route_M1_share": 0.010336,
+          "beta_duration": -0.038466,
+          "reported": -0.001338,
+          "route_M3_part": -0.000917,
+          "route_M1_part": -0.000421,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 388,
+          "route_M1_share": 0.002577,
+          "beta_duration": 0.0001,
+          "reported": -0.0,
+          "route_M3_part": -4e-06,
+          "route_M1_part": 4e-06,
+          "a10c_design": -4e-06
+        },
+        {
+          "replicate": 6,
+          "issuances": 396,
+          "route_M1_share": 0.005051,
+          "beta_duration": -0.01095,
+          "reported": -0.001027,
+          "route_M3_part": -0.000969,
+          "route_M1_part": -5.8e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 399,
+          "route_M1_share": 0.010025,
+          "beta_duration": -0.043303,
+          "reported": -0.002147,
+          "route_M3_part": -0.002028,
+          "route_M1_part": -0.000119,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "offset",
+      "variant": "prefix_point",
+      "route_M1_share": 0.083,
+      "beta_duration": {
+        "mean": -0.01385,
+        "trial_sd": 0.02061,
+        "mc95": [
+          -0.03108,
+          0.00338
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "negative_beta_trials": 6,
+      "reported": {
+        "mean": -0.0023,
+        "trial_sd": 0.00296,
+        "mc95": [
+          -0.00478,
+          0.00017
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00178,
+        "trial_sd": 0.00286,
+        "mc95": [
+          -0.00417,
+          0.00062
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00053,
+        "trial_sd": 0.00067,
+        "mc95": [
+          -0.00109,
+          3e-05
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00032,
+        "trial_sd": 0.0006,
+        "mc95": [
+          -0.00082,
+          0.00018
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.080311,
+          "beta_duration": 0.024447,
+          "reported": -0.002404,
+          "route_M3_part": -0.001505,
+          "route_M1_part": -0.000898,
+          "a10c_design": -0.001505
+        },
+        {
+          "replicate": 1,
+          "issuances": 384,
+          "route_M1_share": 0.085938,
+          "beta_duration": -0.007241,
+          "reported": -0.000923,
+          "route_M3_part": -0.000947,
+          "route_M1_part": 2.4e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 2,
+          "issuances": 395,
+          "route_M1_share": 0.088608,
+          "beta_duration": -0.018511,
+          "reported": -0.000114,
+          "route_M3_part": -5.9e-05,
+          "route_M1_part": -5.5e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 385,
+          "route_M1_share": 0.085714,
+          "beta_duration": 0.003278,
+          "reported": -0.000818,
+          "route_M3_part": -0.001018,
+          "route_M1_part": 0.0002,
+          "a10c_design": -0.001018
+        },
+        {
+          "replicate": 4,
+          "issuances": 387,
+          "route_M1_share": 0.085271,
+          "beta_duration": -0.037667,
+          "reported": -0.008432,
+          "route_M3_part": -0.007289,
+          "route_M1_part": -0.001143,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 388,
+          "route_M1_share": 0.079897,
+          "beta_duration": -0.014687,
+          "reported": -0.000639,
+          "route_M3_part": -0.000287,
+          "route_M1_part": -0.000352,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 396,
+          "route_M1_share": 0.073232,
+          "beta_duration": -0.034893,
+          "reported": -0.004997,
+          "route_M3_part": -0.00474,
+          "route_M1_part": -0.000257,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 399,
+          "route_M1_share": 0.085213,
+          "beta_duration": -0.025546,
+          "reported": -0.000103,
+          "route_M3_part": 0.001634,
+          "route_M1_part": -0.001737,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "offset",
+      "variant": "prefix_uniform_end",
+      "route_M1_share": 0.0827,
+      "beta_duration": {
+        "mean": -0.0166,
+        "trial_sd": 0.02208,
+        "mc95": [
+          -0.03506,
+          0.00186
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "negative_beta_trials": 6,
+      "reported": {
+        "mean": -0.00211,
+        "trial_sd": 0.00191,
+        "mc95": [
+          -0.00371,
+          -0.00051
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00186,
+        "trial_sd": 0.00222,
+        "mc95": [
+          -0.00372,
+          -1e-05
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00024,
+        "trial_sd": 0.00078,
+        "mc95": [
+          -0.00089,
+          0.00041
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00057,
+        "trial_sd": 0.00131,
+        "mc95": [
+          -0.00166,
+          0.00052
+        ],
+        "positive": 0,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.080311,
+          "beta_duration": 0.021924,
+          "reported": -0.004388,
+          "route_M3_part": -0.003723,
+          "route_M1_part": -0.000665,
+          "a10c_design": -0.003723
+        },
+        {
+          "replicate": 1,
+          "issuances": 384,
+          "route_M1_share": 0.085938,
+          "beta_duration": -0.01241,
+          "reported": -0.001199,
+          "route_M3_part": -0.001218,
+          "route_M1_part": 1.8e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 2,
+          "issuances": 395,
+          "route_M1_share": 0.088608,
+          "beta_duration": -0.020133,
+          "reported": -0.000176,
+          "route_M3_part": -5e-05,
+          "route_M1_part": -0.000126,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 385,
+          "route_M1_share": 0.085714,
+          "beta_duration": 0.003451,
+          "reported": -0.000633,
+          "route_M3_part": -0.000844,
+          "route_M1_part": 0.000211,
+          "a10c_design": -0.000844
+        },
+        {
+          "replicate": 4,
+          "issuances": 387,
+          "route_M1_share": 0.082687,
+          "beta_duration": -0.047435,
+          "reported": -0.003982,
+          "route_M3_part": -0.005033,
+          "route_M1_part": 0.001051,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 388,
+          "route_M1_share": 0.079897,
+          "beta_duration": -0.013367,
+          "reported": -0.000586,
+          "route_M3_part": -3.3e-05,
+          "route_M1_part": -0.000553,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 396,
+          "route_M1_share": 0.073232,
+          "beta_duration": -0.036556,
+          "reported": -0.00474,
+          "route_M3_part": -0.004529,
+          "route_M1_part": -0.000211,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 399,
+          "route_M1_share": 0.085213,
+          "beta_duration": -0.028249,
+          "reported": -0.001147,
+          "route_M3_part": 0.000518,
+          "route_M1_part": -0.001665,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "offset",
+      "variant": "retrospective_point",
+      "route_M1_share": 0.0827,
+      "beta_duration": {
+        "mean": -0.01515,
+        "trial_sd": 0.01627,
+        "mc95": [
+          -0.02876,
+          -0.00154
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "negative_beta_trials": 7,
+      "reported": {
+        "mean": -0.00116,
+        "trial_sd": 0.00162,
+        "mc95": [
+          -0.00252,
+          0.00019
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00105,
+        "trial_sd": 0.00191,
+        "mc95": [
+          -0.00265,
+          0.00054
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": -0.00011,
+        "trial_sd": 0.00089,
+        "mc95": [
+          -0.00085,
+          0.00064
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 5e-05,
+        "trial_sd": 0.00015,
+        "mc95": [
+          -7e-05,
+          0.00017
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.080311,
+          "beta_duration": 0.012967,
+          "reported": -2.7e-05,
+          "route_M3_part": 0.000412,
+          "route_M1_part": -0.000439,
+          "a10c_design": 0.000412
+        },
+        {
+          "replicate": 1,
+          "issuances": 384,
+          "route_M1_share": 0.085938,
+          "beta_duration": -0.008879,
+          "reported": -0.000375,
+          "route_M3_part": -0.00047,
+          "route_M1_part": 9.5e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 2,
+          "issuances": 395,
+          "route_M1_share": 0.088608,
+          "beta_duration": -0.019586,
+          "reported": 0.000118,
+          "route_M3_part": 0.000218,
+          "route_M1_part": -0.0001,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 385,
+          "route_M1_share": 0.085714,
+          "beta_duration": -0.000921,
+          "reported": 0.000485,
+          "route_M3_part": 0.000262,
+          "route_M1_part": 0.000223,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 4,
+          "issuances": 387,
+          "route_M1_share": 0.085271,
+          "beta_duration": -0.038896,
+          "reported": -0.003681,
+          "route_M3_part": -0.005034,
+          "route_M1_part": 0.001353,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 388,
+          "route_M1_share": 0.07732,
+          "beta_duration": -0.01418,
+          "reported": -0.000338,
+          "route_M3_part": -0.000344,
+          "route_M1_part": 5e-06,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 396,
+          "route_M1_share": 0.073232,
+          "beta_duration": -0.023909,
+          "reported": -0.002957,
+          "route_M3_part": -0.002837,
+          "route_M1_part": -0.00012,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 399,
+          "route_M1_share": 0.085213,
+          "beta_duration": -0.027816,
+          "reported": -0.00252,
+          "route_M3_part": -0.000637,
+          "route_M1_part": -0.001884,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "structured",
+      "variant": "oracle_point",
+      "route_M1_share": 0.0074,
+      "beta_duration": {
+        "mean": -0.00296,
+        "trial_sd": 0.02954,
+        "mc95": [
+          -0.02766,
+          0.02174
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "negative_beta_trials": 4,
+      "reported": {
+        "mean": -0.0022,
+        "trial_sd": 0.00451,
+        "mc95": [
+          -0.00597,
+          0.00157
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00229,
+        "trial_sd": 0.0044,
+        "mc95": [
+          -0.00597,
+          0.0014
+        ],
+        "positive": 4,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 9e-05,
+        "trial_sd": 0.00025,
+        "mc95": [
+          -0.00012,
+          0.00029
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.0005,
+        "trial_sd": 0.00298,
+        "mc95": [
+          -0.00299,
+          0.00199
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.005181,
+          "beta_duration": -0.050487,
+          "reported": -0.010071,
+          "route_M3_part": -0.010018,
+          "route_M1_part": -5.3e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 388,
+          "route_M1_share": 0.007732,
+          "beta_duration": 0.000381,
+          "reported": 0.000346,
+          "route_M3_part": 2.3e-05,
+          "route_M1_part": 0.000323,
+          "a10c_design": 2.3e-05
+        },
+        {
+          "replicate": 2,
+          "issuances": 389,
+          "route_M1_share": 0.007712,
+          "beta_duration": 0.03464,
+          "reported": -0.007613,
+          "route_M3_part": -0.007581,
+          "route_M1_part": -3.3e-05,
+          "a10c_design": -0.007581
+        },
+        {
+          "replicate": 3,
+          "issuances": 386,
+          "route_M1_share": 0.007772,
+          "beta_duration": -0.007254,
+          "reported": -0.000983,
+          "route_M3_part": -0.000745,
+          "route_M1_part": -0.000238,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 4,
+          "issuances": 379,
+          "route_M1_share": 0.007916,
+          "beta_duration": -0.039119,
+          "reported": -0.003485,
+          "route_M3_part": -0.003555,
+          "route_M1_part": 7e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 383,
+          "route_M1_share": 0.010444,
+          "beta_duration": -0.001238,
+          "reported": 5.1e-05,
+          "route_M3_part": 5e-06,
+          "route_M1_part": 4.6e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 385,
+          "route_M1_share": 0.005195,
+          "beta_duration": 0.025495,
+          "reported": 0.001993,
+          "route_M3_part": 0.001988,
+          "route_M1_part": 5e-06,
+          "a10c_design": 0.001988
+        },
+        {
+          "replicate": 7,
+          "issuances": 398,
+          "route_M1_share": 0.007538,
+          "beta_duration": 0.013927,
+          "reported": 0.002163,
+          "route_M3_part": 0.001597,
+          "route_M1_part": 0.000565,
+          "a10c_design": 0.001597
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "structured",
+      "variant": "prefix_point",
+      "route_M1_share": 0.0824,
+      "beta_duration": {
+        "mean": -0.01822,
+        "trial_sd": 0.01921,
+        "mc95": [
+          -0.03429,
+          -0.00216
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "negative_beta_trials": 7,
+      "reported": {
+        "mean": -0.00101,
+        "trial_sd": 0.00365,
+        "mc95": [
+          -0.00406,
+          0.00204
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.0013,
+        "trial_sd": 0.00271,
+        "mc95": [
+          -0.00357,
+          0.00097
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.00029,
+        "trial_sd": 0.00148,
+        "mc95": [
+          -0.00095,
+          0.00153
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 0.00026,
+        "trial_sd": 0.00072,
+        "mc95": [
+          -0.00035,
+          0.00086
+        ],
+        "positive": 1,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.082902,
+          "beta_duration": -0.031358,
+          "reported": -0.006986,
+          "route_M3_part": -0.006088,
+          "route_M1_part": -0.000898,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 388,
+          "route_M1_share": 0.095361,
+          "beta_duration": 0.010826,
+          "reported": 0.003242,
+          "route_M3_part": 0.002042,
+          "route_M1_part": 0.0012,
+          "a10c_design": 0.002042
+        },
+        {
+          "replicate": 2,
+          "issuances": 389,
+          "route_M1_share": 0.084833,
+          "beta_duration": -0.015773,
+          "reported": 0.002093,
+          "route_M3_part": -9e-05,
+          "route_M1_part": 0.002183,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 386,
+          "route_M1_share": 0.064767,
+          "beta_duration": -0.001234,
+          "reported": -0.000387,
+          "route_M3_part": -3.3e-05,
+          "route_M1_part": -0.000354,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 4,
+          "issuances": 379,
+          "route_M1_share": 0.073879,
+          "beta_duration": -0.046037,
+          "reported": -0.004107,
+          "route_M3_part": -0.004284,
+          "route_M1_part": 0.000177,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 383,
+          "route_M1_share": 0.088773,
+          "beta_duration": -0.038509,
+          "reported": 0.002578,
+          "route_M3_part": 0.001,
+          "route_M1_part": 0.001579,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 385,
+          "route_M1_share": 0.088312,
+          "beta_duration": -0.010073,
+          "reported": -0.003661,
+          "route_M3_part": -0.001265,
+          "route_M1_part": -0.002396,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 398,
+          "route_M1_share": 0.080402,
+          "beta_duration": -0.013627,
+          "reported": -0.000855,
+          "route_M3_part": -0.001699,
+          "route_M1_part": 0.000844,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "structured",
+      "variant": "prefix_uniform_end",
+      "route_M1_share": 0.0818,
+      "beta_duration": {
+        "mean": -0.01073,
+        "trial_sd": 0.02414,
+        "mc95": [
+          -0.03091,
+          0.00946
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "negative_beta_trials": 5,
+      "reported": {
+        "mean": -0.0014,
+        "trial_sd": 0.00566,
+        "mc95": [
+          -0.00613,
+          0.00333
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00221,
+        "trial_sd": 0.00655,
+        "mc95": [
+          -0.00769,
+          0.00327
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.00081,
+        "trial_sd": 0.00223,
+        "mc95": [
+          -0.00106,
+          0.00268
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": -0.00129,
+        "trial_sd": 0.00597,
+        "mc95": [
+          -0.00628,
+          0.00371
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.082902,
+          "beta_duration": -0.036843,
+          "reported": -0.006858,
+          "route_M3_part": -0.005928,
+          "route_M1_part": -0.00093,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 388,
+          "route_M1_share": 0.095361,
+          "beta_duration": 0.011196,
+          "reported": 0.00272,
+          "route_M3_part": 0.001541,
+          "route_M1_part": 0.00118,
+          "a10c_design": 0.001541
+        },
+        {
+          "replicate": 2,
+          "issuances": 389,
+          "route_M1_share": 0.082262,
+          "beta_duration": 0.016995,
+          "reported": -0.010566,
+          "route_M3_part": -0.015672,
+          "route_M1_part": 0.005106,
+          "a10c_design": -0.015672
+        },
+        {
+          "replicate": 3,
+          "issuances": 386,
+          "route_M1_share": 0.064767,
+          "beta_duration": -0.002963,
+          "reported": -0.000579,
+          "route_M3_part": -6.4e-05,
+          "route_M1_part": -0.000514,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 4,
+          "issuances": 379,
+          "route_M1_share": 0.073879,
+          "beta_duration": -0.048226,
+          "reported": -0.002438,
+          "route_M3_part": -0.002525,
+          "route_M1_part": 8.7e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 383,
+          "route_M1_share": 0.088773,
+          "beta_duration": -0.022346,
+          "reported": 0.00745,
+          "route_M3_part": 0.004741,
+          "route_M1_part": 0.002709,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 6,
+          "issuances": 385,
+          "route_M1_share": 0.085714,
+          "beta_duration": 0.012087,
+          "reported": 0.001929,
+          "route_M3_part": 0.003845,
+          "route_M1_part": -0.001916,
+          "a10c_design": 0.003845
+        },
+        {
+          "replicate": 7,
+          "issuances": 398,
+          "route_M1_share": 0.080402,
+          "beta_duration": -0.015711,
+          "reported": -0.00284,
+          "route_M3_part": -0.003606,
+          "route_M1_part": 0.000765,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v2-phase",
+      "case": "structured",
+      "variant": "retrospective_point",
+      "route_M1_share": 0.0824,
+      "beta_duration": {
+        "mean": -0.00384,
+        "trial_sd": 0.02091,
+        "mc95": [
+          -0.02132,
+          0.01365
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "negative_beta_trials": 5,
+      "reported": {
+        "mean": -0.00079,
+        "trial_sd": 0.00309,
+        "mc95": [
+          -0.00337,
+          0.00179
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M3_part": {
+        "mean": -0.00138,
+        "trial_sd": 0.00195,
+        "mc95": [
+          -0.00301,
+          0.00024
+        ],
+        "positive": 3,
+        "trials": 8
+      },
+      "route_M1_part": {
+        "mean": 0.0006,
+        "trial_sd": 0.00197,
+        "mc95": [
+          -0.00105,
+          0.00225
+        ],
+        "positive": 5,
+        "trials": 8
+      },
+      "a10c_design": {
+        "mean": 6e-05,
+        "trial_sd": 0.0009,
+        "mc95": [
+          -0.00069,
+          0.00081
+        ],
+        "positive": 2,
+        "trials": 8
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 386,
+          "route_M1_share": 0.082902,
+          "beta_duration": -0.018491,
+          "reported": -0.003697,
+          "route_M3_part": -0.00317,
+          "route_M1_part": -0.000527,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 388,
+          "route_M1_share": 0.095361,
+          "beta_duration": 0.010263,
+          "reported": 0.003046,
+          "route_M3_part": 0.001898,
+          "route_M1_part": 0.001148,
+          "a10c_design": 0.001898
+        },
+        {
+          "replicate": 2,
+          "issuances": 389,
+          "route_M1_share": 0.084833,
+          "beta_duration": 0.030248,
+          "reported": 0.003473,
+          "route_M3_part": -0.001447,
+          "route_M1_part": 0.00492,
+          "a10c_design": -0.001447
+        },
+        {
+          "replicate": 3,
+          "issuances": 386,
+          "route_M1_share": 0.064767,
+          "beta_duration": -0.002506,
+          "reported": -0.000673,
+          "route_M3_part": 8.6e-05,
+          "route_M1_part": -0.000759,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 4,
+          "issuances": 379,
+          "route_M1_share": 0.073879,
+          "beta_duration": -0.038799,
+          "reported": -0.002409,
+          "route_M3_part": -0.002942,
+          "route_M1_part": 0.000533,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 5,
+          "issuances": 383,
+          "route_M1_share": 0.088773,
+          "beta_duration": 0.008461,
+          "reported": 0.00024,
+          "route_M3_part": 1.4e-05,
+          "route_M1_part": 0.000226,
+          "a10c_design": 1.4e-05
+        },
+        {
+          "replicate": 6,
+          "issuances": 385,
+          "route_M1_share": 0.088312,
+          "beta_duration": -0.014186,
+          "reported": -0.005443,
+          "route_M3_part": -0.003811,
+          "route_M1_part": -0.001632,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 7,
+          "issuances": 398,
+          "route_M1_share": 0.080402,
+          "beta_duration": -0.005693,
+          "reported": -0.000829,
+          "route_M3_part": -0.001698,
+          "route_M1_part": 0.000868,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v4-phase",
+      "case": "alternative",
+      "variant": "oracle_point",
+      "route_M1_share": 0.0071,
+      "beta_duration": {
+        "mean": 0.0499,
+        "trial_sd": 0.03412,
+        "mc95": [
+          -0.00439,
+          0.1042
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "negative_beta_trials": 0,
+      "reported": {
+        "mean": 0.00057,
+        "trial_sd": 0.00191,
+        "mc95": [
+          -0.00247,
+          0.00361
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "route_M3_part": {
+        "mean": 0.00071,
+        "trial_sd": 0.00238,
+        "mc95": [
+          -0.00307,
+          0.00449
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "route_M1_part": {
+        "mean": -0.00014,
+        "trial_sd": 0.00093,
+        "mc95": [
+          -0.00162,
+          0.00134
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "a10c_design": {
+        "mean": 0.00071,
+        "trial_sd": 0.00238,
+        "mc95": [
+          -0.00307,
+          0.00449
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 392,
+          "route_M1_share": 0.010204,
+          "beta_duration": 0.065197,
+          "reported": 0.000972,
+          "route_M3_part": 0.002295,
+          "route_M1_part": -0.001323,
+          "a10c_design": 0.002295
+        },
+        {
+          "replicate": 1,
+          "issuances": 385,
+          "route_M1_share": 0.005195,
+          "beta_duration": 0.042993,
+          "reported": 0.002456,
+          "route_M3_part": 0.001975,
+          "route_M1_part": 0.000481,
+          "a10c_design": 0.001975
+        },
+        {
+          "replicate": 2,
+          "issuances": 395,
+          "route_M1_share": 0.007595,
+          "beta_duration": 0.00586,
+          "reported": 0.000943,
+          "route_M3_part": 0.001382,
+          "route_M1_part": -0.00044,
+          "a10c_design": 0.001382
+        },
+        {
+          "replicate": 3,
+          "issuances": 382,
+          "route_M1_share": 0.005236,
+          "beta_duration": 0.08557,
+          "reported": -0.002095,
+          "route_M3_part": -0.002807,
+          "route_M1_part": 0.000712,
+          "a10c_design": -0.002807
+        }
+      ]
+    },
+    {
+      "family": "v4-phase",
+      "case": "alternative",
+      "variant": "prefix_point",
+      "route_M1_share": 0.0836,
+      "beta_duration": {
+        "mean": 0.04897,
+        "trial_sd": 0.03456,
+        "mc95": [
+          -0.00602,
+          0.10395
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "negative_beta_trials": 0,
+      "reported": {
+        "mean": 0.00329,
+        "trial_sd": 0.00606,
+        "mc95": [
+          -0.00635,
+          0.01292
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "route_M3_part": {
+        "mean": 0.00776,
+        "trial_sd": 0.00425,
+        "mc95": [
+          0.001,
+          0.01452
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "route_M1_part": {
+        "mean": -0.00447,
+        "trial_sd": 0.00948,
+        "mc95": [
+          -0.01955,
+          0.01061
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "a10c_design": {
+        "mean": 0.00776,
+        "trial_sd": 0.00425,
+        "mc95": [
+          0.001,
+          0.01452
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 392,
+          "route_M1_share": 0.079082,
+          "beta_duration": 0.06144,
+          "reported": 0.007339,
+          "route_M3_part": 0.008955,
+          "route_M1_part": -0.001616,
+          "a10c_design": 0.008955
+        },
+        {
+          "replicate": 1,
+          "issuances": 385,
+          "route_M1_share": 0.083117,
+          "beta_duration": 0.033215,
+          "reported": 0.007338,
+          "route_M3_part": 0.005783,
+          "route_M1_part": 0.001555,
+          "a10c_design": 0.005783
+        },
+        {
+          "replicate": 2,
+          "issuances": 395,
+          "route_M1_share": 0.088608,
+          "beta_duration": 0.010771,
+          "reported": 0.003942,
+          "route_M3_part": 0.003224,
+          "route_M1_part": 0.000718,
+          "a10c_design": 0.003224
+        },
+        {
+          "replicate": 3,
+          "issuances": 382,
+          "route_M1_share": 0.08377,
+          "beta_duration": 0.090446,
+          "reported": -0.005473,
+          "route_M3_part": 0.013071,
+          "route_M1_part": -0.018545,
+          "a10c_design": 0.013071
+        }
+      ]
+    },
+    {
+      "family": "v4-phase",
+      "case": "alternative",
+      "variant": "prefix_uniform_end",
+      "route_M1_share": 0.0836,
+      "beta_duration": {
+        "mean": 0.0593,
+        "trial_sd": 0.03534,
+        "mc95": [
+          0.00308,
+          0.11551
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "negative_beta_trials": 0,
+      "reported": {
+        "mean": 0.00326,
+        "trial_sd": 0.00691,
+        "mc95": [
+          -0.00773,
+          0.01426
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "route_M3_part": {
+        "mean": 0.00755,
+        "trial_sd": 0.0027,
+        "mc95": [
+          0.00325,
+          0.01185
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "route_M1_part": {
+        "mean": -0.00429,
+        "trial_sd": 0.00839,
+        "mc95": [
+          -0.01764,
+          0.00906
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "a10c_design": {
+        "mean": 0.00755,
+        "trial_sd": 0.0027,
+        "mc95": [
+          0.00325,
+          0.01185
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 392,
+          "route_M1_share": 0.079082,
+          "beta_duration": 0.069311,
+          "reported": 0.00713,
+          "route_M3_part": 0.009411,
+          "route_M1_part": -0.002281,
+          "a10c_design": 0.009411
+        },
+        {
+          "replicate": 1,
+          "issuances": 385,
+          "route_M1_share": 0.083117,
+          "beta_duration": 0.052959,
+          "reported": 0.008324,
+          "route_M3_part": 0.006968,
+          "route_M1_part": 0.001356,
+          "a10c_design": 0.006968
+        },
+        {
+          "replicate": 2,
+          "issuances": 395,
+          "route_M1_share": 0.088608,
+          "beta_duration": 0.01504,
+          "reported": 0.004402,
+          "route_M3_part": 0.003976,
+          "route_M1_part": 0.000426,
+          "a10c_design": 0.003976
+        },
+        {
+          "replicate": 3,
+          "issuances": 382,
+          "route_M1_share": 0.08377,
+          "beta_duration": 0.099875,
+          "reported": -0.006809,
+          "route_M3_part": 0.009854,
+          "route_M1_part": -0.016663,
+          "a10c_design": 0.009854
+        }
+      ]
+    },
+    {
+      "family": "v4-phase",
+      "case": "alternative",
+      "variant": "retrospective_point",
+      "route_M1_share": 0.0836,
+      "beta_duration": {
+        "mean": 0.05362,
+        "trial_sd": 0.03337,
+        "mc95": [
+          0.00052,
+          0.10671
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "negative_beta_trials": 0,
+      "reported": {
+        "mean": 0.00373,
+        "trial_sd": 0.00563,
+        "mc95": [
+          -0.00522,
+          0.01269
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "route_M3_part": {
+        "mean": 0.0087,
+        "trial_sd": 0.00474,
+        "mc95": [
+          0.00116,
+          0.01624
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "route_M1_part": {
+        "mean": -0.00497,
+        "trial_sd": 0.0091,
+        "mc95": [
+          -0.01944,
+          0.00951
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "a10c_design": {
+        "mean": 0.0087,
+        "trial_sd": 0.00474,
+        "mc95": [
+          0.00116,
+          0.01624
+        ],
+        "positive": 4,
+        "trials": 4
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 392,
+          "route_M1_share": 0.079082,
+          "beta_duration": 0.063247,
+          "reported": 0.005854,
+          "route_M3_part": 0.009926,
+          "route_M1_part": -0.004072,
+          "a10c_design": 0.009926
+        },
+        {
+          "replicate": 1,
+          "issuances": 385,
+          "route_M1_share": 0.083117,
+          "beta_duration": 0.050177,
+          "reported": 0.00945,
+          "route_M3_part": 0.007847,
+          "route_M1_part": 0.001603,
+          "a10c_design": 0.007847
+        },
+        {
+          "replicate": 2,
+          "issuances": 395,
+          "route_M1_share": 0.088608,
+          "beta_duration": 0.010413,
+          "reported": 0.003505,
+          "route_M3_part": 0.00281,
+          "route_M1_part": 0.000695,
+          "a10c_design": 0.00281
+        },
+        {
+          "replicate": 3,
+          "issuances": 382,
+          "route_M1_share": 0.08377,
+          "beta_duration": 0.09063,
+          "reported": -0.003875,
+          "route_M3_part": 0.014218,
+          "route_M1_part": -0.018093,
+          "a10c_design": 0.014218
+        }
+      ]
+    },
+    {
+      "family": "v4-phase",
+      "case": "null",
+      "variant": "oracle_point",
+      "route_M1_share": 0.0064,
+      "beta_duration": {
+        "mean": -0.00519,
+        "trial_sd": 0.01665,
+        "mc95": [
+          -0.03167,
+          0.0213
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "negative_beta_trials": 2,
+      "reported": {
+        "mean": -7e-05,
+        "trial_sd": 0.00219,
+        "mc95": [
+          -0.00355,
+          0.00342
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "route_M3_part": {
+        "mean": 7e-05,
+        "trial_sd": 0.00206,
+        "mc95": [
+          -0.00321,
+          0.00334
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "route_M1_part": {
+        "mean": -0.00013,
+        "trial_sd": 0.00017,
+        "mc95": [
+          -0.00041,
+          0.00014
+        ],
+        "positive": 1,
+        "trials": 4
+      },
+      "a10c_design": {
+        "mean": 0.00082,
+        "trial_sd": 0.00135,
+        "mc95": [
+          -0.00133,
+          0.00297
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 390,
+          "route_M1_share": 0.007692,
+          "beta_duration": 0.009994,
+          "reported": 0.00283,
+          "route_M3_part": 0.002821,
+          "route_M1_part": 1e-05,
+          "a10c_design": 0.002821
+        },
+        {
+          "replicate": 1,
+          "issuances": 391,
+          "route_M1_share": 0.005115,
+          "beta_duration": 0.00621,
+          "reported": 0.000422,
+          "route_M3_part": 0.000449,
+          "route_M1_part": -2.7e-05,
+          "a10c_design": 0.000449
+        },
+        {
+          "replicate": 2,
+          "issuances": 392,
+          "route_M1_share": 0.005102,
+          "beta_duration": -0.026153,
+          "reported": -0.001712,
+          "route_M3_part": -0.00134,
+          "route_M1_part": -0.000371,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 382,
+          "route_M1_share": 0.007853,
+          "beta_duration": -0.010799,
+          "reported": -0.001808,
+          "route_M3_part": -0.001669,
+          "route_M1_part": -0.000139,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v4-phase",
+      "case": "null",
+      "variant": "prefix_point",
+      "route_M1_share": 0.0798,
+      "beta_duration": {
+        "mean": -0.00273,
+        "trial_sd": 0.01052,
+        "mc95": [
+          -0.01947,
+          0.014
+        ],
+        "positive": 1,
+        "trials": 4
+      },
+      "negative_beta_trials": 3,
+      "reported": {
+        "mean": -0.0002,
+        "trial_sd": 0.00166,
+        "mc95": [
+          -0.00284,
+          0.00244
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "route_M3_part": {
+        "mean": -0.00049,
+        "trial_sd": 0.00168,
+        "mc95": [
+          -0.00317,
+          0.00218
+        ],
+        "positive": 1,
+        "trials": 4
+      },
+      "route_M1_part": {
+        "mean": 0.0003,
+        "trial_sd": 0.00035,
+        "mc95": [
+          -0.00025,
+          0.00085
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "a10c_design": {
+        "mean": -0.00011,
+        "trial_sd": 0.00021,
+        "mc95": [
+          -0.00045,
+          0.00023
+        ],
+        "positive": 0,
+        "trials": 4
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 390,
+          "route_M1_share": 0.084615,
+          "beta_duration": -0.007473,
+          "reported": -0.002506,
+          "route_M3_part": -0.002593,
+          "route_M1_part": 8.7e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 391,
+          "route_M1_share": 0.079284,
+          "beta_duration": 0.011313,
+          "reported": 0.000133,
+          "route_M3_part": -0.000426,
+          "route_M1_part": 0.000559,
+          "a10c_design": -0.000426
+        },
+        {
+          "replicate": 2,
+          "issuances": 392,
+          "route_M1_share": 0.068878,
+          "beta_duration": -0.013255,
+          "reported": 0.001445,
+          "route_M3_part": 0.001523,
+          "route_M1_part": -7.7e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 382,
+          "route_M1_share": 0.086387,
+          "beta_duration": -0.001513,
+          "reported": 0.000141,
+          "route_M3_part": -0.000482,
+          "route_M1_part": 0.000623,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v4-phase",
+      "case": "null",
+      "variant": "prefix_uniform_end",
+      "route_M1_share": 0.0798,
+      "beta_duration": {
+        "mean": -0.0018,
+        "trial_sd": 0.01026,
+        "mc95": [
+          -0.01812,
+          0.01452
+        ],
+        "positive": 1,
+        "trials": 4
+      },
+      "negative_beta_trials": 3,
+      "reported": {
+        "mean": 0.00039,
+        "trial_sd": 0.00057,
+        "mc95": [
+          -0.00052,
+          0.00129
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "route_M3_part": {
+        "mean": 0.00013,
+        "trial_sd": 0.00093,
+        "mc95": [
+          -0.00135,
+          0.00161
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "route_M1_part": {
+        "mean": 0.00026,
+        "trial_sd": 0.00041,
+        "mc95": [
+          -0.00039,
+          0.0009
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "a10c_design": {
+        "mean": -0.00011,
+        "trial_sd": 0.00023,
+        "mc95": [
+          -0.00047,
+          0.00025
+        ],
+        "positive": 0,
+        "trials": 4
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 390,
+          "route_M1_share": 0.084615,
+          "beta_duration": -0.001073,
+          "reported": 0.000302,
+          "route_M3_part": 0.000247,
+          "route_M1_part": 5.5e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 391,
+          "route_M1_share": 0.079284,
+          "beta_duration": 0.011322,
+          "reported": -5e-05,
+          "route_M3_part": -0.000454,
+          "route_M1_part": 0.000404,
+          "a10c_design": -0.000454
+        },
+        {
+          "replicate": 2,
+          "issuances": 392,
+          "route_M1_share": 0.068878,
+          "beta_duration": -0.013568,
+          "reported": 0.001214,
+          "route_M3_part": 0.001399,
+          "route_M1_part": -0.000185,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 382,
+          "route_M1_share": 0.086387,
+          "beta_duration": -0.003882,
+          "reported": 8.1e-05,
+          "route_M3_part": -0.000666,
+          "route_M1_part": 0.000747,
+          "a10c_design": 0.0
+        }
+      ]
+    },
+    {
+      "family": "v4-phase",
+      "case": "null",
+      "variant": "retrospective_point",
+      "route_M1_share": 0.0791,
+      "beta_duration": {
+        "mean": -0.00213,
+        "trial_sd": 0.00923,
+        "mc95": [
+          -0.01681,
+          0.01255
+        ],
+        "positive": 1,
+        "trials": 4
+      },
+      "negative_beta_trials": 3,
+      "reported": {
+        "mean": -0.00026,
+        "trial_sd": 0.00155,
+        "mc95": [
+          -0.00273,
+          0.0022
+        ],
+        "positive": 2,
+        "trials": 4
+      },
+      "route_M3_part": {
+        "mean": -0.00055,
+        "trial_sd": 0.00154,
+        "mc95": [
+          -0.003,
+          0.00191
+        ],
+        "positive": 1,
+        "trials": 4
+      },
+      "route_M1_part": {
+        "mean": 0.00029,
+        "trial_sd": 0.00034,
+        "mc95": [
+          -0.00026,
+          0.00083
+        ],
+        "positive": 3,
+        "trials": 4
+      },
+      "a10c_design": {
+        "mean": -0.00013,
+        "trial_sd": 0.00026,
+        "mc95": [
+          -0.00055,
+          0.00029
+        ],
+        "positive": 0,
+        "trials": 4
+      },
+      "trials": [
+        {
+          "replicate": 0,
+          "issuances": 390,
+          "route_M1_share": 0.084615,
+          "beta_duration": -0.006406,
+          "reported": -0.00241,
+          "route_M3_part": -0.002502,
+          "route_M1_part": 9.3e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 1,
+          "issuances": 391,
+          "route_M1_share": 0.079284,
+          "beta_duration": 0.010876,
+          "reported": -0.000198,
+          "route_M3_part": -0.00053,
+          "route_M1_part": 0.000332,
+          "a10c_design": -0.00053
+        },
+        {
+          "replicate": 2,
+          "issuances": 392,
+          "route_M1_share": 0.068878,
+          "beta_duration": -0.010355,
+          "reported": 0.001239,
+          "route_M3_part": 0.001271,
+          "route_M1_part": -3.2e-05,
+          "a10c_design": 0.0
+        },
+        {
+          "replicate": 3,
+          "issuances": 382,
+          "route_M1_share": 0.08377,
+          "beta_duration": -0.002635,
+          "reported": 0.000318,
+          "route_M3_part": -0.00043,
+          "route_M1_part": 0.000749,
+          "a10c_design": 0.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "seed_base": "a10c-claude-truth-20261108",
+  "years_per_history": 400,
+  "threshold": 10.0,
+  "groups": [
+    {
+      "family": "v2-phase",
+      "process": "null",
+      "histories": 6,
+      "events": 16578,
+      "r_logD_logQ_following": {
+        "mean": -0.0054,
+        "sd_across_histories": 0.0198
+      },
+      "r_logD_logQ_preceding": {
+        "mean": -0.001,
+        "sd_across_histories": 0.0143
+      },
+      "r_logQ_lag1": {
+        "mean": 0.0016,
+        "sd_across_histories": 0.0158
+      },
+      "r_logD_previous_logQ_following": {
+        "mean": 0.0083,
+        "sd_across_histories": 0.0209
+      }
+    },
+    {
+      "family": "v2-phase",
+      "process": "structured",
+      "histories": 6,
+      "events": 16467,
+      "r_logD_logQ_following": {
+        "mean": 0.1079,
+        "sd_across_histories": 0.0124
+      },
+      "r_logD_logQ_preceding": {
+        "mean": 0.2803,
+        "sd_across_histories": 0.0143
+      },
+      "r_logQ_lag1": {
+        "mean": 0.3907,
+        "sd_across_histories": 0.0212
+      },
+      "r_logD_previous_logQ_following": {
+        "mean": 0.041,
+        "sd_across_histories": 0.0123
+      }
+    },
+    {
+      "family": "v2-phase",
+      "process": "alternative",
+      "histories": 6,
+      "events": 16537,
+      "r_logD_logQ_following": {
+        "mean": 0.2072,
+        "sd_across_histories": 0.0156
+      },
+      "r_logD_logQ_preceding": {
+        "mean": 0.2754,
+        "sd_across_histories": 0.0059
+      },
+      "r_logQ_lag1": {
+        "mean": 0.3696,
+        "sd_across_histories": 0.0151
+      },
+      "r_logD_previous_logQ_following": {
+        "mean": 0.085,
+        "sd_across_histories": 0.0195
+      }
+    },
+    {
+      "family": "v4-phase",
+      "process": "null",
+      "histories": 6,
+      "events": 16536,
+      "r_logD_logQ_following": {
+        "mean": 0.0038,
+        "sd_across_histories": 0.0181
+      },
+      "r_logD_logQ_preceding": {
+        "mean": 0.0042,
+        "sd_across_histories": 0.0171
+      },
+      "r_logQ_lag1": {
+        "mean": -0.0072,
+        "sd_across_histories": 0.0275
+      },
+      "r_logD_previous_logQ_following": {
+        "mean": -0.0009,
+        "sd_across_histories": 0.016
+      }
+    },
+    {
+      "family": "v4-phase",
+      "process": "structured",
+      "histories": 6,
+      "events": 16531,
+      "r_logD_logQ_following": {
+        "mean": 0.11,
+        "sd_across_histories": 0.0245
+      },
+      "r_logD_logQ_preceding": {
+        "mean": 0.2715,
+        "sd_across_histories": 0.0124
+      },
+      "r_logQ_lag1": {
+        "mean": 0.3849,
+        "sd_across_histories": 0.0183
+      },
+      "r_logD_previous_logQ_following": {
+        "mean": 0.0321,
+        "sd_across_histories": 0.0114
+      }
+    },
+    {
+      "family": "v4-phase",
+      "process": "alternative",
+      "histories": 6,
+      "events": 16501,
+      "r_logD_logQ_following": {
+        "mean": 0.23,
+        "sd_across_histories": 0.0118
+      },
+      "r_logD_logQ_preceding": {
+        "mean": 0.2629,
+        "sd_across_histories": 0.0152
+      },
+      "r_logQ_lag1": {
+        "mean": 0.3896,
+        "sd_across_histories": 0.0101
+      },
+      "r_logD_previous_logQ_following": {
+        "mean": 0.0718,
+        "sd_across_histories": 0.0113
+      }
+    }
+  ]
+}
