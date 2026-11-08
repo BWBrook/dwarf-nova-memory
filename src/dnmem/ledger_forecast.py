@@ -163,8 +163,25 @@ def _previous_value(feature: Mapping[str, Any]) -> float | None:
     return gap
 
 
-def _duration_availability(feature: Mapping[str, Any], endpoint: float, mark_mode: str) -> bool:
-    return _duration_value(feature, endpoint, mark_mode) is not None
+def _duration_domain(feature: Mapping[str, Any], endpoints: np.ndarray | None) -> tuple[bool, np.ndarray | None, str]:
+    """Check the mark domain without evaluating log-duration at invalid nodes."""
+    if endpoints is None or len(endpoints) == 0:
+        return False, None, "missing_landmark"
+    onset = _optional_float(feature.get("onset_t"), "feature.onset_t")
+    if onset is not None:
+        margins = np.asarray(endpoints, dtype=float) - onset
+        return bool(np.all(margins > 0.0)), margins, "onset"
+    duration = _optional_float(feature.get("duration"), "feature.duration")
+    if duration is None:
+        return False, None, "missing_mark"
+    margins = np.asarray([duration], dtype=float)
+    return bool(duration > 0.0), margins, "stored_duration"
+
+
+def _duration_availability(feature: Mapping[str, Any], endpoints: np.ndarray | float | None,
+                           mark_mode: str = "log_duration") -> bool:
+    values = None if endpoints is None else np.atleast_1d(np.asarray(endpoints, dtype=float))
+    return _duration_domain(feature, values)[0]
 
 
 def _covariate_values(duration: float, mark_mode: str, transform: Mapping[str, Any]) -> dict[str, float]:
@@ -565,6 +582,75 @@ def _model_mu(model: ForecastModel, feature: Mapping[str, Any], endpoint: float,
     return model.intercept + sum(model.coefficients[t] * values[t] for t in model.terms)
 
 
+def duration_domain_diagnostics(ledger: Sequence[Mapping[str, Any]], *,
+                               endpoint_mode: str = "point", nodes: int = 5) -> dict[str, Any]:
+    """Summarize positive-duration support for a ledger and endpoint variant."""
+    if endpoint_mode not in {"point", "uniform_end"} or not isinstance(nodes, int) or nodes < 1:
+        raise ValueError("invalid endpoint variant")
+    known = 0
+    margins: list[float] = []
+    nonpositive: list[int] = []
+    missing: list[int] = []
+    point_invalid: list[int] = []
+    interval_only: list[int] = []
+    variant_missing: list[int] = []
+    for feature in ledger:
+        emission = int(feature["emission_index"])
+        onset = _optional_float(feature.get("onset_t"), "feature.onset_t")
+        point_end = _optional_float(feature.get("end_t"), "feature.end_t")
+        point_margin = point_end - onset if onset is not None and point_end is not None else None
+        if point_margin is not None and point_margin <= 0.0:
+            point_invalid.append(emission)
+
+        interval_nodes: np.ndarray | None = None
+        lo = _optional_float(feature.get("end_lo"), "feature.end_lo")
+        hi = _optional_float(feature.get("end_hi"), "feature.end_hi")
+        issue = _optional_float(feature.get("issue_time"), "feature.issue_time")
+        if lo is not None and hi is not None and issue is not None:
+            hi = min(hi, issue)
+            if hi >= lo - _EPS:
+                interval_nodes = np.array([lo], dtype=float) if hi - lo <= _EPS else np.linspace(lo, hi, nodes)
+        if onset is not None and interval_nodes is not None:
+            interval_margins = interval_nodes - onset
+            if point_margin is not None and point_margin > 0.0 and np.any(interval_margins <= 0.0):
+                interval_only.append(emission)
+
+        try:
+            endpoints = _endpoint_nodes(feature, endpoint_mode, nodes)
+        except ValueError:
+            endpoints = None
+        if endpoints is not None:
+            known += 1
+        available, active_margins, source = _duration_domain(feature, endpoints)
+        if active_margins is not None:
+            margins.extend(float(value) for value in active_margins)
+            if np.any(active_margins <= 0.0):
+                nonpositive.append(emission)
+        elif source == "missing_mark":
+            missing.append(emission)
+        elif source == "missing_landmark":
+            variant_missing.append(emission)
+            if onset is None and _optional_float(feature.get("duration"), "feature.duration") is None:
+                missing.append(emission)
+
+    return {
+        "endpoint_mode": endpoint_mode,
+        "nodes": nodes,
+        "known_landmark_count": known,
+        "nonpositive_mark_count": len(nonpositive),
+        "nonpositive_mark_emission_indices": nonpositive,
+        "missing_mark_count": len(missing),
+        "missing_mark_emission_indices": missing,
+        "point_invalid_count": len(point_invalid),
+        "point_invalid_emission_indices": point_invalid,
+        "interval_only_overlap_count": len(interval_only),
+        "interval_only_overlap_emission_indices": interval_only,
+        "variant_missing_landmark_count": len(variant_missing),
+        "variant_missing_landmark_emission_indices": variant_missing,
+        "min_margin": min(margins) if margins else None,
+    }
+
+
 @dataclass(frozen=True)
 class ForecastBundle:
     models: dict[str, ForecastModel]
@@ -580,6 +666,9 @@ class ForecastBundle:
                 "r0": self.r0.to_dict(), "endpoint_mode": self.endpoint_mode, "nodes": self.nodes,
                 "mark_mode": self.mark_mode, "counts": dict(self.counts), "metadata": self.metadata}
 
+    def duration_domain_diagnostics(self, ledger: Sequence[Mapping[str, Any]]) -> dict[str, Any]:
+        return duration_domain_diagnostics(ledger, endpoint_mode=self.endpoint_mode, nodes=self.nodes)
+
     def route(self, feature: Mapping[str, Any], model_name: str) -> str:
         """Return the fitted model actually used after missing-mark fallback."""
         if model_name not in self.models:
@@ -587,12 +676,14 @@ class ForecastBundle:
         endpoints = _endpoint_nodes(feature, self.endpoint_mode, self.nodes)
         if endpoints is None:
             return "R0"
-        duration_ok = _duration_availability(feature, float(endpoints[0]), self.mark_mode)
         previous_ok = _previous_value(feature) is not None
-        if model_name == "M1":
-            return "M1" if duration_ok else "M0"
+        if model_name == "M0":
+            return "M0"
         if model_name == "M2":
             return "M2" if previous_ok else "M0"
+        duration_ok = _duration_availability(feature, endpoints, self.mark_mode)
+        if model_name == "M1":
+            return "M1" if duration_ok else "M0"
         if model_name == "M3":
             return "M3" if duration_ok and previous_ok else "M2" if previous_ok else "M1" if duration_ok else "M0"
         return "M0"
@@ -737,13 +828,12 @@ def fit_models(ledger: Sequence[Mapping[str, Any]], evidence: Sequence[Mapping[s
     for model_name in _MODEL_NAMES:
         available = []
         for row in pairs:
-            endpoint = float(row["endpoints"][0])
-            if _feature_vector(row["feature"], endpoint, model_name, mark_mode,
-                               {"duration_center": 0.0, "duration_scale": 1.0,
-                                "duration_type_centers": {"0": 0.0, "1": 0.0},
-                                "duration_within_scale": 1.0, "previous_center": 0.0,
-                                "previous_scale": 1.0}) is not None:
-                available.append(row)
+            feature, endpoints = row["feature"], row["endpoints"]
+            if model_name in ("M1", "M3") and not _duration_availability(feature, endpoints, mark_mode):
+                continue
+            if model_name in ("M2", "M3") and _previous_value(feature) is None:
+                continue
+            available.append(row)
         for row in available:
             row["model_name"] = model_name
         models[model_name] = _fit_model(model_name, available, endpoint_mode, nodes, mark_mode, counts)

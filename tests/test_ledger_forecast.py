@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from dnmem.ledger_forecast import (
     _log_interval, _make_transform, _node_loglik, _prepare_likelihood,
-    _scalar_model_objective, _endpoint_nodes, fit_models,
+    _scalar_model_objective, _endpoint_nodes, duration_domain_diagnostics, fit_models,
 )
 
 
@@ -193,6 +193,51 @@ class LedgerForecastTests(unittest.TestCase):
         both_missing = dict(missing_duration, previous_gap=None, previous_gap_covered=False)
         self.assertEqual(bundle.score(both_missing, evidence[4], "M3"),
                          bundle.score(both_missing, evidence[4], "M0"))
+
+    def test_duration_domain_fallback_checks_every_endpoint_and_reports_geometry(self):
+        ledger, evidence = make_training(30, endpoint_width=1.0)
+        overlap = dict(ledger[4])
+        overlap["end_lo"] = overlap["onset_t"] - 0.25
+        overlap["end_hi"] = overlap["end_t"] + 0.5
+        equality = dict(ledger[5])
+        equality["end_lo"] = equality["onset_t"]
+        equality["end_hi"] = equality["end_t"]
+        point_invalid = dict(ledger[6])
+        point_invalid["end_t"] = point_invalid["onset_t"]
+        point_invalid["end_lo"] = point_invalid["end_t"]
+        point_invalid["end_hi"] = point_invalid["end_t"]
+        missing_onset = dict(ledger[7], onset_t=None, duration=10.0)
+        changed = ledger.copy()
+        changed[4], changed[5], changed[6], changed[7] = overlap, equality, point_invalid, missing_onset
+
+        bundle = fit_models(changed, evidence, 2000.0, endpoint_mode="uniform_end", nodes=5)
+        self.assertEqual(bundle.route(overlap, "M1"), "M0")
+        self.assertEqual(bundle.route(overlap, "M3"), "M2")
+        self.assertEqual(bundle.route(equality, "M1"), "M0")
+        self.assertEqual(bundle.route(point_invalid, "M1"), "M0")
+        self.assertEqual(bundle.route(missing_onset, "M1"), "M1")
+        self.assertTrue(np.isfinite(bundle.score(overlap, evidence[4], "M0")))
+        self.assertTrue(np.isfinite(bundle.score(overlap, evidence[4], "M2")))
+
+        diagnostics = bundle.duration_domain_diagnostics(changed)
+        self.assertIn(4, diagnostics["nonpositive_mark_emission_indices"])
+        self.assertIn(5, diagnostics["nonpositive_mark_emission_indices"])
+        self.assertIn(6, diagnostics["point_invalid_emission_indices"])
+        self.assertIn(4, diagnostics["interval_only_overlap_emission_indices"])
+        self.assertEqual(diagnostics, duration_domain_diagnostics(
+            changed, endpoint_mode="uniform_end", nodes=5))
+        self.assertLess(diagnostics["min_margin"], 0.0)
+
+    def test_positive_duration_support_and_missing_mark_diagnostics(self):
+        ledger, evidence = make_training(20, endpoint_width=1.0)
+        missing = dict(ledger[3], onset_t=None, duration=None)
+        changed = ledger.copy()
+        changed[3] = missing
+        bundle = fit_models(changed, evidence, 2000.0, endpoint_mode="uniform_end", nodes=5)
+        self.assertEqual(bundle.route(changed[3], "M1"), "M0")
+        diagnostics = bundle.duration_domain_diagnostics(changed)
+        self.assertIn(3, diagnostics["missing_mark_emission_indices"])
+        self.assertGreater(diagnostics["known_landmark_count"], 0)
 
     def test_unknown_endpoint_uses_shared_r0_and_zero_exposure_is_zero(self):
         ledger, evidence = make_training()

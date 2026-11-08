@@ -224,7 +224,7 @@ def score_trial(inputs, configuration, case, replicate, base):
         late_train_evidence = outcome_evidence(rows, late_train, stop=cutoff)
         late_eval = [f for f in late if f["issue_time"] >= cutoff]
         late_by_index = {e["emission_index"]: e for e in outcome_evidence(rows, late, stop=stop)}
-    results, models, routes, score_rows = {}, {}, {}, []
+    results, models, routes, domains, score_rows = {}, {}, {}, {}, []
     for name, view, endpoint_mode, mark_mode, latency in variants:
         fit_ledger = late_train if latency else train_views[view]
         fit_evidence = late_train_evidence if latency else train_evidence
@@ -232,6 +232,15 @@ def score_trial(inputs, configuration, case, replicate, base):
         targets = late_by_index if latency else by_index
         bundle = fit_models(fit_ledger, fit_evidence, cutoff,
                             endpoint_mode=endpoint_mode, mark_mode=mark_mode)
+        eligible_training = {e["emission_index"] for e in fit_evidence if e["kind"] != "excluded"}
+        domains[name] = {
+            "training": bundle.duration_domain_diagnostics(fit_ledger),
+            "evaluation": bundle.duration_domain_diagnostics(testing),
+            "training_scored": bundle.duration_domain_diagnostics(
+                [f for f in fit_ledger if f["emission_index"] in eligible_training]),
+            "evaluation_scored": bundle.duration_domain_diagnostics(
+                [f for f in testing if targets[f["emission_index"]]["kind"] != "excluded"]),
+        }
         part = []
         route_counts = {m: Counter() for m in ("M0", "M1", "M2", "M3")}
         for f in testing:
@@ -274,5 +283,6 @@ def score_trial(inputs, configuration, case, replicate, base):
     return {"case": case, "family": configuration["pair_id"], "replicate": replicate,
             "counts": counts, "diagnostic_mapping_counts": mapping_counts, "results": results,
             "models": models, "evaluation_routes": routes,
+            "duration_domain_diagnostics": domains,
             "stream_metadata": metadata, "ledger_trace": ledger_trace,
             "evidence_trace": evidence_trace}, score_rows

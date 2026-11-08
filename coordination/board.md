@@ -433,13 +433,17 @@ delegates authored the ledger reference, model component and adaptive stress
 controller in disjoint files. Their source access and scope are recorded in
 the specification and tests. All component work is integrated.
 
-Before production: 255 tests, structural checks and the numerical seed
-reproduction pass. Independent review corrected a ragged-endpoint likelihood
-defect and strengthened the trace/provenance contracts. Development concordance
-smokes pass on v2 and v4; no production model scores have been computed.
-Freeze source before the 100-history independent concordance, then run every
-one of the 56 prescribed full-chain trials. No real photometry is read and no
-real duration–following-gap association is fitted in this tranche.
+Initial freeze `bd8fa23`: 255 tests, structural checks and numerical seed
+reproduction pass; all 100 short histories match the independent ledger at
+both latencies before production scores. The control run was stopped after
+17/56 records (8 successful, 9 duration-domain errors). Its full partial
+payload is retained; [the compact aborted-run record](../data/simulations/a10b_aborted_controls_20261108.json)
+includes every returned trial and marks 39 unfinished tasks explicitly.
+An independent exact replay diagnosed marginal end nodes preceding a fixed
+onset despite valid point durations. The missing-mark repair retains timing
+and all issuances. Re-freeze, repeat concordance and replay all 56 trials with
+the original random streams; do not combine successful subsets. No real
+photometry is read or real duration–following-gap association fitted here.
 
 ## Completed tranche — A10a, 8 November 2026
 
@@ -462,4 +466,10 @@ the slope test 0.77. No 1960+ data; no real duration–gap association.
 Next: Codex reviews the protocol, builds M0–M3 on the ledger and runs the
 null/positive/stress/concordance controls; Barry decides the confirmatory
 estimand.
+
+Subsequent A10b review: D018 resolves the estimand in favor of forecast gain.
+The statement above that waveform errors cannot manufacture skill is
+withdrawn: shared end/age error can make a measured duration improve remaining-
+time forecasts even when true duration is constant. The 0.05 d prefix versus
+retrospective difference measures availability cost, not true endpoint error.
 

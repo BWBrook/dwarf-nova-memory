@@ -207,13 +207,18 @@ def run(args):
     inputs_hash = sha(args.inputs)
     if inputs_hash != anchor["prepared_inputs_sha256"]:
         raise ValueError("not the frozen pre1960-derived benchmark inputs")
-    base = "a10b-"+args.stage+"|"+args.freeze_commit
+    specification = json.loads((ROOT/"configs/a10b_controls.json").read_text())
+    seed_commit = specification["control_seed_commit"] if args.stage == "controls" else args.freeze_commit
+    if len(seed_commit) != 40 or any(c not in "0123456789abcdef" for c in seed_commit):
+        raise ValueError("seed identity must be a full commit hash")
+    base = "a10b-"+args.stage+"|"+seed_commit
     if args.stage == "controls":
         guard_concordance(args.concordance, initial, inputs_hash)
     args.output.mkdir(parents=True, exist_ok=False)
     started = time.monotonic()
     receipt = {"stage": "a10b-"+args.stage, "status": "running", "state": initial,
-               "inputs_sha256": inputs_hash, "seed_base": base}
+               "inputs_sha256": inputs_hash, "seed_base": base,
+               "seed_commit": seed_commit}
     write(args.output/"receipt.json", receipt)
     records = []
     score_count = 0

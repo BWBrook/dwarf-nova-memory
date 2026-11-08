@@ -1,5 +1,6 @@
 {
   "scope": "bounded synthetic development pilot, not final operating-characteristic calibration",
+  "control_seed_commit": "bd8fa238e0811699cf22311596b9bcd606570638",
   "concordance_histories": 100,
   "concordance_years_per_history": 3,
   "concordance_latencies": [0, 2],

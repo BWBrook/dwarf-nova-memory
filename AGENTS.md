@@ -59,6 +59,9 @@ baseline is previous log gap, not an identified latent activity model.
 Point and shared-end bracket sensitivities, common unknown-anchor fallback
 and synthetic controls are development work, not full measurement/missed-event
 inference. Prefix causality does not rule out measurement-induced skill.
+The initial A10b control run is retained as aborted/incomplete after a
+nonpositive derived-mark error. Its explicit missing-mark repair requires a
+new source freeze and full original-stream replay, with domain diagnostics.
 A10 remains unfrozen. No frozen operational
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code

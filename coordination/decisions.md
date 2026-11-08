@@ -315,6 +315,14 @@ proposals, not a record of approvals the user has not given.
   reserved data is part of this envelope. Barry's D018 decision is independent
   of control outcomes. An additional generator-tuning cycle is not authorized
   by this specification.
+- Runtime repair: stop the initial implementation after the independent
+  replay identifies nonpositive duration support in a marginal-end mixture.
+  Preserve 17 completed records (8 successful, 9 failed), 39 uncompleted tasks
+  and 12,408 scores as an aborted/incomplete run. Treat duration as missing
+  across the whole mixture if any node is nonpositive; preserve M0/M2 timing
+  and the declared mark fallback. Record geometry diagnostics. Re-freeze,
+  repeat concordance, and replay all 56 tasks using the original control
+  random streams. No generator, model coefficient or favorable seed is tuned.
 
 ## New decision template
 

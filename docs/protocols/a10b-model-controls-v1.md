@@ -98,6 +98,32 @@ A second mark design uses a 12 d type indicator plus log-duration centered
 within type. It is diagnostic in the declared subset; the one-covariate
 Gaussian power numbers cannot be transferred to its two coefficients.
 
+### Domain repair before the complete pilot
+
+The first source freeze, `bd8fa238e0811699cf22311596b9bcd606570638`, was
+stopped after 17/56 trial records: eight successful, nine with a nonpositive
+duration exception, and 39 not completed. Its `aborted_incomplete` receipt,
+all completed records and 12,408 score rows are retained. An independent exact
+replay traced the first failure to two valid point episodes whose marginal
+end interval extends before the fixed point onset. This is an incoherent
+derived mark in the partial sensitivity, not a negative physical duration.
+
+For each variant, duration is available only if it is positive at **every**
+endpoint node. Otherwise retain the full end mixture and timing information
+for M0/M2, and apply the declared missing-mark fallback to M1/M3. M0/M2 do
+not evaluate duration to select their route. Use the same availability rule
+for training and scoring. Report affected emission indices, minimum margins,
+point-invalid cases and interval-only overlaps separately. Do not clip,
+truncate or delete nodes, or drop the issuance. The uniform bracket model
+remains a partial sensitivity, with no new joint endpoint interpretation.
+
+Freeze the repair, repeat all 100 concordance histories, then replay the
+**entire** fixed 56-trial grid. `control_seed_commit` in the control config
+pins the original `bd8fa23` random namespace independently of the repaired
+source hash; the new receipt records both. Do not salvage successful trials
+from the aborted run or draw replacement random streams. This is a repaired
+development replay, not a new independent validation sample.
+
 ## Independent concordance before production scores
 
 Commit source/config/input identities first. Use a fresh namespace

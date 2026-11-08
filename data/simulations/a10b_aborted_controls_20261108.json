@@ -1,0 +1,1282 @@
+{
+  "interpretation": "Aborted implementation grid, not a completed pilot; retained successful subsets are not a qualification result. Entire grid will be replayed after explicit mark-domain repair using identical random streams.",
+  "receipt": {
+    "abort_reason": "Independently reproduced uniform-end nodes before fixed onset cause nonpositive log-duration during training; stop invalid implementation, preserve all completed trials, repair and replay full grid with original random streams.",
+    "aborted_utc": "2026-11-08T07:15:22.305021+00:00",
+    "completed_trials": 17,
+    "failed_trials": 9,
+    "inputs_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+    "not_completed_trials": 39,
+    "planned_trials": 56,
+    "records_sha256": "0f3b486d2c7b7eb50082cb6f5179f37dcf90dddb65af4c8fea4cdf4a937e2690",
+    "score_rows": 12408,
+    "scores_sha256": "3e7eca24f96ef0cb9932921dbf6c2b2bcf392cbd695d112b215427dca3807274",
+    "seed_base": "a10b-controls|bd8fa238e0811699cf22311596b9bcd606570638",
+    "stage": "a10b-controls",
+    "state": {
+      "environment": {
+        "numpy": "2.5.4",
+        "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+        "python": "3.14.4 (main, Apr 14 2026, 14:46:33) [Clang 22.1.3 ]",
+        "scipy": "1.18.1"
+      },
+      "freeze_commit": "bd8fa238e0811699cf22311596b9bcd606570638",
+      "source_sha256": {
+        "configs/a04i_inputs.json": "0a8510d200793a397a74d8e00f05e6f03f24d96e9acad54674bfc85431a46c57",
+        "configs/a04i_selected.json": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+        "configs/a10b_controls.json": "48319e4ee160f8a7ef4874c620097d03ff5168aae2fc9156aa50abcab9249f10",
+        "docs/protocols/a10b-model-controls-v1.md": "7dc71bab1dc898fca4505451ff11735e411319f72e0c2a69022c317cd5f830ee",
+        "pyproject.toml": "3f2627f1c6cbb28fcbc9070cc97956e7b7f127c200087355664928b3e1871250",
+        "scripts/a10b_pipeline.py": "9c31ff9d18d1ca23eca5772e28f84fb3b3c748b34b1b0eb1c35fce388ef5f577",
+        "src/dnmem/adaptive_effort.py": "a63d61690de4a9b1f7b27986ba20be04ec7bd0fcd6d4e7a40a394fe48478536d",
+        "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+        "src/dnmem/extract_x3.py": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+        "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+        "src/dnmem/forecast_experiment.py": "f42bedf8ff36150ea8c1cb207eb254f9023677d0c52920bd1594fba44906953a",
+        "src/dnmem/injection_observe.py": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+        "src/dnmem/injection_truth.py": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+        "src/dnmem/injection_truth_v2.py": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa",
+        "src/dnmem/injection_truth_v4.py": "5bfb2d9030467aaa45a7f46668a0c14d14426e35db8862b900fbc58d607c5bbc",
+        "src/dnmem/joint_benchmark.py": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04",
+        "src/dnmem/ledger_forecast.py": "69f477e292ebdce2c64e2973728a04b0907522ea0d2fe3c0cacb180d6f459c73",
+        "src/dnmem/phase_cadence.py": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+        "src/dnmem/prefix_features.py": "d847789e37ac2d47a53626c44fa49a0e094781e27d5f551685f59a583fe646b2",
+        "src/dnmem/prefix_reference.py": "7387959c3519de1862b12f4a54beb143d4c45fa2bbdf81e9bcf6986aed879e9c",
+        "src/dnmem/x4_benchmark.py": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca",
+        "uv.lock": "92b682d0a144687050bf6b18197fbf0f5821726e99e9a0ba36b2bb84447651bd"
+      }
+    },
+    "status": "aborted_incomplete",
+    "successful_trials": 8,
+    "trial_file_sha256": {
+      "v2-phase-gross-000.json": "fa596df908e8b0780aee0e480a8add5c407f6cd80463e7e7771d0eb4bf75f225",
+      "v2-phase-null-000.json": "d820a393d73d3df34391b441a00ceff6fb44ef123b040884e2be7f4622f5fdc4",
+      "v2-phase-null-001.json": "3d62ecf5aa3d433abff77ea70f8cfc77bac6e5330c7b5f07978cd8dfb8d91511",
+      "v2-phase-null-002.json": "4b3de15249bb1027a7950704cec71bdf0de9c0ac156ea437c64eacee09383b72",
+      "v2-phase-null-003.json": "76c1a2e638a11569aad033eaf11b3cc8cad23f32ed8240357a26c80310f279f6",
+      "v2-phase-null-004.json": "ef592603c6c26343d063f61b7f016e60cb5930c297709ddc6eaedf970c485eda",
+      "v2-phase-null-005.json": "9ad9d54ed77c00e227bbc784623baf815d2ece79b98dfed87cc2ec38a77b11cd",
+      "v2-phase-null-006.json": "334e16940e728e9b4c382fdab72c90d1624ed08bacbd0391430658d287dfac8c",
+      "v2-phase-null-007.json": "e7976811cf507b953256ab5e375e508569b2cccb686519a4c9cd6a2186324e0e",
+      "v2-phase-structured-000.json": "724439b10d41a2d9a096a3d6ab3125475d8b7fc14c669d681260fb6c01240135",
+      "v2-phase-structured-001.json": "eddf746e0094161813edfc67191ff12c51c162cf88c45715dd85c4e87d94b06e",
+      "v2-phase-structured-002.json": "0194a4e8a93116a79eb667a17f6aa4c2bde7dd58acb2eaa2d480ee1f1ab4989b",
+      "v2-phase-structured-003.json": "fe11dd1c714d54d2b1e591474274f78fdd17e064acee14aba621fbfe13097cde",
+      "v2-phase-structured-004.json": "6b814e7ecaff85c03781f67b39c4888ddf9d02acadda75ef07adef5de53b0047",
+      "v2-phase-structured-005.json": "14577dd1eed3e717747dd0298e7b83b990d2a2cbe9657b86741e36137d2dbd6a",
+      "v2-phase-structured-006.json": "cc28bf70b6aef26ac7c44f891ab3c8dcff9f9d699c63f41c30fe6589bd2da519",
+      "v2-phase-structured-007.json": "2833a62f8dab3ccb3338aa99fbb83375c0b60bb27c004814eeed45f8da0dc88c"
+    }
+  },
+  "trials": [
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "null",
+        0
+      ]
+    },
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "null",
+        1
+      ]
+    },
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "null",
+        2
+      ]
+    },
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "null",
+        3
+      ]
+    },
+    {
+      "counts": {
+        "evaluation_evidence": {
+          "interval:onset": 350,
+          "right_censored:coverage": 33,
+          "right_censored:record_end": 1
+        },
+        "evaluation_issued": 384,
+        "training_evidence": {
+          "interval:onset": 313,
+          "right_censored:coverage": 27
+        },
+        "training_issued": 340
+      },
+      "results": {
+        "oracle_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.00024414674021502994,
+            "lower": -0.008427022438572537,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.003909594675284694,
+            "upper": 0.007938728958142476
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.0006231767123255669,
+            "lower": -0.004284780599851589,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0023449120433375143,
+            "upper": 0.005531134024502723
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.00044215802915084087,
+            "lower": -0.008245621748797475,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0037283201323993617,
+            "upper": 0.007361305690495793
+          }
+        },
+        "prefix_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.004536830082680997,
+            "lower": -0.013040430702099537,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004062829856880207,
+            "upper": 0.003966770536737542
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.001714717299031049,
+            "lower": -0.003483618000909746,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0008451411239890216,
+            "upper": 5.418340284764822e-05
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.007326434327670724,
+            "lower": -0.018076848247524348,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.005136306913057783,
+            "upper": 0.0034239795921829023
+          }
+        },
+        "prefix_uniform_end": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.004443797977557292,
+            "lower": -0.013242339531447957,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004203746027361346,
+            "upper": 0.004354743576333374
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.0016525615697991047,
+            "lower": -0.0033401380825350837,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0008062862484459365,
+            "upper": 3.5014942936874294e-05
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.007415998778937612,
+            "lower": -0.018598758562973303,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.005342872080463032,
+            "upper": 0.0037667610050980786
+          }
+        },
+        "retrospective_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0053394238472137074,
+            "lower": -0.015350114329491227,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004782883627731413,
+            "upper": 0.0046712666350638135
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.001696313935560476,
+            "lower": -0.0034301944553812146,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0008284092656120483,
+            "upper": 3.7566584260262945e-05
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.006324212602890696,
+            "lower": -0.016884616382409907,
+            "n": 384,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0050455243250917175,
+            "upper": 0.004236191176628517
+          }
+        }
+      },
+      "success": true,
+      "task": [
+        "v2-phase",
+        "null",
+        4
+      ]
+    },
+    {
+      "counts": {
+        "evaluation_evidence": {
+          "excluded:ambiguous_survival": 1,
+          "interval:onset": 355,
+          "right_censored:coverage": 29,
+          "right_censored:record_end": 1
+        },
+        "evaluation_issued": 386,
+        "training_evidence": {
+          "interval:onset": 309,
+          "right_censored:coverage": 28,
+          "right_censored:record_end": 1
+        },
+        "training_issued": 338
+      },
+      "results": {
+        "oracle_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": 4.0227005906744704e-05,
+            "lower": -0.0001193883518733836,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 7.62606418420982e-05,
+            "upper": 0.000199842363686873
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.0008584663588013548,
+            "lower": -0.003934430653549481,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0014696268245314992,
+            "upper": 0.0022174979359467716
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 0.00019732330847004476,
+            "lower": -0.0008773721650364107,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0005134654192066935,
+            "upper": 0.0012720187819765002
+          }
+        },
+        "prefix_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": 0.00011942630211041255,
+            "lower": -0.0002297722234869633,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00016683923190557556,
+            "upper": 0.0004686248277077884
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.0008296002370373791,
+            "lower": -0.0035564295702560167,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0013028179621134377,
+            "upper": 0.0018972290961812585
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 4.599016443174858e-05,
+            "lower": -0.003291760641051664,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0015947025541600782,
+            "upper": 0.0033837409699151613
+          }
+        },
+        "prefix_uniform_end": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0001746629943918993,
+            "lower": -0.0005886988317909646,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00019781704683566667,
+            "upper": 0.00023937284300716604
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.0009687112952177992,
+            "lower": -0.0037561723401708788,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0013317864355558426,
+            "upper": 0.0018187497497352805
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 9.158889324408218e-05,
+            "lower": -0.0025228917633782766,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0012491402815537464,
+            "upper": 0.0027060695498664408
+          }
+        },
+        "retrospective_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": 0.00012352641312049766,
+            "lower": -0.00023547790226445932,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00017152421857208246,
+            "upper": 0.00048253072850545464
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.0008191787989093389,
+            "lower": -0.0035420985306269604,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0013009500421089916,
+            "upper": 0.0019037409328082828
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 5.203552701638375e-05,
+            "lower": -0.0033567904650069927,
+            "n": 385,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0016286606858835365,
+            "upper": 0.0034608615190397604
+          }
+        }
+      },
+      "success": true,
+      "task": [
+        "v2-phase",
+        "null",
+        5
+      ]
+    },
+    {
+      "counts": {
+        "evaluation_evidence": {
+          "interval:onset": 364,
+          "right_censored:coverage": 29,
+          "right_censored:record_end": 1
+        },
+        "evaluation_issued": 394,
+        "training_evidence": {
+          "interval:onset": 303,
+          "right_censored:coverage": 28,
+          "right_censored:record_end": 1
+        },
+        "training_issued": 332
+      },
+      "results": {
+        "oracle_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0003303139836894951,
+            "lower": -0.0009320024037627473,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00028747324657162033,
+            "upper": 0.0002713744363837571
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.004985986184821689,
+            "lower": -0.0023670831699879793,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.003513131795749169,
+            "upper": 0.012339055539631357
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0007094845766919099,
+            "lower": -0.0021507848886431224,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0006886209974106885,
+            "upper": 0.0007318157352593028
+          }
+        },
+        "prefix_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.005531887612645364,
+            "lower": -0.011983423639309753,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0030823993699815445,
+            "upper": 0.0009196484140190243
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.0018684731569984564,
+            "lower": -0.0012617460220500185,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.001495548592695643,
+            "upper": 0.0049986923360469315
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.008639213634986726,
+            "lower": -0.017694339482686162,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004326336254295601,
+            "upper": 0.0004159122127127095
+          }
+        },
+        "prefix_uniform_end": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0056715423682807365,
+            "lower": -0.012203602078606574,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0031208717819406185,
+            "upper": 0.0008605173420450996
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.0018506647284261106,
+            "lower": -0.0011920246016192055,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.001453728791906061,
+            "upper": 0.004893354058471426
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.008709565575121335,
+            "lower": -0.01799287568265414,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004435357581285498,
+            "upper": 0.0005737445324114684
+          }
+        },
+        "retrospective_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0021613208374369297,
+            "lower": -0.005737123176564171,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0017084382435050938,
+            "upper": 0.0014144815016903112
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.002007729588682398,
+            "lower": -0.0017158091566032876,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0017790233884045438,
+            "upper": 0.0057312683339680835
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0035180713848619073,
+            "lower": -0.008271362692500634,
+            "n": 394,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.002271016091586423,
+            "upper": 0.0012352199227768194
+          }
+        }
+      },
+      "success": true,
+      "task": [
+        "v2-phase",
+        "null",
+        6
+      ]
+    },
+    {
+      "counts": {
+        "evaluation_evidence": {
+          "interval:onset": 365,
+          "right_censored:coverage": 34,
+          "right_censored:record_end": 1
+        },
+        "evaluation_issued": 400,
+        "training_evidence": {
+          "interval:onset": 313,
+          "right_censored:coverage": 28,
+          "right_censored:record_end": 1
+        },
+        "training_issued": 342
+      },
+      "results": {
+        "oracle_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": 0.000842479062334806,
+            "lower": -0.007792160330947618,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004125437247171728,
+            "upper": 0.00947711845561723
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.0017162401743600598,
+            "lower": -0.0036195097367617036,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0009093395550772551,
+            "upper": 0.00018702938804158434
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 0.00047066372413161965,
+            "lower": -0.008370482355989157,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004224101515460194,
+            "upper": 0.009311809804252395
+          }
+        },
+        "prefix_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.005379441926872389,
+            "lower": -0.01637014931319325,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0052511137476763965,
+            "upper": 0.00561126545944847
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.0026355534425115696,
+            "lower": -0.0106264684805413,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0038178801725662613,
+            "upper": 0.00535536159551816
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0037660681986214244,
+            "lower": -0.012079927561423225,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.003972175735530236,
+            "upper": 0.004547791164180377
+          }
+        },
+        "prefix_uniform_end": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.004008788073000639,
+            "lower": -0.013559732277536377,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004563227156620405,
+            "upper": 0.005542156131535099
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.0026304975287157247,
+            "lower": -0.010725141734174519,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00386743964476181,
+            "upper": 0.005464146676743069
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.002800922688342236,
+            "lower": -0.01017706526395663,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.003524155663705263,
+            "upper": 0.004575219887272157
+          }
+        },
+        "retrospective_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.004502507403734116,
+            "lower": -0.0158247717844632,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.005409524251229809,
+            "upper": 0.00681975697699497
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": -0.003273229379786335,
+            "lower": -0.01023545647055302,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0033263961186221934,
+            "upper": 0.0036889977109803495
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.003771854246570753,
+            "lower": -0.012897243562174277,
+            "n": 400,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004359906565041004,
+            "upper": 0.00535353506903277
+          }
+        }
+      },
+      "success": true,
+      "task": [
+        "v2-phase",
+        "null",
+        7
+      ]
+    },
+    {
+      "counts": {
+        "evaluation_evidence": {
+          "interval:onset": 354,
+          "right_censored:coverage": 31,
+          "right_censored:superseded": 1
+        },
+        "evaluation_issued": 386,
+        "training_evidence": {
+          "interval:onset": 307,
+          "right_censored:coverage": 31,
+          "right_censored:record_end": 1
+        },
+        "training_issued": 339
+      },
+      "results": {
+        "oracle_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0022373694726895593,
+            "lower": -0.0034975698513437905,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0006020955067382089,
+            "upper": -0.000977169094035328
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.04163878922514396,
+            "lower": 0.010742766438391525,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.014761427476994117,
+            "upper": 0.0725348120118964
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.010070537731188364,
+            "lower": -0.02003369983407065,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004760175632906829,
+            "upper": -0.00010737562830607714
+          }
+        },
+        "prefix_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.004254735342242267,
+            "lower": -0.006021799775921133,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0008442637961838477,
+            "upper": -0.0024876709085634
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.0415770521382958,
+            "lower": 0.015987209162846978,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.012226253645557357,
+            "upper": 0.06716689511374463
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.006986111243235866,
+            "lower": -0.012420081985585446,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.002596229475196235,
+            "upper": -0.001552140500886287
+          }
+        },
+        "prefix_uniform_end": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.004437751741143397,
+            "lower": -0.0063739861669824885,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0009250894282657726,
+            "upper": -0.002501517315304305
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.041524376886178244,
+            "lower": 0.01570165615382073,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0123375174202943,
+            "upper": 0.06734709761853576
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.006858099560058293,
+            "lower": -0.012559576813861058,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.002724038093013964,
+            "upper": -0.0011566223062555283
+          }
+        },
+        "retrospective_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.002412786830809847,
+            "lower": -0.003469911338182061,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00050507040525679,
+            "upper": -0.0013556623234376327
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.04060124788314149,
+            "lower": 0.015695975756717186,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.011899181031373739,
+            "upper": 0.06550652000956579
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.003697009262634287,
+            "lower": -0.006816280997970914,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.001490318149362328,
+            "upper": -0.0005777375272976596
+          }
+        }
+      },
+      "success": true,
+      "task": [
+        "v2-phase",
+        "structured",
+        0
+      ]
+    },
+    {
+      "counts": {
+        "evaluation_evidence": {
+          "interval:onset": 361,
+          "right_censored:coverage": 26,
+          "right_censored:record_end": 1
+        },
+        "evaluation_issued": 388,
+        "training_evidence": {
+          "excluded:ambiguous_survival": 1,
+          "interval:onset": 307,
+          "right_censored:coverage": 25,
+          "right_censored:record_end": 1
+        },
+        "training_issued": 334
+      },
+      "results": {
+        "oracle_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": 0.0030876341518042464,
+            "lower": -0.0029376173017206133,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0028787301516361116,
+            "upper": 0.009112885605329106
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.029573176999195348,
+            "lower": 0.00624912269529395,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.011143710582196358,
+            "upper": 0.052897231303096745
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 0.0003456519034016055,
+            "lower": -0.00010549454676414061,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00021554766617017394,
+            "upper": 0.0007967983535673516
+          }
+        },
+        "prefix_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": 0.009820124812395603,
+            "lower": -0.0017701669143805991,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00553758171214747,
+            "upper": 0.021410416539171806
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.04601178466840196,
+            "lower": 0.012423903667891381,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.016047537021740423,
+            "upper": 0.07959966566891254
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 0.0032421762754095682,
+            "lower": -0.002059186866310047,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0025328725346246885,
+            "upper": 0.008543539417129183
+          }
+        },
+        "prefix_uniform_end": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": 0.008373371190052119,
+            "lower": -0.002724203324319165,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.005302172467152334,
+            "upper": 0.019470945704423405
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.04618337076983637,
+            "lower": 0.01230983388729743,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.016184017002191062,
+            "upper": 0.0800569076523753
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 0.0027204719165874994,
+            "lower": -0.002330200818603407,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0024130982749831394,
+            "upper": 0.007771144651778406
+          }
+        },
+        "retrospective_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": 0.009335063126612402,
+            "lower": -0.0014502715649937492,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.005152991275418061,
+            "upper": 0.020120397818218554
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.04600024311049587,
+            "lower": 0.012684547249622202,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.015917493060198924,
+            "upper": 0.07931593897136954
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": 0.003046408593227441,
+            "lower": -0.0019545787758898695,
+            "n": 388,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.002389359720249882,
+            "upper": 0.008047395962344751
+          }
+        }
+      },
+      "success": true,
+      "task": [
+        "v2-phase",
+        "structured",
+        1
+      ]
+    },
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "structured",
+        2
+      ]
+    },
+    {
+      "counts": {
+        "evaluation_evidence": {
+          "interval:onset": 357,
+          "right_censored:coverage": 29
+        },
+        "evaluation_issued": 386,
+        "training_evidence": {
+          "interval:onset": 327,
+          "right_censored:coverage": 27,
+          "right_censored:record_end": 1
+        },
+        "training_issued": 355
+      },
+      "results": {
+        "oracle_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0004197989127554163,
+            "lower": -0.011197589523925616,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.005149386882807252,
+            "upper": 0.010357991698414781
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.020386808654254296,
+            "lower": -0.021882348334901353,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.020195256189305958,
+            "upper": 0.06265596564340994
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0009830348907684085,
+            "lower": -0.002972459544097146,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.000950502527258886,
+            "upper": 0.001006389762560329
+          }
+        },
+        "prefix_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0007836992422435393,
+            "lower": -0.007839035123020817,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00337088141243164,
+            "upper": 0.006271636638533739
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.021635217042905358,
+            "lower": -0.0483377143951461,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.03343149893125934,
+            "upper": 0.09160814848095682
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0003869348698224962,
+            "lower": -0.002487287876088862,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0010035016089961417,
+            "upper": 0.0017134181364438694
+          }
+        },
+        "prefix_uniform_end": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0012002489556679785,
+            "lower": -0.008454338981857107,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0034658416901184805,
+            "upper": 0.006053841070521149
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.02090863829893619,
+            "lower": -0.04962248411311887,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.03369819007263822,
+            "upper": 0.09143976071099125
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0005787237196217926,
+            "lower": -0.0029920492356784807,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.001153032862175551,
+            "upper": 0.0018346017964348958
+          }
+        },
+        "retrospective_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0013648551011653854,
+            "lower": -0.007639968931470195,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0029981087972153113,
+            "upper": 0.004910258729139423
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.021284248216616834,
+            "lower": -0.04885669522069388,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.03351177130027745,
+            "upper": 0.09142519165392754
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0006729786020061812,
+            "lower": -0.002679081972391961,
+            "n": 386,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0009584712445901147,
+            "upper": 0.0013331247683795984
+          }
+        }
+      },
+      "success": true,
+      "task": [
+        "v2-phase",
+        "structured",
+        3
+      ]
+    },
+    {
+      "counts": {
+        "evaluation_evidence": {
+          "interval:onset": 350,
+          "right_censored:coverage": 28,
+          "right_censored:record_end": 1
+        },
+        "evaluation_issued": 379,
+        "training_evidence": {
+          "interval:onset": 295,
+          "right_censored:coverage": 29
+        },
+        "training_issued": 324
+      },
+      "results": {
+        "oracle_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0019128730989309722,
+            "lower": -0.004760843014353127,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0013606962181938547,
+            "upper": 0.0009350968164911822
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.040184387999173565,
+            "lower": 0.006519991912594468,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.016084094215580297,
+            "upper": 0.07384878408575266
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.003485235698164757,
+            "lower": -0.012345134889624895,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.00423306133190371,
+            "upper": 0.005374663493295382
+          }
+        },
+        "prefix_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0014417167212196905,
+            "lower": -0.0036414287951830587,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0010509731454496924,
+            "upper": 0.0007579953527436778
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.057370408113104204,
+            "lower": 0.022298004972308536,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.016756808440364784,
+            "upper": 0.09244281125389987
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.004107132946994511,
+            "lower": -0.01668487176072147,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.006009361807015947,
+            "upper": 0.008470605866732445
+          }
+        },
+        "prefix_uniform_end": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.0007143161131882595,
+            "lower": -0.002110733892656564,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.0006671771289618873,
+            "upper": 0.0006821016662800449
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.05720356711072559,
+            "lower": 0.02132734527162708,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.01714085500524293,
+            "upper": 0.0930797889498241
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0024384366044849885,
+            "lower": -0.014323368090910232,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.005678353988045816,
+            "upper": 0.009446494881940255
+          }
+        },
+        "retrospective_point": {
+          "gain_M1_M0": {
+            "blocks": 20,
+            "estimate": -0.000998942283920666,
+            "lower": -0.002910973344127957,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.000913525602431653,
+            "upper": 0.0009130887762866251
+          },
+          "gain_M2_M0": {
+            "blocks": 20,
+            "estimate": 0.05716496954700525,
+            "lower": 0.021806026022103728,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.016893711016091204,
+            "upper": 0.09252391307190677
+          },
+          "gain_M3_M2": {
+            "blocks": 20,
+            "estimate": -0.0024090975701669733,
+            "lower": -0.012556348517609901,
+            "n": 379,
+            "scope": "three-year cluster interval diagnostic; not a calibrated confirmatory test",
+            "se": 0.004848129158415967,
+            "upper": 0.007738153377275955
+          }
+        }
+      },
+      "success": true,
+      "task": [
+        "v2-phase",
+        "structured",
+        4
+      ]
+    },
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "structured",
+        5
+      ]
+    },
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "structured",
+        6
+      ]
+    },
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "structured",
+        7
+      ]
+    },
+    {
+      "error": "duration must be positive",
+      "error_type": "ValueError",
+      "success": false,
+      "task": [
+        "v2-phase",
+        "gross",
+        0
+      ]
+    }
+  ]
+}
