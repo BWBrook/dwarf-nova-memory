@@ -357,7 +357,7 @@ Next: Codex reviews the targets, builds a v3′ waveform with amplitude–durati
 coupling (or empirical templates) and a phase-aligned cadence arm, qualifies
 them on A04h, then runs X4 validation on whatever qualifies.
 
-## Active tranche — A04i joint benchmark and X4 recovery, 8 November 2026
+## Completed tranche — A04i joint benchmark and X4 recovery, 8 November 2026
 
 Codex, base `df6fc7e`; D017 and
 [`a04i-joint-validation-v1.md`](../docs/protocols/a04i-joint-validation-v1.md).
@@ -385,3 +385,31 @@ objectives, not predictive p-values or X4 results. Every attempt is hashed,
 with raw feature vectors and compact summaries in
 `data/simulations/a04i_calibration_20261108.json`. The selected configs and
 input/calibration chain are frozen before fresh qualification.
+
+Outcome at freeze `939ea77`: all 900 fresh qualification histories completed.
+V2-phase passes waveform (p 0.0256), cadence (p 0.240) and all diversity gates;
+v4-phase fails waveform and cadence. Independent R reproduces the exact
+eligible set and all calibration winners. Only v2-phase enters X4 recovery.
+
+All 4,800 X4 histories, 16,650 metric rows and 9,600 parsed ledger records
+completed, with zero extraction errors and no independent/reference causal
+ledger disagreement. Both C1 and C2 pass all six ordinary and three gross
+decisive cells at magnitude 10; the predeclared preference selects C1/7 d.
+The source-blind new waveform did not qualify, so this result uses a waveform
+Claude had already studied, with fresh cadence construction and seeds.
+Magnitude-9.5 onset coverage fails in later eras; some threshold and
+alternative-bias diagnostics are inconclusive. These are retained, not
+folded into a blanket validation claim. Independent base R reproduces all
+108 decisive metric estimates/intervals/statuses and both global decisions;
+maximum difference 6.66e−16. A separate integrity audit verifies all counts,
+seeds, hashes and unchanged X4 source. Individual photometry-to-score
+calculations were not independently re-derived in this last audit.
+
+The [A04i report](../docs/audits/2026-11-08-a04i-joint-validation.md) links
+compact public evidence and preserved R/Python audits. Full regenerable
+payloads remain ignored. Final local checks: 206 tests, structural validator
+and staged secret scan pass. No reserved data or real focal association was
+accessed; A10 stays unfrozen.
+
+Next: Claude — review the magnitude-10 restriction and known-waveform limit,
+then specify prefix-causal predictor construction for A10.

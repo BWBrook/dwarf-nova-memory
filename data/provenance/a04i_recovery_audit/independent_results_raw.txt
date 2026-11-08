@@ -1,0 +1,149 @@
+A04i independent raw recovery decision derivation
+R: R version 4.6.1 (2026-06-24)
+metrics_sha256_expected: aff038f9900aec9dfb3a31508ddbed0bfbd5011d886e824341361362e262f3c5
+metrics_sha256_actual: aff038f9900aec9dfb3a31508ddbed0bfbd5011d886e824341361362e262f3c5
+metrics_hash_match: TRUE
+all_metric_rows: 16650
+decisive_rows: 7200
+grid_ok: TRUE
+finite_total_bias_rows_checked: 16650
+max_abs_total_bias_identity_error: 1.1102230246251565e-16
+ordinary_bias_complete: TRUE
+
+CELL VERDICTS
+C1_7 primary 1910_1929 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.96564218346 mcse=0.000767402475807 CI=[ 0.964138074608, 0.967146292313] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.980099049561 mcse=0.000607281941904 CI=[ 0.978908776955, 0.981289322167] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.998770883598 mcse=0.000228691426435 CI=[ 0.998322648402, 0.999219118794] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00375 mcse=0.000768974677826 CI=[ 0.00224280963146, 0.00525719036854] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.004 mcse=0.000765810789565 CI=[ 0.00249901085245, 0.00550098914755] undefined=0 status=PASS
+  total_bias                                           est=-0.00160701056504 mcse=0.00108068608723 CI=[-0.00372515529602, 0.00051113416594] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.00137523837465 mcse=0.000160894205364 CI=[ 0.00105988573214, 0.00172874365101] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.00456320957909 mcse=0.000279925059062 CI=[ 0.00401455646333, 0.00516336476497] undefined=0 status=PASS
+C1_7 primary 1930_1949 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.929501400153 mcse=0.00105066373449 CI=[ 0.927442099233, 0.931560701072] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.947412444994 mcse=0.000834205119422 CI=[ 0.94577740296, 0.949047487028] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.991002922908 mcse=0.000614499162418 CI=[ 0.98979850455, 0.992207341267] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00625 mcse=0.00086484892273 CI=[ 0.00455489611145, 0.00794510388855] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.0135 mcse=0.00121884739505 CI=[ 0.0111110591057, 0.0158889408943] undefined=0 status=PASS
+  total_bias                                           est=-0.000578733641588 mcse=0.00293258399187 CI=[-0.00632659826566, 0.00516913098248] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.000345072177597 mcse=8.83571208567e-05 CI=[ 0.000171892220718, 0.000567047154453] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.015365158465 mcse=0.000576093681085 CI=[ 0.0142360148501, 0.0165358307637] undefined=0 status=PASS
+C1_7 primary 1950_1959 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.93279953201 mcse=0.0014384163556 CI=[ 0.929980235953, 0.935618828067] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.949179189061 mcse=0.0012717881432 CI=[ 0.9466864843, 0.951671893821] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.992188217995 mcse=0.000797408633799 CI=[ 0.990625297072, 0.993751138917] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00750205395043 mcse=0.00136567060342 CI=[ 0.00482533956774, 0.0101787683331] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.00375102697522 mcse=0.00095136785814 CI=[ 0.00188634597326, 0.00561570797717] undefined=0 status=PASS
+  total_bias                                           est= 0.00155452500467 mcse=0.00426091603619 CI=[-0.00679687042627, 0.0099059204356] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.000422849235027 mcse=0.000125866352409 CI=[ 0.000176151184306, 0.000757092349524] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.0148824175408 mcse=0.000718078649389 CI=[ 0.013474983388, 0.0164149965973] undefined=0 status=PASS
+C1_7 structured 1910_1929 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.966937945066 mcse=0.000743124797174 CI=[ 0.965481420464, 0.968394469669] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.979799447755 mcse=0.000609492977766 CI=[ 0.978604841518, 0.980994053991] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.999227237602 mcse=0.000183633613715 CI=[ 0.998867315719, 0.999587159485] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00375 mcse=0.000659303004034 CI=[ 0.00245776611209, 0.00504223388791] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.003125 mcse=0.000631234568287 CI=[ 0.00188778024616, 0.00436221975384] undefined=0 status=PASS
+  total_bias                                           est=-0.000821639621982 mcse=0.00124374239424 CI=[-0.00325937471468, 0.00161609547072] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.0016448570802 mcse=0.000173431300013 CI=[ 0.00130493173217, 0.00202163828076] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.00360563790654 mcse=0.00025503271907 CI=[ 0.00310577377717, 0.00414287231975] undefined=0 status=PASS
+C1_7 structured 1930_1949 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.928209505476 mcse=0.0010311034845 CI=[ 0.926188542646, 0.930230468305] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.94591649565 mcse=0.000878122493143 CI=[ 0.944195375564, 0.947637615737] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.989906762017 mcse=0.000642676544359 CI=[ 0.98864711599, 0.991166408044] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.004125 mcse=0.000711055509326 CI=[ 0.00273133120172, 0.00551866879828] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.014875 mcse=0.00128611670464 CI=[ 0.0123542112589, 0.0173957887411] undefined=0 status=PASS
+  total_bias                                           est=-0.00277349373473 mcse=0.00320205152376 CI=[-0.00904951472131, 0.00350252725185] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.000268250622725 mcse=7.05404512309e-05 CI=[ 0.000129991338312, 0.000450261338161] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.0147811149076 mcse=0.000569360413982 CI=[ 0.0136651684962, 0.0159392750403] undefined=0 status=PASS
+C1_7 structured 1950_1959 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.931941923775 mcse=0.00153604839312 CI=[ 0.928931268924, 0.934952578625] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.949110707804 mcse=0.00127722835475 CI=[ 0.946607340229, 0.951614075379] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.993505322028 mcse=0.000694486815147 CI=[ 0.99214412787, 0.994866516185] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00675184855539 mcse=0.00130529065368 CI=[ 0.00419347887418, 0.0093102182366] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.0017504792551 mcse=0.000656625547081 CI=[ 0.000463493182823, 0.00303746532738] undefined=0 status=PASS
+  total_bias                                           est= 0.00113491693655 mcse=0.00415723358152 CI=[-0.00701326088324, 0.00928309475634] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.000342452722499 mcse=0.000125173080697 CI=[ 9.71134843335e-05, 0.000690858726069] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.0128089549996 mcse=0.000717305496656 CI=[ 0.0114030362262, 0.0142929687536] undefined=0 status=PASS
+C1_7 gross 1910_1929 n=400 errors=0 verdict=PASS
+  false_confirmed_per_year                             est= 0.01 mcse=0.00110535266376 CI=[ 0.00783350877903, 0.012166491221] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.1045 mcse=0.00336473306095 CI=[ 0.0979051232005, 0.111094876799] undefined=0 status=PASS
+C1_7 gross 1930_1949 n=400 errors=0 verdict=PASS
+  false_confirmed_per_year                             est= 0.012125 mcse=0.00114350555306 CI=[ 0.00988372911601, 0.014366270884] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.11975 mcse=0.00365232013327 CI=[ 0.112591452539, 0.126908547461] undefined=0 status=PASS
+C1_7 gross 1950_1959 n=400 errors=0 verdict=PASS
+  false_confirmed_per_year                             est= 0.0132536286458 mcse=0.00180513700666 CI=[ 0.00971556011271, 0.0167916971788] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.115281562372 mcse=0.00500573888908 CI=[ 0.105470314149, 0.125092810594] undefined=0 status=PASS
+C2_095 primary 1910_1929 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.96564218346 mcse=0.000767402475807 CI=[ 0.964138074608, 0.967146292313] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.980099049561 mcse=0.000607281941904 CI=[ 0.978908776955, 0.981289322167] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.998770883598 mcse=0.000228691426435 CI=[ 0.998322648402, 0.999219118794] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00375 mcse=0.000768974677826 CI=[ 0.00224280963146, 0.00525719036854] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.004 mcse=0.000765810789565 CI=[ 0.00249901085245, 0.00550098914755] undefined=0 status=PASS
+  total_bias                                           est=-0.00337956406862 mcse=0.00194786220653 CI=[-0.00719737399342, 0.00043824585618] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.00137523837465 mcse=0.000160894205364 CI=[ 0.00105988573214, 0.00172874365101] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.00456320957909 mcse=0.000279925059062 CI=[ 0.00401455646333, 0.00516336476497] undefined=0 status=PASS
+C2_095 primary 1930_1949 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.929501400153 mcse=0.00105066373449 CI=[ 0.927442099233, 0.931560701072] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.947412444994 mcse=0.000834205119422 CI=[ 0.94577740296, 0.949047487028] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.991002922908 mcse=0.000614499162418 CI=[ 0.98979850455, 0.992207341267] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00625 mcse=0.00086484892273 CI=[ 0.00455489611145, 0.00794510388855] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.0135 mcse=0.00121884739505 CI=[ 0.0111110591057, 0.0158889408943] undefined=0 status=PASS
+  total_bias                                           est=-0.00474797323785 mcse=0.00413741495494 CI=[-0.0128573065495, 0.00336136007384] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.000345072177597 mcse=8.83571208567e-05 CI=[ 0.000171892220718, 0.000567047154453] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.015365158465 mcse=0.000576093681085 CI=[ 0.0142360148501, 0.0165358307637] undefined=0 status=PASS
+C2_095 primary 1950_1959 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.93279953201 mcse=0.0014384163556 CI=[ 0.929980235953, 0.935618828067] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.949179189061 mcse=0.0012717881432 CI=[ 0.9466864843, 0.951671893821] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.992188217995 mcse=0.000797408633799 CI=[ 0.990625297072, 0.993751138917] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00750205395043 mcse=0.00136567060342 CI=[ 0.00482533956774, 0.0101787683331] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.00375102697522 mcse=0.00095136785814 CI=[ 0.00188634597326, 0.00561570797717] undefined=0 status=PASS
+  total_bias                                           est= 0.00438861793208 mcse=0.00609862083654 CI=[-0.00756467890755, 0.0163419147717] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.000422849235027 mcse=0.000125866352409 CI=[ 0.000176151184306, 0.000757092349524] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.0148824175408 mcse=0.000718078649389 CI=[ 0.013474983388, 0.0164149965973] undefined=0 status=PASS
+C2_095 structured 1910_1929 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.966937945066 mcse=0.000743124797174 CI=[ 0.965481420464, 0.968394469669] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.979799447755 mcse=0.000609492977766 CI=[ 0.978604841518, 0.980994053991] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.999227237602 mcse=0.000183633613715 CI=[ 0.998867315719, 0.999587159485] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00375 mcse=0.000659303004034 CI=[ 0.00245776611209, 0.00504223388791] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.003125 mcse=0.000631234568287 CI=[ 0.00188778024616, 0.00436221975384] undefined=0 status=PASS
+  total_bias                                           est= 0.00078141251865 mcse=0.00204325160942 CI=[-0.00322336063582, 0.00478618567312] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.0016448570802 mcse=0.000173431300013 CI=[ 0.00130493173217, 0.00202163828076] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.00360563790654 mcse=0.00025503271907 CI=[ 0.00310577377717, 0.00414287231975] undefined=0 status=PASS
+C2_095 structured 1930_1949 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.928209505476 mcse=0.0010311034845 CI=[ 0.926188542646, 0.930230468305] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.94591649565 mcse=0.000878122493143 CI=[ 0.944195375564, 0.947637615737] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.989906762017 mcse=0.000642676544359 CI=[ 0.98864711599, 0.991166408044] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.004125 mcse=0.000711055509326 CI=[ 0.00273133120172, 0.00551866879828] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.014875 mcse=0.00128611670464 CI=[ 0.0123542112589, 0.0173957887411] undefined=0 status=PASS
+  total_bias                                           est=-0.00345734758258 mcse=0.00413496595247 CI=[-0.0115618808494, 0.00464718568425] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.000268250622725 mcse=7.05404512309e-05 CI=[ 0.000129991338312, 0.000450261338161] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.0147811149076 mcse=0.000569360413982 CI=[ 0.0136651684962, 0.0159392750403] undefined=0 status=PASS
+C2_095 structured 1950_1959 n=400 errors=0 verdict=PASS
+  onset_effective_coverage                             est= 0.931941923775 mcse=0.00153604839312 CI=[ 0.928931268924, 0.934952578625] undefined=0 status=PASS
+  end_effective_coverage                               est= 0.949110707804 mcse=0.00127722835475 CI=[ 0.946607340229, 0.951614075379] undefined=0 status=PASS
+  short_outside_mar_may_completeness                   est= 0.993505322028 mcse=0.000694486815147 CI=[ 0.99214412787, 0.994866516185] undefined=0 status=PASS
+  false_confirmed_per_year                             est= 0.00675184855539 mcse=0.00130529065368 CI=[ 0.00419347887418, 0.0093102182366] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.0017504792551 mcse=0.000656625547081 CI=[ 0.000463493182823, 0.00303746532738] undefined=0 status=PASS
+  total_bias                                           est= 0.00729712292524 mcse=0.0061201889901 CI=[-0.00469844749535, 0.0192926933458] undefined=0 status=PASS
+  operational_confirmation_premature_fraction          est= 0.000342452722499 mcse=0.000125173080697 CI=[ 9.71134843335e-05, 0.000690858726069] undefined=0 status=PASS
+  operational_confirmation_missing_fraction            est= 0.0128089549996 mcse=0.000717305496656 CI=[ 0.0114030362262, 0.0142929687536] undefined=0 status=PASS
+C2_095 gross 1910_1929 n=400 errors=0 verdict=PASS
+  false_confirmed_per_year                             est= 0.01 mcse=0.00110535266376 CI=[ 0.00783350877903, 0.012166491221] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.1045 mcse=0.00336473306095 CI=[ 0.0979051232005, 0.111094876799] undefined=0 status=PASS
+C2_095 gross 1930_1949 n=400 errors=0 verdict=PASS
+  false_confirmed_per_year                             est= 0.012125 mcse=0.00114350555306 CI=[ 0.00988372911601, 0.014366270884] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.11975 mcse=0.00365232013327 CI=[ 0.112591452539, 0.126908547461] undefined=0 status=PASS
+C2_095 gross 1950_1959 n=400 errors=0 verdict=PASS
+  false_confirmed_per_year                             est= 0.0132536286458 mcse=0.00180513700666 CI=[ 0.00971556011271, 0.0167916971788] undefined=0 status=PASS
+  operational_confirmation_unsafe_per_year             est= 0.115281562372 mcse=0.00500573888908 CI=[ 0.105470314149, 0.125092810594] undefined=0 status=PASS
+
+GLOBAL DECISIONS
+   rule ordinary_cells gross_cells pass_cells fail_cells inconclusive_cells
+   C1_7              6           3          9          0                  0
+ C2_095              6           3          9          0                  0
+ verdict selected_rule
+    PASS          C1_7
+    PASS          C1_7
+selected_rule: C1_7
+independent_derivation_integrity_pass: TRUE

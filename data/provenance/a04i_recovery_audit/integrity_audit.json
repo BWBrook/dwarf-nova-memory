@@ -1,0 +1,221 @@
+{
+  "candidate_check": {
+    "candidate_commit_sha256": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "commit": "352a09e6bd4f09ad77658710ade55fb07871f8d2",
+    "current_sha256": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "match": true,
+    "receipt_sha256": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "ref": "352a09e",
+    "resolved_commit": "352a09e6bd4f09ad77658710ade55fb07871f8d2"
+  },
+  "counts": {
+    "expected_histories": 4800,
+    "expected_ledger_records": 9600,
+    "expected_metric_rows": 16650,
+    "observed_ledger_records": 9600,
+    "observed_metric_rows": 16650
+  },
+  "freeze": "939ea778c2eab578dcc4fa22a1e0bf1903fbeefe",
+  "grid_checks": {
+    "cadence_metadata_complete": true,
+    "heavy_fields_absent_from_metrics": true,
+    "ledger_arrays_complete": true,
+    "ledger_exact_grid": true,
+    "ledger_record_count": true,
+    "ledger_seed_mismatches": true,
+    "metric_exact_grid": true,
+    "metric_extraction_errors": true,
+    "metric_row_count": true,
+    "metric_seed_mismatches": true
+  },
+  "hash_checks": {
+    "input_manifest": {
+      "actual": "0a8510d200793a397a74d8e00f05e6f03f24d96e9acad54674bfc85431a46c57",
+      "expected": "0a8510d200793a397a74d8e00f05e6f03f24d96e9acad54674bfc85431a46c57",
+      "match": true,
+      "path": "configs/a04i_inputs.json"
+    },
+    "inputs_path": {
+      "actual": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+      "expected": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+      "match": true,
+      "path": "outputs/a04i_inputs_frozen_20261108/inputs.json"
+    },
+    "ledger": {
+      "actual": "55bcaa832812b7c4bd5cbd7c2d7e333562b0f8f3eaeee925231b27767faac28e",
+      "expected": "55bcaa832812b7c4bd5cbd7c2d7e333562b0f8f3eaeee925231b27767faac28e",
+      "match": true,
+      "path": "outputs/a04i_recovery_20261108/x4_threshold10_ledger.jsonl.gz"
+    },
+    "metrics": {
+      "actual": "aff038f9900aec9dfb3a31508ddbed0bfbd5011d886e824341361362e262f3c5",
+      "expected": "aff038f9900aec9dfb3a31508ddbed0bfbd5011d886e824341361362e262f3c5",
+      "match": true,
+      "path": "outputs/a04i_recovery_20261108/metrics.csv"
+    },
+    "parameters_path": {
+      "actual": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+      "expected": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+      "match": true,
+      "path": "configs/a04i_selected.json"
+    },
+    "qualification_path": {
+      "actual": "df88c6db2128227109d0a22f3b114d481afc0d79448b01669433f8ad342fc192",
+      "expected": "df88c6db2128227109d0a22f3b114d481afc0d79448b01669433f8ad342fc192",
+      "match": true,
+      "path": "outputs/a04i_qualification_20261108/receipt.json"
+    },
+    "selected_manifest": {
+      "actual": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+      "expected": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+      "match": true,
+      "path": "configs/a04i_selected.json"
+    }
+  },
+  "head": "939ea778c2eab578dcc4fa22a1e0bf1903fbeefe",
+  "integrity_pass": true,
+  "receipt_contract": {
+    "actual_commit_is_freeze": true,
+    "head_is_freeze": true,
+    "single_eligible_family": true,
+    "status_completed": true,
+    "validation_base": true
+  },
+  "receipt_count_checks": {
+    "completed_histories": true,
+    "completed_metric_rows": true,
+    "expected_histories": true,
+    "expected_ledger_records": true,
+    "expected_metric_rows": true,
+    "ledger_records": true
+  },
+  "runtime_source_checks": {
+    "configs/a04i_inputs.json": {
+      "current": "0a8510d200793a397a74d8e00f05e6f03f24d96e9acad54674bfc85431a46c57",
+      "expected": "0a8510d200793a397a74d8e00f05e6f03f24d96e9acad54674bfc85431a46c57",
+      "frozen": "0a8510d200793a397a74d8e00f05e6f03f24d96e9acad54674bfc85431a46c57",
+      "match": true
+    },
+    "configs/a04i_selected.json": {
+      "current": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+      "expected": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+      "frozen": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+      "match": true
+    },
+    "scripts/run_joint_recovery.py": {
+      "current": "cc3864ac08d6fd3cb1bb97d212ac47c8a10ad7fb7680d65979de664ecb1431ee",
+      "expected": "cc3864ac08d6fd3cb1bb97d212ac47c8a10ad7fb7680d65979de664ecb1431ee",
+      "frozen": "cc3864ac08d6fd3cb1bb97d212ac47c8a10ad7fb7680d65979de664ecb1431ee",
+      "match": true
+    },
+    "scripts/summarize_joint_recovery.py": {
+      "current": "2f8a2aea55887da88a4f1df00d96cf5ec8050baeabb4e5ba2c78e7258e929cc6",
+      "expected": "2f8a2aea55887da88a4f1df00d96cf5ec8050baeabb4e5ba2c78e7258e929cc6",
+      "frozen": "2f8a2aea55887da88a4f1df00d96cf5ec8050baeabb4e5ba2c78e7258e929cc6",
+      "match": true
+    },
+    "scripts/summarize_x3_validation.py": {
+      "current": "7183b13fe36ff6162f6b66b8a14c18949a09ca58340dbe4835a198294f828580",
+      "expected": "7183b13fe36ff6162f6b66b8a14c18949a09ca58340dbe4835a198294f828580",
+      "frozen": "7183b13fe36ff6162f6b66b8a14c18949a09ca58340dbe4835a198294f828580",
+      "match": true
+    },
+    "src/dnmem/aavso.py": {
+      "current": "480ef10ad5eb19f7daf5050b79f194f6de3d9783375621065377cf607b522ef1",
+      "expected": "480ef10ad5eb19f7daf5050b79f194f6de3d9783375621065377cf607b522ef1",
+      "frozen": "480ef10ad5eb19f7daf5050b79f194f6de3d9783375621065377cf607b522ef1",
+      "match": true
+    },
+    "src/dnmem/coverage.py": {
+      "current": "fe09b8134f3131dc3c3b1d2192270f4534916d54da3f7a3012ed4bf01016860c",
+      "expected": "fe09b8134f3131dc3c3b1d2192270f4534916d54da3f7a3012ed4bf01016860c",
+      "frozen": "fe09b8134f3131dc3c3b1d2192270f4534916d54da3f7a3012ed4bf01016860c",
+      "match": true
+    },
+    "src/dnmem/extract.py": {
+      "current": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+      "expected": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+      "frozen": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+      "match": true
+    },
+    "src/dnmem/extract_x3.py": {
+      "current": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+      "expected": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+      "frozen": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+      "match": true
+    },
+    "src/dnmem/extract_x4.py": {
+      "current": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+      "expected": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+      "frozen": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+      "match": true
+    },
+    "src/dnmem/injection_observe.py": {
+      "current": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+      "expected": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+      "frozen": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+      "match": true
+    },
+    "src/dnmem/injection_score.py": {
+      "current": "4cad219a69948f0b66d868b1b271a2b0c5f105d469dccb20fbcd332e14b11d9c",
+      "expected": "4cad219a69948f0b66d868b1b271a2b0c5f105d469dccb20fbcd332e14b11d9c",
+      "frozen": "4cad219a69948f0b66d868b1b271a2b0c5f105d469dccb20fbcd332e14b11d9c",
+      "match": true
+    },
+    "src/dnmem/injection_truth.py": {
+      "current": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+      "expected": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+      "frozen": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+      "match": true
+    },
+    "src/dnmem/injection_truth_v2.py": {
+      "current": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa",
+      "expected": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa",
+      "frozen": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa",
+      "match": true
+    },
+    "src/dnmem/injection_truth_v4.py": {
+      "current": "5bfb2d9030467aaa45a7f46668a0c14d14426e35db8862b900fbc58d607c5bbc",
+      "expected": "5bfb2d9030467aaa45a7f46668a0c14d14426e35db8862b900fbc58d607c5bbc",
+      "frozen": "5bfb2d9030467aaa45a7f46668a0c14d14426e35db8862b900fbc58d607c5bbc",
+      "match": true
+    },
+    "src/dnmem/joint_benchmark.py": {
+      "current": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04",
+      "expected": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04",
+      "frozen": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04",
+      "match": true
+    },
+    "src/dnmem/phase_cadence.py": {
+      "current": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+      "expected": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+      "frozen": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+      "match": true
+    },
+    "src/dnmem/x3_validation_score.py": {
+      "current": "e34065b7f7b554509a98bd35e20732eb3e5fcc76bb5861ab922ed98901628c29",
+      "expected": "e34065b7f7b554509a98bd35e20732eb3e5fcc76bb5861ab922ed98901628c29",
+      "frozen": "e34065b7f7b554509a98bd35e20732eb3e5fcc76bb5861ab922ed98901628c29",
+      "match": true
+    },
+    "src/dnmem/x4_benchmark.py": {
+      "current": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca",
+      "expected": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca",
+      "frozen": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca",
+      "match": true
+    },
+    "src/dnmem/x4_cadence.py": {
+      "current": "22eb8eaf92f4e1f3d923452bc78f941a41bd342fe95ab61ff356282dfc317d07",
+      "expected": "22eb8eaf92f4e1f3d923452bc78f941a41bd342fe95ab61ff356282dfc317d07",
+      "frozen": "22eb8eaf92f4e1f3d923452bc78f941a41bd342fe95ab61ff356282dfc317d07",
+      "match": true
+    },
+    "src/dnmem/x4_validation.py": {
+      "current": "6d2b9227ee672c758f60f26a372212d9930464852a60160e82d2253f391cf8ce",
+      "expected": "6d2b9227ee672c758f60f26a372212d9930464852a60160e82d2253f391cf8ce",
+      "frozen": "6d2b9227ee672c758f60f26a372212d9930464852a60160e82d2253f391cf8ce",
+      "match": true
+    }
+  },
+  "scope": "independent integrity audit; no recovery verdict read or computed here"
+}

@@ -217,3 +217,29 @@ Fresh qualification at `b83d76a` failed one v3 morphology gate after 384
 histories. No X4 recovery was run and the validation namespace remains unused.
 The failed batch is retained; no real focal association was computed to
 diagnose it.
+
+#### Codex A04i joint-benchmark/X4 access entry, 8 November 2026
+
+I read Claude's A04h findings and retained X4 source. The same twelve hashed
+pre-1960 exports supplied phase profiles, same-era morphology targets and
+observer diversity; no new observations were downloaded. Applying identical
+half-open era cuts gives 334 feature episodes rather than the prior 335.
+No real duration–following-gap association was computed.
+
+The new waveform author received original timing interfaces and separated
+duration/gap marginals, without X4/X3, earlier waveform source, annotations,
+real photometry or recovery labels. A separate source-blind cadence author
+constructed anonymous phase profiles; its subsequent full-test run exposed
+test names/statuses. Parent design and selection were not blind to X4.
+The new waveform failed fresh qualification. V2, which Claude had studied
+before writing X4, qualified with the independently constructed phase arm.
+Thus fresh seeds and cadence do not establish unseen-waveform validation.
+
+One finite morphology-only calibration was frozen at `939ea77` before fresh
+qualification and candidate recovery. Independent R reproduced both pair
+decisions and calibration winners. All 4,800 X4 recovery histories completed;
+both global rules pass at magnitude 10 and the frozen preference selects
+C1/7 d. Magnitude-9.5 failures and inconclusive diagnostics are preserved.
+Every association in candidate recovery concerns synthetic histories.
+No 1960+ photometry, reserved-block coverage or real focal association was
+accessed. A10 remains unfrozen and no real forecast table was created.

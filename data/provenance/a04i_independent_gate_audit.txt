@@ -1,0 +1,79 @@
+A04i independent qualification-gate audit
+R: R version 4.6.1 (2026-06-24)
+jsonlite: 2.0.0
+receipt_sha256: df88c6db2128227109d0a22f3b114d481afc0d79448b01669433f8ad342fc192
+public_calibration_sha256: 0e6b52223fcc3de2868d615518d4482c9beae141be621496eba8ff2ba5886979
+HEAD: 939ea778c2eab578dcc4fa22a1e0bf1903fbeefe
+freeze_commit: 939ea778c2eab578dcc4fa22a1e0bf1903fbeefe
+tracked_status_clean: TRUE
+
+receipt_contract_match: TRUE
+
+HASH RECONCILIATION
+inputs expected= b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5 actual= b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5 match= TRUE
+selected expected= 8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505 actual= 8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505 match= TRUE
+grid expected= 41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e actual= 41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e match= TRUE
+calibration_receipt expected= d32dc346eb87fdf8ccbd6858025a962624789e9d1d2aeff7138ff86964676e43 actual= d32dc346eb87fdf8ccbd6858025a962624789e9d1d2aeff7138ff86964676e43 match= TRUE
+source:configs/a04e_benchmark.json expected= aa0302035e86a3c0edd2681753d2cae41587cafa186f9392441d6882d7dfed34 actual= aa0302035e86a3c0edd2681753d2cae41587cafa186f9392441d6882d7dfed34 match= TRUE
+source:configs/a04i_grid.json expected= 41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e actual= 41b08018eecdd655f954eccdbee55b73f7868fe4c4472e1496cbfe7dcea8543e match= TRUE
+source:data/simulations/a04h_morphology_targets_20261108.json expected= 62f4d0c8d5ace67d494fb18e7e8e150f7010c6fe9dfcfcf8f61bd1abac4dc7c6 actual= 62f4d0c8d5ace67d494fb18e7e8e150f7010c6fe9dfcfcf8f61bd1abac4dc7c6 match= TRUE
+source:docs/protocols/a04i-joint-validation-v1.md expected= 049bc54de8b78c04cb944139b7c523a31649580ef81bf4240407618c8f23e124 actual= 049bc54de8b78c04cb944139b7c523a31649580ef81bf4240407618c8f23e124 match= TRUE
+source:scripts/a04h_morphology_targets.py expected= f589b8215d0d64d06bb2891afa8ffe6c9ed79417a8a3cc9dd9a9cd01b767a376 actual= f589b8215d0d64d06bb2891afa8ffe6c9ed79417a8a3cc9dd9a9cd01b767a376 match= TRUE
+source:scripts/a04i_pipeline.py expected= bedd10c25769a38afcdd95eb8a038b60256dcd4b2b5d94139ddd874e15c3fce0 actual= bedd10c25769a38afcdd95eb8a038b60256dcd4b2b5d94139ddd874e15c3fce0 match= TRUE
+source:scripts/a04i_predictive_gate.py expected= 911b37a1123bfa42527fc690f100b0194ab24de5c632ee9c7467d2135b752530 actual= 911b37a1123bfa42527fc690f100b0194ab24de5c632ee9c7467d2135b752530 match= TRUE
+source:src/dnmem/aavso.py expected= 480ef10ad5eb19f7daf5050b79f194f6de3d9783375621065377cf607b522ef1 actual= 480ef10ad5eb19f7daf5050b79f194f6de3d9783375621065377cf607b522ef1 match= TRUE
+source:src/dnmem/coverage.py expected= fe09b8134f3131dc3c3b1d2192270f4534916d54da3f7a3012ed4bf01016860c actual= fe09b8134f3131dc3c3b1d2192270f4534916d54da3f7a3012ed4bf01016860c match= TRUE
+source:src/dnmem/extract.py expected= e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976 actual= e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976 match= TRUE
+source:src/dnmem/injection_observe.py expected= 0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581 actual= 0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581 match= TRUE
+source:src/dnmem/injection_truth.py expected= a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16 actual= a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16 match= TRUE
+source:src/dnmem/injection_truth_v2.py expected= ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa actual= ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa match= TRUE
+source:src/dnmem/injection_truth_v4.py expected= 5bfb2d9030467aaa45a7f46668a0c14d14426e35db8862b900fbc58d607c5bbc actual= 5bfb2d9030467aaa45a7f46668a0c14d14426e35db8862b900fbc58d607c5bbc match= TRUE
+source:src/dnmem/joint_benchmark.py expected= 62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04 actual= 62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04 match= TRUE
+source:src/dnmem/phase_cadence.py expected= 790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1 actual= 790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1 match= TRUE
+source:src/dnmem/x4_benchmark.py expected= 13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca actual= 13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca match= TRUE
+source:src/dnmem/x4_cadence.py expected= 22eb8eaf92f4e1f3d923452bc78f941a41bd342fe95ab61ff356282dfc317d07 actual= 22eb8eaf92f4e1f3d923452bc78f941a41bd342fe95ab61ff356282dfc317d07 match= TRUE
+qualification_attempt:v2-00.json expected= d89c224a91cc0e5158a1ea8d6b73eb607a7288f038fdb3d7214b66915336ec30 actual= d89c224a91cc0e5158a1ea8d6b73eb607a7288f038fdb3d7214b66915336ec30 match= TRUE
+qualification_attempt:v4-05.json expected= f7b105d20cfc7a86deaae83146dedb8c44966b189aa8a1b87d4fe0770badbeac actual= f7b105d20cfc7a86deaae83146dedb8c44966b189aa8a1b87d4fe0770badbeac match= TRUE
+all_hashes_match: TRUE
+
+CALIBRATION WINNER RECOMPUTATION
+v2-00 family=v2 objective=31.9396210470099 recorded=31.93962104701 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-00 family=v4 objective=91.2696115461155 recorded=91.2696115461151 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-01 family=v4 objective=87.2583165108802 recorded=87.2583165108803 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-02 family=v4 objective=93.0795201386772 recorded=93.0795201386772 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-03 family=v4 objective=75.0820459682482 recorded=75.0820459682482 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-04 family=v4 objective=69.7450048611976 recorded=69.7450048611984 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-05 family=v4 objective=62.0925166478312 recorded=62.0925166478312 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-06 family=v4 objective=116.192466128456 recorded=116.192466128455 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-07 family=v4 objective=100.170162614852 recorded=100.170162614853 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+v4-08 family=v4 objective=94.2779672309563 recorded=94.2779672309582 complete=TRUE objective_match=TRUE private_hash_match=TRUE
+winner v2: v2-00 objective=31.9396210470099 selected_match=TRUE
+winner v4: v4-05 objective=62.0925166478312 selected_match=TRUE
+calibration_pass: TRUE
+
+PAIR v2-phase
+attempt: v2-00.json samples: 150 replicates_exact_0_149: TRUE all_valid: TRUE configuration_match: TRUE
+waveform: Q=19.2079522982247 F=2.27304204604753 p=0.0256015893028 max_abs_z=2.27521980065348 pass=TRUE
+cadence: Q=5.71962908355912 F=1.39183826981138 p=0.239640938075519 max_abs_z=1.92588979757839 pass=TRUE
+diversity 1910_1929: episodes=21105 median=14 share_le_2=0.0204217010187159 pass=TRUE
+diversity 1930_1949: episodes=21721 median=16 share_le_2=0.100317664932554 pass=TRUE
+diversity 1950_1959: episodes=11052 median=13 share_le_2=0.112739775606225 pass=TRUE
+numerical_agreement_with_receipt: TRUE
+independent_eligible: TRUE receipt_eligible: TRUE
+
+PAIR v4-phase
+attempt: v4-05.json samples: 150 replicates_exact_0_149: TRUE all_valid: TRUE configuration_match: TRUE
+waveform: Q=46.1230577069706 F=5.45813774589134 p=5.23060941849898e-06 max_abs_z=3.50566324067238 pass=FALSE
+cadence: Q=25.6009671870442 F=6.22984556420584 p=0.000117506464083376 max_abs_z=4.80974194014147 pass=FALSE
+diversity 1910_1929: episodes=20995 median=14 share_le_2=0.0217194570135747 pass=TRUE
+diversity 1930_1949: episodes=21606 median=16 share_le_2=0.0943719337221142 pass=TRUE
+diversity 1950_1959: episodes=10929 median=13 share_le_2=0.113917101290145 pass=TRUE
+numerical_agreement_with_receipt: TRUE
+independent_eligible: FALSE receipt_eligible: FALSE
+
+FINAL
+independent_eligible: v2-phase
+receipt_eligible: v2-phase
+eligible_sets_match: TRUE
+all_pair_numerics_match: TRUE
+audit_pass: TRUE

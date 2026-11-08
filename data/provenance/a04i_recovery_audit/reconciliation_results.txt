@@ -1,0 +1,10 @@
+A04i independent-to-frozen-summary reconciliation
+independent_metric_comparisons=108
+maximum_absolute_numeric_difference=6.6613381477509392e-16
+all_cell_metrics_and_verdicts_match=True
+decision_match_C1_7=True
+decision_match_C2_095=True
+frozen_selected={'extractor': 'X4', 'rule': 'C1_7'}
+selected_rule_pivotal={"bound": 0.02, "case": "primary", "estimate": 0.00155452500466967, "lower": -0.00679687042626563, "metric": "total_bias", "pass_margin": 0.01009407956439504, "rule": "C1_7", "stratum": "1950_1959", "upper": 0.00990592043560496}
+all_rules_pivotal={"bound": 0.02, "case": "structured", "estimate": 0.00729712292523552, "lower": -0.00469844749535267, "metric": "total_bias", "pass_margin": 0.0007073066541763012, "rule": "C2_095", "stratum": "1950_1959", "upper": 0.0192926933458237}
+reconciliation_pass=True

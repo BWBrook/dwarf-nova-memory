@@ -255,6 +255,21 @@ proposals, not a record of approvals the user has not given.
   independent construction and bounded integration review. Compatibility
   remains conditional on fitted families and selected features. A04i does
   not freeze A10 or authorize reserved-data access.
+- Execution: source `036c619`, evaluation freeze `939ea77`. One calibration
+  grid selects v2-00/v4-05; all 900 fresh qualification histories complete.
+  Independent R reproduces v2-phase as the sole eligible pair. Unchanged X4
+  completes 4,800 histories and passes both global rules at magnitude 10;
+  select C1/7 d by the predeclared preference. Magnitude-9.5 diagnostics fail
+  in later eras and some alternative-bias intervals remain inconclusive.
+  This is a conditional retrospective qualification on a previously studied
+  waveform, not successful unseen-waveform or operational validation.
+  Independent base R reproduces all 108 decisive metric estimates/intervals/
+  statuses and both global decisions (maximum difference 6.66e−16), while
+  independent integrity checks reconcile counts, keys, seeds and hashes.
+  C2's structured-1950s bias upper limit 0.01929 is near the 0.02 bound;
+  the preferred C1's corresponding global margin is wider. This last audit
+  does not re-derive individual photometry-to-score calculations.
+  Full result and limits: `docs/audits/2026-11-08-a04i-joint-validation.md`.
 
 ## New decision template
 

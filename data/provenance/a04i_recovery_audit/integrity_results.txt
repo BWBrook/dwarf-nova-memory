@@ -1,0 +1,12 @@
+A04i independent recovery integrity audit
+HEAD=939ea778c2eab578dcc4fa22a1e0bf1903fbeefe
+freeze=939ea778c2eab578dcc4fa22a1e0bf1903fbeefe
+histories=4800 metrics=16650 ledger=9600
+metrics_exact_grid=True
+ledger_exact_grid=True
+seed_mismatches=0
+extraction_errors=0
+all_hashes_match=True
+all_runtime_sources_match=True
+candidate_identity_match=True
+integrity_pass=True

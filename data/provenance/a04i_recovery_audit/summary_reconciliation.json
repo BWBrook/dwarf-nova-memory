@@ -1,0 +1,45 @@
+{
+  "all_cell_metrics_and_verdicts_match": true,
+  "all_rules_pivotal_interval": {
+    "bound": 0.02,
+    "case": "structured",
+    "estimate": 0.00729712292523552,
+    "lower": -0.00469844749535267,
+    "metric": "total_bias",
+    "pass_margin": 0.0007073066541763012,
+    "rule": "C2_095",
+    "stratum": "1950_1959",
+    "upper": 0.0192926933458237
+  },
+  "decision_matches": {
+    "C1_7": true,
+    "C2_095": true
+  },
+  "fullsummary_sha256": "5eade62b2ae244261a1b544b17ba708fe6ecf60772184f46efb410802dedc759",
+  "independent_derivation_preceded_summary_read": true,
+  "independent_metric_comparisons": 108,
+  "maximum_absolute_numeric_difference": 6.661338147750939e-16,
+  "reconciliation_pass": true,
+  "reviewed_summary_sha256": "2ed96e4b528ee0dc0f02f7159575e6ebad93ccb59c9ec6185ddf78b460ca9996",
+  "selected_rule_pivotal_interval": {
+    "bound": 0.02,
+    "case": "primary",
+    "estimate": 0.00155452500466967,
+    "lower": -0.00679687042626563,
+    "metric": "total_bias",
+    "pass_margin": 0.01009407956439504,
+    "rule": "C1_7",
+    "stratum": "1950_1959",
+    "upper": 0.00990592043560496
+  },
+  "summary_contract": {
+    "decisive_rows": true,
+    "full_cells": true,
+    "grid_rows": true,
+    "input_metrics_hash": true,
+    "ledger_records": true,
+    "reviewed_rows": true,
+    "selected": true,
+    "summarizer_source_hash": true
+  }
+}

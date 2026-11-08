@@ -34,12 +34,20 @@ causal rule, and proposes X4 (`src/dnmem/extract_x4.py`) for A04g validation
 on an unseen benchmark family. A04g freeze `b83d76a` repaired observer
 diversity but failed one v3 morphology gate in 384 fresh qualification
 histories. X4 recovery was not run and the validation namespace is unused;
-see the A04g report and D016. A04h traced the v3 failure to fixed amplitude
-(real short outbursts peak fainter; duration–core-level Spearman −0.65) and
+see the A04g report and D016. A04h found a v3 fixed-amplitude geometry defect
+(real short outbursts have fainter measured cores; duration–core-level
+Spearman −0.65) and
 proposes joint waveform and cadence targets with tolerances from sampling
 spread at the real sample size; every current cadence arm fails the cadence
-block. Do not call X4 validated or confuse benchmark
-failure with a candidate recovery failure. No frozen
+block. A04i uses a corrected 334-episode same-era target and a finite
+waveform/cadence qualification: v2 with phase-aligned cadence passes, while
+the source-blind new waveform fails. Unchanged X4 then passes all decisive
+magnitude-10 recovery cells in 4,800 histories under both global rules;
+C1/7 d is selected by the frozen preference. Magnitude-9.5 diagnostics fail
+in the later eras, and some alternative-bias comparisons are inconclusive.
+This supports conditional retrospective extraction on a waveform Claude
+had already studied; it is not unseen-waveform or operational validation.
+See the A04i report and D017. No frozen operational
 extractor, normalized observation table or forecast table exists. Every committed photometry or forecast fixture
 under `outputs/seed_demo/` and `data/fixtures/` is synthetic. The fitting code
 still fits only M0/M1 using complete oracle cycles. It does not implement M2/M3,
