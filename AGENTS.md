@@ -79,8 +79,12 @@ clips required for the proposed interval/kernel sensitivities. Do not repair
 the frozen extractor or invent replacement bounds in this run. The independent
 contract audit and R1 results are in `docs/audits/2026-11-09-r1-*.md`.
 Endpoint-dose conclusions concern the stated added iid Gaussian mechanism in
-the fixed simulator, not every real measurement pathway. Manuscript rewriting
-waits for R1 review; other-star access and SS Cyg 2018+ remain unauthorized.
+the fixed simulator, not every real measurement pathway. Claude's R1 review
+(D035) supports C42–C46 and traces the missing clips to an X4 lower-clip bug;
+`docs/protocols/r2-design-v0.md` is the R2 draft (latent target, A1/A2
+assumption ladder, X5, decoupled forecast, B0–B2 ladder, sealed multi-star
+test). New work uses a versioned X5; frozen X4 bytes stay unchanged. Manuscript
+rewriting waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
 
 - Cite primary research or official archive documentation for external facts.
   Read the source supporting a claim; a title or abstract is insufficient for a

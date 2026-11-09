@@ -28,7 +28,9 @@ claims and handovers.
 | A10k | Independent claim checks, figures and document build | Complete; accepted by Claude in A10l (D030) | Codex | [A10k memo](../docs/audits/2026-11-09-a10k-claims-and-figures.md), D029; C11–C13, C20–C25 supported; four figures and brief figure |
 | A10l | Source checks (CM92, Cannizzo 1993), novelty refresh, first drafts of all products | Drafts complete; reviewed in A10m | Claude | [A10l memo](../docs/audits/2026-11-09-a10l-sources-and-drafts.md), D030; C40 supported; C41 narrowed, still provisional |
 | A10m | Semantic, novelty and rendered-draft review | Complete; drafts externally reviewed (A10n) | Codex | [A10m review](../docs/audits/2026-11-09-a10m-draft-review.md), D031; C41 supported as a bounded search |
-| A10n | Triage of the GPT-6 Pro external review; next research round | Proposed; awaiting Codex agreement and R1 diagnostics | Claude | [A10n triage](../docs/audits/2026-11-09-a10n-external-review-triage.md), [review package](../docs/reviews/2026-11-09-gpt6pro/), D032; censor path bounded at +0.00024; null-simulation gains ≤ 0.0005 |
+| A10n | Triage of the GPT-6 Pro external review; next research round | Agreed with amendments (D033); R1 complete (D034) | Claude | [A10n triage](../docs/audits/2026-11-09-a10n-external-review-triage.md), [review package](../docs/reviews/2026-11-09-gpt6pro/), D032; censor path bounded at +0.00024; null-simulation gains ≤ 0.0005 |
+| R1 | Censor audit, alternative observation scores, endpoint dose, example and simulation table | Complete (D034); C42–C46 supported by Claude review (D035) | Codex | [R1 audit](../docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md), [Claude review](../docs/audits/2026-11-09-claude-r1-review.md); point gain +0.0154; 434 missing clips traced to an X4 lower-clip bug |
+| R2 | Observation target, decoupled forecast, stronger baselines, sealed multi-star design | Draft v0 proposed (D035); awaiting Codex amendment and freeze | Claude design; Codex R2a–R2c | [R2 design v0](../docs/protocols/r2-design-v0.md) |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -865,3 +867,30 @@ and PDFs were not rewritten.
 
 Next: Claude — review R1 and the observation target before drafting the R2 cohort,
 stronger-baseline and measurement design; no new archives yet.
+
+## R2: design proposed
+
+Claude, 9 November 2026. C42–C46 reproduce under separate code and are now
+supported. The 434 missing lower clips come from an X4 bug of Claude's: the
+clip searched from the previous peak, inside that outburst's bright phase. A
+corrected decisive bracket (gain-free) exists for 818 of 845 confirmed SS Cyg
+episodes, median width 1.16 d.
+
+The [R2 design v0](../docs/protocols/r2-design-v0.md) proposes:
+
+- the latent threshold crossing as the target;
+- an assumption ladder: A1 bounds with no coarsening model, and the A1 + A2
+  proper interval score;
+- X5;
+- a decoupled forecast that never uses the estimated end crossing, as the G1
+  test;
+- the B0–B2 baseline ladder;
+- a sealed multi-star test with catalogue-only screening.
+
+Interpretation rules are fixed in its §6 before any R2 score. R2a–R2c are
+Codex's legwork; R2d integrates and brings one G3 question to Barry.
+
+Next: Codex — amend and freeze the R2 design (v1), then run R2a (X5, gain-free
+diagnostics, DF/fluence/B1/B2 implementations) and R2c (cohort screen, power
+simulation); no new archives.
+

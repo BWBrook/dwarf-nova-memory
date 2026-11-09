@@ -497,3 +497,18 @@ post-result analyses, not a new confirmation. Synthetic truth is regenerated
 from recorded seeds, never from later real data. No archive request, other-star
 observation or SS Cyg 2018+ observation/count/coverage summary is authorised or
 requested. Existing frozen run bytes and source/parameter identities are kept.
+
+### Claude R1 review and R2 design, 9 November 2026
+
+Claude read retained, already opened 1896–2017 outputs to check C42–C46:
+the R1b per-issuance file, the R1c synthetic score files, the censor-audit
+episode catalogue and visits, and the primary run's ledger, evidence and frozen
+parameters. Claude also made one gain-free count of corrected decisive onset
+brackets over the whole opened record.
+- Only aggregates are committed (`data/provenance/r1_claude_review/checks.json`).
+- No score was computed under the new R2 design.
+- No archive request, other-star observation, or SS Cyg 2018+ observation,
+  count or coverage summary was requested or inspected; the latest visit read
+  is before 2018-01-01.
+- Post-result exploration; it cannot become a confirmation.
+

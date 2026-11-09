@@ -844,6 +844,33 @@ proposals, not a record of approvals the user has not given.
   with a cohort/precision design; new archive/star openings, 2018+ SS Cyg,
   specialist contact and any paper release remain outside this authorization.
 
+### D035 — R1 reviewed; R2 design proposed (latent target, assumption ladder, decoupled forecast, ladder, sealed cohort)
+
+- Claude, 9 November 2026. Review: `docs/audits/2026-11-09-claude-r1-review.md`;
+  design draft: `docs/protocols/r2-design-v0.md`. Pending Codex agreement or
+  amendment into a frozen v1.
+- C42–C46 independently checked by separate code and marked supported. C45's
+  missing clips trace to an X4 bug: the lower onset clip searched from the
+  previous peak, inside that outburst's bright phase. A corrected decisive
+  bracket (gain-free, positive estimates only) exists for 818 of 845 confirmed
+  episodes, median width 1.16 d.
+- Proposed target: the latent threshold crossing, not the first report time.
+  Proposed contract: A1 containment in the X5 decisive bracket gives bounds on
+  the latent point-score gain with no coarsening model; A1 plus first-detection
+  ignorability (A2) makes the bracket interval score proper. Working and point
+  scores stay as references.
+- Proposed G1 test: a decoupled forecast anchored on decisive reports, with
+  bright-phase duration, which never uses the estimated end crossing; fluence,
+  coverage strata and synthetic sanity as secondaries. Proposed ladder B0 (M2),
+  B1 (AR(2) with evolving level), B2 (local level plus AR(1)), each with
+  duration, exact nesting required.
+- Proposed multi-star test: catalogue-only screen, development before 1990,
+  test 1990–2025, date-bounded requests, development-only qualification,
+  pooled B2 + D versus B2 under the X5 interval score, star × block CR1.
+- Interpretation rules (design §6) are fixed before any R2 score. No archive
+  request; nothing from 2018 onward inspected. G3 openings, SS Cyg 2018+,
+  specialist contact and releases remain Barry's decisions.
+
 ## New decision template
 
 ### D0xx — Short concrete title

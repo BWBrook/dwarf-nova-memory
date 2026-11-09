@@ -1,0 +1,173 @@
+{
+ "C44_point": {
+  "n": 441,
+  "blocks": 10,
+  "mean": 0.01540382518580825,
+  "lo": 0.0034428858551427584,
+  "hi": 0.027364764516473742
+ },
+ "C44_paired": {
+  "n": 441,
+  "blocks": 10,
+  "mean": -0.0011296869916282526,
+  "lo": -0.0017461882974072612,
+  "hi": -0.0005131856858492439
+ },
+ "C44_primary_same_rows": {
+  "n": 441,
+  "blocks": 10,
+  "mean": 0.016533512177436503,
+  "lo": 0.00494771630959865,
+  "hi": 0.028119308045274356
+ },
+ "C44_spearman": 0.9937630909190123,
+ "C45_status_counts": {
+  "missing_clip": 430,
+  "usable": 6,
+  "identical_forecast": 5
+ },
+ "C45_usable": {
+  "n": 11,
+  "blocks": 3,
+  "mean": -0.018101109446815963,
+  "lo": -0.045489421756944745,
+  "hi": 0.009287202863312822
+ },
+ "C43_censors": [
+  {
+   "reason": "coverage",
+   "relation": "after"
+  },
+  {
+   "reason": "coverage",
+   "relation": "after"
+  },
+  {
+   "reason": "coverage",
+   "relation": "after"
+  },
+  {
+   "reason": "coverage",
+   "relation": "after"
+  },
+  {
+   "reason": "superseded",
+   "relation": "after"
+  },
+  {
+   "reason": "record_end",
+   "relation": "none"
+  }
+ ],
+ "C46_all_issued": [
+  {
+   "case": "null",
+   "sigma": 0.0,
+   "histories": 40,
+   "mean": -0.0004352041064631749,
+   "mc_se": 0.00031353769442760636
+  },
+  {
+   "case": "null",
+   "sigma": 1.0,
+   "histories": 40,
+   "mean": -0.0009969609131918965,
+   "mc_se": 0.0004252926353669232
+  },
+  {
+   "case": "null",
+   "sigma": 2.0,
+   "histories": 40,
+   "mean": -0.0009399491943747383,
+   "mc_se": 0.0004033870364426474
+  },
+  {
+   "case": "null",
+   "sigma": 4.0,
+   "histories": 40,
+   "mean": -0.0001902390300827684,
+   "mc_se": 9.687540709689121e-05
+  },
+  {
+   "case": "null",
+   "sigma": 6.0,
+   "histories": 40,
+   "mean": -0.0004799319229295151,
+   "mc_se": 0.000273745429537906
+  },
+  {
+   "case": "structured",
+   "sigma": 0.0,
+   "histories": 40,
+   "mean": -0.0018434913965441103,
+   "mc_se": 0.0007459455849304537
+  },
+  {
+   "case": "structured",
+   "sigma": 1.0,
+   "histories": 40,
+   "mean": -0.0012736328933198294,
+   "mc_se": 0.0006799773568630056
+  },
+  {
+   "case": "structured",
+   "sigma": 2.0,
+   "histories": 40,
+   "mean": -0.00044417391142086897,
+   "mc_se": 0.0002804810809209915
+  },
+  {
+   "case": "structured",
+   "sigma": 4.0,
+   "histories": 40,
+   "mean": -0.00014364933800286878,
+   "mc_se": 0.00011149889433133258
+  },
+  {
+   "case": "structured",
+   "sigma": 6.0,
+   "histories": 40,
+   "mean": 0.0,
+   "mc_se": 0.0
+  }
+ ],
+ "C46_none_gains": {
+  "('null', 0.0, 'excluded')": 6,
+  "('null', 1.0, 'excluded')": 6,
+  "('null', 2.0, 'excluded')": 6,
+  "('null', 4.0, 'excluded')": 6,
+  "('null', 6.0, 'excluded')": 6,
+  "('structured', 0.0, 'excluded')": 6,
+  "('structured', 1.0, 'excluded')": 6,
+  "('structured', 2.0, 'excluded')": 6,
+  "('structured', 4.0, 'excluded')": 6,
+  "('structured', 6.0, 'excluded')": 6
+ },
+ "clip_mechanism": {
+  "confirmed_with_previous": 845,
+  "first_far_bright_after_prev_peak_precedes_last_far_faint": 788,
+  "corrected_bracket_available": 818,
+  "no_quiescence_report": 4,
+  "no_bright_after_quiescence": 23,
+  "corrected_width_days": {
+   "median": 1.1606100001372397,
+   "p25": 0.7797499998705462,
+   "p75": 2.87977499992121,
+   "p90": 4.706000000191852,
+   "share_le_2d": 0.6833740831295844,
+   "share_le_5d": 0.921760391198044
+  },
+  "x4_saved_width_days_median": 1.1181527613662183,
+  "note": "positive estimates only (fainter-than limits omitted); whole 1896-2017 opened record; gain-free"
+ },
+ "C42_example": {
+  "M2": {
+   "median_wait_days": 27.574874412129198,
+   "p_within_30_days": 0.5767265222954578
+  },
+  "M3": {
+   "median_wait_days": 26.77262681097778,
+   "p_within_30_days": 0.6027654010811969
+  }
+ }
+}

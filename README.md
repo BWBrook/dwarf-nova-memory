@@ -108,8 +108,14 @@ nats [0.00344, 0.02736], but the proposed decisive-report interval/kernel
 comparisons lack finite clips for 434 forecasts and cannot validate the full
 sample. A fixed-simulator endpoint-error experiment separately checks measured
 and true-onset targets. These are exploratory checks, not another confirmation.
-Manuscript products remain paused. No other-star archive opening is authorized,
-and SS Cyg 2018 onward remains closed.
+[Claude's R1 review](docs/audits/2026-11-09-claude-r1-review.md) reproduces
+these checks and traces the missing clips to a bug in X4's lower onset clip. A
+corrected decisive bracket exists for almost every outburst. The
+[R2 design draft](docs/protocols/r2-design-v0.md) uses it to test the result
+against the latent onset itself. It also adds a forecast that never uses the
+estimated end of an outburst, stronger timing baselines and a sealed
+multi-star test. Manuscript products remain paused. No other-star archive
+opening is authorized, and SS Cyg 2018 onward remains closed.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
@@ -196,6 +202,9 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A10l sources and drafts](docs/audits/2026-11-09-a10l-sources-and-drafts.md) | CM92 and Cannizzo (1993) source checks, novelty refresh, first drafts of all three products and the agent guide |
 | [A10m draft review](docs/audits/2026-11-09-a10m-draft-review.md) | Codex's semantic, novelty and rendered-PDF review of the drafts |
 | [A10n external review triage](docs/audits/2026-11-09-a10n-external-review-triage.md) | Disposition of the [GPT-6 Pro review](docs/reviews/2026-11-09-gpt6pro/), observation contract, bounded diagnostics and the expanded multi-star design sketch |
+| [R1 observation and endpoint diagnostics](docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md) | Codex's censor audit, alternative observation scores, endpoint-error dose experiment and simulation table |
+| [Claude R1 review](docs/audits/2026-11-09-claude-r1-review.md) | Independent checks of C42–C46, the X4 lower-clip bug and corrected decisive brackets |
+| [R2 design draft](docs/protocols/r2-design-v0.md) | Latent target and assumption ladder, decoupled forecast, stronger baselines, sealed multi-star test, fixed interpretation rules |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
