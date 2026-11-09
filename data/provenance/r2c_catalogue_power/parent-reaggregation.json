@@ -1,0 +1,8 @@
+{
+  "scope": "parent independent streaming reaggregation; no new simulation",
+  "scenario_rule_rows": 70,
+  "trials_per_scenario": 2000,
+  "maximum_mean_difference": 3.122502256758253e-17,
+  "all_confirmation_coverage_and_identity_counts_match": true,
+  "source_receipt_sha256": "99f4c849ccc3defb54b2964d66899297e9c2d0583be559a3337c950dc458bc7c"
+}

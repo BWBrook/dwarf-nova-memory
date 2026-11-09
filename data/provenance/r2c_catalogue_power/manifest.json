@@ -1,0 +1,88 @@
+{
+  "files": {
+    "analytic-planning.json": {
+      "bytes": 939,
+      "sha256": "0eee0150a887146b2190756e3cac780485ba8189a96fe5ea731bda9572a50853"
+    },
+    "calendar-check.json": {
+      "bytes": 390,
+      "sha256": "6398a037a3dc1324f79b027f6388fd12297b41872840933df7cde29bf09498f2"
+    },
+    "catalogue-extract.json": {
+      "bytes": 15069,
+      "sha256": "675a07203624d76814d7fe53b8625eef226a33caf9347e00e8dd0367d8e30eed"
+    },
+    "cohort-summary.json": {
+      "bytes": 485,
+      "sha256": "592074b45f100974021ccb73b9340a4f01a41c6645cae7ddc0f576e67a3765b7"
+    },
+    "cohort.csv": {
+      "bytes": 6505,
+      "sha256": "087e9d7bb0f60e30d80c4660d5e2c779e3ab2a4a73a21fe71c74202d3abd3f39"
+    },
+    "independent-aggregation-check.json": {
+      "bytes": 1238,
+      "sha256": "f4bbeb96f3e83f70dd845c989e33959bc8c8450dbe58bbbb8a1e792941f74ca8"
+    },
+    "literature-exposure.csv": {
+      "bytes": 6690,
+      "sha256": "5416bb7a85fe4b0beced100dd3b8c376aedd6af5845620ff36b6757bd26adfb7"
+    },
+    "parent-reaggregation.json": {
+      "bytes": 348,
+      "sha256": "584f84048960c710aa6d3c6b6d8beb57e1bc9329ff2510195004b3ca1f3aa3b9"
+    },
+    "plot_power.py": {
+      "bytes": 2679,
+      "sha256": "f51c8b99b21afc201cd4ea55da62a4ae8fa4a6de0668cd7fe5b7bd067087cd62"
+    },
+    "power-curves.pdf": {
+      "bytes": 27373,
+      "sha256": "8e4a3a2f66945d6c449c92fa53778b39d9ca8fe28b606781ae5655e818d7b45a"
+    },
+    "power-curves.png": {
+      "bytes": 149395,
+      "sha256": "15579cd16736ae6246f76543f5cc8b53866501e6efe2adc163c5168095079e9c"
+    },
+    "power-design.json": {
+      "bytes": 13193,
+      "sha256": "deae11b7e03d7c05c5f6af0ec80250f0121446c2f43df4e060dac6623ec3251a"
+    },
+    "power-receipt.json": {
+      "bytes": 776,
+      "sha256": "99f4c849ccc3defb54b2964d66899297e9c2d0583be559a3337c950dc458bc7c"
+    },
+    "power-results.md": {
+      "bytes": 2750,
+      "sha256": "aed94b50d64b897b852aa49fbf1f86a3ed717fdc51d0d1a3cdef7c2b6207cee0"
+    },
+    "power-summary.json": {
+      "bytes": 85958,
+      "sha256": "cca2b0bfa323ca5fafc29fbde2b74dc8900b6f662693ccf834dbfce308fa8a55"
+    },
+    "sources.json": {
+      "bytes": 4087,
+      "sha256": "73031b9e5c0ae4c69f1b7722d374b2249943d55f764fc5598e9f9d0b7f83075d"
+    }
+  },
+  "freeze_commit": "fe6dbf4",
+  "full_replicates_retained": "outputs/r2c_power_fe6dbf4/replicates.jsonl (ignored)",
+  "label": "R2c catalogue metadata and score-level planning; no observation archive access",
+  "limits": [
+    "Historical catalogues nominate targets; current subtype and data qualification remain pending.",
+    "Published literature exposure overlaps some proposed test years.",
+    "Score-level synthetic rates do not calibrate X5 or state-space baseline fits.",
+    "The serial-block case deliberately challenges cluster independence."
+  ],
+  "no_new_star_observations_counts_or_coverage_requested": true,
+  "no_real_scores_or_fits": true,
+  "public_csv_newlines": "LF",
+  "raw_sources_retained": "outputs/r2c_sources/ (ignored)",
+  "replicate_rows": 70000,
+  "scenario_rule_rows": 70,
+  "source_sha256": {
+    "scripts/r2c_power.py": "9628d448c5968abec826f25d9e7e9710ce7b75710f5256ce21165a099472fbe0",
+    "tests/test_r2c_power.py": "578fa25c2980d8c49c8c8257c967132cd4e6b2983c4a3c95c834c312218b3559"
+  },
+  "ss_cyg_2018_onward_not_read": true
+}

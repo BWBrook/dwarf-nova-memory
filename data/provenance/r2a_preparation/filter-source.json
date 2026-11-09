@@ -1,0 +1,12 @@
+{
+  "title": "Bayesian Filtering and Smoothing, Second Edition",
+  "authors": [
+    "Simo S\u00e4rkk\u00e4",
+    "Lennart Svensson"
+  ],
+  "year": 2023,
+  "url": "https://users.aalto.fi/~ssarkka/pub/bfs_book_2023_online.pdf",
+  "local_ignored_source_sha256": "6b57f19aedb36a539a0a882b3c0c7ef49155ac25d82ee6950fc808b0a60f9c55",
+  "inspected": "general linear-Gaussian prediction/update equations, printed page37; model implementation independently checked by joint Gaussian conditioning",
+  "redistribution": "no PDF or source text included"
+}

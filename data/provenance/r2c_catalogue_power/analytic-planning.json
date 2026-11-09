@@ -1,0 +1,26 @@
+{
+  "scope": "assumption comparison, not a power guarantee; independence and known rule for normal approximations",
+  "rows": [
+    {
+      "gain": 0.0165,
+      "fixed_effective_scale": 0.13272598152043108,
+      "normal_approx_n_fixed_effective_scale": 400.048041173236,
+      "paired_normal_lr_score_sd": 0.18315157656979097,
+      "normal_approx_n_paired_normal_lr": 761.765991072496
+    },
+    {
+      "gain": 0.01,
+      "fixed_effective_scale": 0.13272598152043108,
+      "normal_approx_n_fixed_effective_scale": 1089.1307920941351,
+      "paired_normal_lr_score_sd": 0.14212670403551894,
+      "normal_approx_n_paired_normal_lr": 1248.8765608679928
+    },
+    {
+      "gain": 0.008,
+      "fixed_effective_scale": 0.13272598152043108,
+      "normal_approx_n_fixed_effective_scale": 1701.7668626470863,
+      "paired_normal_lr_score_sd": 0.12699606293110036,
+      "normal_approx_n_paired_normal_lr": 1558.0044224689811
+    }
+  ]
+}

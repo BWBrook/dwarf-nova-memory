@@ -1,0 +1,11 @@
+{
+  "development_stop_exclusive": "1990-01-01",
+  "development_stop_jd": 2447892.5,
+  "test_stop_exclusive": "2026-01-01",
+  "test_stop_jd": 2461041.5,
+  "test_days": 13149,
+  "test_calendar_years": 36,
+  "cluster_calendar_years": 6,
+  "calendar_clusters_per_star": 6,
+  "late_reserve_if_chosen": "2018-01-01 through2025-12-31 is8calendar years, 22.22%of36years; no archive reading used"
+}

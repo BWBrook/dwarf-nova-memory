@@ -1,0 +1,15 @@
+{
+  "cache_receipt_sha256": "052a1ea5e634dcf4cefd2c59d31c1c4331bd15fd1e0bac29b7969f3fe0dd5958",
+  "freeze_commit": "fe6dbf4",
+  "output_sha256": {
+    "episodes-unreleased.json": "1cd3c5e2a595abb816583d58531cae3e1534ed3ca39034dfad3caefec5ba6f3c",
+    "summary.json": "b65546e770a9685e069bde02b518e4a47118621e9c7144a7e5e44f511f7fea50"
+  },
+  "scope": "already opened through2017 cache; no archive request, model fit or score",
+  "source_sha256": {
+    "docs/protocols/r2-design-v1.md": "c8a344357719ac6bb2ab8ee8a29163f74259e997193848a69f2a39f29665a377",
+    "scripts/r2a_observation_diagnostics.py": "1a1cea2cb7b50feb9dc81d81114fd12bcbb7b9a423fa88a22bf0169d29159b4c",
+    "src/dnmem/extract_x5.py": "a8cfe3ec68e53c08e2470c7dad276b4ec9ad3d5f42dd47b2f89b3f63905a8bd6",
+    "tests/test_extract_x5.py": "86bbd7133d681faedf27b3b3f95f50e0ed62946b9bd7e9db244e65b7321790bb"
+  }
+}

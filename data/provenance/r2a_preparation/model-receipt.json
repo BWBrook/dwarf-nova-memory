@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "label": "finite synthetic model controls, not calibration or real-data R2b",
+  "freeze_commit": "f0049dd",
+  "namespace": "r2a-model-controls-v1",
+  "source_sha256": {
+    "scripts/r2a_model_controls.py": "7b5486f37f62fe8c44ee82fb77005ac8090f78a100c4e09c322f66906a76135e",
+    "src/dnmem/r2_models.py": "48a9d14faec7e346507f9a9dd75ad21eef11647315ee911599ad48e5a128fac4",
+    "src/dnmem/r2_scores.py": "31d7edb6f552c7272dec1a1b3c4c0ad450628fb9ca460e59fcc3a3ab024d9548",
+    "tests/test_r2_models.py": "e9b8261966239529382fd5fc817974ef46d723d9b70d41718a1c95ace116088c",
+    "docs/protocols/r2-design-v1.md": "c8a344357719ac6bb2ab8ee8a29163f74259e997193848a69f2a39f29665a377"
+  },
+  "environment": {
+    "python": "3.14.4 (main, Apr 14 2026, 14:46:33) [Clang 22.1.3 ]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O"
+  },
+  "failures": [],
+  "elapsed_seconds": 31.83607566601131,
+  "files_sha256": {
+    "drifting-001.json": "1941ced0faabd75cb4f7b38433901eeab714eb30c688dc06e5ca35097e366bd6",
+    "summary.json": "06121e63c6ff8281906dc0d6f5d2316b2604e6899ad2e7c372d0beb58b3e9cf6",
+    "stationary-001.json": "bda024337ec271af04477f87cce799d726508f6c9743de792e08dc347fbbfb93",
+    "stationary-000.json": "127c8a18652fac91d9008c136ff9be921a3fb2391c775920e3ad5b22e504098b",
+    "drifting-000.json": "71fd8895c153588f65f229671d1600dc5fdaca68fd7c2b196718ad6d9702a02d",
+    "duration-002.json": "11647635bad55a567eeba82518d7759ce8c3e4978cd5d0f96d621ec4c0a8801c",
+    "duration-001.json": "81b57ec8c8388e845a77006b5d820bf7b010838e7007aed0c54a561c90aef04a",
+    "duration-000.json": "72a1a14b080f9dea51172f5249c48980baa6f1dee5b89173d02896612f293e17",
+    "stationary-002.json": "0509e6930e67db98ed6aea5656d62de1f34ad3f5fd8394caa9e26f0c31b8383c",
+    "drifting-002.json": "f156ab448deb9e3ed7fed56dbe25c52202097855f97f3aaf88d9a0c787292156"
+  }
+}

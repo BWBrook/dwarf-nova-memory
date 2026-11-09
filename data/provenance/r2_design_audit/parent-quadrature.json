@@ -1,0 +1,8 @@
+{
+  "method": "parent80-node Gauss-Legendre integration of independent SciPy density/survival ratios",
+  "expected_gain": 0.053954320977409265,
+  "closed_form_gain": 0.05395432097740984,
+  "absolute_error": 5.759281940243e-16,
+  "uses_real_data": false,
+  "source_checks_sha256": "ee2e396f28cbf8db7b190942cefe58ed99f5e84d1bf7cdbff0a21223a337ab89"
+}

@@ -1,0 +1,20 @@
+{
+  "cache_receipt_sha256": "052a1ea5e634dcf4cefd2c59d31c1c4331bd15fd1e0bac29b7969f3fe0dd5958",
+  "freeze_commit": "956d33c",
+  "output_sha256": {
+    "df-unreleased.json": "91b908f957bc2b52de19b0194f3e1e38b82bfced785014f1cd6fb6e0453a22f5",
+    "df_schedule_audit-unreleased.json": "db27b66fc9fac9618d2bc85aff5b8808c6696604675534e840ee460455ec10fc",
+    "point_at_df-unreleased.json": "47ce44843c1ec0d6ff5749a32258e0c8a586576bf5559a4e5dcc21a99daaee1d",
+    "point_original-unreleased.json": "0a7fe47f785a197c29194f57fe1b75c6a62133b783d93f972a643db95edfe5a8",
+    "summary.json": "d7b38420eb231b50c69019b0bc83a56a31c10c1adcb7e9bfb906f1e53546249e"
+  },
+  "scope": "already opened through2017 record; no fit, score, correlation or archive request",
+  "source_sha256": {
+    "docs/protocols/r2-design-v1.md": "c8a344357719ac6bb2ab8ee8a29163f74259e997193848a69f2a39f29665a377",
+    "scripts/r2a_feature_preparation.py": "4c9031bf11f52c03f2c77f2a0fccd24056e25271f1ff0680b7d66b5c9537743a",
+    "src/dnmem/extract_x5.py": "a8cfe3ec68e53c08e2470c7dad276b4ec9ad3d5f42dd47b2f89b3f63905a8bd6",
+    "src/dnmem/r2_features.py": "912e1c2c890e6978f582189ab1bd858e6b7dd9aadbbe371a0d9c255fee128a17",
+    "tests/test_r2_features.py": "3220aa6efcc210f6a5dab4846ae64c82fe4b7a85a4237c461a84102708b0cfc8"
+  },
+  "status": "completed"
+}

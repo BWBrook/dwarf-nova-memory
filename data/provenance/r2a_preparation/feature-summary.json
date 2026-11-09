@@ -1,0 +1,277 @@
+{
+  "all_opened_record": {
+    "df": {
+      "anchor_available": 651,
+      "event_eligible": 651,
+      "features": 663,
+      "flux_proxy_available": 634,
+      "flux_proxy_status": {
+        "available": 634,
+        "fewer_than_two_balanced_nights": 3,
+        "internal_gap_over_seven_days": 6,
+        "no_decisive_bright_span": 20
+      },
+      "history_missing_slots": 1268,
+      "history_reasons": {
+        "coverage_hole": 123,
+        "covered_adjacent_gap": 3619,
+        "incomplete_window_onset": 970,
+        "insufficient_raw_bright_observers": 175
+      },
+      "history_slots": 4887,
+      "mark_available": 633,
+      "previous_gap_available": 568,
+      "status": {
+        "decisive_clock_available": 651,
+        "insufficient_raw_bright_observers": 3,
+        "raw_candidate_ambiguous": 9
+      }
+    },
+    "point_at_df": {
+      "anchor_available": 663,
+      "event_eligible": 663,
+      "features": 663,
+      "flux_proxy_available": 634,
+      "flux_proxy_status": {
+        "available": 634,
+        "fewer_than_two_balanced_nights": 3,
+        "internal_gap_over_seven_days": 6,
+        "no_decisive_bright_span": 20
+      },
+      "frozen_previous_gap_available": 608,
+      "frozen_usable_gap_now_unavailable": 2,
+      "history_missing_slots": 916,
+      "history_reasons": {
+        "coverage_hole": 246,
+        "covered_adjacent_gap": 4022,
+        "incomplete_window_onset": 520,
+        "nonpositive_adjacent_gap": 10,
+        "unconfirmed_adjacent_candidate": 140
+      },
+      "history_slots": 4938,
+      "mark_available": 663,
+      "previous_gap_available": 606,
+      "status": {
+        "point_clock_available": 663
+      }
+    },
+    "point_original": {
+      "anchor_available": 828,
+      "event_eligible": 828,
+      "features": 828,
+      "flux_proxy_available": 796,
+      "flux_proxy_status": {
+        "available": 796,
+        "fewer_than_two_balanced_nights": 3,
+        "internal_gap_over_seven_days": 6,
+        "no_decisive_bright_span": 23
+      },
+      "frozen_previous_gap_available": 773,
+      "frozen_usable_gap_now_unavailable": 2,
+      "history_missing_slots": 1071,
+      "history_reasons": {
+        "coverage_hole": 260,
+        "covered_adjacent_gap": 5153,
+        "incomplete_window_onset": 657,
+        "nonpositive_adjacent_gap": 10,
+        "unconfirmed_adjacent_candidate": 144
+      },
+      "history_slots": 6224,
+      "mark_available": 828,
+      "previous_gap_available": 771,
+      "status": {
+        "point_clock_available": 828
+      }
+    }
+  },
+  "df_issue_delay_days": {
+    "maximum": 8.009999999776483,
+    "median": 0.25600000005215406,
+    "n": 663,
+    "positive": 413
+  },
+  "df_scheduling_status": {
+    "aborted_bright_before_delayed_issue": 165,
+    "scheduled": 663
+  },
+  "label": "R2a gain-free prefix-feature preparation; no fitting, gain or correlation",
+  "limitations": [
+    "Point clocks use full raw prefixes; DF uses visits closed by actual issue.",
+    "Scheduled current DF anchor follows the after-last-bright policy; past X5 anchors use first post-peak decisive faint visits.",
+    "Histories are reconstructed as of each issue with consecutive report-candidate slots, not physical event counts or earliest historical values.",
+    "State filters must rebuild once per feature and must not update again from the separately repeated previous_gap field.",
+    "No fitted-end estimate schedules or associates DF; observation and landmark-selection pathways remain.",
+    "A scheduled DF row with failed raw association remains an explicit common fallback.",
+    "The flux proxy is observed bright-span threshold excess with observer-night medians, not complete outburst/quiescent-subtracted/bolometric fluence."
+  ],
+  "periods": {
+    "development_1910_1959": {
+      "df": {
+        "anchor_available": 300,
+        "event_eligible": 300,
+        "features": 302,
+        "flux_proxy_available": 287,
+        "flux_proxy_status": {
+          "available": 287,
+          "fewer_than_two_balanced_nights": 2,
+          "internal_gap_over_seven_days": 1,
+          "no_decisive_bright_span": 12
+        },
+        "history_missing_slots": 641,
+        "history_reasons": {
+          "coverage_hole": 68,
+          "covered_adjacent_gap": 1496,
+          "incomplete_window_onset": 506,
+          "insufficient_raw_bright_observers": 67
+        },
+        "history_slots": 2137,
+        "mark_available": 288,
+        "previous_gap_available": 252,
+        "status": {
+          "decisive_clock_available": 300,
+          "insufficient_raw_bright_observers": 1,
+          "raw_candidate_ambiguous": 1
+        }
+      },
+      "point_at_df": {
+        "anchor_available": 302,
+        "event_eligible": 302,
+        "features": 302,
+        "flux_proxy_available": 287,
+        "flux_proxy_status": {
+          "available": 287,
+          "fewer_than_two_balanced_nights": 2,
+          "internal_gap_over_seven_days": 1,
+          "no_decisive_bright_span": 12
+        },
+        "frozen_previous_gap_available": 279,
+        "frozen_usable_gap_now_unavailable": 1,
+        "history_missing_slots": 408,
+        "history_reasons": {
+          "coverage_hole": 109,
+          "covered_adjacent_gap": 1736,
+          "incomplete_window_onset": 233,
+          "nonpositive_adjacent_gap": 6,
+          "unconfirmed_adjacent_candidate": 60
+        },
+        "history_slots": 2144,
+        "mark_available": 302,
+        "previous_gap_available": 278,
+        "status": {
+          "point_clock_available": 302
+        }
+      },
+      "point_original": {
+        "anchor_available": 330,
+        "event_eligible": 330,
+        "features": 330,
+        "flux_proxy_available": 314,
+        "flux_proxy_status": {
+          "available": 314,
+          "fewer_than_two_balanced_nights": 2,
+          "internal_gap_over_seven_days": 1,
+          "no_decisive_bright_span": 13
+        },
+        "frozen_previous_gap_available": 307,
+        "frozen_usable_gap_now_unavailable": 1,
+        "history_missing_slots": 440,
+        "history_reasons": {
+          "coverage_hole": 115,
+          "covered_adjacent_gap": 1908,
+          "incomplete_window_onset": 256,
+          "nonpositive_adjacent_gap": 6,
+          "unconfirmed_adjacent_candidate": 63
+        },
+        "history_slots": 2348,
+        "mark_available": 330,
+        "previous_gap_available": 306,
+        "status": {
+          "point_clock_available": 330
+        }
+      }
+    },
+    "opened_evaluation_1960_2017": {
+      "df": {
+        "anchor_available": 307,
+        "event_eligible": 307,
+        "features": 307,
+        "flux_proxy_available": 303,
+        "flux_proxy_status": {
+          "available": 303,
+          "fewer_than_two_balanced_nights": 1,
+          "no_decisive_bright_span": 3
+        },
+        "history_missing_slots": 422,
+        "history_reasons": {
+          "coverage_hole": 18,
+          "covered_adjacent_gap": 2009,
+          "incomplete_window_onset": 403,
+          "insufficient_raw_bright_observers": 1
+        },
+        "history_slots": 2431,
+        "mark_available": 304,
+        "previous_gap_available": 293,
+        "status": {
+          "decisive_clock_available": 307
+        }
+      },
+      "point_at_df": {
+        "anchor_available": 307,
+        "event_eligible": 307,
+        "features": 307,
+        "flux_proxy_available": 303,
+        "flux_proxy_status": {
+          "available": 303,
+          "fewer_than_two_balanced_nights": 1,
+          "no_decisive_bright_span": 3
+        },
+        "frozen_previous_gap_available": 302,
+        "frozen_usable_gap_now_unavailable": 0,
+        "history_missing_slots": 290,
+        "history_reasons": {
+          "coverage_hole": 30,
+          "covered_adjacent_gap": 2141,
+          "incomplete_window_onset": 259,
+          "unconfirmed_adjacent_candidate": 1
+        },
+        "history_slots": 2431,
+        "mark_available": 307,
+        "previous_gap_available": 302,
+        "status": {
+          "point_clock_available": 307
+        }
+      },
+      "point_original": {
+        "anchor_available": 441,
+        "event_eligible": 441,
+        "features": 441,
+        "flux_proxy_available": 436,
+        "flux_proxy_status": {
+          "available": 436,
+          "fewer_than_two_balanced_nights": 1,
+          "no_decisive_bright_span": 4
+        },
+        "frozen_previous_gap_available": 436,
+        "frozen_usable_gap_now_unavailable": 0,
+        "history_missing_slots": 409,
+        "history_reasons": {
+          "coverage_hole": 38,
+          "covered_adjacent_gap": 3078,
+          "incomplete_window_onset": 370,
+          "unconfirmed_adjacent_candidate": 1
+        },
+        "history_slots": 3487,
+        "mark_available": 441,
+        "previous_gap_available": 436,
+        "status": {
+          "point_clock_available": 441
+        }
+      }
+    }
+  },
+  "scheduled_current_vs_x5_first_postpeak_anchor": {
+    "comparable": 651,
+    "different": 12,
+    "maximum_absolute_days": 7.0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "replicate_identities": 70000,
+  "scenario_rule_rows": 70,
+  "same_namespace_seeds_verified": true,
+  "receipt_output_hashes_verified": true,
+  "maximum_independent_mean_error": 0.0,
+  "maximum_binomial_tail_inversion_error": 2.7755575615628914e-15,
+  "checks": [
+    "Literal sign and containment recomputed from every serialized outcome.",
+    "Nonidentity denominators reconstructed separately.",
+    "Identity scores and conditional means are exactly zero.",
+    "Maximum star weight never exceeds 0.4.",
+    "Clopper\u2013Pearson bounds independently inverted from binomial CDF tails."
+  ],
+  "input_sha256": {
+    "replicates": "3297718d85a7534be09b332a7773093704c5be80cb299c03e4a29526f49fec29",
+    "summary": "cca2b0bfa323ca5fafc29fbde2b74dc8900b6f662693ccf834dbfce308fa8a55",
+    "receipt": "99f4c849ccc3defb54b2964d66899297e9c2d0583be559a3337c950dc458bc7c"
+  },
+  "limits": [
+    "Audit uses serialized scores; it does not independently regenerate all Gaussian draws.",
+    "Density-ratio/variance/weightedCR1 formulas checked separately by synthetic deterministic unit tests."
+  ],
+  "review_scope": "Algorithmically separate self-audit by the generating delegate; not an independent-agent review."
+}

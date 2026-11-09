@@ -512,3 +512,26 @@ brackets over the whole opened record.
   is before 2018-01-01.
 - Post-result exploration; it cannot become a confirmation.
 
+
+### Codex R2a/c preparation, 9 November 2026
+
+Under D036, bounded delegates and Codex used retained, already opened SS Cyg
+rows/visits/candidates through 2017 for gain-free X5 and prefix-feature
+preparation. Window geometry, report/cadence summaries, causal scheduling,
+availability and matched-population counts were computed. No real R2b model
+fit, forecast gain or duration–gap correlation was computed. Model controls and
+power outcomes are synthetic and separately labelled.
+
+Catalogue/literature-only R2c work used frozen Downes2006 and RK2015 metadata,
+including SS Cyg control metadata that predate the protected period. Published
+exposure is recorded in `data/provenance/r2c_catalogue_power/literature-exposure.csv`:
+this includes 1990s study periods, an IP Peg 2004–2005 eclipse campaign, a
+1999 outburst-context search snippet (page/figure not opened), and the original
+U Gem 1985 superhump abstract. These were not used as observation counts,
+threshold calibration or power measurements. They prevent a claim that all
+proposed test-year scientific outcomes are unknown.
+
+No new light-curve archive request, other-star observation/coverage query or
+SS Cyg 2018+ observation/count/coverage summary was made. Raw observations,
+per-issue feature ledgers and downloaded copyrighted sources stay ignored.
+All future archive openings and any release remain outside this preparation.

@@ -1,0 +1,698 @@
+{
+  "all_candidates": {
+    "end_available": 822,
+    "end_eligible": 822,
+    "end_status": {
+      "available": 822,
+      "no_decisive_bright_before_quiescence": 30,
+      "no_postpeak_quiescence_report": 8
+    },
+    "episodes": 860,
+    "onset_available": 823,
+    "onset_eligible": 810,
+    "onset_flags": {
+      "contested_decisive_epoch": 3,
+      "decisive_faint_after_bright_before_peak": 10
+    },
+    "onset_status": {
+      "available": 823,
+      "faint_peak": 28,
+      "left_record_boundary": 1,
+      "no_quiescence_report": 8
+    },
+    "post_end_bright_before_next_peak_episodes": 753,
+    "raw_support_width_days": {
+      "maximum": 24.919999999925494,
+      "median": 1.1630000001750886,
+      "n": 823,
+      "p25": 0.781300000147894,
+      "p75": 2.891499999910593,
+      "p90": 4.7680000000633305,
+      "share_le_2_days": 0.6816524908869988,
+      "share_le_5_days": 0.9173754556500607
+    },
+    "representative_width_days": {
+      "maximum": 24.919999999925494,
+      "median": 1.1582200000993907,
+      "n": 823,
+      "p25": 0.779999999795109,
+      "p75": 2.8825000000651926,
+      "p90": 4.7680000000633305,
+      "share_le_2_days": 0.6816524908869988,
+      "share_le_5_days": 0.9173754556500607
+    },
+    "rise_decisive_faint_after_bright_reports": 160,
+    "x4_point_outside_available_onset_window": 77
+  },
+  "cadence_all_available": {
+    "background_observer_visits_per_day": 7.1222493887530565,
+    "background_positive_intervisit_gap_medians": {
+      "maximum": 3.0,
+      "median": 0.10999999998603016,
+      "n": 800,
+      "p25": 0.04003750014817342,
+      "p75": 0.3000000002793968,
+      "p90": 0.800749999843538,
+      "share_le_2_days": 0.9925,
+      "share_le_5_days": 1.0
+    },
+    "background_zero_intervisit_gaps": 5375,
+    "inclusive_to_background_rate_ratio": 0.6962639075174971,
+    "inside_including_upper_observer_visits_per_day": 4.958965189727309,
+    "interior_to_background_rate_ratio": 0.6087752489812672,
+    "nondecisive_bright_to_upper_days": {
+      "maximum": 98.6999999997206,
+      "median": 0.8400499999988824,
+      "n": 612,
+      "p25": 0.30855000007431954,
+      "p75": 2.427500000107102,
+      "p90": 23.030000000074505,
+      "share_le_2_days": 0.7009803921568627,
+      "share_le_5_days": 0.8627450980392157
+    },
+    "strict_interior_observer_visits_per_day": 4.33584914494482,
+    "total_window_days": 1733.2245077672414,
+    "windows": 818
+  },
+  "cadence_eligible": {
+    "background_observer_visits_per_day": 7.063850931677019,
+    "background_positive_intervisit_gap_medians": {
+      "maximum": 3.0,
+      "median": 0.11000000010244548,
+      "n": 787,
+      "p25": 0.040025000111199915,
+      "p75": 0.3007000002544373,
+      "p90": 0.8165000000968571,
+      "share_le_2_days": 0.9923761118170267,
+      "share_le_5_days": 1.0
+    },
+    "background_zero_intervisit_gaps": 5194,
+    "inclusive_to_background_rate_ratio": 0.7004866678518462,
+    "inside_including_upper_observer_visits_per_day": 4.948133401332594,
+    "interior_to_background_rate_ratio": 0.6138167000600964,
+    "nondecisive_bright_to_upper_days": {
+      "maximum": 98.6999999997206,
+      "median": 0.848000000230968,
+      "n": 609,
+      "p25": 0.3189000003039837,
+      "p75": 2.4799999999813735,
+      "p90": 23.33200000002987,
+      "share_le_2_days": 0.6995073891625616,
+      "share_le_5_days": 0.8620689655172413
+    },
+    "strict_interior_observer_visits_per_day": 4.335909668598425,
+    "total_window_days": 1728.126407767646,
+    "windows": 805
+  },
+  "confirmed_by_decade": {
+    "1890": {
+      "end_available": 15,
+      "end_eligible": 15,
+      "end_status": {
+        "available": 15,
+        "no_decisive_bright_before_quiescence": 1,
+        "no_postpeak_quiescence_report": 3
+      },
+      "episodes": 19,
+      "onset_available": 17,
+      "onset_eligible": 17,
+      "onset_flags": {},
+      "onset_status": {
+        "available": 17,
+        "faint_peak": 1,
+        "no_quiescence_report": 1
+      },
+      "post_end_bright_before_next_peak_episodes": 8,
+      "raw_support_width_days": {
+        "maximum": 24.919999999925494,
+        "median": 6.189999999944121,
+        "n": 17,
+        "p25": 3.8700000001117587,
+        "p75": 11.009999999776483,
+        "p90": 19.229999999888243,
+        "share_le_2_days": 0.17647058823529413,
+        "share_le_5_days": 0.4117647058823529
+      },
+      "representative_width_days": {
+        "maximum": 24.919999999925494,
+        "median": 6.189999999944121,
+        "n": 17,
+        "p25": 3.790000000037253,
+        "p75": 11.009999999776483,
+        "p90": 19.229999999888243,
+        "share_le_2_days": 0.17647058823529413,
+        "share_le_5_days": 0.4117647058823529
+      },
+      "rise_decisive_faint_after_bright_reports": 0,
+      "x4_point_outside_available_onset_window": 0
+    },
+    "1900": {
+      "end_available": 42,
+      "end_eligible": 42,
+      "end_status": {
+        "available": 42,
+        "no_decisive_bright_before_quiescence": 4,
+        "no_postpeak_quiescence_report": 1
+      },
+      "episodes": 47,
+      "onset_available": 42,
+      "onset_eligible": 42,
+      "onset_flags": {},
+      "onset_status": {
+        "available": 42,
+        "faint_peak": 4,
+        "no_quiescence_report": 1
+      },
+      "post_end_bright_before_next_peak_episodes": 29,
+      "raw_support_width_days": {
+        "maximum": 24.0,
+        "median": 3.290000000037253,
+        "n": 42,
+        "p25": 1.9849999999860302,
+        "p75": 6.599999999860302,
+        "p90": 9.021500000031665,
+        "share_le_2_days": 0.30952380952380953,
+        "share_le_5_days": 0.6666666666666666
+      },
+      "representative_width_days": {
+        "maximum": 24.0,
+        "median": 3.290000000037253,
+        "n": 42,
+        "p25": 1.9775000001536682,
+        "p75": 6.587499999790452,
+        "p90": 9.021500000031665,
+        "share_le_2_days": 0.30952380952380953,
+        "share_le_5_days": 0.6666666666666666
+      },
+      "rise_decisive_faint_after_bright_reports": 0,
+      "x4_point_outside_available_onset_window": 1
+    },
+    "1910": {
+      "end_available": 69,
+      "end_eligible": 69,
+      "end_status": {
+        "available": 69,
+        "no_decisive_bright_before_quiescence": 3
+      },
+      "episodes": 72,
+      "onset_available": 69,
+      "onset_eligible": 67,
+      "onset_flags": {
+        "contested_decisive_epoch": 1,
+        "decisive_faint_after_bright_before_peak": 1
+      },
+      "onset_status": {
+        "available": 69,
+        "faint_peak": 3
+      },
+      "post_end_bright_before_next_peak_episodes": 61,
+      "raw_support_width_days": {
+        "maximum": 6.100000000093132,
+        "median": 1.8799999998882413,
+        "n": 69,
+        "p25": 0.9600000004284084,
+        "p75": 2.989999999757856,
+        "p90": 3.7139999997802082,
+        "share_le_2_days": 0.6231884057971014,
+        "share_le_5_days": 0.9565217391304348
+      },
+      "representative_width_days": {
+        "maximum": 6.100000000093132,
+        "median": 1.819999999832362,
+        "n": 69,
+        "p25": 0.9550000000745058,
+        "p75": 2.989999999757856,
+        "p90": 3.7139999997802082,
+        "share_le_2_days": 0.6231884057971014,
+        "share_le_5_days": 0.9565217391304348
+      },
+      "rise_decisive_faint_after_bright_reports": 1,
+      "x4_point_outside_available_onset_window": 11
+    },
+    "1920": {
+      "end_available": 69,
+      "end_eligible": 69,
+      "end_status": {
+        "available": 69,
+        "no_decisive_bright_before_quiescence": 1
+      },
+      "episodes": 70,
+      "onset_available": 69,
+      "onset_eligible": 67,
+      "onset_flags": {
+        "contested_decisive_epoch": 1,
+        "decisive_faint_after_bright_before_peak": 1
+      },
+      "onset_status": {
+        "available": 69,
+        "faint_peak": 1
+      },
+      "post_end_bright_before_next_peak_episodes": 67,
+      "raw_support_width_days": {
+        "maximum": 7.2000000001862645,
+        "median": 1.5,
+        "n": 69,
+        "p25": 0.7700000000186265,
+        "p75": 2.8999999999068677,
+        "p90": 4.634000000078232,
+        "share_le_2_days": 0.6666666666666666,
+        "share_le_5_days": 0.9130434782608695
+      },
+      "representative_width_days": {
+        "maximum": 7.2000000001862645,
+        "median": 1.5,
+        "n": 69,
+        "p25": 0.75,
+        "p75": 2.8999999999068677,
+        "p90": 4.634000000078232,
+        "share_le_2_days": 0.6666666666666666,
+        "share_le_5_days": 0.9130434782608695
+      },
+      "rise_decisive_faint_after_bright_reports": 118,
+      "x4_point_outside_available_onset_window": 6
+    },
+    "1930": {
+      "end_available": 57,
+      "end_eligible": 57,
+      "end_status": {
+        "available": 57,
+        "no_decisive_bright_before_quiescence": 9
+      },
+      "episodes": 66,
+      "onset_available": 57,
+      "onset_eligible": 57,
+      "onset_flags": {},
+      "onset_status": {
+        "available": 57,
+        "faint_peak": 9
+      },
+      "post_end_bright_before_next_peak_episodes": 51,
+      "raw_support_width_days": {
+        "maximum": 7.75,
+        "median": 2.599999999627471,
+        "n": 57,
+        "p25": 1.6799999997019768,
+        "p75": 3.930000000167638,
+        "p90": 4.839999999850988,
+        "share_le_2_days": 0.42105263157894735,
+        "share_le_5_days": 0.9298245614035088
+      },
+      "representative_width_days": {
+        "maximum": 7.75,
+        "median": 2.599999999627471,
+        "n": 57,
+        "p25": 1.6799999997019768,
+        "p75": 3.930000000167638,
+        "p90": 4.839999999850988,
+        "share_le_2_days": 0.42105263157894735,
+        "share_le_5_days": 0.9298245614035088
+      },
+      "rise_decisive_faint_after_bright_reports": 0,
+      "x4_point_outside_available_onset_window": 3
+    },
+    "1940": {
+      "end_available": 54,
+      "end_eligible": 54,
+      "end_status": {
+        "available": 54,
+        "no_decisive_bright_before_quiescence": 5,
+        "no_postpeak_quiescence_report": 1
+      },
+      "episodes": 60,
+      "onset_available": 54,
+      "onset_eligible": 53,
+      "onset_flags": {
+        "contested_decisive_epoch": 1
+      },
+      "onset_status": {
+        "available": 54,
+        "faint_peak": 4,
+        "no_quiescence_report": 2
+      },
+      "post_end_bright_before_next_peak_episodes": 48,
+      "raw_support_width_days": {
+        "maximum": 8.899999999906868,
+        "median": 1.8999999999068677,
+        "n": 54,
+        "p25": 0.8999999999068677,
+        "p75": 3.8749999998835847,
+        "p90": 5.209999999869615,
+        "share_le_2_days": 0.5740740740740741,
+        "share_le_5_days": 0.8888888888888888
+      },
+      "representative_width_days": {
+        "maximum": 8.899999999906868,
+        "median": 1.8999999999068677,
+        "n": 54,
+        "p25": 0.8999999999068677,
+        "p75": 3.8749999998835847,
+        "p90": 5.209999999869615,
+        "share_le_2_days": 0.5740740740740741,
+        "share_le_5_days": 0.8888888888888888
+      },
+      "rise_decisive_faint_after_bright_reports": 0,
+      "x4_point_outside_available_onset_window": 4
+    },
+    "1950": {
+      "end_available": 72,
+      "end_eligible": 72,
+      "end_status": {
+        "available": 72
+      },
+      "episodes": 72,
+      "onset_available": 72,
+      "onset_eligible": 72,
+      "onset_flags": {},
+      "onset_status": {
+        "available": 72
+      },
+      "post_end_bright_before_next_peak_episodes": 60,
+      "raw_support_width_days": {
+        "maximum": 21.299999999813735,
+        "median": 1.779999999795109,
+        "n": 72,
+        "p25": 1.0,
+        "p75": 3.125,
+        "p90": 5.437999999942258,
+        "share_le_2_days": 0.5277777777777778,
+        "share_le_5_days": 0.8611111111111112
+      },
+      "representative_width_days": {
+        "maximum": 21.299999999813735,
+        "median": 1.779999999795109,
+        "n": 72,
+        "p25": 1.0,
+        "p75": 3.125,
+        "p90": 5.437999999942258,
+        "share_le_2_days": 0.5277777777777778,
+        "share_le_5_days": 0.8611111111111112
+      },
+      "rise_decisive_faint_after_bright_reports": 0,
+      "x4_point_outside_available_onset_window": 11
+    },
+    "1960": {
+      "end_available": 85,
+      "end_eligible": 85,
+      "end_status": {
+        "available": 85,
+        "no_decisive_bright_before_quiescence": 1
+      },
+      "episodes": 86,
+      "onset_available": 85,
+      "onset_eligible": 82,
+      "onset_flags": {
+        "decisive_faint_after_bright_before_peak": 3
+      },
+      "onset_status": {
+        "available": 85,
+        "faint_peak": 1
+      },
+      "post_end_bright_before_next_peak_episodes": 78,
+      "raw_support_width_days": {
+        "maximum": 8.700000000186265,
+        "median": 1.1099999998696148,
+        "n": 85,
+        "p25": 0.8500000000931323,
+        "p75": 2.75,
+        "p90": 4.087999999802562,
+        "share_le_2_days": 0.7058823529411765,
+        "share_le_5_days": 0.9529411764705882
+      },
+      "representative_width_days": {
+        "maximum": 8.700000000186265,
+        "median": 1.1099999998696148,
+        "n": 85,
+        "p25": 0.8500000000931323,
+        "p75": 2.7000000001862645,
+        "p90": 4.025000000093133,
+        "share_le_2_days": 0.7058823529411765,
+        "share_le_5_days": 0.9529411764705882
+      },
+      "rise_decisive_faint_after_bright_reports": 35,
+      "x4_point_outside_available_onset_window": 13
+    },
+    "1970": {
+      "end_available": 80,
+      "end_eligible": 80,
+      "end_status": {
+        "available": 80
+      },
+      "episodes": 80,
+      "onset_available": 80,
+      "onset_eligible": 79,
+      "onset_flags": {
+        "decisive_faint_after_bright_before_peak": 1
+      },
+      "onset_status": {
+        "available": 80
+      },
+      "post_end_bright_before_next_peak_episodes": 78,
+      "raw_support_width_days": {
+        "maximum": 7.600000000093132,
+        "median": 0.9000000001396984,
+        "n": 80,
+        "p25": 0.6974999998928979,
+        "p75": 1.2324999999254942,
+        "p90": 3.3299999997951115,
+        "share_le_2_days": 0.85,
+        "share_le_5_days": 0.9875
+      },
+      "representative_width_days": {
+        "maximum": 7.600000000093132,
+        "median": 0.8999999999068677,
+        "n": 80,
+        "p25": 0.6974999998928979,
+        "p75": 1.2324999999254942,
+        "p90": 3.3299999997951115,
+        "share_le_2_days": 0.85,
+        "share_le_5_days": 0.9875
+      },
+      "rise_decisive_faint_after_bright_reports": 2,
+      "x4_point_outside_available_onset_window": 6
+    },
+    "1980": {
+      "end_available": 73,
+      "end_eligible": 73,
+      "end_status": {
+        "available": 73
+      },
+      "episodes": 73,
+      "onset_available": 73,
+      "onset_eligible": 71,
+      "onset_flags": {
+        "decisive_faint_after_bright_before_peak": 2
+      },
+      "onset_status": {
+        "available": 73
+      },
+      "post_end_bright_before_next_peak_episodes": 72,
+      "raw_support_width_days": {
+        "maximum": 5.630000000353903,
+        "median": 0.970000000204891,
+        "n": 73,
+        "p25": 0.6900000004097819,
+        "p75": 1.6019999999552965,
+        "p90": 2.890399999730289,
+        "share_le_2_days": 0.8356164383561644,
+        "share_le_5_days": 0.9863013698630136
+      },
+      "representative_width_days": {
+        "maximum": 5.630000000353903,
+        "median": 0.9389999997802079,
+        "n": 73,
+        "p25": 0.6900000004097819,
+        "p75": 1.6019999999552965,
+        "p90": 2.890399999730289,
+        "share_le_2_days": 0.8356164383561644,
+        "share_le_5_days": 0.9863013698630136
+      },
+      "rise_decisive_faint_after_bright_reports": 2,
+      "x4_point_outside_available_onset_window": 4
+    },
+    "1990": {
+      "end_available": 70,
+      "end_eligible": 70,
+      "end_status": {
+        "available": 70
+      },
+      "episodes": 70,
+      "onset_available": 70,
+      "onset_eligible": 70,
+      "onset_flags": {},
+      "onset_status": {
+        "available": 70
+      },
+      "post_end_bright_before_next_peak_episodes": 70,
+      "raw_support_width_days": {
+        "maximum": 6.145899999886751,
+        "median": 0.8329000000376254,
+        "n": 70,
+        "p25": 0.6185250000562519,
+        "p75": 1.3158250000560656,
+        "p90": 3.588620000006631,
+        "share_le_2_days": 0.8285714285714286,
+        "share_le_5_days": 0.9571428571428572
+      },
+      "representative_width_days": {
+        "maximum": 6.145899999886751,
+        "median": 0.8329000000376254,
+        "n": 70,
+        "p25": 0.5914125001290813,
+        "p75": 1.3158250000560656,
+        "p90": 3.588620000006631,
+        "share_le_2_days": 0.8285714285714286,
+        "share_le_5_days": 0.9571428571428572
+      },
+      "rise_decisive_faint_after_bright_reports": 0,
+      "x4_point_outside_available_onset_window": 3
+    },
+    "2000": {
+      "end_available": 73,
+      "end_eligible": 73,
+      "end_status": {
+        "available": 73
+      },
+      "episodes": 73,
+      "onset_available": 73,
+      "onset_eligible": 71,
+      "onset_flags": {
+        "decisive_faint_after_bright_before_peak": 2
+      },
+      "onset_status": {
+        "available": 73
+      },
+      "post_end_bright_before_next_peak_episodes": 72,
+      "raw_support_width_days": {
+        "maximum": 8.143999999854714,
+        "median": 0.8034999999217689,
+        "n": 73,
+        "p25": 0.6089999997057021,
+        "p75": 1.1071999999694526,
+        "p90": 2.2213980001397426,
+        "share_le_2_days": 0.8493150684931506,
+        "share_le_5_days": 0.9863013698630136
+      },
+      "representative_width_days": {
+        "maximum": 8.12250000005588,
+        "median": 0.77710000006482,
+        "n": 73,
+        "p25": 0.6026999996975064,
+        "p75": 1.1071999999694526,
+        "p90": 2.2213980001397426,
+        "share_le_2_days": 0.8493150684931506,
+        "share_le_5_days": 0.9863013698630136
+      },
+      "rise_decisive_faint_after_bright_reports": 2,
+      "x4_point_outside_available_onset_window": 8
+    },
+    "2010": {
+      "end_available": 57,
+      "end_eligible": 57,
+      "end_status": {
+        "available": 57
+      },
+      "episodes": 57,
+      "onset_available": 57,
+      "onset_eligible": 57,
+      "onset_flags": {},
+      "onset_status": {
+        "available": 57
+      },
+      "post_end_bright_before_next_peak_episodes": 54,
+      "raw_support_width_days": {
+        "maximum": 4.163219999987632,
+        "median": 0.851800000295043,
+        "n": 57,
+        "p25": 0.6689999997615814,
+        "p75": 1.293769999872893,
+        "p90": 1.6668839997611937,
+        "share_le_2_days": 0.9473684210526315,
+        "share_le_5_days": 1.0
+      },
+      "representative_width_days": {
+        "maximum": 4.163219999987632,
+        "median": 0.8400000003166497,
+        "n": 57,
+        "p25": 0.6689999997615814,
+        "p75": 1.293769999872893,
+        "p90": 1.6668839997611937,
+        "share_le_2_days": 0.9473684210526315,
+        "share_le_5_days": 1.0
+      },
+      "rise_decisive_faint_after_bright_reports": 0,
+      "x4_point_outside_available_onset_window": 7
+    }
+  },
+  "confirmed_candidates": {
+    "end_available": 816,
+    "end_eligible": 816,
+    "end_status": {
+      "available": 816,
+      "no_decisive_bright_before_quiescence": 24,
+      "no_postpeak_quiescence_report": 5
+    },
+    "episodes": 845,
+    "onset_available": 818,
+    "onset_eligible": 805,
+    "onset_flags": {
+      "contested_decisive_epoch": 3,
+      "decisive_faint_after_bright_before_peak": 10
+    },
+    "onset_status": {
+      "available": 818,
+      "faint_peak": 23,
+      "no_quiescence_report": 4
+    },
+    "post_end_bright_before_next_peak_episodes": 748,
+    "raw_support_width_days": {
+      "maximum": 24.919999999925494,
+      "median": 1.149500000057742,
+      "n": 818,
+      "p25": 0.7799999999115244,
+      "p75": 2.8400000002002344,
+      "p90": 4.657080000219868,
+      "share_le_2_days": 0.6858190709046454,
+      "share_le_5_days": 0.9229828850855746
+    },
+    "representative_width_days": {
+      "maximum": 24.919999999925494,
+      "median": 1.1477500000037253,
+      "n": 818,
+      "p25": 0.7792500000214204,
+      "p75": 2.8400000002002344,
+      "p90": 4.657080000219868,
+      "share_le_2_days": 0.6858190709046454,
+      "share_le_5_days": 0.9229828850855746
+    },
+    "rise_decisive_faint_after_bright_reports": 160,
+    "x4_point_outside_available_onset_window": 77
+  },
+  "decisive_cross_observer_contradictions": {
+    "all": {
+      "decisive_visits": 255647,
+      "fraction": 0.0015177177905471217,
+      "visits_with_opposite_other_observer": 388
+    },
+    "plateau": {
+      "decisive_visits": 24375,
+      "fraction": 0.0,
+      "visits_with_opposite_other_observer": 0
+    },
+    "quiescence": {
+      "decisive_visits": 157294,
+      "fraction": 0.0,
+      "visits_with_opposite_other_observer": 0
+    }
+  },
+  "label": "R2a gain-free X5 report-window diagnostics; no score or fit",
+  "limitations": [
+    "Fainter-than limits are numerical magnitude lower bounds, not positive magnitudes.",
+    "Report windows and raw visit supports do not prove latent-onset containment or event completeness.",
+    "Contradiction fractions are descriptive visit fractions, not probabilities of failed brackets; no failed-bracket count is identified.",
+    "Clear-phase strata require eligible neighbouring report windows and can underrepresent transition errors.",
+    "Selected onset windows force an upper detection; inclusive and strict-interior cadence comparisons are both reported.",
+    "Visit-rate contrasts and alert lags do not establish CAR or rule out unrecorded triggers.",
+    "Post-end bright reports before the next peak can be the ordinary next rise, not a current-event recrossing.",
+    "Calendar decades label native JD values; no photometric-time convention is converted."
+  ]
+}

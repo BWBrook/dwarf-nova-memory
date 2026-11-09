@@ -1,0 +1,44 @@
+{
+  "checker_sha256": "02e8e025827a8e5fdddd357264f7a264504e49affe4730fe119c7bd85a714f44",
+  "input_sha256": {
+    "df-unreleased.json": "91b908f957bc2b52de19b0194f3e1e38b82bfced785014f1cd6fb6e0453a22f5",
+    "df_schedule_audit-unreleased.json": "db27b66fc9fac9618d2bc85aff5b8808c6696604675534e840ee460455ec10fc",
+    "point_at_df-unreleased.json": "47ce44843c1ec0d6ff5749a32258e0c8a586576bf5559a4e5dcc21a99daaee1d",
+    "point_original-unreleased.json": "0a7fe47f785a197c29194f57fe1b75c6a62133b783d93f972a643db95edfe5a8"
+  },
+  "periods": {
+    "development": {
+      "DF_anchor_gap_mark": 251,
+      "DF_only_markable": 2,
+      "anchor_mismatches": 7,
+      "common_anchor_gap_mark": 249,
+      "matched_issues": 302,
+      "maximum_delay_days": 4.150999999605119,
+      "median_delay_days": 0.0,
+      "original_point_issues": 330,
+      "point_anchor_gap_mark": 278,
+      "point_only_markable": 29,
+      "scheduling_counts_by_original_issue": {
+        "aborted_bright_before_delayed_issue": 28,
+        "scheduled": 302
+      }
+    },
+    "evaluation": {
+      "DF_anchor_gap_mark": 292,
+      "DF_only_markable": 1,
+      "anchor_mismatches": 5,
+      "common_anchor_gap_mark": 291,
+      "matched_issues": 307,
+      "maximum_delay_days": 4.7972000003792346,
+      "median_delay_days": 0.7199999997392297,
+      "original_point_issues": 441,
+      "point_anchor_gap_mark": 302,
+      "point_only_markable": 11,
+      "scheduling_counts_by_original_issue": {
+        "aborted_bright_before_delayed_issue": 134,
+        "scheduled": 307
+      }
+    }
+  },
+  "scope": "gain-free recount of saved clock features; no model imports"
+}

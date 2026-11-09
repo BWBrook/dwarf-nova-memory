@@ -1,0 +1,18 @@
+{
+  "label": "score-level planning; no extraction or observational access",
+  "freeze_commit": "fe6dbf4",
+  "source_sha256": "9628d448c5968abec826f25d9e7e9710ce7b75710f5256ce21165a099472fbe0",
+  "config_sha256": "deae11b7e03d7c05c5f6af0ec80250f0121446c2f43df4e060dac6623ec3251a",
+  "replicates_per_scenario": 2000,
+  "namespace": "r2c-power-v1",
+  "python": "3.14.4 (main, Apr 14 2026, 14:46:33) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "scipy": "1.18.1",
+  "status": "completed",
+  "elapsed_seconds": 37.43877537501976,
+  "files_sha256": {
+    "summary.json": "cca2b0bfa323ca5fafc29fbde2b74dc8900b6f662693ccf834dbfce308fa8a55",
+    "replicates.jsonl": "3297718d85a7534be09b332a7773093704c5be80cb299c03e4a29526f49fec29"
+  }
+}

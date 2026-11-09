@@ -1,0 +1,21 @@
+{
+  "development": {
+    "matched_issues": 302,
+    "common_anchor_gap_mark": 249,
+    "DF_only_markable": 2,
+    "point_only_markable": 29
+  },
+  "evaluation": {
+    "matched_issues": 307,
+    "common_anchor_gap_mark": 291,
+    "DF_only_markable": 1,
+    "point_only_markable": 11
+  },
+  "scope": "parent gain-free intersection check; no forecast distributions, fits or scores evaluated",
+  "model_feature_contract_validated_without_predictions": true,
+  "ledger_counts": {
+    "point_original": 828,
+    "df": 663,
+    "point_at_df": 663
+  }
+}

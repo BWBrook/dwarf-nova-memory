@@ -1,0 +1,200 @@
+{
+  "absolute_tolerance": 1e-09,
+  "evaluation_gain_terms": 3240,
+  "evaluation_score_terms": 6480,
+  "exact_saved_zero_or_missing_pairs": 2220,
+  "failures": [],
+  "histories_checked": 9,
+  "identity_or_enrichment_reasons": {
+    "marked": 1020,
+    "missing_anchor": 108,
+    "missing_mark": 50,
+    "missing_previous_gap": 243,
+    "zero_beta": 1819
+  },
+  "input_sha256": {
+    "outputs/r2a_model_controls_f0049dd/drifting-000.json": "71fd8895c153588f65f229671d1600dc5fdaca68fd7c2b196718ad6d9702a02d",
+    "outputs/r2a_model_controls_f0049dd/drifting-001.json": "1941ced0faabd75cb4f7b38433901eeab714eb30c688dc06e5ca35097e366bd6",
+    "outputs/r2a_model_controls_f0049dd/drifting-002.json": "f156ab448deb9e3ed7fed56dbe25c52202097855f97f3aaf88d9a0c787292156",
+    "outputs/r2a_model_controls_f0049dd/duration-000.json": "72a1a14b080f9dea51172f5249c48980baa6f1dee5b89173d02896612f293e17",
+    "outputs/r2a_model_controls_f0049dd/duration-001.json": "81b57ec8c8388e845a77006b5d820bf7b010838e7007aed0c54a561c90aef04a",
+    "outputs/r2a_model_controls_f0049dd/duration-002.json": "11647635bad55a567eeba82518d7759ce8c3e4978cd5d0f96d621ec4c0a8801c",
+    "outputs/r2a_model_controls_f0049dd/receipt.json": "09648c3dceb0cf42c08723239a703c56b38472e4a1b8ed59c6bacaa762976bce",
+    "outputs/r2a_model_controls_f0049dd/stationary-000.json": "127c8a18652fac91d9008c136ff9be921a3fb2391c775920e3ad5b22e504098b",
+    "outputs/r2a_model_controls_f0049dd/stationary-001.json": "bda024337ec271af04477f87cce799d726508f6c9743de792e08dc347fbbfb93",
+    "outputs/r2a_model_controls_f0049dd/stationary-002.json": "0509e6930e67db98ed6aea5656d62de1f34ad3f5fd8394caa9e26f0c31b8383c",
+    "outputs/r2a_model_controls_f0049dd/summary.json": "06121e63c6ff8281906dc0d6f5d2316b2604e6899ad2e7c372d0beb58b3e9cf6",
+    "scripts/check_r2a_model_controls.py": "77b48fee101e0eb45243b4ed0ee77af2b309932305d1a19841b1ce8ece385ce5"
+  },
+  "limits": [
+    "No fits, optimizer validation, new simulation or real observations.",
+    "Synthetic evaluation outcomes are points; retained mixed training outcomes independently verify point/interval/censor objectives.",
+    "Zero-counterfactual predictions are independently reconstructed; original candidate zero-nesting calls were not rerun.",
+    "Nine finite controls and numerical agreement do not establish calibration, identifiability or physical validity."
+  ],
+  "maximum_aggregate_mean_or_mcse_error": 6.245004513516506e-17,
+  "maximum_gain_error": 4.884981308350689e-15,
+  "maximum_score_error": 2.4868995751603507e-14,
+  "maximum_training_objective_error": 1.7053025658242404e-12,
+  "maximum_transform_error": 8.881784197001252e-16,
+  "per_history": [
+    {
+      "evaluation_rows": 120,
+      "history": "drifting-000",
+      "maximum_score_error": 2.4868995751603507e-14,
+      "training": {
+        "maximum_transform_error": 8.881784197001252e-16,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 3.979039320256561e-13,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1290,
+          "right_censored": 108
+        }
+      }
+    },
+    {
+      "evaluation_rows": 120,
+      "history": "drifting-001",
+      "maximum_score_error": 1.1546319456101628e-14,
+      "training": {
+        "maximum_transform_error": 8.881784197001252e-16,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 1.1368683772161603e-13,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1305,
+          "right_censored": 93
+        }
+      }
+    },
+    {
+      "evaluation_rows": 120,
+      "history": "drifting-002",
+      "maximum_score_error": 1.2434497875801753e-14,
+      "training": {
+        "maximum_transform_error": 4.440892098500626e-16,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 1.7053025658242404e-13,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1290,
+          "right_censored": 108
+        }
+      }
+    },
+    {
+      "evaluation_rows": 120,
+      "history": "duration-000",
+      "maximum_score_error": 6.217248937900877e-15,
+      "training": {
+        "maximum_transform_error": 4.440892098500626e-16,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 1.7053025658242404e-13,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1290,
+          "right_censored": 108
+        }
+      }
+    },
+    {
+      "evaluation_rows": 120,
+      "history": "duration-001",
+      "maximum_score_error": 5.329070518200751e-15,
+      "training": {
+        "maximum_transform_error": 4.440892098500626e-16,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 2.2737367544323206e-13,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1290,
+          "right_censored": 108
+        }
+      }
+    },
+    {
+      "evaluation_rows": 120,
+      "history": "duration-002",
+      "maximum_score_error": 8.881784197001252e-15,
+      "training": {
+        "maximum_transform_error": 4.440892098500626e-16,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 2.8421709430404007e-13,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1290,
+          "right_censored": 108
+        }
+      }
+    },
+    {
+      "evaluation_rows": 120,
+      "history": "stationary-000",
+      "maximum_score_error": 8.881784197001252e-15,
+      "training": {
+        "maximum_transform_error": 4.440892098500626e-16,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 1.7053025658242404e-12,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1290,
+          "right_censored": 108
+        }
+      }
+    },
+    {
+      "evaluation_rows": 120,
+      "history": "stationary-001",
+      "maximum_score_error": 1.2434497875801753e-14,
+      "training": {
+        "maximum_transform_error": 8.881784197001252e-16,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 3.979039320256561e-13,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1290,
+          "right_censored": 108
+        }
+      }
+    },
+    {
+      "evaluation_rows": 120,
+      "history": "stationary-002",
+      "maximum_score_error": 7.105427357601002e-15,
+      "training": {
+        "maximum_transform_error": 5.551115123125783e-17,
+        "objective_components_checked": 15,
+        "objective_maximum_absolute_error": 2.2737367544323206e-13,
+        "training_score_terms_by_kind": {
+          "interval": 231,
+          "point": 1290,
+          "right_censored": 108
+        }
+      }
+    }
+  ],
+  "prediction_derivation": "B0/B1 reconstructed from saved transforms and raw prefix histories; B2 direct joint Gaussian covariance conditioning, not candidate Kalman recursion",
+  "routing_counts": {
+    "B0:B0": 657,
+    "B0:B0+D": 306,
+    "B0:R0": 36,
+    "B0:constant": 81,
+    "B1:B1": 657,
+    "B1:B1+D": 306,
+    "B1:R0": 36,
+    "B1:constant": 81,
+    "B2:B2": 555,
+    "B2:B2+D": 408,
+    "B2:R0": 36,
+    "B2:constant": 81
+  },
+  "score_derivation": "SciPy lognorm logpdf/logsf/CDF differences conditional on survival to issue; no dnmem imports",
+  "status": "passed",
+  "training_score_terms_by_kind": {
+    "interval": 2079,
+    "point": 11625,
+    "right_censored": 957
+  },
+  "zero_counterfactual_predictions": 3240
+}

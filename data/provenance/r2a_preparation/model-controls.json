@@ -1,0 +1,80 @@
+{
+  "label": "finite synthetic model controls, not calibration or real-data R2b",
+  "histories_completed": 9,
+  "failures": [],
+  "rows": [
+    {
+      "case": "stationary",
+      "rung": "B0",
+      "histories": 3,
+      "mean_gain": 0.0,
+      "mc_se": 0.0,
+      "positive_offsets": 0
+    },
+    {
+      "case": "stationary",
+      "rung": "B1",
+      "histories": 3,
+      "mean_gain": 0.0,
+      "mc_se": 0.0,
+      "positive_offsets": 0
+    },
+    {
+      "case": "stationary",
+      "rung": "B2",
+      "histories": 3,
+      "mean_gain": 0.0,
+      "mc_se": 0.0,
+      "positive_offsets": 0
+    },
+    {
+      "case": "drifting",
+      "rung": "B0",
+      "histories": 3,
+      "mean_gain": 0.0,
+      "mc_se": 0.0,
+      "positive_offsets": 0
+    },
+    {
+      "case": "drifting",
+      "rung": "B1",
+      "histories": 3,
+      "mean_gain": 0.0,
+      "mc_se": 0.0,
+      "positive_offsets": 0
+    },
+    {
+      "case": "drifting",
+      "rung": "B2",
+      "histories": 3,
+      "mean_gain": -0.00011041435837005404,
+      "mc_se": 0.00011041435837005405,
+      "positive_offsets": 1
+    },
+    {
+      "case": "duration",
+      "rung": "B0",
+      "histories": 3,
+      "mean_gain": 0.024335755594221464,
+      "mc_se": 0.004359948769184996,
+      "positive_offsets": 3
+    },
+    {
+      "case": "duration",
+      "rung": "B1",
+      "histories": 3,
+      "mean_gain": 0.02796070653181697,
+      "mc_se": 0.007263780657025866,
+      "positive_offsets": 3
+    },
+    {
+      "case": "duration",
+      "rung": "B2",
+      "histories": 3,
+      "mean_gain": 0.0314001627629307,
+      "mc_se": 0.0073466831083003024,
+      "positive_offsets": 3
+    }
+  ],
+  "exact_zero_nesting_checks": 3240
+}

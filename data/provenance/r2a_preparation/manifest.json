@@ -1,0 +1,76 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 1944,
+      "sha256": "5b8a1b7ffe84a7ad6b6ec46f5279df9a9484a8fd8c7ef4be291ed0dce907f1a6"
+    },
+    "feature-invariants.json": {
+      "bytes": 5086,
+      "sha256": "5c7af48a5acad4049d00d583787263903c342500f183bca4adf3928a1d556694"
+    },
+    "feature-invariants.md": {
+      "bytes": 2430,
+      "sha256": "3f4a69540f8ba0e4eb99f62dd2bf4d636527ad5a915924e0b102944685e283eb"
+    },
+    "feature-receipt.json": {
+      "bytes": 1313,
+      "sha256": "0bff0944aaa362fd994a7723f68e3038af818076df31bd0d2b57d78e95adbbe0"
+    },
+    "feature-summary.json": {
+      "bytes": 8985,
+      "sha256": "d7b38420eb231b50c69019b0bc83a56a31c10c1adcb7e9bfb906f1e53546249e"
+    },
+    "filter-source.json": {
+      "bytes": 543,
+      "sha256": "674a9c8501c1ac40317a7dacc17258d7bb61c6211a7e3c37b4a118ade65360ec"
+    },
+    "matched-clock-intersection.json": {
+      "bytes": 546,
+      "sha256": "3053040e4a06c1aa3650d63809b7f0ddf5bf6a3d74c2fe43b5a4828298201fc2"
+    },
+    "model-controls.json": {
+      "bytes": 1704,
+      "sha256": "06121e63c6ff8281906dc0d6f5d2316b2604e6899ad2e7c372d0beb58b3e9cf6"
+    },
+    "model-independent-check.json": {
+      "bytes": 7569,
+      "sha256": "3d37de26886adb6e577152fedd1d95a524e798b67c4bbed9962c6dfb669e5e64"
+    },
+    "model-independent-check.md": {
+      "bytes": 922,
+      "sha256": "c1c39c404376f19d07c360ea34a73eae1872373bb82597bbfe91b8d5850aa040"
+    },
+    "model-receipt.json": {
+      "bytes": 1913,
+      "sha256": "09648c3dceb0cf42c08723239a703c56b38472e4a1b8ed59c6bacaa762976bce"
+    },
+    "original-preservation.json": {
+      "bytes": 4044,
+      "sha256": "64b90e880b5ab54b6d4a96b8df62356d066e36c6830c814bb4090f3e1e1006e7"
+    },
+    "parent-population-recount.json": {
+      "bytes": 1638,
+      "sha256": "ebf4e33e33579808941dbe41a542f7d5751f1d67333b4dc729682612a69250d4"
+    },
+    "x5-diagnostics.json": {
+      "bytes": 21839,
+      "sha256": "b65546e770a9685e069bde02b518e4a47118621e9c7144a7e5e44f511f7fea50"
+    },
+    "x5-receipt.json": {
+      "bytes": 871,
+      "sha256": "05116075615bd6b7b5acad0ed3e3c773c915cc5ddbb50e5c9f8b6fde034ad04a"
+    }
+  },
+  "independent_checker_sha256": {
+    "scripts/check_r2a_feature_counts.py": "02e8e025827a8e5fdddd357264f7a264504e49affe4730fe119c7bd85a714f44",
+    "scripts/check_r2a_model_controls.py": "77b48fee101e0eb45243b4ed0ee77af2b309932305d1a19841b1ce8ece385ce5"
+  },
+  "label": "R2a aggregate gain-free preparation and separate synthetic controls",
+  "no_real_R2b_fit_score_or_correlation": true,
+  "public_csv_newlines": "LF",
+  "source_freezes": [
+    "fe6dbf4",
+    "f0049dd",
+    "956d33c"
+  ]
+}

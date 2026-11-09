@@ -30,7 +30,7 @@ claims and handovers.
 | A10m | Semantic, novelty and rendered-draft review | Complete; drafts externally reviewed (A10n) | Codex | [A10m review](../docs/audits/2026-11-09-a10m-draft-review.md), D031; C41 supported as a bounded search |
 | A10n | Triage of the GPT-6 Pro external review; next research round | Agreed with amendments (D033); R1 complete (D034) | Claude | [A10n triage](../docs/audits/2026-11-09-a10n-external-review-triage.md), [review package](../docs/reviews/2026-11-09-gpt6pro/), D032; censor path bounded at +0.00024; null-simulation gains ≤ 0.0005 |
 | R1 | Censor audit, alternative observation scores, endpoint dose, example and simulation table | Complete (D034); C42–C46 supported by Claude review (D035) | Codex | [R1 audit](../docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md), [Claude review](../docs/audits/2026-11-09-claude-r1-review.md); point gain +0.0154; 434 missing clips traced to an X4 lower-clip bug |
-| R2 | Observation target, decoupled forecast, stronger baselines, sealed multi-star design | Draft v0 proposed (D035); awaiting Codex amendment and freeze | Claude design; Codex R2a–R2c | [R2 design v0](../docs/protocols/r2-design-v0.md) |
+| R2 | Observation target, observed clocks, stronger baselines, sealed multi-star design | R2a/c complete (D036–D037); G2 unestablished; R2b review before real gains | Codex preparation; Claude review | [R2 preparation v1](../docs/protocols/r2-design-v1.md); [results](../docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md) |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -893,4 +893,32 @@ Codex's legwork; R2d integrates and brings one G3 question to Barry.
 Next: Codex — amend and freeze the R2 design (v1), then run R2a (X5, gain-free
 diagnostics, DF/fluence/B1/B2 implementations) and R2c (cohort screen, power
 simulation); no new archives.
+
+## R2a/c preparation completed
+
+Codex, 9 November 2026. D036 amends v0's assumptions and freezes preparation;
+D037 records the results. Sources/configuration were committed before each
+batch at `fe6dbf4`, `f0049dd` and `956d33c`. See the
+[R2a/c report](../docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md).
+
+X5 restores 818 available / 805 eligible confirmed report windows. Their
+geometry does not establish latent containment or CAR. DF waits for its faint
+anchor and retains 307 of 441 evaluation issues, with only 291 jointly markable
+across the matched clocks. Twelve current/history clock discrepancies need
+review. An exact-report counterexample shows that removing a fitted end does
+not remove cadence information or make DF a decisive mechanism test.
+
+B0–B2, the observed-span flux proxy and scoring bounds are implemented. Nine
+finite controls and an independent Gaussian-conditioning/score reconstruction
+pass. No real R2b model fit, gain or duration–gap correlation was computed.
+
+The literature/catalogue queue contains eight nominees, two holds, five
+exclusions and one opened control. None is newly qualified. The 35×2,000
+score-level study gives fitted-rule power 0.711 at nominal gain .010 and
+1,100 forecasts; serial-block nonidentity interval coverage falls to 0.7265.
+G2 is unestablished. No new-star observations or SS Cyg 2018+ rows/counts were
+accessed. Product texts and PDFs remain unchanged; new claims await review.
+
+Next: Claude — review the preparation and settle R2b clock/history, matched
+population, crossing assumptions and dependence/precision rules before real gains.
 

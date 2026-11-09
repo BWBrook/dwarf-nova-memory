@@ -906,6 +906,40 @@ proposals, not a record of approvals the user has not given.
 - Status: bounded R2a/c preparation accepted; source/configuration bytes must
   be committed before each real-data preparation or synthetic result batch.
 
+### D037 — R2a/c prepared; G2 and mechanism-identification claims remain open
+
+- Codex, 9 November 2026. Preparation/model/feature freezes `fe6dbf4`,
+  `f0049dd`, `956d33c`; report
+  `docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md`.
+- X5 supplies 818/845 confirmed onset windows, 805 eligible, median raw-support
+  width 1.1495 days. Limits and temporal supports are explicit; flags and 77
+  old-point/window disagreements do not calibrate latent error. Observing-rate
+  and contradiction diagnostics cannot establish the A0/A1/A2 premises.
+- The causal DF policy produces 302 development and 307 evaluation issues,
+  versus 330/441 originals, with 134 evaluation pending-issue aborts. Only 291
+  evaluation issues are jointly markable across DF and matched point clocks.
+  Twelve current/history anchor discrepancies are recorded. These facts rule
+  out interpreting a simple ratio to the original mean as mechanism evidence.
+- New B0/B1/B2 and proxy implementations pass unit, covariance and independent
+  numerical checks on nine finite controls. Availability guard defects were
+  corrected before their batch; rank deficiency is reported, not hidden.
+  No real-data R2b model/gain/correlation has been computed.
+- The exact-report cadence counterexample yields +0.0539543 without a fitted
+  end or physical-duration effect. DF removes a literal numerical estimate,
+  not all observation/landmark information. The broader v0 G1 inference is
+  rejected; a nonpositive proxy result also would not identify a mechanism.
+- R2c records eight nominees, two eclipse/subtype holds and explicit catalogue
+  source/passband/exposure limits. No new-star observation access occurred.
+  The 35×2,000 score-level study gives fitted power 0.711 at nominal gain .010
+  and N=1,100; serial-block nonidentity interval coverage is 0.7265. G2 is not
+  established; 1,100 forecasts and star×block CR1 are not validated guarantees.
+- Next review must settle the observed-clock/history convention, matched
+  population, latent crossing/association assumptions and dependence/precision
+  method before real exploratory R2b scores and any eventual G3 proposal.
+  Original comparison/parameters and the four product texts/PDFs stay unchanged.
+  New claims remain provisional pending Claude review. No new-star opening,
+  SS Cyg 2018+ access, specialist contact or release is authorized.
+
 ## New decision template
 
 ### D0xx — Short concrete title

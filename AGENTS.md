@@ -81,10 +81,17 @@ contract audit and R1 results are in `docs/audits/2026-11-09-r1-*.md`.
 Endpoint-dose conclusions concern the stated added iid Gaussian mechanism in
 the fixed simulator, not every real measurement pathway. Claude's R1 review
 (D035) supports C42–C46 and traces the missing clips to an X4 lower-clip bug;
-`docs/protocols/r2-design-v0.md` is the R2 draft (latent target, A1/A2
-assumption ladder, X5, decoupled forecast, B0–B2 ladder, sealed multi-star
-test). New work uses a versioned X5; frozen X4 bytes stay unchanged. Manuscript
-rewriting waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
+`docs/protocols/r2-design-v0.md` is preserved as the proposal. D036's amended
+`r2-design-v1.md` freezes R2a/c preparation: distinct association/containment/CAR
+premises, fixed-C mixed bounds versus working backoff scores, raw-support X5
+windows, causal observed clocks and windowed B0–B2 models. Real R2b models have
+not been fitted/scored. X5 yields 818 available / 805 eligible confirmed windows;
+DF keeps 307 of 441 evaluation issues. Different populations and observed-anchor
+lags prevent a mechanism test by retention ratio. The 35-scenario score-level
+precision study leaves G2 unestablished and exposes serial-block CR1 coverage
+failure. See `docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md` before
+any R2b execution freeze. Frozen X4 bytes stay unchanged. Manuscript rewriting
+waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
 
 - Cite primary research or official archive documentation for external facts.
   Read the source supporting a claim; a title or abstract is insufficient for a

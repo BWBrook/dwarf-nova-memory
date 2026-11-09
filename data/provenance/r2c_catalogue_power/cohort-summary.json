@@ -1,0 +1,24 @@
+{
+  "screened": 16,
+  "nominees": [
+    "SS Aur",
+    "RU Peg",
+    "AR And",
+    "X Leo",
+    "TW Vir",
+    "UU Aql",
+    "CH UMa",
+    "DX And"
+  ],
+  "nominee_count": 8,
+  "holds": [
+    "U Gem",
+    "IP Peg"
+  ],
+  "hold_count": 2,
+  "excluded_count": 5,
+  "opened_controls": 1,
+  "status": "source-based proposals; qualification and observing density unknown",
+  "sources": "Downes2006;RK7.24(2015);primary-literature exposure ledger",
+  "new_observation_archive_access": false
+}

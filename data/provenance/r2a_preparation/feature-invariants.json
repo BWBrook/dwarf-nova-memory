@@ -1,0 +1,136 @@
+{
+  "assertion_count": 22030,
+  "checks": {
+    "df anchor availability": 663,
+    "df feature availability": 663,
+    "df history availability": 663,
+    "df issue order": 1,
+    "df last gap consistency": 568,
+    "df last gap missingness": 95,
+    "df no duplicate history update": 663,
+    "df no proxy extrapolation": 634,
+    "df nonnegative finite proxy": 634,
+    "df positive mark": 663,
+    "df proxy availability": 663,
+    "df proxy missing status": 29,
+    "df proxy support": 634,
+    "df unique emissions": 1,
+    "matched point DF population": 1,
+    "matched point DF proxy equality": 663,
+    "point_at_df anchor availability": 663,
+    "point_at_df feature availability": 663,
+    "point_at_df history availability": 663,
+    "point_at_df issue order": 1,
+    "point_at_df last gap consistency": 606,
+    "point_at_df last gap missingness": 57,
+    "point_at_df no duplicate history update": 663,
+    "point_at_df no proxy extrapolation": 634,
+    "point_at_df nonnegative finite proxy": 634,
+    "point_at_df positive mark": 663,
+    "point_at_df proxy availability": 663,
+    "point_at_df proxy missing status": 29,
+    "point_at_df proxy support": 634,
+    "point_at_df unique emissions": 1,
+    "point_original anchor availability": 828,
+    "point_original feature availability": 828,
+    "point_original history availability": 828,
+    "point_original issue order": 1,
+    "point_original last gap consistency": 771,
+    "point_original last gap missingness": 57,
+    "point_original no duplicate history update": 828,
+    "point_original no proxy extrapolation": 796,
+    "point_original nonnegative finite proxy": 796,
+    "point_original positive mark": 828,
+    "point_original proxy availability": 828,
+    "point_original proxy missing status": 32,
+    "point_original proxy support": 796,
+    "point_original unique emissions": 1
+  },
+  "errors": [],
+  "input_sha256": {
+    "df-unreleased.json": "91b908f957bc2b52de19b0194f3e1e38b82bfced785014f1cd6fb6e0453a22f5",
+    "df_schedule_audit-unreleased.json": "db27b66fc9fac9618d2bc85aff5b8808c6696604675534e840ee460455ec10fc",
+    "point_at_df-unreleased.json": "47ce44843c1ec0d6ff5749a32258e0c8a586576bf5559a4e5dcc21a99daaee1d",
+    "point_original-unreleased.json": "0a7fe47f785a197c29194f57fe1b75c6a62133b783d93f972a643db95edfe5a8",
+    "receipt.json": "0bff0944aaa362fd994a7723f68e3038af818076df31bd0d2b57d78e95adbbe0",
+    "summary.json": "d7b38420eb231b50c69019b0bc83a56a31c10c1adcb7e9bfb906f1e53546249e"
+  },
+  "period_scheduling_and_support": {
+    "development_1910_1959": {
+      "actual_df_issues": 302,
+      "anchor_mismatches": 7,
+      "clocks": {
+        "df": {
+          "features": 302,
+          "joint_anchor_gap_flux_proxy": 250,
+          "joint_anchor_gap_mark": 251,
+          "proxy_available": 287,
+          "proxy_balanced_points_median": 7,
+          "proxy_support_days_median": 6.84720000019297
+        },
+        "point_at_df": {
+          "features": 302,
+          "joint_anchor_gap_flux_proxy": 268,
+          "joint_anchor_gap_mark": 278,
+          "proxy_available": 287,
+          "proxy_balanced_points_median": 7,
+          "proxy_support_days_median": 6.84720000019297
+        },
+        "point_original": {
+          "features": 330,
+          "joint_anchor_gap_flux_proxy": 295,
+          "joint_anchor_gap_mark": 306,
+          "proxy_available": 314,
+          "proxy_balanced_points_median": 7.0,
+          "proxy_support_days_median": 6.882999999914318
+        }
+      },
+      "maximum_delay_days": 4.150999999605119,
+      "median_delay_days": 0.0,
+      "original_issue_scheduling_counts": {
+        "aborted_bright_before_delayed_issue": 28,
+        "scheduled": 302
+      },
+      "positive_delay_count": 143
+    },
+    "evaluation_1960_2017": {
+      "actual_df_issues": 307,
+      "anchor_mismatches": 5,
+      "clocks": {
+        "df": {
+          "features": 307,
+          "joint_anchor_gap_flux_proxy": 292,
+          "joint_anchor_gap_mark": 292,
+          "proxy_available": 303,
+          "proxy_balanced_points_median": 7,
+          "proxy_support_days_median": 5.75
+        },
+        "point_at_df": {
+          "features": 307,
+          "joint_anchor_gap_flux_proxy": 299,
+          "joint_anchor_gap_mark": 302,
+          "proxy_available": 303,
+          "proxy_balanced_points_median": 7,
+          "proxy_support_days_median": 5.75
+        },
+        "point_original": {
+          "features": 441,
+          "joint_anchor_gap_flux_proxy": 432,
+          "joint_anchor_gap_mark": 436,
+          "proxy_available": 436,
+          "proxy_balanced_points_median": 7.0,
+          "proxy_support_days_median": 5.7383499999996275
+        }
+      },
+      "maximum_delay_days": 4.7972000003792346,
+      "median_delay_days": 0.7199999997392297,
+      "original_issue_scheduling_counts": {
+        "aborted_bright_before_delayed_issue": 134,
+        "scheduled": 307
+      },
+      "positive_delay_count": 248
+    }
+  },
+  "scope": "read-only invariants and availability/support counts; no fitting, gains or correlations",
+  "status": "passed"
+}

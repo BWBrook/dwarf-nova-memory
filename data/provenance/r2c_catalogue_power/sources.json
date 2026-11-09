@@ -1,0 +1,88 @@
+[
+  {
+    "id": "rkcat-index",
+    "url": "https://wwwmpa.mpa-garching.mpg.de/RKcat/",
+    "sha256": "4d919c454516f30f8baa9ef7bce85f979c12dacdfdbc2eb35cb68fb906704c20",
+    "bytes": 6293,
+    "retrieved_at": "2026-11-09T08:40:32.023106+00:00",
+    "retained_path": "outputs/r2c_sources/rkcat-index.txt",
+    "transport": "system curl with normal certificate validation",
+    "source_kind": "frozen catalogue metadata, not observation archive"
+  },
+  {
+    "id": "rkcat-cv",
+    "url": "https://wwwmpa.mpa-garching.mpg.de/RKcat/cbcat",
+    "sha256": "080e710dfa8450d64d454c23c956d832b074480e4ac9eff304ade4de98663b30",
+    "bytes": 502052,
+    "retrieved_at": "2026-11-09T08:40:37.535346+00:00",
+    "retained_path": "outputs/r2c_sources/rkcat-cv.txt",
+    "transport": "system curl with normal certificate validation",
+    "source_kind": "frozen catalogue metadata, not observation archive"
+  },
+  {
+    "id": "rkcat-description",
+    "url": "https://wwwmpa.mpa-garching.mpg.de/RKcat/descr.online",
+    "sha256": "fd79e73d06fd2bd979b3daa715bd0a1ee20011aadd851d50e282c86648dc79d5",
+    "bytes": 20771,
+    "retrieved_at": "2026-11-09T08:40:38.713122+00:00",
+    "retained_path": "outputs/r2c_sources/rkcat-description.txt",
+    "transport": "system curl with normal certificate validation",
+    "source_kind": "frozen catalogue metadata, not observation archive"
+  },
+  {
+    "id": "downes-csv",
+    "url": "https://archive.stsci.edu/prepds/cvcat/ASCII_Report_comma_separated.txt",
+    "sha256": "8529aa09bcc7ad14211928e969983986b78304e77d1dce9bb0af8d9289b1c408",
+    "bytes": 236891,
+    "retrieved_at": "2026-11-09T08:40:43.383127+00:00",
+    "retained_path": "outputs/r2c_sources/downes-csv.txt",
+    "transport": "system curl with normal certificate validation",
+    "source_kind": "frozen catalogue metadata, not observation archive"
+  },
+  {
+    "id": "downes-description",
+    "url": "https://archive.stsci.edu/prepds/cvcat/description.html",
+    "sha256": "ae4d59976635a31853955516e77a1ae8e18261e1a1457af8867d499f0c4cb011",
+    "bytes": 17523,
+    "retrieved_at": "2026-11-09T08:40:44.407264+00:00",
+    "retained_path": "outputs/r2c_sources/downes-description.txt",
+    "transport": "system curl with normal certificate validation",
+    "source_kind": "frozen catalogue metadata, not observation archive"
+  },
+  {
+    "id": "ak2002",
+    "url": "https://nek.istanbul.edu.tr/ekos/MAKALE/M7229.pdf",
+    "failure": "28",
+    "source_kind": "primary literature acquisition failed; tool parsed text read separately"
+  },
+  {
+    "id": "szkody-mattei1984",
+    "url": "https://adsabs.harvard.edu/pdf/1984PASP...96..988S",
+    "sha256": "2b97c38250e275f3636aced9cecd8467804995fb983363abead627328c0f760e",
+    "bytes": 736154,
+    "retrieved_at": "2026-11-09T08:50:50.060372+00:00",
+    "retained_path": "outputs/r2c_sources/szkody-mattei1984.pdf",
+    "access_scope": "literature methods/catalogue identity and exposure metadata only; no figures or per-event rows inspected",
+    "source_kind": "primary literature, not observation archive"
+  },
+  {
+    "id": "simon2022-text",
+    "url": "https://arxiv.org/html/2112.03620v1",
+    "sha256": "6ace84ce3985460b966e9924e227e33b9184ed1ce6588a290fd807f5426e9d98",
+    "bytes": 133706,
+    "retrieved_at": "2026-11-09T08:50:50.774704+00:00",
+    "retained_path": "outputs/r2c_sources/simon2022-text.html",
+    "access_scope": "literature methods/catalogue identity and exposure metadata only; no figures or per-event rows inspected",
+    "source_kind": "primary literature, not observation archive"
+  },
+  {
+    "id": "smak-waagen2004-abstract",
+    "url": "https://acta.astrouw.edu.pl/Vol54/n4/a_54_4_8.html",
+    "sha256": "a9d8f70502b1afc8f189dfe445ef06a1bb2a1bb53714eed39bde156ce9283b42",
+    "bytes": 3397,
+    "retrieved_at": "2026-11-09T08:50:52.371092+00:00",
+    "retained_path": "outputs/r2c_sources/smak-waagen2004-abstract.html",
+    "access_scope": "literature methods/catalogue identity and exposure metadata only; no figures or per-event rows inspected",
+    "source_kind": "primary literature, not observation archive"
+  }
+]

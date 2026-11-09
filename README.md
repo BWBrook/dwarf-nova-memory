@@ -111,10 +111,21 @@ and true-onset targets. These are exploratory checks, not another confirmation.
 [Claude's R1 review](docs/audits/2026-11-09-claude-r1-review.md) reproduces
 these checks and traces the missing clips to a bug in X4's lower onset clip. A
 corrected decisive bracket exists for almost every outburst. The
-[R2 design draft](docs/protocols/r2-design-v0.md) uses it to test the result
-against the latent onset itself. It also adds a forecast that never uses the
-estimated end of an outburst, stronger timing baselines and a sealed
-multi-star test. Manuscript products remain paused. No other-star archive
+[amended R2 preparation](docs/protocols/r2-design-v1.md) separates containment,
+association and CAR assumptions; a report margin does not prove them. X5 gives
+818 report windows among 845 confirmed episodes, with 805 eligible. The new
+observed-clock policy retains 307 of the original 441 evaluation issues, so
+cross-clock comparisons require matched populations. Windowed timing baselines
+and their exact mark nesting pass finite synthetic/numerical checks. No real
+R2b fit or gain has been computed.
+
+The [R2a/c report](docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md)
+records the completed gain-free preparation and catalogue/precision study.
+An observed clock does not eliminate cadence/selection information. The
+score-level power study does not establish the proposed G2 target: at nominal
+gain 0.010, 1,100 forecasts give fitted-rule power about 0.71, and serial-block
+dependence degrades interval coverage. Eight stars are nominated for future
+development screening, not qualified. Manuscript products remain paused. No other-star archive
 opening is authorized, and SS Cyg 2018 onward remains closed.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
@@ -204,7 +215,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A10n external review triage](docs/audits/2026-11-09-a10n-external-review-triage.md) | Disposition of the [GPT-6 Pro review](docs/reviews/2026-11-09-gpt6pro/), observation contract, bounded diagnostics and the expanded multi-star design sketch |
 | [R1 observation and endpoint diagnostics](docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md) | Codex's censor audit, alternative observation scores, endpoint-error dose experiment and simulation table |
 | [Claude R1 review](docs/audits/2026-11-09-claude-r1-review.md) | Independent checks of C42–C46, the X4 lower-clip bug and corrected decisive brackets |
-| [R2 design draft](docs/protocols/r2-design-v0.md) | Latent target and assumption ladder, decoupled forecast, stronger baselines, sealed multi-star test, fixed interpretation rules |
+| [R2 preparation v1](docs/protocols/r2-design-v1.md) | Amended target assumptions, mixed-score bounds, causal observed clocks, timing models and limited precision planning; v0 preserved |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
