@@ -1,0 +1,102 @@
+{
+  "df": {
+    "development": {
+      "issues": 330,
+      "outcomes": {
+        "excluded": 24,
+        "interval": 291,
+        "right_censored": 15
+      },
+      "reasons": {
+        "coverage:candidate_after_cutoff": 14,
+        "coverage:straddle_backoff": 1,
+        "flagged_adjacent_window": 5,
+        "onset": 291,
+        "unconfirmed_adjacent_candidate": 4,
+        "unsupported_adjacent_candidate:faint_peak": 15
+      }
+    },
+    "evaluation": {
+      "issues": 440,
+      "outcomes": {
+        "excluded": 9,
+        "interval": 427,
+        "right_censored": 4
+      },
+      "reasons": {
+        "coverage:candidate_after_cutoff": 3,
+        "flagged_adjacent_window": 8,
+        "onset": 427,
+        "record_end:no_candidate": 1,
+        "unsupported_adjacent_candidate:faint_peak": 1
+      }
+    }
+  },
+  "point_at_df": {
+    "development": {
+      "issues": 330,
+      "outcomes": {
+        "excluded": 24,
+        "interval": 291,
+        "right_censored": 15
+      },
+      "reasons": {
+        "coverage:candidate_after_cutoff": 14,
+        "coverage:straddle_backoff": 1,
+        "flagged_adjacent_window": 5,
+        "onset": 291,
+        "unconfirmed_adjacent_candidate": 4,
+        "unsupported_adjacent_candidate:faint_peak": 15
+      }
+    },
+    "evaluation": {
+      "issues": 440,
+      "outcomes": {
+        "excluded": 9,
+        "interval": 427,
+        "right_censored": 4
+      },
+      "reasons": {
+        "coverage:candidate_after_cutoff": 3,
+        "flagged_adjacent_window": 8,
+        "onset": 427,
+        "record_end:no_candidate": 1,
+        "unsupported_adjacent_candidate:faint_peak": 1
+      }
+    }
+  },
+  "point_original": {
+    "development": {
+      "issues": 330,
+      "outcomes": {
+        "excluded": 24,
+        "interval": 291,
+        "right_censored": 15
+      },
+      "reasons": {
+        "coverage:candidate_after_cutoff": 14,
+        "coverage:straddle_backoff": 1,
+        "flagged_adjacent_window": 5,
+        "onset": 291,
+        "unconfirmed_adjacent_candidate": 4,
+        "unsupported_adjacent_candidate:faint_peak": 15
+      }
+    },
+    "evaluation": {
+      "issues": 441,
+      "outcomes": {
+        "excluded": 9,
+        "interval": 427,
+        "right_censored": 5
+      },
+      "reasons": {
+        "coverage:candidate_after_cutoff": 3,
+        "flagged_adjacent_window": 8,
+        "onset": 427,
+        "record_end:no_candidate": 1,
+        "superseded:candidate_after_cutoff": 1,
+        "unsupported_adjacent_candidate:faint_peak": 1
+      }
+    }
+  }
+}

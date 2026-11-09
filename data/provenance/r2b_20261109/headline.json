@@ -1,0 +1,761 @@
+{
+  "contrasts": {
+    "H1": {
+      "deterministic_bounds": {
+        "lower_mean": 0.001756848880028679,
+        "n": 432,
+        "scope": "fixed realized observation-C mixed functional; conditional A0/A1 and survival",
+        "upper_mean": 0.013470008520851324
+      },
+      "model": {
+        "B2_parameter_boundary_indices": [],
+        "base_objective": 947.9328417211744,
+        "base_stable": true,
+        "beta": 0.03437316913660164,
+        "cadence_beta": 0.0,
+        "declared_starts": 3,
+        "design_columns": null,
+        "design_rank": null,
+        "marker": "duration",
+        "multistart_spread": 2.354522621317301e-08,
+        "offset_fit": {
+          "markable_training_rows": 284,
+          "objective": 946.5599680194998,
+          "status": "optimized",
+          "timing_parameters_fixed": true,
+          "zero_objective": 947.9328417211743
+        },
+        "rung": "B2",
+        "successful_starts": 3,
+        "timing_rows": 284,
+        "training_rows": 306
+      },
+      "reasons": {
+        "coverage:candidate_after_cutoff": 3,
+        "flagged_adjacent_window": 8,
+        "onset": 427,
+        "record_end:no_candidate": 1,
+        "superseded:candidate_after_cutoff": 1,
+        "unsupported_adjacent_candidate:faint_peak": 1
+      },
+      "supported_identities": 5,
+      "unsupported_identities": 0,
+      "working": {
+        "confirmation": false,
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": -0.07042624356448592,
+              "lag": 1,
+              "pairs": 422
+            },
+            {
+              "acf": 0.10265083878942714,
+              "lag": 2,
+              "pairs": 421
+            },
+            {
+              "acf": -0.044530100174837085,
+              "lag": 3,
+              "pairs": 420
+            },
+            {
+              "acf": 0.006247327411986556,
+              "lag": 4,
+              "pairs": 420
+            },
+            {
+              "acf": -0.024083058042140535,
+              "lag": 5,
+              "pairs": 418
+            },
+            {
+              "acf": -0.0070837018293256485,
+              "lag": 6,
+              "pairs": 417
+            },
+            {
+              "acf": 0.03910605694367446,
+              "lag": 7,
+              "pairs": 416
+            },
+            {
+              "acf": 0.038407530029003954,
+              "lag": 8,
+              "pairs": 415
+            },
+            {
+              "acf": -0.06479990585534637,
+              "lag": 9,
+              "pairs": 414
+            },
+            {
+              "acf": -0.034410972299656215,
+              "lag": 10,
+              "pairs": 413
+            }
+          ],
+          "mean": 0.007535373473602074,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 432,
+          "n_slots": 441
+        },
+        "interpretation": "positive estimate, dependence-sensitive",
+        "six_year": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.23914435566278197,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": 0.0067094793547573155,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": 0.009850535916307504,
+              "n": 51,
+              "weight": 51.0
+            },
+            {
+              "block": 1,
+              "mean": 0.03265922281271034,
+              "n": 47,
+              "weight": 47.0
+            },
+            {
+              "block": 2,
+              "mean": 0.022943741080474315,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 3,
+              "mean": -0.0025273385606366518,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": 0.013797787712706741,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": -0.013158905588267978,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": -0.008534863254094874,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": 0.009175829291390701,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": 0.0006257985031362878,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": 0.0022629856338467714,
+              "n": 31,
+              "weight": 31.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": 0.007535373473602074,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 441,
+          "lower": -0.0008205743392994836,
+          "missing": 9,
+          "n": 432,
+          "origin": 2436934.5,
+          "se": 0.004558337712883588,
+          "status": "usable",
+          "total_weight": 432.0,
+          "upper": 0.015891321286503633,
+          "years": 6
+        },
+        "twelve_year": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.3282546486937647,
+                "lag": 1,
+                "pairs": 4
+              }
+            ],
+            "mean": 0.006844108348969062,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 5,
+            "n_slots": 5
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": 0.020789395958459883,
+              "n": 98,
+              "weight": 98.0
+            },
+            {
+              "block": 1,
+              "mean": 0.010750139124623321,
+              "n": 94,
+              "weight": 94.0
+            },
+            {
+              "block": 2,
+              "mean": 0.0008186390863115056,
+              "n": 81,
+              "weight": 81.0
+            },
+            {
+              "block": 3,
+              "mean": 0.0005217408884829769,
+              "n": 88,
+              "weight": 88.0
+            },
+            {
+              "block": 4,
+              "mean": 0.0013406266869676257,
+              "n": 71,
+              "weight": 71.0
+            }
+          ],
+          "blocks": 5,
+          "df": 4,
+          "estimate": 0.007535373473602074,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 441,
+          "lower": -0.0014441594150287652,
+          "missing": 9,
+          "n": 432,
+          "origin": 2436934.5,
+          "se": 0.004212091106276603,
+          "status": "usable",
+          "total_weight": 432.0,
+          "upper": 0.016514906362232913,
+          "years": 12
+        }
+      }
+    },
+    "H2": {
+      "deterministic_bounds": {
+        "lower_mean": 0.00097027870622722,
+        "n": 431,
+        "scope": "fixed realized observation-C mixed functional; conditional A0/A1 and survival",
+        "upper_mean": 0.007753454881204884
+      },
+      "model": {
+        "B2_parameter_boundary_indices": [],
+        "base_objective": 849.2827401046168,
+        "base_stable": true,
+        "beta": 0.024854611565129074,
+        "cadence_beta": 0.0,
+        "declared_starts": 3,
+        "design_columns": null,
+        "design_rank": null,
+        "marker": "duration",
+        "multistart_spread": 7.607695806655101e-09,
+        "offset_fit": {
+          "markable_training_rows": 258,
+          "objective": 844.9767157396544,
+          "status": "optimized",
+          "timing_parameters_fixed": true,
+          "zero_objective": 845.530658681956
+        },
+        "rung": "B2",
+        "successful_starts": 3,
+        "timing_rows": 259,
+        "training_rows": 306
+      },
+      "reasons": {
+        "coverage:candidate_after_cutoff": 3,
+        "flagged_adjacent_window": 8,
+        "onset": 427,
+        "record_end:no_candidate": 1,
+        "unsupported_adjacent_candidate:faint_peak": 1
+      },
+      "supported_identities": 22,
+      "unsupported_identities": 0,
+      "working": {
+        "confirmation": false,
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": -0.07279425861877098,
+              "lag": 1,
+              "pairs": 421
+            },
+            {
+              "acf": 0.0962278841798155,
+              "lag": 2,
+              "pairs": 420
+            },
+            {
+              "acf": -0.054286755099745815,
+              "lag": 3,
+              "pairs": 419
+            },
+            {
+              "acf": 0.048853142318217746,
+              "lag": 4,
+              "pairs": 419
+            },
+            {
+              "acf": -0.03175398324507561,
+              "lag": 5,
+              "pairs": 417
+            },
+            {
+              "acf": 0.019346843453804274,
+              "lag": 6,
+              "pairs": 416
+            },
+            {
+              "acf": 0.021724210213908857,
+              "lag": 7,
+              "pairs": 415
+            },
+            {
+              "acf": 0.01463789090266509,
+              "lag": 8,
+              "pairs": 414
+            },
+            {
+              "acf": 0.042784064948502884,
+              "lag": 9,
+              "pairs": 413
+            },
+            {
+              "acf": 0.035221329056415285,
+              "lag": 10,
+              "pairs": 412
+            }
+          ],
+          "mean": 0.004276497039279191,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 431,
+          "n_slots": 440
+        },
+        "interpretation": "positive estimate, dependence-sensitive",
+        "six_year": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.015480950002325765,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": 0.003905220403718652,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": 0.009289665197991641,
+              "n": 51,
+              "weight": 51.0
+            },
+            {
+              "block": 1,
+              "mean": 0.019695216725724315,
+              "n": 47,
+              "weight": 47.0
+            },
+            {
+              "block": 2,
+              "mean": 0.00687424978517411,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": -0.0029941080761977843,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": 0.01293949104131469,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": -0.0051932629537406825,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": -0.00019037059434136468,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": 0.002815215877211832,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.009025164338829883,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": 0.004841271372879645,
+              "n": 31,
+              "weight": 31.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": 0.004276497039279191,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.0008479733580848388,
+          "missing": 9,
+          "n": 431,
+          "origin": 2436934.5,
+          "se": 0.0027955017424586685,
+          "status": "usable",
+          "total_weight": 431.0,
+          "upper": 0.009400967436643221,
+          "years": 6
+        },
+        "twelve_year": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.017833585468239477,
+                "lag": 1,
+                "pairs": 4
+              }
+            ],
+            "mean": 0.0037927996834709833,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 5,
+            "n_slots": 5
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": 0.014280082767414454,
+              "n": 98,
+              "weight": 98.0
+            },
+            {
+              "block": 1,
+              "mean": 0.0020992379167683547,
+              "n": 93,
+              "weight": 93.0
+            },
+            {
+              "block": 2,
+              "mean": 0.004208905784436178,
+              "n": 81,
+              "weight": 81.0
+            },
+            {
+              "block": 3,
+              "mean": 0.0013465770331574291,
+              "n": 88,
+              "weight": 88.0
+            },
+            {
+              "block": 4,
+              "mean": -0.0029708050844214975,
+              "n": 71,
+              "weight": 71.0
+            }
+          ],
+          "blocks": 5,
+          "df": 4,
+          "estimate": 0.004276497039279191,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.0021092046241664095,
+          "missing": 9,
+          "n": 431,
+          "origin": 2436934.5,
+          "se": 0.002995384895576243,
+          "status": "usable",
+          "total_weight": 431.0,
+          "upper": 0.010662198702724791,
+          "years": 12
+        }
+      }
+    },
+    "H3": {
+      "deterministic_bounds": {
+        "lower_mean": -0.012217054407461564,
+        "n": 431,
+        "scope": "fixed realized observation-C mixed functional; conditional A0/A1 and survival",
+        "upper_mean": 0.0060854410347555244
+      },
+      "reasons": {
+        "paired": 440
+      },
+      "supported_identities": 0,
+      "unsupported_identities": 0,
+      "working": {
+        "confirmation": false,
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": -0.044157090886460984,
+              "lag": 1,
+              "pairs": 421
+            },
+            {
+              "acf": 0.030570007986787325,
+              "lag": 2,
+              "pairs": 420
+            },
+            {
+              "acf": -0.07924313331583971,
+              "lag": 3,
+              "pairs": 419
+            },
+            {
+              "acf": -0.007577658331337089,
+              "lag": 4,
+              "pairs": 419
+            },
+            {
+              "acf": 0.016607630810129205,
+              "lag": 5,
+              "pairs": 417
+            },
+            {
+              "acf": 0.02000296883310997,
+              "lag": 6,
+              "pairs": 416
+            },
+            {
+              "acf": 0.0004665083158972174,
+              "lag": 7,
+              "pairs": 415
+            },
+            {
+              "acf": 0.04635639333557145,
+              "lag": 8,
+              "pairs": 414
+            },
+            {
+              "acf": -0.14898513054694337,
+              "lag": 9,
+              "pairs": 413
+            },
+            {
+              "acf": -0.0935215202296654,
+              "lag": 10,
+              "pairs": 412
+            }
+          ],
+          "mean": -0.00307624820643513,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 431,
+          "n_slots": 440
+        },
+        "interpretation": "uncertain",
+        "six_year": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.2794525744096402,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": -0.002675505935433722,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.00018761567953024563,
+              "n": 51,
+              "weight": 51.0
+            },
+            {
+              "block": 1,
+              "mean": -0.011993265785727234,
+              "n": 47,
+              "weight": 47.0
+            },
+            {
+              "block": 2,
+              "mean": -0.015929657333912623,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": -0.0010002472899011967,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": -0.0009738430264515427,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.007713163189702152,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": 0.008525654523950663,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": -0.006117679280332232,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.00929525674234689,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": 0.002503688070211929,
+              "n": 31,
+              "weight": 31.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": -0.00307624820643513,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.007844083777212359,
+          "missing": 9,
+          "n": 431,
+          "origin": 2436934.5,
+          "se": 0.0026009502665329458,
+          "status": "usable",
+          "total_weight": 431.0,
+          "upper": 0.001691587364342099,
+          "years": 6
+        },
+        "twelve_year": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.008005292967327906,
+                "lag": 1,
+                "pairs": 4
+              }
+            ],
+            "mean": -0.0028904974860791887,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 5,
+            "n_slots": 5
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.005849509097808393,
+              "n": 98,
+              "weight": 98.0
+            },
+            {
+              "block": 1,
+              "mean": -0.008705749248100643,
+              "n": 93,
+              "weight": 93.0
+            },
+            {
+              "block": 2,
+              "mean": 0.003208789596140977,
+              "n": 81,
+              "weight": 81.0
+            },
+            {
+              "block": 3,
+              "mean": 0.001037586101306001,
+              "n": 88,
+              "weight": 88.0
+            },
+            {
+              "block": 4,
+              "mean": -0.004143604781933885,
+              "n": 71,
+              "weight": 71.0
+            }
+          ],
+          "blocks": 5,
+          "df": 4,
+          "estimate": -0.00307624820643513,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.007846050967742333,
+          "missing": 9,
+          "n": 431,
+          "origin": 2436934.5,
+          "se": 0.0022374041098544295,
+          "status": "usable",
+          "total_weight": 431.0,
+          "upper": 0.001693554554872073,
+          "years": 12
+        }
+      }
+    }
+  },
+  "label": "real retained SS Cyg exploratory R2b",
+  "limits": [
+    "post-result exploration; no confirmation",
+    "CAR and latent containment not established",
+    "scheduled population differs from empirically supported score population",
+    "local Fisher index is not an upper bound",
+    "residuals are midpoint proxies",
+    "finite multistart optimization is not global identification",
+    "no new observation access or protected-period access"
+  ],
+  "parameters_sha256": "8c8c53a2602309a2d29d509b6fae60e2f94b11a62c6e051531ae42a1d8ae0630",
+  "source_freeze": "5fb69c6"
+}

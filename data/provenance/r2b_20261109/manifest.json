@@ -1,0 +1,128 @@
+{
+  "all_new_claims_provisional_for_Claude": true,
+  "files": {
+    "README.md": {
+      "bytes": 1929,
+      "sha256": "5af528605b35c5eadceba325a0a7dfef0332256175e0ffea91e809a31af12142"
+    },
+    "baseline-mean-check.json": {
+      "bytes": 8953,
+      "sha256": "ef4898e9c3e57906de2cb3e170b354158e2d27b2395b6c4440034115034d5f93"
+    },
+    "comparisons.csv": {
+      "bytes": 7064,
+      "sha256": "4b9091486b267ad16dc8d1710a02dcf285e824b86efaca46bed04c82cbaf2d4f"
+    },
+    "feature-independent-check.json": {
+      "bytes": 5208,
+      "sha256": "81288b8bbeff1bb8a395c33949fdfeff2d127ffe36cd40fb59f773a327c74f82"
+    },
+    "feature-independent-check.md": {
+      "bytes": 1018,
+      "sha256": "cd65cb6fd3e6ff30d4059a08a5a15e9be078fb87446fb545edfb71a31de859f5"
+    },
+    "feature-receipt.json": {
+      "bytes": 2074,
+      "sha256": "3d9f92cfd44d4e35cb4167cc17785e858e10077b82a54d752bd9af4ad500c3e1"
+    },
+    "feature-summary.json": {
+      "bytes": 11690,
+      "sha256": "5334d476c8d8cd5bdd206d7348bbb5ac25ade7209eeded7717099128eff6208c"
+    },
+    "fit-diagnostics.json": {
+      "bytes": 117903,
+      "sha256": "8a9e68205856bb21af03413bef54971bfe1a5d4ccd0d38b7f8841f21bf98e181"
+    },
+    "headline.json": {
+      "bytes": 21446,
+      "sha256": "5984646851466a04e7393b6b4d992eb06770f98835fc0af464e51a858de824c2"
+    },
+    "independent-check.json": {
+      "bytes": 8917,
+      "sha256": "8aeffcb6fd24bd1bb4ae2f5e1c4782ef71944f5d31d2c312a7e765f061274a28"
+    },
+    "independent-check.md": {
+      "bytes": 3237,
+      "sha256": "82d34a891211ac26572c6896a467f34b974e6b66a4ced1659557afcd296e2b67"
+    },
+    "independent-parameter-lock.json": {
+      "bytes": 1881,
+      "sha256": "092168161601df136bfdd1ef132c4ae1033356a4eb32252de0430cbf54a53b2c"
+    },
+    "local-lag-indices.json": {
+      "bytes": 590,
+      "sha256": "7099e4a774ae9d095cf26a3cfb851ff716288b1d8b40a3d4ea0b318bc7963a71"
+    },
+    "original-preservation.json": {
+      "bytes": 3919,
+      "sha256": "18c374678e1f5f5eb40d7c6d8721fd0496cdc99de093ec1943e4225acc557214"
+    },
+    "parameter-lock.json": {
+      "bytes": 1104,
+      "sha256": "e9d20afefb2a99e05b6ee126ecf7e340cd722eed706d0754b9d6cdedc5607b2b"
+    },
+    "populations.json": {
+      "bytes": 2544,
+      "sha256": "a09eea11f7e4e98c35a79d75dcc57f2d45a7bf10728a24ed77fec48016b540ec"
+    },
+    "rehearsal-amendment-invariance.json": {
+      "bytes": 345,
+      "sha256": "56192c4fa526581305b224b84180a1c7fe2dfd519a0f7d6b5a11bc6416043ded"
+    },
+    "rehearsal-independent-check.json": {
+      "bytes": 8896,
+      "sha256": "b853fcbaef582bab43ff83f126d654234676d992b0387e0db2f3dc4a87c84cbd"
+    },
+    "rehearsal-original-receipt.json": {
+      "bytes": 8157,
+      "sha256": "6bf2847fbe386af20e4c216200749d96653644719f2ae6c4f21a0a13aa5646b5"
+    },
+    "rehearsal-receipt.json": {
+      "bytes": 8347,
+      "sha256": "0096d8ecdeb6b205c052194e436c1327e9215108a641978106a88e685d13ba59"
+    },
+    "residual-proxies.json": {
+      "bytes": 91339,
+      "sha256": "15580fb2508d3814658c9f8f3d40328dc3ed5c838183430d950943974d41943b"
+    },
+    "run-receipt.json": {
+      "bytes": 8598,
+      "sha256": "2d2f6eb23d3691817cf6896a96fbdfe6e93a6b32a55b91e7eee086cb7ea201af"
+    }
+  },
+  "independent_checker_sha256": {
+    "scripts/check_r2b_execution.py": "7215ff183dbff482c8b0e090081083719c513085c2af9feb7feeff00639bb6fe",
+    "scripts/check_r2b_features.py": "02aed62c7f5f5977bba3af35cf7f97de6019baf2d4f24171f98d5b723cea8547",
+    "scripts/r2b_contract_checks.py": "6c72fd2e6fd9597b2d37268c39cb5a35e3e30773b242864db81e13ca941445a1"
+  },
+  "label": "real retained SS Cyg exploratory R2b aggregates; synthetic rehearsals separately named",
+  "no_new_archive_or_2018_plus_access": true,
+  "parameter_lock_sha256": "e9d20afefb2a99e05b6ee126ecf7e340cd722eed706d0754b9d6cdedc5607b2b",
+  "parameters_sha256": "8c8c53a2602309a2d29d509b6fae60e2f94b11a62c6e051531ae42a1d8ae0630",
+  "preserved_earlier_freeze": "939208e",
+  "private_input_and_individual_outputs": "retained in ignored outputs/r2b_features_5fb69c6 and outputs/r2b_real_5fb69c6; not included",
+  "public_csv_newlines": "LF",
+  "source_freeze": "5fb69c6",
+  "source_sha256": {
+    "configs/r2b_execution.json": "6b85f8670862de72bf665ea88ad72b6959e17daf3a35608dab8ceb3dd465d9b8",
+    "docs/protocols/r2b-execution-v2.md": "ac64f2d790b0a5309b048aca2b525f0d55f8ebc29b61633b458c8fcc439921a9",
+    "scripts/r2b_execute.py": "4af208d08bf87d5ed0056f71f43698c30075ed382eb0b43f2d19f30546eefffa",
+    "scripts/r2b_feature_preparation.py": "e155f39c254218a9c046afc01f079cdea017f35ef183b8687046283e5b353688",
+    "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+    "src/dnmem/extract_x3.py": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+    "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "src/dnmem/extract_x5.py": "a8cfe3ec68e53c08e2470c7dad276b4ec9ad3d5f42dd47b2f89b3f63905a8bd6",
+    "src/dnmem/prefix_features.py": "51b49d25c4ab3d2e276e66a6b0e43ca6e6586cee294344146e5ea95205341ddd",
+    "src/dnmem/r2_features.py": "912e1c2c890e6978f582189ab1bd858e6b7dd9aadbbe371a0d9c255fee128a17",
+    "src/dnmem/r2_models.py": "48a9d14faec7e346507f9a9dd75ad21eef11647315ee911599ad48e5a128fac4",
+    "src/dnmem/r2_scores.py": "31d7edb6f552c7272dec1a1b3c4c0ad450628fb9ca460e59fcc3a3ab024d9548",
+    "src/dnmem/r2b_features.py": "154ea37bc1baf30fb1e841f90a94b3394d52c7db834b1e3c4c75a20df9b74902",
+    "src/dnmem/r2b_models.py": "b831baf7676656f45acbf246beaccb7e8710438069094edbf8cdb229ccd9fd8a",
+    "src/dnmem/r2b_scoring.py": "e45563e739922826d72f2cfe8b4324e8c5512426883dd11f2bd67a819a561904",
+    "tests/test_r2b_execution.py": "4e7a5e35e6fea725e99fd67d949a44f20eeaebc7f7ac1d16b247d513b1111941",
+    "tests/test_r2b_features.py": "054b62df2040b65233c7ac24ddca05a1331d1d5265e4d4d9fcfdcbebfe4d27f1",
+    "tests/test_r2b_models.py": "fcfc5cdd516abb8d18ee95095e30f446ba8181972748ab145b1b63d8a04e92b4",
+    "tests/test_r2b_scoring.py": "cebbf4142fba2eb6e5cab44ebba6dced3f6e170a19ab11c5c8ee2cf92d212d68",
+    "uv.lock": "92b682d0a144687050bf6b18197fbf0f5821726e99e9a0ba36b2bb84447651bd"
+  }
+}

@@ -114,10 +114,9 @@ corrected decisive bracket exists for almost every outburst. The
 [amended R2 preparation](docs/protocols/r2-design-v1.md) separates containment,
 association and CAR assumptions; a report margin does not prove them. X5 gives
 818 report windows among 845 confirmed episodes, with 805 eligible. The new
-observed-clock policy retains 307 of the original 441 evaluation issues, so
-cross-clock comparisons require matched populations. Windowed timing baselines
-and their exact mark nesting pass finite synthetic/numerical checks. No real
-R2b fit or gain has been computed.
+initial observed-clock policy retained 307 of the original 441 evaluation issues;
+that version is preserved as preparation evidence. Windowed timing baselines
+and their exact mark nesting pass finite synthetic/numerical checks.
 
 The [R2a/c report](docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md)
 records the completed gain-free preparation and catalogue/precision study.
@@ -128,17 +127,22 @@ dependence degrades interval coverage. Eight stars are nominated for future
 development screening, not qualified. Manuscript products remain paused. No other-star archive
 opening is authorized, and SS Cyg 2018 onward remains closed.
 
-[Claude's R2a/c review](docs/audits/2026-11-09-claude-r2a-review.md) supports
-those results. It finds that the observed-clock population loss came from
-aborting on single near-threshold reports. With aborts only on decisive-bright
-reports, all 441 evaluation issues are kept. The
-[R2b rules](docs/protocols/r2b-execution-v0.md) also fix:
-- the latent crossing convention;
-- a ceiling on cadence artefacts (about 0.007 nats in 1960–2017);
-- the headline contrasts;
-- dependence-aware inference, and the sealed test's primary specification.
+[R2b is now complete](docs/audits/2026-11-09-r2b-exploratory-execution.md)
+under the amended [v2 rules](docs/protocols/r2b-execution-v2.md). The
+decisive-bright cancellation rule retains the original records, but one exact
+coincident delayed issue leaves 440 unique DF forecasts. On 431 supported
+outcomes, the preselected state-space duration contrast is **+0.00428 nats**:
+six-year 90% interval **[-0.00085, 0.00940]**, twelve-year
+**[-0.00211, 0.01066]**. The point-clock and paired clock comparisons are also
+inconclusive. These are post-result exploratory checks, not a new confirmation.
 
-All of this is fixed before any R2b score.
+The proposed cadence ceiling is a local approximation, not a bound; exact visit
+aggregation does not prove latent onset containment. The observing-rate
+sensitivity is positive, with no mechanism attribution. B2 is stable but has
+lower descriptive baseline means than B0/B1, so it cannot be called the
+empirically strongest comparator. New claims await Claude's review before R2d
+baseline/precision decisions or any new-star access request. All 516 tests and
+independent actual-score reconstruction pass; manuscript products remain paused.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
@@ -230,7 +234,8 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [R2 preparation v1](docs/protocols/r2-design-v1.md) | Amended target assumptions, mixed-score bounds, causal observed clocks, timing models and limited precision planning; v0 preserved |
 | [R2a/c report](docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md) | Codex's X5 diagnostics, observed-clock features, B0–B2 controls, catalogue screen and precision study |
 | [Claude R2a/c review](docs/audits/2026-11-09-claude-r2a-review.md) | Checks of C47–C52, the abort-rule artefact, crossing convention, cadence ceiling and cluster coverage |
-| [R2b rules v0](docs/protocols/r2b-execution-v0.md) | Clock, population, crossing, score, headline-contrast, uncertainty and sealed-primary rules for R2b |
+| [R2b execution v2](docs/protocols/r2b-execution-v2.md) | Amended assumptions, coincident-issue convention and frozen exploratory comparisons; v0/v1 retained |
+| [R2b results](docs/audits/2026-11-09-r2b-exploratory-execution.md) | Inconclusive state-space duration gains, observing-rate sensitivity, baseline adequacy and independent numerical checks |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

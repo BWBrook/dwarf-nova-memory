@@ -1,0 +1,157 @@
+{
+  "assertions": 147696,
+  "checker_sha256": "02aed62c7f5f5977bba3af35cf7f97de6019baf2d4f24171f98d5b723cea8547",
+  "checks": {
+    "DF gap equals onset support minus immutable anchor": 4743,
+    "DF matched-point identities": 1,
+    "DF own schedule identity": 827,
+    "cadence feature availability": 1617,
+    "cadence raw support identity": 1617,
+    "coincident later original retained only in audit": 1,
+    "coincident representative has exactly same scheduled clock": 1,
+    "completed feature receipt": 1,
+    "consecutive candidate slots without joins": 2482,
+    "current anchor availability": 2482,
+    "current source hash": 11,
+    "declared source freeze": 1,
+    "exact ordered issue pairing": 1,
+    "feature availability": 2482,
+    "flux availability": 2482,
+    "flux availability semantics": 2388,
+    "flux no extrapolation": 2415,
+    "flux raw support": 2415,
+    "gap ID endpoint identity": 2482,
+    "historical anchor available by current issue": 6039,
+    "historical cadence availability": 12310,
+    "historical source hash": 11,
+    "history anchor belongs to earlier scheduled issue": 6039,
+    "history availability": 18585,
+    "history matches earlier emitted clock": 5948,
+    "immutable history anchor and availability": 6039,
+    "increasing issues": 3,
+    "independent paired markable count": 2,
+    "independent period counts": 36,
+    "log/raw history identity": 14901,
+    "matched-clock control identities": 827,
+    "measured history coverage": 14901,
+    "opened-period feature issue": 2482,
+    "positive mark or missing": 2482,
+    "positive raw history gap": 15542,
+    "prefix support": 2482,
+    "previous-gap identity": 2261,
+    "previous-gap missing slot": 221,
+    "rate arithmetic": 2415,
+    "rate support and availability": 2415,
+    "saved output hash": 5,
+    "unique audit IDs": 1,
+    "unique clock issuance IDs": 3,
+    "unique history IDs": 2482,
+    "zero current-own historical mismatch": 815
+  },
+  "coincident_audit_only_count": 1,
+  "failures": [],
+  "feature_counts": {
+    "df": 827,
+    "point_at_df": 827,
+    "point_original": 828
+  },
+  "historical_anchor_source_feature_fallbacks": {
+    "all_history_slots": 91,
+    "measured_history_slots": 8
+  },
+  "historical_scheduled_anchor_checks": 6039,
+  "input_sha256": {
+    "df-unreleased.json": "3f895f52f7f96e11bdc493368e8130873c7ee8d12f7e1e288c4b665c90e189bc",
+    "df_schedule_audit-unreleased.json": "a845e7c2929761e375623e48619bd178488a0099653623a667e15df5b394ae3a",
+    "point_at_df-unreleased.json": "6ab81868b9bc670ea68ec69d81a4830f009641e04460ddcbb56b26a6cc786347",
+    "point_original-unreleased.json": "59e2c7c8eaf8cba9ceec1ba0b741dd17b82e6837156ef159aea23e3d059d073f",
+    "receipt.json": "3d9f92cfd44d4e35cb4167cc17785e858e10077b82a54d752bd9af4ad500c3e1",
+    "summary.json": "5334d476c8d8cd5bdd206d7348bbb5ac25ade7209eeded7717099128eff6208c"
+  },
+  "limits": [
+    "vector consistency does not rederive visits or causal scheduling from raw observations",
+    "historical onsets and gaps are current-prefix reconstructions, not immutable past measurements",
+    "cadence and rate fields are observation-conditioned sensitivities, not error bounds or pure negative controls"
+  ],
+  "periods": {
+    "development": {
+      "DF_median_delay_days": 0.10000000009313226,
+      "df": {
+        "anchor": 328,
+        "anchor_gap_mark": 275,
+        "gap": 276,
+        "issues": 330,
+        "mark": 315,
+        "statuses": {
+          "decisive_clock_available": 328,
+          "insufficient_raw_bright_observers": 1,
+          "raw_candidate_ambiguous": 1
+        }
+      },
+      "joint_clocks_anchor_gap_mark": 273,
+      "point_at_df": {
+        "anchor": 330,
+        "anchor_gap_mark": 306,
+        "gap": 306,
+        "issues": 330,
+        "mark": 330,
+        "statuses": {
+          "point_clock_available": 330
+        }
+      },
+      "point_original": {
+        "anchor": 330,
+        "anchor_gap_mark": 306,
+        "gap": 306,
+        "issues": 330,
+        "mark": 330,
+        "statuses": {
+          "point_clock_available": 330
+        }
+      },
+      "schedule_status_by_original_issue": {
+        "scheduled": 330
+      }
+    },
+    "evaluation": {
+      "DF_median_delay_days": 0.900000000372529,
+      "df": {
+        "anchor": 440,
+        "anchor_gap_mark": 418,
+        "gap": 419,
+        "issues": 440,
+        "mark": 437,
+        "statuses": {
+          "decisive_clock_available": 440
+        }
+      },
+      "joint_clocks_anchor_gap_mark": 417,
+      "point_at_df": {
+        "anchor": 440,
+        "anchor_gap_mark": 435,
+        "gap": 435,
+        "issues": 440,
+        "mark": 440,
+        "statuses": {
+          "point_clock_available": 440
+        }
+      },
+      "point_original": {
+        "anchor": 441,
+        "anchor_gap_mark": 436,
+        "gap": 436,
+        "issues": 441,
+        "mark": 441,
+        "statuses": {
+          "point_clock_available": 441
+        }
+      },
+      "schedule_status_by_original_issue": {
+        "coincident_pending_issue": 1,
+        "scheduled": 440
+      }
+    }
+  },
+  "scope": "independent saved-feature invariants only; no raw observations, model fits or scores",
+  "status": "passed"
+}

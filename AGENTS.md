@@ -84,8 +84,8 @@ the fixed simulator, not every real measurement pathway. Claude's R1 review
 `docs/protocols/r2-design-v0.md` is preserved as the proposal. D036's amended
 `r2-design-v1.md` freezes R2a/c preparation: distinct association/containment/CAR
 premises, fixed-C mixed bounds versus working backoff scores, raw-support X5
-windows, causal observed clocks and windowed B0–B2 models. Real R2b models have
-not been fitted/scored. X5 yields 818 available / 805 eligible confirmed windows;
+windows, causal observed clocks and windowed B0–B2 models. R2a/c did not fit or
+score real models. X5 yields 818 available / 805 eligible confirmed windows;
 DF keeps 307 of 441 evaluation issues. Different populations and observed-anchor
 lags prevent a mechanism test by retention ratio. The 35-scenario score-level
 precision study leaves G2 unestablished and exposes serial-block CR1 coverage
@@ -104,6 +104,14 @@ whole-star clustering still requires a dependence stress envelope before G3.
 The v1 gain-free preparation failed on one exact coincident DF issue. D040
 retains the earliest original representative and later originals in the audit;
 P-DF/P-match therefore expect 440 unique evaluation issues, P-orig 441.
+R2b is now complete under D041/source freeze `5fb69c6`. H1 is +0.007535
+on 432 scored issues; H2 +0.004276 on 431; H3 -0.003076. Both six- and
+twelve-year 90% intervals cross zero for all three. Conditional mixed sample
+bounds are not confidence limits. The rate sensitivity is positive but is not
+a validated negative control. B2 is stable yet has lower observed baseline means
+than B0/B1; call it preselected, not empirically strongest. All 24,348 scores
+reconstruct independently. New claims C53–C60 await Claude; no primary switching
+or new data access follows. See the R2b execution report before R2d/G3 planning.
 Frozen X4 bytes stay unchanged. Manuscript rewriting
 waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
 

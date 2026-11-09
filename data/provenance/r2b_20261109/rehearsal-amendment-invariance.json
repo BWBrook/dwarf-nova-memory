@@ -1,0 +1,8 @@
+{
+  "scope": "synthetic rehearsal only; no real model results",
+  "v1_freeze": "939208e",
+  "v2_freeze": "5fb69c6",
+  "v1_v2_parameters_byte_identical": true,
+  "parameters_sha256": "f70a40ee7d944668a307f707d31471643d8c5ad8fee900e6d8d57fbe37314c0f",
+  "old_parameter_sha256": "f70a40ee7d944668a307f707d31471643d8c5ad8fee900e6d8d57fbe37314c0f"
+}

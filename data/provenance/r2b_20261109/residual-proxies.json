@@ -1,0 +1,3288 @@
+{
+  "df": {
+    "B0.duration": {
+      "development": {
+        "block_icc": 0.0013751941620640507,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.051412851726224326,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.03370746204058518,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.13518702581250167,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": -0.10154458520285949,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.11275110830555003,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": -0.048620674502967726,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.2921817550234154,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.06877514393884535,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.17377974517528422,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.17487502540957497,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": -0.2785151689829778,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": 0.004488815456911184,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": -0.11438295258258524,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.06392508590277346,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.1233605834964076,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": -0.030721970886900252,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": 0.09523179522089922,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": 0.035481585203506576,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.10251094585225107,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": 0.026587327365293983,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.06688391200559819,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.09587737680387182,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.0995768302802415,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": 0.026438260388753614,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": 0.01076562048324796,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": 0.004488815456911184,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": 0.04597173910881687,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.4639950082042611,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": -0.18109432609322124,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.6036386306545943,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": -0.3672880813189225,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": -0.4355651809092651,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": -0.17540076250007153,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": -0.009287469748717365,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.18833930158175907,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": -0.05646300080509372,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": -0.20686782166479745,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": 0.013424121032900324,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.1581957359454099,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": -0.19734055469141035,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.3395189801792229,
+          "missing": 13,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.07756119274211419,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": -0.05516212920359778,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 4
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.04548848672045622,
+              "lag": 1,
+              "pairs": 414
+            },
+            {
+              "acf": 0.03773213328668346,
+              "lag": 2,
+              "pairs": 414
+            },
+            {
+              "acf": 0.17516268962258055,
+              "lag": 3,
+              "pairs": 412
+            },
+            {
+              "acf": 0.04635279394246664,
+              "lag": 4,
+              "pairs": 412
+            },
+            {
+              "acf": 0.07975748318329495,
+              "lag": 5,
+              "pairs": 410
+            },
+            {
+              "acf": 0.05554095346145291,
+              "lag": 6,
+              "pairs": 409
+            },
+            {
+              "acf": 0.05174501336582652,
+              "lag": 7,
+              "pairs": 408
+            },
+            {
+              "acf": 0.1077923700546428,
+              "lag": 8,
+              "pairs": 407
+            },
+            {
+              "acf": 0.042492301939418824,
+              "lag": 9,
+              "pairs": 407
+            },
+            {
+              "acf": -0.014179821158380047,
+              "lag": 10,
+              "pairs": 406
+            }
+          ],
+          "mean": -0.19734055469141035,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 440
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    },
+    "B1.duration": {
+      "development": {
+        "block_icc": 0.0063276277934077975,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.02003207030519803,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.03338183811675155,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.10563363513100187,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": -0.08280023586292971,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.11038336762490089,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": -0.06610582472646379,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.324757411312614,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.0778581029632601,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.20801819945792832,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.1537418178780822,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": -0.3102831954778281,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": 0.004207793263360173,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": -0.12305282256693718,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.06843631530986079,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.13146840909365753,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": -0.006668533219631063,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": -0.00047265945320699586,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": 0.056933584667955416,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.12444095942478407,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": 0.010809511261925753,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.043811260778235064,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.08916243365352354,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.09223523447483119,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": 0.023738305667797232,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": 0.025741869388504285,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": 0.004207793263360173,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": 0.038920899033457086,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.469031128793368,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": -0.18752273088192098,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.5939095377560984,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": -0.3707607887617655,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": -0.43287005708321047,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": -0.19258800957846084,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": -0.01454956172086188,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.17155931231960764,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": -0.07214494342048493,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": -0.2141739796484789,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": 0.00502953431910391,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.16081927748856026,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": -0.2034766131594413,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.3412481470743415,
+          "missing": 13,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.07515714469117023,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": -0.06570507924454114,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 4
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.04443634845268685,
+              "lag": 1,
+              "pairs": 414
+            },
+            {
+              "acf": -0.0814450353890125,
+              "lag": 2,
+              "pairs": 414
+            },
+            {
+              "acf": 0.16236482757462403,
+              "lag": 3,
+              "pairs": 412
+            },
+            {
+              "acf": 0.05904805814243315,
+              "lag": 4,
+              "pairs": 412
+            },
+            {
+              "acf": 0.07325357038204079,
+              "lag": 5,
+              "pairs": 410
+            },
+            {
+              "acf": 0.05372316271562104,
+              "lag": 6,
+              "pairs": 409
+            },
+            {
+              "acf": 0.054613085127815826,
+              "lag": 7,
+              "pairs": 408
+            },
+            {
+              "acf": 0.11447912295153258,
+              "lag": 8,
+              "pairs": 407
+            },
+            {
+              "acf": 0.03544849464963256,
+              "lag": 9,
+              "pairs": 407
+            },
+            {
+              "acf": -0.03073250201096703,
+              "lag": 10,
+              "pairs": 406
+            }
+          ],
+          "mean": -0.2034766131594413,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 440
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    },
+    "B2.cadence": {
+      "development": {
+        "block_icc": -0.021895123685340193,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.05406649985333909,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.12881218922021026,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.23074551625976722,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": 0.05706901382057623,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.03880529515441432,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": 0.12476299916596763,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.21724921470882286,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.07667934744786244,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.2798154921819633,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.17462887462550425,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": 0.037164539925842795,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": 0.11039237935683718,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": 0.047808577047360704,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.03365538348370665,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.17297618166631368,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": -0.04720623485778881,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": -0.028929637445740286,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": -0.05649327574109174,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.02725827100247203,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": -0.0511924283550009,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.14683411398515211,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.05553813213613176,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.09920365573155708,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": 0.008640833183896246,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": 0.014822959552453354,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": 0.11039237935683718,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": -0.021783178695950426,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.22950948266364035,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": 0.061722749906160515,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": 0.08164195226180379,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": 0.06092080405360236,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": 0.0752531967780814,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": 0.07594699974376327,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": 0.09807223282529383,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.04320798857927471,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": 0.1200683700901526,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": 0.08423499890452588,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.011530909497326944,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.010588134677565716,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": 0.06513199264338544,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": 0.04264524368847429,
+          "missing": 13,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.0122669741478105,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": 0.08761874159829659,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 4
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.010856824308362276,
+              "lag": 1,
+              "pairs": 414
+            },
+            {
+              "acf": -0.14124876567871306,
+              "lag": 2,
+              "pairs": 414
+            },
+            {
+              "acf": 0.005637539805634849,
+              "lag": 3,
+              "pairs": 412
+            },
+            {
+              "acf": -0.11339778357803396,
+              "lag": 4,
+              "pairs": 412
+            },
+            {
+              "acf": -0.0568868391276937,
+              "lag": 5,
+              "pairs": 410
+            },
+            {
+              "acf": -0.03657521890209531,
+              "lag": 6,
+              "pairs": 409
+            },
+            {
+              "acf": -0.028446621854930076,
+              "lag": 7,
+              "pairs": 408
+            },
+            {
+              "acf": 0.03396226027008742,
+              "lag": 8,
+              "pairs": 407
+            },
+            {
+              "acf": -0.030425173131806527,
+              "lag": 9,
+              "pairs": 407
+            },
+            {
+              "acf": -0.08240914438995217,
+              "lag": 10,
+              "pairs": 406
+            }
+          ],
+          "mean": 0.06513199264338544,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 440
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    },
+    "B2.duration": {
+      "development": {
+        "block_icc": -0.02184203279329921,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.05589809728259951,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.12881780376712892,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.2316292860259658,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": 0.05700934291868576,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.038938197291434266,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": 0.12433765314976808,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.21788069716995068,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.07621161328762258,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.28000710454996447,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.17461162516886602,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": 0.03661110892477128,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": 0.11030320607200922,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": 0.04758112497043912,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.03372974498946115,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.17302528717357932,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": -0.04718708477114786,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": -0.02886666028541979,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": -0.05648660780629886,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.027248875912003496,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": -0.05113542017170818,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.14664360793060996,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.055604501091892154,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.09944853222666622,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": 0.00865803230753164,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": 0.014878844452042829,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": 0.11030320607200922,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": -0.02179381876874359,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.2281315822357817,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": 0.060836747265702665,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": 0.08155058804329186,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": 0.060213748753933635,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": 0.07431901451034091,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": 0.07507485785672073,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": 0.09689412284118533,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.041976629332924724,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": 0.11868018465017169,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": 0.08327511467691552,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.012191877647974636,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.011424910360483188,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": 0.06425840736264635,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": 0.0418268974980317,
+          "missing": 13,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.012236840112251403,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": 0.08668991722726099,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 4
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.01106167299653558,
+              "lag": 1,
+              "pairs": 414
+            },
+            {
+              "acf": -0.14149706928220027,
+              "lag": 2,
+              "pairs": 414
+            },
+            {
+              "acf": 0.005426488630358216,
+              "lag": 3,
+              "pairs": 412
+            },
+            {
+              "acf": -0.11346145840436335,
+              "lag": 4,
+              "pairs": 412
+            },
+            {
+              "acf": -0.056959440005155196,
+              "lag": 5,
+              "pairs": 410
+            },
+            {
+              "acf": -0.036547086704858484,
+              "lag": 6,
+              "pairs": 409
+            },
+            {
+              "acf": -0.028410240359114873,
+              "lag": 7,
+              "pairs": 408
+            },
+            {
+              "acf": 0.03399195006222338,
+              "lag": 8,
+              "pairs": 407
+            },
+            {
+              "acf": -0.03039399904112534,
+              "lag": 9,
+              "pairs": 407
+            },
+            {
+              "acf": -0.08232182771898977,
+              "lag": 10,
+              "pairs": 406
+            }
+          ],
+          "mean": 0.06425840736264635,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 440
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    }
+  },
+  "point_at_df": {
+    "B0.duration": {
+      "development": {
+        "block_icc": 0.005336911173533273,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.08232064049160237,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.03241758493230256,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.24577202507111848,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": -0.1122409876344141,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.1216159621899303,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": -0.07099497837594644,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.2914785131621705,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.06339871294466037,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.16405785263008268,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.1225628940261213,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": -0.29065980524313945,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": -0.006141255139918465,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": -0.1250876642017364,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.0639652252381469,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.11280515392189945,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.03101291986184038,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": 0.09870495538015665,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": 0.024973334980448278,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.09178444657399673,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": -0.0009322465078471306,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.06335821764968494,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.056060462634416816,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.08180603799865535,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": -0.008218521069607552,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": -0.003007282189407454,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": -0.006141255139918465,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": 0.03546833352961213,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.49789305220096647,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": -0.21281682615844444,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.571356677550927,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": -0.37286750772587146,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": -0.4431485948588822,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": -0.19835774611751786,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": -0.0752592087765551,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.09175065851249045,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": -0.092958181650519,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": -0.19377067890436322,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.06452900973524951,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.2076713147770493,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": -0.22589322474219783,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.3467053746964384,
+          "missing": 13,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.06590545939751791,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": -0.10508107478795725,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 4
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.1468024780572879,
+              "lag": 1,
+              "pairs": 414
+            },
+            {
+              "acf": 0.05864377718030766,
+              "lag": 2,
+              "pairs": 414
+            },
+            {
+              "acf": 0.14170068836506108,
+              "lag": 3,
+              "pairs": 412
+            },
+            {
+              "acf": 0.03202937402440815,
+              "lag": 4,
+              "pairs": 412
+            },
+            {
+              "acf": 0.039255371803024706,
+              "lag": 5,
+              "pairs": 410
+            },
+            {
+              "acf": 0.02140138300586889,
+              "lag": 6,
+              "pairs": 409
+            },
+            {
+              "acf": 0.0287891300261747,
+              "lag": 7,
+              "pairs": 408
+            },
+            {
+              "acf": 0.07769682322986966,
+              "lag": 8,
+              "pairs": 407
+            },
+            {
+              "acf": 0.0261264588929024,
+              "lag": 9,
+              "pairs": 407
+            },
+            {
+              "acf": -0.013470223025482805,
+              "lag": 10,
+              "pairs": 406
+            }
+          ],
+          "mean": -0.22589322474219783,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 440
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    },
+    "B1.duration": {
+      "development": {
+        "block_icc": 0.006465928072877608,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.10230172453920276,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.030742080108556526,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.22446650048799147,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": -0.0949797192076146,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.11571434632785521,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": -0.08047741739065922,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.2986932278046349,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.03671357347412944,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.19492075523999702,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.1149907830190068,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": -0.3019346361226219,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": -0.006627210294343864,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": -0.1275158654249663,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.06500969735158767,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.11426144483627856,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.04008741921182604,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": 0.027940949025961958,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": -0.0001379164455790932,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.08048547267934653,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": 0.012292121467943288,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.04641900478633872,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.05576729112817582,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.0749349736131393,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": 0.003083047304582518,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": 0.007196672216530249,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": -0.006627210294343864,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": 0.030185594363466794,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.5028143070831772,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": -0.20642548685864526,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.5512870931976116,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": -0.358220351714227,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": -0.4293736969914837,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": -0.2039092431815979,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": -0.07303817339399675,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.0875627814903599,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": -0.09889402004520144,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": -0.1812537266974014,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.06427202640840211,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.1915693184468905,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": -0.21933614314237443,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.3353662358989605,
+          "missing": 13,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.06329675094728338,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": -0.10330605038578837,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 4
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.14472495118893342,
+              "lag": 1,
+              "pairs": 414
+            },
+            {
+              "acf": -0.024886870593573727,
+              "lag": 2,
+              "pairs": 414
+            },
+            {
+              "acf": 0.09106687641267987,
+              "lag": 3,
+              "pairs": 412
+            },
+            {
+              "acf": 0.015127405481722497,
+              "lag": 4,
+              "pairs": 412
+            },
+            {
+              "acf": 0.03729313369749855,
+              "lag": 5,
+              "pairs": 410
+            },
+            {
+              "acf": 0.03539774174539784,
+              "lag": 6,
+              "pairs": 409
+            },
+            {
+              "acf": 0.04561295160145362,
+              "lag": 7,
+              "pairs": 408
+            },
+            {
+              "acf": 0.08962838181775476,
+              "lag": 8,
+              "pairs": 407
+            },
+            {
+              "acf": 0.0314623116852987,
+              "lag": 9,
+              "pairs": 407
+            },
+            {
+              "acf": -0.020517975852675903,
+              "lag": 10,
+              "pairs": 406
+            }
+          ],
+          "mean": -0.21933614314237443,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 440
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    },
+    "B2.duration": {
+      "development": {
+        "block_icc": -0.016918357104822295,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.09145528394572604,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.1274884840934931,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.3835495209890445,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": 0.04759099924303429,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.029706679104113284,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": 0.11311927182023614,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.27421395461920817,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.08954135304096689,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.20304472246857524,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.10307314991267849,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": -0.03702993614819251,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": 0.09642315366839961,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": 0.026890539853755724,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.03739221166180202,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.1659557674830435,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.009910825554700778,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": -0.035943692303412565,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": -0.04818793776803969,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.03779648555626111,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": -0.051583585064759574,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.09486516922097843,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.018205357625892454,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.10524700340413565,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": -0.03914837470590179,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": -0.014709221456155648,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": 0.09642315366839961,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": -0.019486777161238842,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.1844565692039958,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": 0.00378078606167436,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.03782210468027614,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": 0.03419354366036621,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": -0.021241864255867823,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": 0.01936765474612105,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": 0.02526259974546637,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": -0.02582587501252321,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": 0.05318164020732012,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": 0.10791129150985598,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.0846761772816754,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.03254284802204356,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": 0.005631993061096604,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 440,
+          "lower": -0.02643505122904472,
+          "missing": 13,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.01749321807668183,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": 0.037699037351237925,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 4
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.0984722693710992,
+              "lag": 1,
+              "pairs": 414
+            },
+            {
+              "acf": -0.11415650231320715,
+              "lag": 2,
+              "pairs": 414
+            },
+            {
+              "acf": -0.020346449791177425,
+              "lag": 3,
+              "pairs": 412
+            },
+            {
+              "acf": -0.11194410826086454,
+              "lag": 4,
+              "pairs": 412
+            },
+            {
+              "acf": -0.07695936809496881,
+              "lag": 5,
+              "pairs": 410
+            },
+            {
+              "acf": -0.06452266947557513,
+              "lag": 6,
+              "pairs": 409
+            },
+            {
+              "acf": -0.03991854618456768,
+              "lag": 7,
+              "pairs": 408
+            },
+            {
+              "acf": 0.019550411628880906,
+              "lag": 8,
+              "pairs": 407
+            },
+            {
+              "acf": -0.019596390336729566,
+              "lag": 9,
+              "pairs": 407
+            },
+            {
+              "acf": -0.06393975884695408,
+              "lag": 10,
+              "pairs": 406
+            }
+          ],
+          "mean": 0.005631993061096604,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 440
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    }
+  },
+  "point_original": {
+    "B0.duration": {
+      "development": {
+        "block_icc": 0.005586566710138868,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.08239830211570776,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.032523270797939714,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.2452996988921333,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": -0.11327233169393774,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.12108113165693817,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": -0.07140427631075912,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.2921222366953382,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.06392523656088182,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.16536930754667395,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.1235759890804627,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": -0.29182529193239753,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": -0.006094779170096734,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": -0.1254939864065636,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.06420872428496377,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.11330442806637012,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.029918534022456467,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": 0.09939676864930455,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": 0.025915870830846073,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.09260471266413028,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": 0.0004209050896152881,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.06282437966606684,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.05692292170786907,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.08196516610291181,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": -0.008663962619678776,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": -0.002835688700841145,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": -0.006094779170096734,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": 0.035308232080894585,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.4970419313831198,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": -0.21329463388094502,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.5697428283563534,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": -0.37406599497062426,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": -0.4443015896435099,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": -0.1956195663910005,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": -0.07589543686169015,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.09184108774804924,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": -0.09505429742374327,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": -0.1950202007331921,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.06592378041134837,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.20916373176603745,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": -0.2263107823565814,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 441,
+          "lower": -0.34688095205948966,
+          "missing": 14,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.0657734543000569,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": -0.10574061265367311,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 5
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.14689045812889712,
+              "lag": 1,
+              "pairs": 413
+            },
+            {
+              "acf": 0.06140094690929254,
+              "lag": 2,
+              "pairs": 413
+            },
+            {
+              "acf": 0.13742034107615805,
+              "lag": 3,
+              "pairs": 411
+            },
+            {
+              "acf": 0.03635017968186762,
+              "lag": 4,
+              "pairs": 411
+            },
+            {
+              "acf": 0.0355256266844634,
+              "lag": 5,
+              "pairs": 409
+            },
+            {
+              "acf": 0.023778045193249088,
+              "lag": 6,
+              "pairs": 408
+            },
+            {
+              "acf": 0.02200492515532615,
+              "lag": 7,
+              "pairs": 407
+            },
+            {
+              "acf": 0.07982534343506188,
+              "lag": 8,
+              "pairs": 406
+            },
+            {
+              "acf": 0.028130278012325715,
+              "lag": 9,
+              "pairs": 406
+            },
+            {
+              "acf": -0.0037433968369825262,
+              "lag": 10,
+              "pairs": 405
+            }
+          ],
+          "mean": -0.2263107823565814,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 441
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    },
+    "B1.duration": {
+      "development": {
+        "block_icc": 0.0065233743719933625,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.1022833671808963,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.030848558425618264,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.22493570471042398,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": -0.0960766486796639,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.11505046879858281,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": -0.08018142013233133,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.2991119571635881,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.036939096678730354,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.19554417831613538,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.11445502994208476,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": -0.3020404033698202,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": -0.006591158956932448,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": -0.12756456461104815,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.06505527322367205,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.11438224669718325,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.03977070689253231,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": 0.02765273955117612,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": 0.00021968243082106138,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.08058181931155149,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": 0.012730813382352962,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.046405908104775205,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.056075814116342666,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.07521681710520611,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": 0.0023092813273360773,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": 0.0071092284344652125,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": -0.006591158956932448,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": 0.029413792108593836,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": 0.5013688944970145,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": -0.2068277880103715,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.5483580374916569,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": -0.35764227768986073,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": -0.4282479494367699,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": -0.20152412100081266,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": -0.0740889391930899,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": 0.08593059366909825,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": -0.10063687721510176,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": -0.1824708970865361,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.0669382777429731,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.19430109691601222,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": -0.2195577471386043,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 441,
+          "lower": -0.33465942666744947,
+          "missing": 14,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.06279028284529056,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": -0.10445606760975912,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 5
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.14495021041602835,
+              "lag": 1,
+              "pairs": 413
+            },
+            {
+              "acf": -0.02403828232377696,
+              "lag": 2,
+              "pairs": 413
+            },
+            {
+              "acf": 0.0853002638837336,
+              "lag": 3,
+              "pairs": 411
+            },
+            {
+              "acf": 0.017641905038086016,
+              "lag": 4,
+              "pairs": 411
+            },
+            {
+              "acf": 0.03243405193956624,
+              "lag": 5,
+              "pairs": 409
+            },
+            {
+              "acf": 0.0356560147185392,
+              "lag": 6,
+              "pairs": 408
+            },
+            {
+              "acf": 0.03847608948522519,
+              "lag": 7,
+              "pairs": 407
+            },
+            {
+              "acf": 0.09065532323750652,
+              "lag": 8,
+              "pairs": 406
+            },
+            {
+              "acf": 0.03484611332878314,
+              "lag": 9,
+              "pairs": 406
+            },
+            {
+              "acf": -0.012245134114778952,
+              "lag": 10,
+              "pairs": 405
+            }
+          ],
+          "mean": -0.2195577471386043,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 441
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    },
+    "B2.duration": {
+      "development": {
+        "block_icc": -0.016817800958142122,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.09278163720753295,
+                "lag": 1,
+                "pairs": 8
+              }
+            ],
+            "mean": 0.12822448477467674,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 9,
+            "n_slots": 9
+          },
+          "block_means": [
+            {
+              "block": -9,
+              "mean": 0.38306482683971316,
+              "n": 12,
+              "weight": 12.0
+            },
+            {
+              "block": -8,
+              "mean": 0.04781168531792501,
+              "n": 41,
+              "weight": 41.0
+            },
+            {
+              "block": -7,
+              "mean": -0.029039553655366757,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": -6,
+              "mean": 0.11333194354130723,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": -5,
+              "mean": 0.2759779660336798,
+              "n": 30,
+              "weight": 30.0
+            },
+            {
+              "block": -4,
+              "mean": 0.08986964295173128,
+              "n": 28,
+              "weight": 28.0
+            },
+            {
+              "block": -3,
+              "mean": 0.20576068977006862,
+              "n": 26,
+              "weight": 26.0
+            },
+            {
+              "block": -2,
+              "mean": 0.10434897481931768,
+              "n": 35,
+              "weight": 35.0
+            },
+            {
+              "block": -1,
+              "mean": -0.03710581264628537,
+              "n": 40,
+              "weight": 40.0
+            }
+          ],
+          "blocks": 9,
+          "df": 8,
+          "estimate": 0.09715202989591006,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 330,
+          "lower": 0.02730299296364261,
+          "missing": 39,
+          "n": 291,
+          "origin": 2436934.5,
+          "se": 0.037562372965106505,
+          "status": "usable",
+          "total_weight": 291.0,
+          "upper": 0.1670010668281775,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 24,
+          "right_censored": 15
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.008359733685794644,
+              "lag": 1,
+              "pairs": 260
+            },
+            {
+              "acf": -0.03796700487851822,
+              "lag": 2,
+              "pairs": 252
+            },
+            {
+              "acf": -0.04835785319578199,
+              "lag": 3,
+              "pairs": 253
+            },
+            {
+              "acf": 0.0381159693852467,
+              "lag": 4,
+              "pairs": 252
+            },
+            {
+              "acf": -0.050523533489613984,
+              "lag": 5,
+              "pairs": 253
+            },
+            {
+              "acf": -0.09389097734752361,
+              "lag": 6,
+              "pairs": 259
+            },
+            {
+              "acf": 0.018980420088686122,
+              "lag": 7,
+              "pairs": 253
+            },
+            {
+              "acf": -0.10532373410786909,
+              "lag": 8,
+              "pairs": 251
+            },
+            {
+              "acf": -0.039112073444104174,
+              "lag": 9,
+              "pairs": 249
+            },
+            {
+              "acf": -0.013951019732335892,
+              "lag": 10,
+              "pairs": 247
+            }
+          ],
+          "mean": 0.09715202989591006,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 291,
+          "n_slots": 330
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 291,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      },
+      "evaluation": {
+        "block_icc": -0.019501701549727267,
+        "block_summary": {
+          "block_mean_acf": {
+            "constant_or_insufficient": false,
+            "lags": [
+              {
+                "acf": -0.19157240808219314,
+                "lag": 1,
+                "pairs": 9
+              }
+            ],
+            "mean": 0.004470409816376705,
+            "method": "global-mean biased ACF; missing original slots retained; descriptive",
+            "n_available": 10,
+            "n_slots": 10
+          },
+          "block_means": [
+            {
+              "block": 0,
+              "mean": -0.03323223312127882,
+              "n": 49,
+              "weight": 49.0
+            },
+            {
+              "block": 1,
+              "mean": 0.03529890314339848,
+              "n": 46,
+              "weight": 46.0
+            },
+            {
+              "block": 2,
+              "mean": -0.02006362381432021,
+              "n": 48,
+              "weight": 48.0
+            },
+            {
+              "block": 3,
+              "mean": 0.02272007781908139,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 4,
+              "mean": 0.024977853557824507,
+              "n": 42,
+              "weight": 42.0
+            },
+            {
+              "block": 5,
+              "mean": -0.026314771510037537,
+              "n": 39,
+              "weight": 39.0
+            },
+            {
+              "block": 6,
+              "mean": 0.051614240387340055,
+              "n": 43,
+              "weight": 43.0
+            },
+            {
+              "block": 7,
+              "mean": 0.1084091212767839,
+              "n": 45,
+              "weight": 45.0
+            },
+            {
+              "block": 8,
+              "mean": -0.08606559533552825,
+              "n": 40,
+              "weight": 40.0
+            },
+            {
+              "block": 9,
+              "mean": -0.032639874239496464,
+              "n": 30,
+              "weight": 30.0
+            }
+          ],
+          "blocks": 10,
+          "df": 9,
+          "estimate": 0.006448515677908664,
+          "interval": "exploratory CR1/t 90%; independent-cluster assumption not certified",
+          "issued": 441,
+          "lower": -0.025494786885355298,
+          "missing": 14,
+          "n": 427,
+          "origin": 2436934.5,
+          "se": 0.017425714474108882,
+          "status": "usable",
+          "total_weight": 427.0,
+          "upper": 0.038391818241172625,
+          "years": 6
+        },
+        "excluded": {
+          "excluded": 9,
+          "right_censored": 5
+        },
+        "forecast_acf": {
+          "constant_or_insufficient": false,
+          "lags": [
+            {
+              "acf": 0.09850017837393403,
+              "lag": 1,
+              "pairs": 413
+            },
+            {
+              "acf": -0.1150971443433772,
+              "lag": 2,
+              "pairs": 413
+            },
+            {
+              "acf": -0.024222264545881004,
+              "lag": 3,
+              "pairs": 411
+            },
+            {
+              "acf": -0.1084484725111712,
+              "lag": 4,
+              "pairs": 411
+            },
+            {
+              "acf": -0.07910304339392522,
+              "lag": 5,
+              "pairs": 409
+            },
+            {
+              "acf": -0.0637660988020485,
+              "lag": 6,
+              "pairs": 408
+            },
+            {
+              "acf": -0.047471307290396864,
+              "lag": 7,
+              "pairs": 407
+            },
+            {
+              "acf": 0.022564686702690732,
+              "lag": 8,
+              "pairs": 406
+            },
+            {
+              "acf": -0.013284591683927743,
+              "lag": 9,
+              "pairs": 406
+            },
+            {
+              "acf": -0.05505766201568254,
+              "lag": 10,
+              "pairs": 405
+            }
+          ],
+          "mean": 0.006448515677908664,
+          "method": "global-mean biased ACF; missing original slots retained; descriptive",
+          "n_available": 427,
+          "n_slots": 441
+        },
+        "icc_status": "descriptive_one_way_ANOVA",
+        "limitations": [
+          "midpoints ignore interval uncertainty",
+          "censored/unsupported rows have no residual proxy",
+          "survival-to-issue truncation and interval selection affect these summaries"
+        ],
+        "n": 427,
+        "scope": "interval-midpoint untruncated log-residual proxies; not latent forecast errors or calibration"
+      }
+    }
+  }
+}

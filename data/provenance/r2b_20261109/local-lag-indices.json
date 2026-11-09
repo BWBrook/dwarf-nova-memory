@@ -1,0 +1,26 @@
+{
+  "B0.duration": {
+    "is_upper_bound": false,
+    "maximum": 0.4754500619678078,
+    "mean": 0.0074214496549362815,
+    "median": 0.0009072171114129817,
+    "n": 419,
+    "unsupported": 21
+  },
+  "B1.duration": {
+    "is_upper_bound": false,
+    "maximum": 0.44934587077275506,
+    "mean": 0.007123506686691093,
+    "median": 0.0008540228211818458,
+    "n": 419,
+    "unsupported": 21
+  },
+  "B2.duration": {
+    "is_upper_bound": false,
+    "maximum": 0.6291892173048856,
+    "mean": 0.009635432553710835,
+    "median": 0.0010886308976918984,
+    "n": 419,
+    "unsupported": 21
+  }
+}

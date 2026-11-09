@@ -1,0 +1,377 @@
+{
+  "all_opened_record": {
+    "df": {
+      "anchor_available": 815,
+      "anchor_gap_mark_available": 717,
+      "cadence_end_days": {
+        "maximum": 31.053000000305474,
+        "median": 0.24000000022351742,
+        "n": 827,
+        "p90_order_statistic": 1.8599999998696148
+      },
+      "cadence_on_days": {
+        "maximum": 14.930000000167638,
+        "median": 0.5,
+        "n": 790,
+        "p90_order_statistic": 1.25
+      },
+      "current_historical_anchor_comparable": 815,
+      "current_historical_anchor_mismatches": 0,
+      "event_eligible": 815,
+      "features": 827,
+      "flux_proxy_available": 796,
+      "history_missing_slots": 1534,
+      "history_reasons": {
+        "coverage_hole": 122,
+        "covered_adjacent_gap": 4621,
+        "incomplete_window_onset": 1171,
+        "insufficient_raw_bright_observers": 124,
+        "no_scheduled_anchor": 116,
+        "nonpositive_adjacent_gap": 1
+      },
+      "history_slots": 6155,
+      "issue_delay_days": {
+        "maximum": 8.009999999776483,
+        "median": 0.7256000000052154,
+        "n": 827,
+        "p90_order_statistic": 1.8500000000931323
+      },
+      "mark_available": 795,
+      "own_anchor_association": {
+        "fallback": 12,
+        "unique": 815
+      },
+      "previous_gap_available": 720,
+      "rate_available": 805,
+      "status": {
+        "decisive_clock_available": 815,
+        "insufficient_raw_bright_observers": 3,
+        "raw_candidate_ambiguous": 9
+      }
+    },
+    "point_at_df": {
+      "anchor_available": 827,
+      "anchor_gap_mark_available": 770,
+      "cadence_end_days": {
+        "maximum": null,
+        "median": null,
+        "n": 0,
+        "p90_order_statistic": null
+      },
+      "cadence_on_days": {
+        "maximum": null,
+        "median": null,
+        "n": 0,
+        "p90_order_statistic": null
+      },
+      "event_eligible": 827,
+      "features": 827,
+      "flux_proxy_available": 796,
+      "history_missing_slots": 1079,
+      "history_reasons": {
+        "coverage_hole": 259,
+        "covered_adjacent_gap": 5127,
+        "incomplete_window_onset": 664,
+        "nonpositive_adjacent_gap": 10,
+        "unconfirmed_adjacent_candidate": 146
+      },
+      "history_slots": 6206,
+      "mark_available": 827,
+      "previous_gap_available": 770,
+      "rate_available": 805,
+      "status": {
+        "point_clock_available": 827
+      }
+    },
+    "point_original": {
+      "anchor_available": 828,
+      "anchor_gap_mark_available": 771,
+      "cadence_end_days": {
+        "maximum": null,
+        "median": null,
+        "n": 0,
+        "p90_order_statistic": null
+      },
+      "cadence_on_days": {
+        "maximum": null,
+        "median": null,
+        "n": 0,
+        "p90_order_statistic": null
+      },
+      "event_eligible": 828,
+      "features": 828,
+      "flux_proxy_available": 796,
+      "history_missing_slots": 1071,
+      "history_reasons": {
+        "coverage_hole": 260,
+        "covered_adjacent_gap": 5153,
+        "incomplete_window_onset": 657,
+        "nonpositive_adjacent_gap": 10,
+        "unconfirmed_adjacent_candidate": 144
+      },
+      "history_slots": 6224,
+      "mark_available": 828,
+      "previous_gap_available": 771,
+      "rate_available": 805,
+      "status": {
+        "point_clock_available": 828
+      }
+    }
+  },
+  "label": "R2b gain-free causal features; no fits, gains or correlations",
+  "limitations": [
+    "Historical DF gaps require unique raw-peak association to a previously scheduled emission; missing/ambiguous anchors remain missing slots.",
+    "Scheduled emissions with exactly identical issue time and observed anchor use the earliest original representative; later coincident originals stay in the audit.",
+    "Historical onsets and coverage are reconstructed as of each current issue, not claimed immutable values from the past issue.",
+    "The DF anchor is a scheduled observed faint support, not an estimated latent end.",
+    "Cadence gaps use raw positive estimates belonging to closed visits; numerical limits are not exact positive values.",
+    "Observer rate includes closed observer-night visits, including limits, inside the decisive-bright span. The span and denominator depend on the star.",
+    "Cadence gaps and the rate are sensitivity features, not proven bounds or pure negative controls.",
+    "The proxy integrates observed-span threshold excess; it is not complete outburst or bolometric fluence."
+  ],
+  "periods": {
+    "development_1910_1959": {
+      "df": {
+        "anchor_available": 328,
+        "anchor_gap_mark_available": 275,
+        "cadence_end_days": {
+          "maximum": 13.899999999906868,
+          "median": 0.5764499998185784,
+          "n": 330,
+          "p90_order_statistic": 2.0469999997876585
+        },
+        "cadence_on_days": {
+          "maximum": 10.929999999701977,
+          "median": 0.6699999999254942,
+          "n": 313,
+          "p90_order_statistic": 1.9799999999813735
+        },
+        "current_historical_anchor_comparable": 328,
+        "current_historical_anchor_mismatches": 0,
+        "event_eligible": 328,
+        "features": 330,
+        "flux_proxy_available": 314,
+        "history_missing_slots": 702,
+        "history_reasons": {
+          "coverage_hole": 63,
+          "covered_adjacent_gap": 1632,
+          "incomplete_window_onset": 517,
+          "insufficient_raw_bright_observers": 41,
+          "no_scheduled_anchor": 81
+        },
+        "history_slots": 2334,
+        "issue_delay_days": {
+          "maximum": 4.150999999605119,
+          "median": 0.10000000009313226,
+          "n": 330,
+          "p90_order_statistic": 1.6000000000931323
+        },
+        "mark_available": 315,
+        "own_anchor_association": {
+          "fallback": 2,
+          "unique": 328
+        },
+        "previous_gap_available": 276,
+        "rate_available": 317,
+        "status": {
+          "decisive_clock_available": 328,
+          "insufficient_raw_bright_observers": 1,
+          "raw_candidate_ambiguous": 1
+        }
+      },
+      "joint_clocks_anchor_gap_mark": 273,
+      "point_at_df": {
+        "anchor_available": 330,
+        "anchor_gap_mark_available": 306,
+        "cadence_end_days": {
+          "maximum": null,
+          "median": null,
+          "n": 0,
+          "p90_order_statistic": null
+        },
+        "cadence_on_days": {
+          "maximum": null,
+          "median": null,
+          "n": 0,
+          "p90_order_statistic": null
+        },
+        "event_eligible": 330,
+        "features": 330,
+        "flux_proxy_available": 314,
+        "history_missing_slots": 438,
+        "history_reasons": {
+          "coverage_hole": 114,
+          "covered_adjacent_gap": 1903,
+          "incomplete_window_onset": 254,
+          "nonpositive_adjacent_gap": 6,
+          "unconfirmed_adjacent_candidate": 64
+        },
+        "history_slots": 2341,
+        "mark_available": 330,
+        "previous_gap_available": 306,
+        "rate_available": 317,
+        "status": {
+          "point_clock_available": 330
+        }
+      },
+      "point_original": {
+        "anchor_available": 330,
+        "anchor_gap_mark_available": 306,
+        "cadence_end_days": {
+          "maximum": null,
+          "median": null,
+          "n": 0,
+          "p90_order_statistic": null
+        },
+        "cadence_on_days": {
+          "maximum": null,
+          "median": null,
+          "n": 0,
+          "p90_order_statistic": null
+        },
+        "event_eligible": 330,
+        "features": 330,
+        "flux_proxy_available": 314,
+        "history_missing_slots": 440,
+        "history_reasons": {
+          "coverage_hole": 115,
+          "covered_adjacent_gap": 1908,
+          "incomplete_window_onset": 256,
+          "nonpositive_adjacent_gap": 6,
+          "unconfirmed_adjacent_candidate": 63
+        },
+        "history_slots": 2348,
+        "mark_available": 330,
+        "previous_gap_available": 306,
+        "rate_available": 317,
+        "status": {
+          "point_clock_available": 330
+        }
+      },
+      "schedule_status_by_original_issue": {
+        "scheduled": 330
+      }
+    },
+    "evaluation_1960_2017": {
+      "df": {
+        "anchor_available": 440,
+        "anchor_gap_mark_available": 418,
+        "cadence_end_days": {
+          "maximum": 7.619999999646097,
+          "median": 0.10000000009313226,
+          "n": 440,
+          "p90_order_statistic": 0.779999999795109
+        },
+        "cadence_on_days": {
+          "maximum": 3.930000000167638,
+          "median": 0.31660000002011657,
+          "n": 431,
+          "p90_order_statistic": 0.9308299999684095
+        },
+        "current_historical_anchor_comparable": 440,
+        "current_historical_anchor_mismatches": 0,
+        "event_eligible": 440,
+        "features": 440,
+        "flux_proxy_available": 436,
+        "history_missing_slots": 616,
+        "history_reasons": {
+          "coverage_hole": 22,
+          "covered_adjacent_gap": 2859,
+          "incomplete_window_onset": 593,
+          "insufficient_raw_bright_observers": 1
+        },
+        "history_slots": 3475,
+        "issue_delay_days": {
+          "maximum": 4.7972000003792346,
+          "median": 0.900000000372529,
+          "n": 440,
+          "p90_order_statistic": 1.8824000000022352
+        },
+        "mark_available": 437,
+        "own_anchor_association": {
+          "unique": 440
+        },
+        "previous_gap_available": 419,
+        "rate_available": 437,
+        "status": {
+          "decisive_clock_available": 440
+        }
+      },
+      "joint_clocks_anchor_gap_mark": 417,
+      "point_at_df": {
+        "anchor_available": 440,
+        "anchor_gap_mark_available": 435,
+        "cadence_end_days": {
+          "maximum": null,
+          "median": null,
+          "n": 0,
+          "p90_order_statistic": null
+        },
+        "cadence_on_days": {
+          "maximum": null,
+          "median": null,
+          "n": 0,
+          "p90_order_statistic": null
+        },
+        "event_eligible": 440,
+        "features": 440,
+        "flux_proxy_available": 436,
+        "history_missing_slots": 417,
+        "history_reasons": {
+          "coverage_hole": 38,
+          "covered_adjacent_gap": 3058,
+          "incomplete_window_onset": 378,
+          "unconfirmed_adjacent_candidate": 1
+        },
+        "history_slots": 3475,
+        "mark_available": 440,
+        "previous_gap_available": 435,
+        "rate_available": 437,
+        "status": {
+          "point_clock_available": 440
+        }
+      },
+      "point_original": {
+        "anchor_available": 441,
+        "anchor_gap_mark_available": 436,
+        "cadence_end_days": {
+          "maximum": null,
+          "median": null,
+          "n": 0,
+          "p90_order_statistic": null
+        },
+        "cadence_on_days": {
+          "maximum": null,
+          "median": null,
+          "n": 0,
+          "p90_order_statistic": null
+        },
+        "event_eligible": 441,
+        "features": 441,
+        "flux_proxy_available": 436,
+        "history_missing_slots": 409,
+        "history_reasons": {
+          "coverage_hole": 38,
+          "covered_adjacent_gap": 3078,
+          "incomplete_window_onset": 370,
+          "unconfirmed_adjacent_candidate": 1
+        },
+        "history_slots": 3487,
+        "mark_available": 441,
+        "previous_gap_available": 436,
+        "rate_available": 437,
+        "status": {
+          "point_clock_available": 441
+        }
+      },
+      "schedule_status_by_original_issue": {
+        "coincident_pending_issue": 1,
+        "scheduled": 440
+      }
+    }
+  },
+  "schedule_status": {
+    "coincident_pending_issue": 1,
+    "scheduled": 827
+  }
+}

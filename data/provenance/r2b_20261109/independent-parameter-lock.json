@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "all_six_development_ledgers_locked": true,
+    "development_input_hashes_match": true,
+    "freeze_matches": true,
+    "frozen_runner_rechecks_parameter_hash_after_scores": true,
+    "frozen_runner_writes_lock_before_score_call": true,
+    "lock_hash_matches_final_receipt": true,
+    "lock_is_in_final_output_manifest": true,
+    "parameter_hash_matches_lock_and_receipt": true,
+    "run_completed": true,
+    "stage_is_pre_evaluation": true
+  },
+  "development_input_sha256": {
+    "df-development-evidence-unreleased.json": "b887679efce3f1b643b59ef1b2de17407aef5e03ec1277eb1ac2e9e5c18ceac7",
+    "df-development-features-unreleased.json": "45a511653d88683e476ba806a825d697f7c8a11f441ab633db29e5f766c1c7a0",
+    "point_at_df-development-evidence-unreleased.json": "b887679efce3f1b643b59ef1b2de17407aef5e03ec1277eb1ac2e9e5c18ceac7",
+    "point_at_df-development-features-unreleased.json": "d66d4d644e3d30702fbd344303cbce37610db68947e2d01db14801fc9ecf2ec2",
+    "point_original-development-evidence-unreleased.json": "1349dbc3b423c07dc1d49beab5187593f436486aaebf3fb1322b7a96c6569486",
+    "point_original-development-features-unreleased.json": "53ea08a42ca4bb3852881dccaacd3a35f9d5822099a44514d28f622873a23eb4"
+  },
+  "inspection_note": "The lock is written once before scoring and its final bytes match the receipt; the runner separately rechecks parameter bytes after scoring. No extra post-score lock rehash is required for these observations.",
+  "lock_sha256": "e9d20afefb2a99e05b6ee126ecf7e340cd722eed706d0754b9d6cdedc5607b2b",
+  "parameters_sha256": "8c8c53a2602309a2d29d509b6fae60e2f94b11a62c6e051531ae42a1d8ae0630",
+  "saved_utc": "2026-11-09T10:51:26.324877+00:00",
+  "scope": "local frozen execution source-order/hash verification; not an independent external timestamp, preregistration or filesystem immutability guarantee",
+  "status": "passed"
+}

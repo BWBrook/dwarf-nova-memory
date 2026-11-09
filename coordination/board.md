@@ -30,7 +30,7 @@ claims and handovers.
 | A10m | Semantic, novelty and rendered-draft review | Complete; drafts externally reviewed (A10n) | Codex | [A10m review](../docs/audits/2026-11-09-a10m-draft-review.md), D031; C41 supported as a bounded search |
 | A10n | Triage of the GPT-6 Pro external review; next research round | Agreed with amendments (D033); R1 complete (D034) | Claude | [A10n triage](../docs/audits/2026-11-09-a10n-external-review-triage.md), [review package](../docs/reviews/2026-11-09-gpt6pro/), D032; censor path bounded at +0.00024; null-simulation gains ≤ 0.0005 |
 | R1 | Censor audit, alternative observation scores, endpoint dose, example and simulation table | Complete (D034); C42–C46 supported by Claude review (D035) | Codex | [R1 audit](../docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md), [Claude review](../docs/audits/2026-11-09-claude-r1-review.md); point gain +0.0154; 434 missing clips traced to an X4 lower-clip bug |
-| R2 | Observation target, observed clocks, stronger baselines, sealed multi-star design | R2b amended (D039), preparing source freeze and exploratory execution | Codex R2b; Claude R2d review | [R2b v1](../docs/protocols/r2b-execution-v1.md); [pre-fit review](../docs/audits/2026-11-09-r2b-pre-execution-review.md) |
+| R2 | Observation target, observed clocks, timing baselines, sealed multi-star design | R2b complete (D039–D041); H1–H3 inconclusive; new claims await review | Claude R2b review / R2d design | [R2b v2](../docs/protocols/r2b-execution-v2.md); [results](../docs/audits/2026-11-09-r2b-exploratory-execution.md) |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -947,3 +947,31 @@ Claude, 9 November 2026 (D038). See the
 
 Next: Codex — amend and freeze r2b-execution-v1, regenerate DF features under
 the decisive-abort and harmonised-anchor rules, then fit and score R2b; no new archives.
+
+## R2b completed: positive estimates, inconclusive state-space contrasts
+
+Codex, 9 November 2026 (D039–D041). [Execution report](../docs/audits/2026-11-09-r2b-exploratory-execution.md),
+[v2 protocol](../docs/protocols/r2b-execution-v2.md), source freeze `5fb69c6`.
+The initial `939208e` gain-free preparation failure remains preserved; one exact
+coincident delayed issue now has the earliest original representative. DF and
+matched point therefore have 440 evaluation issues, 431 empirically scored.
+
+H1 is +0.007535 nats on 432 cases; H2 +0.004276 on 431; H3 -0.003076.
+Both six- and twelve-year 90% intervals cross zero for every headline. H2's
+conditional sample bounds are not confidence limits. No second confirmation,
+absent-effect or physical-memory claim follows.
+
+B2 converges consistently but has lower observed baseline means than B0/B1
+within each population: it is preselected, not empirically strongest. The
+positive observing-rate secondary is a sensitivity, not a validated negative
+control. The Fisher index is not an upper bound, and visit aggregation does not
+prove latent containment. Frozen H1–H3 and future data boundaries are preserved.
+
+Independent numerical reconstruction passes all fourteen models, 24,348
+scores, objectives, extrema and block summaries. All 516 tests pass. Current
+and historical anchors match scheduled observed anchors, with earlier-fallback
+qualifications retained. New claims C53–C60 stay provisional. No new archives,
+2018+ access, paper rewrite, contact or release occurred.
+
+Next: Claude — review R2b and baseline adequacy, then settle R2d's measurement,
+dependence and precision design before any G3a request or manuscript rewrite.

@@ -1037,6 +1037,35 @@ proposals, not a record of approvals the user has not given.
   unique issues. Re-freeze sources/tests and repeat the rehearsal and gain-free
   preparation before actual fitting. Preserve v1 and all original A10 results.
 
+### D041 — R2b complete: positive but inconclusive under preselected B2
+
+- Codex, 9 November 2026. Actual source freeze `5fb69c6`, protocol v2;
+  `docs/audits/2026-11-09-r2b-exploratory-execution.md` and aggregate evidence
+  `data/provenance/r2b_20261109/`. Local parameter SHA-256
+  `8c8c53a2602309a2d29d509b6fae60e2f94b11a62c6e051531ae42a1d8ae0630`.
+- H1: +0.007535 nats on 432/441 scored/scheduled issues; six-/twelve-year
+  90% intervals both cross zero. H2: +0.004276 on 431/440; six-year interval
+  [-0.000848,0.009401], twelve-year [-0.002109,0.010662]. H3 paired difference
+  -0.003076 also spans zero. All are exploratory, with no clear clock difference
+  and no replacement of the original working C01 confirmation.
+- Conditional H2 mixed sample bounds [0.000970,0.007753] are not confidence
+  limits or containment validation. The observing-rate secondary is positive
+  under both blockings (+0.003044), but is not a validated negative control.
+  DF-c is +0.004278; this cannot rule other observation pathways out.
+- All B2 starts converge with objective agreement and no parameter boundary.
+  It remains the preselected comparator. It has lower descriptive baseline
+  means than B0/B1 in all three populations; calling it empirically strongest
+  would be false. No favorable secondary or alternative model replaces H1–H3.
+- Independent direct covariance/scalar reconstruction verifies all fourteen
+  models, 24,348 scores, objectives, mixed extrema, H1–H3 and block summaries.
+  Local parameter lock and six development-input hashes agree. Original sources,
+  parameters, receipts, products and PDFs remain preserved; 516 tests pass.
+- Claims C53–C60 remain provisional for Claude. R2d must review measurement
+  assumptions, baseline adequacy and a dependence/precision stress envelope.
+  The planning effect is smaller and uncertain; no new N or power guarantee
+  is asserted. G2/G3 remain open. No new-star or 2018+ access, outside contact,
+  manuscript rewrite or first release occurred or is authorized by this result.
+
 ## New decision template
 
 ### D0xx — Short concrete title

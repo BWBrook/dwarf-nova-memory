@@ -1,0 +1,274 @@
+{
+  "failures": [],
+  "input_sha256": {
+    "data/provenance/r2b_20261109/comparisons.csv": "4b9091486b267ad16dc8d1710a02dcf285e824b86efaca46bed04c82cbaf2d4f",
+    "outputs/r2b_real_5fb69c6/df-B0.duration-scores-unreleased.json": "216ba0d58947a005c3f729f575015a39a3515a0193eec327ab47fb7da6c650d1",
+    "outputs/r2b_real_5fb69c6/df-B1.duration-scores-unreleased.json": "5e04d4468b57e938083f4459a986bd1c3155084c95aad7717d468a98a277c945",
+    "outputs/r2b_real_5fb69c6/df-B2.cadence-scores-unreleased.json": "04039a84c78e9129cc59e6962a4e09d9bcdffa671236b82c83a6af7077654512",
+    "outputs/r2b_real_5fb69c6/df-B2.duration-scores-unreleased.json": "b86f99f422eebff0dbef56ff212228d3a9e3db9cc4391abc7e03728c076b8bb9",
+    "outputs/r2b_real_5fb69c6/df-B2.flux-scores-unreleased.json": "adafc0e515b40dccda0edf8aeb9f0e3c7379c317205bd67d6bb2272699c44e48",
+    "outputs/r2b_real_5fb69c6/df-B2.rate-scores-unreleased.json": "1a45647c8535765696c630cd724923ba0caa6f8ab5920732b98ef9b7f5add24b",
+    "outputs/r2b_real_5fb69c6/point_at_df-B0.duration-scores-unreleased.json": "00813a097e0511317ffbef49dd9b5d58770890fad788862c61dd17d7e8a85d5a",
+    "outputs/r2b_real_5fb69c6/point_at_df-B1.duration-scores-unreleased.json": "8e087f6e71c0c0ce42b56a8ddde4e9fe6c23c824b35b5beb5fe1c6c9fafe42d7",
+    "outputs/r2b_real_5fb69c6/point_at_df-B2.duration-scores-unreleased.json": "93fee7df634ad47c1c234012cbb734bd806d05adec0b768fa8a572dee808daf2",
+    "outputs/r2b_real_5fb69c6/point_at_df-B2.flux-scores-unreleased.json": "b6baf73b1950e3f61a961c98471fb169b01a85f3e6e09b748badb6a83e08152a",
+    "outputs/r2b_real_5fb69c6/point_original-B0.duration-scores-unreleased.json": "3069c78d8819e896ed42b2f2976ce77dddbcfae7df266264a3523cbaa6fde907",
+    "outputs/r2b_real_5fb69c6/point_original-B1.duration-scores-unreleased.json": "5e47178c16a7d1a09d6ba561f8b82bcaea80c9b54424c4d37825e65e2765c82e",
+    "outputs/r2b_real_5fb69c6/point_original-B2.duration-scores-unreleased.json": "fdcebda45f4e664f7d3ff8927c5db3eb2e6f5cea8561af27b1a42dd345118fb0",
+    "outputs/r2b_real_5fb69c6/point_original-B2.flux-scores-unreleased.json": "3882694b1b943c0b11a46e6199e9088f6a1c505ba0441efc292f5ec7b6df1e9b"
+  },
+  "limits": [
+    "Observed mean ordering is not a statistical-dominance claim or a model-adequacy certificate.",
+    "B2 remains the preselected state-space comparator; this check does not replace any frozen headline test.",
+    "Across-clock mean scores use different timing/measurement populations and must not be ranked as though identical."
+  ],
+  "maximum_absolute_csv_error": 0.0,
+  "models_checked": 14,
+  "rows": [
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.679437040804414,
+      "clock": "df",
+      "gain": 0.008443885891430452,
+      "issued": 440,
+      "marked_mean": -3.670993154912984,
+      "model": "B0.duration",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.688352218800836,
+      "clock": "df",
+      "gain": 0.01104244958357112,
+      "issued": 440,
+      "marked_mean": -3.6773097692172656,
+      "model": "B1.duration",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6963521551653744,
+      "clock": "df",
+      "gain": 0.00427832189467883,
+      "issued": 440,
+      "marked_mean": -3.6920738332706953,
+      "model": "B2.cadence",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6962247273028623,
+      "clock": "df",
+      "gain": 0.004276497039279191,
+      "issued": 440,
+      "marked_mean": -3.691948230263583,
+      "model": "B2.duration",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6962247273028623,
+      "clock": "df",
+      "gain": 0.0017159933201127396,
+      "issued": 440,
+      "marked_mean": -3.6945087339827496,
+      "model": "B2.flux",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6962247273028623,
+      "clock": "df",
+      "gain": 0.0030435210846513003,
+      "issued": 440,
+      "marked_mean": -3.693181206218211,
+      "model": "B2.rate",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6858451736977984,
+      "clock": "point_at_df",
+      "gain": 0.018138337677301098,
+      "issued": 440,
+      "marked_mean": -3.6677068360204967,
+      "model": "B0.duration",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.680694550174198,
+      "clock": "point_at_df",
+      "gain": 0.02087670128842463,
+      "issued": 440,
+      "marked_mean": -3.6598178488857736,
+      "model": "B1.duration",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6922590766906853,
+      "clock": "point_at_df",
+      "gain": 0.007352745245714321,
+      "issued": 440,
+      "marked_mean": -3.6849063314449713,
+      "model": "B2.duration",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6922590766906853,
+      "clock": "point_at_df",
+      "gain": 0.005076460027936961,
+      "issued": 440,
+      "marked_mean": -3.6871826166627484,
+      "model": "B2.flux",
+      "passed": true,
+      "scored": 431
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6770738336360287,
+      "clock": "point_original",
+      "gain": 0.018431650847388736,
+      "issued": 441,
+      "marked_mean": -3.6586421827886397,
+      "model": "B0.duration",
+      "passed": true,
+      "scored": 432
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.671388479476663,
+      "clock": "point_original",
+      "gain": 0.021248998955671866,
+      "issued": 441,
+      "marked_mean": -3.650139480520991,
+      "model": "B1.duration",
+      "passed": true,
+      "scored": 432
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6834175883699114,
+      "clock": "point_original",
+      "gain": 0.007535373473602074,
+      "issued": 441,
+      "marked_mean": -3.6758822148963097,
+      "model": "B2.duration",
+      "passed": true,
+      "scored": 432
+    },
+    {
+      "absolute_csv_errors": {
+        "baseline_mean": 0.0,
+        "gain": 0.0,
+        "marked_mean": 0.0
+      },
+      "baseline_mean": -3.6834175883699114,
+      "clock": "point_original",
+      "gain": 0.004992578106144491,
+      "issued": 441,
+      "marked_mean": -3.6784250102637666,
+      "model": "B2.flux",
+      "passed": true,
+      "scored": 432
+    }
+  ],
+  "scope": "independent post-run descriptive aggregation from saved normal-policy score tables; no fits, model selection or new statistical test",
+  "status": "passed",
+  "tolerance": 1e-12,
+  "within_clock_baseline_rankings": [
+    {
+      "B2_has_lower_observed_baseline_mean_than_B0_and_B1": true,
+      "baseline_means": {
+        "B0.duration": -3.679437040804414,
+        "B1.duration": -3.688352218800836,
+        "B2.duration": -3.6962247273028623
+      },
+      "clock": "df",
+      "same_supported_issuances": true
+    },
+    {
+      "B2_has_lower_observed_baseline_mean_than_B0_and_B1": true,
+      "baseline_means": {
+        "B0.duration": -3.6858451736977984,
+        "B1.duration": -3.680694550174198,
+        "B2.duration": -3.6922590766906853
+      },
+      "clock": "point_at_df",
+      "same_supported_issuances": true
+    },
+    {
+      "B2_has_lower_observed_baseline_mean_than_B0_and_B1": true,
+      "baseline_means": {
+        "B0.duration": -3.6770738336360287,
+        "B1.duration": -3.671388479476663,
+        "B2.duration": -3.6834175883699114
+      },
+      "clock": "point_original",
+      "same_supported_issuances": true
+    }
+  ]
+}

@@ -550,3 +550,23 @@ file. The counts were gain-free:
 - No archive request, other-star observation, or SS Cyg 2018+ observation,
   count or coverage summary was requested or inspected.
 - Post-result exploration; it cannot become a confirmation.
+
+### Codex R2b execution, 9 November 2026
+
+D039–D041 use only retained, already opened SS Cyg visual observations strictly
+before JD2458119.5. Source freeze 939208e passes its synthetic rehearsal but
+actual gain-free preparation fails on an exact coincident delayed issue. D040's
+v2 convention is committed/pushed at 5fb69c6 before any actual model fit. The
+original comparison and all failed receipts are preserved.
+
+The actual run fits the 1910–1959 issues using outcomes reconstructed only from
+that prefix, locks parameter bytes and development-input hashes, then scores
+1960–2017. H1–H3, all predeclared secondary sensitivities and residual diagnostics
+are now examined. Descriptive absolute baseline means are aggregated after the
+run and independently recounted, without selecting a new model. All are
+post-result exploration, not a second confirmation. The independent numerical
+review reads saved feature/evidence/model/score files, not new archive exports.
+
+No archive request, new-star observation/count/coverage access, SS Cyg 2018+
+row/count/coverage read, outside contact or release occurred. Observation upload
+availability remains unknown; this is observation-time retrospective work.
