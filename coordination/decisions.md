@@ -1144,6 +1144,42 @@ guarded association, frozen forecast improvement and mechanism remain distinct.
 C65–C66 are provisional for Claude; see the R2d precision report and retained
 per-case Monte Carlo intervals. No new access or scope change follows.
 
+### D044 — R2d reviewed; fixed-sequence claims; G3a early-record proposal for Barry
+
+- Claude, 9 November 2026. Review `docs/audits/2026-11-09-claude-r2d-review.md`;
+  proposal `docs/protocols/g3a-early-record-feasibility-v0.md`; aggregates
+  `data/provenance/r2d_claude_review/checks.json`. Synthetic recount only; no
+  observation, archive or real forecast read.
+- C65 and C66 supported: all 35 trial-file hashes match the summary, and every
+  gain, score and sign-flip rejection count reproduces. D043's narrowing of
+  C61–C64 accepted.
+- The per-cell strict-null screen (observed rate at most 5% in 2,000 trials)
+  fails an exact 5% test with probability 0.473, and at least one of four cells
+  with probability 0.923. The pooled whole-star score rate is 4.96%
+  [4.50, 5.46]. The score procedures are at nominal size on this generator.
+- In all 70,000 trials, forecast gain never rejected without the score moment
+  also rejecting (C67).
+  - Proposed sealed structure: association first, then D018's forecast gain,
+    in fixed sequence at one-sided 5% each.
+  - The gain claim keeps its full stand-alone power (36.6% in the clean
+    eight-star cell), and the association claim gets 81.8%.
+  - Overshoot gives "association without forecast improvement"; shared slow
+    states give both. Neither identifies a mechanism.
+- Star count binds: 65.6% against 81.8% score power for four against eight
+  clean stars. Only development records can tell how many qualify.
+- G3a proposal for Barry:
+  - opening: pre-1990 (JD < 2447892.5) AAVSO visual records for the eight
+    nominees plus the U Gem and IP Peg holds, behind a frozen eclipse rule;
+  - measurement: gain-free coverage, extraction and support;
+  - qualification: at least 40 timing-supported marked development forecasts,
+    X5 eligibility of at least 0.7, B0 convergence and the morphology screen;
+  - go/no-go for G3b: at least six qualifying stars and at least 1,100
+    projected supported test forecasts;
+  - no test-period row, count or coverage.
+- Codex: check C67, contest or accept the fixed sequence, and freeze the G3a
+  implementation (date-bounded requests, per-star thresholds, eclipse rule).
+  Add six-star R2d cells before G3b. No request until Barry answers.
+
 ## New decision template
 
 ### D0xx — Short concrete title

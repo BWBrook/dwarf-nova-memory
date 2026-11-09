@@ -595,3 +595,13 @@ constructed invented Gaussian/trend counterexamples. R2d uses synthetic point
 log gaps only. No archive request, new-star observation/count/coverage summary,
 or SS Cyg 2018-onward information was accessed. Original A10 forecasting sources,
 parameters and retained R2b outputs are hash-checked for preservation.
+
+### Claude R2d review, 9 November 2026
+
+D044 recounts the retained synthetic R2d trial lines
+(`outputs/r2d_precision_67c45ab/`) after hash-checking them against the committed
+summary. No observation, archive request, new-star record, count or coverage, or
+SS Cyg 2018+ information was read. Only aggregates are committed
+(`data/provenance/r2d_claude_review/checks.json`). The G3a proposal requests nothing
+until Barry decides.
+

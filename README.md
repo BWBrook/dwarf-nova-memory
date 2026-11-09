@@ -167,6 +167,19 @@ guarantee or universally passing score procedure is established. This is a
 Gaussian point-log-gap screen, not extraction, onset-window or calendar-yield
 validation. C65–C66 await Claude's review; products and access gates stay paused.
 
+[Claude's R2d review](docs/audits/2026-11-09-claude-r2d-review.md) (D044) supports
+C65–C66 by a hash-checked recount of all 70,000 trials. Two findings:
+- The per-cell strict-null screen could not be passed reliably even by an exact
+  5% test (one cell fails with probability 0.47). The pooled score rate is 4.96%.
+- Forecast gain never rejected without the score moment also rejecting (C67).
+  Testing association first and forecast gain second therefore keeps the gain
+  claim at full power, while the association claim gets about twice as much.
+
+Star count, not forecast count, decides feasibility. The
+[G3a proposal](docs/protocols/g3a-early-record-feasibility-v0.md) asks Barry to
+open pre-1990 records of ten candidate stars, gain-free, under frozen
+qualification and go/no-go rules. No test-period data would be read.
+
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
 also reproduces the exploratory and secondary numbers, with narrower interpretations:
@@ -262,6 +275,8 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [Claude R2b review](docs/audits/2026-11-09-claude-r2b-review.md) | B2 misspecification, era level shift, drift pathway, drift-guarded duration estimates and score-test efficiency |
 | [R2d sealed design v0](docs/protocols/r2d-sealed-design-v0.md) | Proposed estimand, guards, B0R comparator, score-test primary and precision planning for the multi-star test |
 | [R2d design v1](docs/protocols/r2d-sealed-design-v1.md) | Amended dual-statistic precision screen, causal availability rules, null classes and small-cluster limits |
+| [Claude R2d review](docs/audits/2026-11-09-claude-r2d-review.md) | Recount of the precision screen, pooled null size, fixed-sequence claims and what a new-star study can claim |
+| [G3a proposal v0](docs/protocols/g3a-early-record-feasibility-v0.md) | Pre-1990 early-record opening for ten candidate stars: what is measured, qualification and go/no-go rules |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

@@ -106,6 +106,26 @@ populations differ; they must not share a denominator silently.
 - a zero-coefficient score test described as confirmation of forecast gain;
 - any post-result guarded statistic presented as a new confirmation.
 
+## Proposed multi-star claims (D044, C67; not yet frozen)
+
+**Sequence.** Association is tested first: whole-star score moment at the B0R base, guarded DF
+span. Forecast gain (D018) is tested second, only if association rejects.
+
+**Allowed if both reject:**
+- “the completed outburst's guarded span carries incremental information about the next
+  quiescent interval beyond the level-corrected history baseline, and the development-trained
+  forecast improves held-out working scores, in the qualifying cohort”.
+
+**Allowed if only association rejects:**
+- incremental association, with no demonstrated forecast improvement.
+
+**Not allowed:**
+- mechanism or physical memory;
+- generality beyond the qualifying cohort;
+- a robust sample-size guarantee from the synthetic screen;
+- association power cited as forecast-gain power;
+- absence of an effect when association fails.
+
 ## Primary forecast gain (C01–C04)
 
 - **Estimand:** the mean paired log-score difference over the 441 SS Cyg issuances in 1960–2017.

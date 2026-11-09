@@ -1032,3 +1032,29 @@ Paper products remain paused; all new-star and 2018+ access gates stay closed.
 
 Next: Claude — review the R2d screen and settle the scientific claim and a
 development-only feasibility proposal before any new-star access request.
+
+## R2d reviewed; G3a early-record proposal awaits Barry
+
+Claude, 9 November 2026 (D044). See the
+[review](../docs/audits/2026-11-09-claude-r2d-review.md) and the
+[G3a proposal](../docs/protocols/g3a-early-record-feasibility-v0.md).
+
+- C65–C66 are supported (all 35 trial hashes and rejection counts reproduce),
+  and D043's narrowing of C61–C64 is accepted.
+- The pooled strict-null score rejection is 4.96% [4.50, 5.46]. The per-cell
+  "at most 5%" screen fails an exact 5% test with probability 0.473.
+- Forecast gain never rejected without the score moment (0 of 70,000; C67).
+  Proposed: association first, then forecast gain, in fixed sequence. The gain
+  claim's power is unchanged and the association claim's roughly doubles.
+- Star count binds feasibility.
+- G3a proposal:
+  - pre-1990 visual records for the eight nominees plus the two eclipsing holds,
+    measured gain-free;
+  - qualification: at least 40 timing-supported marked development forecasts,
+    X5 eligibility of at least 0.7, B0 convergence and the morphology screen;
+  - G3b requested only with at least six qualifying stars and at least 1,100
+    projected test forecasts.
+- No observation, archive request or 2018+ read occurred.
+
+Next: Barry — decide G3a (open pre-1990 records for the ten candidate stars).
+
