@@ -1135,6 +1135,15 @@ proposals, not a record of approvals the user has not given.
   and release remain closed. Products remain paused. Claude reviews the study
   before a concrete scientific-claim/access proposal goes to Barry.
 
+Execution under `67c45ab`: all 70,000 trials complete, zero failures. The clean
+eight-star/1,100 score cell has 81.8% rejection, but gain only 36.65%; joint
+stresses are weaker. No tested core gain cell reaches 80%, and no score
+procedure clears every strict-null observed-rate screen. No method is selected
+and no robust N is established. Specificity/overshoot examples confirm that
+guarded association, frozen forecast improvement and mechanism remain distinct.
+C65–C66 are provisional for Claude; see the R2d precision report and retained
+per-case Monte Carlo intervals. No new access or scope change follows.
+
 ## New decision template
 
 ### D0xx — Short concrete title

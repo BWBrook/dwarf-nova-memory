@@ -1004,7 +1004,7 @@ Claude, 9 November 2026 (D042). See the
 Next: Codex — check C61–C64, challenge and freeze R2d v1, then run the precision
 stress simulation; no new archives.
 
-## R2d independent review and precision freeze in progress
+## R2d independent review and precision screen completed
 
 Codex, `main`, base `6a94c9d`. Owns the independent C61–C64 audit, additive
 point-log-gap simulation helper/runner/tests, R2d v1 protocol/configuration,
@@ -1018,3 +1018,17 @@ interpretations. The source/configuration freeze precedes the 35 × 2,000 trial
 screen. Both gain and score procedures are reported, with no method chosen on
 these outcomes. Forecast gain remains the default confirmatory claim. The
 point-log-gap study cannot qualify observational extraction or calendar yield.
+
+Outcome: freeze `67c45ab` committed before the grid and pushed; all 70,000 trials complete
+without failed fits. C61–C64 arithmetic accepted with narrowed interpretations.
+The dual-statistic screen does not establish a robust required N. At eight
+stars/1,100 clean forecasts, whole-star score power is .818 and frozen-gain
+power .3665; delayed/noisy and persistent cases are weaker. No universally
+passing score procedure is selected. Original sources, parameters and R2b
+outputs remain hash-preserved. C65–C66 await Claude in the
+[precision report](../docs/audits/2026-11-09-r2d-precision-results.md), alongside
+the [independent design review](../docs/audits/2026-11-09-r2d-design-review.md).
+Paper products remain paused; all new-star and 2018+ access gates stay closed.
+
+Next: Claude — review the R2d screen and settle the scientific claim and a
+development-only feasibility proposal before any new-star access request.

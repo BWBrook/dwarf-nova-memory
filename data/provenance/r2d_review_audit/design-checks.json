@@ -1,0 +1,148 @@
+{
+  "exact_sign_flip_granularity": [
+    {
+      "can_reject_at_five_percent": false,
+      "independent_symmetric_stars": 3,
+      "one_sided_minimum_p": 0.125
+    },
+    {
+      "can_reject_at_five_percent": false,
+      "independent_symmetric_stars": 4,
+      "one_sided_minimum_p": 0.0625
+    },
+    {
+      "can_reject_at_five_percent": true,
+      "independent_symmetric_stars": 5,
+      "one_sided_minimum_p": 0.03125
+    },
+    {
+      "can_reject_at_five_percent": true,
+      "independent_symmetric_stars": 6,
+      "one_sided_minimum_p": 0.015625
+    },
+    {
+      "can_reject_at_five_percent": true,
+      "independent_symmetric_stars": 7,
+      "one_sided_minimum_p": 0.0078125
+    },
+    {
+      "can_reject_at_five_percent": true,
+      "independent_symmetric_stars": 8,
+      "one_sided_minimum_p": 0.00390625
+    }
+  ],
+  "guard_induced_dependence": {
+    "assumption": "Independent iid centered mark and residual streams before the rolling operations; unit variances; instantaneous outcome availability",
+    "instantaneous_score_variance": 1.1550000000000002,
+    "lags": [
+      {
+        "lag": 1,
+        "mark_covariance": -0.009999999999999988,
+        "recalibrated_error_covariance": -0.0024999999999999935,
+        "score_covariance": 2.4999999999999906e-05
+      },
+      {
+        "lag": 2,
+        "mark_covariance": -0.01999999999999999,
+        "recalibrated_error_covariance": -0.004999999999999994,
+        "score_covariance": 9.999999999999983e-05
+      },
+      {
+        "lag": 3,
+        "mark_covariance": -0.029999999999999992,
+        "recalibrated_error_covariance": -0.0074999999999999945,
+        "score_covariance": 0.00022499999999999978
+      },
+      {
+        "lag": 4,
+        "mark_covariance": -0.039999999999999994,
+        "recalibrated_error_covariance": -0.009999999999999995,
+        "score_covariance": 0.00039999999999999975
+      },
+      {
+        "lag": 5,
+        "mark_covariance": -0.049999999999999996,
+        "recalibrated_error_covariance": -0.012499999999999995,
+        "score_covariance": 0.0006249999999999997
+      },
+      {
+        "lag": 6,
+        "mark_covariance": -0.06,
+        "recalibrated_error_covariance": -0.014999999999999996,
+        "score_covariance": 0.0008999999999999998
+      },
+      {
+        "lag": 7,
+        "mark_covariance": -0.07,
+        "recalibrated_error_covariance": -0.017499999999999995,
+        "score_covariance": 0.0012249999999999997
+      },
+      {
+        "lag": 8,
+        "mark_covariance": -0.08,
+        "recalibrated_error_covariance": -0.019999999999999997,
+        "score_covariance": 0.0015999999999999999
+      },
+      {
+        "lag": 9,
+        "mark_covariance": -0.09,
+        "recalibrated_error_covariance": -0.0225,
+        "score_covariance": 0.002025
+      },
+      {
+        "lag": 10,
+        "mark_covariance": -0.1,
+        "recalibrated_error_covariance": -0.024999999999999998,
+        "score_covariance": 0.0025
+      }
+    ],
+    "long_run_score_variance": 1.1742500000000002,
+    "meaning": "Rolling guards induce score dependence even without raw serial dependence",
+    "variance_ratio": 1.0166666666666666
+  },
+  "heterogeneous_signs": {
+    "mean_individual_oracle_kl": 0.007938,
+    "meaning": "Mean individual oracle KL is not pooled one-sided information",
+    "pooled_optimal_coefficient": 0,
+    "pooled_optimal_gain": 0,
+    "pooled_score_mean": 0.0,
+    "star_coefficients": [
+      0.126,
+      -0.126
+    ]
+  },
+  "positive_score_negative_frozen_gain": {
+    "conditional_expected_gain": -0.010000000000000002,
+    "development_fitted_coefficient": 0.2,
+    "known_variance_score_noncentrality_at_n": 3.5355339059327378,
+    "meaning": "A positive score direction need not improve the fixed development-trained candidate",
+    "n": 5000,
+    "score_expectation": 0.05,
+    "true_coefficient": 0.05
+  },
+  "rolling_guards_leave_shared_trend": {
+    "analytic_score_expectation": 0.011550000000000001,
+    "centered_mark": 0.1100000000000001,
+    "conditional_expected_gain": 0.001094500000000002,
+    "fitted_candidate_coefficient": 0.1,
+    "mark_slope": 0.02,
+    "meaning": "Shared trend is predictive over the lagging base: specificity stress, not a strict predictive-null false positive",
+    "no_direct_mark_effect": true,
+    "outcome_level_slope": 0.01,
+    "previous_marks": 10,
+    "previous_resolved_outcomes": 20,
+    "residual_mean": 0.1050000000000001,
+    "score_expectation": 0.01155000000000002
+  },
+  "scope": "Invented Gaussian location and deterministic trend arithmetic only; no astronomy data, real fits or scored forecasts",
+  "source_sha256": {
+    "data/provenance/r2d_precision/design.json": "92980a28f8adb9656652291e51046dd863022ff750f1aeabc358663cdab299df",
+    "docs/audits/2026-11-09-claude-r2b-review.md": "243c965adedba3d202da8dcd6de39639b7b025ac23e57dc22eb8a7725fdabbbe",
+    "docs/protocols/r2d-sealed-design-v0.md": "04fcf4ccbab5463880b27e66b63323279cdc0c136d415b67bff3a5522d6610ac",
+    "docs/protocols/r2d-sealed-design-v1.md": "67fbb35376f8cc2e6a93a97dba2baac7f24de1f8e5cc26640e9a7156c93ace16",
+    "scripts/r2b_claude_review_checks.py": "c0c66e7f2ccb08f8b4dbca59805b573cb3f8387672d4f57c0be3845876b12076",
+    "scripts/r2d_design_checks.py": "71e9592289c3e61db07cfe7495ade18978a445c6ebe76ae73d04ace5c719e705",
+    "scripts/r2d_precision.py": "aad052094357eef0b338d25610e0a3787398d7eadecb2e320e56b130d32dcd43",
+    "src/dnmem/r2d_simulation.py": "ff170250d0b02b7b6b0478ec8e57e4a03a6c0267968a300a84c5f0bf8cbe8ced"
+  }
+}

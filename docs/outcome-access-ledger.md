@@ -584,3 +584,14 @@ scored by D041.
 - No archive request was made. No other-star observation, count or coverage was
   touched, and no SS Cyg 2018+ row, count or coverage summary.
 
+
+### Codex, 9 November 2026 — R2d review and synthetic precision screen
+
+Read Claude's R2b review, saved through-2017 R2b feature/evidence/forecast outputs
+and aggregate diagnostics to independently check C61–C64. These are already
+opened exploratory records. The numerical audit creates no new real-data fit
+or second confirmation. Reviewed primary statistical-method manuscripts and
+constructed invented Gaussian/trend counterexamples. R2d uses synthetic point
+log gaps only. No archive request, new-star observation/count/coverage summary,
+or SS Cyg 2018-onward information was accessed. Original A10 forecasting sources,
+parameters and retained R2b outputs are hash-checked for preservation.

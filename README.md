@@ -159,6 +159,14 @@ the default confirmatory claim. A positive score moment tests a different
 conditional association and can coexist with a losing frozen forecast rule.
 Rolling corrections do not exclude slow co-variation. No new-star access follows.
 
+The [R2d screen](docs/audits/2026-11-09-r2d-precision-results.md), frozen at
+`67c45ab`, completed 70,000 synthetic trials without failed fits. In the clean
+eight-star/1,100-forecast case, whole-star score-moment rejection is 81.8%, versus
+36.7% for frozen forecast gain; stressed cases are weaker. No robust sample-size
+guarantee or universally passing score procedure is established. This is a
+Gaussian point-log-gap screen, not extraction, onset-window or calendar-yield
+validation. C65–C66 await Claude's review; products and access gates stay paused.
+
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
 also reproduces the exploratory and secondary numbers, with narrower interpretations:

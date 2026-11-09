@@ -1,0 +1,3704 @@
+{
+  "cases": [
+    {
+      "attempted": 2000,
+      "case": "core-s4-n600-null",
+      "completed": 2000,
+      "elapsed_seconds": 6.999244167003781,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 1035,
+      "mean_beta": 0.00665148466218217,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0006883961715733804,
+      "mean_predictable_score": 0.000642602126436772,
+      "mean_supported_marks": 600.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.959,
+          "coverage_mc95": [
+            0.9493615966019678,
+            0.9672610858901137
+          ],
+          "covered": 1918,
+          "exact_mc95": [
+            0.008509130391574372,
+            0.01899034933822423
+          ],
+          "mean_estimate": -0.0006663316742515383,
+          "nonidentity_count": 965,
+          "nonidentity_coverage": 0.9150259067357513,
+          "nonidentity_coverage_mc95": [
+            0.895621454920588,
+            0.9318491216354031
+          ],
+          "nonidentity_covered": 883,
+          "rate": 0.013,
+          "reject_with_negative_predictable_gain": 20,
+          "rejections": 26
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.036789278098817525,
+            0.055572191006579195
+          ],
+          "mean_estimate": 0.0041211096122527975,
+          "rate": 0.0455,
+          "reject_with_negative_predictable_gain": 42,
+          "rejections": 91
+        },
+        "star-gain": {
+          "coverage": 0.9565,
+          "coverage_mc95": [
+            0.9466174011066275,
+            0.9650141371532315
+          ],
+          "covered": 1913,
+          "exact_mc95": [
+            0.008105230838877514,
+            0.018397493413938003
+          ],
+          "mean_estimate": -0.0006663316742515383,
+          "nonidentity_count": 965,
+          "nonidentity_coverage": 0.9098445595854923,
+          "nonidentity_coverage_mc95": [
+            0.8899822932633384,
+            0.9271602503189192
+          ],
+          "nonidentity_covered": 878,
+          "rate": 0.0125,
+          "reject_with_negative_predictable_gain": 21,
+          "rejections": 25
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.03995675692495895,
+            0.059392645124689315
+          ],
+          "mean_estimate": 0.0041211096122527975,
+          "rate": 0.049,
+          "reject_with_negative_predictable_gain": 46,
+          "rejections": 98
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 400,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s4-n600-null",
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "stars": 4,
+        "test_forecasts": 600
+      },
+      "trials_sha256": "1ae7587fa66ac45d5251e192a120163216da0ae24c97ba34065ca72f78c9edc0"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s4-n600-effect",
+      "completed": 2000,
+      "elapsed_seconds": 7.011203667032532,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 74,
+      "mean_beta": 0.029214693252644728,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.0028135206080973267,
+      "mean_predictable_score": 0.2808630330639727,
+      "mean_supported_marks": 600.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9305,
+          "coverage_mc95": [
+            0.9184608304626697,
+            0.9412574977666883
+          ],
+          "covered": 1861,
+          "exact_mc95": [
+            0.2253132597059628,
+            0.26344010289522696
+          ],
+          "mean_estimate": 0.002977256373041581,
+          "nonidentity_count": 1926,
+          "nonidentity_coverage": 0.9278296988577363,
+          "nonidentity_coverage_mc95": [
+            0.9153490934912772,
+            0.9389876271144502
+          ],
+          "nonidentity_covered": 1787,
+          "rate": 0.244,
+          "reject_with_negative_predictable_gain": 3,
+          "rejections": 488
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.5645535482130748,
+            0.6081924531156468
+          ],
+          "mean_estimate": 0.287645540366799,
+          "rate": 0.5865,
+          "reject_with_negative_predictable_gain": 57,
+          "rejections": 1173
+        },
+        "star-gain": {
+          "coverage": 0.9265,
+          "coverage_mc95": [
+            0.9141762916669246,
+            0.9375548553439291
+          ],
+          "covered": 1853,
+          "exact_mc95": [
+            0.18315216388390254,
+            0.21873030357429507
+          ],
+          "mean_estimate": 0.002977256373041581,
+          "nonidentity_count": 1926,
+          "nonidentity_coverage": 0.9236760124610592,
+          "nonidentity_coverage_mc95": [
+            0.9109016729177898,
+            0.9351414532888332
+          ],
+          "nonidentity_covered": 1779,
+          "rate": 0.2005,
+          "reject_with_negative_predictable_gain": 3,
+          "rejections": 401
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.44494671432193444,
+            0.4891501681989528
+          ],
+          "mean_estimate": 0.287645540366799,
+          "rate": 0.467,
+          "reject_with_negative_predictable_gain": 46,
+          "rejections": 934
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 104,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s4-n600-effect",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 4,
+        "test_forecasts": 600
+      },
+      "trials_sha256": "21c68d5a2923ac38eed1e2e40607127629ebc5bec33962b572b15bf1d52c228b"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s4-n1100-null",
+      "completed": 2000,
+      "elapsed_seconds": 9.656438833917491,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 1009,
+      "mean_beta": 0.006954854202122098,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0007200514830718077,
+      "mean_predictable_score": 0.0006846583479285553,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.955,
+          "coverage_mc95": [
+            0.9449747471525491,
+            0.9636620426887382
+          ],
+          "covered": 1910,
+          "exact_mc95": [
+            0.0027486818146324923,
+            0.009819662989899393
+          ],
+          "mean_estimate": -0.000771001317817256,
+          "nonidentity_count": 991,
+          "nonidentity_coverage": 0.9091826437941474,
+          "nonidentity_coverage_mc95": [
+            0.8895500728932291,
+            0.9263407974216719
+          ],
+          "nonidentity_covered": 901,
+          "rate": 0.0055,
+          "reject_with_negative_predictable_gain": 7,
+          "rejections": 11
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.04268243979733735,
+            0.0626567679337087
+          ],
+          "mean_estimate": -0.0014827994675274871,
+          "rate": 0.052,
+          "reject_with_negative_predictable_gain": 40,
+          "rejections": 104
+        },
+        "star-gain": {
+          "coverage": 0.956,
+          "coverage_mc95": [
+            0.9460695383023412,
+            0.964563755353241
+          ],
+          "covered": 1912,
+          "exact_mc95": [
+            0.002059688528490357,
+            0.00852514124099515
+          ],
+          "mean_estimate": -0.000771001317817256,
+          "nonidentity_count": 991,
+          "nonidentity_coverage": 0.9112008072653885,
+          "nonidentity_coverage_mc95": [
+            0.8917412736349277,
+            0.9281728395439088
+          ],
+          "nonidentity_covered": 903,
+          "rate": 0.0045,
+          "reject_with_negative_predictable_gain": 7,
+          "rejections": 9
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.03363667911309395,
+            0.05173707971848955
+          ],
+          "mean_estimate": -0.0014827994675274871,
+          "rate": 0.042,
+          "reject_with_negative_predictable_gain": 32,
+          "rejections": 84
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 441,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s4-n1100-null",
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "47d0942a0bb395acc4260d972c6cb13c0e6d51cd57cb3184083d59e7b4e2b2e1"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s4-n1100-effect",
+      "completed": 2000,
+      "elapsed_seconds": 9.672848958987743,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 89,
+      "mean_beta": 0.028622475046586694,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.0028126942844448077,
+      "mean_predictable_score": 0.2812429038558332,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.914,
+          "coverage_mc95": [
+            0.9008471831843247,
+            0.925923492941314
+          ],
+          "covered": 1828,
+          "exact_mc95": [
+            0.30989548792467997,
+            0.3516025805801125
+          ],
+          "mean_estimate": 0.002634161006404319,
+          "nonidentity_count": 1911,
+          "nonidentity_coverage": 0.9099947671376243,
+          "nonidentity_coverage_mc95": [
+            0.896264324408504,
+            0.9224510511936507
+          ],
+          "nonidentity_covered": 1739,
+          "rate": 0.3305,
+          "reject_with_negative_predictable_gain": 5,
+          "rejections": 661
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.7699360510164843,
+            0.8062141964200198
+          ],
+          "mean_estimate": 0.27581501797021823,
+          "rate": 0.7885,
+          "reject_with_negative_predictable_gain": 69,
+          "rejections": 1577
+        },
+        "star-gain": {
+          "coverage": 0.914,
+          "coverage_mc95": [
+            0.9008471831843247,
+            0.925923492941314
+          ],
+          "covered": 1828,
+          "exact_mc95": [
+            0.26138346189129774,
+            0.3012605273476293
+          ],
+          "mean_estimate": 0.002634161006404319,
+          "nonidentity_count": 1911,
+          "nonidentity_coverage": 0.9099947671376243,
+          "nonidentity_coverage_mc95": [
+            0.896264324408504,
+            0.9224510511936507
+          ],
+          "nonidentity_covered": 1739,
+          "rate": 0.281,
+          "reject_with_negative_predictable_gain": 2,
+          "rejections": 562
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.6347138542362629,
+            0.6768278164574899
+          ],
+          "mean_estimate": 0.27581501797021823,
+          "rate": 0.656,
+          "reject_with_negative_predictable_gain": 63,
+          "rejections": 1312
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 94,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s4-n1100-effect",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "86b6e55727155210d703524f54161e6b921a595eaa0bf2e2f29bc72ec9edf14c"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s4-n2000-null",
+      "completed": 2000,
+      "elapsed_seconds": 14.354044584091753,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 1004,
+      "mean_beta": 0.006805147878843928,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0007049688094243984,
+      "mean_predictable_score": -7.984453788787952e-05,
+      "mean_supported_marks": 2000.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.959,
+          "coverage_mc95": [
+            0.9493615966019678,
+            0.9672610858901137
+          ],
+          "covered": 1918,
+          "exact_mc95": [
+            0.004203591756889189,
+            0.01233998373578594
+          ],
+          "mean_estimate": -0.0007062264571227468,
+          "nonidentity_count": 996,
+          "nonidentity_coverage": 0.9176706827309237,
+          "nonidentity_coverage_mc95": [
+            0.8988366373817013,
+            0.9339879078766813
+          ],
+          "nonidentity_covered": 914,
+          "rate": 0.0075,
+          "reject_with_negative_predictable_gain": 12,
+          "rejections": 15
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.03905033705557691,
+            0.05830249234114568
+          ],
+          "mean_estimate": -0.0004817620466982049,
+          "rate": 0.048,
+          "reject_with_negative_predictable_gain": 39,
+          "rejections": 96
+        },
+        "star-gain": {
+          "coverage": 0.9595,
+          "coverage_mc95": [
+            0.9499114510499942,
+            0.9677094434267993
+          ],
+          "covered": 1919,
+          "exact_mc95": [
+            0.0031040162823773266,
+            0.010457313821794881
+          ],
+          "mean_estimate": -0.0007062264571227468,
+          "nonidentity_count": 996,
+          "nonidentity_coverage": 0.9186746987951807,
+          "nonidentity_coverage_mc95": [
+            0.899932118152294,
+            0.934893898423589
+          ],
+          "nonidentity_covered": 915,
+          "rate": 0.006,
+          "reject_with_negative_predictable_gain": 10,
+          "rejections": 12
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.037240902034368986,
+            0.05611883054343632
+          ],
+          "mean_estimate": -0.0004817620466982049,
+          "rate": 0.046,
+          "reject_with_negative_predictable_gain": 34,
+          "rejections": 92
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 440,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s4-n2000-null",
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "stars": 4,
+        "test_forecasts": 2000
+      },
+      "trials_sha256": "2211a7714e2d8f6a8ed6826c2d46fbd9117658476f95c8d0683a001afa44eff5"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s4-n2000-effect",
+      "completed": 2000,
+      "elapsed_seconds": 14.355876291985624,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 106,
+      "mean_beta": 0.028452228453823118,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.002734490005731355,
+      "mean_predictable_score": 0.2805697867954174,
+      "mean_supported_marks": 2000.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.924,
+          "coverage_mc95": [
+            0.9115034721790083,
+            0.9352356403573597
+          ],
+          "covered": 1848,
+          "exact_mc95": [
+            0.46188524862130315,
+            0.5061617235660198
+          ],
+          "mean_estimate": 0.0028103031581234042,
+          "nonidentity_count": 1894,
+          "nonidentity_coverage": 0.9197465681098205,
+          "nonidentity_coverage_mc95": [
+            0.906586179145531,
+            0.9315888300533729
+          ],
+          "nonidentity_covered": 1742,
+          "rate": 0.484,
+          "reject_with_negative_predictable_gain": 4,
+          "rejections": 968
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.9570941151169238,
+            0.9735029103434364
+          ],
+          "mean_estimate": 0.2820501277144883,
+          "rate": 0.966,
+          "reject_with_negative_predictable_gain": 88,
+          "rejections": 1932
+        },
+        "star-gain": {
+          "coverage": 0.9345,
+          "coverage_mc95": [
+            0.9227559446019328,
+            0.9449494620964668
+          ],
+          "covered": 1869,
+          "exact_mc95": [
+            0.3754711928208039,
+            0.4188312858628544
+          ],
+          "mean_estimate": 0.0028103031581234042,
+          "nonidentity_count": 1894,
+          "nonidentity_coverage": 0.9308342133051742,
+          "nonidentity_coverage_mc95": [
+            0.9184616874927127,
+            0.9418512035846828
+          ],
+          "nonidentity_covered": 1763,
+          "rate": 0.397,
+          "reject_with_negative_predictable_gain": 4,
+          "rejections": 794
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.8487154762200193,
+            0.8792072144443842
+          ],
+          "mean_estimate": 0.2820501277144883,
+          "rate": 0.8645,
+          "reject_with_negative_predictable_gain": 83,
+          "rejections": 1729
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 92,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s4-n2000-effect",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 4,
+        "test_forecasts": 2000
+      },
+      "trials_sha256": "963ea9a712be8487d4bd74070371ce4523e4c13c3252a5b1493c3df1b88384a3"
+    },
+    {
+      "attempted": 2000,
+      "case": "oracle-s4-clean",
+      "completed": 2000,
+      "elapsed_seconds": 9.729050583089702,
+      "failures": 0,
+      "family": "strict_predictive_null",
+      "identity_count": 971,
+      "mean_beta": 0.007092603904235813,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0007158883383391821,
+      "mean_predictable_score": 0.0,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9425,
+          "coverage_mc95": [
+            0.9313816645287246,
+            0.9522975226197493
+          ],
+          "covered": 1885,
+          "exact_mc95": [
+            0.006906122788328853,
+            0.01660701640128506
+          ],
+          "mean_estimate": -0.0007005888137133428,
+          "nonidentity_count": 1029,
+          "nonidentity_coverage": 0.8882410106899903,
+          "nonidentity_coverage_mc95": [
+            0.86738352715778,
+            0.9068455671185208
+          ],
+          "nonidentity_covered": 914,
+          "rate": 0.011,
+          "reject_with_negative_predictable_gain": 22,
+          "rejections": 22
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.03814504066418042,
+            0.05721123196146305
+          ],
+          "mean_estimate": -0.0013320947949115305,
+          "rate": 0.047,
+          "reject_with_negative_predictable_gain": 52,
+          "rejections": 94
+        },
+        "star-gain": {
+          "coverage": 0.951,
+          "coverage_mc95": [
+            0.9406073548753107,
+            0.9600432430750411
+          ],
+          "covered": 1902,
+          "exact_mc95": [
+            0.004579404661398551,
+            0.01295906858847171
+          ],
+          "mean_estimate": -0.0007005888137133428,
+          "nonidentity_count": 1029,
+          "nonidentity_coverage": 0.9047619047619048,
+          "nonidentity_coverage_mc95": [
+            0.8851644311745556,
+            0.9220051857890276
+          ],
+          "nonidentity_covered": 931,
+          "rate": 0.008,
+          "reject_with_negative_predictable_gain": 16,
+          "rejections": 16
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.03769282441526967,
+            0.0566651760410299
+          ],
+          "mean_estimate": -0.0013320947949115305,
+          "rate": 0.0465,
+          "reject_with_negative_predictable_gain": 49,
+          "rejections": 93
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 0,
+      "settings": {
+        "development_per_star": 100,
+        "family": "strict_predictive_null",
+        "id": "oracle-s4-clean",
+        "nominal_oracle_gain": 0.0,
+        "null_class": "strict_oracle_predictive_null",
+        "oracle_base": true,
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "7d033ddf4c2eebd6918784a3906047f2c3a9413f6092738452f3737610e3403d"
+    },
+    {
+      "attempted": 2000,
+      "case": "oracle-s4-persistent",
+      "completed": 2000,
+      "elapsed_seconds": 10.27311212499626,
+      "failures": 0,
+      "family": "strict_predictive_null",
+      "identity_count": 1019,
+      "mean_beta": 0.005867598832285964,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0006292529916667532,
+      "mean_predictable_score": 0.0,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9445,
+          "coverage_mc95": [
+            0.9335463044686696,
+            0.954126233506067
+          ],
+          "covered": 1889,
+          "exact_mc95": [
+            0.008509130391574372,
+            0.01899034933822423
+          ],
+          "mean_estimate": -0.0006760886701631312,
+          "nonidentity_count": 981,
+          "nonidentity_coverage": 0.8868501529051988,
+          "nonidentity_coverage_mc95": [
+            0.8653461250829135,
+            0.9059982683576648
+          ],
+          "nonidentity_covered": 870,
+          "rate": 0.013,
+          "reject_with_negative_predictable_gain": 26,
+          "rejections": 26
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.038597546324427,
+            0.057757002650370204
+          ],
+          "mean_estimate": -0.0019897370563483575,
+          "rate": 0.0475,
+          "reject_with_negative_predictable_gain": 54,
+          "rejections": 95
+        },
+        "star-gain": {
+          "coverage": 0.9455,
+          "coverage_mc95": [
+            0.9346299677387182,
+            0.955039229200515
+          ],
+          "covered": 1891,
+          "exact_mc95": [
+            0.004203591756889189,
+            0.01233998373578594
+          ],
+          "mean_estimate": -0.0006760886701631312,
+          "nonidentity_count": 981,
+          "nonidentity_coverage": 0.8888888888888888,
+          "nonidentity_coverage_mc95": [
+            0.8675346258256518,
+            0.9078742210048323
+          ],
+          "nonidentity_covered": 872,
+          "rate": 0.0075,
+          "reject_with_negative_predictable_gain": 15,
+          "rejections": 15
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.03905033705557691,
+            0.05830249234114568
+          ],
+          "mean_estimate": -0.0019897370563483575,
+          "rate": 0.048,
+          "reject_with_negative_predictable_gain": 54,
+          "rejections": 96
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 0,
+      "settings": {
+        "block_ar": 0.8,
+        "development_per_star": 100,
+        "family": "strict_predictive_null",
+        "id": "oracle-s4-persistent",
+        "mark_icc": 0.35,
+        "nominal_oracle_gain": 0.0,
+        "null_class": "strict_oracle_predictive_null",
+        "oracle_base": true,
+        "residual_ar": 0.3,
+        "residual_icc": 0.15,
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "9f5a5676dde974577e2ab08326bd04b628c7b225724c99b852d3f47477cee128"
+    },
+    {
+      "attempted": 2000,
+      "case": "persistent-s4-null",
+      "completed": 2000,
+      "elapsed_seconds": 9.243484375067055,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 1016,
+      "mean_beta": 0.009208730227710842,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0014812641467245155,
+      "mean_predictable_score": -0.0001298420871705881,
+      "mean_supported_marks": 880.2945,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9615,
+          "coverage_mc95": [
+            0.9521144551731808,
+            0.9694992251394936
+          ],
+          "covered": 1923,
+          "exact_mc95": [
+            0.0038320939003739125,
+            0.01171694577053208
+          ],
+          "mean_estimate": -0.0015005301673447493,
+          "nonidentity_count": 984,
+          "nonidentity_coverage": 0.9217479674796748,
+          "nonidentity_coverage_mc95": [
+            0.9031667323468098,
+            0.9377541103610656
+          ],
+          "nonidentity_covered": 907,
+          "rate": 0.007,
+          "reject_with_negative_predictable_gain": 7,
+          "rejections": 14
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.03498586284676857,
+            0.05338259889337251
+          ],
+          "mean_estimate": -0.001312664986807392,
+          "rate": 0.0435,
+          "reject_with_negative_predictable_gain": 36,
+          "rejections": 87
+        },
+        "star-gain": {
+          "coverage": 0.9595,
+          "coverage_mc95": [
+            0.9499114510499942,
+            0.9677094434267993
+          ],
+          "covered": 1919,
+          "exact_mc95": [
+            0.004203591756889189,
+            0.01233998373578594
+          ],
+          "mean_estimate": -0.0015005301673447493,
+          "nonidentity_count": 984,
+          "nonidentity_coverage": 0.9176829268292683,
+          "nonidentity_coverage_mc95": [
+            0.8987244492018328,
+            0.9340932959333326
+          ],
+          "nonidentity_covered": 903,
+          "rate": 0.0075,
+          "reject_with_negative_predictable_gain": 10,
+          "rejections": 15
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.04541715292148976,
+            0.06591197819998712
+          ],
+          "mean_estimate": -0.001312664986807392,
+          "rate": 0.055,
+          "reject_with_negative_predictable_gain": 45,
+          "rejections": 110
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 434,
+      "settings": {
+        "block_ar": 0.8,
+        "development_per_star": 50,
+        "family": "joint_stress",
+        "id": "persistent-s4-null",
+        "mark_icc": 0.35,
+        "missing_mark_fraction": 0.2,
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "residual_ar": 0.3,
+        "residual_icc": 0.15,
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "74460a9bdba4ca5317a5e7455566d9b4f21fac8483a734fee4387b039c39d547"
+    },
+    {
+      "attempted": 2000,
+      "case": "persistent-s4-effect",
+      "completed": 2000,
+      "elapsed_seconds": 9.239698624936864,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 345,
+      "mean_beta": 0.025663712527422413,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.0006381122481776382,
+      "mean_predictable_score": 0.2566858287628013,
+      "mean_supported_marks": 879.6445,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9405,
+          "coverage_mc95": [
+            0.9292204627311629,
+            0.9504653327666379
+          ],
+          "covered": 1881,
+          "exact_mc95": [
+            0.17013016636242667,
+            0.2047925297552829
+          ],
+          "mean_estimate": 0.0005576923817733143,
+          "nonidentity_count": 1655,
+          "nonidentity_coverage": 0.9280966767371601,
+          "nonidentity_coverage_mc95": [
+            0.9145733296320185,
+            0.9400765025954178
+          ],
+          "nonidentity_covered": 1536,
+          "rate": 0.187,
+          "reject_with_negative_predictable_gain": 3,
+          "rejections": 374
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.6028570299482895,
+            0.6457772956128964
+          ],
+          "mean_estimate": 0.25269642863509434,
+          "rate": 0.6245,
+          "reject_with_negative_predictable_gain": 202,
+          "rejections": 1249
+        },
+        "star-gain": {
+          "coverage": 0.928,
+          "coverage_mc95": [
+            0.9157818065813662,
+            0.9389445445343899
+          ],
+          "covered": 1856,
+          "exact_mc95": [
+            0.14562754296090263,
+            0.17837143651021833
+          ],
+          "mean_estimate": 0.0005576923817733143,
+          "nonidentity_count": 1655,
+          "nonidentity_coverage": 0.9129909365558913,
+          "nonidentity_coverage_mc95": [
+            0.8983663214193095,
+            0.92613026036456
+          ],
+          "nonidentity_covered": 1511,
+          "rate": 0.1615,
+          "reject_with_negative_predictable_gain": 4,
+          "rejections": 323
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.4743562279810347,
+            0.5186540471111765
+          ],
+          "mean_estimate": 0.25269642863509434,
+          "rate": 0.4965,
+          "reject_with_negative_predictable_gain": 163,
+          "rejections": 993
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 357,
+      "settings": {
+        "block_ar": 0.8,
+        "development_per_star": 50,
+        "family": "joint_stress",
+        "id": "persistent-s4-effect",
+        "mark_icc": 0.35,
+        "missing_mark_fraction": 0.2,
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "residual_ar": 0.3,
+        "residual_icc": 0.15,
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "6604429e77ede1e6017d9e2365af1e052ae2b079412224f545d3f26d63e220e0"
+    },
+    {
+      "attempted": 2000,
+      "case": "imbalanced-s4-null",
+      "completed": 2000,
+      "elapsed_seconds": 9.745403042063117,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 904,
+      "mean_beta": 0.007279123474049424,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0004813658530746217,
+      "mean_predictable_score": 0.035069857151311376,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.959,
+          "coverage_mc95": [
+            0.9493615966019678,
+            0.9672610858901137
+          ],
+          "covered": 1918,
+          "exact_mc95": [
+            0.01991190590797641,
+            0.034520660787598585
+          ],
+          "mean_estimate": -0.0004719927329996816,
+          "nonidentity_count": 1096,
+          "nonidentity_coverage": 0.9251824817518248,
+          "nonidentity_coverage_mc95": [
+            0.9079804401887663,
+            0.9400562393780325
+          ],
+          "nonidentity_covered": 1014,
+          "rate": 0.0265,
+          "reject_with_negative_predictable_gain": 10,
+          "rejections": 53
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.08156253373039697,
+            0.10764182036221451
+          ],
+          "mean_estimate": 0.037801911639628975,
+          "rate": 0.094,
+          "reject_with_negative_predictable_gain": 43,
+          "rejections": 188
+        },
+        "star-gain": {
+          "coverage": 0.967,
+          "coverage_mc95": [
+            0.95820545417898,
+            0.9743877761767354
+          ],
+          "covered": 1934,
+          "exact_mc95": [
+            0.016029647169849056,
+            0.029422409482737995
+          ],
+          "mean_estimate": -0.0004719927329996816,
+          "nonidentity_count": 1096,
+          "nonidentity_coverage": 0.9397810218978102,
+          "nonidentity_coverage_mc95": [
+            0.9240205766260039,
+            0.9531240798871581
+          ],
+          "nonidentity_covered": 1030,
+          "rate": 0.022,
+          "reject_with_negative_predictable_gain": 12,
+          "rejections": 44
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.061055455465610135,
+            0.0842181934186338
+          ],
+          "mean_estimate": 0.037801911639628975,
+          "rate": 0.072,
+          "reject_with_negative_predictable_gain": 36,
+          "rejections": 144
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 354,
+      "settings": {
+        "allocation": "imbalanced",
+        "development_per_star": 100,
+        "effect_profile": [
+          1.5,
+          1.0,
+          0.5,
+          0.0
+        ],
+        "family": "joint_stress",
+        "id": "imbalanced-s4-null",
+        "mark_history_correlation": 0.4,
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "aaac5e0b23487db0f8f49fa00e62756c7a8deceadc0457d760601e4da2739019"
+    },
+    {
+      "attempted": 2000,
+      "case": "imbalanced-s4-effect",
+      "completed": 2000,
+      "elapsed_seconds": 9.759402208030224,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 245,
+      "mean_beta": 0.02002702609145827,
+      "mean_nominal_individual_oracle_gain": 0.004602272727272728,
+      "mean_predictable_gain": 0.0019648249413152,
+      "mean_predictable_score": 0.24489191068338478,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.96,
+          "coverage_mc95": [
+            0.9504616577525338,
+            0.9681574426889019
+          ],
+          "covered": 1920,
+          "exact_mc95": [
+            0.21316884221599583,
+            0.25062155158639204
+          ],
+          "mean_estimate": 0.001934299140346443,
+          "nonidentity_count": 1755,
+          "nonidentity_coverage": 0.9544159544159544,
+          "nonidentity_coverage_mc95": [
+            0.9435853410028915,
+            0.9636919904474327
+          ],
+          "nonidentity_covered": 1675,
+          "rate": 0.2315,
+          "reject_with_negative_predictable_gain": 0,
+          "rejections": 463
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.5033416035791911,
+            0.5475835336263282
+          ],
+          "mean_estimate": 0.2458102982953899,
+          "rate": 0.5255,
+          "reject_with_negative_predictable_gain": 39,
+          "rejections": 1051
+        },
+        "star-gain": {
+          "coverage": 0.976,
+          "coverage_mc95": [
+            0.9683043044095688,
+            0.9822525154034418
+          ],
+          "covered": 1952,
+          "exact_mc95": [
+            0.13414489857131753,
+            0.16589014983754913
+          ],
+          "mean_estimate": 0.001934299140346443,
+          "nonidentity_count": 1755,
+          "nonidentity_coverage": 0.9726495726495726,
+          "nonidentity_coverage_mc95": [
+            0.963899480137362,
+            0.979766630891018
+          ],
+          "nonidentity_covered": 1707,
+          "rate": 0.1495,
+          "reject_with_negative_predictable_gain": 1,
+          "rejections": 299
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.3133357767187664,
+            0.3551519870586817
+          ],
+          "mean_estimate": 0.2458102982953899,
+          "rate": 0.334,
+          "reject_with_negative_predictable_gain": 25,
+          "rejections": 668
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 155,
+      "settings": {
+        "allocation": "imbalanced",
+        "development_per_star": 100,
+        "effect_profile": [
+          1.5,
+          1.0,
+          0.5,
+          0.0
+        ],
+        "family": "joint_stress",
+        "id": "imbalanced-s4-effect",
+        "mark_history_correlation": 0.4,
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "06e154acbca364ca1273427104ba24bcffaa150bcb447eeb9023a27008c7e8b9"
+    },
+    {
+      "attempted": 2000,
+      "case": "common-delayed-s4-null",
+      "completed": 2000,
+      "elapsed_seconds": 13.2255798750557,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 1064,
+      "mean_beta": 0.010906941891492923,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0015652491216264764,
+      "mean_predictable_score": 0.00034569397274604853,
+      "mean_supported_marks": 654.585,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.963,
+          "coverage_mc95": [
+            0.9537706611985065,
+            0.9708375375877352
+          ],
+          "covered": 1926,
+          "exact_mc95": [
+            0.0038320939003739125,
+            0.01171694577053208
+          ],
+          "mean_estimate": -0.0015161840038500336,
+          "nonidentity_count": 936,
+          "nonidentity_coverage": 0.9209401709401709,
+          "nonidentity_coverage_mc95": [
+            0.9017626313628416,
+            0.9374138947138417
+          ],
+          "nonidentity_covered": 862,
+          "rate": 0.007,
+          "reject_with_negative_predictable_gain": 7,
+          "rejections": 14
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.04587376649393302,
+            0.06645369553133039
+          ],
+          "mean_estimate": 0.0037999956193889533,
+          "rate": 0.0555,
+          "reject_with_negative_predictable_gain": 39,
+          "rejections": 111
+        },
+        "star-gain": {
+          "coverage": 0.962,
+          "coverage_mc95": [
+            0.9526661356949869,
+            0.969945724556891
+          ],
+          "covered": 1924,
+          "exact_mc95": [
+            0.0038320939003739125,
+            0.01171694577053208
+          ],
+          "mean_estimate": -0.0015161840038500336,
+          "nonidentity_count": 936,
+          "nonidentity_coverage": 0.9188034188034188,
+          "nonidentity_coverage_mc95": [
+            0.8994225643015082,
+            0.9354954133102266
+          ],
+          "nonidentity_covered": 860,
+          "rate": 0.007,
+          "reject_with_negative_predictable_gain": 9,
+          "rejections": 14
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.04086426771825134,
+            0.06048172208315188
+          ],
+          "mean_estimate": 0.0037999956193889533,
+          "rate": 0.05,
+          "reject_with_negative_predictable_gain": 38,
+          "rejections": 100
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 363,
+      "settings": {
+        "block_ar": 0.8,
+        "cross_star_correlation": 0.25,
+        "development_per_star": 50,
+        "family": "joint_stress",
+        "id": "common-delayed-s4-null",
+        "mark_icc": 0.3,
+        "mark_reliability": 0.7,
+        "missing_mark_fraction": 0.15,
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "outcome_delay_days": 80.0,
+        "outcome_delay_probability": 0.3,
+        "residual_icc": 0.15,
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "36b236bd240a241a4e782d61c0ce3b47d70384e1575a4afd32a6ab63b04b2df8"
+    },
+    {
+      "attempted": 2000,
+      "case": "common-delayed-s4-effect",
+      "completed": 2000,
+      "elapsed_seconds": 13.213022000039928,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 541,
+      "mean_beta": 0.022018170289012665,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": -0.0005881408133131043,
+      "mean_predictable_score": 0.14989846244609756,
+      "mean_supported_marks": 654.6965,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.947,
+          "coverage_mc95": [
+            0.9362572070012273,
+            0.9564069564074237
+          ],
+          "covered": 1894,
+          "exact_mc95": [
+            0.08390786673965067,
+            0.11028872648373826
+          ],
+          "mean_estimate": -0.0005859668358588453,
+          "nonidentity_count": 1459,
+          "nonidentity_coverage": 0.9273474982864977,
+          "nonidentity_coverage_mc95": [
+            0.9128062566694531,
+            0.9401379649058358
+          ],
+          "nonidentity_covered": 1353,
+          "rate": 0.0965,
+          "reject_with_negative_predictable_gain": 6,
+          "rejections": 193
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.3631120806562998,
+            0.4062271359324733
+          ],
+          "mean_estimate": 0.15016668450403933,
+          "rate": 0.3845,
+          "reject_with_negative_predictable_gain": 148,
+          "rejections": 769
+        },
+        "star-gain": {
+          "coverage": 0.949,
+          "coverage_mc95": [
+            0.9384302465684916,
+            0.9582271615092796
+          ],
+          "covered": 1898,
+          "exact_mc95": [
+            0.06615766717099252,
+            0.0900984565889321
+          ],
+          "mean_estimate": -0.0005859668358588453,
+          "nonidentity_count": 1459,
+          "nonidentity_coverage": 0.9300891021247429,
+          "nonidentity_coverage_mc95": [
+            0.9157754672503831,
+            0.9426397220817821
+          ],
+          "nonidentity_covered": 1357,
+          "rate": 0.0775,
+          "reject_with_negative_predictable_gain": 5,
+          "rejections": 155
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.26675987128202544,
+            0.3068678849400498
+          ],
+          "mean_estimate": 0.15016668450403933,
+          "rate": 0.2865,
+          "reject_with_negative_predictable_gain": 120,
+          "rejections": 573
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.0625,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 487,
+      "settings": {
+        "block_ar": 0.8,
+        "cross_star_correlation": 0.25,
+        "development_per_star": 50,
+        "family": "joint_stress",
+        "id": "common-delayed-s4-effect",
+        "mark_icc": 0.3,
+        "mark_reliability": 0.7,
+        "missing_mark_fraction": 0.15,
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "outcome_delay_days": 80.0,
+        "outcome_delay_probability": 0.3,
+        "residual_icc": 0.15,
+        "stars": 4,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "f73fafee614d5ab4ffc350fe83e45fed02069c2e32e523a26e5e863180d38bb2"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s8-n600-null",
+      "completed": 2000,
+      "elapsed_seconds": 10.204710750025697,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 989,
+      "mean_beta": 0.0049903304168941445,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0003841348386877597,
+      "mean_predictable_score": -0.00043391784990271534,
+      "mean_supported_marks": 600.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9565,
+          "coverage_mc95": [
+            0.9466174011066275,
+            0.9650141371532315
+          ],
+          "covered": 1913,
+          "exact_mc95": [
+            0.0077033433702185,
+            0.017802731356322096
+          ],
+          "mean_estimate": -0.0003647636150440442,
+          "nonidentity_count": 1011,
+          "nonidentity_coverage": 0.913946587537092,
+          "nonidentity_coverage_mc95": [
+            0.8949356286654405,
+            0.9305025380790694
+          ],
+          "nonidentity_covered": 924,
+          "rate": 0.012,
+          "reject_with_negative_predictable_gain": 15,
+          "rejections": 24
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.041772838490720395,
+            0.061569753431508376
+          ],
+          "mean_estimate": -8.868652639587182e-05,
+          "rate": 0.051,
+          "reject_with_negative_predictable_gain": 38,
+          "rejections": 102
+        },
+        "star-gain": {
+          "coverage": 0.9585,
+          "coverage_mc95": [
+            0.9488120883164786,
+            0.9668123763491491
+          ],
+          "covered": 1917,
+          "exact_mc95": [
+            0.008105230838877514,
+            0.018397493413938003
+          ],
+          "mean_estimate": -0.0003647636150440442,
+          "nonidentity_count": 1011,
+          "nonidentity_coverage": 0.9179030662710188,
+          "nonidentity_coverage_mc95": [
+            0.8992435713673554,
+            0.934082202622333
+          ],
+          "nonidentity_covered": 928,
+          "rate": 0.0125,
+          "reject_with_negative_predictable_gain": 15,
+          "rejections": 25
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.03995675692495895,
+            0.059392645124689315
+          ],
+          "mean_estimate": -8.868652639587182e-05,
+          "rate": 0.049,
+          "reject_with_negative_predictable_gain": 32,
+          "rejections": 98
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.03769282441526967,
+            0.0566651760410299
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.0465,
+          "rejections": 93
+        }
+      },
+      "positive_score_negative_gain_count": 360,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s8-n600-null",
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "stars": 8,
+        "test_forecasts": 600
+      },
+      "trials_sha256": "3766c60cca95ec16bb0c7ecd780f4aca7f3b0dc0e8c53952bb8b782eae057ea9"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s8-n600-effect",
+      "completed": 2000,
+      "elapsed_seconds": 10.160372916958295,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 20,
+      "mean_beta": 0.0283112626250964,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.003377383503987545,
+      "mean_predictable_score": 0.28080495294976926,
+      "mean_supported_marks": 600.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.909,
+          "coverage_mc95": [
+            0.8955380894478929,
+            0.921248218088256
+          ],
+          "covered": 1818,
+          "exact_mc95": [
+            0.250641652457159,
+            0.29003482065012937
+          ],
+          "mean_estimate": 0.0033771678956108844,
+          "nonidentity_count": 1980,
+          "nonidentity_coverage": 0.908080808080808,
+          "nonidentity_coverage_mc95": [
+            0.894490842864668,
+            0.920447569935291
+          ],
+          "nonidentity_covered": 1798,
+          "rate": 0.27,
+          "reject_with_negative_predictable_gain": 0,
+          "rejections": 540
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.6154868962913554,
+            0.6581106719520876
+          ],
+          "mean_estimate": 0.28050647735023965,
+          "rate": 0.637,
+          "reject_with_negative_predictable_gain": 11,
+          "rejections": 1274
+        },
+        "star-gain": {
+          "coverage": 0.908,
+          "coverage_mc95": [
+            0.894477670915603,
+            0.9203117526035277
+          ],
+          "covered": 1816,
+          "exact_mc95": [
+            0.23261035306952074,
+            0.27112081242359753
+          ],
+          "mean_estimate": 0.0033771678956108844,
+          "nonidentity_count": 1980,
+          "nonidentity_coverage": 0.907070707070707,
+          "nonidentity_coverage_mc95": [
+            0.8934198384452308,
+            0.9195015496298371
+          ],
+          "nonidentity_covered": 1796,
+          "rate": 0.2515,
+          "reject_with_negative_predictable_gain": 0,
+          "rejections": 503
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.5615353017961269,
+            0.605219512578959
+          ],
+          "mean_estimate": 0.28050647735023965,
+          "rate": 0.5835,
+          "reject_with_negative_predictable_gain": 13,
+          "rejections": 1167
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.5469586525969419,
+            0.5908387525804853
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.569,
+          "rejections": 1138
+        }
+      },
+      "positive_score_negative_gain_count": 28,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s8-n600-effect",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 8,
+        "test_forecasts": 600
+      },
+      "trials_sha256": "830869dc1afe2eca95089360e796772f407424073cda6b419586c416623bd73a"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s8-n1100-null",
+      "completed": 2000,
+      "elapsed_seconds": 12.910348166013137,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 1003,
+      "mean_beta": 0.004994114471095073,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0003842935832816057,
+      "mean_predictable_score": -0.0006261244498419632,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9635,
+          "coverage_mc95": [
+            0.9543235211290482,
+            0.9712828357772066
+          ],
+          "covered": 1927,
+          "exact_mc95": [
+            0.006906122788328853,
+            0.01660701640128506
+          ],
+          "mean_estimate": -0.00035612119468400886,
+          "nonidentity_count": 997,
+          "nonidentity_coverage": 0.9267803410230692,
+          "nonidentity_coverage_mc95": [
+            0.9088149264129346,
+            0.942171552962224
+          ],
+          "nonidentity_covered": 924,
+          "rate": 0.011,
+          "reject_with_negative_predictable_gain": 15,
+          "rejections": 22
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.03905033705557691,
+            0.05830249234114568
+          ],
+          "mean_estimate": 0.0009740709354739197,
+          "rate": 0.048,
+          "reject_with_negative_predictable_gain": 41,
+          "rejections": 96
+        },
+        "star-gain": {
+          "coverage": 0.96,
+          "coverage_mc95": [
+            0.9504616577525338,
+            0.9681574426889019
+          ],
+          "covered": 1920,
+          "exact_mc95": [
+            0.007303594042175884,
+            0.01720594810634058
+          ],
+          "mean_estimate": -0.00035612119468400886,
+          "nonidentity_count": 997,
+          "nonidentity_coverage": 0.9197592778335005,
+          "nonidentity_coverage_mc95": [
+            0.9011266123074565,
+            0.9358640420169356
+          ],
+          "nonidentity_covered": 917,
+          "rate": 0.0115,
+          "reject_with_negative_predictable_gain": 17,
+          "rejections": 23
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.038597546324427,
+            0.057757002650370204
+          ],
+          "mean_estimate": 0.0009740709354739197,
+          "rate": 0.0475,
+          "reject_with_negative_predictable_gain": 44,
+          "rejections": 95
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.036789278098817525,
+            0.055572191006579195
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.0455,
+          "rejections": 91
+        }
+      },
+      "positive_score_negative_gain_count": 384,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s8-n1100-null",
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "a116dc1959bf41e2c2e00f999ebd7906e4846563a3a254bce32622fd336d8f47"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s8-n1100-effect",
+      "completed": 2000,
+      "elapsed_seconds": 12.998480916023254,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 14,
+      "mean_beta": 0.028953208750032145,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.00339669282840817,
+      "mean_predictable_score": 0.2816951758652323,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9195,
+          "coverage_mc95": [
+            0.9067014912590344,
+            0.9310518797802613
+          ],
+          "covered": 1839,
+          "exact_mc95": [
+            0.3725036649695305,
+            0.41580762991092474
+          ],
+          "mean_estimate": 0.00347962629289055,
+          "nonidentity_count": 1986,
+          "nonidentity_coverage": 0.918932527693857,
+          "nonidentity_coverage_mc95": [
+            0.9060484246067844,
+            0.9305629083020923
+          ],
+          "nonidentity_covered": 1825,
+          "rate": 0.394,
+          "reject_with_negative_predictable_gain": 2,
+          "rejections": 788
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.8398418275171236,
+            0.87110654706178
+          ],
+          "mean_estimate": 0.2828773619118738,
+          "rate": 0.856,
+          "reject_with_negative_predictable_gain": 19,
+          "rejections": 1712
+        },
+        "star-gain": {
+          "coverage": 0.9245,
+          "coverage_mc95": [
+            0.9120377387059779,
+            0.9356997833835491
+          ],
+          "covered": 1849,
+          "exact_mc95": [
+            0.34534113706485436,
+            0.38805100135697057
+          ],
+          "mean_estimate": 0.00347962629289055,
+          "nonidentity_count": 1986,
+          "nonidentity_coverage": 0.9239677744209466,
+          "nonidentity_coverage_mc95": [
+            0.9114218863968583,
+            0.9352438754377425
+          ],
+          "nonidentity_covered": 1835,
+          "rate": 0.3665,
+          "reject_with_negative_predictable_gain": 1,
+          "rejections": 733
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.8003779873522775,
+            0.8346843920939611
+          ],
+          "mean_estimate": 0.2828773619118738,
+          "rate": 0.818,
+          "reject_with_negative_predictable_gain": 20,
+          "rejections": 1636
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.7895252158847861,
+            0.8245684887677462
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.8075,
+          "rejections": 1615
+        }
+      },
+      "positive_score_negative_gain_count": 23,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s8-n1100-effect",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "59c2f782e711e5d2ce28ee2be75d02f2b35d47c0424c78a2fb10fb8510ff3cee"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s8-n2000-null",
+      "completed": 2000,
+      "elapsed_seconds": 17.664988375036046,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 981,
+      "mean_beta": 0.004891137179951171,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0003707734390355559,
+      "mean_predictable_score": -0.0005805064378243324,
+      "mean_supported_marks": 2000.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9615,
+          "coverage_mc95": [
+            0.9521144551731808,
+            0.9694992251394936
+          ],
+          "covered": 1923,
+          "exact_mc95": [
+            0.005729035522963454,
+            0.01479583217228858
+          ],
+          "mean_estimate": -0.000373175984117316,
+          "nonidentity_count": 1019,
+          "nonidentity_coverage": 0.9244357212953876,
+          "nonidentity_coverage_mc95": [
+            0.906460172430823,
+            0.9399087874762909
+          ],
+          "nonidentity_covered": 942,
+          "rate": 0.0095,
+          "reject_with_negative_predictable_gain": 14,
+          "rejections": 19
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.03094765967807603,
+            0.04843684676393796
+          ],
+          "mean_estimate": -0.0006056671141522209,
+          "rate": 0.039,
+          "reject_with_negative_predictable_gain": 38,
+          "rejections": 78
+        },
+        "star-gain": {
+          "coverage": 0.9595,
+          "coverage_mc95": [
+            0.9499114510499942,
+            0.9677094434267993
+          ],
+          "covered": 1919,
+          "exact_mc95": [
+            0.0053424430233954285,
+            0.014186714471514504
+          ],
+          "mean_estimate": -0.000373175984117316,
+          "nonidentity_count": 1019,
+          "nonidentity_coverage": 0.9205103042198234,
+          "nonidentity_coverage_mc95": [
+            0.9021681300755475,
+            0.936375248042464
+          ],
+          "nonidentity_covered": 938,
+          "rate": 0.009,
+          "reject_with_negative_predictable_gain": 14,
+          "rejections": 18
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.035436244646758965,
+            0.053930461697658826
+          ],
+          "mean_estimate": -0.0006056671141522209,
+          "rate": 0.044,
+          "reject_with_negative_predictable_gain": 38,
+          "rejections": 88
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.034086074593150856,
+            0.052285913242374166
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.0425,
+          "rejections": 85
+        }
+      },
+      "positive_score_negative_gain_count": 404,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s8-n2000-null",
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "stars": 8,
+        "test_forecasts": 2000
+      },
+      "trials_sha256": "7fad96763fc77bb62ec2291dce13be768aefa50dd6b82955ed873386d1acc3a0"
+    },
+    {
+      "attempted": 2000,
+      "case": "core-s8-n2000-effect",
+      "completed": 2000,
+      "elapsed_seconds": 17.55651200003922,
+      "failures": 0,
+      "family": "core",
+      "identity_count": 16,
+      "mean_beta": 0.028754283493112234,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.003384099671546857,
+      "mean_predictable_score": 0.28079257557605264,
+      "mean_supported_marks": 2000.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9025,
+          "coverage_mc95": [
+            0.8886532562780842,
+            0.9151532497680611
+          ],
+          "covered": 1805,
+          "exact_mc95": [
+            0.5113505564135166,
+            0.5555510930517382
+          ],
+          "mean_estimate": 0.003341276495836102,
+          "nonidentity_count": 1984,
+          "nonidentity_coverage": 0.9017137096774194,
+          "nonidentity_coverage_mc95": [
+            0.8877622716455549,
+            0.9144643733622678
+          ],
+          "nonidentity_covered": 1789,
+          "rate": 0.5335,
+          "reject_with_negative_predictable_gain": 0,
+          "rejections": 1067
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.9660429652783932,
+            0.980522382754803
+          ],
+          "mean_estimate": 0.27784233401851216,
+          "rate": 0.974,
+          "reject_with_negative_predictable_gain": 20,
+          "rejections": 1948
+        },
+        "star-gain": {
+          "coverage": 0.913,
+          "coverage_mc95": [
+            0.8997844071735885,
+            0.9249894024215847
+          ],
+          "covered": 1826,
+          "exact_mc95": [
+            0.4878402530479913,
+            0.5321303894698542
+          ],
+          "mean_estimate": 0.003341276495836102,
+          "nonidentity_count": 1984,
+          "nonidentity_coverage": 0.9122983870967742,
+          "nonidentity_coverage_mc95": [
+            0.898982136436478,
+            0.9243806536557445
+          ],
+          "nonidentity_covered": 1810,
+          "rate": 0.51,
+          "reject_with_negative_predictable_gain": 0,
+          "rejections": 1020
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.9384302465684916,
+            0.9582271615092796
+          ],
+          "mean_estimate": 0.27784233401851216,
+          "rate": 0.949,
+          "reject_with_negative_predictable_gain": 20,
+          "rejections": 1898
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.9324635441664111,
+            0.9532123237191843
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.9435,
+          "rejections": 1887
+        }
+      },
+      "positive_score_negative_gain_count": 20,
+      "settings": {
+        "development_per_star": 100,
+        "family": "core",
+        "id": "core-s8-n2000-effect",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 8,
+        "test_forecasts": 2000
+      },
+      "trials_sha256": "a7397412d5020e10e1ea2ca3a810d20b0f41495a36556e00b242144bcdae6452"
+    },
+    {
+      "attempted": 2000,
+      "case": "oracle-s8-clean",
+      "completed": 2000,
+      "elapsed_seconds": 12.846849624998868,
+      "failures": 0,
+      "family": "strict_predictive_null",
+      "identity_count": 1002,
+      "mean_beta": 0.0048003014613100395,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.00034506275308409626,
+      "mean_predictable_score": 0.0,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.956,
+          "coverage_mc95": [
+            0.9460695383023412,
+            0.964563755353241
+          ],
+          "covered": 1912,
+          "exact_mc95": [
+            0.008105230838877514,
+            0.018397493413938003
+          ],
+          "mean_estimate": -0.0003341233725603444,
+          "nonidentity_count": 998,
+          "nonidentity_coverage": 0.9118236472945892,
+          "nonidentity_coverage_mc95": [
+            0.8924925073807622,
+            0.9286809962896962
+          ],
+          "nonidentity_covered": 910,
+          "rate": 0.0125,
+          "reject_with_negative_predictable_gain": 25,
+          "rejections": 25
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.041772838490720395,
+            0.061569753431508376
+          ],
+          "mean_estimate": 0.0019480522609314616,
+          "rate": 0.051,
+          "reject_with_negative_predictable_gain": 50,
+          "rejections": 102
+        },
+        "star-gain": {
+          "coverage": 0.9585,
+          "coverage_mc95": [
+            0.9488120883164786,
+            0.9668123763491491
+          ],
+          "covered": 1917,
+          "exact_mc95": [
+            0.006118657542743464,
+            0.015402125783560046
+          ],
+          "mean_estimate": -0.0003341233725603444,
+          "nonidentity_count": 998,
+          "nonidentity_coverage": 0.9168336673346693,
+          "nonidentity_coverage_mc95": [
+            0.8979447024710081,
+            0.9332163883152503
+          ],
+          "nonidentity_covered": 915,
+          "rate": 0.01,
+          "reject_with_negative_predictable_gain": 20,
+          "rejections": 20
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.039503408629222365,
+            0.05884770515897625
+          ],
+          "mean_estimate": 0.0019480522609314616,
+          "rate": 0.0485,
+          "reject_with_negative_predictable_gain": 45,
+          "rejections": 97
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.03769282441526967,
+            0.0566651760410299
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.0465,
+          "rejections": 93
+        }
+      },
+      "positive_score_negative_gain_count": 0,
+      "settings": {
+        "development_per_star": 100,
+        "family": "strict_predictive_null",
+        "id": "oracle-s8-clean",
+        "nominal_oracle_gain": 0.0,
+        "null_class": "strict_oracle_predictive_null",
+        "oracle_base": true,
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "7594b445d78a43a555faf629cb61d61891b2daf46752be13c0f491bd0ad8f003"
+    },
+    {
+      "attempted": 2000,
+      "case": "oracle-s8-persistent",
+      "completed": 2000,
+      "elapsed_seconds": 13.695749082951806,
+      "failures": 0,
+      "family": "strict_predictive_null",
+      "identity_count": 982,
+      "mean_beta": 0.004596691710514784,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.00034076780387628277,
+      "mean_predictable_score": 0.0,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.954,
+          "coverage_mc95": [
+            0.9438811694565636,
+            0.962759097965631
+          ],
+          "covered": 1908,
+          "exact_mc95": [
+            0.006906122788328853,
+            0.01660701640128506
+          ],
+          "mean_estimate": -0.00031322201767448676,
+          "nonidentity_count": 1018,
+          "nonidentity_coverage": 0.9096267190569745,
+          "nonidentity_coverage_mc95": [
+            0.8903170611430102,
+            0.9265258171085216
+          ],
+          "nonidentity_covered": 926,
+          "rate": 0.011,
+          "reject_with_negative_predictable_gain": 22,
+          "rejections": 22
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.041772838490720395,
+            0.061569753431508376
+          ],
+          "mean_estimate": -9.229075619325644e-05,
+          "rate": 0.051,
+          "reject_with_negative_predictable_gain": 49,
+          "rejections": 102
+        },
+        "star-gain": {
+          "coverage": 0.953,
+          "coverage_mc95": [
+            0.942788768038537,
+            0.9618549593358195
+          ],
+          "covered": 1906,
+          "exact_mc95": [
+            0.0053424430233954285,
+            0.014186714471514504
+          ],
+          "mean_estimate": -0.00031322201767448676,
+          "nonidentity_count": 1018,
+          "nonidentity_coverage": 0.9076620825147348,
+          "nonidentity_coverage_mc95": [
+            0.8881880649162135,
+            0.9247378963906615
+          ],
+          "nonidentity_covered": 924,
+          "rate": 0.009,
+          "reject_with_negative_predictable_gain": 18,
+          "rejections": 18
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.04587376649393302,
+            0.06645369553133039
+          ],
+          "mean_estimate": -9.229075619325644e-05,
+          "rate": 0.0555,
+          "reject_with_negative_predictable_gain": 51,
+          "rejections": 111
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.04359304359257637,
+            0.0637427929987727
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.053,
+          "rejections": 106
+        }
+      },
+      "positive_score_negative_gain_count": 0,
+      "settings": {
+        "block_ar": 0.8,
+        "development_per_star": 100,
+        "family": "strict_predictive_null",
+        "id": "oracle-s8-persistent",
+        "mark_icc": 0.35,
+        "nominal_oracle_gain": 0.0,
+        "null_class": "strict_oracle_predictive_null",
+        "oracle_base": true,
+        "residual_ar": 0.3,
+        "residual_icc": 0.15,
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "0aab165ac93e52bc287dfa48b374bdea5dcdf10631500d6fd6afd6435eaab8d4"
+    },
+    {
+      "attempted": 2000,
+      "case": "persistent-s8-null",
+      "completed": 2000,
+      "elapsed_seconds": 11.569142124964856,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 970,
+      "mean_beta": 0.007148639232514164,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0008328251847317608,
+      "mean_predictable_score": -0.0003028544827992751,
+      "mean_supported_marks": 880.111,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.96,
+          "coverage_mc95": [
+            0.9504616577525338,
+            0.9681574426889019
+          ],
+          "covered": 1920,
+          "exact_mc95": [
+            0.0053424430233954285,
+            0.014186714471514504
+          ],
+          "mean_estimate": -0.0008137418896701299,
+          "nonidentity_count": 1030,
+          "nonidentity_coverage": 0.9223300970873787,
+          "nonidentity_coverage_mc95": [
+            0.9042631883175661,
+            0.9379351205125624
+          ],
+          "nonidentity_covered": 950,
+          "rate": 0.009,
+          "reject_with_negative_predictable_gain": 5,
+          "rejections": 18
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.04086426771825134,
+            0.06048172208315188
+          ],
+          "mean_estimate": -0.00043960027636888156,
+          "rate": 0.05,
+          "reject_with_negative_predictable_gain": 41,
+          "rejections": 100
+        },
+        "star-gain": {
+          "coverage": 0.9605,
+          "coverage_mc95": [
+            0.9510122229893169,
+            0.9686050772106086
+          ],
+          "covered": 1921,
+          "exact_mc95": [
+            0.004579404661398551,
+            0.01295906858847171
+          ],
+          "mean_estimate": -0.0008137418896701299,
+          "nonidentity_count": 1030,
+          "nonidentity_coverage": 0.9233009708737864,
+          "nonidentity_coverage_mc95": [
+            0.9053245306936191,
+            0.9388093462845821
+          ],
+          "nonidentity_covered": 951,
+          "rate": 0.008,
+          "reject_with_negative_predictable_gain": 8,
+          "rejections": 16
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.03905033705557691,
+            0.05830249234114568
+          ],
+          "mean_estimate": -0.00043960027636888156,
+          "rate": 0.048,
+          "reject_with_negative_predictable_gain": 35,
+          "rejections": 96
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.038597546324427,
+            0.057757002650370204
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.0475,
+          "rejections": 95
+        }
+      },
+      "positive_score_negative_gain_count": 371,
+      "settings": {
+        "block_ar": 0.8,
+        "development_per_star": 50,
+        "family": "joint_stress",
+        "id": "persistent-s8-null",
+        "mark_icc": 0.35,
+        "missing_mark_fraction": 0.2,
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "residual_ar": 0.3,
+        "residual_icc": 0.15,
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "95ece5acbf2972526baa299bbac26cf81f560ed49957a26e2f4bd25f272c362c"
+    },
+    {
+      "attempted": 2000,
+      "case": "persistent-s8-effect",
+      "completed": 2000,
+      "elapsed_seconds": 11.60333004198037,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 176,
+      "mean_beta": 0.02383841605945844,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.001667115676213069,
+      "mean_predictable_score": 0.2529134961100222,
+      "mean_supported_marks": 880.1425,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9195,
+          "coverage_mc95": [
+            0.9067014912590344,
+            0.9310518797802613
+          ],
+          "covered": 1839,
+          "exact_mc95": [
+            0.2330970966222499,
+            0.2716325895986082
+          ],
+          "mean_estimate": 0.0015929817804477833,
+          "nonidentity_count": 1824,
+          "nonidentity_coverage": 0.9117324561403509,
+          "nonidentity_coverage_mc95": [
+            0.8977680628964397,
+            0.9243551845744071
+          ],
+          "nonidentity_covered": 1663,
+          "rate": 0.252,
+          "reject_with_negative_predictable_gain": 3,
+          "rejections": 504
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.6605766493800687,
+            0.7018899402362304
+          ],
+          "mean_estimate": 0.249647767125263,
+          "rate": 0.6815,
+          "reject_with_negative_predictable_gain": 119,
+          "rejections": 1363
+        },
+        "star-gain": {
+          "coverage": 0.917,
+          "coverage_mc95": [
+            0.9040385046375704,
+            0.928722747831527
+          ],
+          "covered": 1834,
+          "exact_mc95": [
+            0.223854766373193,
+            0.26190303751734495
+          ],
+          "mean_estimate": 0.0015929817804477833,
+          "nonidentity_count": 1824,
+          "nonidentity_coverage": 0.9089912280701754,
+          "nonidentity_coverage_mc95": [
+            0.8948512017524135,
+            0.9217990053209046
+          ],
+          "nonidentity_covered": 1658,
+          "rate": 0.2425,
+          "reject_with_negative_predictable_gain": 6,
+          "rejections": 485
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.6139705073280154,
+            0.6566314724717589
+          ],
+          "mean_estimate": 0.249647767125263,
+          "rate": 0.6355,
+          "reject_with_negative_predictable_gain": 117,
+          "rejections": 1271
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.6038668613224086,
+            0.6467645241098764
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.6255,
+          "rejections": 1251
+        }
+      },
+      "positive_score_negative_gain_count": 197,
+      "settings": {
+        "block_ar": 0.8,
+        "development_per_star": 50,
+        "family": "joint_stress",
+        "id": "persistent-s8-effect",
+        "mark_icc": 0.35,
+        "missing_mark_fraction": 0.2,
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "residual_ar": 0.3,
+        "residual_icc": 0.15,
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "646dc3d2062f556b3689e585c3ab47a001bbdfcdb0e599105f07a2d81122795b"
+    },
+    {
+      "attempted": 2000,
+      "case": "imbalanced-s8-null",
+      "completed": 2000,
+      "elapsed_seconds": 12.967292541987263,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 952,
+      "mean_beta": 0.004694098183638009,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.00018022128190128733,
+      "mean_predictable_score": 0.03128836542926931,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.966,
+          "coverage_mc95": [
+            0.9570941151169238,
+            0.9735029103434364
+          ],
+          "covered": 1932,
+          "exact_mc95": [
+            0.019044010610752,
+            0.033392744443928375
+          ],
+          "mean_estimate": -0.00017004388083261546,
+          "nonidentity_count": 1048,
+          "nonidentity_coverage": 0.9351145038167938,
+          "nonidentity_coverage_mc95": [
+            0.91846397021624,
+            0.9492651273833465
+          ],
+          "nonidentity_covered": 980,
+          "rate": 0.0255,
+          "reject_with_negative_predictable_gain": 5,
+          "rejections": 51
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.07968824739647233,
+            0.10552232908439699
+          ],
+          "mean_estimate": 0.02919943810975416,
+          "rate": 0.092,
+          "reject_with_negative_predictable_gain": 25,
+          "rejections": 184
+        },
+        "star-gain": {
+          "coverage": 0.968,
+          "coverage_mc95": [
+            0.9593186808413925,
+            0.9752707146218645
+          ],
+          "covered": 1936,
+          "exact_mc95": [
+            0.01774748459655814,
+            0.03169569559043113
+          ],
+          "mean_estimate": -0.00017004388083261546,
+          "nonidentity_count": 1048,
+          "nonidentity_coverage": 0.9389312977099237,
+          "nonidentity_coverage_mc95": [
+            0.9226823465250491,
+            0.9526555898179516
+          ],
+          "nonidentity_covered": 984,
+          "rate": 0.024,
+          "reject_with_negative_predictable_gain": 4,
+          "rejections": 48
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.0656930862339536,
+            0.08956462417469714
+          ],
+          "mean_estimate": 0.02919943810975416,
+          "rate": 0.077,
+          "reject_with_negative_predictable_gain": 15,
+          "rejections": 154
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.05643371771221915,
+            0.07885601702410694
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.067,
+          "rejections": 134
+        }
+      },
+      "positive_score_negative_gain_count": 272,
+      "settings": {
+        "allocation": "imbalanced",
+        "development_per_star": 100,
+        "effect_profile": [
+          1.5,
+          1.0,
+          0.5,
+          0.0,
+          1.5,
+          1.0,
+          0.5,
+          0.0
+        ],
+        "family": "joint_stress",
+        "id": "imbalanced-s8-null",
+        "mark_history_correlation": 0.4,
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "00b15f58085de335296131b46f2746ef3f528f1c04a0f0afe78ccf1cfe5f89cd"
+    },
+    {
+      "attempted": 2000,
+      "case": "imbalanced-s8-effect",
+      "completed": 2000,
+      "elapsed_seconds": 13.103837125003338,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 95,
+      "mean_beta": 0.01854567232236504,
+      "mean_nominal_individual_oracle_gain": 0.005232272727272726,
+      "mean_predictable_gain": 0.002719200968937492,
+      "mean_predictable_score": 0.2658302120079589,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.948,
+          "coverage_mc95": [
+            0.9373432320662913,
+            0.9573175602026627
+          ],
+          "covered": 1896,
+          "exact_mc95": [
+            0.34435478328776203,
+            0.3870402959812397
+          ],
+          "mean_estimate": 0.00272175254549939,
+          "nonidentity_count": 1905,
+          "nonidentity_coverage": 0.9454068241469816,
+          "nonidentity_coverage_mc95": [
+            0.9342371179462561,
+            0.955178665490435
+          ],
+          "nonidentity_covered": 1801,
+          "rate": 0.3655,
+          "reject_with_negative_predictable_gain": 0,
+          "rejections": 731
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.6372464290543849,
+            0.6792878840407288
+          ],
+          "mean_estimate": 0.26415741337541715,
+          "rate": 0.6585,
+          "reject_with_negative_predictable_gain": 13,
+          "rejections": 1317
+        },
+        "star-gain": {
+          "coverage": 0.9575,
+          "coverage_mc95": [
+            0.9477140867576258,
+            0.9659139254068492
+          ],
+          "covered": 1915,
+          "exact_mc95": [
+            0.26773778711156043,
+            0.30788701825528225
+          ],
+          "mean_estimate": 0.00272175254549939,
+          "nonidentity_count": 1905,
+          "nonidentity_coverage": 0.9553805774278216,
+          "nonidentity_coverage_mc95": [
+            0.9451206845338873,
+            0.9642067322023047
+          ],
+          "nonidentity_covered": 1820,
+          "rate": 0.2875,
+          "reject_with_negative_predictable_gain": 1,
+          "rejections": 575
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.5258811738064672,
+            0.5699779010729971
+          ],
+          "mean_estimate": 0.26415741337541715,
+          "rate": 0.548,
+          "reject_with_negative_predictable_gain": 10,
+          "rejections": 1096
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.32218807973228875,
+            0.36427319253426105
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.343,
+          "rejections": 686
+        }
+      },
+      "positive_score_negative_gain_count": 37,
+      "settings": {
+        "allocation": "imbalanced",
+        "development_per_star": 100,
+        "effect_profile": [
+          1.5,
+          1.0,
+          0.5,
+          0.0,
+          1.5,
+          1.0,
+          0.5,
+          0.0
+        ],
+        "family": "joint_stress",
+        "id": "imbalanced-s8-effect",
+        "mark_history_correlation": 0.4,
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "478c289d5264a001929cf1a063b4b3cb4dede8530f14e895007a695c54ff7c45"
+    },
+    {
+      "attempted": 2000,
+      "case": "common-delayed-s8-null",
+      "completed": 2000,
+      "elapsed_seconds": 16.382009458960965,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 979,
+      "mean_beta": 0.008449964185566077,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.0008768473631517486,
+      "mean_predictable_score": -0.001293469757163768,
+      "mean_supported_marks": 654.688,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.966,
+          "coverage_mc95": [
+            0.9570941151169238,
+            0.9735029103434364
+          ],
+          "covered": 1932,
+          "exact_mc95": [
+            0.006906122788328853,
+            0.01660701640128506
+          ],
+          "mean_estimate": -0.0008534068076397585,
+          "nonidentity_count": 1021,
+          "nonidentity_coverage": 0.9333986287952988,
+          "nonidentity_coverage_mc95": [
+            0.9163275809977398,
+            0.9479137779764072
+          ],
+          "nonidentity_covered": 953,
+          "rate": 0.011,
+          "reject_with_negative_predictable_gain": 6,
+          "rejections": 22
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.03769282441526967,
+            0.0566651760410299
+          ],
+          "mean_estimate": 0.0007482333451092868,
+          "rate": 0.0465,
+          "reject_with_negative_predictable_gain": 28,
+          "rejections": 93
+        },
+        "star-gain": {
+          "coverage": 0.9585,
+          "coverage_mc95": [
+            0.9488120883164786,
+            0.9668123763491491
+          ],
+          "covered": 1917,
+          "exact_mc95": [
+            0.0077033433702185,
+            0.017802731356322096
+          ],
+          "mean_estimate": -0.0008534068076397585,
+          "nonidentity_count": 1021,
+          "nonidentity_coverage": 0.9187071498530852,
+          "nonidentity_coverage_mc95": [
+            0.9002204275151124,
+            0.9347330856510363
+          ],
+          "nonidentity_covered": 938,
+          "rate": 0.012,
+          "reject_with_negative_predictable_gain": 9,
+          "rejections": 24
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.038597546324427,
+            0.057757002650370204
+          ],
+          "mean_estimate": 0.0007482333451092868,
+          "rate": 0.0475,
+          "reject_with_negative_predictable_gain": 35,
+          "rejections": 95
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.03905033705557691,
+            0.05830249234114568
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.048,
+          "rejections": 96
+        }
+      },
+      "positive_score_negative_gain_count": 348,
+      "settings": {
+        "block_ar": 0.8,
+        "cross_star_correlation": 0.25,
+        "development_per_star": 50,
+        "family": "joint_stress",
+        "id": "common-delayed-s8-null",
+        "mark_icc": 0.3,
+        "mark_reliability": 0.7,
+        "missing_mark_fraction": 0.15,
+        "nominal_oracle_gain": 0,
+        "null_class": "estimated_base_no_direct_effect",
+        "outcome_delay_days": 80.0,
+        "outcome_delay_probability": 0.3,
+        "residual_icc": 0.15,
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "ceaa7dc0ee04e3356b9d36a092e2e24c55d940bd7bdb48e5d0a3704f4a796bb1"
+    },
+    {
+      "attempted": 2000,
+      "case": "common-delayed-s8-effect",
+      "completed": 2000,
+      "elapsed_seconds": 16.373675792012364,
+      "failures": 0,
+      "family": "joint_stress",
+      "identity_count": 382,
+      "mean_beta": 0.020531302834956317,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.00031328208038560856,
+      "mean_predictable_score": 0.14877539619524305,
+      "mean_supported_marks": 654.4505,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9495,
+          "coverage_mc95": [
+            0.9389741333719944,
+            0.9586815775186655
+          ],
+          "covered": 1899,
+          "exact_mc95": [
+            0.11746287014055759,
+            0.14762504030000573
+          ],
+          "mean_estimate": 0.0002870030995740755,
+          "nonidentity_count": 1618,
+          "nonidentity_coverage": 0.9375772558714462,
+          "nonidentity_coverage_mc95": [
+            0.924665515541364,
+            0.9488713475993671
+          ],
+          "nonidentity_covered": 1517,
+          "rate": 0.132,
+          "reject_with_negative_predictable_gain": 2,
+          "rejections": 264
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.40221643055863315,
+            0.4460067242418409
+          ],
+          "mean_estimate": 0.1474182667476076,
+          "rate": 0.424,
+          "reject_with_negative_predictable_gain": 117,
+          "rejections": 848
+        },
+        "star-gain": {
+          "coverage": 0.9495,
+          "coverage_mc95": [
+            0.9389741333719944,
+            0.9586815775186655
+          ],
+          "covered": 1899,
+          "exact_mc95": [
+            0.11033914753270486,
+            0.13977153573558226
+          ],
+          "mean_estimate": 0.0002870030995740755,
+          "nonidentity_count": 1618,
+          "nonidentity_coverage": 0.9375772558714462,
+          "nonidentity_coverage_mc95": [
+            0.924665515541364,
+            0.9488713475993671
+          ],
+          "nonidentity_covered": 1517,
+          "rate": 0.1245,
+          "reject_with_negative_predictable_gain": 4,
+          "rejections": 249
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.36558272303635725,
+            0.4087491451601849
+          ],
+          "mean_estimate": 0.1474182667476076,
+          "rate": 0.387,
+          "reject_with_negative_predictable_gain": 113,
+          "rejections": 774
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.36607692263047564,
+            0.40925347593804895
+          ],
+          "minimum_p": 0.00390625,
+          "rate": 0.3875,
+          "rejections": 775
+        }
+      },
+      "positive_score_negative_gain_count": 369,
+      "settings": {
+        "block_ar": 0.8,
+        "cross_star_correlation": 0.25,
+        "development_per_star": 50,
+        "family": "joint_stress",
+        "id": "common-delayed-s8-effect",
+        "mark_icc": 0.3,
+        "mark_reliability": 0.7,
+        "missing_mark_fraction": 0.15,
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "outcome_delay_days": 80.0,
+        "outcome_delay_probability": 0.3,
+        "residual_icc": 0.15,
+        "stars": 8,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "22b4358e6b61c159bfeced638ac7a9af6c571063cddc76f9a76530f58708fc42"
+    },
+    {
+      "attempted": 2000,
+      "case": "specificity-shared-trend",
+      "completed": 2000,
+      "elapsed_seconds": 10.422542624990456,
+      "failures": 0,
+      "family": "specificity",
+      "identity_count": 1020,
+      "mean_beta": 0.006219774225073121,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.00013712635532692208,
+      "mean_predictable_score": 0.07685451698262045,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9535,
+          "coverage_mc95": [
+            0.9433348239589701,
+            0.9623071755847303
+          ],
+          "covered": 1907,
+          "exact_mc95": [
+            0.03139492278939136,
+            0.04898777701068312
+          ],
+          "mean_estimate": -0.00016463660951722777,
+          "nonidentity_count": 980,
+          "nonidentity_coverage": 0.9051020408163265,
+          "nonidentity_coverage_mc95": [
+            0.8850058597422372,
+            0.9227222343767011
+          ],
+          "nonidentity_covered": 887,
+          "rate": 0.0395,
+          "reject_with_negative_predictable_gain": 9,
+          "rejections": 79
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.14227503522892562,
+            0.1747344513436778
+          ],
+          "mean_estimate": 0.07275782513295012,
+          "rate": 0.158,
+          "reject_with_negative_predictable_gain": 43,
+          "rejections": 316
+        },
+        "star-gain": {
+          "coverage": 0.96,
+          "coverage_mc95": [
+            0.9504616577525338,
+            0.9681574426889019
+          ],
+          "covered": 1920,
+          "exact_mc95": [
+            0.026054421067532103,
+            0.042350446233080916
+          ],
+          "mean_estimate": -0.00016463660951722777,
+          "nonidentity_count": 980,
+          "nonidentity_coverage": 0.9183673469387755,
+          "nonidentity_coverage_mc95": [
+            0.8994292358026652,
+            0.9347422268874698
+          ],
+          "nonidentity_covered": 900,
+          "rate": 0.0335,
+          "reject_with_negative_predictable_gain": 6,
+          "rejections": 67
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.1336671872859827,
+            0.16536936686291612
+          ],
+          "mean_estimate": 0.07275782513295012,
+          "rate": 0.149,
+          "reject_with_negative_predictable_gain": 42,
+          "rejections": 298
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0782837215132316,
+            0.10393153017708454
+          ],
+          "minimum_p": 0.03125,
+          "rate": 0.0905,
+          "rejections": 181
+        }
+      },
+      "positive_score_negative_gain_count": 341,
+      "settings": {
+        "development_per_star": 100,
+        "family": "specificity",
+        "id": "specificity-shared-trend",
+        "level_trend": 3.0,
+        "mark_trend": 6.0,
+        "nominal_oracle_gain": 0.0,
+        "null_class": "no_direct_effect_shared_trend",
+        "stars": 5,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "5ea0475bb17c3deb8d8644f099cb5358d2743331f1abd0c548076c5c5251c964"
+    },
+    {
+      "attempted": 2000,
+      "case": "specificity-shared-state",
+      "completed": 2000,
+      "elapsed_seconds": 11.211619750014506,
+      "failures": 0,
+      "family": "specificity",
+      "identity_count": 98,
+      "mean_beta": 0.028677893424977022,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": 0.0025435610649684817,
+      "mean_predictable_score": 0.23150901823184467,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9455,
+          "coverage_mc95": [
+            0.9346299677387182,
+            0.955039229200515
+          ],
+          "covered": 1891,
+          "exact_mc95": [
+            0.3246485306674322,
+            0.3668053843936646
+          ],
+          "mean_estimate": 0.0025747602992503625,
+          "nonidentity_count": 1902,
+          "nonidentity_coverage": 0.9426919032597266,
+          "nonidentity_coverage_mc95": [
+            0.9312822268250824,
+            0.9527110149595203
+          ],
+          "nonidentity_covered": 1793,
+          "rate": 0.3455,
+          "reject_with_negative_predictable_gain": 1,
+          "rejections": 691
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.7493784484136079,
+            0.7868311577840041
+          ],
+          "mean_estimate": 0.23251246195242903,
+          "rate": 0.7685,
+          "reject_with_negative_predictable_gain": 70,
+          "rejections": 1537
+        },
+        "star-gain": {
+          "coverage": 0.9365,
+          "coverage_mc95": [
+            0.9249077447348574,
+            0.9467911577685408
+          ],
+          "covered": 1873,
+          "exact_mc95": [
+            0.28487011705063375,
+            0.32570307610287824
+          ],
+          "mean_estimate": 0.0025747602992503625,
+          "nonidentity_count": 1902,
+          "nonidentity_coverage": 0.9332281808622502,
+          "nonidentity_coverage_mc95": [
+            0.9210639160795604,
+            0.9440345453384625
+          ],
+          "nonidentity_covered": 1775,
+          "rate": 0.305,
+          "reject_with_negative_predictable_gain": 1,
+          "rejections": 610
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.6433272301986892,
+            0.6851894219012763
+          ],
+          "mean_estimate": 0.23251246195242903,
+          "rate": 0.6645,
+          "reject_with_negative_predictable_gain": 54,
+          "rejections": 1329
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.4938382764339802,
+            0.5381147513786968
+          ],
+          "minimum_p": 0.03125,
+          "rate": 0.516,
+          "rejections": 1032
+        }
+      },
+      "positive_score_negative_gain_count": 107,
+      "settings": {
+        "development_per_star": 100,
+        "family": "specificity",
+        "id": "specificity-shared-state",
+        "nominal_oracle_gain": 0.0,
+        "null_class": "no_direct_effect_shared_state",
+        "shared_state_ar": 0.97,
+        "shared_state_loading": 0.7,
+        "stars": 5,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "545ba7cf348ce4e579a71c7121618ed1ec6473ad6f656a08703ccea3f27f1024"
+    },
+    {
+      "attempted": 2000,
+      "case": "specificity-regime-shift",
+      "completed": 2000,
+      "elapsed_seconds": 10.620149874943309,
+      "failures": 0,
+      "family": "specificity",
+      "identity_count": 1044,
+      "mean_beta": 0.005794474012991568,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -7.308344916373419e-05,
+      "mean_predictable_score": 0.0838550408201597,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.9625,
+          "coverage_mc95": [
+            0.9532182019194464,
+            0.9703918312343258
+          ],
+          "covered": 1925,
+          "exact_mc95": [
+            0.03453580435973597,
+            0.052834417829031644
+          ],
+          "mean_estimate": -8.762665108482115e-05,
+          "nonidentity_count": 956,
+          "nonidentity_coverage": 0.9215481171548117,
+          "nonidentity_coverage_mc95": [
+            0.9026503595607773,
+            0.9377954186382581
+          ],
+          "nonidentity_covered": 881,
+          "rate": 0.043,
+          "reject_with_negative_predictable_gain": 8,
+          "rejections": 86
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.15522074330209984,
+            0.1887482685588718
+          ],
+          "mean_estimate": 0.08356661460022323,
+          "rate": 0.1715,
+          "reject_with_negative_predictable_gain": 43,
+          "rejections": 343
+        },
+        "star-gain": {
+          "coverage": 0.9515,
+          "coverage_mc95": [
+            0.9411522948410238,
+            0.9604965913707776
+          ],
+          "covered": 1903,
+          "exact_mc95": [
+            0.034086074593150856,
+            0.052285913242374166
+          ],
+          "mean_estimate": -8.762665108482115e-05,
+          "nonidentity_count": 956,
+          "nonidentity_coverage": 0.8985355648535565,
+          "nonidentity_coverage_mc95": [
+            0.8776279924875345,
+            0.9169477050196854
+          ],
+          "nonidentity_covered": 859,
+          "rate": 0.0425,
+          "reject_with_negative_predictable_gain": 5,
+          "rejections": 85
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.14419042002455143,
+            0.1768130612499373
+          ],
+          "mean_estimate": 0.08356661460022323,
+          "rate": 0.16,
+          "reject_with_negative_predictable_gain": 44,
+          "rejections": 320
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.08954735419896906,
+            0.11663068395544833
+          ],
+          "minimum_p": 0.03125,
+          "rate": 0.1025,
+          "rejections": 205
+        }
+      },
+      "positive_score_negative_gain_count": 308,
+      "settings": {
+        "development_per_star": 100,
+        "family": "specificity",
+        "id": "specificity-regime-shift",
+        "level_shift": -0.8,
+        "mark_shift": -1.5,
+        "nominal_oracle_gain": 0.0,
+        "null_class": "no_direct_effect_joint_shift",
+        "stars": 5,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "746bc377662bbca741a4ec240b6b043c59475f3586cf3a4268c0427bf069e594"
+    },
+    {
+      "attempted": 2000,
+      "case": "specificity-delayed-history",
+      "completed": 2000,
+      "elapsed_seconds": 16.3748587500304,
+      "failures": 0,
+      "family": "specificity",
+      "identity_count": 769,
+      "mean_beta": 0.010096870668175618,
+      "mean_nominal_individual_oracle_gain": 0.0,
+      "mean_predictable_gain": -0.00011715373533364565,
+      "mean_predictable_score": 0.04993866749899968,
+      "mean_supported_marks": 549.823,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.968,
+          "coverage_mc95": [
+            0.9593186808413925,
+            0.9752707146218645
+          ],
+          "covered": 1936,
+          "exact_mc95": [
+            0.041772838490720395,
+            0.061569753431508376
+          ],
+          "mean_estimate": -9.505217953206707e-05,
+          "nonidentity_count": 1231,
+          "nonidentity_coverage": 0.9480097481722177,
+          "nonidentity_coverage_mc95": [
+            0.9340914204738144,
+            0.9597342483328802
+          ],
+          "nonidentity_covered": 1167,
+          "rate": 0.051,
+          "reject_with_negative_predictable_gain": 4,
+          "rejections": 102
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.11793836315119066,
+            0.14814803187518946
+          ],
+          "mean_estimate": 0.05015913938607673,
+          "rate": 0.1325,
+          "reject_with_negative_predictable_gain": 16,
+          "rejections": 265
+        },
+        "star-gain": {
+          "coverage": 0.976,
+          "coverage_mc95": [
+            0.9683043044095688,
+            0.9822525154034418
+          ],
+          "covered": 1952,
+          "exact_mc95": [
+            0.026054421067532103,
+            0.042350446233080916
+          ],
+          "mean_estimate": -9.505217953206707e-05,
+          "nonidentity_count": 1231,
+          "nonidentity_coverage": 0.9610073111291633,
+          "nonidentity_coverage_mc95": [
+            0.9486315060199526,
+            0.9711124782457377
+          ],
+          "nonidentity_covered": 1183,
+          "rate": 0.0335,
+          "reject_with_negative_predictable_gain": 5,
+          "rejections": 67
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.0806251668594549,
+            0.1065822968591036
+          ],
+          "mean_estimate": 0.05015913938607673,
+          "rate": 0.093,
+          "reject_with_negative_predictable_gain": 15,
+          "rejections": 186
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.05828040513292325,
+            0.08100287591066666
+          ],
+          "minimum_p": 0.03125,
+          "rate": 0.069,
+          "rejections": 138
+        }
+      },
+      "positive_score_negative_gain_count": 244,
+      "settings": {
+        "development_per_star": 100,
+        "family": "specificity",
+        "id": "specificity-delayed-history",
+        "mark_history_correlation": 0.65,
+        "nominal_oracle_gain": 0.0,
+        "null_class": "no_direct_effect_history_proxy",
+        "outcome_delay_days": 80.0,
+        "outcome_delay_probability": 0.5,
+        "stars": 5,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "9ef5363266d9f779406af060dbf0903b555fb72e20c3b4519565630ce03e8573"
+    },
+    {
+      "attempted": 2000,
+      "case": "specificity-development-overshoot",
+      "completed": 2000,
+      "elapsed_seconds": 10.519598708022386,
+      "failures": 0,
+      "family": "specificity",
+      "identity_count": 0,
+      "mean_beta": 0.114882572213533,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": -0.02871574108859194,
+      "mean_predictable_score": 0.25207299227171115,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.911,
+          "coverage_mc95": [
+            0.897660305615413,
+            0.9231197599392632
+          ],
+          "covered": 1822,
+          "exact_mc95": [
+            1.26588238685579e-05,
+            0.0027826398346589465
+          ],
+          "mean_estimate": -0.028578686522846248,
+          "nonidentity_count": 2000,
+          "nonidentity_coverage": 0.911,
+          "nonidentity_coverage_mc95": [
+            0.897660305615413,
+            0.9231197599392632
+          ],
+          "nonidentity_covered": 1822,
+          "rate": 0.0005,
+          "reject_with_negative_predictable_gain": 1,
+          "rejections": 1
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.8096970003141257,
+            0.8433384767223354
+          ],
+          "mean_estimate": 0.25314323643873804,
+          "rate": 0.827,
+          "reject_with_negative_predictable_gain": 1654,
+          "rejections": 1654
+        },
+        "star-gain": {
+          "coverage": 0.9115,
+          "coverage_mc95": [
+            0.8981911520129151,
+            0.9235873508925726
+          ],
+          "covered": 1823,
+          "exact_mc95": [
+            1.26588238685579e-05,
+            0.0027826398346589465
+          ],
+          "mean_estimate": -0.028578686522846248,
+          "nonidentity_count": 2000,
+          "nonidentity_coverage": 0.9115,
+          "nonidentity_coverage_mc95": [
+            0.8981911520129151,
+            0.9235873508925726
+          ],
+          "nonidentity_covered": 1823,
+          "rate": 0.0005,
+          "reject_with_negative_predictable_gain": 1,
+          "rejections": 1
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.7288791875764025,
+            0.7673896469304793
+          ],
+          "mean_estimate": 0.25314323643873804,
+          "rate": 0.7485,
+          "reject_with_negative_predictable_gain": 1497,
+          "rejections": 1497
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.5650566693602671,
+            0.6086878630855468
+          ],
+          "minimum_p": 0.03125,
+          "rate": 0.587,
+          "rejections": 1174
+        }
+      },
+      "positive_score_negative_gain_count": 2000,
+      "settings": {
+        "development_effect_multiplier": 4.0,
+        "development_per_star": 100,
+        "family": "specificity",
+        "id": "specificity-development-overshoot",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect_overshoot",
+        "stars": 5,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "7db22c76d64c6233bc5448bcb330df991f089e0bacc953049e53826a5ce594b5"
+    },
+    {
+      "attempted": 2000,
+      "case": "specificity-opposite-signs",
+      "completed": 2000,
+      "elapsed_seconds": 10.476573665975593,
+      "failures": 0,
+      "family": "specificity",
+      "identity_count": 986,
+      "mean_beta": 0.006014643006533506,
+      "mean_nominal_individual_oracle_gain": 0.003200000000000001,
+      "mean_predictable_gain": -0.0005398500851164544,
+      "mean_predictable_score": -0.0010020252652928531,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.985,
+          "coverage_mc95": [
+            0.9786553324889212,
+            0.9898572817087236
+          ],
+          "covered": 1970,
+          "exact_mc95": [
+            0.002059688528490357,
+            0.00852514124099515
+          ],
+          "mean_estimate": -0.000542527865826441,
+          "nonidentity_count": 1014,
+          "nonidentity_coverage": 0.9704142011834319,
+          "nonidentity_coverage_mc95": [
+            0.9580323305969947,
+            0.9799514446852131
+          ],
+          "nonidentity_covered": 984,
+          "rate": 0.0045,
+          "reject_with_negative_predictable_gain": 7,
+          "rejections": 9
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.016457868212595234,
+            0.029991932577308516
+          ],
+          "mean_estimate": -0.002567780274281788,
+          "rate": 0.0225,
+          "reject_with_negative_predictable_gain": 20,
+          "rejections": 45
+        },
+        "star-gain": {
+          "coverage": 0.993,
+          "coverage_mc95": [
+            0.9882830542294679,
+            0.9961679060996261
+          ],
+          "covered": 1986,
+          "exact_mc95": [
+            0.0008122259751939098,
+            0.005824445334518517
+          ],
+          "mean_estimate": -0.000542527865826441,
+          "nonidentity_count": 1014,
+          "nonidentity_coverage": 0.9861932938856016,
+          "nonidentity_coverage_mc95": [
+            0.9769431014336616,
+            0.9924317396388257
+          ],
+          "nonidentity_covered": 1000,
+          "rate": 0.0025,
+          "reject_with_negative_predictable_gain": 5,
+          "rejections": 5
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.0077033433702185,
+            0.017802731356322096
+          ],
+          "mean_estimate": -0.002567780274281788,
+          "rate": 0.012,
+          "reject_with_negative_predictable_gain": 12,
+          "rejections": 24
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.003465381208667553,
+            0.011089549271656375
+          ],
+          "minimum_p": 0.03125,
+          "rate": 0.0065,
+          "rejections": 13
+        }
+      },
+      "positive_score_negative_gain_count": 372,
+      "settings": {
+        "development_per_star": 100,
+        "effect_profile": [
+          1.0,
+          -1.0,
+          1.0,
+          -1.0,
+          0.0
+        ],
+        "family": "specificity",
+        "id": "specificity-opposite-signs",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "heterogeneous_zero_pooled_coefficient",
+        "stars": 5,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "6e6e8da55ff4f2e0acb00431aca2562d173078000100d533825497e53b9157e5"
+    },
+    {
+      "attempted": 2000,
+      "case": "small-star-granularity",
+      "completed": 2000,
+      "elapsed_seconds": 8.839228083961643,
+      "failures": 0,
+      "family": "small_cluster",
+      "identity_count": 146,
+      "mean_beta": 0.028951677519929563,
+      "mean_nominal_individual_oracle_gain": 0.004000000000000002,
+      "mean_predictable_gain": 0.0025163143639059344,
+      "mean_predictable_score": 0.2826981557694637,
+      "mean_supported_marks": 1100.0,
+      "methods": {
+        "halves-gain": {
+          "coverage": 0.926,
+          "coverage_mc95": [
+            0.9136414276594225,
+            0.9370913151587622
+          ],
+          "covered": 1852,
+          "exact_mc95": [
+            0.28879096476825905,
+            0.32977043816077917
+          ],
+          "mean_estimate": 0.002535520013464871,
+          "nonidentity_count": 1854,
+          "nonidentity_coverage": 0.9201725997842503,
+          "nonidentity_coverage_mc95": [
+            0.9068899904568551,
+            0.9321068173868376
+          ],
+          "nonidentity_covered": 1706,
+          "rate": 0.309,
+          "reject_with_negative_predictable_gain": 1,
+          "rejections": 618
+        },
+        "halves-score": {
+          "exact_mc95": [
+            0.7601635705692499,
+            0.7970148904752342
+          ],
+          "mean_estimate": 0.28449093046963125,
+          "rate": 0.779,
+          "reject_with_negative_predictable_gain": 97,
+          "rejections": 1558
+        },
+        "star-gain": {
+          "coverage": 0.915,
+          "coverage_mc95": [
+            0.9019104528118629,
+            0.9268570860440872
+          ],
+          "covered": 1830,
+          "exact_mc95": [
+            0.21268353148964528,
+            0.2501083445696635
+          ],
+          "mean_estimate": 0.002535520013464871,
+          "nonidentity_count": 1854,
+          "nonidentity_coverage": 0.9083063646170443,
+          "nonidentity_coverage_mc95": [
+            0.8942459419531567,
+            0.9210586657567797
+          ],
+          "nonidentity_covered": 1684,
+          "rate": 0.231,
+          "reject_with_negative_predictable_gain": 4,
+          "rejections": 462
+        },
+        "star-score": {
+          "exact_mc95": [
+            0.5369168422787913,
+            0.5809099311557445
+          ],
+          "mean_estimate": 0.28449093046963125,
+          "rate": 0.559,
+          "reject_with_negative_predictable_gain": 71,
+          "rejections": 1118
+        },
+        "star-score-sign-flip": {
+          "exact_mc95": [
+            0.0,
+            0.0018427397934059364
+          ],
+          "minimum_p": 0.125,
+          "rate": 0.0,
+          "rejections": 0
+        }
+      },
+      "positive_score_negative_gain_count": 127,
+      "settings": {
+        "development_per_star": 100,
+        "family": "small_cluster",
+        "id": "small-star-granularity",
+        "nominal_oracle_gain": 0.004,
+        "null_class": "positive_direct_effect",
+        "stars": 3,
+        "test_forecasts": 1100
+      },
+      "trials_sha256": "ecb823a9f6395c3cfd2ca032407c6d72dfe6d433ad0647b65920c34823a36b04"
+    }
+  ],
+  "limitations": [
+    "predictable path-average gain is not unconditional long-run KL",
+    "sign flips require independent symmetric star contributions; stressed empirically only",
+    "no method is selected on these same simulation outcomes",
+    "no-direct-effect scenarios may still allow predictive gain over an estimated baseline",
+    "Monte Carlo intervals are per cell, not simultaneous certifications"
+  ],
+  "scope": "independent sequential Gaussian point-log-gap screen, not calendar-yield or X5 validation",
+  "selection": "none; report all methods on this independent screen"
+}

@@ -1,0 +1,31 @@
+{
+  "changed_original_sources": [],
+  "changed_r2b_outputs": [],
+  "changed_r2b_sources": [],
+  "original_parameter_sha256": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "original_qualified_sources": 26,
+  "product_current_sha256": {
+    "manuscript/build/brief.pdf": "b988e5524a3568ca45de085ca58cb2acd63349e67520d61005a960150dcb1789",
+    "manuscript/build/manuscript.pdf": "758e4f042310930cca7214497a0431881b6507f6690a4dd631f306799daa7e0d",
+    "manuscript/build/supplement.pdf": "16776fb1c9662109b130492ded3ef58f76cd0dd2afb67aa9f76ab009b8ac8bba",
+    "manuscript/text/brief.md": "b54a0ec20660deaa4065bb2336676add3d8af82a9d9649ce1f66f36f06c78e99",
+    "manuscript/text/brief_figures.md": "35914c01792a917dea63e3bf5616745ab0e989870a2df73f1414061037dccf36",
+    "manuscript/text/figures.md": "c8204ffcdbc48a93f6ed692df86a20f306650dd92452a015d3a3efc61b81e297",
+    "manuscript/text/for-agents.md": "383fa1b3aed824dd4d16dcaeb732b1a9c84a161a6b3a88570be588c4de9e1877",
+    "manuscript/text/main.md": "6266ac3f2d2e500a26e45fb2c8b2093624352373e9bf78ec59c6627869ae0c1a",
+    "manuscript/text/supplement.md": "1d1b234f3ed3c8b36a72a16503f18c66957c40b84f64c40160607a7d3ecb0b40",
+    "manuscript/text/supplement_figures.md": "81c5167745d1d99a5b220f0ae43ebe012f97970d6368a600313b3abd1ff1fc54"
+  },
+  "product_text_changed_from_base": [],
+  "r2b_parameter_sha256": "8c8c53a2602309a2d29d509b6fae60e2f94b11a62c6e051531ae42a1d8ae0630",
+  "r2d_changed_functional_sources": [],
+  "r2d_source_freeze": "67c45ab218e5fe089b49e5178cf53c8c0c638681",
+  "r2d_test_only_differences": [
+    {
+      "current_sha256": "056128948fa5975a5473f47ef91ad4f55a1bdc0710b82415cfcdc38bfe9756b9",
+      "frozen_sha256": "500ed89e46683e8f6fbd1c7f94d097efedf7cf5f1b9eeb6b421ad08ca38db498",
+      "path": "tests/test_r2d_simulation.py"
+    }
+  ],
+  "r2d_test_repair_commit": "3e195a5"
+}

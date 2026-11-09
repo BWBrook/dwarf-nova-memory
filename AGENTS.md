@@ -120,6 +120,11 @@ and inconclusive. R2d v1 studies forecast gain and a score moment separately;
 the latter does not confirm improvement of a frozen forecast. No primary-claim
 change or new-star access is approved. See `docs/protocols/r2d-sealed-design-v1.md`.
 Guarded statistics are exploratory and do not exclude arbitrary slow co-variation.
+R2d source freeze `67c45ab` completed 35 × 2,000 synthetic point-log-gap trials
+without failures. It does not establish robust 80% power or an observational
+error-rate guarantee; the clean eight-star score result does not validate the
+frozen forecast-gain claim. C65–C66 await Claude's review. Keep all methods and
+failed screens; see `docs/audits/2026-11-09-r2d-precision-results.md`.
 Frozen X4 bytes stay unchanged. Manuscript rewriting
 waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
 

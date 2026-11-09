@@ -37,8 +37,8 @@ ROOT = Path(__file__).resolve().parents[1]
 FIELDS = ["id", "status", "claim", "value", "basis", "evidence", "commit", "reproduce", "limit", "superseded_by"]
 BINDING_FIELDS = ["binding_id", "claim_id", "evidence", "selector", "value_column", "estimand", "display_values"]
 STATUS = {"supported", "provisional", "refuted", "superseded"}
-NUMBER = re.compile(r"(?<![\w.])(~?)([−-]?\d{1,3}(?:,\d{3})+(?:\.\d+)?(?!\d)|[−-]?\d+(?:\.\d+)?(?:e[−-]?\d+)?)")
-PLAIN = re.compile(r"(?<![\w.])(~?)([−-]?\d+(?:\.\d+)?(?:e[−-]?\d+)?)")
+NUMBER = re.compile(r"(?<![\w.])(~?)([−-]?\d{1,3}(?:,\d{3})+(?:\.\d+)?(?!\d)|[−-]?\d+(?:\.\d+)?(?:e[−-]?\d+)?)(?!\w)")
+PLAIN = re.compile(r"(?<![\w.])(~?)([−-]?\d+(?:\.\d+)?(?:e[−-]?\d+)?)(?!\w)")
 SPAN = re.compile(r"(?<!!)\[([^\[\]]*)\]\{([^}]*)\}")
 BARE = re.compile(r"(?<![\w.{-])C\d{2,3}\b")
 
