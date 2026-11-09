@@ -1,0 +1,33 @@
+{
+  "checker_sha256": "62cf537a95285a42801596c36f21937766820a43a7ec4c82f52b47a1867ec1f6",
+  "environment": {
+    "numpy": "2.5.4",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.4 (main, Apr 14 2026, 14:46:33) [Clang 22.1.3 ]",
+    "scipy": "1.18.1"
+  },
+  "limits": [
+    "Saved final labels and proxy resolution times are not an as-of label ledger.",
+    "Closure-delay check changes zero memberships under the limited convention only.",
+    "Counterfactual guards are post-result diagnostics, not a causal C01 decomposition or full prospective predictor replay."
+  ],
+  "outputs": {
+    "report.md": {
+      "bytes": 6197,
+      "sha256": "6e4be54686fd03727cf2d9035c67fafffb9bf2d97f9959482a4aca0d78deb3bb"
+    },
+    "summary.json": {
+      "bytes": 55151,
+      "sha256": "727ba9b07701f2f5da115138e5f6d7710a79524387268a335b634616a0a6e9f8"
+    }
+  },
+  "review_base": "6a94c9d",
+  "reviewed_source_sha256": {
+    "docs/audits/2026-11-09-claude-r2b-review.md": "243c965adedba3d202da8dcd6de39639b7b025ac23e57dc22eb8a7725fdabbbe",
+    "docs/protocols/r2d-sealed-design-v0.md": "04fcf4ccbab5463880b27e66b63323279cdc0c136d415b67bff3a5522d6610ac",
+    "manuscript/claims.csv": "ef6f79d8cd6c036bda809de6422833ca677e55ad87b6710a993b6d0a1a819b17",
+    "scripts/r2b_claude_review_checks.py": "c0c66e7f2ccb08f8b4dbca59805b573cb3f8387672d4f57c0be3845876b12076"
+  },
+  "scope": "independent audit of retained R2b outputs and historical Claude diagnostics; no new fits, raw archive requests or 2018+ access",
+  "status": "completed"
+}

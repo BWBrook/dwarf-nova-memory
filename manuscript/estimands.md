@@ -65,28 +65,46 @@ populations differ; they must not share a denominator silently.
 ## R2b review qualification (D042, C61–C64)
 
 **What changes.**
-- B2 is the preselected comparator. It fails development adequacy (C61), so it is not a strong
-  baseline. H2 measures duration's gain over a noisy base, not over the best available history
-  model.
-- A mark whose mean shifts between eras can earn gain by correcting a base level error (C62).
-  This explains the positive observing-rate result. It also inflates the point-clock duration
-  gains by about 30% in the analogous R2b analysis.
-- "Drift-guarded" results use a causally centred mark at a causally recalibrated base (C63).
-  They are exploratory and were designed after R2b. They may inform planning and
-  interpretation, never confirmation.
-- The score-test efficiency (C64) is a design property, not evidence of an effect.
+- B2 is the preselected comparator, with lower development likelihood and descriptive held-out
+  baseline means than B0/B1 (C61). This motivates review of its windowed implementation, but
+  does not uniquely identify the random-walk level as the cause or establish the latent gap
+  process. H2 does not measure gain over the empirically best history model.
+- Marks with era-shifted means can carry baseline calibration information. The post-result
+  rolling guards attenuate observing-rate and fitted-duration gains (C62). They change both
+  the baseline and predictor, so this is not a unique causal allocation. The analogous point-B0
+  gain changes from 0.0184 to 0.0132; no fraction of C01 was measured.
+- Historical "drift-guarded" diagnostics (C63) retain the original unguarded development beta,
+  recalibrate from evaluation forecasts only, and use final saved outcome labels with proxy
+  resolution times. Adding simple report-closure and coverage-recognition delays changes no
+  SS Cyg update sets, but does not establish a complete prefix-causal label ledger. These
+  diagnostics are not an executed replay of the proposed R2d predictor, which includes
+  development history and its own guarded coefficient fit.
+- Trailing mark centring and rolling level corrections attenuate specified slow variation;
+  they do not exclude arbitrary slow co-variation by construction. Residual drift and
+  observation pathways remain possible.
+- C64 verifies a local Taylor relation and sample design effects, not prospective power.
+  The predicted and observed score/gain ratios reuse the evaluation score and curvature.
+  A score statistic for a zero working-coefficient moment and a test of positive gain from
+  the actual development-fitted forecast address different nulls. Rejecting the former does
+  not establish the latter; neither guarantees a physical mechanism or latent-score propriety.
 
 **Allowed:**
-- “In SS Cyg, the association of outburst span with the next quiescent interval remains positive
-  after removing era-level drift, but is not decisive under block dependence.”
-- “About a third of the analogous point-clock gain reflects a shift in the gap level between
-  1910–1959 and 1960–2017.”
+- “The post-result guarded duration gains remain positive in SS Cyg. DF B0 and B2 gain
+  intervals remain inconclusive; guarded point-original B0 has positive lower limits under
+  both blockings. These are exploratory results.”
+- “The observing-rate estimate also stays positive, with intervals spanning zero. This is
+  compatible with an era-calibration pathway, without uniquely attributing its information.”
+- “The analogous point-clock gain is smaller under the chosen rolling guards. The change is
+  not a measured causal component of C01.”
 
 **Not allowed:**
 - “the observing-rate result shows a cadence artefact”;
 - “B2 removing the gain shows a slow state”;
-- “C01 measures outburst-to-outburst memory” without the era-level qualification;
-- any guarded statistic called a test result.
+- “the guards remove all slow co-variation” or “the era shift explains the rate result”;
+- a claim that about a third of C01 was causally attributed to the era shift;
+- different significance labels used as evidence that duration and rate effects differ;
+- a zero-coefficient score test described as confirmation of forecast gain;
+- any post-result guarded statistic presented as a new confirmation.
 
 ## Primary forecast gain (C01–C04)
 
@@ -107,9 +125,10 @@ populations differ; they must not share a denominator silently.
   gain. The ratio to M2's mean gain over M0 is about 14%; this is not variance explained.
 - **Conditions beside the headline:** one star, one extraction, one frozen baseline; the
   post-access repair (C05); the inconclusive later segment and type/within-type rule (C07, C08).
-  Since D042, also the era-level qualification: fitted duration ran 0.24 SD shorter in 1960–2017
-  while the history baseline over-forecast waits. In the analogous R2b point-clock analysis,
-  about 30% of the gain is that level correction (C62).
+  Since D042, also the era-level qualification: the analogous R2b fitted-duration and baseline
+  diagnostics suggest a calibration pathway (C62). The chosen rolling guards reduce that
+  point-B0 gain from 0.0184 to 0.0132. This is a post-result sensitivity using a different model,
+  score and population; neither an era component nor a percentage of C01 has been measured.
 - **Not allowed:** physical memory, causation, confirmation of a disc mechanism, generality to
   dwarf novae, operational forecasts, a blind/untouched evaluation, well-calibrated predictions,
   or an additional confirmatory test chosen after inspection. The rule was an interval criterion.

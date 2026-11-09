@@ -145,18 +145,19 @@ baseline/precision decisions or any new-star access request. All 516 tests and
 independent actual-score reconstruction pass; manuscript products remain paused.
 
 [Claude's R2b review](docs/audits/2026-11-09-claude-r2b-review.md) (D042) supports
-C53–C58 and C60 by separate routes and finds three things.
-- B2 is misspecified (a random-walk level that cannot revert to the long-run mean).
-- Quiescent intervals were markedly shorter in 1960–1983, so the history baselines
-  over-forecast waits.
-- A mark whose mean shifts between eras gains by correcting that level error. This
-  explains the positive observing-rate result and about 30% of the point-clock
-  duration gain.
+C53–C58 and C60. The independent R2d audit also reproduces C61–C64's arithmetic:
+B2 has worse development likelihood, early evaluation gaps were shorter, and
+post-result rolling corrections attenuate several gains. These are descriptive
+diagnostics: they do not identify the source of the gap shift or a fraction of
+C01 attributable to it. The guarded observing-rate estimate remains positive
+and inconclusive. The point-clock B0 duration interval excludes zero under both
+blockings, while the corresponding DF B0/B2 intervals cross zero.
 
-With both drift guards, duration stays positive on both clocks (six-year t 1.7–2.3),
-while observing rate falls to t 1.34. The proposed
-[R2d rules](docs/protocols/r2d-sealed-design-v0.md) switch the sealed detection test
-to an efficient score test with drift guards and a level-recalibrated B0 base.
+[R2d v1](docs/protocols/r2d-sealed-design-v1.md) freezes a dual-statistic synthetic
+precision screen with a level-recalibrated B0 candidate. Forecast gain remains
+the default confirmatory claim. A positive score moment tests a different
+conditional association and can coexist with a losing frozen forecast rule.
+Rolling corrections do not exclude slow co-variation. No new-star access follows.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
@@ -252,6 +253,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [R2b results](docs/audits/2026-11-09-r2b-exploratory-execution.md) | Inconclusive state-space duration gains, observing-rate sensitivity, baseline adequacy and independent numerical checks |
 | [Claude R2b review](docs/audits/2026-11-09-claude-r2b-review.md) | B2 misspecification, era level shift, drift pathway, drift-guarded duration estimates and score-test efficiency |
 | [R2d sealed design v0](docs/protocols/r2d-sealed-design-v0.md) | Proposed estimand, guards, B0R comparator, score-test primary and precision planning for the multi-star test |
+| [R2d design v1](docs/protocols/r2d-sealed-design-v1.md) | Amended dual-statistic precision screen, causal availability rules, null classes and small-cluster limits |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

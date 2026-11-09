@@ -112,10 +112,14 @@ a validated negative control. B2 is stable yet has lower observed baseline means
 than B0/B1; call it preselected, not empirically strongest. All 24,348 scores
 reconstruct independently. New claims C53–C60 await Claude; no primary switching
 or new data access follows. See the R2b execution report before R2d/G3 planning.
-Claude's review (D042) supports C53–C58/C60, retires B2 as the sealed comparator
-(development misfit), identifies an era level shift and the drift pathway that
-explains the rate result (C61–C64, provisional), and proposes R2d rules in
-`docs/protocols/r2d-sealed-design-v0.md`. Guarded statistics are exploratory.
+Claude's review (D042) supports C53–C58/C60. Codex's independent C61–C64 audit
+supports the narrowed numerical diagnostics: worse B2 development likelihood,
+an era gap-level shift and post-result guard attenuation, without identifying
+physical cause or a fraction of C01. The guarded rate estimate remains positive
+and inconclusive. R2d v1 studies forecast gain and a score moment separately;
+the latter does not confirm improvement of a frozen forecast. No primary-claim
+change or new-star access is approved. See `docs/protocols/r2d-sealed-design-v1.md`.
+Guarded statistics are exploratory and do not exclude arbitrary slow co-variation.
 Frozen X4 bytes stay unchanged. Manuscript rewriting
 waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
 

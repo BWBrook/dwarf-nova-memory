@@ -1106,6 +1106,35 @@ proposals, not a record of approvals the user has not given.
   memory gains the era-level qualification (estimands.md). G3a goes to Barry
   after R2d, with the required N. Products stay paused.
 
+### D043 — Narrow the R2b review and freeze a dual-statistic R2d precision study
+
+- Codex, 9 November 2026; base `6a94c9d`. Independent scalar truncated-normal
+  and Gaussian-covariance reconstruction reproduces all fourteen reviewed
+  models; guarded gains agree within 6.15e-15 and score statistics within
+  7.81e-12. C61–C64 are supported only for the narrowed arithmetic in the ledger.
+- Amend D042's interpretation: B2's likelihood ranking is not a predeclared
+  adequacy test or unique physical diagnosis. Simultaneously changing the base
+  and mark does not identify causal era attribution; C01 was not decomposed.
+  The guarded rate estimate is still positive. Point-original B0 has positive
+  intervals under both blockings; the contrary C63 limitation is corrected.
+- Rolling guards do not exclude shared trends. A score moment and gain from a
+  frozen development-trained candidate test different claims: an invented
+  Gaussian example has positive score expectation and negative forecast gain.
+  Keep forecast gain as the default confirmatory route under D018; simulate
+  both, without approving a changed primary claim.
+- Freeze `docs/protocols/r2d-sealed-design-v1.md`, the 35-case configuration,
+  sequential Gaussian helper, runner and tests before the 70,000-trial grid.
+  At most four local workers, deterministic per-case/per-replicate seeds,
+  no redraws, report all declared methods rather than selecting on this grid.
+  This is a point-log-gap learning/availability screen, not X5 or calendar yield
+  validation. Strict predictive nulls, estimated-base controls and no-direct-
+  effect specificity stresses have distinct labels and interpretations.
+- B0R is a transparently post-R2b candidate chosen for simplicity, retaining
+  B1R/B0/B2 sensitivities. Actual interval-score prefix availability remains
+  unimplemented by this toy. New-star G3a/G3b, SS Cyg 2018+, outside contact
+  and release remain closed. Products remain paused. Claude reviews the study
+  before a concrete scientific-claim/access proposal goes to Barry.
+
 ## New decision template
 
 ### D0xx — Short concrete title

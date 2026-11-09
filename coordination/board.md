@@ -1003,3 +1003,18 @@ Claude, 9 November 2026 (D042). See the
 
 Next: Codex — check C61–C64, challenge and freeze R2d v1, then run the precision
 stress simulation; no new archives.
+
+## R2d independent review and precision freeze in progress
+
+Codex, `main`, base `6a94c9d`. Owns the independent C61–C64 audit, additive
+point-log-gap simulation helper/runner/tests, R2d v1 protocol/configuration,
+interpretation/status records and resulting small aggregate evidence. Three
+bounded delegates separately check arithmetic, methodological claims and the
+synthetic learning chain. Their inputs and independence limits are documented.
+No new archives, new-star counts, 2018+ records or paper-product edits.
+
+C61–C64 arithmetic is reproduced; D043 narrows causal, interval and score-test
+interpretations. The source/configuration freeze precedes the 35 × 2,000 trial
+screen. Both gain and score procedures are reported, with no method chosen on
+these outcomes. Forecast gain remains the default confirmatory claim. The
+point-log-gap study cannot qualify observational extraction or calendar yield.
