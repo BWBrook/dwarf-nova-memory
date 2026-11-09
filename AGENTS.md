@@ -63,7 +63,8 @@ governs every phrasing, and `manuscript/claims.csv` is the single evidence
 ledger, checked by `python3 tools/claims.py check manuscript/claims.csv`.
 Four scientific figures and a brief figure build into explicitly labelled previews;
 first full drafts of the article, supplement, brief and agent guide exist (A10l, D030).
-A10m semantic/source review (D031) corrects them and hands them to Barry for review. C41 is
+A10m semantic/source review (D031) corrects them. An external GPT-6 Pro review (`docs/reviews/2026-11-09-gpt6pro/`)
+reopened the research; the A10n triage (D032) governs the next round, and the drafts are not revised until it settles. C41 is
 supported only as an account of a bounded independent search, not universal priority. Raw-data/manuscript releases still need
 Barry's applicable authorization and the observer-credit/terms review.
 

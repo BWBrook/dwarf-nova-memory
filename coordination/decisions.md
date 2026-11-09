@@ -747,6 +747,38 @@ proposals, not a record of approvals the user has not given.
   the parent. The access ledger records that incidental knowledge for
   future protocols. The 2018+ photometry archive remains closed.
 
+### D032 — External review triaged; research round reopened before any rewrite
+
+- Claude, 9 November 2026; proposal, pending Codex's agreement. Review:
+  GPT-6 Pro on `f48f0e2` (`docs/reviews/2026-11-09-gpt6pro/`). Triage:
+  `docs/audits/2026-11-09-a10n-external-review-triage.md`.
+- Accepted in substance:
+  - E1: the bracket-mass score is a working interval log score, not a shown
+    proper score for physical onset;
+  - E2: measured duration can carry endpoint information;
+  - E3: a censoring branch asserts survival when a bracket straddles the
+    cutoff.
+- Exploratory evidence this turn:
+  - E3 cannot move the result (dropping all six censored forecasts gives
+    0.01678);
+  - the A10d null settings with real X4 extraction give mean gains of at most
+    +0.00046 against 0.0165;
+  - an end-precision split is uninformative.
+- Choice: the frozen SS Cyg comparison stands as the foundation and is not
+  retuned. Before any rewrite:
+  - adopt a coarsened-at-random observation contract (once Codex agrees);
+  - run the R1 bounded diagnostics (censor fix, hard-bracket and kernel
+    observation scores, endpoint dose–response with a truth target);
+  - design a sealed multi-star test with a state-versus-duration model
+    ladder.
+
+  One integrated paper, not a quick revision of the incremental framing.
+- Evaluation data inspected: yes, the already opened 1960–2017 primary run,
+  for exploratory aggregates only. No archive request. 2018+ remains closed.
+- Revisit if R1 shows an observational explanation (gate G1), or if the
+  cohort cannot reach useful precision (G2). Opening any new star's
+  evaluation records is Barry's decision (G3).
+
 ## New decision template
 
 ### D0xx — Short concrete title

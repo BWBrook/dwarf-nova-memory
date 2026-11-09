@@ -1,0 +1,112 @@
+{
+  "scope": "Synthetic finite-state counterexample; no repository needed for the independent result.",
+  "reviewed_commit_context": "f48f0e2c728739a97fb90fb795eddb54c98c2dc3",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "construction": "Independent equiprobable true ages {2,8} and end errors {0,6}; true duration 10; gap 5 with probability .9 or 20 with .1. Retain observed age >=0 and true gap > true age.",
+  "states": [
+    {
+      "true_age": 2,
+      "end_error": 0,
+      "true_duration": 10,
+      "true_gap": 5,
+      "observed_age": 2,
+      "observed_duration": 10,
+      "observed_gap": 5,
+      "remaining": 3,
+      "probability": "9/40",
+      "weight": "3/4"
+    },
+    {
+      "true_age": 2,
+      "end_error": 0,
+      "true_duration": 10,
+      "true_gap": 20,
+      "observed_age": 2,
+      "observed_duration": 10,
+      "observed_gap": 20,
+      "remaining": 18,
+      "probability": "1/40",
+      "weight": "1/12"
+    },
+    {
+      "true_age": 8,
+      "end_error": 0,
+      "true_duration": 10,
+      "true_gap": 20,
+      "observed_age": 8,
+      "observed_duration": 10,
+      "observed_gap": 20,
+      "remaining": 12,
+      "probability": "1/40",
+      "weight": "1/12"
+    },
+    {
+      "true_age": 8,
+      "end_error": 6,
+      "true_duration": 10,
+      "true_gap": 20,
+      "observed_age": 2,
+      "observed_duration": 16,
+      "observed_gap": 14,
+      "remaining": 12,
+      "probability": "1/40",
+      "weight": "1/12"
+    }
+  ],
+  "retention_probability": "3/10",
+  "mean_remaining_by_observed_duration_at_observed_age_2": {
+    "10": 4.5,
+    "16": 12.0
+  },
+  "conditional_high_duration_probability": "1/11",
+  "mutual_information_nats_at_observed_age_2": 0.30463609734923813,
+  "independent_fixed_baseline_fit": {
+    "alpha": 1.8434541868938124,
+    "sigma": 0.5816426418008261,
+    "beta": 0.2425359909604377,
+    "gain_nats": 0.08374495900528256,
+    "mark_center": 2.341752062097857,
+    "mark_scale": 0.1299021406927845,
+    "interval_width": 0.02,
+    "successful_baseline_starts": 9,
+    "total_baseline_starts": 9,
+    "baseline_optimizer": "Powell",
+    "mark_optimizer": "bounded scalar"
+  },
+  "checked_repository_sources": {
+    "scripts/a10d_design_calculations.py": "923237a0fcd1fc5d8d0ae8e58811b0e3a8fb4d6e759e1efe7d8212244ba19eb6"
+  },
+  "optional_repository_crosscheck": {
+    "performed": true,
+    "absolute_differences": {
+      "mutual_information": 0.0,
+      "beta": 3.965727535248931e-08,
+      "gain_nats": 6.375230121591358e-08
+    },
+    "tolerances": {
+      "mutual_information": 1e-12,
+      "beta": 0.0001,
+      "gain_nats": 1e-07
+    },
+    "helper_fixed_baseline_fit": {
+      "base_alpha": 1.8434543766945037,
+      "base_sigma": 0.5816423535061701,
+      "beta_standardized_log_duration": 0.24253595130316236,
+      "gain_nats_per_retained_anchor": 0.08374502275758378,
+      "baseline_nuisance_fixed": true,
+      "interval_width": 0.02,
+      "scope": "exact weighted late-age counterexample, not an SS Cyg bias estimate"
+    },
+    "note": "Helper called only after independent fit; its main/write entry point is not called."
+  },
+  "limits": [
+    "Existence demonstration only; does not estimate the size or sign of SS Cyg measurement bias.",
+    "Exact finite-state weights are not sampled archive observations; optimization is numerical.",
+    "A nonnegative duration coefficient cannot universally exclude endpoint-error information.",
+    "Passing this check does not identify the cause of the manuscript score gain."
+  ]
+}

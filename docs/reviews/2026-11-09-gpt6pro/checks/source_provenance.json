@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/BWBrook/dwarf-nova-memory",
+  "reviewed_commit": "f48f0e2c728739a97fb90fb795eddb54c98c2dc3",
+  "review_date": "2026-11-09",
+  "source_sha256": {
+    "src/dnmem/__init__.py": "b5ee123956d110e46d6c8713fd985d77e4e53e2c1159d7c36ce8483929004fd5",
+    "src/dnmem/directional_forecast.py": "79c70988af3ba13220bb8d8387b634a2b37fa6b3cecefc743ba75eb39d291a66",
+    "src/dnmem/ledger_forecast.py": "90d20095d774df9bd73da3d0a42fcfe538d6a349996340b20ae1ebbb1b03853f",
+    "scripts/a10d_design_calculations.py": "923237a0fcd1fc5d8d0ae8e58811b0e3a8fb4d6e759e1efe7d8212244ba19eb6",
+    "manuscript/figure-data/fig2-gains.json": "fe863b113e03c13a58b0c1131b7303e71dcd06f8665ca8ae40238c09a2a958fa",
+    "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+    "src/dnmem/extract_x3.py": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+    "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "src/dnmem/prefix_features.py": "51b49d25c4ab3d2e276e66a6b0e43ca6e6586cee294344146e5ea95205341ddd",
+    "src/dnmem/prefix_reference.py": "126b146736f3e11437502adbc721f0ede2eb30b546e9a473c8b9b0d075fd9d2d"
+  },
+  "public_input_sha256": {
+    "public_block_aggregates.json": "50a5b5ded26a9027da44013eff2b767720c10578d441b387f45f6ec376370493"
+  },
+  "review_script_basis_sha256": {
+    "verify_landmark_mixture.py": "096b5b130259731be28c0f0177bfcbf4f4d546e5a64ccfacc122c3aa61efea86",
+    "verify_endpoint_counterexample.py": "ac58f1c5e620ce6d4b41065870e97276e3d9fc6942ca99fe087bcecd86cf7e15",
+    "verify_censor_straddle.py": "75f40908335009e368db83a35c429ad3ed87a17f9a213969d4b343ed11e3802a"
+  },
+  "scope": "Pins selected source bytes before import; does not verify the whole checkout or fetch any files."
+}

@@ -1,0 +1,186 @@
+{
+  "scope": "Synthetic injected evidence only; establishes a branch behavior, not its empirical frequency or score impact.",
+  "reviewed_commit": "f48f0e2c728739a97fb90fb795eddb54c98c2dc3",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "checked_repository_sources": {
+    "src/dnmem/__init__.py": "b5ee123956d110e46d6c8713fd985d77e4e53e2c1159d7c36ce8483929004fd5",
+    "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+    "src/dnmem/extract_x3.py": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+    "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "src/dnmem/prefix_features.py": "51b49d25c4ab3d2e276e66a6b0e43ca6e6586cee294344146e5ea95205341ddd",
+    "src/dnmem/prefix_reference.py": "126b146736f3e11437502adbc721f0ede2eb30b546e9a473c8b9b0d075fd9d2d"
+  },
+  "implementations": [
+    "dnmem.prefix_features",
+    "dnmem.prefix_reference"
+  ],
+  "calls": 16,
+  "logical_witness": {
+    "issue": 10.0,
+    "bracket": [
+      18.0,
+      22.0
+    ],
+    "cutoff": 20.0,
+    "possible_onset": 19.0,
+    "inside_bracket": true,
+    "survives_cutoff": false
+  },
+  "results": [
+    {
+      "scenario": "before_cutoff",
+      "stop_reason": "coverage",
+      "input_bracket": [
+        16.0,
+        18.0
+      ],
+      "cutoff": 20.0,
+      "production_equals_reference": true,
+      "output": {
+        "kind": "interval",
+        "reason": "onset",
+        "onset_lo": 16.0,
+        "onset_hi": 18.0,
+        "censor_at": null,
+        "survival_ambiguous": false
+      }
+    },
+    {
+      "scenario": "straddles_cutoff",
+      "stop_reason": "coverage",
+      "input_bracket": [
+        18.0,
+        22.0
+      ],
+      "cutoff": 20.0,
+      "production_equals_reference": true,
+      "output": {
+        "kind": "right_censored",
+        "reason": "coverage",
+        "onset_lo": null,
+        "onset_hi": null,
+        "censor_at": 20.0,
+        "survival_ambiguous": false
+      }
+    },
+    {
+      "scenario": "after_cutoff",
+      "stop_reason": "coverage",
+      "input_bracket": [
+        22.0,
+        24.0
+      ],
+      "cutoff": 20.0,
+      "production_equals_reference": true,
+      "output": {
+        "kind": "right_censored",
+        "reason": "coverage",
+        "onset_lo": null,
+        "onset_hi": null,
+        "censor_at": 20.0,
+        "survival_ambiguous": false
+      }
+    },
+    {
+      "scenario": "straddles_issue",
+      "stop_reason": "coverage",
+      "input_bracket": [
+        9.0,
+        11.0
+      ],
+      "cutoff": 20.0,
+      "production_equals_reference": true,
+      "output": {
+        "kind": "excluded",
+        "reason": "ambiguous_survival",
+        "onset_lo": null,
+        "onset_hi": null,
+        "censor_at": null,
+        "survival_ambiguous": true
+      }
+    },
+    {
+      "scenario": "before_cutoff",
+      "stop_reason": "superseded",
+      "input_bracket": [
+        16.0,
+        18.0
+      ],
+      "cutoff": 20.0,
+      "production_equals_reference": true,
+      "output": {
+        "kind": "interval",
+        "reason": "onset",
+        "onset_lo": 16.0,
+        "onset_hi": 18.0,
+        "censor_at": null,
+        "survival_ambiguous": false
+      }
+    },
+    {
+      "scenario": "straddles_cutoff",
+      "stop_reason": "superseded",
+      "input_bracket": [
+        18.0,
+        22.0
+      ],
+      "cutoff": 20.0,
+      "production_equals_reference": true,
+      "output": {
+        "kind": "right_censored",
+        "reason": "superseded",
+        "onset_lo": null,
+        "onset_hi": null,
+        "censor_at": 20.0,
+        "survival_ambiguous": false
+      }
+    },
+    {
+      "scenario": "after_cutoff",
+      "stop_reason": "superseded",
+      "input_bracket": [
+        22.0,
+        24.0
+      ],
+      "cutoff": 20.0,
+      "production_equals_reference": true,
+      "output": {
+        "kind": "right_censored",
+        "reason": "superseded",
+        "onset_lo": null,
+        "onset_hi": null,
+        "censor_at": 20.0,
+        "survival_ambiguous": false
+      }
+    },
+    {
+      "scenario": "straddles_issue",
+      "stop_reason": "superseded",
+      "input_bracket": [
+        9.0,
+        11.0
+      ],
+      "cutoff": 20.0,
+      "production_equals_reference": true,
+      "output": {
+        "kind": "excluded",
+        "reason": "ambiguous_survival",
+        "onset_lo": null,
+        "onset_hi": null,
+        "censor_at": null,
+        "survival_ambiguous": true
+      }
+    }
+  ],
+  "interpretation": "Both implementations convert a bracket crossing the cutoff into right censoring at the cutoff. Membership in that bracket does not itself establish survival to the cutoff.",
+  "limits": [
+    "Extraction and visit summaries are mocked deliberately; this does not test whether real X4 observations generate the fixture.",
+    "No actual observation, empirical case count, or per-forecast score is read.",
+    "Agreement between implementations verifies concordance but does not validate the shared evidence contract.",
+    "This check does not quantify any effect on the reported primary comparison."
+  ]
+}

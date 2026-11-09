@@ -1,0 +1,167 @@
+{
+  "label": "A10n exploratory, post-result triage checks; not a confirmation",
+  "censor_audit": {
+    "censored": 6,
+    "reason_and_next_emitted_onset_relation": {
+      "coverage:after": 4,
+      "superseded:after": 1,
+      "record_end:no_later_emission": 1
+    },
+    "censored_total_contribution": -0.00679900154204247,
+    "mean_all": 0.016533512177436503,
+    "mean_excluding_censored": 0.01677719050986561,
+    "limit": "Relation uses the next emitted outburst's onset bracket; the evidence builder's actual candidate (first confirmed episode after emission) must be confirmed by Codex."
+  },
+  "end_width_split": {
+    "all": {
+      "n": 441,
+      "blocks": 10,
+      "mean": 0.016533512177436503,
+      "lower90": 0.00494771630959865,
+      "upper90": 0.028119308045274356
+    },
+    "end_bracket_width_days": {
+      "median": 1.0037204856052995,
+      "tercile_cuts": [
+        0.913423877209425,
+        1.1282757927353184
+      ],
+      "min": 0.5708499434404075,
+      "max": 3.1044987831264734
+    },
+    "narrow_half": {
+      "n": 221,
+      "blocks": 10,
+      "mean": 0.012807687199534682,
+      "lower90": -0.006243043785343714,
+      "upper90": 0.03185841818441308
+    },
+    "wide_half": {
+      "n": 220,
+      "blocks": 10,
+      "mean": 0.020276272723419694,
+      "lower90": 0.008660418867910882,
+      "upper90": 0.03189212657892851
+    },
+    "terciles": [
+      {
+        "n": 147,
+        "blocks": 10,
+        "mean": 0.008820209585157078,
+        "lower90": -0.009365086369460141,
+        "upper90": 0.027005505539774297
+      },
+      {
+        "n": 147,
+        "blocks": 10,
+        "mean": 0.02908934068022443,
+        "lower90": 0.008657179830590521,
+        "upper90": 0.04952150152985834
+      },
+      {
+        "n": 147,
+        "blocks": 10,
+        "mean": 0.011690986266927996,
+        "lower90": -0.0041369523300915974,
+        "upper90": 0.027518924863947587
+      }
+    ],
+    "spearman_width_gain": {
+      "rho": 0.029896035264487416,
+      "p": 0.5312002506003266
+    },
+    "prediction_stated_before_run": "An endpoint-error pathway predicts gain concentrated in wide end brackets."
+  },
+  "simulated_gain_M3_M2": [
+    {
+      "family": "v2-phase",
+      "case": "adaptive",
+      "nominal_null": true,
+      "mean_gain": -0.0008218574870947985,
+      "trial_sd": 0.0026332461947849825,
+      "mc_se": 0.00041635278077459714,
+      "confirmations": "0/40"
+    },
+    {
+      "family": "v2-phase",
+      "case": "alternative",
+      "nominal_null": false,
+      "mean_gain": 0.004519560867443926,
+      "trial_sd": 0.008660032035165972,
+      "mc_se": 0.0013692712920573928,
+      "confirmations": "11/40"
+    },
+    {
+      "family": "v2-phase",
+      "case": "gross",
+      "nominal_null": true,
+      "mean_gain": 0.00045646156813176865,
+      "trial_sd": 0.0027058402881330887,
+      "mc_se": 0.00042783091475734184,
+      "confirmations": "2/40"
+    },
+    {
+      "family": "v2-phase",
+      "case": "null",
+      "nominal_null": true,
+      "mean_gain": -0.00043766886942077983,
+      "trial_sd": 0.0019870311576958566,
+      "mc_se": 0.00031417721200200597,
+      "confirmations": "0/40"
+    },
+    {
+      "family": "v2-phase",
+      "case": "offset",
+      "nominal_null": true,
+      "mean_gain": -0.00041774068927448677,
+      "trial_sd": 0.0018042224800196762,
+      "mc_se": 0.0002852726221269906,
+      "confirmations": "0/40"
+    },
+    {
+      "family": "v2-phase",
+      "case": "slow_090",
+      "nominal_null": false,
+      "mean_gain": 0.0019061880240377233,
+      "trial_sd": 0.007541657748595465,
+      "mc_se": 0.0011924407909509598,
+      "confirmations": "6/40"
+    },
+    {
+      "family": "v2-phase",
+      "case": "slow_098",
+      "nominal_null": false,
+      "mean_gain": 0.004991599324638219,
+      "trial_sd": 0.00971249910512044,
+      "mc_se": 0.001535680947226387,
+      "confirmations": "7/40"
+    },
+    {
+      "family": "v2-phase",
+      "case": "structured",
+      "nominal_null": true,
+      "mean_gain": -0.001846419848430672,
+      "trial_sd": 0.004717399925024544,
+      "mc_se": 0.000745886419849255,
+      "confirmations": "1/40"
+    },
+    {
+      "family": "v4-phase",
+      "case": "alternative",
+      "nominal_null": false,
+      "mean_gain": 0.0015061828866193634,
+      "trial_sd": 0.006326544757622241,
+      "mc_se": 0.001414658414073826,
+      "confirmations": "6/20"
+    },
+    {
+      "family": "v4-phase",
+      "case": "null",
+      "nominal_null": true,
+      "mean_gain": -0.0009208603873639747,
+      "trial_sd": 0.0027046658778501513,
+      "mc_se": 0.000604781675929708,
+      "confirmations": "0/20"
+    }
+  ]
+}

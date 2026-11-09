@@ -1,0 +1,148 @@
+{
+  "scope": "Public aggregate arithmetic only; no observations, per-forecast scores, or archive access.",
+  "reviewed_commit": "f48f0e2c728739a97fb90fb795eddb54c98c2dc3",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "input_sha256": "50a5b5ded26a9027da44013eff2b767720c10578d441b387f45f6ec376370493",
+  "checked_repository_sources": {
+    "manuscript/figure-data/fig2-gains.json": "fe863b113e03c13a58b0c1131b7303e71dcd06f8665ca8ae40238c09a2a958fa"
+  },
+  "formula": "mean=sum(n_g*m_g)/N; SE^2=(G/(G-1))*sum([n_g*(m_g-mean)]^2)/N^2; interval=mean +/- t_(.95,G-1)*SE",
+  "primary_six_year_blocks": {
+    "n": 441,
+    "clusters": 10,
+    "degrees_of_freedom": 9,
+    "weighted_mean_gain_nats": 0.016533512177436503,
+    "CR1_standard_error": 0.006320284834306242,
+    "t_0_95": 1.833112932656237,
+    "two_sided_90_percent_interval": [
+      0.004947716309598648,
+      0.028119308045274356
+    ],
+    "one_sided_95_percent_lower_bound": 0.004947716309598648,
+    "geometric_mean_mass_ratio": 1.0166709470723405,
+    "geometric_mean_mass_change_percent": 1.6670947072340438
+  },
+  "reference_absolute_discrepancies": {
+    "mean": 0.0,
+    "lower": 1.734723475976807e-18,
+    "upper": 0.0
+  },
+  "positive_block_means": 8,
+  "leave_one_block_out": [
+    {
+      "omitted_block": 0,
+      "weighted_mean_gain_nats": 0.015182467305358978
+    },
+    {
+      "omitted_block": 1,
+      "weighted_mean_gain_nats": 0.013349085730417664
+    },
+    {
+      "omitted_block": 2,
+      "weighted_mean_gain_nats": 0.013240616611941909
+    },
+    {
+      "omitted_block": 3,
+      "weighted_mean_gain_nats": 0.018137578136013608
+    },
+    {
+      "omitted_block": 4,
+      "weighted_mean_gain_nats": 0.016513655974657173
+    },
+    {
+      "omitted_block": 5,
+      "weighted_mean_gain_nats": 0.019390042103520105
+    },
+    {
+      "omitted_block": 6,
+      "weighted_mean_gain_nats": 0.01931151141313586
+    },
+    {
+      "omitted_block": 7,
+      "weighted_mean_gain_nats": 0.015264176719982512
+    },
+    {
+      "omitted_block": 8,
+      "weighted_mean_gain_nats": 0.01786893064328111
+    },
+    {
+      "omitted_block": 9,
+      "weighted_mean_gain_nats": 0.016893441084842843
+    }
+  ],
+  "leave_one_block_out_mean_range": [
+    0.013240616611941909,
+    0.019390042103520105
+  ],
+  "single_exploratory_adjacent_pair_grouping": {
+    "status": "Post-result review sensitivity; not predeclared confirmation.",
+    "grouping": [
+      {
+        "members": [
+          0,
+          1
+        ],
+        "n": 102,
+        "mean_gain": 0.03391096882054889
+      },
+      {
+        "members": [
+          2,
+          3
+        ],
+        "n": 96,
+        "mean_gain": 0.02334513834900348
+      },
+      {
+        "members": [
+          4,
+          5
+        ],
+        "n": 82,
+        "mean_gain": 0.002625923621589738
+      },
+      {
+        "members": [
+          6,
+          7
+        ],
+        "n": 89,
+        "mean_gain": 0.00974411678289698
+      },
+      {
+        "members": [
+          8,
+          9
+        ],
+        "n": 72,
+        "mean_gain": 0.007064925533347025
+      }
+    ],
+    "statistics": {
+      "n": 441,
+      "clusters": 5,
+      "degrees_of_freedom": 4,
+      "weighted_mean_gain_nats": 0.0165335121774365,
+      "CR1_standard_error": 0.006052669922538592,
+      "t_0_95": 2.1318467863266495,
+      "two_sided_90_percent_interval": [
+        0.003630147254376633,
+        0.02943687710049637
+      ],
+      "one_sided_95_percent_lower_bound": 0.003630147254376633,
+      "geometric_mean_mass_ratio": 1.0166709470723405,
+      "geometric_mean_mass_change_percent": 1.6670947072340434
+    },
+    "calendar_note": "Nominal 12-year groups; the final group spans the shorter terminal block. Uses five clusters and t4."
+  },
+  "limits": [
+    "Assumes public counts and block means are correct; does not reproduce individual scores.",
+    "CR1 arithmetic does not establish cluster independence or valid interval coverage.",
+    "Coarser grouping is one exploratory diagnostic, not a tuned or replacement primary interval.",
+    "The exponential is a geometric bracket-mass ratio, not accuracy, variance explained, or a physical effect."
+  ]
+}

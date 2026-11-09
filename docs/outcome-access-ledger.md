@@ -470,3 +470,19 @@ that disclosure forward; do not describe all collaborators as wholly unaware
 of later-period outcomes. This exposure followed the completed 1960–2017
 primary result and changed no forecasting model, parameter, result or present
 scientific design.
+
+### Claude A10n external-review triage
+
+9 November 2026. To triage the GPT-6 Pro review, Claude read three files of the
+retained, already opened 1960–2017 primary run
+(`outputs/a10h_live_repair_5e39aeb`: `ledger-0.0.json`, `evidence-0.0.json`,
+`primary-scores.json`) and the committed A10d simulation aggregates.
+- Computed exploratory aggregates: the six censored forecasts' total
+  contribution and relation to the next emitted onset, and gains split by
+  end-bracket width.
+- Only aggregates are committed (`data/provenance/a10n_triage/checks.json`).
+- Per-issuance scores, event times and observer identities stay outside Git.
+- No archive request was made; no row from 2018 onward was requested or
+  inspected.
+- These checks are post-result exploration and cannot become a confirmation.
+

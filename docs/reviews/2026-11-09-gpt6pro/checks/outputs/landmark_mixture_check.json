@@ -1,0 +1,193 @@
+{
+  "scope": "Synthetic selected-path arithmetic check; no archival observations, fitted primary outcomes, or pipeline execution.",
+  "reviewed_commit": "f48f0e2c728739a97fb90fb795eddb54c98c2dc3",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "checked_repository_sources": {
+    "src/dnmem/__init__.py": "b5ee123956d110e46d6c8713fd985d77e4e53e2c1159d7c36ce8483929004fd5",
+    "src/dnmem/ledger_forecast.py": "90d20095d774df9bd73da3d0a42fcfe538d6a349996340b20ae1ebbb1b03853f",
+    "src/dnmem/directional_forecast.py": "79c70988af3ba13220bb8d8387b634a2b37fa6b3cecefc743ba75eb39d291a66"
+  },
+  "feature_fixture": {
+    "emission_index": 0,
+    "issue_time": 6.0,
+    "onset_t": -8.0,
+    "end_t": 2.0,
+    "end_lo": 0.0,
+    "end_hi": 4.0,
+    "duration": 10.0,
+    "landmark_available": true,
+    "previous_gap_covered": true,
+    "previous_gap": 10.0,
+    "previous_duration": 10.0,
+    "earlier_gaps": [
+      2.302585092994046,
+      2.302585092994046,
+      2.302585092994046,
+      2.302585092994046,
+      2.302585092994046,
+      2.302585092994046
+    ]
+  },
+  "outcome_fixtures": [
+    {
+      "emission_index": 0,
+      "issue_time": 6.0,
+      "kind": "interval",
+      "onset_lo": 8.0,
+      "onset_hi": 12.0
+    },
+    {
+      "emission_index": 0,
+      "issue_time": 6.0,
+      "kind": "right_censored",
+      "censor_at": 10.0
+    }
+  ],
+  "probability_checks": [
+    {
+      "mode": "point",
+      "model": "M0",
+      "outcome": "interval",
+      "repository_log_score": -1.0257904726649196,
+      "independent_log_score": -1.0257904726649196,
+      "absolute_difference": 0.0,
+      "unweighted_average_of_conditional_ratios": -1.0257904726649196
+    },
+    {
+      "mode": "point",
+      "model": "M0",
+      "outcome": "right_censored",
+      "repository_log_score": -0.3630390180231496,
+      "independent_log_score": -0.3630390180231495,
+      "absolute_difference": 1.1102230246251565e-16,
+      "unweighted_average_of_conditional_ratios": -0.3630390180231495
+    },
+    {
+      "mode": "point",
+      "model": "M2",
+      "outcome": "interval",
+      "repository_log_score": -1.0257904726649196,
+      "independent_log_score": -1.0257904726649196,
+      "absolute_difference": 0.0,
+      "unweighted_average_of_conditional_ratios": -1.0257904726649196
+    },
+    {
+      "mode": "point",
+      "model": "M2",
+      "outcome": "right_censored",
+      "repository_log_score": -0.3630390180231496,
+      "independent_log_score": -0.3630390180231495,
+      "absolute_difference": 1.1102230246251565e-16,
+      "unweighted_average_of_conditional_ratios": -0.3630390180231495
+    },
+    {
+      "mode": "point",
+      "model": "M3",
+      "outcome": "interval",
+      "repository_log_score": -1.0257904726649196,
+      "independent_log_score": -1.0257904726649196,
+      "absolute_difference": 0.0,
+      "unweighted_average_of_conditional_ratios": -1.0257904726649196
+    },
+    {
+      "mode": "point",
+      "model": "M3",
+      "outcome": "right_censored",
+      "repository_log_score": -0.3630390180231496,
+      "independent_log_score": -0.3630390180231495,
+      "absolute_difference": 1.1102230246251565e-16,
+      "unweighted_average_of_conditional_ratios": -0.3630390180231495
+    },
+    {
+      "mode": "uniform_end",
+      "model": "M0",
+      "outcome": "interval",
+      "repository_log_score": -1.065469501572274,
+      "independent_log_score": -1.0654695015722737,
+      "absolute_difference": 2.220446049250313e-16,
+      "unweighted_average_of_conditional_ratios": -1.0617094250061543
+    },
+    {
+      "mode": "uniform_end",
+      "model": "M0",
+      "outcome": "right_censored",
+      "repository_log_score": -0.33887905673065344,
+      "independent_log_score": -0.33887905673065344,
+      "absolute_difference": 0.0,
+      "unweighted_average_of_conditional_ratios": -0.345942356611692
+    },
+    {
+      "mode": "uniform_end",
+      "model": "M2",
+      "outcome": "interval",
+      "repository_log_score": -1.065469501572274,
+      "independent_log_score": -1.0654695015722737,
+      "absolute_difference": 2.220446049250313e-16,
+      "unweighted_average_of_conditional_ratios": -1.0617094250061543
+    },
+    {
+      "mode": "uniform_end",
+      "model": "M2",
+      "outcome": "right_censored",
+      "repository_log_score": -0.33887905673065344,
+      "independent_log_score": -0.33887905673065344,
+      "absolute_difference": 0.0,
+      "unweighted_average_of_conditional_ratios": -0.345942356611692
+    },
+    {
+      "mode": "uniform_end",
+      "model": "M3",
+      "outcome": "interval",
+      "repository_log_score": -1.095105058397193,
+      "independent_log_score": -1.0951050583971935,
+      "absolute_difference": 4.440892098500626e-16,
+      "unweighted_average_of_conditional_ratios": -1.0843855513110592
+    },
+    {
+      "mode": "uniform_end",
+      "model": "M3",
+      "outcome": "right_censored",
+      "repository_log_score": -0.3417445416058662,
+      "independent_log_score": -0.3417445416058663,
+      "absolute_difference": 1.1102230246251565e-16,
+      "unweighted_average_of_conditional_ratios": -0.3561011410704638
+    }
+  ],
+  "routing_checks": [
+    {
+      "case": "missing_previous_gap",
+      "M2_route": "M0",
+      "M3_route": "M0",
+      "paired_gain": 0.0
+    },
+    {
+      "case": "missing_landmark",
+      "M2_route": "R0",
+      "M3_route": "R0",
+      "paired_gain": 0.0
+    },
+    {
+      "case": "invalid_duration",
+      "M2_route": "M2",
+      "M3_route": "M2",
+      "paired_gain": 0.0
+    },
+    {
+      "case": "zero_beta",
+      "M2_route": "M2",
+      "M3_route": "M2",
+      "paired_gain": 0.0
+    }
+  ],
+  "maximum_log_difference": 4.440892098500626e-16,
+  "limits": [
+    "For uncertain endpoints, verifies log(sum numerator / sum survival), not an average of conditional ratios.",
+    "This checks the implemented working likelihood on one deterministic fixture, not its physical validity or score propriety.",
+    "Does not reproduce extraction, acquisition, development fitting, any real forecast, or the primary result.",
+    "Does not validate the endpoint mixture distribution or complete propagation of measurement uncertainty."
+  ]
+}

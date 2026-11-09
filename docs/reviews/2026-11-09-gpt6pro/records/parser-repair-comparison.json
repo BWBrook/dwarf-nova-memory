@@ -1,0 +1,23 @@
+{
+  "failed_source": "fc409738222ded5a9bf78288c969e956b59d23f4",
+  "completed_source": "5e39aeb772c427ef29671c1a9c80b22c05519b58",
+  "receipt_inventory_differences": {
+    "src/dnmem/evaluation_native.py": [
+      "8a35bd74b66089ef1f51be20038d7dc177a96e5fdad82077b2eb09f036e249fd",
+      "70519870927ef44e874816d5147b43c89c7f05cb9c3590c73f71e9beb8b166ef"
+    ]
+  },
+  "parameters_unchanged": true,
+  "protocol_unchanged": true,
+  "failed_stages": {
+    "acquisition_started": "2026-11-08T12:38:28.331054+00:00"
+  },
+  "completed_stages": {
+    "acquisition_completed": "2026-11-08T13:00:33.808081+00:00",
+    "acquisition_started": "2026-11-08T12:51:18.300874+00:00",
+    "concordance_passed": "2026-11-08T13:06:58.627308+00:00",
+    "native_verified": "2026-11-08T13:00:35.845377+00:00",
+    "primary_written": "2026-11-08T13:06:58.640683+00:00",
+    "secondary_completed": "2026-11-08T13:07:02.361946+00:00"
+  }
+}

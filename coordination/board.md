@@ -26,7 +26,9 @@ claims and handovers.
 | A10g–A10i | Sealed runner, checker, rehearsal, protocol DOI and the 1960–2017 run | Complete; reviewed in A10j | Codex | [A10g freeze](../docs/audits/2026-11-08-a10g-evaluation-freeze.md), [A10h repair](../docs/audits/2026-11-08-a10h-native-format-repair.md), [A10i result](../docs/audits/2026-11-09-a10i-sealed-evaluation.md); D024–D027; +0.01653 [0.00495, 0.02812], 441 forecasts; criterion met after post-access format repair |
 | A10j | Result review, exploratory decomposition, paper framing | Complete; numbers reproduced and interpretations narrowed in A10k | Claude | [A10j memo](../docs/audits/2026-11-09-a10j-result-review.md), D028, [estimands](../manuscript/estimands.md), [claims ledger](../manuscript/claims.csv); level part ≈ 1/5; information carried by long/short type; type rule hit by uncentred indicator |
 | A10k | Independent claim checks, figures and document build | Complete; accepted by Claude in A10l (D030) | Codex | [A10k memo](../docs/audits/2026-11-09-a10k-claims-and-figures.md), D029; C11–C13, C20–C25 supported; four figures and brief figure |
-| A10l | Source checks (CM92, Cannizzo 1993), novelty refresh, first drafts of all products | Drafts complete; awaiting Codex semantic review and C41 check | Claude | [A10l memo](../docs/audits/2026-11-09-a10l-sources-and-drafts.md), D030; C40 supported; C41 narrowed, still provisional |
+| A10l | Source checks (CM92, Cannizzo 1993), novelty refresh, first drafts of all products | Drafts complete; reviewed in A10m | Claude | [A10l memo](../docs/audits/2026-11-09-a10l-sources-and-drafts.md), D030; C40 supported; C41 narrowed, still provisional |
+| A10m | Semantic, novelty and rendered-draft review | Complete; drafts externally reviewed (A10n) | Codex | [A10m review](../docs/audits/2026-11-09-a10m-draft-review.md), D031; C41 supported as a bounded search |
+| A10n | Triage of the GPT-6 Pro external review; next research round | Proposed; awaiting Codex agreement and R1 diagnostics | Claude | [A10n triage](../docs/audits/2026-11-09-a10n-external-review-triage.md), [review package](../docs/reviews/2026-11-09-gpt6pro/), D032; censor path bounded at +0.00024; null-simulation gains ≤ 0.0005 |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -808,3 +810,28 @@ render checks pass. See D031 and
 [the A10m review](../docs/audits/2026-11-09-a10m-draft-review.md).
 
 Next: Barry — review the drafts and decide authorship, venue and observer credit.
+
+## A10n: external review triaged; research round reopened
+
+Claude, base `f48f0e2`, 9 November 2026. Barry commissioned an independent
+GPT-6 Pro review of the drafts. It finds the study coherent but incremental,
+with three essential issues: the score's observation model (E1), endpoint
+information in measured duration (E2) and a censoring branch (E3). It
+recommends an expanded study. Claude accepts all three in substance.
+- E3 cannot move the result: dropping all six censored forecasts gives
+  0.01678 against 0.01653.
+- The A10d null settings, with real X4 extraction, give mean gains of at most
+  +0.00046 against 0.0165.
+- A real-data split by end precision is uninformative (ρ = 0.03).
+- The triage proposes an observation contract under coarsening at random,
+  bounded diagnostics (R1) and a sealed multi-star expansion with a
+  state-versus-duration model ladder. The drafts are not revised until the
+  research settles the claims.
+- No archive request; the retained 1960–2017 primary run was read for
+  exploratory aggregates only; 2018+ stays closed.
+[A10n triage](../docs/audits/2026-11-09-a10n-external-review-triage.md).
+
+Next: Codex — agree or amend the triage and the §3 contract, then run R1
+(censor fix, alternative observation scores, endpoint dose–response and
+truth target, Figure 1 illustration, per-setting simulation table).
+

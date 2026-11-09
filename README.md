@@ -123,7 +123,7 @@ The [article](manuscript/build/manuscript.pdf),
 [supplement](manuscript/build/supplement.pdf) and
 [brief](manuscript/build/brief.pdf) are first full drafts
 ([A10l](docs/audits/2026-11-09-a10l-sources-and-drafts.md)). The [A10m semantic/source review](docs/audits/2026-11-09-a10m-draft-review.md)
-corrects the draft interpretations and reproduction instructions; the products now await Barry's review. The bibliography
+corrects the draft interpretations and reproduction instructions. An independent [GPT-6 Pro review](docs/reviews/2026-11-09-gpt6pro/) followed; the [A10n triage](docs/audits/2026-11-09-a10n-external-review-triage.md) reopens the research before the products are rewritten. The bibliography
 has [generated DOI metadata and a separate unresolved identifier](references/README.md).
 
 The [protocol](https://doi.org/10.5281/zenodo.24053338) was published before
@@ -183,6 +183,8 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [A10j result review](docs/audits/2026-11-09-a10j-result-review.md) | Independent recomputation, exploratory level/type decomposition, and the paper's framing, estimands and claims ledger |
 | [A10k claims and figures](docs/audits/2026-11-09-a10k-claims-and-figures.md) | Independent secondary/exploratory verification, narrowed interpretations, reproducible figures and document previews |
 | [A10l sources and drafts](docs/audits/2026-11-09-a10l-sources-and-drafts.md) | CM92 and Cannizzo (1993) source checks, novelty refresh, first drafts of all three products and the agent guide |
+| [A10m draft review](docs/audits/2026-11-09-a10m-draft-review.md) | Codex's semantic, novelty and rendered-PDF review of the drafts |
+| [A10n external review triage](docs/audits/2026-11-09-a10n-external-review-triage.md) | Disposition of the [GPT-6 Pro review](docs/reviews/2026-11-09-gpt6pro/), observation contract, bounded diagnostics and the expanded multi-star design sketch |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
