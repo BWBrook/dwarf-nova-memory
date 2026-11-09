@@ -44,8 +44,8 @@
       "bytes": 2605
     },
     "all-comparisons.csv": {
-      "sha256": "75847c56d3a5665bbfcc24f6c1222586a0147aefbe5a39c527a524311d029323",
-      "bytes": 93390
+      "sha256": "877cadf03d15f0b1f96c8749548d6bd6696d351111b5e2e5c4cbcb81481ef891",
+      "bytes": 92909
     },
     "censor-audit.json": {
       "sha256": "2737d777a143379daf8a4f5023eae6f272e0b42f74aa70403e7a6431ff42c346",
@@ -136,5 +136,6 @@
     "docs/protocols/r1-execution-addendum-v1.md": "8a5e5f99294b759a00f652d6a51cef80ead7985cdc7d687dc643244467f80806",
     "docs/protocols/r1-numerical-audit-recovery-v1.md": "088bd6e82bd1d9ab1586e2d0c13a6040a1a6673cecc8f60ca8c9cb55530e3514"
   },
-  "public_scope": "aggregate checks and synthetic dose curves only; no new archive access or observer identities"
+  "public_scope": "aggregate checks and synthetic dose curves only; no new archive access or observer identities",
+  "public_csv_newline_policy": "LF; generated output CSV was normalized without changing any field"
 }
