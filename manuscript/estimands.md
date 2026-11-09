@@ -12,6 +12,38 @@ A sentence must name the object that was calculated. A caveat cannot turn a fore
 a mechanism test, an in-sample fit into validated prediction, or a clock parameter into an observed
 waiting-time contrast.
 
+## R2 preparation qualification (D036)
+
+The original C01 result is a specified working interval-score comparison; its
+proper-latent-onset interpretation has not been established. D035 proposes the
+latent visual crossing and new report windows. Codex's amended preparation
+contract is `docs/protocols/r2-design-v1.md`; no new real R2b fit/score or product
+rewrite is authorized in the R2a/c preparation execution.
+
+Separate A0 (association/completeness/risk set), A1 (containment or genuine
+censor survival), and A2 (the complete normalized CAR observation kernel).
+The formal CAR theorem is conditional; a report margin or visit-rate diagnostic
+does not prove its premises. Resolved-event inf/sup bounds are deterministic
+conditional on containment. Censored survival contrasts are a different target
+from an unknown latent point score. Fixed-cutoff mixed density/survival bounds
+and the working lower-bound-backoff score policy must be named separately.
+CR1 inference has additional dependence/coverage assumptions.
+
+DF removes a literal interpolated end estimate from a new observed-clock rule;
+it does not remove cadence-dependent anchor lag, shared reports or selection.
+Positive/negative DF gains and retention ratios cannot identify a physical or
+measurement mechanism. First decisive-faint availability may require a later
+issue; comparisons across clocks require matched issue/outcome populations.
+New rungs use a common stricter windowed report-candidate history and are not
+the byte-identical original frozen M2. R2c score-level power is planning under
+explicit synthetic assumptions, not X5 qualification or a measured archive count.
+
+New R2 claims start provisional and need independent review. The four product
+texts/PDFs stay unchanged while this research is prepared and reviewed. Later
+real-data R2b execution and any new-star G3 proposal require their named source,
+cohort, population and interpretation freezes; no new archive opening follows
+from this preparation contract.
+
 ## Primary forecast gain (C01–C04)
 
 - **Estimand:** the mean paired log-score difference over the 441 SS Cyg issuances in 1960–2017.

@@ -1,0 +1,104 @@
+{
+  "scope": "Independent mathematical checks from invented numbers only; no real data or scores",
+  "censor_counterexample": {
+    "lambda_D": 2,
+    "lambda_B": 1,
+    "censor": 1,
+    "true_T": 10,
+    "survival_log_ratio": -1.0,
+    "latent_point_log_ratio": -9.306852819440055
+  },
+  "recrossing_counterexample": {
+    "path_vertices": [
+      [
+        0,
+        11.5
+      ],
+      [
+        1,
+        9.5
+      ],
+      [
+        2,
+        11.5
+      ],
+      [
+        3,
+        8.5
+      ]
+    ],
+    "first_threshold_crossing": 0.75,
+    "L": 2.0,
+    "U": 3.0,
+    "contains_first_crossing": false,
+    "individual_measurement_errors": 0
+  },
+  "aggregation_counterexample": {
+    "reports": [
+      [
+        0,
+        11
+      ],
+      [
+        0.05,
+        8
+      ],
+      [
+        0.1,
+        11
+      ]
+    ],
+    "representative_visit": [
+      0.05,
+      11
+    ],
+    "true_magnitude_at_representative_time": 8,
+    "individual_measurement_errors": 0
+  },
+  "decoupled_cadence_counterexample": {
+    "true_duration": 10,
+    "true_gap_distribution": "Uniform(30,50), independent of cadence and mark",
+    "anchor_lags": [
+      1,
+      5
+    ],
+    "observed_bright_spans": [
+      8,
+      4
+    ],
+    "mu_B": 3.596888298894308,
+    "sigma_B": 0.1689296977621723,
+    "positive_beta_for_standardized_log_span": 0.05549247799633994,
+    "expected_log_score_gain": 0.05395432097740984,
+    "survival_correction": 3.5092268952770856e-98,
+    "measurement_errors": 0,
+    "estimated_end_used": false
+  },
+  "CR1_counterexample": {
+    "nominal_clusters": 10,
+    "cross_cluster_common_shock": "All gains equal common equiprobable +1 or -1",
+    "CR1_se": 0,
+    "true_expected_gain": 0,
+    "one_sided_false_positive_probability": 0.5
+  },
+  "precision_arithmetic": {
+    "effective_sd_from_original": 0.1327263,
+    "fixed_variance_required_N_normal_approx": {
+      "0.0165": 400.0499610276472,
+      "0.01": 1089.1360188977696,
+      "0.008": 1701.775029527765
+    },
+    "if_score_sd_scales_as_sqrt_gain_normal_approx": {
+      "0.0165": 400.04996102764716,
+      "0.01": 660.0824356956178,
+      "0.008": 825.1030446195223
+    },
+    "not_certified_power": true
+  },
+  "input_source_sha256": {
+    "docs/protocols/r2-design-v0.md": "333a2cd222f45cd7c347200dc5436a1a8a0b6d311330bdb0f27bc6bad3316dec",
+    "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+    "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "src/dnmem/oc_statistics.py": "677cda07fd71056c28a37bc72cee65bcf55a69805a44e16bf33a570f78105253"
+  }
+}

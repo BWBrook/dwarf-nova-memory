@@ -871,6 +871,41 @@ proposals, not a record of approvals the user has not given.
   request; nothing from 2018 onward inspected. G3 openings, SS Cyg 2018+,
   specialist contact and releases remain Barry's decisions.
 
+### D036 — R2 preparation freeze with observation, clock and inference amendments
+
+- Codex, 9 November 2026, amending D035's v0 under Barry's R2a/c instruction.
+  `docs/protocols/r2-design-v1.md` is the preparation contract; the independent
+  audit is `docs/audits/2026-11-09-r2-design-review.md`.
+- Retain the latent visual target with separate A0 association/completeness and
+  risk set, A1 containment/survival, and A2 full normalized CAR premises. Exact
+  photometry can fail the proposed bracket through recrossings or aggregation;
+  a one-magnitude error is not necessary. Visit-rate/contradiction diagnostics
+  do not prove CAR or estimate failed-bracket probabilities.
+- Resolved inf/sup point-score bounds are valid under containment; censored
+  survival scores do not bound unknown latent point scores. Implement separate
+  fixed-C mixed-functional bounds, including straddle unions, and working
+  interval/backoff compatibility scores. Approximate CR1 inference is distinct
+  from deterministic sample ordering.
+- X5 corrects the lower-clip search without touching frozen X4. It includes
+  limits and conservative raw visit supports, explicit eligibility flags and
+  no faint-peak substitution. DF waits for anchor availability or aborts on
+  renewed brightness. It removes numerical end reuse, not cadence/selection
+  mechanisms; an exact-report counterexample demonstrates this before data.
+- Prepare B0/B1/B2 on a common stricter prefix history, exact mark nesting,
+  propagated filtered-state uncertainty and explicit missing-history routing.
+  Real R2b fits/gains are deferred to the next reviewed execution freeze;
+  this turn runs gain-free real diagnostics and synthetic checks only.
+- R2c uses dated catalogue/primary-literature evidence, retaining ambiguous and
+  eclipsing exclusions. Its committed thirty-five-scenario planning study uses
+  explicit dependence, positive fitting, achieved gain, overall/interior
+  coverage, and normalized feasible forty-percent star caps. It is not an X5
+  calibration or a guarantee that 1,100 archive forecasts suffice.
+- No other-star archive request, SS Cyg 2018+ observation/count/coverage,
+  outside contact, product rewrite or paper release is authorized. G3 remains
+  Barry's decision on the eventual concrete, reviewed multi-star protocol.
+- Status: bounded R2a/c preparation accepted; source/configuration bytes must
+  be committed before each real-data preparation or synthetic result batch.
+
 ## New decision template
 
 ### D0xx — Short concrete title
