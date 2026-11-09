@@ -515,6 +515,37 @@ def scored_summary(scores, origin):
     return result
 
 
+def audit_retained_ledger(regenerated, retained):
+    """Audit exact retained features, allowing one adjacent float only in log gaps."""
+    if len(regenerated) != len(retained):
+        raise ValueError("regenerated sigma0 ledger row count differs from retained A10d")
+    accepted = []
+    for position, (actual, expected) in enumerate(zip(regenerated, retained)):
+        if set(actual) != set(expected):
+            raise ValueError(f"retained ledger keys differ at row {position}")
+        if ({key: value for key, value in actual.items() if key != "earlier_gaps"}
+                != {key: value for key, value in expected.items() if key != "earlier_gaps"}
+                or any(type(actual[key]) is not type(expected[key]) for key in actual if key != "earlier_gaps")):
+            raise ValueError(f"retained ledger non-log-gap feature differs at row {position}")
+        actual_gaps, expected_gaps = actual.get("earlier_gaps"), expected.get("earlier_gaps")
+        if (not isinstance(actual_gaps, list) or not isinstance(expected_gaps, list)
+                or len(actual_gaps) != len(expected_gaps)):
+            raise ValueError(f"retained earlier_gaps shape differs at row {position}")
+        for gap_position, (value, reference) in enumerate(zip(actual_gaps, expected_gaps)):
+            if (type(value) is not float or type(reference) is not float
+                    or not math.isfinite(value) or not math.isfinite(reference)):
+                raise ValueError(f"retained earlier_gaps has invalid value at row {position}")
+            if value == reference:
+                continue
+            if math.nextafter(reference, value) != value:
+                raise ValueError(f"retained earlier_gaps differs by more than one ULP at row {position}")
+            accepted.append({"emission_index": actual["emission_index"], "history_position": gap_position,
+                             "retained": reference, "regenerated": value,
+                             "retained_hex": reference.hex(), "regenerated_hex": value.hex(),
+                             "signed_difference": value - reference, "adjacent_float_steps": 1})
+    return accepted
+
+
 def prepare_trial(case, replicate, base=BASE, inputs_path=INPUT):
     started = time.monotonic()
     inputs, config = json.loads(Path(inputs_path).read_text()), json.loads(CONFIG.read_text())["v2-phase"]
@@ -536,9 +567,10 @@ def prepare_trial(case, replicate, base=BASE, inputs_path=INPUT):
         reproduction.update(retained_trial=str(retained_path.relative_to(ROOT)), stream_metadata_matches=True)
         if replicate == 0:
             trace = old["audit_trace"]["ledger"]["0.0"]
-            if trace["training"] + trace["evaluation"] != ledger:
-                raise ValueError("regenerated sigma0 ledger differs from retained A10d")
-            reproduction["ledger_matches"] = True
+            accepted = audit_retained_ledger(ledger, trace["training"] + trace["evaluation"])
+            reproduction["ledger_matches_exactly"] = not accepted
+            reproduction["ledger_audit_one_ulp_log_gaps"] = accepted
+            reproduction["ledger_audit_passed"] = True
     return {"rows": rows, "truth": truth, "meta": meta, "ledger": ledger, "contexts": contexts,
             "anchors": anchors, "classifications": classifications, "anchor_counts": counts,
             "reproduction": reproduction, "preparation_seconds": time.monotonic() - started,

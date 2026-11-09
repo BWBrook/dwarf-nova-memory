@@ -1,3 +1,4 @@
+import copy
 import math
 from pathlib import Path
 import sys
@@ -229,6 +230,64 @@ class EndpointDoseTests(unittest.TestCase):
         expected = dose.point_loglik(evidence[0], f["issue_time"], bundle.r0.intercept, bundle.r0.sigma)
         self.assertEqual(score["M2"], expected)
         self.assertEqual(score["gain_M3_M2"], 0.0)
+
+
+class RetainedLedgerAuditTests(unittest.TestCase):
+    def fixture(self):
+        return [{"emission_index": 3, "issue_time": 100.0, "landmark_available": True,
+                 "onset_t": 85.0, "end_t": 95.0, "duration": 10.0,
+                 "previous_gap_covered": True, "earlier_gaps": [2.0, 3.0]}]
+
+    def test_exact_match(self):
+        rows = self.fixture()
+        self.assertEqual(dose.audit_retained_ledger(rows, copy.deepcopy(rows)), [])
+
+    def test_one_adjacent_float_allowed_only_in_log_gap_and_reported(self):
+        expected = self.fixture()
+        actual = copy.deepcopy(expected)
+        actual[0]["earlier_gaps"][1] = math.nextafter(3.0, math.inf)
+        audit = dose.audit_retained_ledger(actual, expected)
+        self.assertEqual(len(audit), 1)
+        self.assertEqual(audit[0]["adjacent_float_steps"], 1)
+        self.assertEqual(audit[0]["history_position"], 1)
+        self.assertEqual(audit[0]["regenerated_hex"], actual[0]["earlier_gaps"][1].hex())
+
+    def test_two_adjacent_steps_rejected(self):
+        expected = self.fixture()
+        actual = copy.deepcopy(expected)
+        actual[0]["earlier_gaps"][1] = math.nextafter(math.nextafter(3.0, math.inf), math.inf)
+        with self.assertRaisesRegex(ValueError, "one ULP"):
+            dose.audit_retained_ledger(actual, expected)
+
+    def test_all_times_durations_eligibility_and_keys_remain_exact(self):
+        expected = self.fixture()
+        for key in ("issue_time", "onset_t", "end_t", "duration"):
+            actual = copy.deepcopy(expected)
+            actual[0][key] = math.nextafter(actual[0][key], math.inf)
+            with self.subTest(key=key), self.assertRaisesRegex(ValueError, "non-log-gap"):
+                dose.audit_retained_ledger(actual, expected)
+        for key in ("landmark_available", "previous_gap_covered"):
+            actual = copy.deepcopy(expected)
+            actual[0][key] = False
+            with self.subTest(key=key), self.assertRaisesRegex(ValueError, "non-log-gap"):
+                dose.audit_retained_ledger(actual, expected)
+            actual[0][key] = 1
+            with self.subTest(key=key, type_change=True), self.assertRaisesRegex(ValueError, "non-log-gap"):
+                dose.audit_retained_ledger(actual, expected)
+        actual = copy.deepcopy(expected)
+        actual[0]["unexpected"] = None
+        with self.assertRaisesRegex(ValueError, "keys"):
+            dose.audit_retained_ledger(actual, expected)
+
+    def test_list_row_count_and_float_schema_remain_exact(self):
+        expected = self.fixture()
+        for replacement in ([2.0], (2.0, 3.0), [2.0, 3], [2.0, math.nan], [2.0, math.inf]):
+            actual = copy.deepcopy(expected)
+            actual[0]["earlier_gaps"] = replacement
+            with self.subTest(replacement=replacement), self.assertRaises(ValueError):
+                dose.audit_retained_ledger(actual, expected)
+        with self.assertRaisesRegex(ValueError, "row count"):
+            dose.audit_retained_ledger([], expected)
 
 
 if __name__ == "__main__":
