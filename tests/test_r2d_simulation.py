@@ -176,7 +176,11 @@ class InferenceTests(unittest.TestCase):
         self.assertAlmostEqual(result["se"], expected_se)
         self.assertAlmostEqual(result["lower90"], mean - student_t.ppf(.95, 5) * expected_se)
         permutation = np.array([10, 3, 2, 0, 9, 4, 5, 7, 8, 6, 11, 1])
-        self.assertEqual(result, weighted_cr1(values[permutation], stars[permutation], epochs[permutation]))
+        permuted = weighted_cr1(values[permutation], stars[permutation], epochs[permutation])
+        for key in ("estimate", "se", "lower90", "upper90", "statistic", "maximum_star_weight"):
+            self.assertAlmostEqual(result[key], permuted[key], delta=1e-12)
+        for key in ("reject_one_sided", "clusters", "df", "zero_variance", "clustering"):
+            self.assertEqual(result[key], permuted[key])
 
     def test_zero_variance_is_explicit_not_a_fabricated_finite_t_statistic(self):
         result = weighted_cr1(np.zeros(18), np.repeat(np.arange(3), 6), np.tile(np.arange(6), 3))
