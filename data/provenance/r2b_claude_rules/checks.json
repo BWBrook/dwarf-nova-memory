@@ -1,0 +1,422 @@
+{
+ "label": "Claude R2a/c review and R2b rule diagnostics; gain-free on SS Cyg <2018; aggregates only",
+ "schedule_and_cadence": {
+  "v1_abort_triggers": {
+   "development|threshold_only": 28,
+   "evaluation|threshold_only": 134,
+   "pre1910|threshold_only": 3
+  },
+  "v1_abort_brightest_trigger_mag": {
+   "n": 165,
+   "median": 9.9,
+   "share_le_9": 0.0
+  },
+  "schedules": {
+   "v1_threshold_abort": {
+    "development": {
+     "original": 330,
+     "status": {
+      "scheduled": 302,
+      "aborted": 28
+     },
+     "median_delay_days": 0.0,
+     "issued_at_or_after_next_onset_lo": 0
+    },
+    "evaluation": {
+     "original": 441,
+     "status": {
+      "scheduled": 307,
+      "aborted": 134
+     },
+     "median_delay_days": 0.7199999997392297,
+     "issued_at_or_after_next_onset_lo": 0
+    }
+   },
+   "decisive_abort": {
+    "development": {
+     "original": 330,
+     "status": {
+      "scheduled": 330
+     },
+     "median_delay_days": 0.10000000009313226,
+     "issued_at_or_after_next_onset_lo": 0
+    },
+    "evaluation": {
+     "original": 441,
+     "status": {
+      "scheduled": 441
+     },
+     "median_delay_days": 0.900000000372529,
+     "issued_at_or_after_next_onset_lo": 0
+    }
+   }
+  },
+  "cadence_ceiling_planning": {
+   "assumptions": "lognormal location Fisher information at the frozen M2 working scale; small-shift approximation; exact report ordering at the m=11 crossings; physical rise/decline times not mark-dependent beyond physics; history coefficient planning value 0.38; per-issue shift bound c_end + b*(c_on + previous c_end), squared",
+   "fisher_per_day2": 0.012790415575364216,
+   "history_coefficient": 0.38,
+   "development": {
+    "anchor_cadence_gap_days": {
+     "n": 330,
+     "median": 0.5799999998416752,
+     "p90": 2.0469999997876585,
+     "mean_square": 3.9902589669136903,
+     "share_le_0p5": 0.4727272727272727,
+     "share_le_1": 0.8090909090909091
+    },
+    "onset_cadence_gap_days": {
+     "n": 314,
+     "median": 0.6699999999254942,
+     "p90": 1.9799999999813735,
+     "mean_square": 2.1226278982396325,
+     "share_le_0p5": 0.4012738853503185,
+     "share_le_1": 0.8184713375796179
+    },
+    "shift_bound_days": {
+     "n": 313,
+     "median": 1.0167999999504538,
+     "p90": 3.1420000003371387,
+     "mean_square": 6.408900813798584,
+     "share_le_0p5": 0.2108626198083067,
+     "share_le_1": 0.48242811501597443
+    },
+    "ceiling": 0.0409862523948869
+   },
+   "evaluation": {
+    "anchor_cadence_gap_days": {
+     "n": 441,
+     "median": 0.10000000009313226,
+     "p90": 0.779999999795109,
+     "mean_square": 0.5871146350717268,
+     "share_le_0p5": 0.7505668934240363,
+     "share_le_1": 0.9342403628117913
+    },
+    "onset_cadence_gap_days": {
+     "n": 431,
+     "median": 0.3300000000745058,
+     "p90": 0.9308299999684095,
+     "mean_square": 0.3571385404232991,
+     "share_le_0p5": 0.6078886310904872,
+     "share_le_1": 0.9535962877030162
+    },
+    "shift_bound_days": {
+     "n": 430,
+     "median": 0.3956321001192555,
+     "p90": 1.2887349997926503,
+     "mean_square": 1.1154698400206158,
+     "share_le_0p5": 0.5674418604651162,
+     "share_le_1": 0.8186046511627907
+    },
+    "ceiling": 0.007133661407824357
+   }
+  }
+ },
+ "mark_block_structure": {
+  "scope": "log-mark features only; no outcome, fit or score",
+  "point_original|1910_1959": {
+   "n": 330,
+   "blocks": 9,
+   "icc_anova": -0.010131283109065123,
+   "block_mean_lag1_acf": 0.14046538585851046
+  },
+  "point_original|1960_2017": {
+   "n": 441,
+   "blocks": 10,
+   "icc_anova": -0.019721964597230284,
+   "block_mean_lag1_acf": -0.0037262815683353546
+  },
+  "df|1910_1959": {
+   "n": 288,
+   "blocks": 9,
+   "icc_anova": 0.013241590576001923,
+   "block_mean_lag1_acf": -0.2872539383452527
+  },
+  "df|1960_2017": {
+   "n": 304,
+   "blocks": 10,
+   "icc_anova": 0.0002896324837859393,
+   "block_mean_lag1_acf": 0.02159747927866989
+  }
+ },
+ "C47_window_selection_with_limits": {
+  "confirmed_with_previous": 845,
+  "no_bright": 23,
+  "no_quiescence": 4,
+  "available": 818,
+  "representative_width_median_days": 1.1477500000037253
+ },
+ "C48_quadrature": {
+  "coefficient": 0.05549247799633972,
+  "sigma": 0.1689296977621723,
+  "expected_gain": 0.053954320977409334
+ },
+ "power_reimplementation": {
+  "design": "5 balanced stars, 100 development and 220 test forecasts each, six blocks per star, pooled nonnegative OLS offset, per-star intercepts; CR1 t(G-1) one-sided 5%",
+  "core_g0.010": {
+   "star_x_6yr": {
+    "confirmation_rate": 0.704,
+    "confirmation_exact95": [
+     0.689583091926405,
+     0.7181183509411617
+    ],
+    "nonidentity_coverage90": 0.9044522261130565,
+    "nonidentity_fits": 3998
+   },
+   "star_x_12yr": {
+    "confirmation_rate": 0.69025,
+    "confirmation_exact95": [
+     0.6756604701189866,
+     0.7045611368440547
+    ],
+    "nonidentity_coverage90": 0.8979489744872436,
+    "nonidentity_fits": 3998
+   },
+   "star_x_18yr": {
+    "confirmation_rate": 0.6715,
+    "confirmation_exact95": [
+     0.656698837577594,
+     0.6860502503394896
+    ],
+    "nonidentity_coverage90": 0.9014507253626813,
+    "nonidentity_fits": 3998
+   },
+   "star": {
+    "confirmation_rate": 0.60075,
+    "confirmation_exact95": [
+     0.5853788577843793,
+     0.6159738079480679
+    ],
+    "nonidentity_coverage90": 0.9092046023011505,
+    "nonidentity_fits": 3998
+   }
+  },
+  "serial_g0.010_icc_m0.5_e0.1_phi0.7": {
+   "star_x_6yr": {
+    "confirmation_rate": 0.4585,
+    "confirmation_exact95": [
+     0.4429686718127175,
+     0.4740920056155228
+    ],
+    "nonidentity_coverage90": 0.7192628124211058,
+    "nonidentity_fits": 3961
+   },
+   "star_x_12yr": {
+    "confirmation_rate": 0.38225,
+    "confirmation_exact95": [
+     0.367156535090532,
+     0.39751567399762633
+    ],
+    "nonidentity_coverage90": 0.8033324917950012,
+    "nonidentity_fits": 3961
+   },
+   "star_x_18yr": {
+    "confirmation_rate": 0.3135,
+    "confirmation_exact95": [
+     0.29913887936314193,
+     0.32813401612917087
+    ],
+    "nonidentity_coverage90": 0.8513001767230497,
+    "nonidentity_fits": 3961
+   },
+   "star": {
+    "confirmation_rate": 0.2165,
+    "confirmation_exact95": [
+     0.20382227733541286,
+     0.22959314480529508
+    ],
+    "nonidentity_coverage90": 0.9070941681393587,
+    "nonidentity_fits": 3961
+   }
+  },
+  "null_serial_icc_m0.5_e0.1_phi0.7": {
+   "star_x_6yr": {
+    "confirmation_rate": 0.05275,
+    "confirmation_exact95": [
+     0.046026597833844135,
+     0.060135739481228925
+    ],
+    "nonidentity_coverage90": 0.7235494880546075,
+    "nonidentity_fits": 2051
+   },
+   "star_x_12yr": {
+    "confirmation_rate": 0.03625,
+    "confirmation_exact95": [
+     0.03067364334594215,
+     0.042516199670333606
+    ],
+    "nonidentity_coverage90": 0.817649926864944,
+    "nonidentity_fits": 2051
+   },
+   "star_x_18yr": {
+    "confirmation_rate": 0.027,
+    "confirmation_exact95": [
+     0.022200017699495766,
+     0.032506498864293305
+    ],
+    "nonidentity_coverage90": 0.8551925889809849,
+    "nonidentity_fits": 2051
+   },
+   "star": {
+    "confirmation_rate": 0.01575,
+    "confirmation_exact95": [
+     0.012123398280004968,
+     0.02010664456160417
+    ],
+    "nonidentity_coverage90": 0.9190638712823013,
+    "nonidentity_fits": 2051
+   }
+  },
+  "correlated_g0.010_icc_m0.5_e0.1_phi0": {
+   "star_x_6yr": {
+    "confirmation_rate": 0.4033333333333333,
+    "confirmation_exact95": [
+     0.38571376879483776,
+     0.4211416673424601
+    ],
+    "nonidentity_coverage90": 0.9028995279838166,
+    "nonidentity_fits": 2966
+   },
+   "star_x_12yr": {
+    "confirmation_rate": 0.3913333333333333,
+    "confirmation_exact95": [
+     0.37381551431393956,
+     0.409063368746982
+    ],
+    "nonidentity_coverage90": 0.8975050573162509,
+    "nonidentity_fits": 2966
+   },
+   "star_x_18yr": {
+    "confirmation_rate": 0.37566666666666665,
+    "confirmation_exact95": [
+     0.3582983816151892,
+     0.3932777870065958
+    ],
+    "nonidentity_coverage90": 0.8981793661496965,
+    "nonidentity_fits": 2966
+   },
+   "star": {
+    "confirmation_rate": 0.313,
+    "confirmation_exact95": [
+     0.29642881938426713,
+     0.3299366120430148
+    ],
+    "nonidentity_coverage90": 0.9012137559002023,
+    "nonidentity_fits": 2966
+   }
+  },
+  "serial_g0.010_icc_m0.05_e0.1_phi0.7": {
+   "star_x_6yr": {
+    "confirmation_rate": 0.63,
+    "confirmation_exact95": [
+     0.6124366226820623,
+     0.6473094647030635
+    ],
+    "nonidentity_coverage90": 0.8461795128461795,
+    "nonidentity_fits": 2997
+   },
+   "star_x_12yr": {
+    "confirmation_rate": 0.589,
+    "confirmation_exact95": [
+     0.571147359231501,
+     0.606678848967309
+    ],
+    "nonidentity_coverage90": 0.8738738738738738,
+    "nonidentity_fits": 2997
+   },
+   "star_x_18yr": {
+    "confirmation_rate": 0.56,
+    "confirmation_exact95": [
+     0.5420193750099966,
+     0.5778634746406277
+    ],
+    "nonidentity_coverage90": 0.8855522188855522,
+    "nonidentity_fits": 2997
+   },
+   "star": {
+    "confirmation_rate": 0.45866666666666667,
+    "confirmation_exact95": [
+     0.440716974263923,
+     0.4766970588963613
+    ],
+    "nonidentity_coverage90": 0.9025692359025692,
+    "nonidentity_fits": 2997
+   }
+  },
+  "serial_g0.010_icc_m0.10_e0.2_phi0.7": {
+   "star_x_6yr": {
+    "confirmation_rate": 0.528,
+    "confirmation_exact95": [
+     0.5099494892502392,
+     0.5459958443551056
+    ],
+    "nonidentity_coverage90": 0.7803333333333333,
+    "nonidentity_fits": 3000
+   },
+   "star_x_12yr": {
+    "confirmation_rate": 0.472,
+    "confirmation_exact95": [
+     0.45400415564489466,
+     0.49005051074976086
+    ],
+    "nonidentity_coverage90": 0.836,
+    "nonidentity_fits": 3000
+   },
+   "star_x_18yr": {
+    "confirmation_rate": 0.42,
+    "confirmation_exact95": [
+     0.40225718335134236,
+     0.43789902800398967
+    ],
+    "nonidentity_coverage90": 0.8736666666666667,
+    "nonidentity_fits": 3000
+   },
+   "star": {
+    "confirmation_rate": 0.32133333333333336,
+    "confirmation_exact95": [
+     0.30463693588803265,
+     0.3383788455567114
+    ],
+    "nonidentity_coverage90": 0.916,
+    "nonidentity_fits": 3000
+   }
+  },
+  "serial_g0.010_icc_m0.20_e0.2_phi0.7": {
+   "star_x_6yr": {
+    "confirmation_rate": 0.465,
+    "confirmation_exact95": [
+     0.447026788575445,
+     0.48304154515029557
+    ],
+    "nonidentity_coverage90": 0.7474106247911794,
+    "nonidentity_fits": 2993
+   },
+   "star_x_12yr": {
+    "confirmation_rate": 0.3913333333333333,
+    "confirmation_exact95": [
+     0.37381551431393956,
+     0.409063368746982
+    ],
+    "nonidentity_coverage90": 0.8242565987303708,
+    "nonidentity_fits": 2993
+   },
+   "star_x_18yr": {
+    "confirmation_rate": 0.33866666666666667,
+    "confirmation_exact95": [
+     0.32172921261269527,
+     0.3559193122405087
+    ],
+    "nonidentity_coverage90": 0.8733711994654193,
+    "nonidentity_fits": 2993
+   },
+   "star": {
+    "confirmation_rate": 0.23233333333333334,
+    "confirmation_exact95": [
+     0.21732121280828348,
+     0.24786918849619036
+    ],
+    "nonidentity_coverage90": 0.9161376545272302,
+    "nonidentity_fits": 2993
+   }
+  }
+ }
+}

@@ -128,6 +128,18 @@ dependence degrades interval coverage. Eight stars are nominated for future
 development screening, not qualified. Manuscript products remain paused. No other-star archive
 opening is authorized, and SS Cyg 2018 onward remains closed.
 
+[Claude's R2a/c review](docs/audits/2026-11-09-claude-r2a-review.md) supports
+those results. It finds that the observed-clock population loss came from
+aborting on single near-threshold reports. With aborts only on decisive-bright
+reports, all 441 evaluation issues are kept. The
+[R2b rules](docs/protocols/r2b-execution-v0.md) also fix:
+- the latent crossing convention;
+- a ceiling on cadence artefacts (about 0.007 nats in 1960–2017);
+- the headline contrasts;
+- dependence-aware inference, and the sealed test's primary specification.
+
+All of this is fixed before any R2b score.
+
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
 also reproduces the exploratory and secondary numbers, with narrower interpretations:
@@ -216,6 +228,9 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [R1 observation and endpoint diagnostics](docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md) | Codex's censor audit, alternative observation scores, endpoint-error dose experiment and simulation table |
 | [Claude R1 review](docs/audits/2026-11-09-claude-r1-review.md) | Independent checks of C42–C46, the X4 lower-clip bug and corrected decisive brackets |
 | [R2 preparation v1](docs/protocols/r2-design-v1.md) | Amended target assumptions, mixed-score bounds, causal observed clocks, timing models and limited precision planning; v0 preserved |
+| [R2a/c report](docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md) | Codex's X5 diagnostics, observed-clock features, B0–B2 controls, catalogue screen and precision study |
+| [Claude R2a/c review](docs/audits/2026-11-09-claude-r2a-review.md) | Checks of C47–C52, the abort-rule artefact, crossing convention, cadence ceiling and cluster coverage |
+| [R2b rules v0](docs/protocols/r2b-execution-v0.md) | Clock, population, crossing, score, headline-contrast, uncertainty and sealed-primary rules for R2b |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

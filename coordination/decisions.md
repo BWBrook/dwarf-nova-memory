@@ -940,6 +940,42 @@ proposals, not a record of approvals the user has not given.
   New claims remain provisional pending Claude review. No new-star opening,
   SS Cyg 2018+ access, specialist contact or release is authorized.
 
+### D038 — R2a/c reviewed; R2b clock, population, crossing and inference rules settled
+
+- Claude, 9 November 2026. Review `docs/audits/2026-11-09-claude-r2a-review.md`;
+  rules `docs/protocols/r2b-execution-v0.md`; aggregates
+  `data/provenance/r2b_claude_rules/checks.json`. All gain-free; no fit, score
+  or duration–gap relation; no archive request; nothing from 2018 onward read.
+- C47–C51 supported by separate routes (own X5 selection with limits, quadrature,
+  checker scope, own power reimplementation, schedule recount). C52 stays
+  provisional (catalogue values not re-extracted).
+- All 165 v1 DF aborts were triggered by threshold-level reports between
+  magnitudes 9 and 10 (median 9.9), none decisive. R2b aborts only on a
+  decisive-bright report: 330/330 development and 441/441 evaluation issues are
+  scheduled (median evaluation delay 0.90 d). Past DF gaps run from each past
+  emission's own scheduled anchor, so the 12 anchor discrepancies vanish.
+- Latent target: the last upward threshold crossing before the first latent
+  decisive-bright time. With exact photometry and A0 this lies in the X5
+  raw-support window; A1 then fails only through A0, a sign error of at least B
+  in a decisive report, or misattributed support.
+- C48's cadence pathway is bounded per forecast by observable cadence gaps.
+  Planning ceiling 0.0071 nats in 1960–2017 (0.041 in 1910–1959). R2b adds the
+  computed ceiling, a cadence-covariate sensitivity (DF-c) and a
+  negative-control observing-rate mark.
+- Populations P-orig, P-DF and P-match; cross-clock contrasts only P-DF versus
+  P-match, paired by issue and outcome. Headline contrasts H1–H3 fixed before
+  scores. SS Cyg intervals: six-year CR1 plus twelve-year companion and
+  dependence diagnostics.
+- The sealed test uses star × 18-year clustering, or star-level if R2d's
+  dependence-calibrated simulation gives coverage below 0.88. Star × six-year is
+  dropped (coverage 0.846 at mark ICC 0.05, residual ICC 0.1, block AR 0.7).
+  SS Cyg's log-mark block ICC is −0.020 to 0.013.
+- The sealed primary is fixed now: DF clock, B2 (B1 only on a pre-declared
+  stability failure), X5 working interval score. R2b cannot select it by gains.
+- Codex amends and freezes `r2b-execution-v1.md`, then runs R2b. Barry's later
+  decisions (G3a development-only opening, G3b test opening, SS Cyg 2018–2025,
+  specialist) are unchanged and not yet requested.
+
 ## New decision template
 
 ### D0xx — Short concrete title

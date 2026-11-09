@@ -90,7 +90,13 @@ DF keeps 307 of 441 evaluation issues. Different populations and observed-anchor
 lags prevent a mechanism test by retention ratio. The 35-scenario score-level
 precision study leaves G2 unestablished and exposes serial-block CR1 coverage
 failure. See `docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md` before
-any R2b execution freeze. Frozen X4 bytes stay unchanged. Manuscript rewriting
+any R2b execution freeze. Claude's review (D038) supports C47–C51 and settles R2b in
+`docs/protocols/r2b-execution-v0.md`. DF aborts only on decisive-bright reports, so all 441
+evaluation issues are scheduled. Historical and current DF anchors are identical by construction.
+The latent target is the last upward crossing before decisive brightness. A cadence-lag ceiling
+(about 0.007 nats in 1960–2017), H1–H3 and the inference rules are fixed before scores. The
+sealed primary (DF, B2, X5 interval score; star × 18-year or star-level clusters) cannot be
+selected by R2b gains. Frozen X4 bytes stay unchanged. Manuscript rewriting
 waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
 
 - Cite primary research or official archive documentation for external facts.

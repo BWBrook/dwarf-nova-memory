@@ -30,7 +30,7 @@ claims and handovers.
 | A10m | Semantic, novelty and rendered-draft review | Complete; drafts externally reviewed (A10n) | Codex | [A10m review](../docs/audits/2026-11-09-a10m-draft-review.md), D031; C41 supported as a bounded search |
 | A10n | Triage of the GPT-6 Pro external review; next research round | Agreed with amendments (D033); R1 complete (D034) | Claude | [A10n triage](../docs/audits/2026-11-09-a10n-external-review-triage.md), [review package](../docs/reviews/2026-11-09-gpt6pro/), D032; censor path bounded at +0.00024; null-simulation gains ≤ 0.0005 |
 | R1 | Censor audit, alternative observation scores, endpoint dose, example and simulation table | Complete (D034); C42–C46 supported by Claude review (D035) | Codex | [R1 audit](../docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md), [Claude review](../docs/audits/2026-11-09-claude-r1-review.md); point gain +0.0154; 434 missing clips traced to an X4 lower-clip bug |
-| R2 | Observation target, observed clocks, stronger baselines, sealed multi-star design | R2a/c complete (D036–D037); G2 unestablished; R2b review before real gains | Codex preparation; Claude review | [R2 preparation v1](../docs/protocols/r2-design-v1.md); [results](../docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md) |
+| R2 | Observation target, observed clocks, stronger baselines, sealed multi-star design | R2a/c complete (D036–D037) and reviewed (D038); R2b rules settled, awaiting Codex v1 freeze and scoring | Codex preparation and R2b; Claude review | [R2 preparation v1](../docs/protocols/r2-design-v1.md); [results](../docs/audits/2026-11-09-r2a-preparation-and-r2c-review.md); [Claude review](../docs/audits/2026-11-09-claude-r2a-review.md); [R2b rules v0](../docs/protocols/r2b-execution-v0.md) |
 | A05 | Audit remaining provisional pilot targets | After A03 | Split targets | One feasibility dossier per target, including failures |
 | A06 | Reproduce one historical descriptive result | After A04 | Rotate implementer/reviewer | Document data/version/definition mismatches |
 | A07 | Decide restricted-episode versus richer observation model | After A05/A06 | Scientific lead with agents | Gate B/C decision and revised estimand |
@@ -922,3 +922,28 @@ accessed. Product texts and PDFs remain unchanged; new claims await review.
 Next: Claude — review the preparation and settle R2b clock/history, matched
 population, crossing assumptions and dependence/precision rules before real gains.
 
+## R2b rules settled
+
+Claude, 9 November 2026 (D038). See the
+[review](../docs/audits/2026-11-09-claude-r2a-review.md) and the
+[R2b rules](../docs/protocols/r2b-execution-v0.md).
+
+- C47–C51 are supported by separate checks; C52 stays provisional.
+- All 165 v1 DF aborts were caused by single reports between magnitudes 9 and 10,
+  never by a decisive-bright report. Aborting only on decisive-bright reports
+  schedules all 441 evaluation issues (and all 330 in development).
+- Past DF gaps now run from each past emission's own anchor, so the twelve
+  anchor discrepancies disappear.
+- The target is the last upward threshold crossing before the first decisive-bright
+  time. Under exact photometry and A0, the X5 window contains it.
+- Cadence-lag artefacts have a computable ceiling: about 0.007 nats in 1960–2017.
+  R2b adds that ceiling, a cadence-covariate sensitivity and a negative-control
+  observing-rate mark.
+- The headline contrasts H1–H3 are fixed before any score.
+- The sealed test drops star × six-year clustering for star × 18-year, or star-level
+  if a calibrated simulation shows under-coverage. Its primary (DF clock, B2, X5
+  interval score) is fixed now.
+- No fit, score, archive request or 2018+ read occurred.
+
+Next: Codex — amend and freeze r2b-execution-v1, regenerate DF features under
+the decisive-abort and harmonised-anchor rules, then fit and score R2b; no new archives.

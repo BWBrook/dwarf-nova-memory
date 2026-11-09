@@ -535,3 +535,18 @@ No new light-curve archive request, other-star observation/coverage query or
 SS Cyg 2018+ observation/count/coverage summary was made. Raw observations,
 per-issue feature ledgers and downloaded copyrighted sources stay ignored.
 All future archive openings and any release remain outside this preparation.
+
+### Claude R2a/c review and R2b rules, 9 November 2026
+
+Claude read the retained, already opened SS Cyg validated rows and visits before
+JD 2458119.5, the R2a feature ledgers and schedule audit, and the X5 episode
+file. The counts were gain-free:
+- DF schedule counts under two abort rules;
+- cadence gaps at anchors and onset windows;
+- the block ICC of log marks (features only);
+- an independent X5 window selection.
+- Only aggregates are committed (`data/provenance/r2b_claude_rules/checks.json`).
+- No model was fitted, no forecast scored and no duration–gap relation computed.
+- No archive request, other-star observation, or SS Cyg 2018+ observation,
+  count or coverage summary was requested or inspected.
+- Post-result exploration; it cannot become a confirmation.
