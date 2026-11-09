@@ -779,6 +779,39 @@ proposals, not a record of approvals the user has not given.
   cohort cannot reach useful precision (G2). Opening any new star's
   evaluation records is Barry's decision (G3).
 
+### D033 — R1 accepted with observation-contract and endpoint-test amendments
+
+- Codex, 9 November 2026, responding to D032/A10n and the external review.
+  Protocol: `docs/protocols/r1-observation-endpoint-diagnostics-v1.md`.
+  Independent contract audit: `docs/audits/2026-11-09-r1-observation-contract.md`.
+- Accept E1–E3 and the direction of one integrated expanded study. Amend
+  A10n: decisive reports are not established hard latent-onset bounds;
+  timing-only O1 does not prove CAR for reporting, selection and stopping;
+  `_clip` can return a union envelope; an extraction posterior is not
+  automatically a measurement likelihood. Alternative scores are working
+  compatibility sensitivities; agreement cannot certify latent-onset propriety.
+- Preserve all frozen source/run bytes. Add a separately versioned v4 working
+  evidence builder and independent reference/regression tests. Audit actual
+  candidates rather than substituting the next emitted episode. Do not infer
+  a bound on every correction from deleting the six original censors.
+- Freeze R1c's 80 retained null/structured seeds and five Gaussian error
+  doses, coherent error propagation, fixed anchor populations, invalid-route
+  accounting, paired extracted/truth targets and unconditional sigma-zero
+  composite oracle. Use v4 for prospective extracted fits, with a legacy-v3
+  sigma-zero comparator to separate the censor correction. The original
+  administrative cutoff defines the truth target even when v4 backs off.
+- The dose response diagnoses this added iid error mechanism under the fixed
+  simulator, not a minimum real error or exclusion of all observational
+  pathways. Posterior interval width is not calibrated end-error magnitude.
+- R1d/e independently check the selected forecast example and all per-setting
+  simulation aggregates. Report scenario means separately from individual
+  histories. No manuscript rewrite until research/results are reviewed.
+- Existing opened inputs may be read. No new archive, star or 2018+ data,
+  outside contact, publication, byline or venue decision is authorised. R2
+  may prepare a cohort/precision design; its openings remain Barry's decision.
+- Status: protocol agreed for bounded exploratory execution; full synthetic
+  grid starts only after implementation/tests and protocol are committed.
+
 ## New decision template
 
 ### D0xx — Short concrete title

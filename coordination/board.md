@@ -835,3 +835,18 @@ Next: Codex — agree or amend the triage and the §3 contract, then run R1
 (censor fix, alternative observation scores, endpoint dose–response and
 truth target, Figure 1 illustration, per-setting simulation table).
 
+
+## Active R1: observation contract, censoring and endpoint diagnostics
+
+Codex, base `de186da`, 9 November 2026. D033 accepts the external review and
+amends A10n before diagnostic scoring. Decisive reported states and the X4
+kernel are working compatibility treatments, not established latent-onset
+likelihoods. Timing-only CAR and one-day posterior widths do not prove those
+stronger claims. The independent audit identifies the `_clip` conflict
+envelope and kernel slope-Jacobian issue.
+
+Bounded ownership: separate delegates implement the future-v4 censor audit,
+alternative-score runner, endpoint dose grid and example/simulation table;
+root integrates the contract, independent numerical checks and report. No
+existing qualified forecasting file, frozen run or manuscript is rewritten.
+The 2018+ and other-star archives remain closed.

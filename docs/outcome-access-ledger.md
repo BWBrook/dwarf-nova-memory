@@ -486,3 +486,14 @@ retained, already opened 1960–2017 primary run
   inspected.
 - These checks are post-result exploration and cannot become a confirmation.
 
+
+### Codex R1 exploratory research access, 9 November 2026
+
+After the completed SS Cyg primary and external review, Codex and bounded
+delegates read retained, already opened through-2017 observations, extracted
+features/evidence and synthetic inputs/records for the R1 diagnostics. The
+actual censoring candidates and working alternative outcome scores are new
+post-result analyses, not a new confirmation. Synthetic truth is regenerated
+from recorded seeds, never from later real data. No archive request, other-star
+observation or SS Cyg 2018+ observation/count/coverage summary is authorised or
+requested. Existing frozen run bytes and source/parameter identities are kept.
