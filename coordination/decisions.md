@@ -976,6 +976,41 @@ proposals, not a record of approvals the user has not given.
   decisions (G3a development-only opening, G3b test opening, SS Cyg 2018–2025,
   specialist) are unchanged and not yet requested.
 
+### D039 — R2b amended contract and pre-fit execution freeze
+
+- Codex, 9 November 2026. Accept D038's decisive-bright abort revision,
+  scheduled-anchor histories, matched clocks and fixed H1–H3. Amended protocol:
+  `docs/protocols/r2b-execution-v1.md`; independent invented-number review:
+  `docs/audits/2026-11-09-r2b-pre-execution-review.md`.
+- D038's proposed Fisher ceiling is not a bound. Exact conditional lognormal
+  integration already exceeds the quadratic approximation; support changes may
+  give infinite KL. Retain a local one-lag sensitivity index only, with no
+  mechanism-exclusion gate and explicit older-history/conditioning omissions.
+- Retain the last-upcrossing target but not the shortened containment proof:
+  exact raw visit aggregation can obscure the ordering of decisive witnesses.
+  A0/A1 remain assumptions. The observing-rate mark is a sensitivity, not a
+  validated negative control; H3 is a paired working-gain comparison.
+- Prepare common-fallback features, actual scheduled/markable counts and
+  harmonized historical anchors before fitting. Reconstruct training outcomes
+  only from the pre-1960 prefix; no later candidate/window calibrates them.
+  Unsupported outcomes remain absent, not zero; algebraic identities are
+  distinct. Working cutoffs, mixed bounds and selected-observation assumptions
+  are explicitly separate.
+- Preserve all optimizer starts and failures. Development stability requires
+  every declared start to converge, at least two successes and objective spread
+  at most 1e-6 times max(1, absolute best objective). Keep B2 headline diagnostics
+  even if unstable; a future sealed fallback may depend only on development
+  stability, never evaluation gain.
+- Freeze sources/configuration/tests, run the synthetic raw-report rehearsal
+  and independent checks, then gain-free actual preparation followed by the
+  exploratory 1910–1959 fits and 1960–2017 evaluation. Save parameter hashes
+  before evaluation; preserve failures and independently reconstruct scores.
+- Six-/twelve-year intervals remain descriptive. The proposed later eighteen-
+  year/whole-star choice requires a dependence stress envelope and Monte Carlo
+  uncertainty, not a nominal-coverage claim from a single plug-in simulation.
+  G2/G3 remain open. No new archive, 2018+ data, contact or release is authorized.
+  Manuscript product texts and PDFs remain unchanged; new claims are provisional.
+
 ## New decision template
 
 ### D0xx — Short concrete title

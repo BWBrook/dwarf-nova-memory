@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "all_starts_agree": true,
+    "fixed_timing_positive_mark_shift": true,
+    "future_cadence_rejected": true,
+    "future_flux_rejected": true,
+    "future_rate_rejected": true,
+    "joint_cadence_base_location": true,
+    "missing_anchor_common_remaining": true,
+    "missing_gap_common_constant": true,
+    "missing_mark_exact": true,
+    "nonfinite_gradient": true,
+    "objective_disagreement": true,
+    "one_start_fails": true,
+    "training_guard_computed_as_of": true,
+    "training_guard_evidence_available_at": true,
+    "training_guard_issue_time": true,
+    "training_guard_onset_hi": true,
+    "valid_training_pair": true,
+    "zero_beta_exact": true
+  },
+  "scope": "invented fixed rules and mocked optimizer results only; no model fit, real observations or forecast scores",
+  "source_sha256": "efed121968cd167caf064dde6676a33f47f49d857921fe0f9b19fbeb512b4b19",
+  "status": "passed"
+}

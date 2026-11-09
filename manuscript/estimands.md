@@ -44,6 +44,21 @@ real-data R2b execution and any new-star G3 proposal require their named source,
 cohort, population and interpretation freezes; no new archive opening follows
 from this preparation contract.
 
+## R2b execution qualification (D039)
+
+`docs/protocols/r2b-execution-v1.md` authorizes exploratory fits/scores only
+after its source freeze. The last-crossing convention still needs A0/A1;
+median visit aggregation and expanded raw supports do not prove an ordered
+faint witness. The one-lag Fisher calculation is a local sensitivity index,
+not a cadence ceiling or mechanism-exclusion threshold. The observing-rate
+mark is not a validated negative control. H3 compares incremental working
+gains under two trained clocks; it is not a causal end-error effect. Unsupported
+observations remain unsupported, with exact forecast identities counted
+separately. Six-/twelve-year CR1 intervals and midpoint residual dependence are
+qualified descriptive checks. Future eighteen-year/whole-star inference requires
+an uncertainty/stress envelope, not validation at one plug-in dependence value.
+No new-star or 2018+ access follows. Product texts/PDFs remain paused.
+
 ## Primary forecast gain (C01–C04)
 
 - **Estimand:** the mean paired log-score difference over the 441 SS Cyg issuances in 1960–2017.

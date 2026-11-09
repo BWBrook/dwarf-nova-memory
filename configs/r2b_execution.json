@@ -1,0 +1,14 @@
+{
+  "label": "exploratory R2b; no new archives or confirmation",
+  "training_start": 2418672.5,
+  "training_stop": 2436934.5,
+  "evaluation_stop": 2458119.5,
+  "rehearsal_seed": 939172,
+  "rehearsal_episodes": 70,
+  "rehearsal_first_onset": 2435100.0,
+  "flux_rung": "B2",
+  "rate_clock": "df",
+  "rate_rung": "B2",
+  "cadence_clock": "df",
+  "cadence_rung": "B2"
+}

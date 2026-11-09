@@ -1,0 +1,154 @@
+{
+  "additive_shift_Fisher_checks": {
+    "median": 40,
+    "rows": [
+      {
+        "exact_KL": "infinite",
+        "issue_age": 0,
+        "reason": "P has positive mass where shifted Q has zero support",
+        "shift": 0.1
+      },
+      {
+        "exact_KL": 3.132277566283711e-05,
+        "issue_age": 2,
+        "local_unconditional_index": 3.120055091073654e-05,
+        "quadrature_error": 6.179966334693763e-17,
+        "ratio": 1.0039173908323047,
+        "shift": 0.1
+      },
+      {
+        "exact_KL": 0.0032471084490159705,
+        "issue_age": 2,
+        "local_unconditional_index": 0.003120055091073654,
+        "quadrature_error": 6.402447933447823e-16,
+        "ratio": 1.0407215110738945,
+        "shift": 1
+      },
+      {
+        "exact_KL": 0.39578654394166757,
+        "issue_age": 10,
+        "local_unconditional_index": 0.25272446237696594,
+        "quadrature_error": 1.3589519653442326e-12,
+        "ratio": 1.5660792794617129,
+        "shift": 9
+      }
+    ],
+    "sigma": 0.4,
+    "unconditional_J": 0.006240110182147308
+  },
+  "aggregation_counterexample": {
+    "all_reports_exact": true,
+    "first_latent_decisive_time": 0.01,
+    "implication": "The explicit v0 A0 condition before raw L is insufficient; a faint witness ordered before first decisive brightness is additionally needed.",
+    "last_rising_threshold_crossing_before_first_decisive": -0.1,
+    "latent_path_vertices": [
+      [
+        -2,
+        11.5
+      ],
+      [
+        -1,
+        11.5
+      ],
+      [
+        -0.1,
+        10
+      ],
+      [
+        0,
+        9.5
+      ],
+      [
+        0.01,
+        9
+      ],
+      [
+        0.05,
+        11.5
+      ],
+      [
+        0.1,
+        11.5
+      ],
+      [
+        1,
+        8.5
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        11.5
+      ]
+    ],
+    "no_decisive_excursion_before_raw_L": true,
+    "previous_qualifying_end": -2,
+    "raw_reports": [
+      {
+        "JD": 0,
+        "mag": 9.5,
+        "obsName": "invented-A"
+      },
+      {
+        "JD": 0.05,
+        "mag": 11.5,
+        "obsName": "invented-A"
+      },
+      {
+        "JD": 0.1,
+        "mag": 11.5,
+        "obsName": "invented-A"
+      },
+      {
+        "JD": 0.01,
+        "mag": 9,
+        "obsName": "invented-B"
+      },
+      {
+        "JD": 1,
+        "mag": 8.5,
+        "obsName": "invented-C"
+      },
+      {
+        "JD": 2,
+        "mag": 8,
+        "obsName": "invented-D"
+      },
+      {
+        "JD": 3,
+        "mag": 11.5,
+        "obsName": "invented-E"
+      }
+    ],
+    "target_contained": false,
+    "x5_eligible": true,
+    "x5_flags": [],
+    "x5_window": [
+      0.0,
+      1.0
+    ]
+  },
+  "scope": "invented numbers only; no real data, fit or original forecast score",
+  "source_sha256": {
+    "docs/protocols/r2b-execution-v0.md": "33a135c1172941912abbadeba31d2504a2dec062f9f03ab03c002d7f02187898",
+    "src/dnmem/extract_x5.py": "a8cfe3ec68e53c08e2470c7dad276b4ec9ad3d5f42dd47b2f89b3f63905a8bd6",
+    "src/dnmem/r2_models.py": "48a9d14faec7e346507f9a9dd75ad21eef11647315ee911599ad48e5a128fac4",
+    "src/dnmem/r2_scores.py": "31d7edb6f552c7272dec1a1b3c4c0ad450628fb9ca460e59fcc3a3ab024d9548"
+  },
+  "state_history_sensitivity": {
+    "ar_sd": 0.3,
+    "implication": "A derivative with respect only to the most recent gap omits older measured-history errors.",
+    "last_gap_change": 0,
+    "level_sd": 0.03,
+    "oldest_log_gap_perturbation": 0.1,
+    "phi": 0.4,
+    "predicted_log_location_shift": 0.02155097967275389,
+    "three_history_predictive_weights": [
+      0.21550979672753887,
+      0.13027252297443834,
+      0.6217716387233279
+    ]
+  }
+}
