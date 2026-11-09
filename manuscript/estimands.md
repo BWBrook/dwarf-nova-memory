@@ -46,7 +46,7 @@ from this preparation contract.
 
 ## R2b execution qualification (D039)
 
-`docs/protocols/r2b-execution-v1.md` authorizes exploratory fits/scores only
+`docs/protocols/r2b-execution-v2.md` (D039–D040) authorizes exploratory fits/scores only
 after its source freeze. The last-crossing convention still needs A0/A1;
 median visit aggregation and expanded raw supports do not prove an ordered
 faint witness. The one-lag Fisher calculation is a local sensitivity index,
@@ -58,6 +58,9 @@ separately. Six-/twelve-year CR1 intervals and midpoint residual dependence are
 qualified descriptive checks. Future eighteen-year/whole-star inference requires
 an uncertainty/stress envelope, not validation at one plug-in dependence value.
 No new-star or 2018+ access follows. Product texts/PDFs remain paused.
+Coincident delayed issues share one representative (earliest original), with
+later originals retained in the audit. Unique delayed-issue and original-issue
+populations differ; they must not share a denominator silently.
 
 ## Primary forecast gain (C01–C04)
 

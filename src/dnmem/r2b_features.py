@@ -12,7 +12,7 @@ from dnmem.extract_x5 import decisive_visits
 from dnmem.prefix_features import COVERAGE_HOLE, LOOKBACK, PREVIOUS_MARGIN, forecast_features
 from dnmem import r2_features as previous
 
-DEFINITION_VERSION = "r2b-scheduled-anchor-features-v1"
+DEFINITION_VERSION = "r2b-scheduled-anchor-features-v2"
 
 
 def decoupled_schedule(emissions, observed, stop=None):
@@ -42,7 +42,18 @@ def decoupled_schedule(emissions, observed, stop=None):
                       "anchor_first_at": selected["first_at"] if selected else None,
                       "anchor_available_at": selected["available_at"] if selected else None,
                       "delay_days": issue - original if issue is not None else None,
+                      "coincident_with_emission_index": None,
                       "status": status})
+    representatives = {}
+    for row in audit:
+        if row["status"] != "scheduled":
+            continue
+        key = (row["issue_time"], row["anchor"], row["anchor_first_at"], row["anchor_available_at"])
+        if key in representatives:
+            row.update(status="coincident_pending_issue",
+                       coincident_with_emission_index=representatives[key])
+        else:
+            representatives[key] = row["emission_index"]
     issued = [s["issue_time"] for s in audit if s["status"] == "scheduled"]
     if any(right <= left for left, right in zip(issued, issued[1:])):
         raise ValueError("DF schedule does not have unique increasing issue times")

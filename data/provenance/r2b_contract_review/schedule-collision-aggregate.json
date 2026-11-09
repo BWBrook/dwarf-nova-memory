@@ -1,0 +1,27 @@
+{
+  "collision_periods": {
+    "evaluation->evaluation": 1
+  },
+  "duplicate_issue_groups": 1,
+  "input_cache_receipt_sha256": "052a1ea5e634dcf4cefd2c59d31c1c4331bd15fd1e0bac29b7969f3fe0dd5958",
+  "nonincreasing_adjacent_pairs": 1,
+  "original_emissions": 828,
+  "resolution": "D040: earliest original representative for exactly coincident issue/anchor; later records retained as coincident_pending_issue; no fits or gains used",
+  "scope": "Independent gain-free schedule reconstruction on already opened pre2018 data; no fits/scores/outcome associations",
+  "source_sha256": {
+    "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "src/dnmem/extract_x5.py": "a8cfe3ec68e53c08e2470c7dad276b4ec9ad3d5f42dd47b2f89b3f63905a8bd6",
+    "src/dnmem/r2b_features.py": "1223189b9f24a33a78de6ca58beec017e7dfeb6addc6dfceba254d4411561099"
+  },
+  "status_by_original_period": {
+    "development": {
+      "scheduled": 330
+    },
+    "evaluation": {
+      "scheduled": 441
+    },
+    "pre1910": {
+      "scheduled": 57
+    }
+  }
+}

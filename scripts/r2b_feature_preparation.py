@@ -22,7 +22,7 @@ from dnmem.r2b_features import prepare_feature_ledgers
 
 STOP = 2458119.5
 FROZEN_PATHS = (
-    "docs/protocols/r2b-execution-v1.md", "src/dnmem/r2b_features.py",
+    "docs/protocols/r2b-execution-v2.md", "src/dnmem/r2b_features.py",
     "scripts/r2b_feature_preparation.py", "tests/test_r2b_features.py",
     "src/dnmem/r2_features.py", "src/dnmem/extract_x5.py", "src/dnmem/extract_x4.py",
     "src/dnmem/extract_x3.py", "src/dnmem/extract.py", "src/dnmem/prefix_features.py", "uv.lock")
@@ -76,6 +76,7 @@ def summary(ledgers):
               "periods": {},
               "limitations": [
                   "Historical DF gaps require unique raw-peak association to a previously scheduled emission; missing/ambiguous anchors remain missing slots.",
+                  "Scheduled emissions with exactly identical issue time and observed anchor use the earliest original representative; later coincident originals stay in the audit.",
                   "Historical onsets and coverage are reconstructed as of each current issue, not claimed immutable values from the past issue.",
                   "The DF anchor is a scheduled observed faint support, not an estimated latent end.",
                   "Cadence gaps use raw positive estimates belonging to closed visits; numerical limits are not exact positive values.",

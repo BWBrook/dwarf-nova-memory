@@ -1011,6 +1011,32 @@ proposals, not a record of approvals the user has not given.
   G2/G3 remain open. No new archive, 2018+ data, contact or release is authorized.
   Manuscript product texts and PDFs remain unchanged; new claims are provisional.
 
+### D040 — Coincident DF issue convention before any real fit
+
+- Codex, 9 November 2026. Source freeze `939208e` passes the synthetic raw-report
+  rehearsal and independent scalar reconstruction (2,072 scores, maximum error
+  1.25e-14), but gain-free actual preparation stops on one coincident pair.
+  Preserve `outputs/r2b_features_939208e/receipt.json`; no real fit/score exists.
+- Independent gain-free reconstruction finds 441 original evaluation records
+  scheduled at only 440 distinct DF times. One weaker tail re-confirmation shares
+  exactly the same faint anchor/support and delayed issue with its predecessor.
+  The prior strict-order guard correctly refuses silent duplicate issuance.
+- Before any gain, choose the earliest original emission as the representative
+  of an EXACT coincident issue+anchor group. Later coincident originals remain
+  explicit audit records linked to it, not additional forecasts. This preserves
+  the original causal bright phase. It is not physical-event adjudication.
+  Different-anchor ties and noncoincident inversions still fail. No general
+  pending-supersession or threshold-level cancellation rule is introduced.
+- Alternatives: retain all tied records with zero-exposure supersession; choose
+  the latest original; reinstate threshold abort. The first adds a redundant
+  issuance denominator, the second replaces the phase with a weak repeat, and
+  the third restores the cadence selection D038 rejected. None was compared
+  using model outcomes or gains.
+- `docs/protocols/r2b-execution-v2.md` preserves all other v1 rules. P-orig keeps
+  its 441 expected evaluation originals; P-DF/P-match are expected to have 440
+  unique issues. Re-freeze sources/tests and repeat the rehearsal and gain-free
+  preparation before actual fitting. Preserve v1 and all original A10 results.
+
 ## New decision template
 
 ### D0xx — Short concrete title

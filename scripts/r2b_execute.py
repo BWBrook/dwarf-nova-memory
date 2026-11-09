@@ -2,7 +2,7 @@
 
 import argparse
 from collections import Counter
-from datetime import date
+from datetime import date, datetime, timezone
 import hashlib
 import json
 import math
@@ -23,7 +23,7 @@ from dnmem.r2b_models import fit_bases, fit_mark, local_lag_index
 from dnmem.r2b_scoring import (aggregate_contrast, outcome_evidence,
                                 paired_clock_gain, residual_diagnostics, score_contrast)
 
-SOURCES = ("docs/protocols/r2b-execution-v1.md", "configs/r2b_execution.json", "scripts/r2b_execute.py",
+SOURCES = ("docs/protocols/r2b-execution-v2.md", "configs/r2b_execution.json", "scripts/r2b_execute.py",
            "scripts/r2b_feature_preparation.py", "src/dnmem/r2b_features.py", "src/dnmem/r2b_models.py",
            "src/dnmem/r2b_scoring.py", "src/dnmem/r2_features.py", "src/dnmem/r2_models.py",
            "src/dnmem/r2_scores.py", "src/dnmem/extract_x5.py", "src/dnmem/extract_x4.py",
@@ -136,7 +136,13 @@ def execute(rows, ledgers, config, output, receipt):
     parameters = {clock: {name: model.to_dict() for name, model in own.items()} for clock, own in models.items()}
     write(output / "parameters-unreleased.json", parameters)
     parameter_sha = digest(output / "parameters-unreleased.json")
-    receipt.update(stage="development_parameters_saved_before_evaluation", parameters_sha256=parameter_sha)
+    write(output / "parameter-lock.json", {
+        "stage": "development_parameters_saved_before_evaluation", "freeze_commit": receipt["freeze_commit"],
+        "parameters_sha256": parameter_sha, "saved_utc": datetime.now(timezone.utc).isoformat(),
+        "development_input_sha256": {p.name: digest(p) for p in output.glob("*-development-*-unreleased.json")},
+        "scope": "local immutable execution receipt; not an external timestamp or a new preregistration"})
+    receipt.update(stage="development_parameters_saved_before_evaluation", parameters_sha256=parameter_sha,
+                   parameter_lock_sha256=digest(output / "parameter-lock.json"))
     write(output / "receipt.json", receipt)
     summaries, evaluation_scores, residuals, local_indices = {}, {}, {}, {}
     for clock, own in models.items():

@@ -53,6 +53,42 @@ class ScheduleTests(unittest.TestCase):
         self.assertEqual(features.decoupled_schedule([original], decisive_visits(rows), stop=35)[0]["status"],
                          "past_issue_cutoff")
 
+    def test_identical_pending_clock_uses_earliest_original_representative(self):
+        rows = [obs(10, 8.5, "a"), obs(24, 9.4, "b"), obs(30, 12, "f")]
+        originals = [emission(index=0), emission(issue=25, first=23.15, last=24.15, index=1)]
+        audit = features.decoupled_schedule(originals, decisive_visits(rows))
+        self.assertEqual(len(audit), 2)
+        self.assertEqual(audit[0]["issue_time"], audit[1]["issue_time"])
+        self.assertEqual(audit[0]["status"], "scheduled")
+        self.assertEqual(audit[1]["status"], "coincident_pending_issue")
+        self.assertEqual(audit[1]["coincident_with_emission_index"], 0)
+
+    def test_original_emission_exactly_at_same_pending_clock_is_retained_in_audit(self):
+        rows = [obs(10, 8.5, "a"), obs(24, 9.4, "b"), obs(30, 12, "f")]
+        originals = [emission(index=0), emission(issue=30.15, first=23.15, last=24.15, index=1)]
+        audit = features.decoupled_schedule(originals, decisive_visits(rows))
+        self.assertEqual(audit[0]["status"], "scheduled")
+        self.assertEqual(audit[1]["status"], "coincident_pending_issue")
+
+    def test_multiple_weak_reconfirmations_keep_first_representative(self):
+        rows = [obs(10, 8.5, "a"), obs(24, 9.4, "b"), obs(27, 9.5, "c"), obs(30, 12, "f")]
+        originals = [emission(index=0), emission(issue=25, first=23.15, last=24.15, index=1),
+                     emission(issue=28, first=26.15, last=27.15, index=2)]
+        audit = features.decoupled_schedule(originals, decisive_visits(rows))
+        self.assertEqual([row["status"] for row in audit],
+                         ["scheduled", "coincident_pending_issue", "coincident_pending_issue"])
+        self.assertEqual([row["coincident_with_emission_index"] for row in audit], [None, 0, 0])
+        self.assertEqual(audit, features.decoupled_schedule(originals, decisive_visits(list(reversed(rows)))))
+
+    def test_equal_clock_with_different_anchor_support_is_an_error(self):
+        observed = [{"available_at": 16.05, "first_at": 15.90, "last_at": 16.01,
+                     "observer": "a", "decisive": "F"},
+                    {"available_at": 16.15, "first_at": 16.00, "last_at": 16.01,
+                     "observer": "b", "decisive": "F"}]
+        originals = [emission(issue=20, last=10, index=0), emission(issue=20, last=16.10, index=1)]
+        with self.assertRaisesRegex(ValueError, "unique increasing issue times"):
+            features.decoupled_schedule(originals, observed)
+
 
 class CadenceControlTests(unittest.TestCase):
     def context(self, rows):
