@@ -1,0 +1,241 @@
+{
+  "null": {
+    "evaluation": {
+      "0.0": {
+        "M2_routes": {
+          "M0": 1276,
+          "M2": 14346,
+          "R0": 13
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15635,
+        "fixed_extracted_excluded_total": 6,
+        "fixed_extracted_total": 11577,
+        "fixed_truth_total": 11583,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 19,
+          "episode_missing": 3,
+          "nonpositive_duration": 7,
+          "nonpositive_history_gap": 836,
+          "nonpositive_previous_duration": 3,
+          "nonpositive_previous_gap": 177
+        },
+        "positive_fitted_duration_offsets": 27
+      },
+      "1.0": {
+        "M2_routes": {
+          "M0": 1248,
+          "M2": 13525,
+          "R0": 862
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15635,
+        "fixed_extracted_excluded_total": 6,
+        "fixed_extracted_total": 11577,
+        "fixed_truth_total": 11583,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 1617,
+          "episode_missing": 3,
+          "nonpositive_duration": 14,
+          "nonpositive_history_gap": 844,
+          "nonpositive_previous_duration": 8,
+          "nonpositive_previous_gap": 179
+        },
+        "positive_fitted_duration_offsets": 20
+      },
+      "2.0": {
+        "M2_routes": {
+          "M0": 1159,
+          "M2": 11818,
+          "R0": 2658
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15635,
+        "fixed_extracted_excluded_total": 6,
+        "fixed_extracted_total": 11577,
+        "fixed_truth_total": 11583,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 4904,
+          "episode_missing": 3,
+          "nonpositive_duration": 34,
+          "nonpositive_history_gap": 834,
+          "nonpositive_previous_duration": 40,
+          "nonpositive_previous_gap": 181
+        },
+        "positive_fitted_duration_offsets": 11
+      },
+      "4.0": {
+        "M2_routes": {
+          "M0": 1023,
+          "M2": 10036,
+          "R0": 4576
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15635,
+        "fixed_extracted_excluded_total": 6,
+        "fixed_extracted_total": 11577,
+        "fixed_truth_total": 11583,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 8546,
+          "episode_missing": 3,
+          "nonpositive_duration": 554,
+          "nonpositive_history_gap": 786,
+          "nonpositive_previous_duration": 564,
+          "nonpositive_previous_gap": 174
+        },
+        "positive_fitted_duration_offsets": 5
+      },
+      "6.0": {
+        "M2_routes": {
+          "M0": 945,
+          "M2": 9218,
+          "R0": 5472
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15635,
+        "fixed_extracted_excluded_total": 6,
+        "fixed_extracted_total": 11577,
+        "fixed_truth_total": 11583,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 10226,
+          "episode_missing": 3,
+          "nonpositive_duration": 1659,
+          "nonpositive_history_gap": 740,
+          "nonpositive_previous_duration": 1679,
+          "nonpositive_previous_gap": 167
+        },
+        "positive_fitted_duration_offsets": 4
+      }
+    },
+    "histories": 40,
+    "maximum_abs_new_legacy_refit_mean_difference": 3.368612751589173e-09,
+    "maximum_abs_retained_parameter_mean_replay_error": 2.8145888397723695e-16,
+    "whole_history_anchor_classifications": {
+      "fixed_anchor": 21340,
+      "next_true_onset_before_issue": 29,
+      "repeat_truth_event": 2,
+      "true_event_not_completed": 14,
+      "unmatched_or_false_emission": 7643
+    },
+    "worker_peak_rss_max_bytes": 479477760
+  },
+  "structured": {
+    "evaluation": {
+      "0.0": {
+        "M2_routes": {
+          "M0": 1291,
+          "M2": 14394,
+          "R0": 11
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15696,
+        "fixed_extracted_excluded_total": 4,
+        "fixed_extracted_total": 11555,
+        "fixed_truth_total": 11559,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 15,
+          "episode_missing": 1,
+          "nonpositive_duration": 5,
+          "nonpositive_history_gap": 645,
+          "nonpositive_previous_duration": 4,
+          "nonpositive_previous_gap": 143
+        },
+        "positive_fitted_duration_offsets": 22
+      },
+      "1.0": {
+        "M2_routes": {
+          "M0": 1266,
+          "M2": 13535,
+          "R0": 895
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15696,
+        "fixed_extracted_excluded_total": 4,
+        "fixed_extracted_total": 11555,
+        "fixed_truth_total": 11559,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 1622,
+          "episode_missing": 1,
+          "nonpositive_duration": 8,
+          "nonpositive_history_gap": 670,
+          "nonpositive_previous_duration": 15,
+          "nonpositive_previous_gap": 145
+        },
+        "positive_fitted_duration_offsets": 16
+      },
+      "2.0": {
+        "M2_routes": {
+          "M0": 1180,
+          "M2": 11862,
+          "R0": 2654
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15696,
+        "fixed_extracted_excluded_total": 4,
+        "fixed_extracted_total": 11555,
+        "fixed_truth_total": 11559,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 4873,
+          "episode_missing": 1,
+          "nonpositive_duration": 38,
+          "nonpositive_history_gap": 715,
+          "nonpositive_previous_duration": 54,
+          "nonpositive_previous_gap": 157
+        },
+        "positive_fitted_duration_offsets": 7
+      },
+      "4.0": {
+        "M2_routes": {
+          "M0": 1056,
+          "M2": 10028,
+          "R0": 4612
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15696,
+        "fixed_extracted_excluded_total": 4,
+        "fixed_extracted_total": 11555,
+        "fixed_truth_total": 11559,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 8517,
+          "episode_missing": 1,
+          "nonpositive_duration": 541,
+          "nonpositive_history_gap": 698,
+          "nonpositive_previous_duration": 582,
+          "nonpositive_previous_gap": 158
+        },
+        "positive_fitted_duration_offsets": 2
+      },
+      "6.0": {
+        "M2_routes": {
+          "M0": 970,
+          "M2": 9243,
+          "R0": 5483
+        },
+        "all_issued_excluded_total": 6,
+        "all_issued_scored_total": 15696,
+        "fixed_extracted_excluded_total": 4,
+        "fixed_extracted_total": 11555,
+        "fixed_truth_total": 11559,
+        "invalid_feature_flags_training_and_evaluation": {
+          "end_after_issue": 10180,
+          "episode_missing": 1,
+          "nonpositive_duration": 1741,
+          "nonpositive_history_gap": 706,
+          "nonpositive_previous_duration": 1778,
+          "nonpositive_previous_gap": 161
+        },
+        "positive_fitted_duration_offsets": 0
+      }
+    },
+    "histories": 40,
+    "maximum_abs_new_legacy_refit_mean_difference": 5.241999256541674e-09,
+    "maximum_abs_retained_parameter_mean_replay_error": 3.209238430557093e-16,
+    "whole_history_anchor_classifications": {
+      "fixed_anchor": 21440,
+      "next_true_onset_before_issue": 24,
+      "true_event_not_completed": 15,
+      "unmatched_or_false_emission": 7707
+    },
+    "worker_peak_rss_max_bytes": 496041984
+  }
+}

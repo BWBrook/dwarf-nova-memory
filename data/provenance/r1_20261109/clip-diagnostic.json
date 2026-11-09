@@ -1,0 +1,38 @@
+{
+  "scope": "R1 diagnostic, frozen report-clip construction only; no alternative score computed",
+  "freeze_commit": "0594146",
+  "all_episode_reconstruction_exact": true,
+  "primary_candidates": {
+    "associations": 440,
+    "distinct_episodes": 439,
+    "missing_lower": 434,
+    "missing_with_first_bright_before_last_faint": 434,
+    "missing_with_qualifying_faint_reports": 434,
+    "missing_with_no_faint_before_first_bright": 434
+  },
+  "all_episodes": {
+    "associations": 860,
+    "distinct_episodes": 860,
+    "missing_lower": 801,
+    "missing_with_first_bright_before_last_faint": 793,
+    "missing_with_qualifying_faint_reports": 793,
+    "missing_with_no_faint_before_first_bright": 801
+  },
+  "source_sha256": {
+    "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "src/dnmem/observation_scores_r1.py": "923e0bb25719e87126b4325976d4b58470c8d7fa8ebf5fa38f61d3e77e8b085f"
+  },
+  "cache_receipt_sha256": "052a1ea5e634dcf4cefd2c59d31c1c4331bd15fd1e0bac29b7969f3fe0dd5958",
+  "invented_example": {
+    "previous_peak": 0,
+    "first_far_bright": 1,
+    "last_far_faint": 5,
+    "current_far_bright": 30,
+    "current_peak": 31,
+    "returned_clip": [
+      null,
+      30
+    ]
+  },
+  "limit": "Ordering is consistent with a trailing preceding outburst, without independently assigning physical episode membership."
+}

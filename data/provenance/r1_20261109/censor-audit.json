@@ -1,0 +1,43 @@
+{
+  "actual_candidate_relation_by_reason": {
+    "coverage:after_or_at_cutoff": 4,
+    "record_end:no_candidate": 1,
+    "superseded:after_or_at_cutoff": 1
+  },
+  "both_frozen_builders_reproduce_all_primary_evidence": true,
+  "censored_issuances": 6,
+  "censored_total_original_gain": -0.00679900154204247,
+  "head": "de186da3ec2d80fce07cae2f322685269325d624",
+  "input_verification": {
+    "all_analysis_rows_strictly_before_2018": true,
+    "all_hashes_match": true,
+    "current_execution_source_differences": [
+      "scripts/validate_seed.py"
+    ],
+    "evaluation_native_sources_verified": 63,
+    "historical_execution_source_files_verified": 120,
+    "input_cache_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+    "original_receipt_sha256": "d341824530198f7b9d5d167ea92f526a98599a664a9d7130126393ad38de14b9",
+    "parameters_sha256": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+    "pre1960_native_sources_verified": 12,
+    "qualified_forecasting_sources_verified": 26,
+    "run_outputs_verified": 15
+  },
+  "label": "R1a/E3 offline exploratory audit of the already opened frozen SS Cyg 1960-2017 result",
+  "limits": [
+    "Candidates recovered from the full frozen X4 confirmed-episode sequence, not from the next emission.",
+    "Uses shared frozen extraction; routing concordance is not physical-truth validation.",
+    "Dropping censors is a sensitivity, not a bound over all possible corrections.",
+    "No archive request, 2018+ observation, new-star input, refit, or frozen-file change.",
+    "X4 posterior brackets are working intervals; survival-to-lower-bound requires the declared hard-bracket approximation."
+  ],
+  "mean_gain_excluding_all_censored": 0.01677719050986561,
+  "mean_original_gain": 0.016533512177436503,
+  "primary_issuances": 441,
+  "prospective_v4_backoffs": 0,
+  "prospective_v4_changed_primary_outcome_rows": 0,
+  "prospective_v4_matches_independent_reference": true,
+  "script_sha256": "4f063c9446cce74b7c5aeb7c8c77869b02f2a02c2a07191315d1dee86b36b7ba",
+  "straddling_actual_candidates": 0,
+  "synthetic_boundary_cases_matching_independent_reference": 18
+}

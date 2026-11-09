@@ -1,0 +1,434 @@
+{
+  "a10n_verification": {
+    "a10n_script_origin_jd": 2436934.0,
+    "all_numerical_a10n_aggregates_match": true,
+    "censor_candidate_relations": "Not re-inferred from next emission here; the separate R1a audit verifies actual frozen candidates.",
+    "censor_sensitivity": {
+      "censored": 6,
+      "censored_total_contribution": -0.00679900154204247,
+      "mean_all": 0.016533512177436503,
+      "mean_excluding_censored": 0.01677719050986561
+    },
+    "correct_real_six_year_origin_jd": 2436934.5,
+    "end_width_split": {
+      "all": {
+        "blocks": 10,
+        "lower90": 0.00494771630959865,
+        "mean": 0.016533512177436503,
+        "n": 441,
+        "upper90": 0.028119308045274356
+      },
+      "end_bracket_width_days": {
+        "max": 3.1044987831264734,
+        "median": 1.0037204856052995,
+        "min": 0.5708499434404075,
+        "tercile_cuts": [
+          0.913423877209425,
+          1.1282757927353184
+        ]
+      },
+      "narrow_half": {
+        "blocks": 10,
+        "lower90": -0.006243043785343714,
+        "mean": 0.012807687199534682,
+        "n": 221,
+        "upper90": 0.03185841818441308
+      },
+      "spearman_width_gain": {
+        "p": 0.5312002506003266,
+        "rho": 0.029896035264487416
+      },
+      "terciles": [
+        {
+          "blocks": 10,
+          "lower90": -0.009365086369460141,
+          "mean": 0.008820209585157078,
+          "n": 147,
+          "upper90": 0.027005505539774297
+        },
+        {
+          "blocks": 10,
+          "lower90": 0.008657179830590521,
+          "mean": 0.02908934068022443,
+          "n": 147,
+          "upper90": 0.04952150152985834
+        },
+        {
+          "blocks": 10,
+          "lower90": -0.0041369523300915974,
+          "mean": 0.011690986266927996,
+          "n": 147,
+          "upper90": 0.027518924863947587
+        }
+      ],
+      "wide_half": {
+        "blocks": 10,
+        "lower90": 0.008660418867910882,
+        "mean": 0.020276272723419694,
+        "n": 220,
+        "upper90": 0.03189212657892851
+      }
+    },
+    "issuances_with_changed_block_assignment": 0
+  },
+  "all_simulation_comparison_rows_recomputed": 480,
+  "failures": [],
+  "figure1": {
+    "interpretation": "One observation-time-selected illustration, using the prefix point end/duration and conditioning once on survival to issue; not an average effect or utility estimate; not the endpoint-integrated scoring rule.",
+    "median_change_days_M3_minus_M2": -0.8022476011514001,
+    "models": {
+      "M2": {
+        "conditional_median_remaining_wait_days": 27.57487441212919,
+        "grid_median_minus_analytic_days": 0.00018882143541176788,
+        "max_absolute_public_grid_cdf_error": 1.942890293094024e-16,
+        "probability_onset_within_30_days": 0.5767265222954578,
+        "public_grid_interpolated_median_days": 27.575063233564602,
+        "public_grid_probability_within_30_days": 0.576726522295458
+      },
+      "M3": {
+        "conditional_median_remaining_wait_days": 26.77262681097779,
+        "grid_median_minus_analytic_days": 7.64371769257366e-05,
+        "max_absolute_public_grid_cdf_error": 1.3877787807814457e-16,
+        "probability_onset_within_30_days": 0.6027654010811967,
+        "public_grid_interpolated_median_days": 26.772703248154716,
+        "public_grid_probability_within_30_days": 0.6027654010811968
+      }
+    },
+    "probability_change_percentage_points_M3_minus_M2": 2.603887878573885,
+    "selected_feature_sha256": "93393a6406dcb511bea3c7c0cf70d3cc12cd5cd43e67641b46b7e43ffd5bfb33",
+    "selected_outcome_sha256": "ae22469edac457b9e8e32902c362bc7b315992b0c491c6ba5f8195be51fa26d1",
+    "selector": "first 1960 issuance with extracted onset after JD2436934.5; minimum issue time, then emission index"
+  },
+  "head": "de186da3ec2d80fce07cae2f322685269325d624",
+  "histories_recomputed": 360,
+  "individual_histories_at_or_above_real_mean": 8,
+  "input_sha256": {
+    "configs/a10d_oc.json": "894b68bf30c66c3a07c3158e625608abf85a32c1d2492ebc05c0636fe7ee5b53",
+    "data/provenance/a10i_evaluation_1960_2017/run-receipt.json": "b9eee23957db51af3c7b9ba26adbdb6ae26cf057c3be3be8c4b55a304fbaf4d9",
+    "data/provenance/a10n_triage/checks.json": "44546e300bd54bd01fc8735d3785a6aa9c86f8647f7feda91af2cfb026572839",
+    "data/simulations/a10d_20261108/comparisons.csv": "8e7c3cf0c629d2dd06716c0fad6f9cf3d58cfbe473c43d6d9351238e77da61a5",
+    "data/simulations/a10d_20261108/report.json": "45a7e125e32f6669106d927f99a672286b005a364e902a1be8407c1356fe8253",
+    "data/simulations/a10d_20261108/run-receipt.json": "be0e25cd6d5432ca4cf3283991e698ca4b205c7424d16aff88e01abe02ae6f82",
+    "manuscript/figure-data/fig1-illustration.json": "f9681835f1ec02b56e495dc50351b0593117e6b13f7b447b70844b6304b3809e",
+    "outputs/a10d_run_8f5df44/a10d_oc/receipt.json": "be0e25cd6d5432ca4cf3283991e698ca4b205c7424d16aff88e01abe02ae6f82",
+    "outputs/a10d_run_8f5df44/a10d_oc/records.json": "92f2c319c65662c412a5a394a14ad87eb7e322892acc0aa908d8af001ca42848",
+    "outputs/a10h_live_repair_5e39aeb/evidence-0.0.json": "af78b93906bc7cef3e365b7e327bb88e932c64815a69650d2113f0b11ef53d62",
+    "outputs/a10h_live_repair_5e39aeb/frozen_parameters.json": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+    "outputs/a10h_live_repair_5e39aeb/ledger-0.0.json": "be96e2fa620b882ebffdcc5d7e4eeb8f427ac773976f4478c965de3023e25d20",
+    "outputs/a10h_live_repair_5e39aeb/primary-scores.json": "9e8628d1406216afbe0aa5a22e346612646c20d518f9b49cd007716ebc950443",
+    "outputs/a10h_live_repair_5e39aeb/receipt.json": "d341824530198f7b9d5d167ea92f526a98599a664a9d7130126393ad38de14b9",
+    "scripts/r1_example_simulation_table.py": "defe5c53ddb179fd9159d914039b93afa322b867b34fceab329b6a0ce3a08751"
+  },
+  "limits": [
+    "Simulation means and MCSE describe the frozen finite generator and observation/extraction process, not a population of real dwarf novae.",
+    "Exact binomial intervals cover simulation-history confirmation probabilities under independent histories; observed rates do not certify a true 5% error rate.",
+    "Reference coverage is a joint-Monte-Carlo screen using six finite matched replicas, not coverage against known exact conditional truth.",
+    "Serialized history estimates and replica estimates are reaggregated; synthetic scoring streams are not rescored in this bounded check.",
+    "The date-selected Figure1 illustration supplies no average forecast shift or observing-decision utility."
+  ],
+  "original_frozen_real_mean_gain": 0.016533512177436503,
+  "real_mean_exceeds_every_individual_history_mean": false,
+  "real_mean_exceeds_every_scenario_mean": true,
+  "reference_coverage": [
+    {
+      "case": "null",
+      "cluster_years": 3,
+      "interior": {
+        "exact_lower95": 0.6626891359757556,
+        "exact_upper95": 0.9581126035262326,
+        "one_sided_upper95": 0.9477667593178314,
+        "rate": 0.8518518518518519,
+        "rate_mc_se": 0.06836727459191831,
+        "successes": 23,
+        "trials": 27
+      },
+      "interior_undercoverage_p": 0.2821020123081473,
+      "overall": {
+        "exact_lower95": 0.7633626001239002,
+        "exact_upper95": 0.9720745847057808,
+        "one_sided_upper95": 0.965115146123483,
+        "rate": 0.9,
+        "rate_mc_se": 0.04743416490252569,
+        "successes": 36,
+        "trials": 40
+      },
+      "undercoverage_p": 0.5768693469069978
+    },
+    {
+      "case": "null",
+      "cluster_years": 6,
+      "interior": {
+        "exact_lower95": 0.708413075726448,
+        "exact_upper95": 0.9764725456191461,
+        "one_sided_upper95": 0.9690216067659645,
+        "rate": 0.8888888888888888,
+        "rate_mc_se": 0.060481228216868604,
+        "successes": 24,
+        "trials": 27
+      },
+      "interior_undercoverage_p": 0.5154188583079994,
+      "overall": {
+        "exact_lower95": 0.7961352512671009,
+        "exact_upper95": 0.9842578201489585,
+        "one_sided_upper95": 0.9792463985242987,
+        "rate": 0.925,
+        "rate_mc_se": 0.041645828122394195,
+        "successes": 37,
+        "trials": 40
+      },
+      "undercoverage_p": 0.777191875660597
+    },
+    {
+      "case": "alternative",
+      "cluster_years": 3,
+      "interior": {
+        "exact_lower95": 0.7122522026894278,
+        "exact_upper95": 0.954628007658006,
+        "one_sided_upper95": 0.9452071630063383,
+        "rate": 0.8648648648648649,
+        "rate_mc_se": 0.05620272917946338,
+        "successes": 32,
+        "trials": 37
+      },
+      "interior_undercoverage_p": 0.3094535637428828,
+      "overall": {
+        "exact_lower95": 0.7319670826382794,
+        "exact_upper95": 0.9581403738613832,
+        "one_sided_upper95": 0.9494296716591741,
+        "rate": 0.875,
+        "rate_mc_se": 0.05229125165837972,
+        "successes": 35,
+        "trials": 40
+      },
+      "undercoverage_p": 0.37098230346579864
+    },
+    {
+      "case": "alternative",
+      "cluster_years": 6,
+      "interior": {
+        "exact_lower95": 0.6798629241323286,
+        "exact_upper95": 0.9380742786666036,
+        "one_sided_upper95": 0.9269390977198539,
+        "rate": 0.8378378378378378,
+        "rate_mc_se": 0.06059738539651173,
+        "successes": 31,
+        "trials": 37
+      },
+      "interior_undercoverage_p": 0.15978031612147833,
+      "overall": {
+        "exact_lower95": 0.7016473331604236,
+        "exact_upper95": 0.942897741845474,
+        "one_sided_upper95": 0.9325990594772913,
+        "rate": 0.85,
+        "rate_mc_se": 0.05645794895318108,
+        "successes": 34,
+        "trials": 40
+      },
+      "undercoverage_p": 0.20627266871283936
+    }
+  ],
+  "scope": "Independent offline R1d/e post-result calculations; no fits, archive calls, new real inputs, or new confirmation",
+  "settings_primary_six_year": [
+    {
+      "case": "adaptive",
+      "confirmation": {
+        "exact_lower95": 0.0,
+        "exact_upper95": 0.08809730287880241,
+        "one_sided_upper95": 0.07215752450551455,
+        "rate": 0.0,
+        "rate_mc_se": 0.0,
+        "successes": 0,
+        "trials": 40
+      },
+      "family": "v2-phase",
+      "histories_at_or_above_real_mean_gain": 0,
+      "maximum_individual_history_mean_gain": 0.0031358061446153437,
+      "mean_gain": -0.0008218574870947985,
+      "mean_gain_mc_se": 0.00041635278077459714,
+      "minimum_individual_history_mean_gain": -0.01143897316698602,
+      "real_mean_gain_minus_scenario_mean": 0.0173553696645313,
+      "trial_sd": 0.0026332461947849825
+    },
+    {
+      "case": "alternative",
+      "confirmation": {
+        "exact_lower95": 0.1460089919638657,
+        "exact_upper95": 0.4388829071790482,
+        "one_sided_upper95": 0.41387744322649855,
+        "rate": 0.275,
+        "rate_mc_se": 0.07060010623221469,
+        "successes": 11,
+        "trials": 40
+      },
+      "family": "v2-phase",
+      "histories_at_or_above_real_mean_gain": 3,
+      "maximum_individual_history_mean_gain": 0.027687685499521133,
+      "mean_gain": 0.004519560867443926,
+      "mean_gain_mc_se": 0.0013692712920573928,
+      "minimum_individual_history_mean_gain": -0.023770467488123365,
+      "real_mean_gain_minus_scenario_mean": 0.012013951309992577,
+      "trial_sd": 0.008660032035165972
+    },
+    {
+      "case": "gross",
+      "confirmation": {
+        "exact_lower95": 0.006113646599350819,
+        "exact_upper95": 0.16919686395941763,
+        "one_sided_upper95": 0.149151961273213,
+        "rate": 0.05,
+        "rate_mc_se": 0.034460121880225555,
+        "successes": 2,
+        "trials": 40
+      },
+      "family": "v2-phase",
+      "histories_at_or_above_real_mean_gain": 0,
+      "maximum_individual_history_mean_gain": 0.008651152776635125,
+      "mean_gain": 0.00045646156813176865,
+      "mean_gain_mc_se": 0.00042783091475734184,
+      "minimum_individual_history_mean_gain": -0.006571236851916811,
+      "real_mean_gain_minus_scenario_mean": 0.016077050609304734,
+      "trial_sd": 0.0027058402881330887
+    },
+    {
+      "case": "null",
+      "confirmation": {
+        "exact_lower95": 0.0,
+        "exact_upper95": 0.08809730287880241,
+        "one_sided_upper95": 0.07215752450551455,
+        "rate": 0.0,
+        "rate_mc_se": 0.0,
+        "successes": 0,
+        "trials": 40
+      },
+      "family": "v2-phase",
+      "histories_at_or_above_real_mean_gain": 0,
+      "maximum_individual_history_mean_gain": 0.0040316695192131585,
+      "mean_gain": -0.00043766886942077983,
+      "mean_gain_mc_se": 0.00031417721200200597,
+      "minimum_individual_history_mean_gain": -0.00772667839842202,
+      "real_mean_gain_minus_scenario_mean": 0.016971181046857284,
+      "trial_sd": 0.0019870311576958566
+    },
+    {
+      "case": "offset",
+      "confirmation": {
+        "exact_lower95": 0.0,
+        "exact_upper95": 0.08809730287880241,
+        "one_sided_upper95": 0.07215752450551455,
+        "rate": 0.0,
+        "rate_mc_se": 0.0,
+        "successes": 0,
+        "trials": 40
+      },
+      "family": "v2-phase",
+      "histories_at_or_above_real_mean_gain": 0,
+      "maximum_individual_history_mean_gain": 0.002418335459097734,
+      "mean_gain": -0.00041774068927448677,
+      "mean_gain_mc_se": 0.0002852726221269906,
+      "minimum_individual_history_mean_gain": -0.0071811648930707175,
+      "real_mean_gain_minus_scenario_mean": 0.01695125286671099,
+      "trial_sd": 0.0018042224800196762
+    },
+    {
+      "case": "slow_090",
+      "confirmation": {
+        "exact_lower95": 0.0571022581545258,
+        "exact_upper95": 0.2983526668395765,
+        "one_sided_upper95": 0.2747445050139704,
+        "rate": 0.15,
+        "rate_mc_se": 0.05645794895318108,
+        "successes": 6,
+        "trials": 40
+      },
+      "family": "v2-phase",
+      "histories_at_or_above_real_mean_gain": 2,
+      "maximum_individual_history_mean_gain": 0.02069502611954924,
+      "mean_gain": 0.0019061880240377233,
+      "mean_gain_mc_se": 0.0011924407909509598,
+      "minimum_individual_history_mean_gain": -0.02582321853170039,
+      "real_mean_gain_minus_scenario_mean": 0.01462732415339878,
+      "trial_sd": 0.007541657748595465
+    },
+    {
+      "case": "slow_098",
+      "confirmation": {
+        "exact_lower95": 0.07338272935208517,
+        "exact_upper95": 0.3277901333615859,
+        "one_sided_upper95": 0.3037056670034147,
+        "rate": 0.175,
+        "rate_mc_se": 0.060078074203489575,
+        "successes": 7,
+        "trials": 40
+      },
+      "family": "v2-phase",
+      "histories_at_or_above_real_mean_gain": 3,
+      "maximum_individual_history_mean_gain": 0.03956751875700437,
+      "mean_gain": 0.004991599324638219,
+      "mean_gain_mc_se": 0.001535680947226387,
+      "minimum_individual_history_mean_gain": -0.01201119741535085,
+      "real_mean_gain_minus_scenario_mean": 0.011541912852798285,
+      "trial_sd": 0.00971249910512044
+    },
+    {
+      "case": "structured",
+      "confirmation": {
+        "exact_lower95": 0.0006327449320494005,
+        "exact_upper95": 0.13158585848276577,
+        "one_sided_upper95": 0.11318836094473755,
+        "rate": 0.025,
+        "rate_mc_se": 0.024685522072664372,
+        "successes": 1,
+        "trials": 40
+      },
+      "family": "v2-phase",
+      "histories_at_or_above_real_mean_gain": 0,
+      "maximum_individual_history_mean_gain": 0.004354766370071381,
+      "mean_gain": -0.001846419848430672,
+      "mean_gain_mc_se": 0.000745886419849255,
+      "minimum_individual_history_mean_gain": -0.020584654013511654,
+      "real_mean_gain_minus_scenario_mean": 0.018379932025867175,
+      "trial_sd": 0.004717399925024544
+    },
+    {
+      "case": "alternative",
+      "confirmation": {
+        "exact_lower95": 0.1189315904057276,
+        "exact_upper95": 0.5427891822762891,
+        "one_sided_upper95": 0.5078184066147933,
+        "rate": 0.3,
+        "rate_mc_se": 0.10246950765959598,
+        "successes": 6,
+        "trials": 20
+      },
+      "family": "v4-phase",
+      "histories_at_or_above_real_mean_gain": 0,
+      "maximum_individual_history_mean_gain": 0.009393011751571256,
+      "mean_gain": 0.0015061828866193634,
+      "mean_gain_mc_se": 0.001414658414073826,
+      "minimum_individual_history_mean_gain": -0.015529521080476599,
+      "real_mean_gain_minus_scenario_mean": 0.01502732929081714,
+      "trial_sd": 0.006326544757622241
+    },
+    {
+      "case": "null",
+      "confirmation": {
+        "exact_lower95": 0.0,
+        "exact_upper95": 0.1684334709830853,
+        "one_sided_upper95": 0.13910834066826522,
+        "rate": 0.0,
+        "rate_mc_se": 0.0,
+        "successes": 0,
+        "trials": 20
+      },
+      "family": "v4-phase",
+      "histories_at_or_above_real_mean_gain": 0,
+      "maximum_individual_history_mean_gain": 0.002798095608295256,
+      "mean_gain": -0.0009208603873639747,
+      "mean_gain_mc_se": 0.000604781675929708,
+      "minimum_individual_history_mean_gain": -0.00912441217292651,
+      "real_mean_gain_minus_scenario_mean": 0.017454372564800476,
+      "trial_sd": 0.0027046658778501513
+    }
+  ],
+  "status": "passed"
+}

@@ -70,6 +70,18 @@ Barry's applicable authorization and the observer-credit/terms review.
 
 ## Scientific invariants
 
+Research has resumed after external review under D033 and
+`docs/protocols/r1-observation-endpoint-diagnostics-v1.md`. R1 preserves the
+original comparison as a **working interval score**, without establishing a
+proper observation likelihood for latent onset. Its saved-point sensitivity
+is positive, but 434 primary associations lack the finite two-sided report
+clips required for the proposed interval/kernel sensitivities. Do not repair
+the frozen extractor or invent replacement bounds in this run. The independent
+contract audit and R1 results are in `docs/audits/2026-11-09-r1-*.md`.
+Endpoint-dose conclusions concern the stated added iid Gaussian mechanism in
+the fixed simulator, not every real measurement pathway. Manuscript rewriting
+waits for R1 review; other-star access and SS Cyg 2018+ remain unauthorized.
+
 - Cite primary research or official archive documentation for external facts.
   Read the source supporting a claim; a title or abstract is insufficient for a
   detailed methods claim. Preserve abstract-only and unresolved statuses.

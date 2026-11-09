@@ -1,0 +1,56 @@
+{
+  "config_sha256": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+  "dose_seed_base": "r1-endpoint-dose-v1",
+  "elapsed_seconds": 78.5814097909024,
+  "environment": {
+    "numpy": "2.5.4",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.4 (main, Apr 14 2026, 14:46:33) [Clang 22.1.3 ]"
+  },
+  "failures": [],
+  "files_sha256": {
+    "dose-response.pdf": "fd3c5d801d45f930b0478ec1689d2c1581140205bdeddff523b3e3bece94d077",
+    "dose-response.png": "acef6ee522d3c996f24d596d33530e03b0560e5fc528589ab506e14fdf12e8ad",
+    "structured-000-complete.json": "8635ae89368ecdbd010e73855bdeea0378567f4ac6765a41d52825356217268d",
+    "structured-000-evidence.json": "d55bf8f278b80b02b98227529d730a7eec6c98a1a9e23d168fe6533c7c0ed9b2",
+    "structured-000-features.jsonl": "729203b4777d5d7798247601cc6a9d91e0d1c5bdb0b766386138c1588603d600",
+    "structured-000-record.json": "59be86acee4e2315b60be2cab0f16582e96b5d5b57037e1f599d4242378f6c23",
+    "structured-000-scores.jsonl": "991967ecefb931a97a7d9a81aa5c4096fb4405cc267d82a4d381552557ff0b14",
+    "summary.json": "52e1eb89c992dac74181b163d8cda1e3d9f6209f2b7b69225108ac4950dbab1f"
+  },
+  "freeze_commit": "93e52e6",
+  "head": "93e52e6e41f703dfca9548d8195253c1f11a2a3c",
+  "input_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+  "prepare_only": false,
+  "protocol_sha256": "9e571dfb517ea2a5363334e69ef98669635342c8385c86ad064c1e8aeaf6325d",
+  "script_sha256": "4dada0ab1c308906ceb2d488069b9dee69058ae8fa08bba7dfc1caa4024f7c07",
+  "seed_base": "a10c-oc|8f5df44b950ec5781ba1e31e074e56976909a051",
+  "smoke": false,
+  "source_sha256": {
+    "scripts/r1_endpoint_dose.py": "4dada0ab1c308906ceb2d488069b9dee69058ae8fa08bba7dfc1caa4024f7c07",
+    "src/dnmem/directional_forecast.py": "79c70988af3ba13220bb8d8387b634a2b37fa6b3cecefc743ba75eb39d291a66",
+    "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+    "src/dnmem/extract_x3.py": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+    "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "src/dnmem/forecast_experiment.py": "6359545c6fd6f61b4d9f5e481c9afcb9f0659480db4a960e2e8cf9027436bdd8",
+    "src/dnmem/injection_observe.py": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+    "src/dnmem/injection_truth.py": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+    "src/dnmem/injection_truth_v2.py": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa",
+    "src/dnmem/joint_benchmark.py": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04",
+    "src/dnmem/ledger_forecast.py": "90d20095d774df9bd73da3d0a42fcfe538d6a349996340b20ae1ebbb1b03853f",
+    "src/dnmem/oc_statistics.py": "677cda07fd71056c28a37bc72cee65bcf55a69805a44e16bf33a570f78105253",
+    "src/dnmem/outcome_evidence_v4.py": "c157a071ec2fd61239532b5b104ce54d880796cbe48156f3b7b6c77494222698",
+    "src/dnmem/phase_cadence.py": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+    "src/dnmem/prefix_features.py": "51b49d25c4ab3d2e276e66a6b0e43ca6e6586cee294344146e5ea95205341ddd",
+    "src/dnmem/x4_benchmark.py": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca"
+  },
+  "status": "completed",
+  "successful": 1,
+  "tasks": [
+    [
+      "structured",
+      0
+    ]
+  ],
+  "workers": 1
+}

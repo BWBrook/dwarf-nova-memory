@@ -1,0 +1,398 @@
+{
+  "variants": {
+    "decisive_report": {
+      "usable": 11,
+      "status_counts": {
+        "missing_clip": 430,
+        "usable": 6,
+        "identical_forecast": 5
+      },
+      "routing_counts": {
+        "unavailable": 434,
+        "interval": 5,
+        "right_censored": 2
+      },
+      "original_to_alternative_kind": {
+        "interval->unavailable": 430,
+        "interval->interval": 5,
+        "right_censored->unavailable": 4,
+        "right_censored->right_censored": 2
+      },
+      "identity_count": 5,
+      "alternative": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.018101109446815963,
+        "estimable": true,
+        "se": 0.009379605329013642,
+        "lower90": -0.045489421756944745,
+        "upper90": 0.009287202863312822,
+        "df": 2
+      },
+      "matched_primary": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.013478923252609704,
+        "estimable": true,
+        "se": 0.006756443212570871,
+        "lower90": -0.03320764000779544,
+        "upper90": 0.006249793502576029,
+        "df": 2
+      },
+      "paired_change": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.00462218619420626,
+        "estimable": true,
+        "se": 0.0026241403210038915,
+        "lower90": -0.012284638092362417,
+        "upper90": 0.003040265703949896,
+        "df": 2
+      },
+      "spearman_primary": {
+        "rho": 0.7899999999999999,
+        "p_descriptive": 0.0038145492462588345
+      }
+    },
+    "x4_kernel": {
+      "usable": 11,
+      "status_counts": {
+        "missing_clip": 430,
+        "usable": 6,
+        "identical_forecast": 5
+      },
+      "routing_counts": {
+        "unavailable": 434,
+        "interval": 5,
+        "right_censored": 2
+      },
+      "original_to_alternative_kind": {
+        "interval->unavailable": 430,
+        "interval->interval": 5,
+        "right_censored->unavailable": 4,
+        "right_censored->right_censored": 2
+      },
+      "identity_count": 5,
+      "alternative": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.014340510852492315,
+        "estimable": true,
+        "se": 0.007245353774185598,
+        "lower90": -0.03549683939767569,
+        "upper90": 0.006815817692691064,
+        "df": 2
+      },
+      "matched_primary": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.013478923252609704,
+        "estimable": true,
+        "se": 0.006756443212570871,
+        "lower90": -0.03320764000779544,
+        "upper90": 0.006249793502576029,
+        "df": 2
+      },
+      "paired_change": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.0008615875998826103,
+        "estimable": true,
+        "se": 0.0004891466215192528,
+        "lower90": -0.0022898886813975694,
+        "upper90": 0.0005667134816323486,
+        "df": 2
+      },
+      "spearman_primary": {
+        "rho": 0.9999999999999999,
+        "p_descriptive": 9.370452282996266e-72
+      }
+    },
+    "saved_point": {
+      "usable": 441,
+      "status_counts": {
+        "usable": 436,
+        "identical_forecast": 5
+      },
+      "routing_counts": {
+        "point": 435,
+        "right_censored": 6
+      },
+      "original_to_alternative_kind": {
+        "interval->point": 435,
+        "right_censored->right_censored": 6
+      },
+      "identity_count": 5,
+      "alternative": {
+        "n": 441,
+        "blocks": 10,
+        "estimate": 0.01540382518580825,
+        "estimable": true,
+        "se": 0.0065249331438264006,
+        "lower90": 0.0034428858551427584,
+        "upper90": 0.027364764516473742,
+        "df": 9
+      },
+      "matched_primary": {
+        "n": 441,
+        "blocks": 10,
+        "estimate": 0.016533512177436503,
+        "estimable": true,
+        "se": 0.006320284834306242,
+        "lower90": 0.00494771630959865,
+        "upper90": 0.028119308045274356,
+        "df": 9
+      },
+      "paired_change": {
+        "n": 441,
+        "blocks": 10,
+        "estimate": -0.0011296869916282526,
+        "estimable": true,
+        "se": 0.0003363138706820858,
+        "lower90": -0.0017461882974072612,
+        "upper90": -0.0005131856858492439,
+        "df": 9
+      },
+      "spearman_primary": {
+        "rho": 0.9937630909190123,
+        "p_descriptive": 0.0
+      }
+    }
+  },
+  "common_subset": {
+    "decisive_report": {
+      "usable": 11,
+      "status_counts": {
+        "usable": 6,
+        "identical_forecast": 5
+      },
+      "routing_counts": {
+        "interval": 5,
+        "unavailable": 4,
+        "right_censored": 2
+      },
+      "original_to_alternative_kind": {
+        "interval->interval": 5,
+        "interval->unavailable": 4,
+        "right_censored->right_censored": 2
+      },
+      "identity_count": 5,
+      "alternative": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.018101109446815963,
+        "estimable": true,
+        "se": 0.009379605329013642,
+        "lower90": -0.045489421756944745,
+        "upper90": 0.009287202863312822,
+        "df": 2
+      },
+      "matched_primary": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.013478923252609704,
+        "estimable": true,
+        "se": 0.006756443212570871,
+        "lower90": -0.03320764000779544,
+        "upper90": 0.006249793502576029,
+        "df": 2
+      },
+      "paired_change": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.00462218619420626,
+        "estimable": true,
+        "se": 0.0026241403210038915,
+        "lower90": -0.012284638092362417,
+        "upper90": 0.003040265703949896,
+        "df": 2
+      },
+      "spearman_primary": {
+        "rho": 0.7899999999999999,
+        "p_descriptive": 0.0038145492462588345
+      }
+    },
+    "x4_kernel": {
+      "usable": 11,
+      "status_counts": {
+        "usable": 6,
+        "identical_forecast": 5
+      },
+      "routing_counts": {
+        "interval": 5,
+        "unavailable": 4,
+        "right_censored": 2
+      },
+      "original_to_alternative_kind": {
+        "interval->interval": 5,
+        "interval->unavailable": 4,
+        "right_censored->right_censored": 2
+      },
+      "identity_count": 5,
+      "alternative": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.014340510852492315,
+        "estimable": true,
+        "se": 0.007245353774185598,
+        "lower90": -0.03549683939767569,
+        "upper90": 0.006815817692691064,
+        "df": 2
+      },
+      "matched_primary": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.013478923252609704,
+        "estimable": true,
+        "se": 0.006756443212570871,
+        "lower90": -0.03320764000779544,
+        "upper90": 0.006249793502576029,
+        "df": 2
+      },
+      "paired_change": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.0008615875998826103,
+        "estimable": true,
+        "se": 0.0004891466215192528,
+        "lower90": -0.0022898886813975694,
+        "upper90": 0.0005667134816323486,
+        "df": 2
+      },
+      "spearman_primary": {
+        "rho": 0.9999999999999999,
+        "p_descriptive": 9.370452282996266e-72
+      }
+    },
+    "saved_point": {
+      "usable": 11,
+      "status_counts": {
+        "usable": 6,
+        "identical_forecast": 5
+      },
+      "routing_counts": {
+        "point": 9,
+        "right_censored": 2
+      },
+      "original_to_alternative_kind": {
+        "interval->point": 9,
+        "right_censored->right_censored": 2
+      },
+      "identity_count": 5,
+      "alternative": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.014504998282770104,
+        "estimable": true,
+        "se": 0.0073386962542082235,
+        "lower90": -0.03593388552365401,
+        "upper90": 0.006923888958113796,
+        "df": 2
+      },
+      "matched_primary": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.013478923252609704,
+        "estimable": true,
+        "se": 0.006756443212570871,
+        "lower90": -0.03320764000779544,
+        "upper90": 0.006249793502576029,
+        "df": 2
+      },
+      "paired_change": {
+        "n": 11,
+        "blocks": 3,
+        "estimate": -0.0010260750301603996,
+        "estimable": true,
+        "se": 0.0005825305917780245,
+        "lower90": -0.002727055958267153,
+        "upper90": 0.0006749058979463537,
+        "df": 2
+      },
+      "spearman_primary": {
+        "rho": 0.9999999999999999,
+        "p_descriptive": 9.370452282996266e-72
+      }
+    }
+  },
+  "original_population": 441,
+  "common_usable": 11,
+  "block_origin": 2436934.5,
+  "block_days": 2191.5,
+  "interpretation": "Exploratory working-score compatibility sensitivities; no latent-onset propriety claim",
+  "preparation": {
+    "all_episode_count": 860,
+    "confirmed_episode_count": 845,
+    "missing_lower_clip": 801,
+    "missing_upper_clip": 32,
+    "clip_conflicts": 3,
+    "missing_kernel": 61,
+    "exact_frozen_onset_reconstruction": true
+  },
+  "independent_checks": {
+    "original_scalar": {
+      "terms": 882,
+      "max_absolute_error": 1.3944401189291966e-13
+    },
+    "alternative_interval_survival_scalar": {
+      "terms": 28,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    "point_scalar": {
+      "terms": 860,
+      "max_absolute_error": 1.7763568394002505e-15
+    }
+  },
+  "kernel_numerical_checks": {
+    "terms": 8,
+    "adaptive_relative_error": 6.270149911332386e-13,
+    "adaptive_vs_gl128_log_error": 1.3041789870271714e-12,
+    "gl64_vs_gl128_log_error": 3.6926017799032707e-13,
+    "gl32_vs_gl64_log_error": 9.909850717804147e-13
+  },
+  "observation_diagnostics": {
+    "decisive_report": {
+      "missing_clip": 434,
+      "missing_kernel": 9,
+      "clip_conflict": 0,
+      "straddle": 0
+    },
+    "x4_kernel": {
+      "missing_clip": 434,
+      "missing_kernel": 9,
+      "clip_conflict": 0,
+      "straddle": 0
+    },
+    "saved_point": {
+      "missing_clip": 434,
+      "missing_kernel": 9,
+      "clip_conflict": 0,
+      "straddle": 0
+    }
+  },
+  "identity_observation_status": {
+    "decisive_report": {
+      "missing_clip": 4,
+      "usable": 1
+    },
+    "x4_kernel": {
+      "missing_clip": 4,
+      "usable": 1
+    },
+    "saved_point": {
+      "usable": 5
+    }
+  },
+  "label": "R1b exploratory post-result sensitivity; original frozen result preserved",
+  "hashes": {
+    "cache_receipt": "052a1ea5e634dcf4cefd2c59d31c1c4331bd15fd1e0bac29b7969f3fe0dd5958",
+    "protocol": "9e571dfb517ea2a5363334e69ef98669635342c8385c86ad064c1e8aeaf6325d",
+    "module": "923e0bb25719e87126b4325976d4b58470c8d7fa8ebf5fa38f61d3e77e8b085f",
+    "runner": "f3e6b3f1cf244261345c0c55babb49b58432bb548c638ff158c23d15d030cf52",
+    "ledger-0.0.json": "be96e2fa620b882ebffdcc5d7e4eeb8f427ac773976f4478c965de3023e25d20",
+    "evidence-0.0.json": "af78b93906bc7cef3e365b7e327bb88e932c64815a69650d2113f0b11ef53d62",
+    "primary-scores.json": "9e8628d1406216afbe0aa5a22e346612646c20d518f9b49cd007716ebc950443",
+    "frozen_parameters.json": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3"
+  },
+  "freeze_commit": "0594146"
+}

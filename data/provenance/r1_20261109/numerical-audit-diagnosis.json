@@ -1,0 +1,130 @@
+{
+  "all_non_earlier_gaps_fields_exact": true,
+  "changed_features": 8,
+  "changed_field_occurrences": 8,
+  "configuration_sha256": "8547c5dd28673a35d22f2e816d3d7f5419e7222e8a775853c1ca6b8b2ed8a505",
+  "current_environment": {
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.4 (main, Apr 14 2026, 14:46:33) [Clang 22.1.3 ]"
+  },
+  "diagnosis": "two platform-dependent math.log results differ by one adjacent floating value, propagated to8earlier_gaps lists; no change in scalar times, boundaries, issued events or eligibility",
+  "elapsed_seconds": 21.80378750001546,
+  "fields": {
+    "earlier_gaps": {
+      "count": 8,
+      "maximum_absolute_difference": 4.440892098500626e-16,
+      "maximum_ulp_difference": 1.0
+    }
+  },
+  "float_differences": 8,
+  "full_truth_count": 774,
+  "historical_rows_limitation": "A10d per-history raw synthetic rows are not retained in these trial files. Current regeneration is bit-identical to the unchanged original development_stream path and every retained non-history feature is exact; this does not directly compare a historical raw-row hash.",
+  "input_sha256": "b45a943f9fecd11271ba4ac4b5a67d34f0feacf36272b071be7d349c77d946e5",
+  "maximum_absolute_log_difference": 4.440892098500626e-16,
+  "maximum_ulp_log_difference": 1.0,
+  "metadata_blocks_equal": true,
+  "native_math_library": [
+    "",
+    ""
+  ],
+  "original_development_stream_metadata_blocks_match": true,
+  "original_development_stream_rows_match_regeneration": true,
+  "original_development_stream_rows_sha256": "5f8e0bdb971fca833f79a56c4e5235bb553686960cfd8adf5c7a33fb702046ab",
+  "original_environment": {
+    "numpy": "2.5.4",
+    "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.39",
+    "python": "3.14.4 (main, Apr 14 2026, 14:26:14) [Clang 22.1.3 ]",
+    "scipy": "1.18.1"
+  },
+  "original_filtered_truth_count": 751,
+  "original_filtered_truth_matches_regenerated_full_truth_subset": true,
+  "proposed_helper_actual_mismatch_count": 8,
+  "proposed_helper_tests_passed": 5,
+  "proposed_recovery": "precise comparison-only audit permits one adjacent finite float only in earlier_gaps elements and records every accepted difference; all other values, keys, list lengths and row counts remain exact; preserve failed receipt and rerun same seed only after reviewed commit",
+  "regenerated_ledger_count": 735,
+  "regenerated_ledger_sha256": "cdff262b601902be6dc793690f777762179ae0233dfe92fef0dc3578811ddbd5",
+  "retained_ledger_count": 735,
+  "retained_ledger_sha256": "24857cd3f306e205c577fb3a388f924101a7e83a8b99373a42f11058146f372b",
+  "retained_trial_sha256": "c731b928a9e1495761475b557358d97c86ed4c292ba21a024f0bfed8aec928ee",
+  "rows_sha256": "5f8e0bdb971fca833f79a56c4e5235bb553686960cfd8adf5c7a33fb702046ab",
+  "same_emission_indices": true,
+  "scientific_risk": "No predictor value is replaced or rounded; locally computed log values continue into fitting. The audit-only allowance does not test score sensitivity, and no fitting/scoring was done in this diagnosis. It must not expand to times, gaps, marks, membership, eligibility, multiple-ULP errors or NaN/Inf.",
+  "scope": "preparation only; no fitting, scores or tolerance relaxation",
+  "script_sha256": "7380db44c2a019694f134005732b5484279ea4191b73d57199cbe841eab1e143",
+  "serialization_status": "JSON round trips preserve the distinct floats; this is numerical log evaluation drift, not loss of JSON precision",
+  "source_hash_checks": {
+    "src/dnmem/directional_forecast.py": {
+      "current": "79c70988af3ba13220bb8d8387b634a2b37fa6b3cecefc743ba75eb39d291a66",
+      "equal": true,
+      "retained": "79c70988af3ba13220bb8d8387b634a2b37fa6b3cecefc743ba75eb39d291a66"
+    },
+    "src/dnmem/extract.py": {
+      "current": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+      "equal": true,
+      "retained": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976"
+    },
+    "src/dnmem/extract_x3.py": {
+      "current": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+      "equal": true,
+      "retained": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e"
+    },
+    "src/dnmem/extract_x4.py": {
+      "current": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+      "equal": true,
+      "retained": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2"
+    },
+    "src/dnmem/forecast_experiment.py": {
+      "current": "6359545c6fd6f61b4d9f5e481c9afcb9f0659480db4a960e2e8cf9027436bdd8",
+      "equal": true,
+      "retained": "6359545c6fd6f61b4d9f5e481c9afcb9f0659480db4a960e2e8cf9027436bdd8"
+    },
+    "src/dnmem/injection_observe.py": {
+      "current": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581",
+      "equal": true,
+      "retained": "0097e709d27908c61646314a21e3b58c0ebc8ce77419ed86014925d3517a3581"
+    },
+    "src/dnmem/injection_truth.py": {
+      "current": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16",
+      "equal": true,
+      "retained": "a312dac594a9ab569bd31135809b1882228868a90936ed71c30287f96ca96e16"
+    },
+    "src/dnmem/injection_truth_v2.py": {
+      "current": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa",
+      "equal": true,
+      "retained": "ce28a2ed886faf350980942b0fe2308abeb56aeb98634519879691a38a8c60aa"
+    },
+    "src/dnmem/joint_benchmark.py": {
+      "current": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04",
+      "equal": true,
+      "retained": "62f345df0057a1400df663c71923fb9d5e43ef714f891557c82e943d010e3b04"
+    },
+    "src/dnmem/ledger_forecast.py": {
+      "current": "90d20095d774df9bd73da3d0a42fcfe538d6a349996340b20ae1ebbb1b03853f",
+      "equal": true,
+      "retained": "90d20095d774df9bd73da3d0a42fcfe538d6a349996340b20ae1ebbb1b03853f"
+    },
+    "src/dnmem/oc_statistics.py": {
+      "current": "677cda07fd71056c28a37bc72cee65bcf55a69805a44e16bf33a570f78105253",
+      "equal": true,
+      "retained": "677cda07fd71056c28a37bc72cee65bcf55a69805a44e16bf33a570f78105253"
+    },
+    "src/dnmem/phase_cadence.py": {
+      "current": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1",
+      "equal": true,
+      "retained": "790d1d33a882aab55dd6fb85eb18858fb46af8bafd27b6d7a0eedd005e2208d1"
+    },
+    "src/dnmem/prefix_features.py": {
+      "current": "51b49d25c4ab3d2e276e66a6b0e43ca6e6586cee294344146e5ea95205341ddd",
+      "equal": true,
+      "retained": "51b49d25c4ab3d2e276e66a6b0e43ca6e6586cee294344146e5ea95205341ddd"
+    },
+    "src/dnmem/x4_benchmark.py": {
+      "current": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca",
+      "equal": true,
+      "retained": "13aa82e4d39102531e3fb986ec35de5fd8f9510d368f1136241b7fdeafccf9ca"
+    }
+  },
+  "structural_differences": 0,
+  "truth_sha256": "02155e79c0c0504b7533ad1afe949ae99a593b08bef35fbf3fefa8d264a46c82",
+  "unique_raw_gaps": 2
+}

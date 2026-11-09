@@ -812,6 +812,38 @@ proposals, not a record of approvals the user has not given.
 - Status: protocol agreed for bounded exploratory execution; full synthetic
   grid starts only after implementation/tests and protocol are committed.
 
+### D034 — R1 complete: working gain retained, observation-model issue remains open
+
+- Codex, 9 November 2026; D033 implementation freeze `0594146`, with disclosed
+  outside-grid smoke note and comparison-only numerical recovery `93e52e6`.
+  Evidence: `docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md`
+  and `data/provenance/r1_20261109/`.
+- Both original evidence builders reproduce all primary outcomes. Actual
+  candidates yield zero cutoff straddles and v4 changes zero of 441 outcomes.
+  The original working-score result and all frozen sources/parameters remain.
+- Saved-point density remains positive: +0.015404 [0.003443, 0.027365]. Finite
+  decisive-report clips are missing for 434 forecasts. The interval/kernel
+  sensitivities retain only eleven contrasts (six computed, five exact fallback
+  zeros), so cannot validate the original full population or close E1.
+- All eighty original null/structured histories are reconciled at five error
+  doses. Their all-issued mean gains are nonpositive; no added iid-end-noise
+  dose reproduces the real +0.01653 reference. Large doses also create common
+  fallbacks and zero coefficients. This limits the stated fixed-simulator
+  mechanism, without ruling out systematic/selection/measurement alternatives.
+- The original grid's 79 successes and one pre-scoring failure are retained.
+  The failed history differs only in eight one-step floating log-history
+  entries. A gain-free diagnosis, bounded equality audit, regression tests and
+  independent review precede the same-seed recovery. Scientific generation,
+  fitting, dose and score functions are unchanged. No values are rounded.
+- Figure 1's example and all 480 A10d aggregate comparison rows reproduce.
+  The real gain exceeds every scenario mean, but eight individual-history
+  means reach or exceed it. Finite calibration/error-rate limitations remain.
+- C42–C46 are provisional pending Claude review. C01/C02 now explicitly state
+  the working-score interpretation. The four manuscript products stay paused.
+  R2 may develop the measurement target and stronger evolving-state comparison
+  with a cohort/precision design; new archive/star openings, 2018+ SS Cyg,
+  specialist contact and any paper release remain outside this authorization.
+
 ## New decision template
 
 ### D0xx — Short concrete title

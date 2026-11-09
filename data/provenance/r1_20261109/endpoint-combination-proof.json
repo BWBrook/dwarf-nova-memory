@@ -1,0 +1,43 @@
+{
+  "all_original_tasks_present_once": true,
+  "audit_repair_freeze": "93e52e6",
+  "changed_runner_functions": [
+    "audit_retained_ledger",
+    "prepare_trial"
+  ],
+  "frozen_parameter_sha256": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "initial_freeze": "0594146",
+  "initial_pre_scoring_failures": [
+    {
+      "error": "regenerated sigma0 ledger differs from retained A10d",
+      "error_type": "ValueError",
+      "task": [
+        "structured",
+        0
+      ]
+    }
+  ],
+  "initial_successful_tasks": 79,
+  "limits": [
+    "Added iid end noise after extraction; issuance/onset times fixed, not regenerated photometry or alerts.",
+    "Truth anchors select genuinely completed, quiescent truth-matched first emissions at sigma0; not all original issued forecasts.",
+    "Composite oracle changes several measurement quantities together.",
+    "No new data access or new confirmation."
+  ],
+  "recovered_tasks": [
+    [
+      "structured",
+      0
+    ]
+  ],
+  "same_seed_input_config_protocol": true,
+  "total_unique_histories": 80,
+  "unchanged_scientific_dependency_files": 15,
+  "dose_conditions": 10,
+  "histories_per_setting": 40,
+  "independent_truth_score_terms": 10392,
+  "independent_legacy_score_terms": 4696,
+  "maximum_all_issued_mean_gain": 0.0,
+  "sigma2_null_mean_gain": -0.0009399491943747383,
+  "sigma2_structured_mean_gain": -0.00044417391142086897
+}

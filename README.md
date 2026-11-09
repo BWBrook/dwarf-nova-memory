@@ -1,6 +1,6 @@
 # Dwarf-nova recurrence: memory, changing activity and forecast reliability
 
-> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. The first frozen SS Cyg forecast comparison is complete; draft products await the scientific lead's review.
+> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. External review has reopened research on the observation model and endpoint information. The first frozen comparison is preserved; manuscript revision waits for this research round.
 
 **A research repository led by Barry W. Brook. Seeded 5 November 2026; public from 7 November 2026.**
 
@@ -97,8 +97,19 @@ meets its predeclared forecast-gain criterion: **+0.01653 nats per issuance,
 90% interval [0.00495,0.02812], 441 forecasts**. It compares extracted current
 log duration with the specified frozen previous-gap/recent-history baseline.
 The 1993–2017 segment and the type/within-type variant are inconclusive.
-This supports incremental predictive information for SS Cyg under these rules;
-physical memory and wider transport remain unresolved.
+This supports incremental predictive information in the specified working score
+for SS Cyg under these rules. It is not yet an established proper score for
+latent visual onset; physical memory and wider transport remain unresolved.
+
+The [R1 audit](docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md)
+preserves the original run and adds post-result diagnostics. The censoring
+repair changes none of its 441 outcomes. Saved-point density gives +0.01540
+nats [0.00344, 0.02736], but the proposed decisive-report interval/kernel
+comparisons lack finite clips for 434 forecasts and cannot validate the full
+sample. A fixed-simulator endpoint-error experiment separately checks measured
+and true-onset targets. These are exploratory checks, not another confirmation.
+Manuscript products remain paused. No other-star archive opening is authorized,
+and SS Cyg 2018 onward remains closed.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)

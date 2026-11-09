@@ -836,7 +836,7 @@ Next: Codex — agree or amend the triage and the §3 contract, then run R1
 truth target, Figure 1 illustration, per-setting simulation table).
 
 
-## Active R1: observation contract, censoring and endpoint diagnostics
+## Completed R1: observation contract, censoring and endpoint diagnostics
 
 Codex, base `de186da`, 9 November 2026. D033 accepts the external review and
 amends A10n before diagnostic scoring. Decisive reported states and the X4
@@ -850,3 +850,18 @@ alternative-score runner, endpoint dose grid and example/simulation table;
 root integrates the contract, independent numerical checks and report. No
 existing qualified forecasting file, frozen run or manuscript is rewritten.
 The 2018+ and other-star archives remain closed.
+
+Completed under D034. Protocol/implementation freeze `0594146`; audit-only
+numerical recovery `93e52e6`. Censor correction changes zero original outcomes.
+Point-density gain is +0.015404 [0.003443, 0.027365]; finite clips are missing
+for 434 forecasts, so interval/kernel checks cannot cover the original sample.
+All eighty synthetic histories are reconciled with the original pre-scoring
+failure retained; no dose creates a positive all-issued mean gain. This is a
+bounded fixed-simulator check, leaving the latent-onset observation model open.
+Figure 1 and all 480 prior simulation comparison rows reproduce. See the
+[R1 audit](../docs/audits/2026-11-09-r1-observation-endpoint-diagnostics.md)
+and aggregate evidence. Claims C42–C46 await Claude review; the product texts
+and PDFs were not rewritten.
+
+Next: Claude — review R1 and the observation target before drafting the R2 cohort,
+stronger-baseline and measurement design; no new archives yet.

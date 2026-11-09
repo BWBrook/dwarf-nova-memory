@@ -1,0 +1,264 @@
+{
+  "absolute_score_tolerance": 1e-09,
+  "classified_known_comparison_failures": {
+    "structured-000 sigma-zero feature differs from retained trace": 8
+  },
+  "failures": {},
+  "history": {
+    "case": "structured",
+    "evaluation_fixed_anchors": 292,
+    "independently_rederived_fixed_anchors": 555,
+    "legacy_replay": {
+      "all_routes_and_individual_scores_checked": true,
+      "interpretation": "The independently optimized legacy comparator is a refit, not the retained parameter replay. Its absolute-score differences are retained explicitly; the frozen-parameter replay is checked separately at unchanged 1e-9 tolerance.",
+      "new_refit_vs_retained_maximum_absolute_score_difference": 2.633936277973703e-07,
+      "new_refit_vs_retained_model_scores_above_tolerance": 1481,
+      "predeclared_one_adjacent_float_history_differences_verified": 8,
+      "retained_parameter_scalar_replay_maximum_absolute_error": 3.019806626980426e-14,
+      "retained_trace_available_and_checked": true,
+      "scored_population": 384,
+      "sigma_zero_ledger_matches_exactly": false
+    },
+    "limitation": "No raw visit stream is retained in these files. Truth-cutoff checks use separately retained administrative stopping metadata where available; they do not independently reconstruct coverage from observations.",
+    "replicate": 0,
+    "shared_subsets": [
+      {
+        "all_fixed_anchors": 292,
+        "dose_days": 0.0,
+        "extracted_excluded_anchors": 0,
+        "shared_scored_anchors": 292
+      },
+      {
+        "all_fixed_anchors": 292,
+        "dose_days": 1.0,
+        "extracted_excluded_anchors": 0,
+        "shared_scored_anchors": 292
+      },
+      {
+        "all_fixed_anchors": 292,
+        "dose_days": 2.0,
+        "extracted_excluded_anchors": 0,
+        "shared_scored_anchors": 292
+      },
+      {
+        "all_fixed_anchors": 292,
+        "dose_days": 4.0,
+        "extracted_excluded_anchors": 0,
+        "shared_scored_anchors": 292
+      },
+      {
+        "all_fixed_anchors": 292,
+        "dose_days": 6.0,
+        "extracted_excluded_anchors": 0,
+        "shared_scored_anchors": 292
+      }
+    ],
+    "truth_administrative_cutoff_checks": {
+      "checked_from_retained_v4_stopping_cutoff": 292,
+      "unavailable_because_extracted_evidence_excluded": 0
+    },
+    "truth_routing_and_scalar_scores": [
+      {
+        "M3_beta": 0.0,
+        "branch": "fixed_anchor_truth",
+        "dose_days": 0.0,
+        "evidence_kinds": {
+          "point": 270,
+          "right_censored": 22
+        },
+        "maximum_absolute_error": {
+          "M2": 3.552713678800501e-15,
+          "M3": 3.552713678800501e-15
+        },
+        "route_counts": {
+          "M2": {
+            "M0": 30,
+            "M2": 262
+          },
+          "M3": {
+            "M0": 30,
+            "M2": 262
+          }
+        },
+        "rows": 292
+      },
+      {
+        "M3_beta": 0.0,
+        "branch": "fixed_anchor_truth",
+        "dose_days": 1.0,
+        "evidence_kinds": {
+          "point": 270,
+          "right_censored": 22
+        },
+        "maximum_absolute_error": {
+          "M2": 3.552713678800501e-15,
+          "M3": 3.552713678800501e-15
+        },
+        "route_counts": {
+          "M2": {
+            "M0": 29,
+            "M2": 252,
+            "R0": 11
+          },
+          "M3": {
+            "M0": 29,
+            "M2": 252,
+            "R0": 11
+          }
+        },
+        "rows": 292
+      },
+      {
+        "M3_beta": 0.0,
+        "branch": "fixed_anchor_truth",
+        "dose_days": 2.0,
+        "evidence_kinds": {
+          "point": 270,
+          "right_censored": 22
+        },
+        "maximum_absolute_error": {
+          "M2": 3.552713678800501e-15,
+          "M3": 3.552713678800501e-15
+        },
+        "route_counts": {
+          "M2": {
+            "M0": 27,
+            "M2": 226,
+            "R0": 39
+          },
+          "M3": {
+            "M0": 27,
+            "M2": 226,
+            "R0": 39
+          }
+        },
+        "rows": 292
+      },
+      {
+        "M3_beta": 0.0,
+        "branch": "fixed_anchor_truth",
+        "dose_days": 4.0,
+        "evidence_kinds": {
+          "point": 270,
+          "right_censored": 22
+        },
+        "maximum_absolute_error": {
+          "M2": 3.552713678800501e-15,
+          "M3": 3.552713678800501e-15
+        },
+        "route_counts": {
+          "M2": {
+            "M0": 24,
+            "M2": 194,
+            "R0": 74
+          },
+          "M3": {
+            "M0": 24,
+            "M2": 194,
+            "R0": 74
+          }
+        },
+        "rows": 292
+      },
+      {
+        "M3_beta": 0.0,
+        "branch": "fixed_anchor_truth",
+        "dose_days": 6.0,
+        "evidence_kinds": {
+          "point": 270,
+          "right_censored": 22
+        },
+        "maximum_absolute_error": {
+          "M2": 3.552713678800501e-15,
+          "M3": 3.552713678800501e-15
+        },
+        "route_counts": {
+          "M2": {
+            "M0": 25,
+            "M2": 176,
+            "R0": 91
+          },
+          "M3": {
+            "M0": 25,
+            "M2": 176,
+            "R0": 91
+          }
+        },
+        "rows": 292
+      },
+      {
+        "M3_beta": 0.0,
+        "branch": "composite_oracle_truth",
+        "dose_days": 0.0,
+        "evidence_kinds": {
+          "point": 270,
+          "right_censored": 22
+        },
+        "maximum_absolute_error": {
+          "M2": 3.552713678800501e-15,
+          "M3": 3.552713678800501e-15
+        },
+        "route_counts": {
+          "M2": {
+            "M0": 23,
+            "M2": 269
+          },
+          "M3": {
+            "M0": 23,
+            "M2": 269
+          }
+        },
+        "rows": 292
+      }
+    ]
+  },
+  "input_sha256": {
+    "data/simulations/a10d_20261108/run-receipt.json": "be0e25cd6d5432ca4cf3283991e698ca4b205c7424d16aff88e01abe02ae6f82",
+    "outputs/a10d_run_8f5df44/a10d_oc/receipt.json": "be0e25cd6d5432ca4cf3283991e698ca4b205c7424d16aff88e01abe02ae6f82",
+    "outputs/a10d_run_8f5df44/a10d_oc/v2-phase-structured-000-scores.jsonl": "a3c9129c4c9a07447ffcf74b447bab1fe8c22faf2fe57d9e280bcf1b9ef6dcd3",
+    "outputs/a10d_run_8f5df44/a10d_oc/v2-phase-structured-000.json": "c731b928a9e1495761475b557358d97c86ed4c292ba21a024f0bfed8aec928ee",
+    "outputs/r1_recovery_independent_check/check.py": "cc4831dc6d210935113709708ae5f50a388cd4086c55ebf23c1c5cd7885784e8",
+    "outputs/r1_structured000_diagnosis/manifest.json": "7150a40bbafd5d1f95070635fec872a6fe2885eb1f21b06bffe6a5025328a886",
+    "outputs/r1_structured000_diagnosis/proposed-comparison-proof.json": "1ada2b0f42e320e29cfefb77737bc4c41da659cce7bfed8ec738a8beeea59b00",
+    "outputs/r1_structured000_diagnosis/regenerated-ledger.json": "77db834a1c50711ec4d51ae1dd2c4545c345cdc2f8e566f4e0cc435bd60d0351",
+    "outputs/r1_structured000_diagnosis/report.json": "4f233c6056a7e2943c958c7fcce6a8107baeae6ca1b40947f762d187d6988b4b",
+    "outputs/r1_structured000_diagnosis/retained-ledger.json": "89cba2456513680efe94a0e1d79d332bb0cf16876f7ae4a290ad812d31d9b157",
+    "outputs/r1c_frozen_0594146/receipt.json": "9c072b404901158e23b94c0255b663ec7ff9ba22bad6bf584dde5fe90e683682",
+    "outputs/r1c_recovery_93e52e6/receipt.json": "28f75ea4c89cfacaaf67e0991c84ad274a3311a18d735056128e481ad9ed563f",
+    "outputs/r1c_recovery_93e52e6/structured-000-complete.json": "8635ae89368ecdbd010e73855bdeea0378567f4ac6765a41d52825356217268d",
+    "outputs/r1c_recovery_93e52e6/structured-000-evidence.json": "d55bf8f278b80b02b98227529d730a7eec6c98a1a9e23d168fe6533c7c0ed9b2",
+    "outputs/r1c_recovery_93e52e6/structured-000-features.jsonl": "729203b4777d5d7798247601cc6a9d91e0d1c5bdb0b766386138c1588603d600",
+    "outputs/r1c_recovery_93e52e6/structured-000-record.json": "59be86acee4e2315b60be2cab0f16582e96b5d5b57037e1f599d4242378f6c23",
+    "outputs/r1c_recovery_93e52e6/structured-000-scores.jsonl": "991967ecefb931a97a7d9a81aa5c4096fb4405cc267d82a4d381552557ff0b14",
+    "scripts/check_r1_endpoint.py": "5759c7ddb060284efa0fcd614c503e1e15008f8b6b7da869e082e571de5ce49e"
+  },
+  "known_comparison_amendment": {
+    "affected_feature_rows": 8,
+    "all_other_values_and_types_exact": true,
+    "both_original_and_recovered_predictors_retained_unchanged": true,
+    "changed_log_history_entries": 8,
+    "maximum_absolute_log_difference": 4.440892098500626e-16,
+    "pre_scoring_diagnosis_matches_recovery_exactly": true,
+    "score_tolerance_unchanged": 1e-09
+  },
+  "limitations": [
+    "All measured doses and the composite oracle in this history have beta=0, so this check validates their scalar absolute scores/routes and zero-offset nesting; the separately audited null001 exercises a positive offset.",
+    "Coverage stopping was checked against retained administrative metadata, not reconstructed from an unavailable raw visit stream.",
+    "Only the completed structured000 recovery was audited; this does not validate the full80-history aggregate or real error mechanism.",
+    "No fitting, source edit, seed replacement or new simulation was performed."
+  ],
+  "maximum_absolute_truth_score_error": 3.552713678800501e-15,
+  "new_refit_model_scores_above_tolerance": 1481,
+  "original_freeze": "0594146",
+  "receipt_status_at_read": "completed",
+  "recovery_freeze": "93e52e6",
+  "scalar_erfc_tail_underflows": {},
+  "score_counts": {
+    "retained_parameter_legacy_all_models": 1536,
+    "truth_M2_M3": 3504
+  },
+  "status": "passed_with_disclosed_comparison_and_refit_differences",
+  "unamended_strict_trace_comparison_failures": {
+    "structured-000 sigma-zero feature differs from retained trace": 8
+  }
+}
