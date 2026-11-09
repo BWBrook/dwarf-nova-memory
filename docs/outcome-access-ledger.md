@@ -570,3 +570,17 @@ review reads saved feature/evidence/model/score files, not new archive exports.
 No archive request, new-star observation/count/coverage access, SS Cyg 2018+
 row/count/coverage read, outside contact or release occurred. Observation upload
 availability remains unknown; this is observation-time retrospective work.
+
+### Claude R2b review, 9 November 2026
+
+D042 reads only the retained, ignored R2b run outputs (`outputs/r2b_real_5fb69c6/`):
+saved base and marked clocks, outcome signatures, features and parameters. All
+are SS Cyg visual observations strictly before JD2458119.5, already opened and
+scored by D041.
+- It recomputes the scores, decomposes the mark association by era, and computes
+  drift-guarded and score-test statistics. All are post-result exploration on
+  already-scored evaluation data; none is a confirmation.
+- Only aggregates are committed (`data/provenance/r2b_claude_review/checks.json`).
+- No archive request was made. No other-star observation, count or coverage was
+  touched, and no SS Cyg 2018+ row, count or coverage summary.
+

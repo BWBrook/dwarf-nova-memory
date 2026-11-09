@@ -62,6 +62,32 @@ Coincident delayed issues share one representative (earliest original), with
 later originals retained in the audit. Unique delayed-issue and original-issue
 populations differ; they must not share a denominator silently.
 
+## R2b review qualification (D042, C61–C64)
+
+**What changes.**
+- B2 is the preselected comparator. It fails development adequacy (C61), so it is not a strong
+  baseline. H2 measures duration's gain over a noisy base, not over the best available history
+  model.
+- A mark whose mean shifts between eras can earn gain by correcting a base level error (C62).
+  This explains the positive observing-rate result. It also inflates the point-clock duration
+  gains by about 30% in the analogous R2b analysis.
+- "Drift-guarded" results use a causally centred mark at a causally recalibrated base (C63).
+  They are exploratory and were designed after R2b. They may inform planning and
+  interpretation, never confirmation.
+- The score-test efficiency (C64) is a design property, not evidence of an effect.
+
+**Allowed:**
+- “In SS Cyg, the association of outburst span with the next quiescent interval remains positive
+  after removing era-level drift, but is not decisive under block dependence.”
+- “About a third of the analogous point-clock gain reflects a shift in the gap level between
+  1910–1959 and 1960–2017.”
+
+**Not allowed:**
+- “the observing-rate result shows a cadence artefact”;
+- “B2 removing the gain shows a slow state”;
+- “C01 measures outburst-to-outburst memory” without the era-level qualification;
+- any guarded statistic called a test result.
+
 ## Primary forecast gain (C01–C04)
 
 - **Estimand:** the mean paired log-score difference over the 441 SS Cyg issuances in 1960–2017.
@@ -81,6 +107,9 @@ populations differ; they must not share a denominator silently.
   gain. The ratio to M2's mean gain over M0 is about 14%; this is not variance explained.
 - **Conditions beside the headline:** one star, one extraction, one frozen baseline; the
   post-access repair (C05); the inconclusive later segment and type/within-type rule (C07, C08).
+  Since D042, also the era-level qualification: fitted duration ran 0.24 SD shorter in 1960–2017
+  while the history baseline over-forecast waits. In the analogous R2b point-clock analysis,
+  about 30% of the gain is that level correction (C62).
 - **Not allowed:** physical memory, causation, confirmation of a disc mechanism, generality to
   dwarf novae, operational forecasts, a blind/untouched evaluation, well-calibrated predictions,
   or an additional confirmatory test chosen after inspection. The rule was an interval criterion.

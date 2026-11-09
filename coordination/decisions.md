@@ -1066,6 +1066,46 @@ proposals, not a record of approvals the user has not given.
   is asserted. G2/G3 remain open. No new-star or 2018+ access, outside contact,
   manuscript rewrite or first release occurred or is authorized by this result.
 
+### D042 — R2b reviewed: B2 retired, era-drift pathway identified, R2d rules proposed
+
+- Claude, 9 November 2026. Review `docs/audits/2026-11-09-claude-r2b-review.md`;
+  proposed rules `docs/protocols/r2d-sealed-design-v0.md`; aggregates
+  `data/provenance/r2b_claude_review/checks.json`. Post-result exploration of saved
+  R2b clocks only; no archive request, nothing from 2018 onward, no product rewrite.
+- C53–C58 and C60 supported by separate routes: own quadrature, recount, exact
+  score recompute (maximum difference 0 across 14 models) and closed-form mixed
+  bounds. C59 stays provisional. I withdraw D038's "ceiling" and shortened
+  containment argument; Codex's counterexamples stand.
+- B2 is misspecified for SS Cyg: a random-walk level with a fixed vague prior and
+  no mean reversion. Its development NLL is 13–19 nats worse than B0's with equal
+  parameter count. It is retired as the sealed comparator (C61).
+- Quiescent intervals were shorter in 1960–1983 (geometric means 27.5 and 31.0
+  days against 34.5–39.6 in development). B0/B1 over-forecast those waits. A
+  causal level recalibration improves their evaluation base by 0.015–0.018 nats
+  per forecast but worsens development fits (C61).
+- Era-shifted marks earn gain by correcting the base level. This explains the
+  positive observing-rate result (mean +1.54 SD; drift-guarded gain 0.0014, t
+  1.34) and about 30% of the point-clock B0 duration gain (C62). The DF span
+  barely drifts (+0.07 SD).
+- Under drift guards (causally centred mark, causally recalibrated base) duration
+  stays positive on both clocks: DF 0.005–0.012, point 0.010–0.016 nats, six-year
+  t 1.7–2.3 (C63). Exploratory, designed after R2b; no confirmation.
+- The score test of a zero mark coefficient beats the out-of-sample gain test:
+  the predicted ratio of 1.41–1.74 matches SS Cyg within 0.016, model by model.
+  Guards cut the centred design effect to 1.13–1.34 (C64). At an H2-sized KL of
+  0.004, about 970–1,550 supported forecasts would give 80% power.
+- Proposed for R2d (Codex to challenge and freeze):
+  - DF clock and span mark, causally centred;
+  - B0R base (B0 plus causal level recalibration), with B1R, B0 and B2 as
+    sensitivities;
+  - a pooled one-sided cluster-robust score test as primary detection, with a
+    small-cluster correction chosen by simulation;
+  - the gain as effect size;
+  - a precision stress envelope.
+- C01 stands as its frozen confirmatory result. Its interpretation as outburst
+  memory gains the era-level qualification (estimands.md). G3a goes to Barry
+  after R2d, with the required N. Products stay paused.
+
 ## New decision template
 
 ### D0xx — Short concrete title

@@ -112,6 +112,10 @@ a validated negative control. B2 is stable yet has lower observed baseline means
 than B0/B1; call it preselected, not empirically strongest. All 24,348 scores
 reconstruct independently. New claims C53–C60 await Claude; no primary switching
 or new data access follows. See the R2b execution report before R2d/G3 planning.
+Claude's review (D042) supports C53–C58/C60, retires B2 as the sealed comparator
+(development misfit), identifies an era level shift and the drift pathway that
+explains the rate result (C61–C64, provisional), and proposes R2d rules in
+`docs/protocols/r2d-sealed-design-v0.md`. Guarded statistics are exploratory.
 Frozen X4 bytes stay unchanged. Manuscript rewriting
 waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
 

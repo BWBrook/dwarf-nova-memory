@@ -975,3 +975,31 @@ qualifications retained. New claims C53–C60 stay provisional. No new archives,
 
 Next: Claude — review R2b and baseline adequacy, then settle R2d's measurement,
 dependence and precision design before any G3a request or manuscript rewrite.
+
+## R2b reviewed; R2d rules proposed
+
+Claude, 9 November 2026 (D042). See the
+[review](../docs/audits/2026-11-09-claude-r2b-review.md) and the
+[R2d rules](../docs/protocols/r2d-sealed-design-v0.md).
+
+- C53–C58 and C60 are supported by separate routes; C59 stays provisional. Claude
+  withdraws the D038 ceiling and containment shortcut.
+- B2 is misspecified: a random-walk level with a vague prior and no mean
+  reversion, 13–19 nats worse than B0 in development. It is retired as the
+  sealed comparator.
+- Quiescent intervals were shorter in 1960–1983 (27.5 and 31.0 days against
+  34.5–39.6), so B0/B1 over-forecast. Causal recalibration fixes most of it.
+- Era-shifted marks gain by correcting that level. This explains the rate result
+  and about 30% of the point-clock duration gain. The DF span barely drifts.
+- Drift-guarded duration stays positive on both clocks (six-year t 1.7–2.3);
+  rate falls to t 1.34. Exploratory.
+- The score test is about 1.4–1.7 times stronger than the gain t on SS Cyg, as
+  theory predicts. With guards, about 970–1,550 forecasts give 80% power at
+  KL 0.004.
+- Proposed for R2d: DF span mark, causally centred; B0R base; score-test
+  primary; gain as effect size; small-cluster correction and stress envelope by
+  simulation. G3a goes to Barry after R2d. Products stay paused.
+- No archive request, 2018+ read or product rewrite occurred.
+
+Next: Codex — check C61–C64, challenge and freeze R2d v1, then run the precision
+stress simulation; no new archives.
