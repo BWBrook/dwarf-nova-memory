@@ -24,7 +24,7 @@ common: &common
 profiles:
   main:
     <<: *common
-    description: Main text, journal-submission layout.
+    description: Article with appendices; OJAp style, review layout until the journal class is adopted.
     manuscript_sources:
       - ../text/main.md
       - ../text/figures.md
@@ -39,10 +39,9 @@ profiles:
 
   supplement:
     <<: *common
-    description: Supplement with methods, sensitivities and the audit trail.
+    description: Technical record of superseded analyses and reproduction commands.
     manuscript_sources:
       - ../text/supplement.md
-      - ../text/supplement_figures.md
     author_metadata: ../authors.yaml
     output_stem: supplement
     line_spacing: single

@@ -6,11 +6,29 @@
     "data/provenance/g3a_20261110/summary.json": {
       "sha256": "fe2b501cb1a943bc197a02c158adfc0d53ac3ecdadd2f611e18442d1162c36bd"
     },
+    "data/provenance/g3a_claude_review/checks.json": {
+      "sha256": "3af35f807309dba69ad69ece79a756198c51accc5b430e877a00241e53ded2d9"
+    },
     "data/provenance/g3a_preparation/six-star-summary.json": {
       "sha256": "e7428c2eddb153f75f80ec21296bff6f4d4f1f498a3cc863b806bbebb1b45899"
     },
+    "data/provenance/g3a_review_independent/c70.json": {
+      "sha256": "23e5a29b1b79330a081452899cce379efa9b4aacfcbfc99efb92a9364bf7a910"
+    },
+    "data/provenance/r1_20261109/example-and-simulation-table.json": {
+      "sha256": "aef877625fae5b0ea2bcfecdc0ba3d1a85fe5962427f2ac3511694646b2fefed"
+    },
+    "data/provenance/r1_20261109/observation-scores.json": {
+      "sha256": "bef92a4320f9c9fbac08bcbedc6a30a16b441dd927ba0f7bf07c9320159c9b0b"
+    },
     "data/provenance/r2b_20261109/headline.json": {
       "sha256": "5984646851466a04e7393b6b4d992eb06770f98835fc0af464e51a858de824c2"
+    },
+    "data/provenance/r2b_claude_review/checks.json": {
+      "sha256": "1c68ad7c4e8e564d70f4b540cfc314f6c0acd24bb2a8dfcffe1d9c7b1002949e"
+    },
+    "data/provenance/r2d_review_audit/summary.json": {
+      "sha256": "727ba9b07701f2f5da115138e5f6d7710a79524387268a335b634616a0a6e9f8"
     }
   },
   "assets": {
@@ -26,29 +44,29 @@
       ],
       "sha256": "4af8c0ceeb5a10e87b62126aca21418b205502a9bab0b7942cf68d92ce8aa75e"
     },
-    "manuscript/figures/fig1-light-curve.pdf": {
-      "bytes": 32581,
-      "sha256": "3e2d2d928c2099b4e02a083bfedfcd884ca0f96311e2a15c4049debbd4782483"
+    "manuscript/figures/fig1-context.pdf": {
+      "bytes": 81859,
+      "sha256": "b47a127cc220a65263837584a3c47fe2b81dd12f59c19cbbaf060a72341de0c3"
     },
-    "manuscript/figures/fig1-light-curve.png": {
-      "bytes": 167571,
+    "manuscript/figures/fig1-context.png": {
+      "bytes": 350284,
       "pixel_dimensions": [
         1243,
-        1056
+        1753
       ],
-      "sha256": "a3141ef6bf166a1c150cab138a54d3bd8ff2b57fb2100c882629c7cbed76099d"
+      "sha256": "f54217faffa8c5b4a8300e5ec79df5fd17c3177589913612567ea102e30baebd"
     },
-    "manuscript/figures/fig2-forecast-gain.pdf": {
-      "bytes": 25994,
-      "sha256": "339264d4d73d4b8837b64d54951f5e571bad8c023fd2b29782f58e94164eb904"
+    "manuscript/figures/fig2-forecast.pdf": {
+      "bytes": 21521,
+      "sha256": "53b9a17c0d2f50556dc90357d22aa1c9390defa0ed3f644166d2ad0937c2687c"
     },
-    "manuscript/figures/fig2-forecast-gain.png": {
-      "bytes": 122749,
+    "manuscript/figures/fig2-forecast.png": {
+      "bytes": 178540,
       "pixel_dimensions": [
-        1243,
-        1209
+        1300,
+        1192
       ],
-      "sha256": "e0c9b6e536360d001fb9c208c04f0457f902ca2ec76cf37423b9cf15b926efe6"
+      "sha256": "9f8aed765483450e3d5137009b50f40873908593c637f8081d347f0274a51d3b"
     },
     "manuscript/figures/fig3-calibration.pdf": {
       "bytes": 25260,
@@ -62,6 +80,30 @@
       ],
       "sha256": "ae8cfafbff52cbc28ad7c18a80ea15e5776b38768769d35ff9d1ae994adf9dea"
     },
+    "manuscript/figures/fig3-robustness.pdf": {
+      "bytes": 31268,
+      "sha256": "ccc1d307df2d6f7f6a79b18e5834366220898aabd818164395c26544a69e0535"
+    },
+    "manuscript/figures/fig3-robustness.png": {
+      "bytes": 158749,
+      "pixel_dimensions": [
+        1242,
+        1022
+      ],
+      "sha256": "f2f9bb6669a932b67dac95b39391a8ed04a4c74c5fc9ead60056879f425583d0"
+    },
+    "manuscript/figures/fig4-transfer.pdf": {
+      "bytes": 26119,
+      "sha256": "252af77caf1ebfe765cabe8e7d60054fef06ff87511ab755057db30c45e229be"
+    },
+    "manuscript/figures/fig4-transfer.png": {
+      "bytes": 114312,
+      "pixel_dimensions": [
+        1243,
+        903
+      ],
+      "sha256": "2b87a925c929b22248af522f96f9727539b83f30f28e7c5bf7fc1c7999fc02c7"
+    },
     "manuscript/figures/fig4-type-exploration.pdf": {
       "bytes": 33007,
       "sha256": "34a1d6f0575153b4a537665e3f3e6daea4d96bde600c998a274758d52fb36e3d"
@@ -73,18 +115,6 @@
         1209
       ],
       "sha256": "0402816ce2595469a10fc0af19a9617644d74047c30c5e4cd3d450b6eefd2c5b"
-    },
-    "manuscript/figures/fig5-r2b-sensitivity.pdf": {
-      "bytes": 29483,
-      "sha256": "c84e6d0398b3a52e860050843d017723dfb45fcdc44163d4062e15c77710f7ca"
-    },
-    "manuscript/figures/fig5-r2b-sensitivity.png": {
-      "bytes": 102490,
-      "pixel_dimensions": [
-        1243,
-        980
-      ],
-      "sha256": "b719ed4d6b0588e83489e8b317e938eef39e6f9183a66c0ba61a266b789bc387"
     },
     "manuscript/figures/fig6-g3a-feasibility.pdf": {
       "bytes": 37234,
@@ -108,6 +138,14 @@
       "bytes": 21002,
       "sha256": "f9681835f1ec02b56e495dc50351b0593117e6b13f7b447b70844b6304b3809e"
     },
+    "manuscript/figure-data/fig1-lightcurve-nights.csv": {
+      "bytes": 11911,
+      "sha256": "4d7927083e87a051dbf6fbc7ea29ab6f844d5afc233b278a0f09ca7b885090e0"
+    },
+    "manuscript/figure-data/fig1-timelines.json": {
+      "bytes": 2148,
+      "sha256": "e0df834a8c4ed95fa3aedf21aac145ea2f84008b38da955bfae24e4e5ea1357b"
+    },
     "manuscript/figure-data/fig2-gains.json": {
       "bytes": 3852,
       "sha256": "fe863b113e03c13a58b0c1131b7303e71dcd06f8665ca8ae40238c09a2a958fa"
@@ -116,9 +154,17 @@
       "bytes": 1583,
       "sha256": "a6b714d837f2ae4f02fe3b918a7586fc083f7afc179422ef783ca576162ef52a"
     },
+    "manuscript/figure-data/fig3-forest.csv": {
+      "bytes": 2713,
+      "sha256": "70192bf7c201682cc8cbba184f4ec37c73574b88bc059f6d8a096c8100a76ec6"
+    },
     "manuscript/figure-data/fig4-refits.json": {
       "bytes": 4180,
       "sha256": "eaa3fbb7519c81126de4ad9ef56fa909f8b1517ea704ed9b4581ce43488f150a"
+    },
+    "manuscript/figure-data/fig4-transfer.csv": {
+      "bytes": 2015,
+      "sha256": "0ecd2705b17f7b60c4dd74caadd37255ddc6d5f5a1d516f6c81f8f11a72dcf90"
     },
     "manuscript/figure-data/g3a-stars.csv": {
       "bytes": 1162,
@@ -144,81 +190,31 @@
     "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22"
   },
   "generator": "manuscript/figures.py",
-  "generator_sha256": "8fc833b18841fe3b069aaaa548305776a79aaa40c53e94fdcc114250586df2bb",
+  "generator_sha256": "2e069e81a5259fcf8f5b05521a3187473cd35a31675253924c7d81e8d00f70d5",
   "output_policy": {
-    "fig1_public_data": "one illustrative derived bracket set and model CDF grid; display points stay under ignored outputs",
+    "fig1_public_data": "nightly light-curve aggregates for a fixed 1960-1961 window; fig2 example from one derived bracket set and model CDF grid; no observation rows, observer identifiers or event times",
     "new_event_catalog": false,
     "observer_identifiers": false,
     "per_issuance_scores": false,
     "raw_photometry_table": false
   },
   "post_result_status": "frozen comparison and illustration retained; R2b exploratory working-score contrasts; G3a gain-free development feasibility; precision rows are point-Gaussian simulations",
-  "preserved_asset_lineage": {
-    "manuscript/figures/brief-forecast-gain.pdf": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/brief-forecast-gain.png": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/fig1-light-curve.pdf": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/fig1-light-curve.png": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/fig2-forecast-gain.pdf": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/fig2-forecast-gain.png": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/fig3-calibration.pdf": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/fig3-calibration.png": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/fig4-type-exploration.pdf": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    },
-    "manuscript/figures/fig4-type-exploration.png": {
-      "commit": "93c48cf",
-      "generator_sha256": "78826d11ebec6eacad0fb21deb0baa3ddef00f883b95388f5a23a49338f022e0",
-      "manifest_sha256": "3f28497cbba442209c022ad253988dd556c7d074d41a74c80f9607320d3839d0",
-      "status": "preserved bytes; not regenerated by current source"
-    }
-  },
   "private_inputs": {
+    "data/raw/a10g_evaluation_5e39aeb772c4/aavso_ss_cyg_evaluation_c1ed8828d7_0000/native.xml": {
+      "purpose": "selected-window native leaf",
+      "sha256": "73a6207aa8a20d38df019a87df1cc071149df10e08edd83ce7be93759fd40f16"
+    },
     "data/raw/a10g_evaluation_5e39aeb772c4/aavso_ss_cyg_evaluation_c1ed8828d7_0001/native.xml": {
       "purpose": "selected-window native leaf",
       "sha256": "860f580823e8d6a19b842f5760bfc3b1a5535aef8be4147dfb4a31d3fd2d0e50"
+    },
+    "data/raw/a10g_evaluation_5e39aeb772c4/aavso_ss_cyg_evaluation_c1ed8828d7_0002/native.xml": {
+      "purpose": "selected-window native leaf",
+      "sha256": "6b68a146763e86f0b7b5f36ea8d7f73155451aace089c0646550c542ab2085ad"
+    },
+    "data/raw/a10g_evaluation_5e39aeb772c4/aavso_ss_cyg_evaluation_c1ed8828d7_0003/native.xml": {
+      "purpose": "selected-window native leaf",
+      "sha256": "e161ffacb85d1d0eca64e9aeaf619b340b43270d5fd0dd4aba6b9dca07a45a84"
     },
     "outputs/a10h_live_repair_5e39aeb/evidence-0.0.json": {
       "purpose": "saved illustrative feature/evidence selection",
@@ -229,7 +225,7 @@
       "sha256": "be96e2fa620b882ebffdcc5d7e4eeb8f427ac773976f4478c965de3023e25d20"
     },
     "outputs/a10h_live_repair_5e39aeb/receipt.json": {
-      "purpose": "saved illustrative feature/evidence selection",
+      "purpose": "native leaf hashes for the light-curve window",
       "sha256": "d341824530198f7b9d5d167ea92f526a98599a664a9d7130126393ad38de14b9"
     }
   },
@@ -254,12 +250,6 @@
       "sha256": "92b682d0a144687050bf6b18197fbf0f5821726e99e9a0ba36b2bb84447651bd"
     }
   },
-  "regenerated_assets": [
-    "manuscript/figures/fig5-r2b-sensitivity.png",
-    "manuscript/figures/fig5-r2b-sensitivity.pdf",
-    "manuscript/figures/fig6-g3a-feasibility.png",
-    "manuscript/figures/fig6-g3a-feasibility.pdf"
-  ],
   "runtime": {
     "matplotlib": "3.11.2",
     "numpy": "2.5.4",
@@ -267,7 +257,7 @@
     "scipy": "1.18.1"
   },
   "schema_version": 2,
-  "scope": "seven static scientific figures; aggregate research updates preserve old figure semantics",
+  "scope": "eight static scientific figures: four main-text, three appendix and one brief figure",
   "source_execution_commit_sha1": "d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
   "source_freeze_sha1": "5e39aeb772c427ef29671c1a9c80b22c05519b58"
 }

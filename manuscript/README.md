@@ -4,7 +4,7 @@ Integrated second drafts, 10 November 2026; review precedes release. The same st
 
 | File | Reader | Rendered |
 |---|---|---|
-| `main.md` + `figures.md`, `supplement.md` + `supplement_figures.md` | scientists; the journal snapshot | `build/manuscript.pdf`, `build/supplement.pdf` |
+| `main.md` + `figures.md` (article with appendices); `supplement.md` (technical record: superseded analyses, reproduction) | scientists; the journal snapshot | `build/manuscript.pdf`, `build/supplement.pdf` |
 | `brief.md` + `brief_figures.md` | anyone: two A4 pages, one sheet printed double-sided | `build/brief.pdf` |
 | `for-agents.md` | an agent arriving cold: claims, provenance, traps, checks | read as Markdown |
 
@@ -29,11 +29,10 @@ The article separates the original frozen working-score decision from explorator
 observation/clock checks, synthetic precision planning and the failed gain-free
 pre-1990 transfer screen. `estimands.md` governs that distinction.
 
-Regenerate numeric tables with `python3 manuscript/tables.py`. Regenerate only
-the new aggregate figures with `uv run --frozen --extra analysis --extra plot
-python manuscript/figures.py --generate-aggregates`; this preserves the original
-figure bytes and requires no raw observations. `make check` verifies both tables
-and figures against their evidence.
+Regenerate numeric tables with `python3 manuscript/tables.py` and figures with
+`make -C manuscript figures`; Figs. 1 and 2 read the retained raw SS Cyg inputs
+through hash-checked paths, and the rest use committed aggregates. `make check`
+verifies both tables and figures against their evidence without raw observations.
 
 To cite a work, add its DOI to `references/dois.txt` (or an entry to `references/manual.yaml`),
 rebuild, and cite the printed key with Pandoc citation syntax (an at-sign key in square brackets).

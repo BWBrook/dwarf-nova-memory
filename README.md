@@ -206,12 +206,17 @@ reproduce the diagnostic arithmetic with narrower interpretations (D047):
 The multi-star expansion stops for this paper. G3a is a prospectively frozen
 **development-record feasibility screen**, not a test of other stars' duration
 effects. No candidate effect was fitted, and their 1990-onward records remain
-closed. The integrated [article](manuscript/build/manuscript.pdf),
-[supplement](manuscript/build/supplement.pdf), [two-page brief](manuscript/build/brief.pdf)
-and [agent guide](manuscript/text/for-agents.md) are second drafts for review.
-The headline now states that C01 is a working interval-score result, with
-unresolved latent-onset observation assumptions; R1/R2b are exploratory checks,
-not additional confirmation. Release still requires Barry's review.
+closed.
+
+**Third draft of the article (10 November 2026, D052).** After reconstructing the
+paper from first principles (`manuscript/reconstruction/`), the
+[article](manuscript/build/manuscript.pdf) was redrafted for the Open Journal of
+Astrophysics: methods in the main text, four new figures and two tables, a single
+limitations section, and appendices in the same PDF. The former supplement is now a
+short [technical record](manuscript/build/supplement.pdf) of superseded analyses
+and reproduction commands. The [two-page brief](manuscript/build/brief.pdf) and
+[agent guide](manuscript/text/for-agents.md) are still second drafts. Release
+requires Barry's review.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
@@ -229,15 +234,12 @@ does not replace the inconclusive predeclared type rule. The paper's
 [interpretation specification](manuscript/estimands.md) and
 [claims ledger](manuscript/claims.csv) govern the figure captions and drafting.
 
-Six scientific figure assets and a brief figure are retained. The article uses
-four figures; calibration and type exploration now appear in the supplement.
+The article has four main figures and three appendix figures, plus a brief figure.
 `make -C manuscript` checks public assets and builds PDF/DOCX drafts without raw
 observations or archive access. The article, supplement and brief are integrated
-second drafts after R1/R2b/R2d/G3a, with a revised agent guide. Generate only the
-new aggregate figures with `uv run --frozen --extra plot --extra analysis python
-manuscript/figures.py --generate-aggregates`, and numeric tables with
-`python3 manuscript/tables.py`. Full figure generation also uses the retained
-raw illustration and is unnecessary for a text build. The bibliography has
+second drafts after R1/R2b/R2d/G3a, with a revised agent guide. Regenerate figures with `make -C manuscript figures`, which reads the retained
+raw inputs for Figs. 1 and 2, and numeric tables with `python3 manuscript/tables.py`.
+Neither is needed for a text build. The bibliography has
 [generated DOI metadata and unresolved identifiers](references/README.md).
 
 The [protocol](https://doi.org/10.5281/zenodo.24053338) was published before

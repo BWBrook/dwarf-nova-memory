@@ -6,7 +6,7 @@ MODEL_RUN := uv run --project "$(abspath ..)" --frozen --extra analysis --extra 
 CACHE := $(CURDIR)/.cache
 export UV_CACHE_DIR ?= $(CACHE)/uv
 MAKEDOC_ARGS := CONFIG="$(CONFIG)" PROFILE_CACHE_DIR="$(CACHE)/makedoc" PDF_ENGINE_OUTPUT_DIR="$(CACHE)/latex"
-TEXT := text/main.md text/figures.md text/supplement.md text/supplement_figures.md text/brief.md text/brief_figures.md
+TEXT := text/main.md text/figures.md text/supplement.md text/brief.md text/brief_figures.md
 
 .PHONY: all figures check check-figures check-makedoc check-render $(PROFILES)
 

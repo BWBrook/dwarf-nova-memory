@@ -1366,6 +1366,30 @@ scientific review. Do not relax this run's gates after the result.
 - Products (article, supplement, brief, agent guide) are unchanged; the OJAp expansion waits for
   Barry's step 3. No data opened, no fit or score.
 
+### D052 — Third draft: full article for OJAp from the reconstruction
+
+- Barry, direct chat with Claude, 10 November 2026, defining step 3 of the reconstruction, exactly:
+  "Now you have a tight, complete paper drafted... This is the stage that you add that flesh to the
+  bones. But do it judiciously. Don't overwrite!" Barry on Codex's suggestion to expand the article
+  earlier: "Codex had the right instinct, but you were right to hold back."
+- Done by Claude: `manuscript/text/main.md` was redrafted from the agreed one-page paper (D051). It
+  follows OJAp practice: the methods are in the main text, with equations; there are four new main
+  figures and two tables; a single limitations section, built around Table 2, holds every
+  qualification D051 requires; seven appendices take the extraction and access details,
+  sensitivities, report windows, long/short fits, transfer screen, precision planning and prior art.
+  The main text is about 4,000 words, with about 1,700 in the appendices.
+- The supplement's methods and results moved into the article. `supplement.md` is now a technical
+  record of superseded analyses and reproduction commands, and `supplement_figures.md` is removed.
+- Figures were built by a Claude Sonnet subagent from saved evidence: context, forecast, robustness
+  forest and transfer. The old Figs. 1, 2 and 5 are retired, and `--generate-aggregates` is removed.
+- C04 gains derived values: the development counts and a median-scale ratio per doubling of
+  duration. These are for Codex to check.
+- Layout stays the review layout (single column, line numbers, figures at the end). Adopting the
+  `openjournal` class, with inline figures and no line numbers, is a pre-submission task that needs a
+  makedoc feature or a direct LaTeX build. The brief and agent guide are not yet aligned with the
+  new article.
+- No data opened, no fit or score. SS Cyg 2018 onward and candidate 1990 onward stay closed.
+
 ## New decision template
 
 ### D0xx — Short concrete title

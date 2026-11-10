@@ -1,0 +1,12 @@
+row_type,star,supported_development,morphology_passed,longest_supported_bright_span_days,supported_1980_1989,confirmed_peaks_1980_1989,ratio,stream,evidence
+candidate,SS Aur,110,0,100.97000000020489,35,65,0.5384615384615384,native visual visits,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,RU Peg,23,1,20.77199999988079,13,37,0.35135135135135137,native visual visits,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,AR And,7,1,15.09000000031665,7,94,0.07446808510638298,native visual visits,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,X Leo,35,1,14.15999999968335,22,120,0.18333333333333332,native visual visits,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,TW Vir,0,1,25.953500000294298,0,63,0.0,native visual visits,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,UU Aql,15,1,11.003000000026077,13,31,0.41935483870967744,native visual visits,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,CH UMa,0,1,16.97000000020489,0,20,0.0,native visual visits,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,DX And,0,1,16.075000000186265,0,10,0.0,native visual visits,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,U Gem,27,1,38.0,12,27,0.4444444444444444,derived fixed-night median,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+candidate,IP Peg,0,1,13.0,0,18,0.0,derived fixed-night median,data/provenance/g3a_20261110/summary.json; data/provenance/g3a_review_independent/c70.json
+reference,SS Cyg,490,,,67,73,0.9178082191780822,native visual visits,data/provenance/g3a_review_independent/c70.json; data/provenance/g3a_claude_review/checks.json

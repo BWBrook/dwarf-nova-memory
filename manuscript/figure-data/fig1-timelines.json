@@ -1,0 +1,74 @@
+{
+  "analysis_sequence": {
+    "events": [
+      {
+        "at": "2026-11-08T12:34:47Z",
+        "label": "Protocol frozen; Zenodo deposit 10.5281/zenodo.24053338",
+        "source": "coordination/decisions.md D025"
+      },
+      {
+        "end": "2026-11-08T12:39:51Z",
+        "label": "First data access; fails on a parser error",
+        "source": "docs/audits/2026-11-08-a10h-native-format-repair.md",
+        "start": "2026-11-08T12:38:28Z"
+      },
+      {
+        "end": "2026-11-08T12:51:18Z",
+        "label": "Parser repair (outcome-independent)",
+        "source": "coordination/decisions.md D026; end is the start of repaired acquisition",
+        "start": "2026-11-08T12:39:51Z"
+      },
+      {
+        "end": "2026-11-08T13:00:33Z",
+        "label": "Repaired data access",
+        "source": "docs/audits/2026-11-09-a10i-sealed-evaluation.md",
+        "start": "2026-11-08T12:51:18Z"
+      },
+      {
+        "at": "2026-11-08T13:06:58Z",
+        "label": "Primary result scored",
+        "source": "docs/audits/2026-11-09-a10i-sealed-evaluation.md"
+      },
+      {
+        "end": "2026-11-10",
+        "label": "Post-result checks",
+        "source": "A10j, R1, R2b and R2d audits, all dated 9 November",
+        "start": "2026-11-09"
+      },
+      {
+        "end": "2026-11-11",
+        "label": "Frozen transfer screen",
+        "source": "coordination/decisions.md D045-D046; docs/audits/2026-11-10-g3a-feasibility-results.md",
+        "start": "2026-11-10"
+      }
+    ],
+    "time_basis": "UTC; timestamps are from the saved chronology, bare dates are day-resolution"
+  },
+  "observation_years": [
+    {
+      "end": 1959,
+      "label": "Development fit",
+      "star": "SS Cyg",
+      "start": 1910
+    },
+    {
+      "end": 2017,
+      "label": "Held-out test",
+      "star": "SS Cyg",
+      "start": 1960
+    },
+    {
+      "end": null,
+      "label": "Closed",
+      "star": "SS Cyg",
+      "start": 2018
+    },
+    {
+      "end": 1989,
+      "label": "Candidate stars: pre-1990 only",
+      "star": "candidates",
+      "start": null
+    }
+  ],
+  "scope": "dates for the paper's context figure; no observation data"
+}

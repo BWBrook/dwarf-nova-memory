@@ -3,8 +3,6 @@
 
 --check uses only the standard library and committed public files. --generate
 uses retained, already opened inputs; it never requests archive observations.
---generate-aggregates preserves the original illustration assets and builds
-the later figures from committed aggregates only.
 """
 from __future__ import annotations
 
@@ -36,12 +34,19 @@ R2B = ROOT / "data/provenance/r2b_20261109/headline.json"
 G3A = ROOT / "data/provenance/g3a_20261110/summary.json"
 G3A_DETAILS = ROOT / "data/provenance/g3a_20261110/details.json"
 PRECISION = ROOT / "data/provenance/g3a_preparation/six-star-summary.json"
-ORIGINAL_BASENAMES = ("fig1-light-curve", "fig2-forecast-gain", "fig3-calibration",
-                      "fig4-type-exploration", "brief-forecast-gain")
-BASENAMES = ORIGINAL_BASENAMES + ("fig5-r2b-sensitivity", "fig6-g3a-feasibility")
+R1_SCORES = ROOT / "data/provenance/r1_20261109/observation-scores.json"
+R2B_CHECK = ROOT / "data/provenance/r2b_claude_review/checks.json"
+R2D = ROOT / "data/provenance/r2d_review_audit/summary.json"
+G3A_CHECK = ROOT / "data/provenance/g3a_claude_review/checks.json"
+C70 = ROOT / "data/provenance/g3a_review_independent/c70.json"
+R1_EXAMPLE = ROOT / "data/provenance/r1_20261109/example-and-simulation-table.json"
+BASENAMES = ("fig1-context", "fig2-forecast", "fig3-robustness", "fig4-transfer", "fig3-calibration",
+             "fig4-type-exploration", "brief-forecast-gain", "fig6-g3a-feasibility")
 ORIGINAL_DATA_NAMES = ("fig1-illustration.json", "fig2-gains.json", "fig3-coverage.json", "fig4-refits.json")
 AGGREGATE_CSV_NAMES = ("r2b-contrasts.csv", "g3a-stars.csv", "g3a-totals.csv", "six-star-precision.csv")
-DATA_NAMES = ORIGINAL_DATA_NAMES + ("claim-values.csv",) + AGGREGATE_CSV_NAMES
+CONTEXT_DATA_NAMES = ("fig1-lightcurve-nights.csv", "fig1-timelines.json", "fig3-forest.csv", "fig4-transfer.csv")
+DATA_NAMES = ORIGINAL_DATA_NAMES + ("claim-values.csv",) + AGGREGATE_CSV_NAMES + CONTEXT_DATA_NAMES
+LIGHT_CURVE_WINDOW = (START, START + 731.0)
 BLUE, ORANGE, GREY, BLACK = "#0072B2", "#D55E00", "#808990", "#25292D"
 
 
@@ -144,9 +149,109 @@ def precision_rows():
     return rows
 
 
+def forest_rows():
+    primary, summary = load(PRIMARY), load(SUMMARY)
+    r1 = load(R1_SCORES)["variants"]["saved_point"]["alternative"]
+    guarded, scored = load(R2D)["comparisons"], load(R2B_CHECK)["contrasts"]
+    r2b = {row["contrast"]: row for row in r2b_rows()}
+    rows = []
+    def add(claim, label, group, clock, baseline, n, estimate, lower, upper, interval, evidence):
+        rows.append(dict(claim_id=claim, row=label, group=group, clock=clock, baseline=baseline, n=n,
+                         estimate=estimate, lower=lower, upper=upper, interval=interval,
+                         interval_source="saved in evidence", evidence=relative(evidence)))
+    era = summary["secondary"]["era_split"]
+    two_sided = "two-sided 90%, six-year clusters"
+    add("C01", "Primary 1960–2017", "reference", "fitted-end", "M2 frozen", primary["n"], primary["estimate"],
+        primary["lower"], primary["upper"], two_sided, PRIMARY)
+    for claim, key, label in (("C06", "1960_1992", "1960–1992 segment"), ("C07", "1993_2017", "1993–2017 segment")):
+        v = era[key]
+        add(claim, label, "a", "fitted-end", "M2 frozen", v["n"], v["estimate"], v["lower"], v["upper"], two_sided, SUMMARY)
+    v = summary["secondary"]["robustness"]["type_within"]["gain_M3_M2"]
+    add("C08", "Type/within-type rule", "a", "fitted-end, type + within-type duration", "M2 frozen",
+        v["n"], v["estimate"], v["lower"], v["upper"], two_sided, SUMMARY)
+    add("C44", "Point score", "b", "fitted-end, saved-point score", "M2 frozen", r1["n"], r1["estimate"],
+        r1["lower90"], r1["upper90"], two_sided, R1_SCORES)
+    for claim, name, label, clock in (("C55", "H1", "H1 fitted-end clock", "fitted-end"),
+                                      ("C55", "H2", "H2 observed decisive-faint clock", "observed decisive-faint")):
+        v = r2b[name]
+        add(claim, label, "b", clock, "B2", v["n"], v["estimate"], v["six_year_lower"], v["six_year_upper"],
+            "exploratory CR1/t 90%, six-year clusters", R2B)
+    for claim, key, label, clock, baseline in (
+            ("C62", "point_original:B0.duration", "Fitted-end clock, B0 guarded", "fitted-end", "B0 drift-recalibrated"),
+            ("C63", "df:B0.duration", "Decisive-faint, B0 guarded", "observed decisive-faint", "B0 drift-recalibrated"),
+            ("C63", "df:B1.duration", "Decisive-faint, B1 guarded", "observed decisive-faint", "B1 drift-recalibrated"),
+            ("C63", "df:B2.duration", "Decisive-faint, B2 guarded", "observed decisive-faint", "B2 drift-recalibrated")):
+        v = guarded[key]["guarded_gain"]
+        add(claim, label, "c", clock, baseline, scored[key]["scored"], v["mean"], v["lower90"], v["upper90"],
+            "exploratory CR1/t 90%, six-year clusters", R2D)
+    return rows
+
+
+def transfer_rows():
+    stars, _ = g3a_rows()
+    c70 = load(C70)
+    raw, hold = c70["ordinary_raw_streams"], c70["hold_frozen_reductions"]
+    rows = []
+    for star in stars:
+        name = star["star"]
+        if star["eclipse_required"]:
+            peaks = hold[name]["median"]["confirmed_by_decade"]["1980"]
+            numerator = hold[name]["median"]["by_decade"]["1980"]["supported"]
+        else:
+            peaks = raw[name]["confirmed_by_decade"]["1980"]
+            numerator = raw[name]["by_decade"].get("1980", {}).get("supported", 0)
+        if numerator != star["supported_1980_1989"]:
+            raise ValueError("C70 and G3a numerators disagree for " + name)
+        rows.append(dict(row_type="candidate", star=name, supported_development=star["outcome_supported"],
+                         morphology_passed=star["morphology_passed"],
+                         longest_supported_bright_span_days=star["longest_supported_bright_span_days"],
+                         supported_1980_1989=numerator, confirmed_peaks_1980_1989=peaks, ratio=numerator/peaks,
+                         stream=star["stream"], evidence=relative(G3A) + "; " + relative(C70)))
+    if (sum(r["supported_1980_1989"] for r in rows), sum(r["confirmed_peaks_1980_1989"] for r in rows)) != (102, 485):
+        raise ValueError("candidate 1980s totals differ from 102/485")
+    ref, ceilings = c70["ss_cyg_pre1990_reference"], load(G3A_CHECK)["ceilings"]["ss_cyg_1980s"]
+    numerator, peaks = ref["by_decade"]["1980"]["supported"], ref["confirmed_by_decade"]["1980"]
+    if (numerator, peaks) != (ceilings["supported"], ceilings["confirmed"]) or (numerator, peaks) != (67, 73):
+        raise ValueError("SS Cyg 1980s reference differs from saved evidence")
+    rows.append(dict(row_type="reference", star="SS Cyg", supported_development=ref["sequential"]["supported"],
+                     morphology_passed="", longest_supported_bright_span_days="", supported_1980_1989=numerator,
+                     confirmed_peaks_1980_1989=peaks, ratio=numerator/peaks, stream="native visual visits",
+                     evidence=relative(C70) + "; " + relative(G3A_CHECK)))
+    return rows
+
+
 def aggregate_tables():
     stars, totals = g3a_rows()
-    return dict(zip(AGGREGATE_CSV_NAMES, (r2b_rows(), stars, totals, precision_rows())))
+    tables = dict(zip(AGGREGATE_CSV_NAMES, (r2b_rows(), stars, totals, precision_rows())))
+    tables["fig3-forest.csv"] = forest_rows()
+    tables["fig4-transfer.csv"] = transfer_rows()
+    return tables
+
+
+TIMELINES = dict(
+    scope="dates for the paper's context figure; no observation data",
+    observation_years=[
+        dict(label="Development fit", start=1910, end=1959, star="SS Cyg"),
+        dict(label="Held-out test", start=1960, end=2017, star="SS Cyg"),
+        dict(label="Closed", start=2018, end=None, star="SS Cyg"),
+        dict(label="Candidate stars: pre-1990 only", start=None, end=1989, star="candidates")],
+    analysis_sequence=dict(
+        time_basis="UTC; timestamps are from the saved chronology, bare dates are day-resolution",
+        events=[
+            dict(label="Protocol frozen; Zenodo deposit 10.5281/zenodo.24053338", at="2026-11-08T12:34:47Z",
+                 source="coordination/decisions.md D025"),
+            dict(label="First data access; fails on a parser error", start="2026-11-08T12:38:28Z", end="2026-11-08T12:39:51Z",
+                 source="docs/audits/2026-11-08-a10h-native-format-repair.md"),
+            dict(label="Parser repair (outcome-independent)", start="2026-11-08T12:39:51Z", end="2026-11-08T12:51:18Z",
+                 source="coordination/decisions.md D026; end is the start of repaired acquisition"),
+            dict(label="Repaired data access", start="2026-11-08T12:51:18Z", end="2026-11-08T13:00:33Z",
+                 source="docs/audits/2026-11-09-a10i-sealed-evaluation.md"),
+            dict(label="Primary result scored", at="2026-11-08T13:06:58Z",
+                 source="docs/audits/2026-11-09-a10i-sealed-evaluation.md"),
+            dict(label="Post-result checks", start="2026-11-09", end="2026-11-10",
+                 source="A10j, R1, R2b and R2d audits, all dated 9 November"),
+            dict(label="Frozen transfer screen", start="2026-11-10", end="2026-11-11",
+                 source="coordination/decisions.md D045-D046; docs/audits/2026-11-10-g3a-feasibility-results.md")]))
 
 
 def csv_text(rows):
@@ -291,37 +396,19 @@ def check():
     for name, rows in aggregate_tables().items():
         if (DATA/name).read_text() != csv_text(rows):
             raise ValueError("normalized aggregate table differs from its committed evidence: " + name)
-    for name, record in manifest["preserved_asset_lineage"].items():
-        if name not in manifest["assets"] or not all(record.get(key) for key in (
-                "generator_sha256", "manifest_sha256", "commit")):
-            raise ValueError("preserved figure lineage is incomplete")
+    if load(DATA/"fig1-timelines.json") != TIMELINES:
+        raise ValueError("timeline data differ from the generator")
+    with (DATA/"fig1-lightcurve-nights.csv").open(newline="") as handle:
+        nights = list(csv.DictReader(handle))
+    if not nights or not all(math.floor(LIGHT_CURVE_WINDOW[0]) <= float(r["jd_floor"]) <= LIGHT_CURVE_WINDOW[1] < STOP for r in nights):
+        raise ValueError("light-curve summaries lie outside the fixed opened window")
+    if set(nights[0]) != {"jd_floor", "median_magnitude", "detection_observer_days", "faintest_limit", "limit_observer_days"}:
+        raise ValueError("light-curve summaries must contain nightly aggregates only")
     print(json.dumps(dict(status="figure check passed", figures=len(BASENAMES),
                           assets=len(expected_assets), private_inputs_required=False)))
 
 
-def illustration(np, log_ndtr, private_inputs):
-    receipt_path, ledger_path, evidence_path = (RUN/name for name in ("receipt.json", "ledger-0.0.json", "evidence-0.0.json"))
-    receipt = load(receipt_path)
-    if receipt["status"] != "completed" or receipt["mode"] != "live":
-        raise ValueError("illustration requires the completed authorized run")
-    for path in (ledger_path, evidence_path):
-        if sha(path) != receipt["files_sha256"][path.name]:
-            raise ValueError("retained illustration evidence drift")
-    if sha(NATIVE_CODE) != receipt["source"]["sha256"][relative(NATIVE_CODE)]:
-        raise ValueError("native display adapter differs from the executed version")
-    features = load(ledger_path)
-    if any(not START <= f["issue_time"] < STOP for f in features):
-        raise ValueError("ledger extends beyond the opened evaluation period")
-    eligible = [f for f in features if START <= f["issue_time"] < START+366
-                and f.get("onset_t") is not None and f["onset_t"] > START]
-    feature = min(eligible, key=lambda f: (f["issue_time"], f["emission_index"]))
-    outcome = next(e for e in load(evidence_path) if e["emission_index"] == feature["emission_index"])
-    if outcome["kind"] != "interval" or feature.get("end_t") is None:
-        raise ValueError("the deterministic illustrative record cannot support the requested illustration")
-    issue = feature["issue_time"]
-    window = [feature["onset_t"]-4.0, issue+70.0]
-    if not START <= window[0] < window[1] < STOP:
-        raise ValueError("illustration window lies outside the opened data")
+def native_window_rows(receipt, window, private_inputs):
     sys.path.insert(0, str(ROOT/"src"))
     from dnmem.evaluation_native import parse_native_bytes, select_analysis_rows
     native_rows = {}
@@ -342,6 +429,64 @@ def illustration(np, log_ndtr, private_inputs):
                 previous = native_rows.setdefault(row["obsID"], row)
                 if previous != row:
                     raise ValueError("conflicting native IDs in illustration")
+    return native_rows
+
+
+def retained_receipt():
+    receipt_path, ledger_path, evidence_path = (RUN/name for name in ("receipt.json", "ledger-0.0.json", "evidence-0.0.json"))
+    receipt = load(receipt_path)
+    if receipt["status"] != "completed" or receipt["mode"] != "live":
+        raise ValueError("illustration requires the completed authorized run")
+    for path in (ledger_path, evidence_path):
+        if sha(path) != receipt["files_sha256"][path.name]:
+            raise ValueError("retained illustration evidence drift")
+    if sha(NATIVE_CODE) != receipt["source"]["sha256"][relative(NATIVE_CODE)]:
+        raise ValueError("native display adapter differs from the executed version")
+    return receipt, receipt_path, ledger_path, evidence_path
+
+
+def lightcurve_nights(private_inputs):
+    receipt, receipt_path, _, _ = retained_receipt()
+    window = LIGHT_CURVE_WINDOW
+    if not START <= window[0] < window[1] < STOP:
+        raise ValueError("light-curve window lies outside the opened data")
+    private_inputs[relative(receipt_path)] = dict(sha256=sha(receipt_path), purpose="native leaf hashes for the light-curve window")
+    groups = defaultdict(list)
+    for row in native_window_rows(receipt, window, private_inputs).values():
+        time = float(row["JD"])
+        identity = (row.get("obsName") or "").strip().casefold() or row["by"]
+        groups[(identity, math.floor(time), row["fainterThan"] == "1")].append(float(row["mag"]))
+    nights = defaultdict(lambda: dict(detections=[], limits=[]))
+    for (_, night, limit), magnitudes in groups.items():
+        if limit:
+            nights[night]["limits"].append(max(magnitudes))
+        else:
+            nights[night]["detections"].append(median(magnitudes))
+    rows = []
+    for night in sorted(nights):
+        detections, limits = nights[night]["detections"], nights[night]["limits"]
+        rows.append(dict(jd_floor=night, median_magnitude=round(median(detections), 3) if detections else "",
+                         detection_observer_days=len(detections),
+                         faintest_limit=round(max(limits), 3) if limits else "", limit_observer_days=len(limits)))
+    return rows
+
+
+def illustration(np, log_ndtr, private_inputs):
+    receipt, receipt_path, ledger_path, evidence_path = retained_receipt()
+    features = load(ledger_path)
+    if any(not START <= f["issue_time"] < STOP for f in features):
+        raise ValueError("ledger extends beyond the opened evaluation period")
+    eligible = [f for f in features if START <= f["issue_time"] < START+366
+                and f.get("onset_t") is not None and f["onset_t"] > START]
+    feature = min(eligible, key=lambda f: (f["issue_time"], f["emission_index"]))
+    outcome = next(e for e in load(evidence_path) if e["emission_index"] == feature["emission_index"])
+    if outcome["kind"] != "interval" or feature.get("end_t") is None:
+        raise ValueError("the deterministic illustrative record cannot support the requested illustration")
+    issue = feature["issue_time"]
+    window = [feature["onset_t"]-4.0, issue+70.0]
+    if not START <= window[0] < window[1] < STOP:
+        raise ValueError("illustration window lies outside the opened data")
+    native_rows = native_window_rows(receipt, window, private_inputs)
     groups = defaultdict(list)
     for row in native_rows.values():
         time = float(row["JD"])
@@ -401,8 +546,7 @@ def illustration(np, log_ndtr, private_inputs):
                   claim_ids=["C01","C05"])
     for path in (receipt_path,ledger_path,evidence_path):
         private_inputs[relative(path)] = dict(sha256=sha(path),purpose="saved illustrative feature/evidence selection")
-    dump(SCRATCH/"fig1_display_points.json",dict(scope="private display aggregates; not an exported observation table",points=points))
-    return public, points
+    return public
 
 
 def save(figure, stem):
@@ -411,73 +555,6 @@ def save(figure, stem):
     figure.savefig(FIGURES/(stem+".pdf"),bbox_inches="tight",pad_inches=.10,
                    metadata={"Creator":"dwarf-nova-memory figures","Producer":"Matplotlib",
                              "CreationDate":None,"ModDate":None})
-
-
-def figure_one(plt, data, points):
-    fig,(ax,cdf)=plt.subplots(2,1,figsize=(7.2,6.1),gridspec_kw={"height_ratios":[1.2,1]},layout="constrained")
-    item=data["illustration"]
-    for available,color,label in ((True,BLUE,"At/before issue time"),(False,GREY,"Later observation times")):
-        detections=[p for p in points if p["by_issue"] == available and not p["limit"]]
-        ax.scatter([p["day_from_issue"] for p in detections],[p["magnitude"] for p in detections],s=17,
-                   color=color,alpha=.82,label=label,zorder=3,linewidths=0)
-        limits=[p for p in points if p["by_issue"] == available and p["limit"]]
-        for p in limits:
-            ax.annotate("",xy=(p["day_from_issue"],p["magnitude"]+.35),xytext=(p["day_from_issue"],p["magnitude"]),
-                        arrowprops=dict(arrowstyle="-|>",color=color,lw=.9),zorder=4)
-        if limits:
-            ax.scatter([],[],marker="$\\downarrow$",color=color,label="Fainter-than bounds" if available else "Later fainter-than bounds")
-    ax.axhline(10,color=BLACK,ls=":",lw=1,label="Extraction threshold")
-    ax.axvspan(*item["onset_bracket_days"],color=BLUE,alpha=.13,zorder=0)
-    ax.axvspan(*item["prefix_end_bracket_days"],color=ORANGE,alpha=.16,zorder=0)
-    ax.axvline(0,color=BLACK,ls="--",lw=1)
-    ax.set_ylabel("Visual magnitude (fainter downward)")
-    magnitudes=[p["magnitude"] for p in points]
-    ax.set_ylim(max(magnitudes)+.6,min(magnitudes)-.7)
-    ax.set_xlim(*item["relative_window_days"])
-    top=min(magnitudes)-.53
-    ax.text(sum(item["onset_bracket_days"])/2,top,"Onset\nbracket",ha="center",va="top",fontsize=8.5,color=BLUE)
-    ax.text(sum(item["prefix_end_bracket_days"])/2,top,"Prefix end\nbracket",ha="center",va="top",fontsize=8.5,color=ORANGE)
-    ax.text(.8,top,"Issue",ha="left",va="top",fontsize=8.5)
-    ax.legend(loc="lower right",fontsize=8.2,frameon=True,framealpha=.95)
-    ax.set_title("A  Observer-day medians in the fixed illustrative window",loc="left",fontsize=10.5)
-    for model,color in (("M2",BLUE),("M3",ORANGE)):
-        cdf.plot(data["conditional_remaining_wait_cdf"]["days_from_issue"],data["conditional_remaining_wait_cdf"]["models"][model],
-                 color=color,lw=2,label="Frozen timing (M2)" if model=="M2" else "Frozen timing + duration (M3)")
-    cdf.axvspan(item["relative_window_days"][0],0,color="#E7E9EB",alpha=.55)
-    cdf.axvspan(*item["later_onset_bracket_days"],color="#7B5A80",alpha=.23)
-    cdf.axvline(0,color=BLACK,ls="--",lw=1)
-    cdf.axhline(.5,color="#BEC3C7",lw=.7)
-    cdf.text(sum(item["later_onset_bracket_days"])/2,.06,"Later onset bracket\n(scoring outcome)",ha="center",va="bottom",fontsize=8.5,color="#634368")
-    cdf.set(xlim=item["relative_window_days"],ylim=(0,1.02),ylabel="Probability of next onset\nwithin the stated wait",xlabel=f"Days from forecast issue (native JD {item['issue_jd']:.1f})")
-    cdf.set_title("B  Saved frozen forecasts, conditioned once on survival to issue",loc="left",fontsize=10.5)
-    cdf.legend(loc="lower right",fontsize=8.4)
-    fig.suptitle("One date-selected 1960 illustration; not a validation test",fontsize=12,fontweight="bold")
-    save(fig,"fig1-light-curve");plt.close(fig)
-
-
-def figure_two(plt, data):
-    fig,(blocks,pooled)=plt.subplots(2,1,figsize=(7.2,7.0),gridspec_kw={"height_ratios":[1.5,1]},layout="constrained")
-    b=data["blocks"]
-    for k,row in enumerate(b):
-        blocks.plot(row["mean_gain"],k,"o",color=GREY,ms=5)
-        blocks.text(.051,k,f"n={row['n']}",fontsize=8.5,va="center")
-    blocks.axvline(data["comparisons"][0]["estimate"],color=BLUE,lw=1,ls="--")
-    blocks.axvline(0,color=BLACK,lw=.9)
-    blocks.set_yticks(range(len(b)),[row["nominal_year_label"] for row in b])
-    blocks.invert_yaxis();blocks.set_xlim(-.025,.061)
-    blocks.set_title("A  Descriptive block means; no within-block intervals",loc="left",fontsize=10.5)
-    blocks.set_xlabel("M3 − M2 log-score gain (nats per issuance)")
-    for k,row in enumerate(data["comparisons"]):
-        color=BLUE if row["kind"]=="sole primary" else (ORANGE if row["name"]=="Type/within-type rule" else GREY)
-        pooled.plot([row["lower"],row["upper"]],[k,k],color=color,lw=2.4)
-        pooled.plot(row["estimate"],k,"D" if k==0 else "o",color=color,ms=6 if k==0 else 5)
-    pooled.set_yticks(range(4),[f"{r['name']}  (n={r['n']})" for r in data["comparisons"]])
-    pooled.invert_yaxis();pooled.axvline(0,color=BLACK,lw=.9);pooled.set_xlim(-.025,.061)
-    pooled.set_title("B  Sole primary and predeclared secondary comparisons",loc="left",fontsize=10.5)
-    pooled.set_xlabel("Mean gain and 90% cluster interval (nats per issuance)")
-    fig.suptitle("Frozen SS Cyg forecast comparison",fontsize=12,fontweight="bold")
-    fig.supxlabel("Clusters span 2191.5 days; year labels are nominal. Dashed line above: pooled mean.",fontsize=8.2)
-    save(fig,"fig2-forecast-gain");plt.close(fig)
 
 
 def figure_three(plt, data):
@@ -546,38 +623,6 @@ def brief_figure(plt, data):
     save(fig,"brief-forecast-gain");plt.close(fig)
 
 
-def r2b_figure(plt, rows):
-    fig, (gains, difference) = plt.subplots(2, 1, figsize=(7.2, 5.65), sharex=True,
-                                          gridspec_kw={"height_ratios": [1.65, 1]}, layout="constrained")
-    labels = ("H1  Fitted-end clock\nP-orig; duration",
-              "H2  Observed DF clock\nP-DF; decisive bright span",
-              "H3  Paired clock contrast\nDF gain − matched fitted-end gain")
-    for index, row in enumerate(rows):
-        ax, position = (gains, index) if index < 2 else (difference, 0)
-        for key, offset, color, marker in (("six_year", -.10, BLUE, "o"),
-                                            ("twelve_year", .10, ORANGE, "s")):
-            ax.plot([row[key + "_lower"], row[key + "_upper"]], [position + offset]*2,
-                    color=color, lw=2.2, solid_capstyle="round")
-            ax.plot(row["estimate"], position + offset, marker, color=color, ms=5,
-                    markerfacecolor="white" if key == "twelve_year" else color,
-                    label="Six-year clusters" if index == 0 and key == "six_year" else
-                    "Twelve-year clusters" if index == 0 else None)
-        ax.text(1.02, position, f"n = {row['n']}\n{row['issued']} issued", ha="left", va="center",
-                fontsize=8.4, transform=ax.get_yaxis_transform())
-    for ax in (gains, difference):
-        ax.axvline(0, color=BLACK, lw=.9)
-        ax.set_xlim(-.011, .020)
-    gains.set_yticks((0, 1), labels[:2]); gains.set_ylim(1.53, -.53)
-    difference.set_yticks((0,), labels[2:]); difference.set_ylim(.5, -.5)
-    gains.set_title("A  Marked minus unmarked B2 working score", loc="left", fontsize=10)
-    difference.set_title("B  Paired difference of gains on the matched population", loc="left", fontsize=10)
-    gains.legend(loc="lower left", fontsize=8.2, frameon=False, ncol=2)
-    difference.set_xlabel("Mean working-score contrast (nats per supported issuance)")
-    fig.suptitle("Exploratory SS Cyg clock sensitivities", fontsize=12, fontweight="bold")
-    fig.supxlabel("Working interval/backoff scores; 90% CR1/t intervals. Cluster independence is not certified.\nDifferent clocks/populations do not isolate a physical or causal component.", fontsize=8)
-    save(fig, "fig5-r2b-sensitivity"); plt.close(fig)
-
-
 def g3a_figure(plt, rows):
     from matplotlib.ticker import PercentFormatter
     fig, (eligible, supported) = plt.subplots(1, 2, figsize=(7.2, 6.0), sharey=True,
@@ -615,6 +660,263 @@ def g3a_figure(plt, rows):
     save(fig, "fig6-g3a-feasibility"); plt.close(fig)
 
 
+PURPLE, GREEN, SKY, AMBER = "#7B5A80", "#009E73", "#56B4E9", "#E69F00"
+
+
+def bracket(ax, x0, x1, y, text, *, below=False, color=BLACK, size=8.3):
+    tick = -.06 if below else .06
+    ax.plot([x0, x0, x1, x1], [y+tick, y, y, y+tick], color=color, lw=1, clip_on=False)
+    ax.text((x0+x1)/2, y+(-.09 if below else .09), text, ha="center", va="top" if below else "bottom",
+            fontsize=size, color=color)
+
+
+def context_figure(plt, nights):
+    import numpy as np
+    from matplotlib.patches import Rectangle
+    fig = plt.figure(figsize=(7.2, 10.2), layout="constrained")
+    grid = fig.add_gridspec(4, 2, height_ratios=[1.45, 2.05, .78, .95], width_ratios=[1, 1.25])
+
+    ax = fig.add_subplot(grid[0, :])
+    year = lambda jd: 1960 + (jd - START)/365.25
+    det = [r for r in nights if r["median_magnitude"] != ""]
+    lim = [r for r in nights if r["median_magnitude"] == "" and r["faintest_limit"] != ""]
+    run, runs = [], []
+    for r in det:
+        if run and float(r["jd_floor"])-float(run[-1]["jd_floor"]) > 3:
+            runs.append(run); run = []
+        run.append(r)
+    runs.append(run)
+    for run in runs:
+        ax.plot([year(float(r["jd_floor"])+.5) for r in run], [float(r["median_magnitude"]) for r in run], color=BLUE, lw=.6, alpha=.5, zorder=2)
+    ax.scatter([year(float(r["jd_floor"])+.5) for r in det], [float(r["median_magnitude"]) for r in det],
+               s=10, color=BLUE, alpha=.9, linewidths=0, zorder=3, label="Nightly median of detections")
+    for r in lim:
+        x, y = year(float(r["jd_floor"])+.5), float(r["faintest_limit"])
+        ax.annotate("", xy=(x, y+.3), xytext=(x, y), arrowprops=dict(arrowstyle="-|>", color=GREY, lw=.8, mutation_scale=6), zorder=2)
+    ax.scatter([], [], marker="$\\downarrow$", color=GREY, label="Fainter-than bound (night without a detection)")
+    ax.axhline(10, color=BLACK, ls=":", lw=1, label="Extraction threshold (magnitude 10)")
+    mags = [float(r["median_magnitude"]) for r in det] + [float(r["faintest_limit"]) for r in lim]
+    ax.set_ylim(max(mags)+.5, min(mags)-.4)
+    ax.set_xlim(year(LIGHT_CURVE_WINDOW[0]), year(LIGHT_CURVE_WINDOW[1]))
+    ax.set_xticks((1960, 1961, 1962))
+    ax.set_xlabel("Year (first two years of the held-out period)")
+    ax.set_ylabel("Visual magnitude\n(fainter downward)")
+    ax.legend(loc="lower center", bbox_to_anchor=(.5, 1.0), ncol=3, fontsize=7.4, frameon=False, handletextpad=.3, columnspacing=1.2)
+    ax.set_title("A  SS Cyg, 1960–1961: one summary value per night", loc="left", fontsize=10.5, pad=24)
+
+    sub = grid[1, :].subgridspec(2, 1, height_ratios=[1.35, 1], hspace=.04)
+    curve, dens = fig.add_subplot(sub[0]), fig.add_subplot(sub[1], sharex=None)
+    t = np.linspace(0, 112, 1800)
+    def burst(t0, d):
+        return 1/(1+np.exp(-(t-t0)/.7))*1/(1+np.exp((t-(t0+d))/1.1))*(1-.12*np.clip(t-t0, 0, d)/d)
+    seen = burst(6, 5)+burst(36, 15)
+    issue, end2, onset3 = 54., 51., 86.
+    curve.plot(t[t <= issue], seen[t <= issue], color=BLACK, lw=1.8)
+    curve.plot(t[t >= issue], (seen+burst(onset3, 9))[t >= issue], color=BLACK, lw=1.4, ls=(0, (3, 2)), alpha=.55)
+    bracket(curve, 36, 51, 1.12, "outburst duration")
+    bracket(curve, 11, 36, -.2, "previous quiet\ninterval", below=True)
+    bracket(curve, 51, onset3, -.2, "quiet interval\n(the forecast target)", below=True)
+    curve.text(21, 1.12, "earlier outburst", ha="center", va="bottom", fontsize=8.3, color=GREY)
+    curve.text(103, .72, "next outburst\n(not yet seen)", ha="center", va="center", fontsize=8.3, color=GREY)
+    curve.set(xlim=(0, 112), ylim=(-.95, 1.75), ylabel="Brightness", yticks=[], xticks=[])
+    for a in (curve, dens):
+        a.axvline(issue, color=BLACK, ls="--", lw=1)
+        a.axvspan(onset3-1.2, onset3+1.2, color=PURPLE, alpha=.25, lw=0)
+    curve.text(issue+1.2, 1.45, "issue time: reports\nconfirm the fade", ha="left", va="center", fontsize=8.3)
+    curve.text(onset3+2.5, 1.45, "scored\nonset window", ha="left", va="center", fontsize=8.3, color=PURPLE)
+    curve.spines["bottom"].set_visible(False)
+    gap = np.clip(t-end2, 0, None)
+    def density(median, sigma):
+        g = np.where(gap > 3, gap, np.nan)
+        pdf = np.exp(-(np.log(g)-np.log(median))**2/(2*sigma**2))/(g*sigma*np.sqrt(2*np.pi))
+        pdf = np.where(t >= issue, pdf, np.nan)
+        return pdf/np.nansum(pdf)/(t[1]-t[0])
+    for median_gap, sigma, color, label in ((41, .30, BLUE, "Timing-only forecast"), (36, .20, ORANGE, "Timing + duration forecast")):
+        pdf = density(median_gap, sigma)
+        dens.plot(t, pdf, color=color, lw=2, label=label)
+        dens.fill_between(t, 0, np.nan_to_num(pdf), color=color, alpha=.14, lw=0)
+    dens.set(xlim=(0, 112), yticks=[], xticks=[], xlabel="Time (schematic; not to scale)", ylabel="Forecast density\nfor the next onset")
+    dens.set_ylim(0, None)
+    dens.legend(loc="upper left", bbox_to_anchor=(0, 1.0), fontsize=8.2, frameon=False)
+    curve.set_title("B  Schematic of one cycle (illustration, not data)", loc="left", fontsize=10.5)
+
+    years = fig.add_subplot(grid[2, :])
+    rows = {row["label"]: row for row in TIMELINES["observation_years"]}
+    spans = ((1, 1910, 1959+1, SKY, "Development fit\n1910–1959"), (1, 1960, 2017+1, BLUE, "Held-out test\n1960–2017"))
+    for y, x0, x1, color, text in spans:
+        years.barh(y, x1-x0, left=x0, height=.62, color=color)
+        years.text((x0+x1)/2, y, text, ha="center", va="center", fontsize=8, color="white" if color == BLUE else BLACK)
+    years.barh(1, 2030-2018, left=2018, height=.62, facecolor="white", edgecolor=GREY, hatch="///", lw=1)
+    years.text(2024, 1, "Closed\n2018 →", ha="center", va="center", fontsize=8, bbox=dict(facecolor="white", edgecolor="none", pad=1))
+    years.barh(0, 1990-1900, left=1900, height=.62, color=AMBER, alpha=.85)
+    years.text(1945, 0, "Candidate stars: pre-1990 records only", ha="center", va="center", fontsize=8)
+    years.set(xlim=(1900, 2030), ylim=(-.6, 1.6), yticks=(0, 1), xlabel="Year of observation")
+    years.set_yticklabels(("Ten other\ndwarf novae", "SS Cyg"))
+    years.set_title("C  Which years were used, and when the analysis was done", loc="left", fontsize=10.5)
+
+    left, right = fig.add_subplot(grid[3, 0]), fig.add_subplot(grid[3, 1])
+    minutes = lambda stamp: (int(stamp[11:13])-12)*60+int(stamp[14:16])-30+int(stamp[17:19])/60
+    events = {e["label"]: e for e in TIMELINES["analysis_sequence"]["events"]}
+    freeze = minutes(events["Protocol frozen; Zenodo deposit 10.5281/zenodo.24053338"]["at"])
+    scored = minutes(events["Primary result scored"]["at"])
+    for label, color, text in (("First data access; fails on a parser error", ORANGE, ""), ("Parser repair (outcome-independent)", GREY, "repair"),
+                               ("Repaired data access", BLUE, "")):
+        e = events[label]
+        left.barh(0, minutes(e["end"])-minutes(e["start"]), left=minutes(e["start"]), height=.8, color=color)
+    left.plot([freeze], [0], "*", color=BLACK, ms=11, zorder=4)
+    left.plot([scored], [0], "D", color=BLACK, ms=6, zorder=4)
+    left.annotate("Protocol frozen;\nZenodo deposit\n10.5281/zenodo.24053338", xy=(freeze, .1), xytext=(freeze-3.8, 1.0), fontsize=7.4, va="bottom", ha="left",
+                  arrowprops=dict(arrowstyle="-", lw=.7))
+    left.annotate("first access\nfails (parser)", xy=(9.2, -.4), xytext=(9.2, -.95), fontsize=7.4, va="top", ha="center", color=BLACK,
+                  arrowprops=dict(arrowstyle="-", lw=.7))
+    left.text(15.6, 0, "repair", ha="center", va="center", fontsize=7.4, color="white")
+    left.annotate("repaired\naccess", xy=(25.9, -.4), xytext=(26.8, -.95), fontsize=7.4, va="top", ha="center", color=BLACK,
+                  arrowprops=dict(arrowstyle="-", lw=.7))
+    left.annotate("primary result\nscored", xy=(scored, .1), xytext=(scored+.4, .75), fontsize=7.4, va="bottom", ha="center",
+                  arrowprops=dict(arrowstyle="-", lw=.7))
+    left.set(xlim=(0, 40), ylim=(-1.9, 2.2), yticks=[], xticks=(0, 10, 20, 30, 40))
+    left.set_xticklabels(("12:30", "12:40", "12:50", "13:00", "13:10"))
+    left.set_xlabel("8 November, UTC", fontsize=8.6)
+    left.spines["right"].set_visible(False)
+    hours = lambda day: (int(day[8:10])-8)*24
+    for label, color in (("Post-result checks", GREY), ("Frozen transfer screen", PURPLE)):
+        e = events[label]
+        right.barh(0, hours(e["end"])-hours(e["start"]), left=hours(e["start"]), height=.8, color=color)
+    right.text(36, 0, "post-result\nchecks", ha="center", va="center", fontsize=7.4, color="white")
+    right.text(60, 0, "frozen\ntransfer screen", ha="center", va="center", fontsize=7.4, color="white")
+    right.set(xlim=(13.2, 72), ylim=(-1.9, 2.2), yticks=[], xticks=(24, 48, 72))
+    right.set_xticklabels(("9 Nov", "10 Nov", "11 Nov"))
+    right.set_xlabel("day boundaries, UTC", fontsize=8.6)
+    right.spines["left"].set_visible(False)
+    for ax_, x in ((left, 1), (right, 0)):
+        ax_.plot([x-.02, x+.02], [-.02, .02], transform=ax_.transAxes, color=BLACK, lw=1, clip_on=False)
+    left.set_title("Analysis sequence, November 2026 (a separate clock; the axis breaks after 13:10 UTC on 8 November)", loc="left", fontsize=8.6, x=0)
+    save(fig, "fig1-context"); plt.close(fig)
+
+
+def forecast_figure(plt, f1, f2):
+    fig, (ax, blocks) = plt.subplots(2, 1, figsize=(7.2, 6.9), gridspec_kw={"height_ratios": [1, 1.05]}, layout="constrained")
+    item, cdf = f1["illustration"], f1["conditional_remaining_wait_cdf"]
+    example = load(R1_EXAMPLE)["figure1"]["models"]
+    days = cdf["days_from_issue"]
+    for model, color, label in (("M2", BLUE, "Frozen timing-only (M2)"), ("M3", ORANGE, "Frozen timing + duration (M3)")):
+        ax.plot(days, cdf["models"][model], color=color, lw=2, label=label)
+        value = example[model]["public_grid_probability_within_30_days"]
+        ax.plot(30, value, "o", color=color, ms=5, zorder=4)
+        x, y, align = (32, .52, "left") if model == "M2" else (28.8, .69, "right")
+        ax.text(x, y, f"{value:.3f}", color=color, fontsize=8.4, va="center", ha=align)
+    ax.axvline(30, color=GREY, ls=":", lw=1)
+    ax.axvspan(*item["later_onset_bracket_days"], color=PURPLE, alpha=.28, lw=0)
+    ax.text(item["later_onset_bracket_days"][1]+1.2, .1, "onset interval that\nscored the forecast", ha="left", va="bottom", fontsize=8.4, color=PURPLE)
+    ax.text(30.6, .02, "30 days", fontsize=8, color=GREY, va="bottom", ha="left")
+    ax.set(xlim=(0, 70), ylim=(0, 1.02), xlabel="Days from forecast issue (JD %.1f)" % item["issue_jd"],
+           ylabel="Probability that the next onset\nhas occurred by this wait")
+    ax.legend(loc="upper left", fontsize=8.4, frameon=False)
+    ax.set_title("A  One example forecast: frozen distributions, conditioned once on survival to issue", loc="left", fontsize=10.2)
+    for k, row in enumerate(f2["blocks"]):
+        blocks.plot(row["mean_gain"], k, "o", color=GREY, ms=5.5, zorder=3)
+    primary = f2["comparisons"][0]
+    blocks.axvspan(primary["lower"], primary["upper"], color=BLUE, alpha=.16, lw=0)
+    blocks.axvline(primary["estimate"], color=BLUE, lw=1.4)
+    blocks.axvline(0, color=BLACK, lw=.9)
+    blocks.set_yticks(range(len(f2["blocks"])), [f"{row['nominal_year_label']}  (n={row['n']})" for row in f2["blocks"]])
+    blocks.invert_yaxis(); blocks.set_xlim(-.022, .06)
+    blocks.text(.0305, 8.5, f"pooled mean {primary['estimate']:.4f}\n90% interval {primary['lower']:.4f} to {primary['upper']:.4f}",
+                color=BLUE, fontsize=8.4, va="center", ha="left")
+    blocks.set_xlabel("Mean gain, timing + duration minus timing-only (nats per forecast)")
+    blocks.set_ylabel("Six-year block")
+    blocks.set_title("B  Gain in each six-year block of the held-out period (441 forecasts)", loc="left", fontsize=10.2)
+    save(fig, "fig2-forecast"); plt.close(fig)
+
+
+def robustness_figure(plt, rows):
+    fig = plt.figure(figsize=(7.2, 5.9), layout="constrained")
+    grid = fig.add_gridspec(1, 3, width_ratios=[2.35, 2.9, 1.3])
+    names, ax, values = fig.add_subplot(grid[0]), fig.add_subplot(grid[1], sharey=None), fig.add_subplot(grid[2])
+    heads = dict(a="(a) Preregistered secondaries", b="(b) Measurement checks", c="(c) Drift-recalibrated diagnostics (exploratory)")
+    style = dict(a=(BLUE, "o"), b=(ORANGE, "s"), c=(GREEN, "^"))
+    position, y = [], 0.
+    last = None
+    reference = next(r for r in rows if r["group"] == "reference")
+    for row in rows:
+        if row["group"] == "reference":
+            continue
+        if row["group"] != last:
+            y += .5 if last else 0
+            names.text(0, y, heads[row["group"]], ha="left", va="center", fontsize=8.6, fontweight="bold")
+            y += .85
+            last = row["group"]
+        position.append((y, row))
+        y += 1.0
+    for y, row in position:
+        color, marker = style[row["group"]]
+        names.text(0, y-.17, f"{row['row']}", ha="left", va="center", fontsize=8.3)
+        baseline = row["baseline"].replace(" drift-recalibrated", " (recal.)")
+        names.text(0, y+.2, f"{row['clock']}; {baseline}; n={row['n']}", ha="left", va="center", fontsize=7.1, color="#555B61")
+        ax.plot([row["lower"], row["upper"]], [y, y], color=color, lw=2.4, solid_capstyle="butt")
+        ax.plot(row["estimate"], y, marker, color=color, ms=6.5)
+        values.text(0, y, f"{row['estimate']:.4f}  [{row['lower']:.4f}, {row['upper']:.4f}]".replace("-", "−"), ha="left", va="center", fontsize=7.6)
+    top, bottom = -.6, y-.3+.8
+    for a in (names, ax, values):
+        a.set_ylim(bottom, top)
+    ax.axvline(0, color=BLACK, lw=.9)
+    ax.axvline(reference["estimate"], color=BLUE, ls="--", lw=1.2)
+    ax.text(reference["estimate"]+.0007, top+.1, f"primary, {reference['estimate']:.4f}", color=BLUE, fontsize=8, va="top", ha="left")
+    ax.set_xlim(-.016, .042)
+    ax.set_yticks([])
+    ax.spines["left"].set_visible(False)
+    ax.set_xlabel("Gain from adding duration (nats per forecast)")
+    names.set_xlim(0, 1); values.set_xlim(0, 1)
+    names.set_title("Row, clock; baseline; scored n", loc="left", fontsize=8.3, fontweight="normal")
+    values.set_title("Estimate [90% interval]", loc="left", fontsize=8.3, fontweight="normal")
+    for a in (names, values):
+        a.axis("off")
+    save(fig, "fig3-robustness"); plt.close(fig)
+
+
+def transfer_figure(plt, rows):
+    candidates = sorted((r for r in rows if r["row_type"] == "candidate"), key=lambda r: (-r["supported_development"], r["star"]))
+    reference = next(r for r in rows if r["row_type"] == "reference")
+    fig, (a, b) = plt.subplots(1, 2, figsize=(7.2, 5.2), sharey=True, gridspec_kw={"width_ratios": [.9, 1.15]}, layout="constrained")
+    labels, held = [], lambda r: r["stream"].startswith("derived")
+    ypos = list(range(len(candidates)))
+    ref_y = len(candidates)+.6
+    def color(r):
+        return ORANGE if not r["morphology_passed"] else BLUE
+    for y, r in zip(ypos, candidates):
+        labels.append(r["star"] + (" *" if not r["morphology_passed"] else "") + (" †" if held(r) else ""))
+        a.barh(y, r["supported_development"], height=.55, color=color(r), alpha=.85, hatch="///" if held(r) else None,
+               edgecolor="white" if held(r) else None)
+        a.text(r["supported_development"]+2, y, str(r["supported_development"]), va="center", fontsize=8.4)
+        b.plot(r["ratio"], y, "o", color=color(r), ms=6.5, markerfacecolor="white" if held(r) else color(r), markeredgewidth=1.5)
+        b.text(r["ratio"]+.03, y, f"{r['supported_1980_1989']}/{r['confirmed_peaks_1980_1989']}", va="center", fontsize=8.2)
+    a.barh(ref_y, 128, height=.55, color="#BEC3C7")
+    a.text(64, ref_y, f"{reference['supported_development']} (pre-1990; axis truncated) →", ha="center", va="center", fontsize=8.2)
+    b.plot(reference["ratio"], ref_y, "D", color=BLACK, ms=6.5)
+    b.text(reference["ratio"]+.03, ref_y, f"{reference['supported_1980_1989']}/{reference['confirmed_peaks_1980_1989']}", va="center", fontsize=8.2)
+    pooled = sum(r["supported_1980_1989"] for r in candidates)/sum(r["confirmed_peaks_1980_1989"] for r in candidates)
+    b.axvline(pooled, color=GREY, ls=":", lw=1.2)
+    b.text(pooled+.015, len(candidates)-1.15, f"all ten: {sum(r['supported_1980_1989'] for r in candidates)}/{sum(r['confirmed_peaks_1980_1989'] for r in candidates)}",
+           color="#555B61", fontsize=8, va="bottom", ha="left", rotation=0)
+    a.axvline(40, color=BLACK, ls="--", lw=1)
+    a.text(41.5, -.62, "gate: 40", fontsize=8, va="center")
+    labels.append("SS Cyg (reference)")
+    a.set_yticks(ypos+[ref_y], labels)
+    a.set_ylim(ref_y+.6, -1.0)
+    a.set_xlim(0, 132)
+    b.set_xlim(0, 1.12)
+    b.set_xticks((0, .25, .5, .75, 1.0))
+    a.set_xlabel("Supported development forecasts\n(whole development period)", fontsize=9)
+    b.set_xlabel("Supported issuances /\nconfirmed episode peaks (1980–1989)", fontsize=9)
+    a.set_title("A  Forecast count per star", loc="left", fontsize=10.4)
+    b.set_title("B  Operational yield, 1980–1989", loc="left", fontsize=10.4)
+    from matplotlib.patches import Patch
+    a.legend(handles=[Patch(color=ORANGE, alpha=.85, label="* SS Aur: passes the count,\nfails the long-run gate"),
+                      Patch(facecolor=BLUE, hatch="///", edgecolor="white", label="† derived fixed-night stream")],
+             loc="lower right", bbox_to_anchor=(1.0, .1), fontsize=7.8, frameon=False)
+    save(fig, "fig4-transfer"); plt.close(fig)
+
+
 def plotting():
     SCRATCH.mkdir(parents=True,exist_ok=True);FIGURES.mkdir(parents=True,exist_ok=True);DATA.mkdir(parents=True,exist_ok=True)
     os.environ.setdefault("MPLCONFIGDIR",str(SCRATCH/"matplotlib"))
@@ -631,59 +933,28 @@ def plotting():
     return np, plt, scipy, matplotlib, font_manager
 
 
-def generate_aggregate_assets(plt):
+def write_aggregate_data():
     for name, rows in aggregate_tables().items():
         with (DATA/name).open("w", newline="") as handle:
             handle.write(csv_text(rows))
     write_claim_values(load(PRIMARY), load(SUMMARY), load(REVIEW))
-    r2b_figure(plt, r2b_rows())
-    g3a_figure(plt, g3a_rows()[0])
 
 
-def manifest_for(np, scipy, matplotlib, font_manager, private_inputs, *, preserved_asset_lineage=None):
+def manifest_for(np, scipy, matplotlib, font_manager, private_inputs):
     public_inputs={relative(p):dict(sha256=sha(p)) for p in (PRIMARY,SUMMARY,REVIEW,PARAMETERS,NATIVE_CODE,ROOT/"uv.lock")}
-    aggregate_inputs={relative(p):dict(sha256=sha(p)) for p in (R2B,G3A,G3A_DETAILS,PRECISION)}
+    aggregate_inputs={relative(p):dict(sha256=sha(p)) for p in (R2B,G3A,G3A_DETAILS,PRECISION,R1_SCORES,R2B_CHECK,R2D,G3A_CHECK,C70,R1_EXAMPLE)}
     font=Path(font_manager.findfont("DejaVu Sans"))
     return dict(schema_version=2,generator=relative(__file__),generator_sha256=sha(__file__),
-                scope="seven static scientific figures; aggregate research updates preserve old figure semantics",
+                scope="eight static scientific figures: four main-text, three appendix and one brief figure",
                 source_freeze_sha1="5e39aeb772c427ef29671c1a9c80b22c05519b58",source_execution_commit_sha1="d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
                 protocol_doi="10.5281/zenodo.24053338",
                 post_result_status="frozen comparison and illustration retained; R2b exploratory working-score contrasts; G3a gain-free development feasibility; precision rows are point-Gaussian simulations",
                 public_inputs=public_inputs,aggregate_inputs=aggregate_inputs,private_inputs=private_inputs,
-                preserved_asset_lineage=preserved_asset_lineage or {},
-                regenerated_assets=[relative(FIGURES/(stem+"."+ext)) for stem in BASENAMES for ext in ("png","pdf")
-                                    if relative(FIGURES/(stem+"."+ext)) not in (preserved_asset_lineage or {})],
                 runtime=dict(python=sys.version.split()[0],numpy=np.__version__,scipy=scipy.__version__,matplotlib=matplotlib.__version__),
                 font=dict(family="DejaVu Sans",file=font.name,sha256=sha(font),pdf_embedding="TrueType; pdf.fonttype42"),
                 output_policy=dict(raw_photometry_table=False,observer_identifiers=False,new_event_catalog=False,per_issuance_scores=False,
-                                   fig1_public_data="one illustrative derived bracket set and model CDF grid; display points stay under ignored outputs"),
+                                   fig1_public_data="nightly light-curve aggregates for a fixed 1960-1961 window; fig2 example from one derived bracket set and model CDF grid; no observation rows, observer identifiers or event times"),
                 figure_data={relative(DATA/name):dict(sha256=sha(DATA/name),bytes=(DATA/name).stat().st_size) for name in DATA_NAMES},assets=asset_records())
-
-
-def generate_aggregates():
-    old = load(FIGURES/"manifest.json")
-    preserved = old.get("preserved_asset_lineage", {})
-    manifest_hash = sha(FIGURES/"manifest.json")
-    for stem in ORIGINAL_BASENAMES:
-        for extension in ("png", "pdf"):
-            path = FIGURES/(stem+"."+extension)
-            name = relative(path)
-            if sha(path) != old["assets"][name]["sha256"]:
-                raise ValueError("refusing to preserve a changed original figure: " + name)
-            if name not in preserved:
-                preserved[name] = dict(generator_sha256=old["generator_sha256"], manifest_sha256=manifest_hash,
-                                       commit="93c48cf", status="preserved bytes; not regenerated by current source")
-    for name in ORIGINAL_DATA_NAMES:
-        path = DATA/name
-        if sha(path) != old["figure_data"][relative(path)]["sha256"]:
-            raise ValueError("refusing to preserve changed original figure data: " + name)
-    np, plt, scipy, matplotlib, font_manager = plotting()
-    generate_aggregate_assets(plt)
-    manifest = manifest_for(np, scipy, matplotlib, font_manager, old["private_inputs"], preserved_asset_lineage=preserved)
-    dump(FIGURES/"manifest.json", manifest)
-    check()
-    print(json.dumps(dict(status="aggregate figures generated", new_figures=2,
-                          preserved_figures=len(ORIGINAL_BASENAMES), raw_inputs_read=False)))
 
 
 def generate():
@@ -693,7 +964,8 @@ def generate():
     if sha(PARAMETERS) != "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3":
         raise ValueError("the frozen model parameters changed")
     private_inputs={}
-    f1,points=illustration(np,log_ndtr,private_inputs)
+    f1=illustration(np,log_ndtr,private_inputs)
+    nights=lightcurve_nights(private_inputs)
     blocks=[]
     for b in review["interval_recomputation"]["blocks"]:
         k=b["block"]
@@ -728,8 +1000,14 @@ def generate():
             clock_ratio="untruncated working lognormal location-scale ratio, not empirical mean gap or conditional remaining-wait ratio",claim_ids=["C21","C23"])
     for name,data in zip(ORIGINAL_DATA_NAMES,(f1,f2,f3,f4)):
         dump(DATA/name,data)
-    figure_one(plt,f1,points);figure_two(plt,f2);figure_three(plt,f3);figure_four(plt,f4);brief_figure(plt,f2)
-    generate_aggregate_assets(plt)
+    dump(DATA/"fig1-timelines.json",TIMELINES)
+    with (DATA/"fig1-lightcurve-nights.csv").open("w",newline="") as handle:
+        handle.write(csv_text(nights))
+    write_aggregate_data()
+    tables=aggregate_tables()
+    context_figure(plt,nights);forecast_figure(plt,f1,f2);robustness_figure(plt,tables["fig3-forest.csv"])
+    transfer_figure(plt,tables["fig4-transfer.csv"])
+    figure_three(plt,f3);figure_four(plt,f4);brief_figure(plt,f2);g3a_figure(plt,g3a_rows()[0])
     manifest = manifest_for(np, scipy, matplotlib, font_manager, private_inputs)
     dump(FIGURES/"manifest.json",manifest)
     check()
@@ -741,10 +1019,9 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     modes=parser.add_mutually_exclusive_group(required=True)
     modes.add_argument("--generate",action="store_true")
-    modes.add_argument("--generate-aggregates",action="store_true")
     modes.add_argument("--check",action="store_true")
     args=parser.parse_args()
-    generate() if args.generate else generate_aggregates() if args.generate_aggregates else check()
+    generate() if args.generate else check()
 
 
 if __name__ == "__main__":

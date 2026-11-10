@@ -2,7 +2,7 @@
 document: agent-facing paper
 study: SS Cyg working-score result and measurement/transfer reassessment
 status: integrated second drafts; independent review and Barry review precede release
-human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
+human_paper: manuscript/text/main.md (article with appendices; + supplement.md technical record, brief.md)
 claims_ledger: manuscript/claims.csv
 interpretation: manuscript/estimands.md
 governing_docs: [AGENTS.md, coordination/decisions.md, manuscript/estimands.md]
@@ -167,10 +167,9 @@ Use fresh scratch destinations; never overwrite evidence. Raw-data checks need t
 payloads: `check_g3a_attrition.py` and `check_ss_aur_flag.py` read the candidates' pre-1990 pages in
 `data/raw/g3a_20261110_d827313/` and the pre-1990 SS Cyg extract in `outputs/c70_safe_input/`.
 Never point any script at SS Cyg records from 2018 onward or candidate records from 1990 onward,
-and never edit a raw-input path to a newer window; opening those needs Barry's explicit decision. The public aggregate figure/build check needs none of those observations. To regenerate
-only the new aggregate figures, use `manuscript/figures.py --generate-aggregates`; the manifest
-retains the byte-identical original figure assets and their lineage. Full `--generate` also uses
-the previously authorized raw illustration input and is unnecessary for ordinary text revision.
+and never edit a raw-input path to a newer window; opening those needs Barry's explicit decision. The public aggregate figure/build check needs none of those observations. Figure
+regeneration (`make -C manuscript figures`) reads the retained raw SS Cyg inputs for Figs. 1 and 2
+through hash-checked paths and is unnecessary for ordinary text revision.
 
 Before committing, assert that the original 26 forecasting files and parameter bytes remain
 unchanged, the saved-score audit still reconstructs C01, no protected material was accessed, and

@@ -89,8 +89,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    blocks = {'main.md': {'r2b': r2_table()}, 'supplement.md': {
-        'r2b': r2_table(True), 'precision': precision_table(), 'qualification': qualification_table()}}
+    blocks = {'main.md': {'r2b': r2_table(True), 'precision': precision_table(),
+                          'qualification': qualification_table()}}
     for name, tables in blocks.items():
         path = HERE / 'text' / name
         text = path.read_text()
