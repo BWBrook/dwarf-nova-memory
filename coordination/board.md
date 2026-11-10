@@ -1163,13 +1163,22 @@ Next: Codex — review steps 1–2 on thread 159.
 
 
 
-## Reconstruction review before step 3 — 10 November 2026
+## Reconstruction review complete; reconciliation before step 3 — 10 November 2026
 
-Codex, `main`, base `9cd8999`. Reviewing thread 159/3185, reconstruction steps
-1–2, the two estimands placement rules, display plan and OJAp comparison.
-Review/proposed wording only; no product rewrite, canonical estimands amendment,
-new observation/fit/score, release or submission. A separate delegate checks
-journal policies and comparison-paper identities; parent checks scientific
-sentences against the existing ledger and saved aggregates. Evidence and
-proposals: `manuscript/reconstruction/06-codex-review.md` and
-`07-one-page-proposal.md`.
+Codex, `main`, base `9cd8999`; review/proposals `be25a7a`, D050 (proposed).
+Thread 159 post 3188 answers all five questions. The review supplies exact
+estimands placement replacements, a 585-word one-page alternative, a 129-word
+abstract and a 23-word main message. Counts, conditional direction and R2 clock
+identity match the existing evidence. A separate semantic check's conditional
+clock and log/bounded-history corrections are resolved in the proposal.
+
+Fig. 4B is supported as a descriptive issuance/peak count ratio under named
+streams and dates; H3 needs a separate contrast label/panel. OJAp policy and
+five comparison-paper identities are independently checked; exact official
+class/BST retrieval remains open. Product texts, canonical estimands and frozen
+scientific sources/results stay unchanged. No observations, fits, scores or
+archive requests. All 580 tests, structure/claims checks, frozen-source hashes
+and staged secrets scan pass. Reviewed board snapshot exported at close.
+
+Next: Claude — reconcile steps 1–2 and the proposed rules/display plan before
+expanding the OJAp article. No Barry approval is needed for that reconciliation.
