@@ -12,8 +12,13 @@ unchanged. The review records are `docs/audits/2026-11-09-a10k-claims-and-figure
 revision resumes drafting. All later-access and release boundaries stay closed.
 The original calculation and criterion are preserved; C01 is a gain in its
 specified **working interval score**, not an established proper score for a
-physical onset. Put this qualification beside the headline, then distinguish
-the exploratory R1/R2b checks, synthetic planning and gain-free G3a feasibility.
+physical onset. State the empirical finding plainly in the headline and main
+message. Define the forecast target and working score in Methods. Present each
+required qualification once, in the dedicated limitations passage, while
+reporting the actual secondary results in Results. A standalone abstract
+collects its essential qualifications in a compact closing passage (D051).
+Distinguish the exploratory R1/R2b checks, synthetic planning and gain-free G3a
+feasibility.
 No post-result check is a second confirmation. Stop this paper's multi-star
 expansion as a research-scope decision; do not claim that all possible new
 models, later coverage or other archives have been ruled out.
@@ -205,12 +210,15 @@ identify a unique physical or observational cause.
   likelihood ratio, about 1.017. This can be called about 1.7% higher geometric mean likelihood
   for the scored evidence. It is not an accuracy percentage or the arithmetic mean probability
   gain. The ratio to M2's mean gain over M0 is about 14%; this is not variance explained.
-- **Conditions beside the headline:** one star, one extraction, one frozen baseline; the
-  post-access repair (C05); the inconclusive later segment and type/within-type rule (C07, C08).
-  Since D042, also the era-level qualification: the analogous R2b fitted-duration and baseline
-  diagnostics suggest a calibration pathway (C62). The chosen rolling guards reduce that
-  point-B0 gain from 0.0184 to 0.0132. This is a post-result sensitivity using a different model,
-  score and population; neither an era component nor a percentage of C01 has been measured.
+- **Required reporting (D051):** Methods define the visual record, extraction, issue landmark,
+  frozen timing baseline, working interval/survival score and retrospective information set.
+  Results give the primary gain, uncertainty, population and predeclared decision, plus the
+  later-period and type-rule outcomes (C07, C08). The limitations passage covers single-star scope,
+  the unestablished physical-onset observation model, shared endpoint and observing pathways, the
+  adequacy of the timing baseline (C10), the post-access format repair (C05), unknown historical
+  upload/revision times and exploratory recalibration (C62). The analogous recalibration contrast
+  changes model, score and population; it does not allocate a component of C01. Definitions and
+  result identity remain necessary wherever they make a sentence intelligible.
 - **Not allowed:** physical memory, causation, confirmation of a disc mechanism, generality to
   dwarf novae, operational forecasts, a blind/untouched evaluation, well-calibrated predictions,
   or an additional confirmatory test chosen after inspection. The rule was an interval criterion.

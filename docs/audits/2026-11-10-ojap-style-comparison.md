@@ -7,6 +7,11 @@ recent OJAp papers. Claude (Opus 5.5) verified the policy texts at source and co
 OJAp journal reference through the arXiv API. This note is the working reference for the OJAp
 revision. Word counts are approximate, from `pdftotext`.
 
+**Corrected after Codex's independent check** (`manuscript/reconstruction/06-codex-review.md` §5,
+10 November 2026): the route, AI-validation, licence, self-plagiarism and correspondence points
+below. Codex verified the five papers' identities and journal references; it did not reproduce the
+word counts or voice statistics, or verify the official class and BST files.
+
 **Verdict:** a reasonable fit.
 - OJAp's scope lists cataclysmic variables under astro-ph.SR.
 - It publishes null and inconclusive results.
@@ -19,9 +24,12 @@ The draft departs from house style in layout and framing, but no stated policy b
 **Stated policy** (author guidance on <https://astro.theoj.org/>; ethics page
 <https://astro.theoj.org/pages/390-ethics>):
 
-- **Route.** Post to arXiv first (CC BY), then submit through Scholastica
-  (<https://app.scholasticahq.com/submissions/oja/new>). The accepted version must be on arXiv.
-  Peer-reviewed, free to authors, no copy-editing.
+- **Route.** Posting to arXiv first is preferred, but direct submissions can be reviewed. Submit
+  through Scholastica (<https://app.scholasticahq.com/submissions/oja/new>); a named author must
+  submit. The published version is the arXiv copy. Peer-reviewed, free to authors, no copy-editing.
+- **Licence.** OJAp publishes under CC BY. The repository default for text and figures is CC BY-SA,
+  so the emitted article's licence must be recorded separately before release; arXiv requires
+  authority to grant the licence chosen.
 - **Template.** A LaTeX class (`openjournal`) is linked from the journal site. It is preferred for
   the final version, not required at first submission. Any published OJAp paper's arXiv source can
   serve as a template.
@@ -29,19 +37,24 @@ The draft departs from house style in layout and framing, but no stated policy b
   - There is no blanket ban.
   - Use must be declared in the acknowledgments.
   - Where AI is used for calculation, analysis or data visualisation, the paper must give an account
-    of how those methods were tested and validated.
+    of how those methods were tested and validated. The guidance does not require that account to
+    sit in the acknowledgments; it can go in the methods.
   - Direct evidence of AI use, such as hallucinated references or leftover prompts, leads to
     rejection.
 - **Authorship.** Authors must have contributed substantially.
 - **arXiv's posted policy (2023)** says generative AI tools should not be listed as authors. OJAp
   publishes the arXiv copy, so this binds us. Verified by Claude.
-- **Self-plagiarism.** The ethics page treats reuse of one's own published text as a breach. Check
-  any text shared with the Zenodo protocol deposit.
+- **Reuse and attribution.** The ethics statement calls for reused material to be attributed.
+  Overlap with our own Zenodo protocol is not by itself a breach; cite the deposit wherever text or
+  design is shared.
+- **Correspondence.** The ethics statement discourages public dissemination of referee and editor
+  correspondence. Keep journal correspondence out of the routine board snapshots.
 - **Not stated:** length or abstract limits, keywords, the handling of supplements versus
   appendices, data-availability format, and reference style. The site links data-publication best
   practices (Chen et al. 2022).
 
-**Inferred from practice:**
+**Inferred from practice** (editorial choices, not verified rules; this includes the figure
+budget, a single PDF and the abstract length):
 - two-column `openjournal` layout with an arXiv-style version header;
 - no line numbers;
 - figures inline;

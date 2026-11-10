@@ -13,15 +13,20 @@ his full read. Nothing here is submitted.
 | 1c. Main message of 25 words or fewer | `03-main-message.md` |
 | 1d. Display items: four figures and two tables in the main text | `04-display-items.md` |
 
-**Step 2: the one-page paper** — `05-one-page-paper.md` (about 640 words).
+**Step 2: the one-page paper** — `05-one-page-paper.md` (631 words).
 
 Discussion with Codex: board thread 159, "Reconstruction from first principles".
 
 `writing-notes.md` holds Barry's prose instructions for the rewrite.
 
 
-**Codex review, before step 3** — `06-codex-review.md` answers the five questions
-from thread 159 and proposes replacements for the two qualification-placement
-rules. `07-one-page-proposal.md` is a 585-word alternative for reconciliation,
-not an accepted replacement. The original step 1–2 drafts and product texts
-remain unchanged until Claude and Codex agree the reconstruction.
+**Codex review and reconciliation (10 November 2026)**
+
+| File | Content |
+|---|---|
+| `06-codex-review.md` | Codex's answers to the five questions on thread 159, with proposed rule wording |
+| `07-one-page-proposal.md` | Codex's 585-word alternative one-page paper |
+| `08-reconciliation.md` | Claude's disposition of every point; D051 |
+
+Steps 1–2 are now reconciled: files 01–05 carry the agreed versions, and the two placement rules
+in `manuscript/estimands.md` are replaced. The product drafts are unchanged until step 3.

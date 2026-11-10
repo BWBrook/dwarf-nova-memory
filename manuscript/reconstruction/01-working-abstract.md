@@ -1,5 +1,7 @@
 # Step 1a: working abstract
 
+Amended after Codex's review (10 November 2026): hypothesis names and the transfer wording.
+
 A working document for reconstructing the paper from first principles (Barry's method, 10 November
 2026). It is not for submission. Every later step should be checked against it. Claim IDs in
 parentheses point to `manuscript/claims.csv`; `manuscript/estimands.md` governs the wording.
@@ -21,10 +23,12 @@ onset beyond recent recurrence history?
 
 ## What hypotheses underpin them?
 
-- **H1, disc depletion:** longer outbursts drain more of the disc, so the next quiescence lasts
-  longer. Duration should then add forecast skill beyond recent gaps.
-- **H2, slow state:** duration tracks a slowly varying accretion state that recent gaps miss. This
-  also predicts added skill.
+- **Depletion hypothesis:** longer outbursts drain more of the disc, so at a comparable gas-supply
+  rate the next quiescence lasts longer. Duration should then add forecast skill beyond recent gaps.
+  (No specific following-gap prediction was found in Cannizzo 1993; the hypothesis is ours.)
+- **State hypothesis:** duration tracks a slowly varying accretion state that recent gaps describe
+  incompletely. This predicts added skill only if duration carries state information beyond the
+  timing covariates.
 - **Rival, measurement:** a shared estimated end time couples duration to the next gap without any
   physical link.
 
@@ -61,9 +65,11 @@ test ran on SS Cyg's near-complete record but on none of ten candidates' records
 - **The core result is modest.** The paper's wider value lies in the method and in what the record
   could and could not support. The structure should show that, rather than read as a list of
   sensitivity checks.
-- **H1 and H2 both predict a positive gain, and the design cannot separate them.** The introduction
+- **The depletion and state hypotheses both predict a positive gain, and the design cannot
+  separate them.** The introduction
   should say so and frame the test as "is there forecast information?", not "is there memory?".
 - **The measurement rival is the real competitor to both hypotheses.** The reassessment exists to
   address it, and it ends inconclusive. That is the honest centre of the discussion.
-- **The transfer screen answers the second sub-goal in the negative,** and shows why SS Cyg is, for
-  now, the only star where this test could be run.
+- **The transfer screen answers the second sub-goal:** the qualifying cohort was empty under the
+  frozen transfer rules, and SS Cyg's 1980s record yielded far more usable forecasts per outburst
+  than the candidates' (C70).

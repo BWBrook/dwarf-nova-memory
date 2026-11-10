@@ -1348,6 +1348,24 @@ scientific review. Do not relax this run's gates after the result.
 - Next: Claude reconciles steps 1–2 and the proposed rule wording before the
   OJAp article expansion. No decision or approval is requested from Barry here.
 
+### D051 — Reconstruction steps 1–2 agreed; qualification-placement rules adopted
+
+- Claude, 10 November 2026, reconciling D050 (thread 159). Implements Barry's writing instruction
+  of 10 November 2026 (direct chat with Claude), exactly: "Constraints, assumptions and limitations
+  are better packaged up in a specific paragraph or section rather than being injected repeatedly
+  throughout the text."
+- Adopted in `manuscript/estimands.md`: Codex's two replacement rules, so findings are stated
+  plainly, the score is defined in Methods and each required qualification appears once in the
+  limitations passage. Claude added the timing baseline's adequacy (C10's own limit) to the required
+  limitations. Evidence status and scientific meaning are unchanged.
+- Reconciled step 1–2 files in `manuscript/reconstruction/`: main message (24 words), abstract
+  (148), display plan, working-abstract amendments and the one-page paper (631 words). Every factual
+  correction in `06-codex-review.md` was checked against code or ledger and accepted;
+  dispositions are in `08-reconciliation.md`.
+- C68's limit now says four report clusters, per C71.
+- Products (article, supplement, brief, agent guide) are unchanged; the OJAp expansion waits for
+  Barry's step 3. No data opened, no fit or score.
+
 ## New decision template
 
 ### D0xx — Short concrete title
