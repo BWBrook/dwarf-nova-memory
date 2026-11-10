@@ -1,0 +1,11 @@
+star,validated_visual_rows,confirmed_events,eligible_windows,eligible_fraction,feature_supported,outcome_supported,supported_1980_1989,base_passed,morphology_passed,eclipse_required,eclipse_passed,qualified,failure_reasons
+SS Aur,49692,431,343,0.7958236658932715,127,110,35,True,False,False,False,False,operational_long_bright_run
+RU Peg,29767,170,108,0.6352941176470588,39,23,13,True,True,False,False,False,fewer_than_40_supported;window_fraction_below_70_percent
+AR And,7444,172,54,0.313953488372093,8,7,7,False,True,False,False,False,fewer_than_40_supported;window_fraction_below_70_percent;base_fit_or_information_failure
+X Leo,18771,498,219,0.4397590361445783,50,35,22,True,True,False,False,False,fewer_than_40_supported;window_fraction_below_70_percent
+TW Vir,7062,147,17,0.11564625850340136,0,0,0,False,True,False,False,False,fewer_than_40_supported;window_fraction_below_70_percent;base_fit_or_information_failure
+UU Aql,12387,120,97,0.8083333333333333,17,15,13,True,True,False,False,False,fewer_than_40_supported
+CH UMa,9594,27,19,0.7037037037037037,0,0,0,False,True,False,False,False,fewer_than_40_supported;base_fit_or_information_failure
+DX And,6966,24,17,0.7083333333333334,0,0,0,False,True,False,False,False,fewer_than_40_supported;base_fit_or_information_failure
+U Gem,38631,170,154,0.9058823529411765,28,27,12,True,True,True,False,False,fewer_than_40_supported;eclipse_guard_not_passed
+IP Peg,3224,18,12,0.6666666666666666,2,0,0,False,True,True,False,False,fewer_than_40_supported;window_fraction_below_70_percent;base_fit_or_information_failure;eclipse_guard_not_passed

@@ -1,0 +1,23 @@
+{
+  "attempted": 16000,
+  "elapsed_seconds": 31.072686910629272,
+  "failures": 0,
+  "freeze_commit": "d827313615ca1994070b668bffa605e6c2faee14",
+  "namespace": "g3a-six-star-v1-supplement",
+  "numpy": "2.5.4",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.4 (main, Apr 14 2026, 14:46:33) [Clang 22.1.3 ]",
+  "scipy": "1.18.1",
+  "seed_rule": "first eight SHA256 bytes big endian of namespace|case|replicate",
+  "source_sha256": {
+    "data/provenance/g3a_preparation/six-star-design.json": "df9e93238e2eb20ea0c5f17520a7189bf1dce3411abab0e7371cb31477d90aa2",
+    "scripts/g3a_six_star_precision.py": "378e3cfe9c2f9dda48d1b5093b64125a8bf52db86f67e85df02b14691736c3f8",
+    "scripts/r2d_precision.py": "aad052094357eef0b338d25610e0a3787398d7eadecb2e320e56b130d32dcd43",
+    "src/dnmem/r2d_simulation.py": "ff170250d0b02b7b6b0478ec8e57e4a03a6c0267968a300a84c5f0bf8cbe8ced",
+    "tests/test_r2d_precision.py": "8281b2491dd4824523fbafe47addbbd03181f3edf9385489cbec73b90b2bb3e0",
+    "tests/test_r2d_simulation.py": "056128948fa5975a5473f47ef91ad4f55a1bdc0710b82415cfcdc38bfe9756b9"
+  },
+  "started_unix": 1794277335.9412742,
+  "summary_sha256": "e7428c2eddb153f75f80ec21296bff6f4d4f1f498a3cc863b806bbebb1b45899",
+  "workers": 4
+}

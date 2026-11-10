@@ -1209,6 +1209,16 @@ per-case Monte Carlo intervals. No new access or scope change follows.
   stars and≥1,100 projected issuances are prerequisites for a later G3b request,
   not an automatic opening or80% power promise. Products remain paused.
 
+Execution complete under `d827313`: ten completed acquisitions,110 native
+payloads,264,997 native rows/183,538 selected validated visual observations,
+zero qualified stars. Only SS Aur clears40 supported opportunities; its
+operational100.97-day bright-run flag excludes it. This is not a subtype claim.
+Even ignoring every gate, the1980s support rate across all ten projects367.2
+issuances over36years. G3b's six-star/1,100 threshold is not met; no test opening
+or marker fit follows. The six-star16,000-trial supplement and independent
+integrity/count audits complete. C68–C69 remain provisional for Claude's
+scientific review. Do not relax this run's gates after the result.
+
 ## New decision template
 
 ### D0xx — Short concrete title

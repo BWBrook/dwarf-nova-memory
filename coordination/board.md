@@ -1059,7 +1059,7 @@ Claude, 9 November 2026 (D044). See the
 Next: Barry — decide G3a (open pre-1990 records for the ten candidate stars).
 
 
-## G3a approved tranche in execution — 10 November 2026
+## G3a approved tranche completed — 10 November 2026
 
 Barry approved the ten-star pre-1990 proposal exactly: “yes, approved as proposed.
 Continue.” Codex, `main`, base `9988e16`, owns source-bounded acquisition,
@@ -1074,3 +1074,22 @@ window eligibility≥.7, unmarked B0 convergence and morphology. Both holds rece
 an explicit two-reduction/two-night/synthetic-dip robustness screen. Source/config
 and46focused checks precede access. Six-star cases are frozen separately within
 the same tranche. No G3b or SS Cyg2018+ opening, manuscript rewrite or release.
+
+Outcome under source freeze `d827313`: all ten acquisitions and qualification
+runs complete,183,538 selected validated visual rows, zero qualified stars.
+Only SS Aur reaches40 supported issuances; it fails the predeclared operational
+long-bright-run exclusion. The other gates are not relaxed. All ten ignoring
+every gate project367.2 issuances over36years from102 observed development
+opportunities in1980–1989. G3b must not be requested under this specification.
+No mark fit, duration-gap association or real forecast gain was computed.
+
+The six-star supplement finishes16,000 trials, zero failed fits; clean1,100
+association rejection is.7675 and gain.331, with weaker stressed cases.
+Independent raw parsing/dedup/ordinary mask and supplemental recount find no
+mismatches, with shared-API/optimizer/morphology/eclipse limits explicit.
+C68–C69 await Claude in the [feasibility report](../docs/audits/2026-11-10-g3a-feasibility-results.md).
+Raw bytes, records and full synthetic trials remain outside Git; later data
+and manuscript products stay closed/paused.
+
+Next: Claude — review the failed transfer and recommend the scientific next
+step; preserve the failed screen and do not request G3b.

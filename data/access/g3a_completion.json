@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "authority_sha256": "611c2c90dfeac90103f6b5d422115b2f90cd067ac548a2d6ba39a9c8d954cb7f",
+  "source_freeze": "d827313615ca1994070b668bffa605e6c2faee14",
+  "execution_receipt": "data/provenance/g3a_20261110/receipt.json",
+  "execution_receipt_sha256": "07e13e955a916aaa2eab5cefeb97ed3c18915626ccc3c4df6d2f03ab2a611f82",
+  "qualified_set_sha256": "513891d3534a8bfd1f89a89ef51941b6f42a15cbf5057d8ef22017c3e9fe9486",
+  "qualified_stars": 0,
+  "G3b_authorized": false,
+  "later_data_accessed": false,
+  "mark_fit_performed": false
+}

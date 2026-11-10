@@ -176,10 +176,19 @@ C65–C66 by a hash-checked recount of all 70,000 trials. Two findings:
   in these trials; a counterexample shows this need not hold generally. Both
   tests still need validity under their respective full nulls.
 
-Star count, not forecast count, decides feasibility. The
+Both qualifying star count and supported forecast count determine feasibility. The
 [G3a v1](docs/protocols/g3a-early-record-feasibility-v1.md) implements Barry's
 approval to open pre-1990 records of ten candidate stars, gain-free, under
 frozen qualification and go/no-go rules. Later test records stay closed.
+
+The [completed G3a screen](docs/audits/2026-11-10-g3a-feasibility-results.md)
+finds **zero qualified stars out of ten** under the frozen rules. The archive
+requests and independent count/provenance audit all succeeded. Most stars lack
+40 supported development issuances or70% eligible windows; SS Aur clears those
+gates but triggers an operational long-bright-run exclusion. Even all ten
+ignoring qualification project only367 supported issuances over36years from
+their1980s rate. No G3b opening or duration-effect fit follows. This concerns
+the frozen transfer pipeline, not all possible analyses of the archive.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)

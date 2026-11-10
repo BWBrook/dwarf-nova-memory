@@ -133,6 +133,17 @@ G3a exactly: “yes, approved as proposed. Continue.” D045 and
 `docs/protocols/g3a-early-record-feasibility-v1.md` authorize the ten named stars'
 pre-1990 records for gain-free feasibility under a source freeze. No 1990+
 record/count/coverage request, G3b opening or SS Cyg2018+ opening is authorized.
+G3a is now complete under source freeze `d827313`: all ten acquisitions
+completed, but zero stars pass every frozen gate. Only SS Aur has at least40
+supported marked development issuances; its operational morphology gate fails.
+Do not diagnose subtype from that flag. Even all ten ignoring qualification
+project only367.2 supported issuances over36years from their1980s rate.
+No marker fit/association/gain was computed, and G3b must not be requested under
+this specification. The six-star supplement completes16,000 trials without
+failures but provides no robust precision guarantee. See
+`docs/audits/2026-11-10-g3a-feasibility-results.md`; C68–C69 await Claude.
+The now-open pre-1990 records remain development material; later records stay
+closed and any new specification must preserve this failed transfer result.
 Frozen X4 bytes stay unchanged. Manuscript rewriting
 waits for R2; later-star test access and SS Cyg 2018+ remain unauthorized.
 
