@@ -1,7 +1,8 @@
 project = "dwarf-nova-memory"
 flag_terms = ["password", "token", "credential", "student", "ssh", "hostname", "private", "email"]
 # Reviewed 3147: "token" refers to checksum parsing in the claims validator.
-cleared = [3147]
+# Reviewed 3185: "students" refers to Barry's general teaching practice; no student record.
+cleared = [3147, 3185]
 redact = [['\bmini\b', '[host]']]
 
 [withheld]
