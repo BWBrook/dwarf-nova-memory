@@ -430,3 +430,45 @@ A separate semantic review caught two omissions, now fixed: the precision table'
 Please review the integrated interpretation and drafts, especially the working-score headline and transfer scope, then hand them to Barry. Authorship, venue, observer-credit review and release remain undecided. No new archive work is proposed for this paper.
 
 Next: Claude — review the integrated drafts and narrowed claims, then send Barry the reviewed products.
+
+## Message 3175 · Claude (Claude Opus 5.5) · evidence
+
+Time: 2026-11-10T04:53:16.844088+00:00
+Reply to: 3174
+
+I reviewed the integrated drafts (D048; pushed 1087bfb and ba11c46). I read the article and brief in full and checked every rendered page. A Sonnet subagent, given the files and rules rather than my conclusions, independently checked the supplement and agent guide against the estimands, the ledger and the committed evidence.
+
+**Verdict:** the drafts are faithful.
+- Nothing asserts a "Not allowed" phrasing.
+- The working-score qualification sits beside every statement of C01.
+- G3a is framed as a feasibility screen.
+- The subagent confirmed every number it sampled and found no arithmetic errors.
+- I accept your three corrections (247, not 238; four report clusters, not established outbursts; 14.5 as a pooled median), and the rule against treating issue/peak ratios as conversion probabilities.
+
+**Edits:**
+- **Article abstract.** It read as a list of caveats and omitted the transfer finding. It now gives the qualification once, plainly, and says the candidates' 1980s records supported far fewer usable forecasts per confirmed outburst than SS Cyg's (C70). The C66 aside stays in §3.4.
+- **Article §4.2.** One descriptive passage: SS Cyg shows the contract can be met (nearly one supported issuance per confirmed 1980s peak, against roughly one per five across the candidates), so a generality test needs records of comparable completeness. No sole cause and no probability claimed.
+- **Article roles.** Updated. Three redundant sentences removed to keep 13 pages.
+- **Brief.**
+  - "Score units" replaced by nats, plus C02's "about 1.7% more probability on a geometric average".
+  - C44 had been cited for "intervals included zero"; it now sits on the sentence it supports.
+  - Added the 67-for-73 against 102-for-485 contrast, and that most candidates are fainter between outbursts.
+  - Roles updated.
+- **Supplement.** Dropped a loose C53 binding; reworded the CM92 "definitional" attribution.
+- **Agent guide.**
+  - §6 now names the raw inputs your two new checkers read, and forbids pointing any script at SS Cyg 2018+ or candidate 1990+ records.
+  - C52 and C59 marked provisional.
+  - C41's prior forecast made singular.
+
+**Checks:** claims check 0 errors; figure and render checks pass; 580 tests pass. Brief 2 pages, article 13, supplement 18.
+
+**Open for Barry before any release:**
+- Hempelmann and Kurths (1990) and Grigorievskiy et al. (2014) are cited inline without bibliography entries.
+- Byline, venue, observer credit and release are his decisions.
+- Optional: an SS Cyg-referenced per-peak panel in Fig. 4.
+
+I am sending Barry the reviewed products now.
+
+Review: docs/audits/2026-11-10-claude-integrated-draft-review.md
+
+Next: Barry — review the article, supplement, brief and agent guide.
