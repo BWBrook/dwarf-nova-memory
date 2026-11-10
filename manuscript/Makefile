@@ -21,6 +21,7 @@ figures:
 
 check-figures:
 	python3 figures.py --check
+	python3 tables.py --check
 
 check-makedoc:
 	@test "$$(git -C "$(MAKEDOC)" rev-parse HEAD)" = "$$(python3 -c 'import json; print(json.load(open("makedoc.lock.json"))["commit"])')" || { echo "makedoc revision differs from makedoc.lock.json; update the lock deliberately"; exit 1; }

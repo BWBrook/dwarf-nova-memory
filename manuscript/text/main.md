@@ -1,418 +1,431 @@
-# Does the length of an outburst predict the wait for the next? A preregistered forecast test for SS Cygni
+# Does outburst duration improve recurrence forecasts? A preregistered SS Cygni test and its measurement limits
 
-**Draft for review, 9 November 2026. Release and submission are Barry W. Brook's decisions.**
+**Second draft for review, 10 November 2026. Release and submission remain Barry W. Brook's decisions.**
 <div id="authors"></div>
 
 ## Abstract
 
-Visual observers have recorded the outbursts of the dwarf nova SS Cygni almost continuously since
-1896. Earlier analyses reported that longer outbursts tend to be followed by longer quiet intervals,
-but those were in-sample correlations, and the best-known version partly reflected how cycles were
-defined. We asked a narrower forecasting question. Once an outburst has ended, does its duration
-improve a probabilistic forecast of the next onset, beyond what the recent quiet intervals already
-say? We extracted outbursts from archived visual estimates with a threshold-crossing method qualified
-on synthetic histories. We fitted lognormal forecast clocks to 1910–1959 only, froze them, published
-the protocol with a DOI, and then scored observation-time retrospective forecasts issued when the recorded observations confirmed
-each outburst had ended, from 1960 to
-2017. Adding duration improved the log score by [0.0165]{.C01 .V001} nats per forecast (90% cluster
-interval [0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}; [441]{.C01 .V004} forecasts). The
-predeclared criterion was met. The gain corresponds to a [1.7]{.C02}% higher geometric mean
-likelihood of the observed outcomes. The evaluation was completed after a documented post-access
-repair to the parser, for a missing-uncertainty token that no forecast uses[]{.C05}. Two predeclared
-secondary comparisons were inconclusive. One was the later segment, 1993–2017
-([0.0057]{.C07}; [−0.0107]{.C07} to [0.0221]{.C07}). The other was a rule built on the 12-day
-long/short outburst classes ([0.0025]{.C08}; [−0.0022]{.C08} to [0.0072]{.C08}). Exploratory fits
-made after the result favour a long/short class indicator over continuous duration. They also
-show that the class rule's score is sensitive to a shared level adjustment against the fixed
-baseline. These fits supply no further confirmation. The result establishes incremental predictive
-information in the completed outburst for one star, under one extraction and one timing baseline. It
-does not establish physical memory, identify a mechanism, or carry over to other dwarf novae.
+Does the duration of a completed dwarf-nova outburst improve forecasts of the next onset beyond
+recent recurrence history? We tested this for SS Cygni using archived visual observations, an
+outburst extractor and lognormal forecast clocks fitted on 1910–1959. After freezing the models
+and publishing the protocol, we opened 1960–2017. Adding duration raised the specified working
+interval score by [0.0165]{.C01 .V001} nats per issuance (90% cluster interval
+[0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}; [441]{.C01 .V004} issuances), meeting the
+predeclared criterion. The scored intervals are fitted extraction outputs, however, not known
+bounds on physical onset; a proper latent-onset likelihood has not been established. The run
+followed a documented post-access parser repair to an unused missing-uncertainty field[]{.C05}.
+The original later-period and long/short-class comparisons were inconclusive[]{.C07}[]{.C08}.
+Subsequent exploratory checks retained a positive point-score sensitivity, but redesigned
+report-window and observed-clock comparisons were inconclusive[]{.C44}[]{.C55}. Post-result
+rolling adjustments reduced an analogous point-clock gain from [0.0184]{.C62} to
+[0.0132]{.C62} nats, showing sensitivity to baseline level and mark definition without measuring
+a causal component of the original result. A prospectively frozen transfer screen then opened
+only the pre-1990 visual records of [10]{.C68 .V030} catalogue-selected candidates. None qualified
+for the planned multi-star test[]{.C68}; no duration effect was fitted for those stars. Simulations
+also showed that a positive coefficient-score moment need not imply improvement by the trained
+forecast[]{.C66}. The study establishes a reproducible working-score result for one extraction
+and baseline, with unresolved observation-model assumptions and untested generality. It does
+not identify physical memory or a disc mechanism.
 
 ## 1. Introduction
 
-Dwarf novae are close binaries in which a white dwarf accretes from a low-mass companion through a
-disc. Every few weeks to months the disc brightens by several magnitudes for days to weeks and then
-fades again. The disc instability model explains these outbursts as a limit cycle. Hydrogen
-ionisation makes the disc thermally unstable, so it switches between a cool low-viscosity state that
-stores mass and a hot high-viscosity state that drains it
-[@lasota2001DiscInstabilityModel; @hameury2020ReviewDiscInstability]. Recurrence is quasi-periodic,
-not periodic. Whether a completed outburst improves a next-onset forecast is a measurable
-predictive question; relating any gain to the surviving disc state requires a separate physical model.
+Dwarf-nova outbursts provide a long record of a repeating but irregular astrophysical process.
+A white dwarf accretes from a companion through a disc; thermal instability associated with
+hydrogen ionisation can switch the disc between cool and hot states
+[@lasota2001DiscInstabilityModel; @hameury2020ReviewDiscInstability]. A completed outburst may
+therefore reveal something about the state from which the next cycle begins. The observational
+question is whether that information improves a forecast. Connecting an improvement to a
+particular physical state requires more than a correlation between measured durations and gaps.
 
-SS Cygni is the natural test case. It is the brightest dwarf nova in the northern sky. Its light
-curve, built from visual estimates archived by the American Association of Variable Star Observers
-(AAVSO), runs almost unbroken from 1896. Bath and van Paradijs described SS Cyg as a relaxation
-oscillator, with outburst energy related to the following waiting period
-[@bath1983OutburstPeriodenergyRelations]. Cannizzo and Mattei (CM92) then analysed [705]{.C40}
-outbursts from 1896 to 1992 [@cannizzo1992LongtermBehaviorSS]. They showed that a correlation
-between an outburst's duration and the "following cycle" largely reflects the cycle containing the
-duration. They recommended the quiet interval instead.
+SS Cygni has a long visual record in the American Association of Variable Star Observers
+(AAVSO) International Database. Bath and van Paradijs described a relation between outburst
+energy and the following waiting period [@bath1983OutburstPeriodenergyRelations]. Cannizzo
+and Mattei (CM92) analysed [705]{.C40} outbursts and showed why cycle definitions matter
+[@cannizzo1992LongtermBehaviorSS]. An onset-to-onset cycle already contains the duration of
+its first outburst. The cleaner duration–following-quiescence correlation was
+[0.223]{.C40}; duration also correlated with the preceding quiescence. Successive durations
+alternated, and a [12]{.C40}-day split separated long and short classes. CM92 interpreted
+successive quiet-interval correlations as possible secular variation. These associations,
+alternation and the class split are prior art, not discoveries of this study.
 
-On that footing CM92 reported the following correlations:
+Hempelmann and Kurths (*Astronomy and Astrophysics*, 1990, 232, 356) examined dependence in
+symbolic outburst-width sequences. Searches for low-dimensional chaos found no attractor
+[@cannizzo1988ChaosSSCygni]. Cannizzo's disc calculations reproduced long/short alternation
+and slow changes in recurrence [@cannizzo1993AccretionDiskLimit]. Those results do not supply
+a held-out test of duration's contribution beyond a timing-history forecast. The closest
+forecasting precedent located in our bounded search is Grigorievskiy and colleagues' 2014
+ITISE study, which tested point-onset forecasts on one V363 Lyr outburst. A separate search
+for short-term photometric precursors in SS Cyg found none [@price2007SSCygniOutburst].
 
-- duration with the following quiescence, r = [0.223]{.C40};
-- duration with the preceding quiescence, [0.282]{.C40};
-- successive durations, [−0.400]{.C40}, a strong alternation of long and short outbursts;
-- durations split cleanly into two classes at about [12]{.C40} days.
+A forecast comparison must specify the information available at issue, the competing baseline
+and the observation being scored. Proper scoring rules evaluate whole predictive distributions
+[@gneiting2007StrictlyProperScoring], and temporal evaluation must preserve training order
+[@burkner2020ApproximateLeavefutureoutCrossvalidation]. Applying those principles to visual
+outburst records is difficult: onset and end are inferred from noisy reports, observing can
+respond to the star, and gaps can hide events. The statistical interval returned by an extractor
+is not automatically an observed-data likelihood or a hard physical bound.
 
-They read the positive correlation between successive quiet intervals as a hint of secular
-variation. A 1990 study by Hempelmann and Kurths (*Astronomy and Astrophysics* 232, 356) found short-range
-dependence and possible long-range memory in a symbolic sequence of outburst widths. Searches for
-low-dimensional chaos found no attractor [@cannizzo1988ChaosSSCygni]. Cannizzo's disc-instability
-calculations tuned to SS Cyg reproduce the alternation [@cannizzo1993AccretionDiskLimit]. In those
-calculations a long outburst drains more of the disc than a short one, and the depleted outer disc
-tends to make the next outburst short. Moving averages of the real light curve also showed longer
-recurrence times where long outbursts were relatively more common. The calculations reproduce that
-relation through slow changes in disc parameters, not through changes in the mass-transfer rate.
+We report the original frozen comparison together with the research needed to establish what
+it measures. To our knowledge, it is the first preregistered, frozen-parameter probabilistic
+held-out evaluation of dwarf-nova recurrence forecasts, and the first held-out test of the
+completed outburst's duration beyond a specified timing-history baseline[]{.C41}. That is an
+account of a bounded literature search, not proof of universal priority. The original
+calculation met its predeclared rule. Later review narrowed its interpretation to a working
+interval score, motivated different clocks and report windows, and led to a failed multi-star
+feasibility screen. Keeping those results together avoids presenting measurement stability,
+a statistical decision and physical explanation as the same finding.
 
-All of this work describes associations within the record it analysed. None of it asks whether
-the duration of a completed outburst improves forecasts of the next onset on data not used to
-build the forecast. That question differs from the correlations. A forecast may use only information
-available when it is issued. It must beat a baseline that already knows the recent rhythm of
-quiet intervals. A proper scoring rule must reward it for the whole predictive distribution, not
-for a point estimate [@gneiting2007StrictlyProperScoring]. Evaluation must also respect time order
-[@burkner2020ApproximateLeavefutureoutCrossvalidation]. The only held-out timing forecast of a dwarf
-nova we found is a machine-learning study of the Kepler light curve of V363 Lyr by Grigorievskiy and
-colleagues, in the 2014 ITISE proceedings. It scored point forecasts of onset position on a single test outburst. A
-search for short-term photometric precursors of SS Cyg outbursts found none
-[@price2007SSCygniOutburst].
+## 2. Evidence and design
 
-We report a preregistered, frozen-parameter test of one question. Does a forecast that knows the
-completed outburst's duration assign higher probability to the next extracted onset than one that
-knows only the recent quiet intervals? To our knowledge this is the first preregistered probabilistic
-evaluation of dwarf-nova recurrence forecasts on held-out data, and the first held-out test of whether the
-completed outburst's duration adds forecast skill beyond a specified timing-history baseline[]{.C41}.
-Our bounded search included a citation screen, with gaps in ADS access and some full texts
-(Supplement S3.8). Section 2 sets out the evidence and design, Section 3
-the results, and Section 4 what they do and do not support. The supplement holds the definitions,
-methods, sensitivities and the record of corrections made during review.
+### 2.1 Visual observations and extraction
 
-## 2. Evidence
+The original analysis retained native Vis. observations with validation flag V. In the
+1960–2017 evaluation interval, [249,356]{.C15} of [500,479]{.C15} deduplicated archive rows
+met that selector. Development used the earlier record; raw observations and observer
+identities are retained outside the public repository.
 
-### 2.1 Observations and outburst extraction
+X4 extracts candidate outbursts at visual magnitude ten. It combines observer visits and fits
+local rising and fading crossings, allowing a shared level-error term. Confirmation requires
+bright evidence from distinct observers, or a qualifying single observer on separate nights.
+The crossing summaries are model-based intervals and points. Their construction, plug-in
+uncertainty and clipping do not establish a calibrated posterior or known containment of the
+latent crossing. A magnitude-ten crossing would itself remain distinct from the onset of a
+physical disc instability.
 
-We used AAVSO International Database visual estimates of SS Cyg, keeping only rows in the `Vis.`
-band with validation flag `V`. The 1960–2017 evaluation window contains [249,356]{.C15} such rows,
-out of [500,479]{.C15} deduplicated archive rows[]{.C15}. Earlier rows supplied the development fit
-(1910–1959) and the causal history before 1960. Raw observations and observer identities are not
-redistributed.
+X4 passed a conditional synthetic recovery screen at this threshold and a seven-day coverage
+rule. A waveform family unseen during extractor development failed benchmark qualification
+before X4 recovery was scored; recovery on that family was not tested. Other threshold
+diagnostics failed. Qualification therefore did not establish complete real-event recovery or
+measurement validity across stars. The extraction and coverage choices define the comparison
+(Supplement S2.1).
 
-Outbursts were extracted by a threshold-crossing method, X4, at visual magnitude 10, CM92's
-threshold (Supplement S2.1). For each candidate episode, X4 forms a posterior for the times at
-which the brightening and fading curves cross the threshold. It includes a shared systematic error so
-that the crossing intervals do not narrow artificially when many observers report. An episode is
-confirmed by two observers, or by one observer bright on two nights, once well past the threshold, with no
-contradicting faint report. Before any real-star forecast was scored, X4 and a coverage rule, C1/7
-d, were qualified on synthetic histories with realistic observer cadence. The coverage rule treats a
-gap of more than seven days between visits as a loss of coverage. The qualification was conditional:
-the unseen waveform family failed benchmark qualification before X4 recovery was scored, and
-diagnostics at magnitude 9.5 failed in later eras. The
-magnitude-10 extraction is therefore part of the estimand, not a neutral measurement.
+### 2.2 Issuance, models and the working score
 
-### 2.2 Forecasts, outcomes and models
+An observation-time end confirmation issues a forecast. Its predictors use only the preceding
+400 days of reports: the completed outburst's fitted duration, the previous covered quiet gap
+and a recent mean of earlier covered log gaps. Future-row poisoning tests check this restriction.
+Historical upload and revision dates are unknown, so the analysis is an observation-time
+retrospective comparison, not an operational replay.
 
-Each observation-time confirmation that an outburst has ended issues one forecast. Its predictors
-come only from the 400 days of observations before that moment. A test with deliberately poisoned
-future rows enforces this. The predictors are the following:
+Each model is a lognormal quiet-gap clock conditioned on survival to the observed issue time.
+M0 is constant. M2 adds standardised log previous gap and recent gap level. M3 adds standardised
+log current duration with a nonnegative coefficient. M2 was fitted on 1910–1959; the duration
+offset was then fitted with M2 fixed and all parameters frozen. Its fitted coefficient was
+[0.0466]{.C04} per development standard deviation. Routes without the required history use the
+same fallback in both arms and have exactly zero contrast.
 
-- **duration:** the completed outburst's onset-to-end time, from the prefix extraction;
-- **previous gap:** the preceding quiet interval, if covered;
-- **recent level:** the mean of up to six earlier covered log quiet intervals.
+The original working score assigns forecast probability to the next fitted X4 onset interval,
+or survival probability to a censoring cutoff. It is conditional on the clock's survival to
+issue. Coverage loss, supersession or record end can stop a forecast. These are calculations
+on extractor-defined evidence. Calling their contrast a proper score for physical onset would
+require a justified observation and selection model, which has not been supplied. Duration
+and the following quiet gap also share an estimated end; their errors need not be independent.
 
-This is an observation-time retrospective comparison: we use reported dates, while the historical
-upload and revision times needed for an operational replay are unknown. Both timing predictors
-are standardised using the frozen development centres and scales; an unavailable recent level
-is set to zero after standardisation (Supplement S2.4).
+### 2.3 Frozen test and access record
 
-The outcome is the next extracted onset bracket. The bracket comes from the full record up to the
-end of the block, and serves only for scoring. A forecast is right-censored at the earliest of
-coverage loss, the next forecast's issue time, or the end of the block.
+The single confirmatory statistic was the mean M3−M2 working-score gain over all eligible
+evaluation issuances, including shared-fallback zeros. A small-sample-corrected cluster standard
+error used consecutive six-year blocks and Student's t. The predeclared criterion was a positive
+one-sided 95% lower bound. Era, type/within-type, calibration and robustness analyses were
+secondary and could not replace that test.
 
-Each model is a lognormal clock for the quiet interval, conditioned on survival to the age at issue:
+The protocol DOI, 10.5281/zenodo.24053338, predates the first evaluation request. That attempt
+failed before scoring because the archive returned literal None for missing uncertainty.
+The independently reviewed repair accepted that exact token without changing or dropping a
+row; no forecast uses that field. Rehearsal and invariance checks preceded continuation. The
+failed attempt remains preserved. This was a completed evaluation after a post-access format
+repair, not an untouched evaluation, and the DOI does not timestamp the repaired code[]{.C05}.
 
-- **M0:** a constant;
-- **M2:** M0 plus the standardised log previous gap and the recent level;
-- **M3:** M2 plus $\beta$ times the standardised log duration, with $\beta$ constrained to be non-negative.
+### 2.4 Reassessment and transfer
 
-We fitted M2 on 1910–1959, then fitted $\beta$ with M2's parameters held fixed, and froze all parameters.
-The development fit gave $\beta$ = [0.0466]{.C04} per standard deviation of log duration[]{.C14}.
-Forecasts without a covered previous gap use M0 for both models and contribute exactly zero to the
-contrast.
+After the result, an external review reopened the observation model. R1 audited censoring,
+rescored saved points and added endpoint errors to synthetic histories. R2b rebuilt outcomes
+from decisive-report windows and compared a fitted-end clock with an observed clock anchored
+to a decisive faint report. Its mark is the observed span of decisive brightness. This removes
+a literal interpolated end from that clock, but not shared reports, cadence-dependent anchor
+lag or selection. R2b also introduced windowed history baselines: B0 with recent-gap covariates,
+B1 with discounted history, and a preselected B2 state-space model. They are distinct from the
+original frozen M2.
 
-### 2.3 The primary test and the access record
+All these SS Cyg analyses reuse opened data and are exploratory. Their specifications were
+fixed before their own fits, but they cannot become another confirmation. Report association
+and event completeness, physical containment or genuine censor survival, and a normalised
+coarsening-at-random observation kernel are separate premises. A report margin or timely visit
+does not prove them. Supplement S2.8 states the scoring consequences.
 
-The single confirmatory statistic is the mean paired log-score gain of M3 over M2 across all
-score-eligible 1960–2017 issuances, including the fallback zeros. Its uncertainty comes from
-consecutive blocks of six times 365.25 days, a small-sample-corrected cluster-robust standard error and
-Student's t with nine degrees of freedom. The result counts as confirmed if the one-sided 95% lower
-bound exceeds zero. The protocol named the era split, the long/short class rule, several sensitivity
-variants and calibration diagnostics as secondary analyses that cannot replace the primary.
+G3a was different: its rules were frozen before opening any of the candidate stars' records.
+It asked whether the pre-1990 visual data of the catalogue nominees and eclipse holds could
+support a later test. Qualification required supported timing-and-mark forecasts, eligible
+windows, stable nondegenerate unmarked B0 fits and no operational morphology flag; the holds
+also required an eclipse feasibility guard. It computed no duration–gap association or gain.
+No candidate test-period data were opened.
 
-The protocol was published with a DOI, 10.5281/zenodo.24053338, minutes before the first request
-for evaluation data. That first attempt stopped before any ledger or score was computed. The
-archive returns an uncertainty field as the literal token `None` for missing values, which the
-parser rejected. The uncertainty field enters no extraction, feature, routing or score. An
-independently reviewed repair accepted that exact token without altering or dropping any
-observation. Synthetic invariance tests, the full test suite and a new rehearsal passed before the
-run continued. No magnitude, outcome, count or score informed the repair. The failed attempt is
-preserved. The evaluation therefore cannot be described as untouched, and the DOI timestamps the
-original protocol, not the repair[]{.C05}. Data from 2018 onward remain closed.
+**Table 1.** What the evidence directly supports.
 
-**Table 1.** Pivotal inputs, what each shows directly, and what a stronger claim would also need.
-
-| Input | Shows directly | Used for | A stronger claim would need |
-|---|---|---|---|
-| AAVSO visual estimates, 1910–2017 | Brightness reports by many observers | All events, predictors and outcomes | Independent photometry or a second extraction |
-| X4 extraction at magnitude 10, C1/7 d | Onset and end brackets, coverage | Durations, gaps, outcome brackets | Qualification on unseen waveforms and other thresholds |
-| Frozen M0, M2, M3 (1910–1959 fit) | Forecast distributions | The scored comparison | Comparison with stronger latent-state baselines |
-| Protocol DOI and access record | Order of publication and data access | Status of the test | A fully untouched evaluation, now impossible for 1960–2017 |
-| CM92 Table 4 | Published in-sample correlations, 1896–1992 | Prior direction and expected size | Not applicable: prior art, not evidence for the result |
+| Input or comparison | Direct result | Further requirement for a stronger claim |
+|---|---|---|
+| Native visual reports and frozen X4 | Extracted episodes, crossing summaries and coverage decisions | Validated event association and observation model for physical onset |
+| Frozen M2/M3 and original access record | A held-out working-score contrast after the documented repair | Proper latent-onset scoring and adequate uncertainty assumptions |
+| Exploratory R1/R2b | Sensitivity to outcomes, clocks, baselines and level adjustment | A new independent test of a fully specified observation/forecast rule |
+| R2d and six-star simulations | Operating characteristics within declared synthetic processes | Transfer to real extraction, calendar yield and supported star dependence |
+| Frozen G3a early-record screen | Qualification failure under the stated rules | No effect-size inference: no candidate duration effect was fitted |
 
 ## 3. Results
 
-### 3.1 The primary comparison
+### 3.1 Original working-score comparison
 
-The predeclared criterion was met (Fig. 2). Across [441]{.C01 .V004} issuances, adding the completed
-outburst's duration raised the mean log score by [0.0165]{.C01 .V001} nats per issuance, with 90%
-cluster interval [0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}. Exponentiated, this is a [1.7]{.C02}%
-higher geometric mean likelihood of the scored outcomes. It is neither an accuracy percentage nor
-an arithmetic probability gain. Timing models were used on [436]{.C03} issuances and the shared
-fallback on [5]{.C03}. The outcomes comprised [435]{.C03} onset brackets and [6]{.C03}
-right-censored cases. The baseline itself is not trivial: M2 beat the constant M0 by
-[0.117]{.C10} nats per issuance ([0.066]{.C10} to [0.167]{.C10}). The duration gain is about
-[14]{.C02}% of that baseline gain, a ratio that should not be read as variance explained.
+The predeclared criterion was met (Fig. 2): the mean working interval-score gain was
+[0.0165]{.C01 .V001} nats over [441]{.C01 .V004} issuances, with 90% cluster interval
+[0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}. This remains a result for the specified fitted
+intervals, extraction and measured-history baseline; a proper physical-onset likelihood is
+unestablished. Exponentiating gives a [1.7]{.C02}% increase in the geometric mean likelihood
+assigned to the scored evidence. It is neither an accuracy percentage nor an arithmetic
+probability gain. The original outcomes were [435]{.C03} fitted onset intervals and
+[six]{.C03} censored cases. Timing models applied on [436]{.C03} issuances; [five]{.C03}
+used the shared fallback. M2 itself gained [0.117]{.C10} nats over M0.
 
-[8]{.C25} of the ten blocks have positive means (Fig. 2A). Leaving out any one block gives means
-between [0.0132]{.C25} and [0.0194]{.C25}. With the estimate and critical value held fixed, the
-strict failure boundary is approximately [1.42705]{.C25} times the reported standard error;
-an exact 43% increase fails. This arithmetic does not validate the cluster dependence assumption.
-Every protocol sensitivity kept a positive lower bound. That includes uniform end
-uncertainty ([0.0166]{.C09}, lower bound [0.0044]{.C09}), the previous-gap-only baseline
-([0.0170]{.C09}, [0.0054]{.C09}), a two-day issue delay ([0.0165]{.C09}, [0.0049]{.C09}), the
-joint-valid rows ([0.0167]{.C09}, [0.0049]{.C09}) and three-year clusters (lower bound
-[0.0059]{.C09}). These probe the same comparison and are not further confirmations.
+The original qualifications remain beside this result. The 1993–2017 segment gave
+[0.0057]{.C07} nats ([−0.0107]{.C07} to [0.0221]{.C07}); the predeclared class-plus-within-class
+rule gave [0.0025]{.C08} ([−0.0022]{.C08} to [0.0072]{.C08}). Both were inconclusive.
+The earlier evaluation segment overlaps CM92's published association record, and no era-difference
+test was specified. Positive robustness variants do not supply independent confirmations.
 
-Fig. 1 shows one forecast, selected by observation time rather than by score. It illustrates the
-information available at issue.
+[Eight]{.C25} block means were positive, and leave-one-block-out means remained positive.
+Those checks do not validate the dependence model. The sample's predictive intervals overcover
+under the extraction-based coverage bounds; relative score gain does not establish calibrated
+physical-onset or operational forecasts (Supplement Fig. S1)[]{.C11}. Figure 1 illustrates one
+forecast selected by observation time, not score. Its model medians for remaining wait are
+[27.57]{.C42} days for M2 and [26.77]{.C42} for M3; it is an example, not an average scheduling
+benefit.
 
-### 3.2 Predeclared qualifications
+### 3.2 Measurement and clock sensitivities
 
-The two era segments differ in estimate but not decisively (Fig. 2B). The segment 1960–1992 gave
-[0.0240]{.C06} ([0.0091]{.C06} to [0.0389]{.C06}; [261]{.C06} issuances). These years were held
-out of the fit, but they overlap the record behind CM92's published association[]{.C06}. The
-segment 1993–2017, outside the published sign analyses we know of, gave [0.0057]{.C07}
-([−0.0107]{.C07} to [0.0221]{.C07}; [180]{.C07} issuances). That is inconclusive. The intervals
-overlap, no era-difference test was specified, and the result is not evidence that the gain
-disappeared.
+The censoring audit found a coding rule requiring repair for future interval straddles, but the
+repair changed [zero]{.C43} of the [441]{.C43} original outcomes. R1's saved-point density
+sensitivity gained [0.0154]{.C44} nats ([0.0034]{.C44} to [0.0274]{.C44}). These points remain
+uncertain extractions, not measured latent onset times. The proposed original report-interval
+sensitivity was largely unavailable: [434]{.C45} associations lacked a finite lower clip.
+Its tiny supported subset could neither reproduce nor overturn the full result.
 
-The predeclared class rule used a 12-day long/short indicator plus a within-class duration term.
-It gained [0.0025]{.C08} ([−0.0022]{.C08} to [0.0072]{.C08}), also inconclusive. Section 3.4
-examines sensitivity to its coding and forecast level.
+A separate corrected report-window construction yielded [818]{.C47} available windows among
+[845]{.C47} confirmed episodes, with [805]{.C47} eligible and median width [1.15]{.C47} days.
+Availability did not prove physical containment. R2b then scored the preselected state-space
+comparisons under those working-window rules (Fig. 3).
 
-Calibration is a separate question from relative skill. The realised sample overcovers (Fig. 3).
-M3's nominal 50% central intervals contained between [0.55]{.C11} and [0.62]{.C11} of outcomes.
-Its nominal 90% intervals contained between [0.92]{.C11} and [0.98]{.C11}. These are
-partial-identification bounds given the extracted brackets and censoring, not confidence intervals
-for a population coverage rate. The positive paired gain does not imply sharply calibrated
-operational forecasts.
+<!-- BEGIN GENERATED r2b -->
+| Exploratory contrast | Scored issuances | Mean gain, nats | Six-year 90% interval |
+|---|---:|---:|---|
+| H1: fitted-end clock, B2 duration | [432]{.C55 .V012} | [0.0075]{.C55 .V009} | [−0.0008]{.C55 .V010} to [0.0159]{.C55 .V011} |
+| H2: observed clock, B2 bright span | [431]{.C55 .V016} | [0.0043]{.C55 .V013} | [−0.0008]{.C55 .V014} to [0.0094]{.C55 .V015} |
+| H3: observed-clock gain minus matched fitted-end gain | [431]{.C55 .V020} | [−0.0031]{.C55 .V017} | [−0.0078]{.C55 .V018} to [0.0017]{.C55 .V019} |
+<!-- END GENERATED r2b -->
 
-### 3.3 Exploratory contrasts with a simulation reference and a shifted level
+All intervals cross zero under six- and twelve-year blocking[]{.C55}. There is no clear paired
+evidence that incremental gains differ between clocks. H3 is not an estimate of the causal
+contribution of end-time error. The delayed-clock population also differs from the original
+one: one coincident issue is represented once, and unsupported outcomes are excluded rather
+than assigned zero gain. The smaller estimates therefore cannot be read as a fraction of the
+original result surviving measurement correction.
 
-The development fit was in-sample and modest: a likelihood-ratio statistic of [5.19]{.C14} against
-M2[]{.C14}. In the operating-characteristic simulations, the reference injected effect gave a mean
-gain of [0.0045]{.C33} nats, and at the published-size effect [11]{.C30} of [40]{.C30} simulated evaluations
-confirmed[]{.C30}. The realised gain is larger than this model-specific reference. The reference
-carries Monte Carlo uncertainty and was not a target, so this is not a claim that the effect exceeds
-a known physical size.
+In R1's separate endpoint experiment, added independent Gaussian end errors produced no positive
+mean gain across the tested null/history-dependent conditions[]{.C46}. This limits that specified
+post-extraction error mechanism. Issuance and onset estimates were held fixed, large errors
+increased shared-fallback routing, and systematic or state-dependent observation errors were
+not tested. Neither this experiment nor the observed clock rules out a measurement explanation.
 
-A post-result decomposition, exploratory and conditional on evaluation-fitted adjustments,
-describes a level component without identifying its cause. Evaluation-era durations and gaps are
-both shorter than in 1910–1959. The best
-common log-location shift for M2 is [−0.0468]{.C20}. That shift reduces the untruncated clock scale
-by about 4.6%; it is not an estimate of bias in the remaining-wait forecasts. Because mean
-standardised log duration is negative in the evaluation era, the duration term partly supplies this
-level correction. That accounts for [0.0037]{.C20} nats ([0.0001]{.C20} to [0.0073]{.C20}). After
-the duration is recentred at its evaluation mean, the score contrast is [0.0128]{.C20}
-([0.0036]{.C20} to [0.0221]{.C20})[]{.C20}. A single global mean does not remove drift within the
-period, and the two parts are a descriptive, approximately additive split, not a causal partition.
-The intervals condition on the fitted centre and level.
+### 3.3 Baseline level and exploratory duration structure
 
-### 3.4 Exploratory: long/short class and alternation
+The preselected B2 was not empirically the strongest comparator: its development likelihood was
+lower than B0 and B1, and its held-out base scores were descriptively lower[]{.C60}[]{.C61}.
+That motivates model review, not a unique diagnosis of the latent recurrence process. The
+measured gap level also shifted between eras. A frozen baseline can miscalibrate its level,
+and a predictor with a shifted mean can partially correct it.
 
-All results in this subsection were computed after the primary result, using the evaluation
-outcomes, and are labelled exploratory (Fig. 4). With M2's historical parameters fixed and a free
-common level, a long/short indicator alone reaches a likelihood-ratio statistic of
-[14.7]{.C21 .V005} against the level-only model. Continuous log duration reaches
-[11.7]{.C21 .V006}. These equal-dimensional models are not nested. Adding linear within-class
-duration to the indicator changes the statistic by [0.17]{.C21 .V007}. The fit therefore favours a
-parsimonious class reading. It is not a test showing that duration within a class adds nothing. In
-the development years the two forms fit about equally well[]{.C21}. The fitted class contrast
-corresponds to a [14]{.C21 .V008}% larger untruncated clock scale after long outbursts, conditional
-on the other covariates. This is a model-scale ratio, not an observed difference in mean waiting
-times. Era-specific refits give larger class contrasts in 1960–1992 than in 1993–2017[]{.C23},
-without an era-change test.
+Post-result diagnostics combined trailing mark centring with rolling location recalibration.
+The analogous point-B0 duration gain fell from [0.0184]{.C62} to [0.0132]{.C62} nats; the
+observing-rate gain fell from [0.0030]{.C62} to [0.0014]{.C62}. Both the predictor and base changed,
+so these differences do not allocate causes or measure a component of C01. Guarded duration
+estimates stayed positive. Point-B0 retained positive lower limits; DF B0 and B2 intervals
+crossed zero. The observing-rate estimate also remained positive but inconclusive[]{.C63}.
+Different significance labels do not establish a difference between predictors.
 
-The predeclared class rule coded the class as an uncentred 0/1 indicator with a non-negative
-coefficient, added to a baseline whose level was fixed. The class component could therefore only
-lengthen forecasts after long outbursts, never shorten them after short ones. The rule's centred
-within-class term could still shorten some short-outburst forecasts[]{.C08}. When both rules
-receive M2's evaluation-fitted common level, the frozen class rule gains about [0.009]{.C22} nats
-([0.0041]{.C22} to [0.0140]{.C22})[]{.C22}. That shows sensitivity to coding and baseline
-calibration. It neither rescues the original inconclusive result nor validates a corrected rule.
-The lesson for future protocols is that indicator coding and intercept freedom must be specified
-together.
+These historical diagnostics retained the original unguarded development coefficient and
+recalibrated from saved evaluation labels with proxy availability times. They were not an
+execution of the later proposed rolling forecast algorithm. Trailing averages cannot remove
+arbitrary shared trends or states by construction. Observing-rate and duration contrasts
+therefore remain compatible with calibration and observation pathways.
 
-Alternation is strong in the forecast record; these pairs include one repeat-flagged issuance,
-rather than forming an independent unique-outburst catalogue. The lag-one correlation of log duration is
-[−0.52]{.C24}. A long outburst followed a long one in [0.15]{.C24} of pairs and followed a short one
-in [0.66]{.C24}[]{.C24}. Fitted separately on the evaluation data, with evaluation M2 refitted and
-fixed, the current duration offset is positive ([0.042]{.C12}) and the previous outburst's is
-negative ([−0.038]{.C12})[]{.C12}. Fitted jointly, both conditional support intervals include zero[]{.C13}.
-These working-likelihood ranges hold the refitted M2 fixed and do not propagate baseline,
-dependence or measurement uncertainty. The negative previous-duration coefficient is compatible with alternation combined with
-a positive current association. Its causes have not been separated.
+The earlier post-result class fits also remain exploratory. A long/short indicator attained a
+larger in-sample likelihood than continuous log duration with historical nuisance parameters
+fixed and a free common level; adding within-class duration changed little[]{.C21}.
+That supports considering a parsimonious class model, not exclusive attribution to class or an
+absence test. The frozen class rule's coding interacted with its fixed intercept; a shared
+level adjustment improved its descriptive score without rescuing the predeclared result[]{.C22}.
+Full fits and alternation diagnostics are in Supplement S3.3–S3.5 and Fig. S2.
+
+### 3.4 Precision planning and a failed transfer
+
+The sequential synthetic planning study separated positive score moments from gain by the
+actual development-trained forecast. In a clean eight-star case with nominal individual
+latent-oracle gain [0.004]{.C65} nats before measurement and learning, at [1,100]{.C65} evaluation
+issuances, whole-star association-test rejection was [81.8]{.C65}%, but frozen-gain rejection
+was [36.65]{.C65}%. Dependence, missingness and delayed/noisy labels lowered performance;
+no robust sample-size guarantee followed. An oversized development coefficient could give a
+positive score moment and negative expected frozen gain[]{.C66}. A six-star supplement likewise
+failed to establish a robust precision target[]{.C69}. These are conditional point-Gaussian
+experiments, not window-score or archive-yield validation.
+
+The frozen G3a screen opened only the pre-1990 records of [10]{.C68 .V030} catalogue-selected stars.
+**None qualified** (Fig. 4). Under the frozen rules, only SS Aur exceeded the required
+[40]{.C68 .V036} supported development issuances; it had [110]{.C68 .V038} and an eligible-window fraction
+of [79.6]{.C68 .V039}%, but failed the operational long-bright-run screen. The other stars lacked
+sufficient supported issuances, sometimes also failing window or base-information gates.
+The eclipse holds used derived night streams; their synthetic no-eclipse baselines were
+inconclusive before the eclipse-profile tests were reached. Eclipses were not shown to cause
+those failures.
+
+An independent reconstruction of SS Aur's [100.97]{.C71}-day flag found [four]{.C71} groups of
+decisive-bright report nights, one represented by a single night. Among positive visit medians,
+[69.8]{.C71}% lay in the nondecisive threshold-bright band. These facts describe a threshold-night
+component bridged by near-threshold reports. They do not establish four physical outbursts,
+a plateau, a subtype or a photometric contamination mechanism.
+
+The descriptive 1980s rate comparison is large: SS Cyg had [67]{.C70} supported issuances and
+[73]{.C70} confirmed episode peaks; the frozen candidate streams had [102]{.C70} supported
+issuances and [485]{.C70} peaks. These are issuance/peak rates, not paired conversion
+probabilities, and the candidates include derived eclipse-hold streams. In the separate
+ordinary raw-report diagnostic, attrition was largest at the requirement for a covered previous
+gap, including observing holes and ineligible onset windows[]{.C70}. Assuming the frozen
+candidate rates continued, all ten stars ignoring qualification gates would project only
+[367.2]{.C68 .V035} supported issuances over 36 years. This is a planning extrapolation,
+not an observed test count or a bound on other methods. We stop this paper's expansion here;
+no candidate duration effect was fitted and the proposed test period stays closed.
 
 ## 4. Discussion
 
-### 4.1 What follows
+### 4.1 A score result with an unresolved observation model
 
-For SS Cyg, the completed outburst carries usable information about when the next will begin. That
-information goes beyond the recent quiet intervals that a timing-only forecaster already knows, and
-it survived a frozen, preregistered test on 58 years of held-out record. CM92's in-sample
-association thus has a forecast counterpart. The [1.7]{.C02}% geometric likelihood gain quantifies
-incremental skill under this comparison. Its value for telescope scheduling and its relationship
-to a physical disc state were not measured.
+The original trained duration term improved the prespecified working interval score under its
+frozen extraction and history baseline. Independent numerical reconstruction and post-access
+repair audits make that computational result reviewable. They do not supply an observation
+model for the latent onset. The distinction changes the scientific claim: a probability
+assigned to a fitted interval can improve through properties of the reporting and extraction
+process as well as through better knowledge of the physical crossing.
 
-Two physical readings are compatible with the result and we cannot separate them. In the cycle-to-cycle reading, a
-long outburst drains more of the disc, and the drained disc both alternates the next outburst's type
-and alters the interval before it. Cannizzo's model provides the first half of this account; we did
-not find in it a reported contrast in quiescence after long versus short outbursts
-[@cannizzo1993AccretionDiskLimit]. In the slow-state reading, duration acts as a proxy for a slowly
-varying disc or transfer state that the recent-gap level does not fully capture. The observed
-covariation of recurrence time with the long-to-short ratio points this way. The negative
-previous-duration coefficient is compatible with alternation, but a negative net lag does not
-exclude a dominant slow component coexisting with a stronger alternating one (Supplement S3.4).
-Neither reading is a mechanism test, and the word "memory" should not be applied to the result
-without a model that distinguishes them.
+R1 and R2b sharpen that limitation. Point rescoring is positive, but alternative report-window
+and observed-clock comparisons are inconclusive. Their different populations, clocks, marks
+and baselines prevent a clean measurement-error decomposition. Measured duration and the next
+gap share an end estimate; replacing that estimate with an observed report changes the
+coupling but retains cadence lag and selection. A mathematically valid score for coarsened
+observations would require the complete observation kernel and risk-set premises, not merely
+narrow windows or decisive-looking reports.
 
-The weaker later segment is the most important open qualification. Its estimate is a quarter of the
-earlier segment's, and the exploratory class contrast is smaller there too. The record gives no
-basis for choosing between real change, a change in observing that alters extraction, and
-sampling variation in [180]{.C07} forecasts. The design did not specify an era test, so we do not claim one.
+Baseline calibration adds another route. The post-result guards reduce some gains, showing
+that recent-level information and mark centring matter. They do not establish how much of C01
+is a level correction, and their own retrospective label-availability assumptions require
+qualification. A stronger state-space model cannot simply be assumed stronger: the particular
+B2 implementation fit development data less well. Those findings argue for reporting the
+model and observation contract with every forecast claim, rather than treating a duration
+coefficient as a property of the star alone.
 
-Measurement limits remain. The duration and the following gap share the estimated end time, so
-end-time error couples them. The coefficient bound and matched routing were designed against the
-negative coupling seen in simulations. An exact construction shows the coupling can also produce
-positive information (Supplement S2.4). The uniform-end and delayed-issue sensitivities kept
-positive lower bounds, which probes this route without excluding it. Informative observing, missed
-outbursts and incomplete propagation of measurement error are further limits.
+Physical accounts remain possible. Cannizzo's calculations explain how unequal disc depletion
+can favour alternating outburst types; we found no reported prediction in that model of the
+following quiet-gap contrast after long versus short outbursts
+[@cannizzo1993AccretionDiskLimit]. Duration may also proxy a slowly changing disc or transfer
+state not captured by the fitted history. Alternation and a negative lagged-duration coefficient
+do not exclude a slower component. None of the present contrasts separates these mechanisms.
 
-The study also carries lessons about method. The cycle convention that misled earlier work (CM92) has
-a forecasting analogue. Any predictor computed from data after the issue time contaminates the
-score, so we enforced observation-time features with poisoned-row tests. A component restriction in
-a frozen model can affect a secondary rule's score, as the exploratory class-rule adjustment
-illustrates without identifying a unique cause. A post-access
-format failure, however innocent, permanently changes what a test can be called. Recording it
-openly is the only remedy.
+### 4.2 What the transfer failure means
 
-### 4.2 Which conclusions depend on which assumptions
+G3a failed before a multi-star effect test existed. That is useful evidence about transport of
+this measurement and forecast contract. A dense-looking archive can contain few consecutive
+cycles with a covered previous gap, a decisive span and usable outcome. The prespecified
+thresholds, coverage rule, prefix history, morphology screen and eclipse reductions all helped
+define which opportunities counted. No observed effect in another star was rejected.
 
-**Table 2.** Dependence of each main conclusion on its assumptions.
+We retain the failure and stop expanding this paper rather than change rules until a cohort
+qualifies. This is a scope decision. It is not a theorem that a different measurement model,
+a later development split, later coverage or another archive could not support a multi-star
+analysis. Such work would need its own development and frozen evaluation; it could not turn
+this failed transfer into a pass. The single-star result's generality remains untested.
 
-| Calculated result | Rests on | Interpretation limits |
+**Table 2.** Assumptions and limits of the principal conclusions.
+
+| Calculated result | Required assumptions or design | Remaining limit |
 |---|---|---|
-| The frozen duration model improves the score of extracted-onset forecasts | Fixed parameters and information set; cluster interval | One extraction and timing baseline; dependence assumptions and shared end-time error limit interpretation |
-| Global recentering leaves a positive descriptive score contrast | Evaluation-fitted mean adjustment | Does not remove within-period drift or define a causal partition; intervals condition on the adjustment |
-| The class indicator has greater exploratory in-sample likelihood | Fixed historical timing nuisance and a free level | Nonnested fitted alternatives; no exclusive attribution, within-class absence test or new forecast confirmation |
-| The later-segment gain is inconclusive | Its interval includes zero | No era-difference or equivalence test; no evidence of disappearance |
-| X4 passed a conditional synthetic recovery screen | Magnitude 10, C1/7 d and one qualified waveform/cadence pair | No real-event completeness guarantee; unseen waveform recovery was not tested |
+| Original M3−M2 working-score gain | Frozen parameters, eligibility and cluster inference | Proper latent-onset likelihood and full measurement validity are unestablished |
+| Positive saved-point sensitivity | Same fitted points and original associations | Points are uncertain extractions; no independent confirmation |
+| Inconclusive R2b contrasts | Declared support, clocks and block summaries | Unsupported selection, containment/CAR and dependence remain assumptions |
+| Smaller post-result guarded gains | Specified retrospective recalibration and centring | Neither a causal partition nor proof that all slow variation is removed |
+| Synthetic association/gain performance | Declared Gaussian processes and star dependence | No universal effect, sample-size or real-window inference guarantee |
+| No qualifying G3a cohort | Frozen early-record qualification and catalogue thresholds | A feasibility result for these rules; no candidate duration-effect inference |
 
 ### 4.3 What would sharpen the answer
 
-Four kinds of evidence would most improve these inferences.
+The most useful next evidence would independently connect report windows to the latent crossing
+and complete risk set, while making the information available at every historical update explicit.
+An independently qualified extraction would test whether the working-score result depends on the
+current measurements. A new forecast comparison would then need a baseline whose adaptation,
+mark coding and nuisance estimation were all fixed together, with uncertainty checked under the
+admitted dependence and observation process.
 
-- **A new frozen protocol for the closed data.** At the earlier issuance rate, the 2018-onward SS Cyg
-  record would hold roughly 65 forecasts, a planning assumption and not a count or a power
-  result. A new design study should quantify its contribution to a multi-star test. That test should use a class rule whose indicator coding and intercept
-  freedom are defined together, and treat the anomalous 2021 SS Cyg event
-  [@kimura2021NatureAnomalousEvent] as a declared stress case.
-- **Other long-record dwarf novae.** U Gem-type systems with long, well-sampled histories could test
-  whether the result generalises. Their extraction must be qualified first.
-- **An independent extraction for recent decades.** Photoelectric, CCD and space photometry would
-  test sensitivity to the extraction and observing record in the later segment.
-- **Stronger timing baselines.** Latent-state models of the quiet-interval sequence would test
-  whether duration remains informative once a slowly varying state is modelled explicitly.
+Those requirements are more specific than adding forecasts to the same pipeline. The present
+study does not measure scheduling utility, operational calibration or a physical-memory parameter.
+SS Cyg observations from 2018 onward and the candidate stars' test records remain closed.
+No new access, release, venue or submission decision follows from this synthesis.
 
 ## 5. Conclusions
 
-The completed outburst's duration improved frozen probabilistic forecasts of SS Cyg's next onset
-over a timing-only baseline, by [0.0165]{.C01 .V001} nats per forecast across [441]{.C01 .V004}
-held-out forecasts from 1960 to 2017. The preregistered criterion was met after a documented
-post-access parser repair. The gain was smaller and inconclusive in 1993–2017, and the predeclared
-long/short class rule was inconclusive. Exploratory fits favour a class reading, while CM92 had
-already reported the association, the alternation and the split. The result concerns extracted
-onsets for one star under one extraction and baseline. Whether it reflects cycle-to-cycle disc depletion or a slowly
-varying state, and whether it holds for other dwarf novae, remain open.
+Adding completed-outburst duration met the frozen SS Cyg working-score criterion:
+[0.0165]{.C01 .V001} nats per issuance, interval [0.0049]{.C01 .V002} to
+[0.0281]{.C01 .V003}, across [441]{.C01 .V004} issuances after the documented post-access
+format repair. The scored intervals have not been established as a proper observation likelihood
+for physical onset. The original later-period and class-rule secondaries and the redesigned
+headline comparisons remain inconclusive; level-adjustment diagnostics identify sensitivities
+without allocating causes.
+A prospectively frozen early-record transfer screen qualified no multi-star cohort. The resulting
+paper is a single-star working-score study and a documented measurement/transfer audit, not a
+demonstration of physical memory or general dwarf-nova predictability.
 
 ## Methods in brief
 
-- **Definitions, readings and units:** Supplement S1.
-- **Extraction, coverage, issuance, outcome and censoring rules, models, fitting, scoring and
-  interval construction:** S2.
-- **Sensitivities, calibration, development comparison, exploratory calculations and the slow-driver
-  counterexample:** S3.
-- **Corrections made during review:** S4.
-- **Reproduction commands and the evidence map:** S5.
-
-The claims ledger (`manuscript/claims.csv`) gives every quoted number with its evidence file, its
-verifying commit, a reproduction command and its limits.
+Definitions and the original methods are in Supplement S1–S2; original and exploratory results,
+including report windows, precision studies and transfer attrition, are in S3. Review corrections
+are preserved in S4 and reproduction commands in S5. The claims ledger links each numerical
+statement to its evidence and limitations.
 
 ## Roles of AI systems and humans
 
-This work was conducted by AI systems with a human scientific lead, and the record is public.
+Barry W. Brook (University of Tasmania) led the science, set access boundaries, chose the original
+forecast-gain claim and approved the protocol deposit and bounded openings. He reviews the final
+products and decides authorship, venue, release and submission. GPT-6 Pro (OpenAI, through ChatGPT)
+produced the seed ideation and framework; a later GPT-6 Pro review reopened the observation-model
+research. Claude Opus 5.5 (Anthropic, through Claude Code) developed and diagnosed the extractors,
+wrote X4 and the initial prefix-feature code, audited the literature and physical framing, proposed
+or reviewed protocols, checked the results and wrote the first product drafts. A Claude Sonnet
+subagent refreshed the novelty search. GPT-6 Codex (OpenAI, through Codex) implemented and executed
+the forecasting, simulation, scoring and sealed-evaluation work; repaired the parser; built independent
+numerical and semantic audits; implemented the observation/clock reassessment and transfer screen;
+and prepared the figures, build system and integrated second drafts. Claude and Codex reviewed one
+another's evidence, including failed designs and interpretation corrections.
 
-- **Barry W. Brook** (University of Tasmania) set the scientific direction and the data boundaries.
-  He chose to publish the protocol on Zenodo before opening the evaluation data, and keeps the
-  2018-onward record closed. He reviews the final products and decides on release and submission.
-- **GPT-6 Pro** (OpenAI, through ChatGPT) produced the seed ideation and the first framework.
-- **Claude Opus 5.5** (Anthropic, through Claude Code) did the following:
-  - wrote the novelty and physical-framing audit;
-  - developed and diagnosed the extraction methods, and wrote the X4 extractor and the first
-    observation-time feature code;
-  - proposed or reviewed each protocol;
-  - reviewed the sealed result and ran the post-result exploratory analyses (A10j);
-  - re-read the primary sources;
-  - drafted this article, the supplement, the brief and the agent guide.
-
-  A separate Claude Sonnet subagent refreshed the novelty search.
-- **GPT-6 Codex** (OpenAI, through Codex) did the following:
-  - implemented the forecasting, scoring, simulation and sealed-evaluation code;
-  - executed the sealed evaluation and the format repair;
-  - wrote the independent numerical audits of the result and the exploratory claims (A10k), which
-    narrowed several of Claude's interpretations;
-  - built the figures and the document toolchain;
-  - reviewed every result-bearing passage in the first drafts, checked the narrowed novelty
-    claim independently and inspected the rendered products (A10m).
-
-Model names are the labels the systems reported on the project's correspondence board. Agreement
-between models is not treated as independent validation. Independence rests on separately
-implemented computational routes, which the audit records name. The human–AI correspondence is
-published with the repository.
+Model names follow the systems' recorded labels. Agreement between agents is not treated as
+validation: the records identify separate derivations, implementations, inputs seen and limits of
+each check. Reviewed correspondence snapshots are public; native observer records remain private
+to the retained-data workflow.
 
 ## Data and code
 
-The repository <https://github.com/BWBrook/dwarf-nova-memory> holds the protocols, code, frozen
-parameters, aggregate evidence, figures, claims ledger and the full access record. Code is MIT
-licensed; text, figures and derived data are CC BY-SA 4.0. The evaluation protocol is archived at
-<https://doi.org/10.5281/zenodo.24053338>.
+The living repository <https://github.com/BWBrook/dwarf-nova-memory> contains protocols, source,
+frozen parameters, aggregate evidence, claims, figures and access receipts. Code is MIT licensed;
+text, figures and derived data are CC BY-SA 4.0. The original evaluation protocol is archived at
+<https://doi.org/10.5281/zenodo.24053338>. G3a was frozen in Git before its authorized early-record
+access; it was a feasibility screen, not a preregistered multi-star effect test.
 
-AAVSO observations are available from the AAVSO International Database (<https://www.aavso.org>).
-We do not redistribute raw observations, observer identities, event catalogues or per-forecast
-scores. The supplement (S5) gives the commands that reproduce every reported number from the
-retained run without new archive requests.
-
-We acknowledge the worldwide AAVSO observer community and the International Database for the
-visual photometry and metadata used in this study. Observer credit and co-authorship will be
-reviewed before release against the [AAVSO guidelines](https://aavso.org/data-usage-guidelines-2026-07/).
+AAVSO observations are available through the International Database. Raw observations, observer
+identities, event catalogues and individual forecast scores are not redistributed here. Reproduction
+uses the retained hashed inputs without another archive request (Supplement S5). We acknowledge the
+worldwide AAVSO observer community. Observer credit and co-authorship require review before release
+against the [AAVSO guidelines](https://aavso.org/data-usage-guidelines-2026-07/).
 
 ## References

@@ -1118,3 +1118,13 @@ request, fit, score or later-period information.
 
 Next: Codex — check C70–C71 by a separate route, then begin R2 integration with
 estimands first.
+
+## R2/G3a manuscript integration in progress — 10 November 2026
+
+Codex, `main`, base `93c48cf`. Independently checks C70 attrition and C71's
+SS Aur flag before revising estimands, ledger, article/supplement, agent guide,
+brief and figure/build artifacts. The requested integration resumes drafting;
+no release or new archive access follows. Two bounded independent delegates
+own new arithmetic/raw-report audits, with shared legacy API limits explicit.
+No new-star1990+ or SS Cyg2018+ records, no new effect fit, no reinterpretation
+of G3a as an effect test. Preserve original sources/results and all failed rules.

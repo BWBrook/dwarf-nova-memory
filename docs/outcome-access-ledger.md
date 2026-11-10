@@ -649,3 +649,21 @@ read. Only aggregates are committed (`data/provenance/g3a_claude_review/checks.j
 - decade counts;
 - quantiles;
 - the SS Aur run's year and vote summary, with no observer identities.
+
+
+### Codex independent G3a diagnostics and paper integration — 10 November 2026 (D047)
+
+Read the already-open G3a pre-1990 native pages, their receipts, Claude's reported
+aggregates and the retained SS Cyg record. The parent made a hashed pre-1990-only
+SS Cyg slice from the already-open through-2017 cache for the attrition delegate;
+no 2018+ row existed in that source. The delegate read only the slice. C70 uses
+an independently constructed support lattice with shared frozen extraction APIs;
+C71 uses a separate native XML parser and graph reconstruction for SS Aur.
+The parent reran both checks and inspected the private flag plot. No new archive
+request, marker fit, real duration–gap relation or observational score was
+computed. The saved original-score audit was recounted from its existing outputs.
+New figures use public aggregates only; no new raw illustration was generated.
+New-star 1990+ and SS Cyg 2018+ information stayed closed. Public additions contain
+small aggregate diagnostics, not report identities or per-event membership.
+The completed research is now integrated into second drafts under the narrowed
+estimands; this authorizes neither release nor another opening.

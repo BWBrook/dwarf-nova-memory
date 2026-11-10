@@ -1,6 +1,6 @@
 # Dwarf-nova recurrence: memory, changing activity and forecast reliability
 
-> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. External review has reopened research on the observation model and endpoint information. The first frozen comparison is preserved; manuscript revision waits for this research round.
+> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. The original frozen SS Cyg working-score result is preserved. Observation-model reassessment and a failed multi-star feasibility screen are now integrated into second drafts for review; no manuscript or data release follows.
 
 **A research repository led by Barry W. Brook. Seeded 5 November 2026; public from 7 November 2026.**
 
@@ -123,9 +123,7 @@ records the completed gain-free preparation and catalogue/precision study.
 An observed clock does not eliminate cadence/selection information. The
 score-level power study does not establish the proposed G2 target: at nominal
 gain 0.010, 1,100 forecasts give fitted-rule power about 0.71, and serial-block
-dependence degrades interval coverage. Eight stars are nominated for future
-development screening, not qualified. Manuscript products remain paused. No other-star archive
-opening is authorized, and SS Cyg 2018 onward remains closed.
+dependence degrades interval coverage. At that preparation stage, eight stars were nominated, not qualified; products and new-star access were paused. The later authorized screen is reported below. SS Cyg 2018 onward remains closed.
 
 [R2b is now complete](docs/audits/2026-11-09-r2b-exploratory-execution.md)
 under the amended [v2 rules](docs/protocols/r2b-execution-v2.md). The
@@ -140,9 +138,7 @@ The proposed cadence ceiling is a local approximation, not a bound; exact visit
 aggregation does not prove latent onset containment. The observing-rate
 sensitivity is positive, with no mechanism attribution. B2 is stable but has
 lower descriptive baseline means than B0/B1, so it cannot be called the
-empirically strongest comparator. New claims await Claude's review before R2d
-baseline/precision decisions or any new-star access request. All 516 tests and
-independent actual-score reconstruction pass; manuscript products remain paused.
+empirically strongest comparator. These results preceded the R2d review and G3a decision below. The independent actual-score reconstruction passes; drafting was paused during that research stage.
 
 [Claude's R2b review](docs/audits/2026-11-09-claude-r2b-review.md) (D042) supports
 C53–C58 and C60. The independent R2d audit also reproduces C61–C64's arithmetic:
@@ -165,7 +161,7 @@ eight-star/1,100-forecast case, whole-star score-moment rejection is 81.8%, vers
 36.7% for frozen forecast gain; stressed cases are weaker. No robust sample-size
 guarantee or universally passing score procedure is established. This is a
 Gaussian point-log-gap screen, not extraction, onset-window or calendar-yield
-validation. C65–C66 await Claude's review; products and access gates stay paused.
+validation. This preceded Claude's review below; protected test-data gates stay closed.
 
 [Claude's R2d review](docs/audits/2026-11-09-claude-r2d-review.md) (D044) supports
 C65–C66 by a hash-checked recount of all 70,000 trials. Two findings:
@@ -191,17 +187,31 @@ their1980s rate. No G3b opening or duration-effect fit follows. This concerns
 the frozen transfer pipeline, not all possible analyses of the archive.
 
 [Claude's G3a review](docs/audits/2026-11-10-claude-g3a-review.md) (D046)
-supports C68–C69 and explains the failure (C70–C71):
-- **The rules are not the bottleneck.** Under the identical chain SS Cyg converts
-  92% of its confirmed 1980s outbursts into usable forecasts; the ten candidates
-  convert 21%.
-- **The history covariate is the binding loss.** Most candidates' quiescence is
-  beyond typical visual limits, so observing holes and late faint evidence break
-  previous-gap coverage.
-- **No relaxation, measurement model or later split reaches the gate.**
-- **SS Aur's long-run flag is a threshold artefact.**
-- **Next:** the multi-star expansion stops, and the SS Cyg paper reports it as a
-  preregistered transfer test. C01 remains a single-star result.
+supports C68–C69. The independent [C70 attrition audit](docs/audits/2026-11-10-c70-independent-review.md)
+and [C71 native-report reconstruction](docs/audits/2026-11-10-c71-independent-review.md)
+reproduce the diagnostic arithmetic with narrower interpretations (D047):
+
+- SS Cyg has 67 supported issuances against 73 confirmed 1980s peaks; the frozen
+  candidate streams have 102 against 485. These descriptive rates use named
+  reductions and issue/peak landmarks, not paired event-conversion probabilities.
+- Missing covered previous gaps dominate the raw-route support losses. This
+  does not uniquely identify visual depth or establish that the rules are lenient.
+- Dropping the history and mark gates raises the raw-route fixed-rate projection
+  to 723.6 over 36 years. Projections assume unchanged early-record rates; they
+  do not rule out every model, later split or archive.
+- SS Aur's long-run flag contains four separated decisive-bright report clusters
+  bridged by threshold-proximate visits. They are not four independently
+  annotated physical outbursts or a demonstrated photometric cause.
+
+The multi-star expansion stops for this paper. G3a is a prospectively frozen
+**development-record feasibility screen**, not a test of other stars' duration
+effects. No candidate effect was fitted, and their 1990-onward records remain
+closed. The integrated [article](manuscript/build/manuscript.pdf),
+[supplement](manuscript/build/supplement.pdf), [two-page brief](manuscript/build/brief.pdf)
+and [agent guide](manuscript/text/for-agents.md) are second drafts for review.
+The headline now states that C01 is a working interval-score result, with
+unresolved latent-onset observation assumptions; R1/R2b are exploratory checks,
+not additional confirmation. Release still requires Barry's review.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
@@ -219,23 +229,23 @@ does not replace the inconclusive predeclared type rule. The paper's
 [interpretation specification](manuscript/estimands.md) and
 [claims ledger](manuscript/claims.csv) govern the figure captions and drafting.
 
-Four scientific figures and a brief figure are reproducible with
-`make -C manuscript figures`; `make -C manuscript` checks the public assets
-and builds the PDF/DOCX previews without raw observations or archive access.
-The [article](manuscript/build/manuscript.pdf),
-[supplement](manuscript/build/supplement.pdf) and
-[brief](manuscript/build/brief.pdf) are first full drafts
-([A10l](docs/audits/2026-11-09-a10l-sources-and-drafts.md)). The [A10m semantic/source review](docs/audits/2026-11-09-a10m-draft-review.md)
-corrects the draft interpretations and reproduction instructions. An independent [GPT-6 Pro review](docs/reviews/2026-11-09-gpt6pro/) followed; the [A10n triage](docs/audits/2026-11-09-a10n-external-review-triage.md) reopens the research before the products are rewritten. The bibliography
-has [generated DOI metadata and a separate unresolved identifier](references/README.md).
+Six scientific figure assets and a brief figure are retained. The article uses
+four figures; calibration and type exploration now appear in the supplement.
+`make -C manuscript` checks public assets and builds PDF/DOCX drafts without raw
+observations or archive access. The article, supplement and brief are integrated
+second drafts after R1/R2b/R2d/G3a, with a revised agent guide. Generate only the
+new aggregate figures with `uv run --frozen --extra plot --extra analysis python
+manuscript/figures.py --generate-aggregates`, and numeric tables with
+`python3 manuscript/tables.py`. Full figure generation also uses the retained
+raw illustration and is unnecessary for a text build. The bibliography has
+[generated DOI metadata and unresolved identifiers](references/README.md).
 
 The [protocol](https://doi.org/10.5281/zenodo.24053338) was published before
 access. The first attempt failed before scoring on missing-uncertainty metadata;
 a narrow independently reviewed parser repair preceded the completed run.
 Untouched status is consumed, and the result is explicitly a **post-access
 format-repair continuation**. Independent checks reproduce all 2,641 scores,
-the interval, source identities and acquisition bounds. A10k passes all 348
-local tests and the repository, claims and document checks. Native rows and full event/score outputs remain
+the interval, source identities and acquisition bounds. The original A10k checks and current 580-test suite pass, alongside the repository, claims and document checks. Native rows and full event/score outputs remain
 outside Git; aggregate results are in
 [`data/provenance/a10i_evaluation_1960_2017/`](data/provenance/a10i_evaluation_1960_2017/).
 No 2018+ data were requested or analyzed; that replication block stays closed.

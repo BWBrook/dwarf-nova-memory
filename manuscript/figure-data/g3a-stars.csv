@@ -1,0 +1,11 @@
+claim_id,star,eligible_fraction,eligible_windows,confirmed_events,outcome_supported,feature_supported,supported_1980_1989,base_passed,morphology_passed,eclipse_required,eclipse_passed,qualified,longest_supported_bright_span_days,stream
+C68,SS Aur,0.7958236658932715,343,431,110,127,35,1,0,0,0,0,100.97000000020489,native visual visits
+C68,RU Peg,0.6352941176470588,108,170,23,39,13,1,1,0,0,0,20.77199999988079,native visual visits
+C68,AR And,0.313953488372093,54,172,7,8,7,0,1,0,0,0,15.09000000031665,native visual visits
+C68,X Leo,0.4397590361445783,219,498,35,50,22,1,1,0,0,0,14.15999999968335,native visual visits
+C68,TW Vir,0.11564625850340136,17,147,0,0,0,0,1,0,0,0,25.953500000294298,native visual visits
+C68,UU Aql,0.8083333333333333,97,120,15,17,13,1,1,0,0,0,11.003000000026077,native visual visits
+C68,CH UMa,0.7037037037037037,19,27,0,0,0,0,1,0,0,0,16.97000000020489,native visual visits
+C68,DX And,0.7083333333333334,17,24,0,0,0,0,1,0,0,0,16.075000000186265,native visual visits
+C68,U Gem,0.9058823529411765,154,170,27,28,12,1,1,1,0,0,38.0,derived fixed-night median
+C68,IP Peg,0.6666666666666666,12,18,0,2,0,0,1,1,0,0,13.0,derived fixed-night median

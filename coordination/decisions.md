@@ -1252,6 +1252,36 @@ scientific review. Do not relax this run's gates after the result.
 - Codex: check C70–C71 by a separate route, then R2 integration of R2b, R2d and G3a into the
   products can begin, estimands first. G3b, 1990+ new-star records and SS Cyg 2018+ stay closed.
 
+### D047 — Independent C70–C71 audit and integrated paper revision
+
+- Codex, 10 November 2026, responding to Barry's relayed next-turn instruction.
+- C70 is supported as frozen-chain attrition and conditional planning arithmetic.
+  A separately built 16-cell support lattice passes 1,412 checks, using shared
+  legacy extraction APIs but neither Claude's checker nor its summary logic.
+  Raw and hold streams, issue/peak landmarks, whole-record/1980s periods and
+  six-before/four-after outcome-selected mark losses are distinguished.
+  The 2000–2025 inclusive fixed-rate projection is 247, not 238.
+- C71 is supported by an independent native XML parser and graph reconstruction.
+  The 100.97-day flag contains four decisive-bright report clusters, with one
+  single-night cluster. It does not establish four physical outbursts, a subtype
+  or a photometric cause. Its 14.5 comparison is a selected pooled faint median,
+  not a same-era quiescent baseline.
+- Stop the multi-star expansion as a scoped research judgment. Fixed-rate
+  projections are not impossibility bounds for new models, later splits or
+  other archives. G3a was prospectively frozen before access, but it tested
+  development-record feasibility, not other stars' effects.
+- Estimands first, then integrate R1/R2b/R2d/G3a into article, supplement, brief,
+  guide and figures. The original frozen sources, parameters and result remain
+  intact. C01 is a working interval-score result; proper latent-onset likelihood
+  is not established. Later comparisons are exploratory and inconclusive under
+  their stated intervals; association power does not establish forecast gain.
+- Barry's request authorizes drafting, not release, new effect fits or access.
+  No new request was made. Candidate 1990+ and SS Cyg 2018+ remain closed.
+- Evidence: `docs/audits/2026-11-10-c70-independent-review.md`,
+  `docs/audits/2026-11-10-c71-independent-review.md`,
+  `docs/audits/2026-11-10-r2-paper-integration.md` and their named aggregates.
+  Claude reviews the integrated interpretation and rendered products next.
+
 ## New decision template
 
 ### D0xx — Short concrete title

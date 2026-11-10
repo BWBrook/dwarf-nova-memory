@@ -1,177 +1,186 @@
 ---
 document: agent-facing paper
-study: Frozen SS Cyg forecast comparison
-status: first full drafts semantically reviewed and corrected (A10m); awaiting Barry's review
+study: SS Cyg working-score result and measurement/transfer reassessment
+status: integrated second drafts; independent review and Barry review precede release
 human_paper: manuscript/text/main.md (+ supplement.md, brief.md)
-claims_ledger: manuscript/claims.csv (single source for all renderings; checked by tools/claims.py)
-interpretation: manuscript/estimands.md (what each analysis bounds; allowed and forbidden phrasings)
+claims_ledger: manuscript/claims.csv
+interpretation: manuscript/estimands.md
 governing_docs: [AGENTS.md, coordination/decisions.md, manuscript/estimands.md]
-authority: Barry W. Brook decides public release, submission and any correspondence outside the collaboration
-updated: 2026-11-09
+authority: Barry W. Brook decides release, submission and any new protected-data opening
+updated: 2026-11-10
 ---
 
-# SS Cyg for agents: evidence, build and interpretation traps
+# SS Cyg for agents: evidence, reproduction and interpretation
 
-This guide is for an agent arriving cold. The article, supplement and brief are first full drafts
-(A10l). They are not released, and venue and submission are Barry's decisions. The governing
-specification and ledger take priority over captions, drafts or historical review wording. When this file and a primary artefact disagree, the artefact
-wins and this file is wrong: fix it in the same commit.
+This is the entry point for an agent arriving cold. Read `manuscript/estimands.md` before quoting
+any result. The article, supplement and brief are integrated second drafts, not a paper release.
+The original frozen calculation is preserved. Later work changes what we can infer from it;
+it does not replace it with a more favourable result. An evidence file and its receipt outrank
+this guide: reconcile any disagreement rather than modifying a historical receipt.
 
-## 1. Read order and trust
+## 1. What the study found
 
-1. This file, then `manuscript/estimands.md`, then `manuscript/claims.csv`. Quote a claim only with its
-   limit.
-2. `manuscript/text/main.md` for the argument; `supplement.md` for the machinery.
-3. `coordination/decisions.md` (latest decision entries) for what was settled, by whom and why.
+- **Original frozen decision.** Adding fitted duration raised the specified working interval
+  score by [0.0165]{.C01 .V001} nats per issuance (90% six-year cluster interval
+  [0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}; [441]{.C01 .V004} issuances). This met the
+  sole predeclared criterion. The X4 intervals are fitted extraction summaries, not known bounds
+  on physical onset; a proper latent-onset observation likelihood is not established.
+  The run followed a post-access parser repair (C05). The later segment and the frozen class
+  rule were inconclusive (C07–C08).
+- **Post-result reassessment.** Point rescoring stays positive (C44). New report windows and
+  clocks produce positive but inconclusive working gains: H1 [0.0075]{.C55 .V009} and H2
+  [0.0043]{.C55 .V013} nats. These change the baseline, population and observation assumptions;
+  they are exploratory, not replication or a causal decomposition. Rolling guards attenuate
+  an analogous point-clock gain without measuring a fraction of C01 (C62–C63).
+- **Precision.** Simulations distinguish a positive residual score moment from improved
+  predictions by a development-trained forecast (C65–C67). More association power is not more
+  forecast-gain power, and a test sequence needs validity under both full nulls.
+- **Transfer.** A prospectively frozen pre-1990 feasibility screen qualified [0]{.C68 .V031}
+  of [10]{.C68 .V030} candidate stars. No candidate duration effect was fitted and no later
+  candidate test data were opened. Independent diagnostics support named attrition counts
+  (C70) and SS Aur's threshold-run structure (C71), not a unique cause or impossibility for all
+  other methods. The multi-star expansion stops for this paper.
+- **Physical interpretation and novelty.** No result identifies disc memory or another mechanism.
+  CM92's duration–gap correlation, alternation and class split are prior art (C40). C41 records
+  a bounded search for a preregistered probabilistic held-out duration test, not universal priority.
 
-`status` is *supported* (checked against its evidence by an agent or person other than its author),
-*provisional* (awaiting that check), *refuted* or *superseded*. `basis` says what kind of result it is.
+## 2. Information and access boundaries
 
-## 2. The answer, as claims
+| Material | Status and allowed use |
+|---|---|
+| SS Cyg before 1960 | Open development; original coefficients fitted here |
+| SS Cyg 1960–2017 | Original test completed; later analyses must be labelled exploratory |
+| SS Cyg 2018 onward | Closed: no request, row, count, coverage summary or plot |
+| Ten G3a candidates before 1990 | Open development for the completed gain-free feasibility screen |
+| Those candidates from 1990 onward | Closed: no G3b request follows the failed screen |
+| Other archives or targets | No new access is authorized by this paper revision |
 
-- **Does the completed outburst's duration improve frozen forecasts of SS Cyg's next onset beyond
-  the timing baseline?** Yes, under the predeclared rule: mean paired log-score gain
-  [0.0165]{.C01 .V001} nats per issuance, 90% cluster interval [0.0049]{.C01 .V002} to
-  [0.0281]{.C01 .V003}, over [441]{.C01 .V004} issuances in 1960–2017 (C01–C03). The run followed a
-  post-access format repair (C05).
-- **Is it robust?** Every protocol sensitivity kept a positive lower bound (C09). Eight of ten block
-  means are positive, and the strict SE failure boundary is approximately [1.42705]{.C25} (C25). These are
-  checks of one comparison, not new confirmations.
-- **Did every predeclared secondary agree?** No. 1993–2017 is inconclusive (C07), and so is the
-  frozen 12-day class rule (C08). There was no era test, so do not infer disappearance.
-- **What carries the information?** In exploratory post-result fits, a long/short indicator is
-  favoured over continuous duration (C21). A global recentering defines a descriptive score contrast, without removing within-period drift (C20). The class
-  rule's weakness is sensitive to its coding against the fixed baseline (C22). None of this is held-out.
-- **Is it memory, or a mechanism?** Not established. Alternation (C24) and a coexisting slow state
-  are both compatible (C12, C13; supplement S3.4).
-- **Is it new?** The association, alternation and 12-day split are CM92's (C40). The preregistered
-  probabilistic held-out test is new to our knowledge, but one held-out point-forecast study exists
-  (C41, supported bounded search).
+Raw acquisitions, identities, event catalogues and per-issuance outputs stay outside Git. Public
+files contain small aggregates and hashes. No data or manuscript release follows from a successful
+build. Authorship, venue and the AAVSO observer-credit/terms review remain release decisions.
 
-## 3. Vocabulary that the files use
+## 3. Vocabulary and distinct estimands
 
 | Term | Meaning |
 |---|---|
-| X4 | The frozen threshold-crossing extractor, `src/dnmem/extract_x4.py`, run at visual magnitude 10 |
-| C1/7 d | Coverage rule: a visit gap over seven days ends coverage |
-| Issuance | One forecast per observation-time end confirmation (`causal_confirmations`) |
-| Prefix | The rows in the 400 days before an emission; the only predictor source |
-| M0, M2, M3 | Constant, timing (standardised log previous gap q, standardised recent log-gap level L) and timing-plus-duration lognormal clocks |
-| P3 | Lagged-duration placebo; identical to M2 because its development coefficient is zero |
-| Fallback | Rows without a covered previous gap; M0 for both models; gain exactly zero |
-| Type rule | 12-day uncentred indicator plus centred within-type duration; frozen secondary |
-| Blocks | Fixed blocks of 6 times 365.25 days anchored at JD 2436934.5 |
-| Development, evaluation | 1910–1959 fit; 1960–2017 frozen test; 2018 onward closed |
-| Clock scale | Median of the untruncated lognormal clock; not an observed wait |
+| X4 | Original frozen magnitude-ten extractor; its bytes and failed benchmarks stay unchanged |
+| C1/7 d | A gap longer than seven days breaks coverage |
+| Original issuance | Observation-time end confirmation; predictors use only the preceding 400 days |
+| M0 / M2 / M3 | Constant / timing-history / timing-plus-duration frozen lognormal clocks |
+| Original fallback | Missing covered previous gap: both models use M0, hence zero gain |
+| X5 window | New raw-support report window; availability alone proves neither containment nor CAR |
+| DF clock | Observed decisive-faint anchor; its bright-span mark omits an interpolated end estimate |
+| B0 / B1 / B2 | Windowed history / autoregressive / state-space baselines; B2 was preselected |
+| H1 / H2 / H3 | Fitted-end gain / observed-clock gain / paired difference of gains |
+| Guarded statistic | Post-result rolling-level and mark-centring diagnostic, not a new confirmation |
+| Supported G3a issue | Satisfies the frozen timing, history, mark and outcome requirements |
+
+Keep three premises separate: A0 association/completeness/risk set, A1 physical containment or
+genuine censor survival, and A2 the complete normalized coarsening-at-random (CAR) observation
+kernel. A report margin does not prove any of them. Under stated containment, resolved-event
+infimum/supremum bounds are deterministic sample bounds, not confidence intervals. A censored
+survival contrast has a different target. Fixed-cutoff mixed bounds and lower-bound-backoff working
+scores must not share a label silently. Cluster intervals have further dependence assumptions.
+
+DF removes a literal shared fitted end. It retains cadence-dependent anchor lag, shared reports
+and selection. Retention ratios or the difference between clock gains cannot allocate causal
+measurement effects. Historical upload/revision dates are unknown throughout: this is
+observation-time retrospective analysis, not operational replay.
 
 ## 4. Provenance map
 
-| Result | Inputs | Code | Output | Claims |
-|---|---|---|---|---|
-| Frozen parameters | 1910–1959 ledger | A10e fit scripts | `data/fits/a10e_1910_1959/frozen_parameters.json` | C04, C14 |
-| Primary and secondaries | Retained run `outputs/a10h_live_repair_5e39aeb` (not in Git) | `scripts/check_a10g_evaluation.py` | `data/provenance/a10i_evaluation_1960_2017/` | C01–C03, C05–C11, C15 |
-| Post-result review | Evaluation run plus retained 1910–1959 development ledger | `scripts/a10j_postresult_review.py` | `data/provenance/a10j_postresult_review/summary.json` | C06–C10, C20–C25 |
-| Independent audits | Evaluation run plus retained 1910–1959 development inputs | `scripts/a10k_exploratory_audit.py`, `scripts/a10k_secondary_audit.py` | `data/provenance/a10k_independent_review/` | C11–C13, C20–C25 |
-| Simulations | Synthetic | A10d/A10f scripts | `data/simulations/` | C30, C31, C33 |
-| Figures | Aggregates above | `manuscript/figures.py` | `manuscript/figures/`, `manuscript/figure-data/` | C01, C06–C08, C11, C21, C23 |
-| Prior art | CM92 scan, search logs | none | `references/evidence.csv`, A01 and A10l memos | C40, C41 |
+| Result | Reproduction route | Public evidence / claims |
+|---|---|---|
+| Original parameters | A10e fit, development only | `data/fits/a10e_1910_1959/frozen_parameters.json`; C04, C14 |
+| Original frozen scores | `scripts/check_a10g_evaluation.py` on the retained repaired run | `data/provenance/a10i_evaluation_1960_2017/`; C01–C15 |
+| Original exploratory fits | A10j / independent A10k scripts | `data/provenance/a10k_independent_review/`; C20–C25 |
+| R1 observation/end diagnostics | R1 scripts and protocol, separate scratch outputs | `docs/audits/2026-11-09-r1-*.md`; C42–C46 |
+| R2 preparation and fits | R2a/c and R2b protocols and execution receipts | `docs/audits/2026-11-09-r2*.md`; C47–C64 |
+| Synthetic precision | Frozen R2d grid and six-star supplement | `docs/audits/2026-11-09-r2d-precision-results.md`, G3a report; C65–C69 |
+| Gain-free transfer | G3a source freeze d827313, no later-data request | `docs/audits/2026-11-10-g3a-feasibility-results.md`; C68 |
+| Attrition / SS Aur | Separate lattice and native-parser reconstructions | `data/provenance/g3a_review_independent/`; C70–C71 |
+| Figures | `manuscript/figures.py` and normalized CSVs | `manuscript/figure-data/`, `manuscript/figures/manifest.json` |
+| Prior art | Source scans and bounded search records | `references/evidence.csv`, A01/A10l/A10m memos; C40–C41 |
 
-The primary result selects issue times in [2436934.5, 2458119.5), delay 0, the point-duration
-marks, and all score-eligible issuances *including* the [5]{.C03} fallback zeros. Dropping the
-zeros gives the joint-valid sensitivity (436 rows), not the primary. A quoted era number is a
-secondary estimate, not "the result".
+The ledger supplies exact evidence paths and reproduction commands. Its `basis` and `limitations`
+columns matter as much as `status`. Supported can mean numerical reproduction via shared legacy
+extraction APIs; it need not mean an independent observation model or source annotation.
 
-## 5. Traps: superseded results and known misreadings
+The primary selects issue times in [2436934.5, 2458119.5), delay zero, point-duration marks, and all
+eligible issues including fallback zeros. R2b has distinct scheduled and scored populations;
+a coincident DF issue uses the earliest original representative. Never substitute a convenient
+matched population for the original denominator.
 
-<!-- Numbered. Each trap: the tempting misreading in bold, then why it is wrong and the claim that
-governs. Add one whenever a review catches a misreading. -->
+## 5. Traps caught during review
 
-1. **A global mean is not a model for temporal drift.** The recentering contrasts leave within-period
-   drift possible and reuse evaluation outcomes (C20).
-2. **An in-sample class preference is not exclusive validated attribution.** C21 supports its stated
-   conditional fit comparison; it supplies no absence or equivalence result for within-class effects.
-3. **A component restriction is not a whole-model restriction.** The uncentred type component is zero
-   for short events; its within-class companion can shorten a forecast (C08, C22).
-4. **Negative net lag does not allocate mechanisms.** A slow component can coexist with stronger
-   alternation. C12–C13 are conditional profiles; C24 counts forecast-record pairs, including a repeat.
-5. **The SE threshold is strict.** C25's boundary is not an inclusive safe rounded multiplier, nor a
-   substitute for validating block dependence.
-6. **Keep score checking separate from historical source identity.** The scalar audit checks saved
-   outputs without rerunning the live acquisition or its clean-source guard. The receipt binds source
-   bytes at the execution snapshot. Compare those hashes to Git objects at the recorded freeze,
-   and check the original forecasting files against the current checkout. Publication tooling can
-   evolve outside those files. Never edit an old receipt to match a newer checkout, or rerun the
-   acquisition command to reproduce scores.
-7. **Metadata retrieval is not a source-level literature audit.** C40 was re-read on the original
-   scan in A10l; C41 now records an independent bounded search (A10m), with source-access and indexing gaps.
-8. **The DOI does not timestamp the repair.** Preserve the failed attempt and the post-access format
-   repair in every product that reports C01 (C05).
-9. **A draft is not a paper release.** Venue, submission, manuscript release and any future
-   data opening remain Barry's decisions. The closed block must remain closed.
-10. **"First held-out forecast" is false without qualifiers.** Grigorievskiy et al. (2014) scored
-    held-out point forecasts of outburst onset for V363 Lyr. Keep "preregistered, probabilistic"
-    and "known to us" (C41).
-11. **Cannizzo (1993) does not predict this result.** His model explains alternation through disc
-    depletion and links recurrence time with the long-to-short ratio through slow parameter changes.
-    No quiescence contrast after long versus short outbursts was found in it. "Compatible with", never
-    "confirms" (estimands, physical reading).
-12. **The simulation reference is not a target.** The realised gain exceeds C33's model-specific
-    mean, which carries Monte Carlo uncertainty. That says nothing about exceeding a known physical
-    effect.
+1. **A working score is not an established physical-onset likelihood.** X4's statistical interval
+   and clipping do not turn its endpoints into hard observing bounds. Put this beside C01.
+2. **The DOI does not timestamp the repair.** Preserve the first failed access, exact-token repair,
+   independent invariance checks and later execution authority. Do not call the run untouched.
+3. **Outcome bugs do not license rewriting a freeze.** R1 preserved the missing clips; X5 fixed a
+   lower-clip search in a later, explicitly exploratory analysis. The censor repair changed none
+   of the saved primary forecasts, but remains a real correction (C43–C45).
+4. **The iid endpoint-dose experiment is not a general error bound.** It tests that added Gaussian
+   mechanism in the fixed simulator, not every shared-error or observing pathway (C46).
+5. **Observation cadence is still a possible pathway.** A cadence counterexample exists (C48).
+   The Fisher calculation is a local sensitivity index, not a ceiling. Rate is not a validated
+   negative control. Raw-support windows still need ordered witnesses and containment.
+6. **A global mean does not model drift.** Recentring and rolling guards change specified
+   contrasts; they do not measure a fraction of C01 or remove arbitrary slow co-variation.
+7. **The state-space baseline was preselected, not strongest.** Its worse development likelihood
+   does not identify a unique failure mechanism or the true latent process (C61).
+8. **Association and gain have different nulls.** A trained forecast can overshoot a real effect
+   and lose score. Zero gain-without-score rejections in a grid proves no general nesting theorem.
+9. **A failed transfer screen is not a null effect.** G3a fitted no candidate effect. Projections
+   assume fixed early-record rates; they do not bound a new model or later archive coverage.
+10. **Name reduction, period and landmark.** C70's frozen 1980s ratio uses hold reductions for
+    support and raw confirmed peaks as denominator. Whole-pre-1990 fade lags are visit-clock
+    differences, not physical end errors. Six mark losses before usable-outcome selection become
+    four after it. Do not mix these cohorts.
+11. **An operational flag is not a subtype or causal diagnosis.** C71 finds four separated bright
+    report clusters, not four independently annotated ordinary outbursts. The selected pooled
+    faint median is not a same-era quiescent baseline.
+12. **Class fit preference is not exclusive attribution.** The type and continuous models are
+    nonnested; a small extra within-class statistic is no equivalence or absence result.
+13. **Round once, from evidence.** The SE failure boundary is strict, not an inclusive safe rounded
+    multiplier. Counts, score differences and interval endpoints have separate value bindings.
+14. **Prior work stays prior.** “First held-out forecast” is false without qualifiers; the bounded
+    novelty search found earlier held-out point forecasts. Cannizzo's model is compatible with,
+    rather than a prediction or confirmation of, this particular duration–gap result.
 
-13. **Use the predictors the coefficients were fitted to.** Both timing predictors are standardised
-    with frozen development centres/scales; a missing recent level is zero after standardisation.
-14. **A benchmark failure is not an extractor recovery failure.** The unseen waveform failed
-    qualification before X4 was scored. No real-event completeness guarantee follows.
-15. **Name the likelihood comparator.** The within-class statistic adds to the class model, whereas
-    class-only and continuous-duration statistics compare with level only (C21).
-16. **Round from the underlying result once.** C09's uniform-end lower bound must be rounded from
-    the full-precision evidence, rather than rounded again from an abbreviated ledger value.
-17. **A reproduction must preserve the evidence being checked.** Give A10j a scratch output and
-    supply the retained development inputs as well as the evaluation run (Supplement S5).
-18. **A score gain is not a measured physical state or observing utility.** Neither was modelled.
-
-## 6. Checks before and after any change
+## 6. Reproduce without reopening archives
 
 ```sh
-uv run --project manuscript --frozen python tools/refs.py build  # metadata refresh; uses network
-python3 manuscript/figures.py --check  # public assets; no raw observations needed
+python3 manuscript/figures.py --check
 python3 scripts/check_a10g_evaluation.py \
   --directory outputs/a10h_live_repair_5e39aeb \
-  --output outputs/a10m_reproduction/score_audit.json
-make -C manuscript check          # claims, glyphs, makedoc lint and citation audit
-make -C manuscript                # PDF and DOCX into manuscript/build/, then the brief page check
+  --output outputs/reproduction/score_audit.json
+python3 scripts/check_g3a_attrition.py \
+  --output outputs/reproduction/c70 --evidence outputs/reproduction/c70/c70.json
+uv run --frozen --extra analysis python scripts/check_ss_aur_flag.py \
+  --output outputs/reproduction/c71
+make -C manuscript check
+make -C manuscript
 ```
 
-Invariants to assert when touching analysis code:
+Use fresh scratch destinations; never overwrite evidence. Raw-data checks need the retained local
+payloads. The public aggregate figure/build check needs none of those observations. To regenerate
+only the new aggregate figures, use `manuscript/figures.py --generate-aggregates`; the manifest
+retains the byte-identical original figure assets and their lineage. Full `--generate` also uses
+the previously authorized raw illustration input and is unnecessary for ordinary text revision.
 
-- The 26 qualified forecasting files and the frozen parameter bytes (SHA-256 `ce4ef8d5…`) are
-  unchanged.
-- The saved-score audit reports zero failures and reproduces C01 exactly.
-- No archive request is made, and no 2018-onward row, count or coverage summary is read.
-- The poisoned-future-row test in `tests/test_prefix_features.py` passes.
+Before committing, assert that the original 26 forecasting files and parameter bytes remain
+unchanged, the saved-score audit still reconstructs C01, no protected material was accessed, and
+claims, rendering and relevant tests pass. References are source-checked evidence; refresh their
+metadata only deliberately. The makedoc revision is pinned by `manuscript/makedoc.lock.json`.
 
-## 7. Open edges
+## 7. Extend without erasing the failure
 
-- **Later-segment weakness (C07).** Real change, observing change and sampling are not
-  distinguished. An independent photometric extraction for recent decades would test sensitivity to the extraction and observing record.
-- **Class versus continuous (C21, C22).** This needs a new frozen test whose indicator coding and
-  intercept freedom are defined together. The closed 2018-onward block should serve as one stratum
-  of a multi-star protocol, since alone it would hold roughly 65 forecasts at earlier rates (a
-  planning assumption).
-- **Memory versus slow state.** P3 failed to inform (frozen at zero). A latent-state timing baseline
-  is the next discriminating comparison.
-- **Endpoint coupling.** Shared end-time error can create information in some constructions
-  (D021). The uniform-end and delay sensitivities only probe it.
-- **Bibliography.** Hempelmann & Kurths (1990) and Grigorievskiy et al. (2014) have no DOI and are
-  cited as plain text until Barry adds Zotero entries. C41 is supported as an account of a bounded independent search; ADS and full-text gaps remain.
+A new archive, measurement model or qualifying design would be a separate research decision.
+Preserve the failed G3a rules and outcome even if later methods succeed. A specialist review of
+physical hypotheses remains useful; do not contact anyone without authorization. Do not infer
+that other dwarf novae lack a duration effect, or that the SS Cyg result is unique.
 
-## 8. Conduct in this repository
-
-- Read `AGENTS.md` (or `CLAUDE.md`). Facts and citations come from sources read in the task; every DOI
-  is checked against Crossref.
-- To add or change a claim: edit `manuscript/claims.csv`, reverify the evidence, run
-  `python3 tools/claims.py stamp manuscript/claims.csv ID`, then make every document pass the check.
-- Change `manuscript/estimands.md` before changing how a result is described.
-- Do not edit generated artefacts by hand: `references/refs.yaml`, marked table blocks, `figures/`,
-  `build/`.
+Change `estimands.md` before changing interpretation. Update the single ledger, verify the evidence,
+stamp changed claims with `tools/claims.py`, then rebuild every product. Do not hand-edit generated
+figures, reference metadata or PDFs. Barry reviews the integrated drafts before release.

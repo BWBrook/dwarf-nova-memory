@@ -1,0 +1,1458 @@
+{
+  "analysis_base": "93c48cf",
+  "attrition": {
+    "clock_available": 822,
+    "covered_previous_gap": 280,
+    "mark_losses_after_outcome": 4,
+    "mark_losses_before_outcome": 6,
+    "marked_after_history": 274,
+    "missing_previous_gap": 542,
+    "partition": {
+      "coverage_hole": 207,
+      "empty_history": 13,
+      "incomplete_window_onset": 162,
+      "insufficient_raw_bright_observers": 52,
+      "no_scheduled_anchor": 88,
+      "nonpositive_adjacent_gap": 20
+    },
+    "raw_supported": 221
+  },
+  "checker_sha256": "6f8b67e73fbd0390ede935e3a44e2b3cf6dd919797920768d5ef3ed9ebcaf21a",
+  "checks": 1412,
+  "constant_rate_projections": {
+    "28": {
+      "frozen_mixed_route_issues": 285.6,
+      "ordinary_raw_route_issues": 294.0,
+      "ordinary_relaxed_clock_outcome": 562.8
+    },
+    "36": {
+      "frozen_mixed_route_issues": 367.2,
+      "ordinary_raw_route_issues": 378.0,
+      "ordinary_relaxed_clock_outcome": 723.6
+    }
+  },
+  "epoch_1980s": {
+    "frozen_mixed_route_issues": 102,
+    "frozen_reductions_confirmed_peaks": 485,
+    "ordinary_raw_confirmed_peaks": 485,
+    "ordinary_raw_route_issues": 105,
+    "ordinary_relaxed_clock_outcome": 201
+  },
+  "evidence_input_sha256": {
+    "claude_review": "3af35f807309dba69ad69ece79a756198c51accc5b430e877a00241e53ded2d9",
+    "frozen_details": "deac4c61f239777d99863512d48cbb319b7b42cec43828d5f15660fb6ed2ce3c",
+    "safe_ss_cyg": "9953d2052a2a8784887b334825f9f91e6135df13c730e47ae129a55656e37ab0",
+    "safe_ss_cyg_receipt": "000d3dd4ecaa617be59c0ee6d13d51bdb01edb17ac3d7a7f3ab6f10eaf2b12bb"
+  },
+  "extraction_freeze": "d827313615ca1994070b668bffa605e6c2faee14",
+  "failures": [],
+  "hold_frozen_reductions": {
+    "IP Peg": {
+      "brightest": {
+        "by_decade": {
+          "1980": {
+            "clock_and_outcome": 5,
+            "scheduled": 12,
+            "supported": 0
+          }
+        },
+        "clock_outcome_all": 5,
+        "confirmed": 18,
+        "confirmed_by_decade": {
+          "1980": 18
+        },
+        "landmark_counts": {
+          "supported_current_raw_peak_in_1980s": 0,
+          "supported_issue_in_1980s_with_peak_before_1980": 0
+        },
+        "sequential": {
+          "clock": 8,
+          "clock_prevcovered": 2,
+          "clock_prevcovered_mark": 2,
+          "scheduled": 12,
+          "supported": 0
+        }
+      },
+      "median": {
+        "by_decade": {
+          "1980": {
+            "clock_and_outcome": 5,
+            "scheduled": 12,
+            "supported": 0
+          }
+        },
+        "clock_outcome_all": 5,
+        "confirmed": 18,
+        "confirmed_by_decade": {
+          "1980": 18
+        },
+        "landmark_counts": {
+          "supported_current_raw_peak_in_1980s": 0,
+          "supported_issue_in_1980s_with_peak_before_1980": 0
+        },
+        "sequential": {
+          "clock": 8,
+          "clock_prevcovered": 2,
+          "clock_prevcovered_mark": 2,
+          "scheduled": 12,
+          "supported": 0
+        }
+      }
+    },
+    "U Gem": {
+      "brightest": {
+        "by_decade": {
+          "1940": {
+            "clock_and_outcome": 14,
+            "scheduled": 18,
+            "supported": 3
+          },
+          "1950": {
+            "clock_and_outcome": 12,
+            "scheduled": 18,
+            "supported": 0
+          },
+          "1960": {
+            "clock_and_outcome": 17,
+            "scheduled": 21,
+            "supported": 1
+          },
+          "1970": {
+            "clock_and_outcome": 22,
+            "scheduled": 23,
+            "supported": 6
+          },
+          "1980": {
+            "clock_and_outcome": 23,
+            "scheduled": 26,
+            "supported": 10
+          },
+          "pre1940": {
+            "clock_and_outcome": 48,
+            "scheduled": 58,
+            "supported": 5
+          }
+        },
+        "clock_outcome_all": 136,
+        "confirmed": 170,
+        "confirmed_by_decade": {
+          "1940": 18,
+          "1950": 17,
+          "1960": 24,
+          "1970": 22,
+          "1980": 27,
+          "pre1940": 62
+        },
+        "landmark_counts": {
+          "supported_current_raw_peak_in_1980s": 10,
+          "supported_issue_in_1980s_with_peak_before_1980": 0
+        },
+        "sequential": {
+          "clock": 153,
+          "clock_prevcovered": 26,
+          "clock_prevcovered_mark": 26,
+          "scheduled": 164,
+          "supported": 25
+        }
+      },
+      "median": {
+        "by_decade": {
+          "1940": {
+            "clock_and_outcome": 14,
+            "scheduled": 18,
+            "supported": 3
+          },
+          "1950": {
+            "clock_and_outcome": 12,
+            "scheduled": 18,
+            "supported": 0
+          },
+          "1960": {
+            "clock_and_outcome": 17,
+            "scheduled": 21,
+            "supported": 1
+          },
+          "1970": {
+            "clock_and_outcome": 22,
+            "scheduled": 23,
+            "supported": 6
+          },
+          "1980": {
+            "clock_and_outcome": 24,
+            "scheduled": 26,
+            "supported": 12
+          },
+          "pre1940": {
+            "clock_and_outcome": 48,
+            "scheduled": 58,
+            "supported": 5
+          }
+        },
+        "clock_outcome_all": 137,
+        "confirmed": 170,
+        "confirmed_by_decade": {
+          "1940": 18,
+          "1950": 17,
+          "1960": 24,
+          "1970": 22,
+          "1980": 27,
+          "pre1940": 62
+        },
+        "landmark_counts": {
+          "supported_current_raw_peak_in_1980s": 12,
+          "supported_issue_in_1980s_with_peak_before_1980": 0
+        },
+        "sequential": {
+          "clock": 153,
+          "clock_prevcovered": 28,
+          "clock_prevcovered_mark": 28,
+          "scheduled": 164,
+          "supported": 27
+        }
+      }
+    }
+  },
+  "interpretation_limits": [
+    "Headline102/485 mixes hold reductions; even same-stream ratios count forecasts by issue decade and events by peak decade, not a paired event-cohort conversion probability.",
+    "822/280/542 and the partition use all pre1990 ordinary/raw routes, including the holds, not frozen hold streams or the1980s alone.",
+    "Mark costs six at the covered-history stage and four after usable-outcome support; these denominators must be named.",
+    "Fade delay is first selected decisive-faint visit LAST raw support minus last threshold-bright visit CLOSURE, pooled over clock-available pre1990 features; not a physical-end timing error.",
+    "X Leo supported gap quantiles and onset-window widths use different selected populations; their marginal medians do not decompose any particular gap.",
+    "Projections fix the particular extraction, landmarks and1980s rates. They are not upper bounds on new models, missed-event inference, later coverage or a changed split.",
+    "The same-chain SS Cyg reference demonstrates target-dependent retained yield; it does not establish that thresholds/gates are not strict or that faintness caused the difference.",
+    "Shared frozen X4/X5/DF/outcome APIs, prior independently audited loader and hold reduction/emission APIs are reused. Masks, bit-lattice counts, projections and scalar quantiles are independent; no independent extractor, physical timing annotation or causal identification.",
+    "SS Cyg safe input was supplied as an already-open pre1990-only slice; this checker never opens the broader through2017 cache."
+  ],
+  "ordinary_raw_streams": {
+    "AR And": {
+      "by_decade": {
+        "1960": {
+          "clock_and_outcome": 0,
+          "scheduled": 1,
+          "supported": 0
+        },
+        "1970": {
+          "clock_and_outcome": 0,
+          "scheduled": 6,
+          "supported": 0
+        },
+        "1980": {
+          "clock_and_outcome": 12,
+          "scheduled": 29,
+          "supported": 7
+        }
+      },
+      "clock_covered_outcome": 7,
+      "clock_mark_outcome": 12,
+      "clock_outcome_all": 12,
+      "confirmed": 172,
+      "confirmed_by_decade": {
+        "1960": 5,
+        "1970": 73,
+        "1980": 94
+      },
+      "delay_clock_population": 16,
+      "fade_confirmation_delay_quantiles": [
+        1.9654999999329448,
+        5.96999999997206,
+        18.225000000093132
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        1.8705999999307097,
+        5.5499999998137355,
+        14.795999999996276
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 7,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 9,
+        "13": 5,
+        "15": 7,
+        "5": 3,
+        "7": 1,
+        "8": 11
+      },
+      "mark_losses_among_usable_outcomes": 0,
+      "mark_losses_before_outcome": 0,
+      "nonpositive_latest_gap_features": 1,
+      "nonpositive_unique_latest_gap_ids": 1,
+      "onset_window_width_quantiles": [
+        0.9799999999813735,
+        3.0079999999143183,
+        10.549999999813735
+      ],
+      "previous_gap_state_given_clock": {
+        "covered_adjacent_gap": 8,
+        "incomplete_window_onset": 5,
+        "insufficient_raw_bright_observers": 2,
+        "nonpositive_adjacent_gap": 1
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        2.1154999998398125,
+        6.119999999878928,
+        18.375
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        2.1154999998398125,
+        6.119999999878928,
+        18.375
+      ],
+      "sequential": {
+        "clock": 16,
+        "clock_prevcovered": 8,
+        "clock_prevcovered_mark": 8,
+        "scheduled": 36,
+        "supported": 7
+      },
+      "supported_mark_quantiles": [
+        2.99320000000298,
+        6.469000000040978,
+        8.62599999997765
+      ],
+      "supported_previous_gap_quantiles": [
+        4.600000000000001,
+        12.96999999973923,
+        22.524000000022355
+      ],
+      "unmatched_last_bright_visit_support": 0
+    },
+    "CH UMa": {
+      "by_decade": {
+        "1970": {
+          "clock_and_outcome": 6,
+          "scheduled": 7,
+          "supported": 0
+        },
+        "1980": {
+          "clock_and_outcome": 7,
+          "scheduled": 19,
+          "supported": 0
+        }
+      },
+      "clock_covered_outcome": 0,
+      "clock_mark_outcome": 10,
+      "clock_outcome_all": 13,
+      "confirmed": 27,
+      "confirmed_by_decade": {
+        "1970": 7,
+        "1980": 20
+      },
+      "delay_clock_population": 22,
+      "fade_confirmation_delay_quantiles": [
+        1.7066999999806285,
+        3.6600000001490116,
+        13.497000000113623
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        1.6360000000335275,
+        2.8500000000931323,
+        14.862000000197439
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 0,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 1,
+        "1": 2,
+        "13": 10,
+        "5": 7,
+        "8": 3,
+        "9": 3
+      },
+      "mark_losses_among_usable_outcomes": 0,
+      "mark_losses_before_outcome": 0,
+      "nonpositive_latest_gap_features": 0,
+      "nonpositive_unique_latest_gap_ids": 0,
+      "onset_window_width_quantiles": [
+        2.509999999916181,
+        4.849999999860302,
+        6.6509999997913845
+      ],
+      "previous_gap_state_given_clock": {
+        "coverage_hole": 1,
+        "empty_history": 3,
+        "incomplete_window_onset": 11,
+        "insufficient_raw_bright_observers": 3,
+        "no_scheduled_anchor": 4
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        1.8566999998874962,
+        3.8100000000558794,
+        13.64700000002049
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        1.8566999998874962,
+        3.8100000000558794,
+        13.64700000002049
+      ],
+      "sequential": {
+        "clock": 22,
+        "clock_prevcovered": 0,
+        "clock_prevcovered_mark": 0,
+        "scheduled": 26,
+        "supported": 0
+      },
+      "supported_mark_quantiles": null,
+      "supported_previous_gap_quantiles": null,
+      "unmatched_last_bright_visit_support": 0
+    },
+    "DX And": {
+      "by_decade": {
+        "1960": {
+          "clock_and_outcome": 0,
+          "scheduled": 3,
+          "supported": 0
+        },
+        "1970": {
+          "clock_and_outcome": 2,
+          "scheduled": 8,
+          "supported": 0
+        },
+        "1980": {
+          "clock_and_outcome": 8,
+          "scheduled": 10,
+          "supported": 0
+        }
+      },
+      "clock_covered_outcome": 0,
+      "clock_mark_outcome": 10,
+      "clock_outcome_all": 10,
+      "confirmed": 24,
+      "confirmed_by_decade": {
+        "1960": 4,
+        "1970": 10,
+        "1980": 10
+      },
+      "delay_clock_population": 15,
+      "fade_confirmation_delay_quantiles": [
+        2.5824000001884997,
+        6.041000000201166,
+        20.524000000301747
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        2.109200000017881,
+        6.041000000201166,
+        12.634000000264496
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 0,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 5,
+        "13": 10,
+        "5": 5,
+        "8": 1
+      },
+      "mark_losses_among_usable_outcomes": 0,
+      "mark_losses_before_outcome": 0,
+      "nonpositive_latest_gap_features": 0,
+      "nonpositive_unique_latest_gap_ids": 0,
+      "onset_window_width_quantiles": null,
+      "previous_gap_state_given_clock": {
+        "empty_history": 5,
+        "incomplete_window_onset": 7,
+        "no_scheduled_anchor": 3
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        2.7324000000953674,
+        6.191000000108033,
+        20.674000000208615
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        2.7324000000953674,
+        6.191000000108033,
+        20.674000000208615
+      ],
+      "sequential": {
+        "clock": 15,
+        "clock_prevcovered": 0,
+        "clock_prevcovered_mark": 0,
+        "scheduled": 21,
+        "supported": 0
+      },
+      "supported_mark_quantiles": null,
+      "supported_previous_gap_quantiles": null,
+      "unmatched_last_bright_visit_support": 0
+    },
+    "IP Peg": {
+      "by_decade": {
+        "1980": {
+          "clock_and_outcome": 5,
+          "scheduled": 12,
+          "supported": 0
+        }
+      },
+      "clock_covered_outcome": 0,
+      "clock_mark_outcome": 4,
+      "clock_outcome_all": 5,
+      "confirmed": 18,
+      "confirmed_by_decade": {
+        "1980": 18
+      },
+      "delay_clock_population": 8,
+      "fade_confirmation_delay_quantiles": [
+        0.9710999998729677,
+        4.423500000266358,
+        15.795699999993666
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        0.9710999998729677,
+        4.423500000266358,
+        15.795699999993666
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 0,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 1,
+        "13": 4,
+        "5": 1,
+        "7": 2,
+        "8": 3,
+        "9": 1
+      },
+      "mark_losses_among_usable_outcomes": 0,
+      "mark_losses_before_outcome": 0,
+      "nonpositive_latest_gap_features": 0,
+      "nonpositive_unique_latest_gap_ids": 0,
+      "onset_window_width_quantiles": [
+        17.43999999994412,
+        17.43999999994412,
+        17.43999999994412
+      ],
+      "previous_gap_state_given_clock": {
+        "coverage_hole": 2,
+        "covered_adjacent_gap": 2,
+        "incomplete_window_onset": 2,
+        "no_scheduled_anchor": 2
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        1.1210999997798354,
+        4.573500000173226,
+        15.945699999900535
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        1.1210999997798354,
+        4.573500000173226,
+        15.945699999900535
+      ],
+      "sequential": {
+        "clock": 8,
+        "clock_prevcovered": 2,
+        "clock_prevcovered_mark": 2,
+        "scheduled": 12,
+        "supported": 0
+      },
+      "supported_mark_quantiles": null,
+      "supported_previous_gap_quantiles": null,
+      "unmatched_last_bright_visit_support": 0
+    },
+    "RU Peg": {
+      "by_decade": {
+        "1940": {
+          "clock_and_outcome": 4,
+          "scheduled": 18,
+          "supported": 0
+        },
+        "1950": {
+          "clock_and_outcome": 8,
+          "scheduled": 23,
+          "supported": 1
+        },
+        "1960": {
+          "clock_and_outcome": 14,
+          "scheduled": 30,
+          "supported": 2
+        },
+        "1970": {
+          "clock_and_outcome": 21,
+          "scheduled": 34,
+          "supported": 7
+        },
+        "1980": {
+          "clock_and_outcome": 25,
+          "scheduled": 34,
+          "supported": 13
+        },
+        "pre1940": {
+          "clock_and_outcome": 0,
+          "scheduled": 4,
+          "supported": 0
+        }
+      },
+      "clock_covered_outcome": 26,
+      "clock_mark_outcome": 54,
+      "clock_outcome_all": 72,
+      "confirmed": 170,
+      "confirmed_by_decade": {
+        "1940": 25,
+        "1950": 28,
+        "1960": 36,
+        "1970": 37,
+        "1980": 37,
+        "pre1940": 7
+      },
+      "delay_clock_population": 128,
+      "fade_confirmation_delay_quantiles": [
+        1.0409299999009818,
+        3.8500000000931323,
+        9.945700000133364
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        0.6642000000458211,
+        2.077999999979511,
+        5.010600000107661
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 13,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 9,
+        "1": 28,
+        "11": 3,
+        "13": 31,
+        "15": 23,
+        "3": 2,
+        "5": 10,
+        "7": 16,
+        "8": 6,
+        "9": 15
+      },
+      "mark_losses_among_usable_outcomes": 3,
+      "mark_losses_before_outcome": 5,
+      "nonpositive_latest_gap_features": 0,
+      "nonpositive_unique_latest_gap_ids": 0,
+      "onset_window_width_quantiles": [
+        0.8100000000558794,
+        3.2999999998137355,
+        6.7299999999813735
+      ],
+      "previous_gap_state_given_clock": {
+        "coverage_hole": 16,
+        "covered_adjacent_gap": 44,
+        "incomplete_window_onset": 25,
+        "insufficient_raw_bright_observers": 7,
+        "no_scheduled_anchor": 36
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        1.1909299998078495,
+        4.0,
+        10.095700000040233
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        1.1909299998078495,
+        4.0,
+        10.095700000040233
+      ],
+      "sequential": {
+        "clock": 128,
+        "clock_prevcovered": 44,
+        "clock_prevcovered_mark": 39,
+        "scheduled": 143,
+        "supported": 23
+      },
+      "supported_mark_quantiles": [
+        2.61359999999404,
+        5.0,
+        10.408999999985099
+      ],
+      "supported_previous_gap_quantiles": [
+        46.359999999962746,
+        66.0,
+        96.94799999985844
+      ],
+      "unmatched_last_bright_visit_support": 0
+    },
+    "SS Aur": {
+      "by_decade": {
+        "1940": {
+          "clock_and_outcome": 10,
+          "scheduled": 24,
+          "supported": 0
+        },
+        "1950": {
+          "clock_and_outcome": 23,
+          "scheduled": 40,
+          "supported": 6
+        },
+        "1960": {
+          "clock_and_outcome": 51,
+          "scheduled": 63,
+          "supported": 27
+        },
+        "1970": {
+          "clock_and_outcome": 34,
+          "scheduled": 50,
+          "supported": 19
+        },
+        "1980": {
+          "clock_and_outcome": 49,
+          "scheduled": 60,
+          "supported": 35
+        },
+        "pre1940": {
+          "clock_and_outcome": 73,
+          "scheduled": 106,
+          "supported": 23
+        }
+      },
+      "clock_covered_outcome": 111,
+      "clock_mark_outcome": 233,
+      "clock_outcome_all": 240,
+      "confirmed": 431,
+      "confirmed_by_decade": {
+        "1940": 34,
+        "1950": 48,
+        "1960": 66,
+        "1970": 66,
+        "1980": 65,
+        "pre1940": 152
+      },
+      "delay_clock_population": 293,
+      "fade_confirmation_delay_quantiles": [
+        1.1628000001423069,
+        4.7299999999813735,
+        19.58200000002982
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        0.7080000000074507,
+        1.9499999997206032,
+        8.791000000201176
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 35,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 23,
+        "1": 5,
+        "11": 1,
+        "13": 123,
+        "15": 110,
+        "5": 31,
+        "7": 17,
+        "8": 27,
+        "9": 6
+      },
+      "mark_losses_among_usable_outcomes": 1,
+      "mark_losses_before_outcome": 1,
+      "nonpositive_latest_gap_features": 6,
+      "nonpositive_unique_latest_gap_ids": 6,
+      "onset_window_width_quantiles": [
+        1.0048000000882893,
+        2.7999999998137355,
+        6.909999999916182
+      ],
+      "previous_gap_state_given_clock": {
+        "coverage_hole": 90,
+        "covered_adjacent_gap": 128,
+        "incomplete_window_onset": 39,
+        "insufficient_raw_bright_observers": 14,
+        "no_scheduled_anchor": 16,
+        "nonpositive_adjacent_gap": 6
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        1.3128000000491746,
+        4.879999999888241,
+        19.731999999936686
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        1.2959999999962752,
+        4.879999999888241,
+        19.731999999936686
+      ],
+      "sequential": {
+        "clock": 293,
+        "clock_prevcovered": 128,
+        "clock_prevcovered_mark": 127,
+        "scheduled": 343,
+        "supported": 110
+      },
+      "supported_mark_quantiles": [
+        3.0,
+        4.974999999860302,
+        11.752999999979515
+      ],
+      "supported_previous_gap_quantiles": [
+        6.009299999708309,
+        30.03500000014901,
+        61.20000000000002
+      ],
+      "unmatched_last_bright_visit_support": 0
+    },
+    "TW Vir": {
+      "by_decade": {
+        "1960": {
+          "clock_and_outcome": 0,
+          "scheduled": 2,
+          "supported": 0
+        },
+        "1970": {
+          "clock_and_outcome": 0,
+          "scheduled": 3,
+          "supported": 0
+        },
+        "1980": {
+          "clock_and_outcome": 2,
+          "scheduled": 8,
+          "supported": 0
+        }
+      },
+      "clock_covered_outcome": 0,
+      "clock_mark_outcome": 2,
+      "clock_outcome_all": 2,
+      "confirmed": 147,
+      "confirmed_by_decade": {
+        "1950": 8,
+        "1960": 31,
+        "1970": 45,
+        "1980": 63
+      },
+      "delay_clock_population": 4,
+      "fade_confirmation_delay_quantiles": [
+        0.8680000000633299,
+        2.8910000000614673,
+        4.463200000161305
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        0.8680000000633299,
+        2.8910000000614673,
+        4.463200000161305
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 0,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 5,
+        "13": 2,
+        "5": 2,
+        "8": 4
+      },
+      "mark_losses_among_usable_outcomes": 0,
+      "mark_losses_before_outcome": 0,
+      "nonpositive_latest_gap_features": 0,
+      "nonpositive_unique_latest_gap_ids": 0,
+      "onset_window_width_quantiles": [
+        3.828399999672547,
+        5.661999999778345,
+        7.495599999884143
+      ],
+      "previous_gap_state_given_clock": {
+        "incomplete_window_onset": 2,
+        "no_scheduled_anchor": 2
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        1.0179999999701979,
+        3.040999999968335,
+        4.613200000068173
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        1.0179999999701979,
+        3.040999999968335,
+        4.613200000068173
+      ],
+      "sequential": {
+        "clock": 4,
+        "clock_prevcovered": 0,
+        "clock_prevcovered_mark": 0,
+        "scheduled": 13,
+        "supported": 0
+      },
+      "supported_mark_quantiles": null,
+      "supported_previous_gap_quantiles": null,
+      "unmatched_last_bright_visit_support": 0
+    },
+    "U Gem": {
+      "by_decade": {
+        "1940": {
+          "clock_and_outcome": 14,
+          "scheduled": 18,
+          "supported": 3
+        },
+        "1950": {
+          "clock_and_outcome": 11,
+          "scheduled": 18,
+          "supported": 0
+        },
+        "1960": {
+          "clock_and_outcome": 19,
+          "scheduled": 21,
+          "supported": 3
+        },
+        "1970": {
+          "clock_and_outcome": 22,
+          "scheduled": 23,
+          "supported": 5
+        },
+        "1980": {
+          "clock_and_outcome": 27,
+          "scheduled": 27,
+          "supported": 15
+        },
+        "pre1940": {
+          "clock_and_outcome": 49,
+          "scheduled": 58,
+          "supported": 5
+        }
+      },
+      "clock_covered_outcome": 31,
+      "clock_mark_outcome": 142,
+      "clock_outcome_all": 142,
+      "confirmed": 169,
+      "confirmed_by_decade": {
+        "1940": 18,
+        "1950": 17,
+        "1960": 24,
+        "1970": 22,
+        "1980": 27,
+        "pre1940": 61
+      },
+      "delay_clock_population": 154,
+      "fade_confirmation_delay_quantiles": [
+        0.8388700000941753,
+        2.4000000001396984,
+        10.850000000093132
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        0.7069600000046193,
+        1.2800000002607703,
+        6.838000000081967
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 15,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 3,
+        "13": 111,
+        "15": 31,
+        "5": 12,
+        "8": 8
+      },
+      "mark_losses_among_usable_outcomes": 0,
+      "mark_losses_before_outcome": 0,
+      "nonpositive_latest_gap_features": 0,
+      "nonpositive_unique_latest_gap_ids": 0,
+      "onset_window_width_quantiles": [
+        0.2887999997939915,
+        1.1714999999385327,
+        5.265000000270083
+      ],
+      "previous_gap_state_given_clock": {
+        "coverage_hole": 66,
+        "covered_adjacent_gap": 31,
+        "empty_history": 5,
+        "incomplete_window_onset": 40,
+        "insufficient_raw_bright_observers": 8,
+        "no_scheduled_anchor": 4
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        0.9888700000010431,
+        2.550000000046566,
+        11.0
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        0.9888700000010431,
+        2.550000000046566,
+        11.0
+      ],
+      "sequential": {
+        "clock": 154,
+        "clock_prevcovered": 31,
+        "clock_prevcovered_mark": 31,
+        "scheduled": 165,
+        "supported": 31
+      },
+      "supported_mark_quantiles": [
+        3.1729999999515712,
+        6.162999999709427,
+        12.640000000130385
+      ],
+      "supported_previous_gap_quantiles": [
+        46.10000000009313,
+        92.3000000002794,
+        124.20099999988452
+      ],
+      "unmatched_last_bright_visit_support": 0
+    },
+    "UU Aql": {
+      "by_decade": {
+        "1950": {
+          "clock_and_outcome": 2,
+          "scheduled": 14,
+          "supported": 0
+        },
+        "1960": {
+          "clock_and_outcome": 9,
+          "scheduled": 21,
+          "supported": 1
+        },
+        "1970": {
+          "clock_and_outcome": 10,
+          "scheduled": 29,
+          "supported": 1
+        },
+        "1980": {
+          "clock_and_outcome": 25,
+          "scheduled": 29,
+          "supported": 13
+        }
+      },
+      "clock_covered_outcome": 15,
+      "clock_mark_outcome": 45,
+      "clock_outcome_all": 46,
+      "confirmed": 120,
+      "confirmed_by_decade": {
+        "1940": 11,
+        "1950": 23,
+        "1960": 20,
+        "1970": 32,
+        "1980": 31,
+        "pre1940": 3
+      },
+      "delay_clock_population": 70,
+      "fade_confirmation_delay_quantiles": [
+        0.8500000000931323,
+        3.944499999983236,
+        23.376570000313226
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        0.9428000000771135,
+        5.021499999798834,
+        18.771030000364412
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 13,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 14,
+        "13": 30,
+        "15": 15,
+        "5": 22,
+        "7": 2,
+        "8": 9,
+        "9": 1
+      },
+      "mark_losses_among_usable_outcomes": 0,
+      "mark_losses_before_outcome": 0,
+      "nonpositive_latest_gap_features": 1,
+      "nonpositive_unique_latest_gap_ids": 1,
+      "onset_window_width_quantiles": [
+        0.9979899997822941,
+        3.00649999990128,
+        8.445299999788404
+      ],
+      "previous_gap_state_given_clock": {
+        "coverage_hole": 28,
+        "covered_adjacent_gap": 17,
+        "incomplete_window_onset": 7,
+        "insufficient_raw_bright_observers": 8,
+        "no_scheduled_anchor": 9,
+        "nonpositive_adjacent_gap": 1
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        1.0,
+        4.094499999890104,
+        23.526570000220094
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        1.0,
+        4.094499999890104,
+        23.526570000220094
+      ],
+      "sequential": {
+        "clock": 70,
+        "clock_prevcovered": 17,
+        "clock_prevcovered_mark": 17,
+        "scheduled": 93,
+        "supported": 15
+      },
+      "supported_mark_quantiles": [
+        2.1456000000238418,
+        3.7610000004060566,
+        8.004440000094473
+      ],
+      "supported_previous_gap_quantiles": [
+        7.647399999946357,
+        43.93000000016764,
+        64.18159999996423
+      ],
+      "unmatched_last_bright_visit_support": 0
+    },
+    "X Leo": {
+      "by_decade": {
+        "1950": {
+          "clock_and_outcome": 0,
+          "scheduled": 9,
+          "supported": 0
+        },
+        "1960": {
+          "clock_and_outcome": 12,
+          "scheduled": 49,
+          "supported": 3
+        },
+        "1970": {
+          "clock_and_outcome": 22,
+          "scheduled": 60,
+          "supported": 10
+        },
+        "1980": {
+          "clock_and_outcome": 41,
+          "scheduled": 78,
+          "supported": 22
+        },
+        "pre1940": {
+          "clock_and_outcome": 0,
+          "scheduled": 4,
+          "supported": 0
+        }
+      },
+      "clock_covered_outcome": 35,
+      "clock_mark_outcome": 74,
+      "clock_outcome_all": 75,
+      "confirmed": 498,
+      "confirmed_by_decade": {
+        "1940": 54,
+        "1950": 47,
+        "1960": 77,
+        "1970": 117,
+        "1980": 120,
+        "pre1940": 83
+      },
+      "delay_clock_population": 112,
+      "fade_confirmation_delay_quantiles": [
+        0.8500000000931323,
+        3.8209999999962747,
+        14.829000000050291
+      ],
+      "fade_delay_issue_1980s_quantiles": [
+        0.79720000019297,
+        3.791999999899417,
+        14.825999999977649
+      ],
+      "faint_visit_last_minus_first_quantiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "landmark_counts": {
+        "supported_current_raw_peak_in_1980s": 22,
+        "supported_issue_in_1980s_with_peak_before_1980": 0
+      },
+      "last_bright_closure_minus_latest_raw_bright_quantiles": [
+        0.14999999990686774,
+        0.14999999990686774,
+        0.14999999990686774
+      ],
+      "lattice": {
+        "0": 53,
+        "13": 39,
+        "15": 35,
+        "5": 22,
+        "7": 15,
+        "8": 35,
+        "9": 1
+      },
+      "mark_losses_among_usable_outcomes": 0,
+      "mark_losses_before_outcome": 0,
+      "nonpositive_latest_gap_features": 12,
+      "nonpositive_unique_latest_gap_ids": 12,
+      "onset_window_width_quantiles": [
+        0.8919999999925494,
+        2.387000000104308,
+        6.183999999798837
+      ],
+      "previous_gap_state_given_clock": {
+        "coverage_hole": 4,
+        "covered_adjacent_gap": 50,
+        "incomplete_window_onset": 24,
+        "insufficient_raw_bright_observers": 10,
+        "no_scheduled_anchor": 12,
+        "nonpositive_adjacent_gap": 12
+      },
+      "raw_bright_support_to_faint_anchor_quantiles": [
+        1.0,
+        3.9709999999031425,
+        14.978999999957159
+      ],
+      "raw_bright_support_to_faint_first_support_quantiles": [
+        1.0,
+        3.9709999999031425,
+        14.978999999957159
+      ],
+      "sequential": {
+        "clock": 112,
+        "clock_prevcovered": 50,
+        "clock_prevcovered_mark": 50,
+        "scheduled": 200,
+        "supported": 35
+      },
+      "supported_mark_quantiles": [
+        1.894599999859929,
+        3.139999999664724,
+        8.040200000163168
+      ],
+      "supported_previous_gap_quantiles": [
+        0.9879999999888242,
+        5.129999999888241,
+        11.265999999921771
+      ],
+      "unmatched_last_bright_visit_support": 0
+    }
+  },
+  "ratios": {
+    "all_raw_to_raw_peaks": 0.21649484536082475,
+    "frozen_mixed_to_raw_peaks": 0.21030927835051547,
+    "frozen_route_to_frozen_route_peaks": 0.21030927835051547,
+    "relaxed_raw_to_raw_peaks": 0.4144329896907217,
+    "ss_cyg_issue_to_peak": 0.9178082191780822
+  },
+  "raw_stars_at_least40_relaxed": [
+    "RU Peg",
+    "SS Aur",
+    "U Gem",
+    "UU Aql",
+    "X Leo"
+  ],
+  "required_conversion_at_frozen_raw_peak_rate": {
+    "28": 0.8100147275405007,
+    "36": 0.6300114547537228
+  },
+  "scope": "C70 numeric reconciliation only, no requests/later inputs/marker fitting/relation or scoring",
+  "source_sha256": {
+    "scripts/check_g3a_execution.py": "8957bcb7e2167a285c54ec0efb7c6abd51d9e1d3489f0fc3723877804938c1ba",
+    "src/dnmem/extract.py": "e8271973a68c6c9d1ca99fad60ef7519f06344c1b1e16a4cb2a4660c6bf2b976",
+    "src/dnmem/extract_x3.py": "839f9a2f2d8c4a48d190acb343a3c360c35e930d238f6254a338749304aa5e5e",
+    "src/dnmem/extract_x4.py": "c4c1319e1e154a19b4e0c759adb7d49f92d7758dae20c39cd81b1dca068c47c2",
+    "src/dnmem/extract_x5.py": "a8cfe3ec68e53c08e2470c7dad276b4ec9ad3d5f42dd47b2f89b3f63905a8bd6",
+    "src/dnmem/g3a_eclipse.py": "0773993497ea0c760c044e091bc74c4d2121f9f7f3ea38bd63a7fb2e8efd4a3a",
+    "src/dnmem/r2_features.py": "912e1c2c890e6978f582189ab1bd858e6b7dd9aadbbe371a0d9c255fee128a17",
+    "src/dnmem/r2b_features.py": "154ea37bc1baf30fb1e841f90a94b3394d52c7db834b1e3c4c75a20df9b74902",
+    "src/dnmem/r2b_scoring.py": "e45563e739922826d72f2cfe8b4324e8c5512426883dd11f2bd67a819a561904"
+  },
+  "ss_cyg_pre1990_reference": {
+    "by_decade": {
+      "1940": {
+        "clock_and_outcome": 52,
+        "scheduled": 59,
+        "supported": 36
+      },
+      "1950": {
+        "clock_and_outcome": 68,
+        "scheduled": 70,
+        "supported": 63
+      },
+      "1960": {
+        "clock_and_outcome": 82,
+        "scheduled": 86,
+        "supported": 70
+      },
+      "1970": {
+        "clock_and_outcome": 80,
+        "scheduled": 81,
+        "supported": 78
+      },
+      "1980": {
+        "clock_and_outcome": 71,
+        "scheduled": 73,
+        "supported": 67
+      },
+      "pre1940": {
+        "clock_and_outcome": 221,
+        "scheduled": 258,
+        "supported": 176
+      }
+    },
+    "clock_covered_outcome": 493,
+    "clock_mark_outcome": 558,
+    "clock_outcome_all": 574,
+    "confirmed": 645,
+    "confirmed_by_decade": {
+      "1940": 60,
+      "1950": 72,
+      "1960": 86,
+      "1970": 80,
+      "1980": 73,
+      "pre1940": 274
+    },
+    "delay_clock_population": 615,
+    "fade_confirmation_delay_quantiles": [
+      0.637999999895692,
+      1.7037999997846782,
+      3.948000000044704
+    ],
+    "fade_delay_issue_1980s_quantiles": [
+      0.634400000050664,
+      1.4399999999441206,
+      2.723999999836087
+    ],
+    "faint_visit_last_minus_first_quantiles": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "landmark_counts": {
+      "supported_current_raw_peak_in_1980s": 67,
+      "supported_issue_in_1980s_with_peak_before_1980": 0
+    },
+    "last_bright_closure_minus_latest_raw_bright_quantiles": [
+      0.14999999990686774,
+      0.14999999990686774,
+      0.14999999990686774
+    ],
+    "lattice": {
+      "0": 3,
+      "1": 4,
+      "11": 3,
+      "13": 68,
+      "15": 490,
+      "5": 6,
+      "7": 31,
+      "8": 9,
+      "9": 13
+    },
+    "mark_losses_among_usable_outcomes": 3,
+    "mark_losses_before_outcome": 3,
+    "nonpositive_latest_gap_features": 0,
+    "nonpositive_unique_latest_gap_ids": 0,
+    "onset_window_width_quantiles": [
+      0.6281999998725951,
+      1.3850000000093132,
+      4.601000000070781
+    ],
+    "previous_gap_state_given_clock": {
+      "coverage_hole": 26,
+      "covered_adjacent_gap": 524,
+      "incomplete_window_onset": 47,
+      "insufficient_raw_bright_observers": 4,
+      "no_scheduled_anchor": 14
+    },
+    "raw_bright_support_to_faint_anchor_quantiles": [
+      0.7879999998025597,
+      1.853799999691546,
+      4.097999999951572
+    ],
+    "raw_bright_support_to_faint_first_support_quantiles": [
+      0.7879999998025597,
+      1.8500000000931323,
+      4.097999999951572
+    ],
+    "sequential": {
+      "clock": 615,
+      "clock_prevcovered": 524,
+      "clock_prevcovered_mark": 521,
+      "scheduled": 627,
+      "supported": 490
+    },
+    "supported_mark_quantiles": [
+      3.3000000002328305,
+      6.055000000167638,
+      12.607200000062587
+    ],
+    "supported_previous_gap_quantiles": [
+      20.720999999996277,
+      33.59000000008382,
+      53.620000000111766
+    ],
+    "unmatched_last_bright_visit_support": 0
+  },
+  "status": "passed"
+}

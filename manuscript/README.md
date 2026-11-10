@@ -1,6 +1,6 @@
-# Does the length of an outburst predict the wait for the next? A preregistered 58-year forecast test for SS Cygni
+# SS Cyg recurrence forecasts: working-score result and measurement limits
 
-The same study is written three ways, all in `text/`, all from one evidence base:
+Integrated second drafts, 10 November 2026; review precedes release. The same study is written three ways, all in `text/`, all from one evidence base:
 
 | File | Reader | Rendered |
 |---|---|---|
@@ -24,6 +24,16 @@ uv run --project manuscript --frozen python tools/refs.py build        # referen
 make -C manuscript check          # claims ledger, glyphs, makedoc lint and citation audit
 make -C manuscript                # PDF and DOCX into build/, then the brief's two-page check
 ```
+
+The article separates the original frozen working-score decision from exploratory
+observation/clock checks, synthetic precision planning and the failed gain-free
+pre-1990 transfer screen. `estimands.md` governs that distinction.
+
+Regenerate numeric tables with `python3 manuscript/tables.py`. Regenerate only
+the new aggregate figures with `uv run --frozen --extra analysis --extra plot
+python manuscript/figures.py --generate-aggregates`; this preserves the original
+figure bytes and requires no raw observations. `make check` verifies both tables
+and figures against their evidence.
 
 To cite a work, add its DOI to `references/dois.txt` (or an entry to `references/manual.yaml`),
 rebuild, and cite the printed key with Pandoc citation syntax (an at-sign key in square brackets).

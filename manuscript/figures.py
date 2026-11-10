@@ -3,6 +3,8 @@
 
 --check uses only the standard library and committed public files. --generate
 uses retained, already opened inputs; it never requests archive observations.
+--generate-aggregates preserves the original illustration assets and builds
+the later figures from committed aggregates only.
 """
 from __future__ import annotations
 
@@ -30,9 +32,16 @@ PRIMARY = ROOT / "data/provenance/a10i_evaluation_1960_2017/primary.json"
 SUMMARY = ROOT / "data/provenance/a10i_evaluation_1960_2017/summary.json"
 REVIEW = ROOT / "data/provenance/a10j_postresult_review/summary.json"
 NATIVE_CODE = ROOT / "src/dnmem/evaluation_native.py"
-BASENAMES = ("fig1-light-curve", "fig2-forecast-gain", "fig3-calibration",
-             "fig4-type-exploration", "brief-forecast-gain")
-DATA_NAMES = ("fig1-illustration.json", "fig2-gains.json", "fig3-coverage.json", "fig4-refits.json", "claim-values.csv")
+R2B = ROOT / "data/provenance/r2b_20261109/headline.json"
+G3A = ROOT / "data/provenance/g3a_20261110/summary.json"
+G3A_DETAILS = ROOT / "data/provenance/g3a_20261110/details.json"
+PRECISION = ROOT / "data/provenance/g3a_preparation/six-star-summary.json"
+ORIGINAL_BASENAMES = ("fig1-light-curve", "fig2-forecast-gain", "fig3-calibration",
+                      "fig4-type-exploration", "brief-forecast-gain")
+BASENAMES = ORIGINAL_BASENAMES + ("fig5-r2b-sensitivity", "fig6-g3a-feasibility")
+ORIGINAL_DATA_NAMES = ("fig1-illustration.json", "fig2-gains.json", "fig3-coverage.json", "fig4-refits.json")
+AGGREGATE_CSV_NAMES = ("r2b-contrasts.csv", "g3a-stars.csv", "g3a-totals.csv", "six-star-precision.csv")
+DATA_NAMES = ORIGINAL_DATA_NAMES + ("claim-values.csv",) + AGGREGATE_CSV_NAMES
 BLUE, ORANGE, GREY, BLACK = "#0072B2", "#D55E00", "#808990", "#25292D"
 
 
@@ -63,6 +72,116 @@ def derived_units(primary, summary):
                 geometric_mean_likelihood_change_percent=100*math.expm1(gain),
                 gain_ratio_to_timing_percent=100*gain/baseline,
                 interpretation="geometric-mean evidence likelihood and log-score-gain ratio; neither accuracy nor variance explained")
+
+
+def r2b_rows():
+    source = load(R2B)["contrasts"]
+    definitions = {
+        "H1": ("fitted-end", "P-orig; duration gain"),
+        "H2": ("observed DF", "P-DF; decisive-bright-span gain"),
+        "H3": ("paired clock contrast", "P-DF gain minus P-match fitted-end gain"),
+    }
+    rows = []
+    for name, (clock, population) in definitions.items():
+        six, twelve = (source[name]["working"][key] for key in ("six_year", "twelve_year"))
+        if any(six[key] != twelve[key] for key in ("estimate", "n", "issued")):
+            raise ValueError("R2b intervals describe different contrast populations")
+        rows.append(dict(claim_id="C55", contrast=name, clock=clock, population=population,
+                         n=six["n"], issued=six["issued"], estimate=six["estimate"],
+                         six_year_lower=six["lower"], six_year_upper=six["upper"],
+                         six_year_blocks=six["blocks"], twelve_year_lower=twelve["lower"],
+                         twelve_year_upper=twelve["upper"], twelve_year_blocks=twelve["blocks"]))
+    return rows
+
+
+def g3a_rows():
+    summary, details = load(G3A), load(G3A_DETAILS)
+    by_star = {row["star"]: row for row in details["stars"]}
+    if len(by_star) != len(details["stars"]) or set(by_star) != {row["star"] for row in summary["stars"]}:
+        raise ValueError("G3a aggregate populations disagree")
+    rows = []
+    for source in summary["stars"]:
+        morphology = by_star[source["star"]]["morphology"]
+        if morphology["passed"] != source["morphology_passed"]:
+            raise ValueError("G3a morphology gates disagree")
+        rows.append(dict(claim_id="C68", star=source["star"],
+                         eligible_fraction=source["eligible_fraction"], eligible_windows=source["eligible_windows"],
+                         confirmed_events=source["confirmed_events"], outcome_supported=source["outcome_supported"],
+                         feature_supported=source["feature_supported"], supported_1980_1989=source["supported_1980_1989"],
+                         base_passed=int(source["base_passed"]), morphology_passed=int(source["morphology_passed"]),
+                         eclipse_required=int(source["eclipse_required"]), eclipse_passed=int(source["eclipse_passed"]),
+                         qualified=int(source["qualified"]),
+                         longest_supported_bright_span_days=morphology["longest_supported_bright_span_days"],
+                         stream="derived fixed-night median" if source["eclipse_required"] else "native visual visits"))
+    totals = [dict(claim_id="C68", field="targets", value=len(rows))]
+    for field in ("native_payloads", "native_unique_rows", "validated_visual_rows", "confirmed_events",
+                  "qualified_count", "outcome_supported", "supported_1980_1989"):
+        totals.append(dict(claim_id="C68", field=field, value=summary[field]))
+    totals.extend(dict(claim_id="C68", field=field, value=value) for field, value in (
+        ("eligible_fraction_gate", .7), ("supported_count_gate", 40)))
+    for projection in summary["projections"]:
+        prefix = "projection_" + str(projection["years"]) + "yr_"
+        for field in ("all_ten_ignoring_gates_diagnostic", "projected_qualified_issuances", "qualifying_stars"):
+            name = "all_ten_ignoring_gates" if field == "all_ten_ignoring_gates_diagnostic" else field
+            totals.append(dict(claim_id="C68", field=prefix + name, value=projection[field]))
+    return rows, totals
+
+
+def precision_rows():
+    rows = []
+    for case in load(PRECISION)["cases"]:
+        settings = case["settings"]
+        for method in ("star-score", "star-gain", "star-score-sign-flip"):
+            result = case["methods"][method]
+            rows.append(dict(claim_id="C69", case=case["case"], method=method,
+                             nominal_forecasts=settings["test_forecasts"], stars=settings["stars"],
+                             nominal_oracle_gain=settings["nominal_oracle_gain"],
+                             attempted=case["attempted"], completed=case["completed"], failures=case["failures"],
+                             rejections=result["rejections"], rate=result["rate"],
+                             mc95_lower=result["exact_mc95"][0], mc95_upper=result["exact_mc95"][1],
+                             mean_supported_marks=case["mean_supported_marks"],
+                             gain_without_score=case["sequence_counts"]["star"]["gain_without_score"]))
+    return rows
+
+
+def aggregate_tables():
+    stars, totals = g3a_rows()
+    return dict(zip(AGGREGATE_CSV_NAMES, (r2b_rows(), stars, totals, precision_rows())))
+
+
+def csv_text(rows):
+    stream = io.StringIO(newline="")
+    writer = csv.DictWriter(stream, fieldnames=tuple(rows[0]), lineterminator="\n")
+    writer.writeheader(); writer.writerows(rows)
+    return stream.getvalue()
+
+
+def aggregate_claim_values():
+    rows = []
+    def add(identifier, field, value):
+        rows.append(dict(claim_id=identifier, field=field, value=value))
+    for row in r2b_rows():
+        for field in ("n", "issued", "estimate", "six_year_lower", "six_year_upper", "six_year_blocks",
+                      "twelve_year_lower", "twelve_year_upper", "twelve_year_blocks"):
+            add("C55", row["contrast"] + "_" + field, row[field])
+    stars, totals = g3a_rows()
+    for row in stars:
+        for field in ("eligible_fraction", "eligible_windows", "confirmed_events", "outcome_supported",
+                      "feature_supported", "supported_1980_1989", "base_passed", "morphology_passed",
+                      "eclipse_required", "eclipse_passed", "qualified", "longest_supported_bright_span_days"):
+            if row[field] is not None:
+                add("C68", row["star"].replace(" ", "_") + "_" + field, row[field])
+    rows.extend(totals)
+    cases = load(PRECISION)["cases"]
+    add("C69", "cases", len(cases))
+    for name, field in (("trials", "completed"), ("failed_trials", "failures")):
+        add("C69", name, sum(case[field] for case in cases))
+    add("C69", "gain_without_score_rejections", sum(case["sequence_counts"]["star"]["gain_without_score"] for case in cases))
+    for row in precision_rows():
+        prefix = row["case"].replace("-", "_") + "_" + row["method"].replace("-", "_") + "_"
+        for field in ("rate", "rejections", "completed", "mc95_lower", "mc95_upper", "mean_supported_marks"):
+            add("C69", prefix + field, row[field])
+    return rows
 
 
 def claim_values(primary, summary, review):
@@ -101,14 +220,12 @@ def claim_values(primary, summary, review):
     add("C25","positive_blocks",review["interval_recomputation"]["blocks_positive"])
     add("C25","block_count",len(review["interval_recomputation"]["blocks"]))
     add("C25","cluster_days",2191.5)
-    return rows
+    return rows + aggregate_claim_values()
 
 
 def write_claim_values(primary,summary,review):
-    stream=io.StringIO(newline="")
-    writer=csv.DictWriter(stream,fieldnames=("claim_id","field","value"),lineterminator="\n")
-    writer.writeheader();writer.writerows(claim_values(primary,summary,review))
-    (DATA/"claim-values.csv").write_text(stream.getvalue())
+    with (DATA/"claim-values.csv").open("w", newline="") as handle:
+        handle.write(csv_text(claim_values(primary,summary,review)))
 
 
 def asset_records():
@@ -131,7 +248,7 @@ def check():
     expected_data = {relative(DATA/name) for name in DATA_NAMES}
     if set(manifest["assets"]) != expected_assets or set(manifest["figure_data"]) != expected_data:
         raise ValueError("figure manifest does not contain the complete expected asset/data set")
-    for group in ("assets", "figure_data", "public_inputs"):
+    for group in ("assets", "figure_data", "public_inputs", "aggregate_inputs"):
         for name, record in manifest[group].items():
             path = ROOT/name
             if not path.is_file() or sha(path) != record["sha256"]:
@@ -171,6 +288,13 @@ def check():
         raise ValueError("illustration crosses the protected boundary")
     if not f1["scope"].startswith("ILLUSTRATION"):
         raise ValueError("the selected record is not labelled as an illustration")
+    for name, rows in aggregate_tables().items():
+        if (DATA/name).read_text() != csv_text(rows):
+            raise ValueError("normalized aggregate table differs from its committed evidence: " + name)
+    for name, record in manifest["preserved_asset_lineage"].items():
+        if name not in manifest["assets"] or not all(record.get(key) for key in (
+                "generator_sha256", "manifest_sha256", "commit")):
+            raise ValueError("preserved figure lineage is incomplete")
     print(json.dumps(dict(status="figure check passed", figures=len(BASENAMES),
                           assets=len(expected_assets), private_inputs_required=False)))
 
@@ -422,7 +546,76 @@ def brief_figure(plt, data):
     save(fig,"brief-forecast-gain");plt.close(fig)
 
 
-def generate():
+def r2b_figure(plt, rows):
+    fig, (gains, difference) = plt.subplots(2, 1, figsize=(7.2, 5.65), sharex=True,
+                                          gridspec_kw={"height_ratios": [1.65, 1]}, layout="constrained")
+    labels = ("H1  Fitted-end clock\nP-orig; duration",
+              "H2  Observed DF clock\nP-DF; decisive bright span",
+              "H3  Paired clock contrast\nDF gain − matched fitted-end gain")
+    for index, row in enumerate(rows):
+        ax, position = (gains, index) if index < 2 else (difference, 0)
+        for key, offset, color, marker in (("six_year", -.10, BLUE, "o"),
+                                            ("twelve_year", .10, ORANGE, "s")):
+            ax.plot([row[key + "_lower"], row[key + "_upper"]], [position + offset]*2,
+                    color=color, lw=2.2, solid_capstyle="round")
+            ax.plot(row["estimate"], position + offset, marker, color=color, ms=5,
+                    markerfacecolor="white" if key == "twelve_year" else color,
+                    label="Six-year clusters" if index == 0 and key == "six_year" else
+                    "Twelve-year clusters" if index == 0 else None)
+        ax.text(1.02, position, f"n = {row['n']}\n{row['issued']} issued", ha="left", va="center",
+                fontsize=8.4, transform=ax.get_yaxis_transform())
+    for ax in (gains, difference):
+        ax.axvline(0, color=BLACK, lw=.9)
+        ax.set_xlim(-.011, .020)
+    gains.set_yticks((0, 1), labels[:2]); gains.set_ylim(1.53, -.53)
+    difference.set_yticks((0,), labels[2:]); difference.set_ylim(.5, -.5)
+    gains.set_title("A  Marked minus unmarked B2 working score", loc="left", fontsize=10)
+    difference.set_title("B  Paired difference of gains on the matched population", loc="left", fontsize=10)
+    gains.legend(loc="lower left", fontsize=8.2, frameon=False, ncol=2)
+    difference.set_xlabel("Mean working-score contrast (nats per supported issuance)")
+    fig.suptitle("Exploratory SS Cyg clock sensitivities", fontsize=12, fontweight="bold")
+    fig.supxlabel("Working interval/backoff scores; 90% CR1/t intervals. Cluster independence is not certified.\nDifferent clocks/populations do not isolate a physical or causal component.", fontsize=8)
+    save(fig, "fig5-r2b-sensitivity"); plt.close(fig)
+
+
+def g3a_figure(plt, rows):
+    from matplotlib.ticker import PercentFormatter
+    fig, (eligible, supported) = plt.subplots(1, 2, figsize=(7.2, 6.0), sharey=True,
+                                             gridspec_kw={"width_ratios": [1.1, 1]}, layout="constrained")
+    labels = []
+    for index, row in enumerate(rows):
+        held = bool(row["eclipse_required"])
+        morphology_failed = not row["morphology_passed"]
+        color = ORANGE if morphology_failed else GREY if held else BLUE
+        marker = "D" if held else "X" if morphology_failed else "o"
+        labels.append(row["star"] + (" †" if held else " *" if morphology_failed else ""))
+        eligible.plot([0, row["eligible_fraction"]], [index, index], color=color, lw=1.8, alpha=.45)
+        eligible.plot(row["eligible_fraction"], index, marker, color=color, ms=6,
+                      markerfacecolor="white" if held else color)
+        eligible.text(row["eligible_fraction"] + .035, index, f"{row['eligible_fraction']:.1%}",
+                      va="center", fontsize=8.4, color=BLACK, bbox=dict(facecolor="white", edgecolor="none", pad=.3))
+        supported.barh(index, row["outcome_supported"], height=.42, color=color, alpha=.8,
+                       hatch="///" if held else None)
+        supported.text(row["outcome_supported"] + 2, index, str(row["outcome_supported"]),
+                       va="center", fontsize=8.5, color=BLACK, bbox=dict(facecolor="white", edgecolor="none", pad=.3))
+    eligible.axvline(.7, color=BLACK, lw=1, ls="--")
+    supported.axvline(40, color=BLACK, lw=1, ls="--")
+    eligible.set_yticks(range(len(rows)), labels)
+    eligible.set_ylim(len(rows) - .45, -.8)
+    eligible.set_xlim(0, 1.08); eligible.xaxis.set_major_formatter(PercentFormatter(1, decimals=0))
+    supported.set_xlim(0, 128)
+    eligible.set_title("A  Eligible onset windows", loc="left", fontsize=10.3)
+    supported.set_title("B  Supported development issues", loc="left", fontsize=10.3)
+    eligible.set_xlabel("Eligible / confirmed events\nDashed gate: 70%")
+    supported.set_xlabel("Outcome-supported marked DF issues\nDashed gate: 40")
+    eligible.set_xticks((0, .25, .5, .7, 1.))
+    supported.set_xticks((0, 40, 80, 120))
+    fig.suptitle("Frozen pre-1990 transfer screen: no star qualifies", fontsize=12, fontweight="bold")
+    fig.supxlabel("* SS Aur fails the operational long-bright-run gate; this is not a subtype diagnosis.\n† U Gem / IP Peg use derived fixed-night streams; the eclipse guard did not pass.\nCount and window gates are necessary; base convergence, morphology and eclipse gates also apply.", fontsize=7.9)
+    save(fig, "fig6-g3a-feasibility"); plt.close(fig)
+
+
+def plotting():
     SCRATCH.mkdir(parents=True,exist_ok=True);FIGURES.mkdir(parents=True,exist_ok=True);DATA.mkdir(parents=True,exist_ok=True)
     os.environ.setdefault("MPLCONFIGDIR",str(SCRATCH/"matplotlib"))
     import numpy as np
@@ -431,11 +624,71 @@ def generate():
     from matplotlib import font_manager
     from matplotlib import pyplot as plt
     import scipy
-    from scipy.special import log_ndtr
     matplotlib.rcParams.update({"font.family":"DejaVu Sans","font.size":10,"axes.labelsize":10,
                                 "xtick.labelsize":9,"ytick.labelsize":9,"axes.spines.top":False,
                                 "axes.spines.right":False,"pdf.fonttype":42,"ps.fonttype":42,
                                 "pdf.compression":9,"figure.facecolor":"white","axes.facecolor":"white"})
+    return np, plt, scipy, matplotlib, font_manager
+
+
+def generate_aggregate_assets(plt):
+    for name, rows in aggregate_tables().items():
+        with (DATA/name).open("w", newline="") as handle:
+            handle.write(csv_text(rows))
+    write_claim_values(load(PRIMARY), load(SUMMARY), load(REVIEW))
+    r2b_figure(plt, r2b_rows())
+    g3a_figure(plt, g3a_rows()[0])
+
+
+def manifest_for(np, scipy, matplotlib, font_manager, private_inputs, *, preserved_asset_lineage=None):
+    public_inputs={relative(p):dict(sha256=sha(p)) for p in (PRIMARY,SUMMARY,REVIEW,PARAMETERS,NATIVE_CODE,ROOT/"uv.lock")}
+    aggregate_inputs={relative(p):dict(sha256=sha(p)) for p in (R2B,G3A,G3A_DETAILS,PRECISION)}
+    font=Path(font_manager.findfont("DejaVu Sans"))
+    return dict(schema_version=2,generator=relative(__file__),generator_sha256=sha(__file__),
+                scope="seven static scientific figures; aggregate research updates preserve old figure semantics",
+                source_freeze_sha1="5e39aeb772c427ef29671c1a9c80b22c05519b58",source_execution_commit_sha1="d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
+                protocol_doi="10.5281/zenodo.24053338",
+                post_result_status="frozen comparison and illustration retained; R2b exploratory working-score contrasts; G3a gain-free development feasibility; precision rows are point-Gaussian simulations",
+                public_inputs=public_inputs,aggregate_inputs=aggregate_inputs,private_inputs=private_inputs,
+                preserved_asset_lineage=preserved_asset_lineage or {},
+                regenerated_assets=[relative(FIGURES/(stem+"."+ext)) for stem in BASENAMES for ext in ("png","pdf")
+                                    if relative(FIGURES/(stem+"."+ext)) not in (preserved_asset_lineage or {})],
+                runtime=dict(python=sys.version.split()[0],numpy=np.__version__,scipy=scipy.__version__,matplotlib=matplotlib.__version__),
+                font=dict(family="DejaVu Sans",file=font.name,sha256=sha(font),pdf_embedding="TrueType; pdf.fonttype42"),
+                output_policy=dict(raw_photometry_table=False,observer_identifiers=False,new_event_catalog=False,per_issuance_scores=False,
+                                   fig1_public_data="one illustrative derived bracket set and model CDF grid; display points stay under ignored outputs"),
+                figure_data={relative(DATA/name):dict(sha256=sha(DATA/name),bytes=(DATA/name).stat().st_size) for name in DATA_NAMES},assets=asset_records())
+
+
+def generate_aggregates():
+    old = load(FIGURES/"manifest.json")
+    preserved = old.get("preserved_asset_lineage", {})
+    manifest_hash = sha(FIGURES/"manifest.json")
+    for stem in ORIGINAL_BASENAMES:
+        for extension in ("png", "pdf"):
+            path = FIGURES/(stem+"."+extension)
+            name = relative(path)
+            if sha(path) != old["assets"][name]["sha256"]:
+                raise ValueError("refusing to preserve a changed original figure: " + name)
+            if name not in preserved:
+                preserved[name] = dict(generator_sha256=old["generator_sha256"], manifest_sha256=manifest_hash,
+                                       commit="93c48cf", status="preserved bytes; not regenerated by current source")
+    for name in ORIGINAL_DATA_NAMES:
+        path = DATA/name
+        if sha(path) != old["figure_data"][relative(path)]["sha256"]:
+            raise ValueError("refusing to preserve changed original figure data: " + name)
+    np, plt, scipy, matplotlib, font_manager = plotting()
+    generate_aggregate_assets(plt)
+    manifest = manifest_for(np, scipy, matplotlib, font_manager, old["private_inputs"], preserved_asset_lineage=preserved)
+    dump(FIGURES/"manifest.json", manifest)
+    check()
+    print(json.dumps(dict(status="aggregate figures generated", new_figures=2,
+                          preserved_figures=len(ORIGINAL_BASENAMES), raw_inputs_read=False)))
+
+
+def generate():
+    np, plt, scipy, matplotlib, font_manager = plotting()
+    from scipy.special import log_ndtr
     primary,summary,review=load(PRIMARY),load(SUMMARY),load(REVIEW)
     if sha(PARAMETERS) != "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3":
         raise ValueError("the frozen model parameters changed")
@@ -473,22 +726,11 @@ def generate():
             periods=periods,evaluation_refits=ti["refits_frozen_M2_nuisance_free_level"],
             nuisance="historical M2 coefficients and sigma fixed; a free common level is re-estimated on each period",
             clock_ratio="untruncated working lognormal location-scale ratio, not empirical mean gap or conditional remaining-wait ratio",claim_ids=["C21","C23"])
-    for name,data in zip(DATA_NAMES,(f1,f2,f3,f4)):
+    for name,data in zip(ORIGINAL_DATA_NAMES,(f1,f2,f3,f4)):
         dump(DATA/name,data)
-    write_claim_values(primary,summary,review)
     figure_one(plt,f1,points);figure_two(plt,f2);figure_three(plt,f3);figure_four(plt,f4);brief_figure(plt,f2)
-    public_inputs={relative(p):dict(sha256=sha(p)) for p in (PRIMARY,SUMMARY,REVIEW,PARAMETERS,NATIVE_CODE,ROOT/"uv.lock")}
-    font=Path(font_manager.findfont("DejaVu Sans"))
-    manifest=dict(schema_version=1,generator=relative(__file__),generator_sha256=sha(__file__),
-                  scope="five static scientific illustrations; no raw photometry/identities/event catalog/issuance scores exported",
-                  source_freeze_sha1="5e39aeb772c427ef29671c1a9c80b22c05519b58",source_execution_commit_sha1="d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
-                  protocol_doi="10.5281/zenodo.24053338",post_result_status="first three figures show frozen/descriptive evidence; figure4 is exploratory in-sample; fig1 is one date-selected illustration",
-                  public_inputs=public_inputs,private_inputs=private_inputs,
-                  runtime=dict(python=sys.version.split()[0],numpy=np.__version__,scipy=scipy.__version__,matplotlib=matplotlib.__version__),
-                  font=dict(family="DejaVu Sans",file=font.name,sha256=sha(font),pdf_embedding="TrueType; pdf.fonttype42"),
-                  output_policy=dict(raw_photometry_table=False,observer_identifiers=False,new_event_catalog=False,per_issuance_scores=False,
-                                     fig1_public_data="one illustrative derived bracket set and model CDF grid; display points stay under ignored outputs"),
-                  figure_data={relative(DATA/name):dict(sha256=sha(DATA/name),bytes=(DATA/name).stat().st_size) for name in DATA_NAMES},assets=asset_records())
+    generate_aggregate_assets(plt)
+    manifest = manifest_for(np, scipy, matplotlib, font_manager, private_inputs)
     dump(FIGURES/"manifest.json",manifest)
     check()
     print(json.dumps(dict(status="generated",figures=len(BASENAMES),asset_bytes=sum(x["bytes"] for x in manifest["assets"].values()),
@@ -499,9 +741,10 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     modes=parser.add_mutually_exclusive_group(required=True)
     modes.add_argument("--generate",action="store_true")
+    modes.add_argument("--generate-aggregates",action="store_true")
     modes.add_argument("--check",action="store_true")
     args=parser.parse_args()
-    generate() if args.generate else check()
+    generate() if args.generate else generate_aggregates() if args.generate_aggregates else check()
 
 
 if __name__ == "__main__":

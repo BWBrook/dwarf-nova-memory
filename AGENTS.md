@@ -142,18 +142,27 @@ No marker fit/association/gain was computed, and G3b must not be requested under
 this specification. The six-star supplement completes16,000 trials without
 failures but provides no robust precision guarantee. See
 `docs/audits/2026-11-10-g3a-feasibility-results.md`. Claude's review (D046)
-supports C68–C69 and adds C70–C71 for Codex to check:
-- SS Cyg converts 67 of 73 confirmed 1980s outbursts under the identical chain,
-  the candidates 102 of 485;
-- the binding loss is previous-gap history;
-- no relaxation or later split reaches six stars and 1,100 forecasts;
-- SS Aur's flag is threshold-proximate reporting.
-The multi-star expansion stops, and the paper reports G3a as a failed
-preregistered transfer. Do not build a new measurement model to rescue it.
+supports C68–C69. D047 independently supports narrowed C70–C71:
+- named SS Cyg and candidate 1980s issuance/peak rate comparisons reproduce;
+- missing covered previous-gap history is the largest frozen-chain support loss;
+- fixed-rate projections under tested gate deletions miss the proposed cohort,
+  without bounding other models or later observing coverage;
+- SS Aur's flag contains threshold-proximate visits and separated bright-report
+  clusters, without a physical-outburst annotation or causal diagnosis.
+The multi-star expansion stops for this paper; G3a is a prospectively frozen
+feasibility screen, not a multi-star effect test. Do not change its recorded
+rules or build a new measurement model to rescue this screen.
 The now-open pre-1990 records remain development material; later records stay
 closed and any new specification must preserve this failed transfer result.
-Frozen X4 bytes stay unchanged. Manuscript rewriting
-waits for R2; later-star test access and SS Cyg 2018+ remain unauthorized.
+Frozen X4 bytes stay unchanged. D047 supports narrowed C70–C71 via separate lattice/native-report reconstructions
+and integrates the completed R1/R2b/R2d/G3a research into second drafts. C01 is
+a working interval-score result, not an established proper physical-onset
+likelihood; subsequent checks are exploratory. G3a is a gain-free development
+feasibility screen, not an effect test. Stop the expansion for this paper,
+without claiming all models, later records or archives are impossible. The
+SS Aur groups are report clusters, not annotated physical outbursts or a proven
+photometric cause. Drafting resumes; release, later-star test access and
+SS Cyg 2018+ remain unauthorized.
 
 - Cite primary research or official archive documentation for external facts.
   Read the source supporting a claim; a title or abstract is insufficient for a

@@ -1,0 +1,65 @@
+{
+  "aggregates": {
+    "decisive_bright_clusters_split_7d": 4,
+    "decisive_night_counts_per_cluster": [
+      1,
+      7,
+      3,
+      5
+    ],
+    "flagged_supported_runs_at_least_60_days": 1,
+    "fraction_positive_votes_in_closed_one_mag_band": 0.75,
+    "fraction_positive_votes_in_nondecisive_bright_band": 0.6984126984126984,
+    "nondecisive_bright_band_definition": "12.5 < observer-visit median magnitude <= 13.5",
+    "nondecisive_threshold_bright_positive_vote_count": 176,
+    "record_raw_positive_reports_fainter_than_threshold_median": 14.5,
+    "reported_start_year_matches": true,
+    "run_bright_votes": 213,
+    "run_decisive_bright_nights": 16,
+    "run_faint_votes": 45,
+    "run_positive_vote_quantiles_10_50_90": [
+      12.5,
+      13.2,
+      13.7
+    ],
+    "run_positive_votes": 252,
+    "run_span_days": 100.97000000020489,
+    "run_votes": 258,
+    "supported_threshold_runs": 111
+  },
+  "claim": "C71",
+  "independence": "Standard-library native parser and observer visits; graph components independently reconstruct the threshold-night rule; no dnmem or Claude checker imports",
+  "interpretation": [
+    "Four decisive-bright report clusters are not an independently annotated physical-outburst catalogue; one has a single night",
+    "Threshold-proximate reports can bridge this operational run; the cause of those magnitudes is not identified",
+    "Record-wide fainter reports are a descriptive comparison, not a same-era or observer-matched quiescent baseline"
+  ],
+  "matches_reported": {
+    "decisive_clusters": true,
+    "proximity_fraction": true,
+    "quantiles": true,
+    "record_faint_median": true,
+    "reported_start_year": true,
+    "span": true,
+    "votes": true
+  },
+  "scope": "SS Aur only; retained pre-1990 validated visual reports; no new data, duration-gap fits or scores",
+  "source_sha256": {
+    "manifest": "4436fcd38ab224a0b4ff0314169c48bb56c288d4663b2b3b5dfe06dd2501bec3",
+    "ss_aur_native_payloads": {
+      "identity-attempt1.xml": "3f450b431d92b71cbac33a86c7dd4fee35211ff64a77573efc1a578ab1f53a3a",
+      "w0001-p001-attempt1.xml": "18003678d980e81be6ae0f6234699adf96a284b4f584a04442d3844e8ebdba41",
+      "w0002-p001-attempt1.xml": "b92339628c789980c4f5289fff8430ea506ba112e49ac0daf718d8174c37f79c",
+      "w0003-p001-attempt1.xml": "04a5f726cba5c069a154248c5572db21785bc4b69dd440f9d9a37f4c3fa23c8a",
+      "w0004-p001-attempt1.xml": "41b328ba5d1d4dec3827824b31dceeaa655bd3f6c0d59de276afb84c8bb354ec",
+      "w0005-p001-attempt1.xml": "cd82cff568edf9b2917cc8baf65e942e83565344baf65295773046a4caa8f741",
+      "w0006-p001-attempt1.xml": "8e8d9c9cb2d01d4c4ffe87c689808913e49a6ac1645e5f893caa45fe5637e690",
+      "w0007-p001-attempt1.xml": "7f3d40ed6112b5e331e45d088cb44a5c0ec8ec2cdb288fa84cd7261b30c21938",
+      "w0008-p001-attempt1.xml": "2aefdaf2931da3b46c9de49584e4cd1f52be492037eca79affc18a52664d8354",
+      "w0009-p001-attempt1.xml": "9eb4f34d31d6af121b8d7f9f5da9a1889a85b20a1497ee4e23f3c9ce5d2e3d30",
+      "w0010-p001-attempt1.xml": "41a8ab0b39ef904a5a6568186387a5fc51c40e5f6b4c464fb36f5e48726af109"
+    },
+    "this_script": "7eb87166831d34e2efd1d7ffaa7e4b913923bd14cd43caffb4d95e78a2c044f3"
+  },
+  "status": "numerical_reproduction_with_interpretation_limits"
+}

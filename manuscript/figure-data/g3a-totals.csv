@@ -1,0 +1,17 @@
+claim_id,field,value
+C68,targets,10
+C68,native_payloads,110
+C68,native_unique_rows,264997
+C68,validated_visual_rows,183538
+C68,confirmed_events,1777
+C68,qualified_count,0
+C68,outcome_supported,217
+C68,supported_1980_1989,102
+C68,eligible_fraction_gate,0.7
+C68,supported_count_gate,40
+C68,projection_28yr_all_ten_ignoring_gates,285.59999999999997
+C68,projection_28yr_projected_qualified_issuances,0.0
+C68,projection_28yr_qualifying_stars,0
+C68,projection_36yr_all_ten_ignoring_gates,367.2
+C68,projection_36yr_projected_qualified_issuances,0.0
+C68,projection_36yr_qualifying_stars,0

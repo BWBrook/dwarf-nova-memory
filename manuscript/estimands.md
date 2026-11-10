@@ -8,6 +8,16 @@ against this version. Barry reviews the final research products. The primary est
 unchanged. The review records are `docs/audits/2026-11-09-a10k-claims-and-figures.md` and
 `docs/audits/2026-11-09-a10l-sources-and-drafts.md`.
 
+**Current integration, 10 November 2026 (D047).** The requested R2/G3a paper
+revision resumes drafting. All later-access and release boundaries stay closed.
+The original calculation and criterion are preserved; C01 is a gain in its
+specified **working interval score**, not an established proper score for a
+physical onset. Put this qualification beside the headline, then distinguish
+the exploratory R1/R2b checks, synthetic planning and gain-free G3a feasibility.
+No post-result check is a second confirmation. Stop this paper's multi-star
+expansion as a research-scope decision; do not claim that all possible new
+models, later coverage or other archives have been ruled out.
+
 A sentence must name the object that was calculated. A caveat cannot turn a forecast comparison into
 a mechanism test, an in-sample fit into validated prediction, or a clock parameter into an observed
 waiting-time contrast.
@@ -39,7 +49,8 @@ the byte-identical original frozen M2. R2c score-level power is planning under
 explicit synthetic assumptions, not X5 qualification or a measured archive count.
 
 New R2 claims start provisional and need independent review. The four product
-texts/PDFs stay unchanged while this research is prepared and reviewed. Later
+texts/PDFs stayed unchanged during preparation and review; D047 now integrates
+the completed results. Later
 real-data R2b execution and any new-star G3 proposal require their named source,
 cohort, population and interpretation freezes; no new archive opening follows
 from this preparation contract.
@@ -57,7 +68,8 @@ observations remain unsupported, with exact forecast identities counted
 separately. Six-/twelve-year CR1 intervals and midpoint residual dependence are
 qualified descriptive checks. Future eighteen-year/whole-star inference requires
 an uncertainty/stress envelope, not validation at one plug-in dependence value.
-No new-star or 2018+ access follows. Product texts/PDFs remain paused.
+No new-star or 2018+ access follows. Product texts/PDFs were paused during
+execution; this integration does not authorize another analysis or access.
 Coincident delayed issues share one representative (earliest original), with
 later originals retained in the audit. Unique delayed-issue and original-issue
 populations differ; they must not share a denominator silently.
@@ -138,17 +150,23 @@ future cohort, not claims of this paper.
 
 ## Multi-star transfer (G3a, D046; C68–C71)
 
-What G3a measured: whether ten pre-registered candidate stars' pre-1990 AAVSO visual records
-support the frozen extraction, timing and qualification rules. It computed no mark–gap relation.
-It bounds feasibility under those rules, and the attrition analysis says why they fail.
+What G3a measured: whether ten catalogue-selected candidates' pre-1990 AAVSO
+visual records support prospectively frozen extraction, timing and qualification
+rules, published in Git before access. This was a development-record feasibility
+screen, not a multi-star forecast-effect test. It computed no mark–gap relation.
+Exclusions and attrition describe failure under those rules; they do not
+identify a unique physical or observational cause.
 
 **Allowed:**
-- “under the frozen transfer rules, none of ten candidate northern U Gem-type dwarf novae has enough
-  timed cycles in the pre-1990 AAVSO visual record for a sealed multi-star test”;
-- “under the identical chain SS Cyg converts 92% of its confirmed 1980s outbursts into usable
-  forecasts, the ten candidates 21%”;
-- “the binding loss is the previous-gap history, driven by observing holes and ineligible onset
-  windows where quiescence is fainter than typical visual limits”;
+- “under the frozen transfer rules, none of the ten candidates qualified for the planned
+  multi-star test; SS Aur cleared the numerical support gates but triggered the operational
+  long-bright-run screen”;
+- descriptive ratios of supported issuances to confirmed-episode counts, with their
+  time landmarks and raw versus derived hold-star streams named; do not present mixed
+  numerators/denominators as a paired conversion probability;
+- “in the ordinary raw-report diagnostic, the largest recorded attrition was the missing
+  covered previous gap, including observing holes and ineligible onset windows”;
+- “the tested gate deletions remained insufficient at the assumed development rates”;
 - “the SS Cyg result is a single-star result; its generality is untested”.
 
 **Not allowed:**
@@ -159,6 +177,13 @@ It bounds feasibility under those rules, and the attrition analysis says why the
 - “SS Aur shows standstills” or any subtype diagnosis from the morphology flag;
 - “eclipses caused U Gem or IP Peg to fail”, or “the eclipse rule removed eclipse effects”;
 - projected yields cited as observed counts, or gate relaxations presented as a pass.
+- “the rules are not strict”, a causal attribution solely to visual depth, or a theorem
+  that no new measurement model or later split could reach the target;
+- “SS Aur had four physical outbursts in the flagged run” or “the contamination is
+  photometric” without independent event/sequence evidence. Four separated decisive-bright
+  report clusters and threshold-proximate visit medians are descriptive facts. The
+  14.5-mag record-wide comparison is selected to be fainter than threshold and does
+  not establish the true quiescent level in the flagged era.
 
 ## Primary forecast gain (C01–C04)
 
@@ -170,9 +195,12 @@ It bounds feasibility under those rules, and the attrition analysis says why the
   C1/seven-day coverage, score eligibility and observation-time replay. The interval uses CR1,
   six-year clusters and Student t with nine degrees of freedom.
 - **Allowed:** “In a preregistered, frozen-parameter retrospective comparison, adding completed
-  outburst duration improved the next-onset forecasts of SS Cyg by 0.0165 nats per issuance
+  outburst duration raised the working interval score of SS Cyg next-onset forecasts by 0.0165 nats per issuance
   (90% interval 0.0049–0.0281; 441 issuances, 1960–2017). The predeclared rule was met.”
-  “Incremental information beyond the specified measured-history timing baseline.”
+  “Incremental working-score gain beyond the specified measured-history timing baseline.”
+  A proper physical-onset interpretation requires an observation model/premises that
+  have not been established. Do not call the X4 fitted interval a hard observing
+  bracket or a calibrated posterior without the required model justification.
 - **Size in other units (C02):** exponentiating the mean log-score gain gives a geometric mean
   likelihood ratio, about 1.017. This can be called about 1.7% higher geometric mean likelihood
   for the scored evidence. It is not an accuracy percentage or the arithmetic mean probability
