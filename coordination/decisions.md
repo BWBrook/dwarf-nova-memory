@@ -1180,6 +1180,35 @@ per-case Monte Carlo intervals. No new access or scope change follows.
   implementation (date-bounded requests, per-star thresholds, eclipse rule).
   Add six-star R2d cells before G3b. No request until Barry answers.
 
+### D045 — G3a approved; freeze development acquisition and gain-free qualification
+
+- Barry's direct chat answer on10November2026, following Claude's9November
+  23:37handoff, exactly: “yes, approved as proposed. Continue.” All ten G3a
+  targets' native JD<2447892.5 records may be opened; G3b, all new-star1990+
+  rows/counts/coverage and SS Cyg2018+ remain closed. Immutable authority:
+  `data/access/g3a_authority.json`.
+- Codex independently reproduces C67: zero gain-without-score rejections in
+  all70,000 retained trials under both clusterings; pooled strict-oracle score
+ 397/8,000. Support the empirical claim, not a general nesting theorem or
+  future power identity. Accept the proposed sequence with explicit marginal
+  validity conditions under both full nulls; no pooled-global-null certificate.
+- Before any target metadata/observation request freeze G3a v1, the exact ten
+  names/catalogue thresholds/common margin1, native date/identity/pagination
+  guards, unmarked B0/coverage/morphology qualification, eclipse robustness
+  branches and tests. Count is a continuation marker under pinned VStar source;
+  follow invariant date-bounded pages. Any scope/identity/redirect violation
+  stops all subsequent requests. Preserve every native response and failure.
+- Operationalize usable≥40 as timing/mark support plus a genuine onset-window
+  or positive-exposure censored outcome. Keep feature-only counts separately.
+  No beta, duration-gap association or forecast-gain comparison before set freeze.
+  U Gem/IP Peg require both ordinary reductions and the frozen eclipse guard;
+  passing is conditional feasibility, not eclipse removal or subtype proof.
+- Run the frozen eight-cell six-star supplement without changing original
+  R2d sources/results. G3a closes at a frozen qualifying set, aggregate
+  feasibility and28/36-year projections from1980–1989 only. Six qualifying
+  stars and≥1,100 projected issuances are prerequisites for a later G3b request,
+  not an automatic opening or80% power promise. Products remain paused.
+
 ## New decision template
 
 ### D0xx — Short concrete title

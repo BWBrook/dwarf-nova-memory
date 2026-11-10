@@ -1,0 +1,28 @@
+{
+  "status": "approved_for_frozen_execution",
+  "decision": "D045",
+  "authorized_by": "Barry W. Brook",
+  "date": "2026-11-10",
+  "source": "direct chat following Claude9November23:37G3a handoff",
+  "exact_reply": "yes, approved as proposed. Continue.",
+  "protocol": "docs/protocols/g3a-early-record-feasibility-v1.md",
+  "targets": [
+    "SS Aur",
+    "RU Peg",
+    "AR And",
+    "X Leo",
+    "TW Vir",
+    "UU Aql",
+    "CH UMa",
+    "DX And",
+    "U Gem",
+    "IP Peg"
+  ],
+  "stop_jd_exclusive": 2447892.5,
+  "permitted": "development acquisition and gain-free qualification only",
+  "not_opened": [
+    "all new-star observations at or after1990-01-01",
+    "SS Cyg2018onward"
+  ],
+  "new_star_requests_made_at_recording": false
+}

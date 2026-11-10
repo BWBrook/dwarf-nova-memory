@@ -172,13 +172,14 @@ C65–C66 by a hash-checked recount of all 70,000 trials. Two findings:
 - The per-cell strict-null screen could not be passed reliably even by an exact
   5% test (one cell fails with probability 0.47). The pooled score rate is 4.96%.
 - Forecast gain never rejected without the score moment also rejecting (C67).
-  Testing association first and forecast gain second therefore keeps the gain
-  claim at full power, while the association claim gets about twice as much.
+  An independent recount confirms no empirical power loss for a fixed sequence
+  in these trials; a counterexample shows this need not hold generally. Both
+  tests still need validity under their respective full nulls.
 
 Star count, not forecast count, decides feasibility. The
-[G3a proposal](docs/protocols/g3a-early-record-feasibility-v0.md) asks Barry to
-open pre-1990 records of ten candidate stars, gain-free, under frozen
-qualification and go/no-go rules. No test-period data would be read.
+[G3a v1](docs/protocols/g3a-early-record-feasibility-v1.md) implements Barry's
+approval to open pre-1990 records of ten candidate stars, gain-free, under
+frozen qualification and go/no-go rules. Later test records stay closed.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)

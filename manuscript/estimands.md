@@ -110,6 +110,11 @@ populations differ; they must not share a denominator silently.
 
 **Sequence.** Association is tested first: whole-star score moment at the B0R base, guarded DF
 span. Forecast gain (D018) is tested second, only if association rejects.
+The retained R2d grid lost no gain rejections under this sequence; that is
+empirical, not guaranteed future power. Strong familywise control requires both
+tests valid under their respective full nulls, including positive association
+with nonpositive frozen forecast gain. Pooled strict-oracle size is insufficient
+to certify this. G3a approval concerns early-record feasibility; G3b remains closed.
 
 **Allowed if both reject:**
 - “the completed outburst's guarded span carries incremental information about the next
@@ -117,7 +122,9 @@ span. Forecast gain (D018) is tested second, only if association rejects.
   forecast improves held-out working scores, in the qualifying cohort”.
 
 **Allowed if only association rejects:**
-- incremental association, with no demonstrated forecast improvement.
+- a positive guarded-span/working-baseline residual moment, with no demonstrated
+  forecast improvement. Do not call this an efficient score or a model-free
+  conditional-information result; nuisance and baseline adequacy matter.
 
 **Not allowed:**
 - mechanism or physical memory;

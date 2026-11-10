@@ -1,0 +1,116 @@
+{
+  "cases": [
+    {
+      "development_per_star": 100,
+      "family": "core",
+      "id": "core-s6-n1100-null",
+      "nominal_oracle_gain": 0,
+      "null_class": "estimated_base_no_direct_effect",
+      "stars": 6,
+      "test_forecasts": 1100
+    },
+    {
+      "development_per_star": 100,
+      "family": "core",
+      "id": "core-s6-n1100-effect",
+      "nominal_oracle_gain": 0.004,
+      "null_class": "positive_direct_effect",
+      "stars": 6,
+      "test_forecasts": 1100
+    },
+    {
+      "development_per_star": 100,
+      "family": "core",
+      "id": "core-s6-n2000-null",
+      "nominal_oracle_gain": 0,
+      "null_class": "estimated_base_no_direct_effect",
+      "stars": 6,
+      "test_forecasts": 2000
+    },
+    {
+      "development_per_star": 100,
+      "family": "core",
+      "id": "core-s6-n2000-effect",
+      "nominal_oracle_gain": 0.004,
+      "null_class": "positive_direct_effect",
+      "stars": 6,
+      "test_forecasts": 2000
+    },
+    {
+      "block_ar": 0.8,
+      "development_per_star": 50,
+      "family": "joint_stress",
+      "id": "persistent-s6-null",
+      "mark_icc": 0.35,
+      "missing_mark_fraction": 0.2,
+      "nominal_oracle_gain": 0,
+      "null_class": "estimated_base_no_direct_effect",
+      "residual_ar": 0.3,
+      "residual_icc": 0.15,
+      "stars": 6,
+      "test_forecasts": 1100
+    },
+    {
+      "block_ar": 0.8,
+      "development_per_star": 50,
+      "family": "joint_stress",
+      "id": "persistent-s6-effect",
+      "mark_icc": 0.35,
+      "missing_mark_fraction": 0.2,
+      "nominal_oracle_gain": 0.004,
+      "null_class": "positive_direct_effect",
+      "residual_ar": 0.3,
+      "residual_icc": 0.15,
+      "stars": 6,
+      "test_forecasts": 1100
+    },
+    {
+      "block_ar": 0.8,
+      "cross_star_correlation": 0.25,
+      "development_per_star": 50,
+      "family": "joint_stress",
+      "id": "common-delayed-s6-null",
+      "mark_icc": 0.3,
+      "mark_reliability": 0.7,
+      "missing_mark_fraction": 0.15,
+      "nominal_oracle_gain": 0,
+      "null_class": "estimated_base_no_direct_effect",
+      "outcome_delay_days": 80.0,
+      "outcome_delay_probability": 0.3,
+      "residual_icc": 0.15,
+      "stars": 6,
+      "test_forecasts": 1100
+    },
+    {
+      "block_ar": 0.8,
+      "cross_star_correlation": 0.25,
+      "development_per_star": 50,
+      "family": "joint_stress",
+      "id": "common-delayed-s6-effect",
+      "mark_icc": 0.3,
+      "mark_reliability": 0.7,
+      "missing_mark_fraction": 0.15,
+      "nominal_oracle_gain": 0.004,
+      "null_class": "positive_direct_effect",
+      "outcome_delay_days": 80.0,
+      "outcome_delay_probability": 0.3,
+      "residual_icc": 0.15,
+      "stars": 6,
+      "test_forecasts": 1100
+    }
+  ],
+  "execution_status": "prepared; do not execute before a root freeze",
+  "inherited_design": "data/provenance/r2d_precision/design.json at67c45ab",
+  "limits": [
+    "Clean/no-direct-effect is not a strict predictive null for an estimated baseline.",
+    "No six-star oracle null included in this eight-cell supplement.",
+    "No X5 recovery, real calendar yield, conditional survival fit or observational error-rate guarantee.",
+    "Supplement chosen after R2d review, using a fresh seed namespace; not an independent generator."
+  ],
+  "namespace": "g3a-six-star-v1-supplement",
+  "replicates_per_case": 2000,
+  "scope": "bounded supplemental six-star Gaussian point-log-gap screen; no observation or archive access",
+  "selection": "none; report all original R2d methods plus sequence joint counts",
+  "transformations": "only stars eight to six and IDs s8 to s6 in eight named parent cases",
+  "version": "g3a-six-star-v1"
+}

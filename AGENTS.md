@@ -125,13 +125,16 @@ without failures. It does not establish robust 80% power or an observational
 error-rate guarantee; the clean eight-star score result does not validate the
 frozen forecast-gain claim. C65–C66 await Claude's review. Keep all methods and
 failed screens; see `docs/audits/2026-11-09-r2d-precision-results.md`.
-Claude's review (D044) supports C65–C66. Gain never rejected without the score
-moment in 70,000 trials (C67, provisional), so the proposed sealed structure tests
-association first and D018's forecast gain second. The G3a early-record proposal
-(`docs/protocols/g3a-early-record-feasibility-v0.md`) awaits Barry; no request is made
-before his answer.
+Claude's review (D044) supports C65–C66. C67's zero gain-without-score count is
+independently verified, but no general nesting or future power identity follows.
+Fixed-sequence validity requires each test valid under its own full null,
+including the partial null with association but nonpositive gain. Barry approved
+G3a exactly: “yes, approved as proposed. Continue.” D045 and
+`docs/protocols/g3a-early-record-feasibility-v1.md` authorize the ten named stars'
+pre-1990 records for gain-free feasibility under a source freeze. No 1990+
+record/count/coverage request, G3b opening or SS Cyg2018+ opening is authorized.
 Frozen X4 bytes stay unchanged. Manuscript rewriting
-waits for R2; other-star access and SS Cyg 2018+ remain unauthorized.
+waits for R2; later-star test access and SS Cyg 2018+ remain unauthorized.
 
 - Cite primary research or official archive documentation for external facts.
   Read the source supporting a claim; a title or abstract is insufficient for a

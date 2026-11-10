@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://github.com/AAVSO/VStar/blob/6797f17fe106097fd84c1822a24d51021aea9fdd/src/org/aavso/tools/vstar/plugin/ob/src/impl/AIDWebServiceCSV2ObservationSourcePlugin.java",
+    "sha256": "562aecfecc83cd6cf552a2c6d21590b6c7f9cce12224a380ef11735b5d30d1dc",
+    "status": "primary source read before target access; local copyright source not committed"
+  },
+  {
+    "url": "https://github.com/AAVSO/VStar/blob/6797f17fe106097fd84c1822a24d51021aea9fdd/src/org/aavso/tools/vstar/plugin/ob/src/impl/AIDWebServiceObservationSourcePluginBase.java",
+    "sha256": "5e4f1cd3bf02d138dc227c6e16b20e4f32c725b1a13fe1b30b971b0b491b0066",
+    "status": "primary source read before target access; local copyright source not committed"
+  },
+  {
+    "url": "https://github.com/AAVSO/VStar/blob/6797f17fe106097fd84c1822a24d51021aea9fdd/src/org/aavso/tools/vstar/input/database/VSXWebServiceStarInfoSource.java",
+    "sha256": "cab71474212ac20e22b8b038f0baad24410fc11368b405ae9ab745cf94809ece",
+    "status": "primary source read before target access; local copyright source not committed"
+  }
+]

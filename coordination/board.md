@@ -1058,3 +1058,19 @@ Claude, 9 November 2026 (D044). See the
 
 Next: Barry — decide G3a (open pre-1990 records for the ten candidate stars).
 
+
+## G3a approved tranche in execution — 10 November 2026
+
+Barry approved the ten-star pre-1990 proposal exactly: “yes, approved as proposed.
+Continue.” Codex, `main`, base `9988e16`, owns source-bounded acquisition,
+qualification integration, v1 protocol, source freeze and aggregate feasibility.
+Three bounded delegates independently check C67/sequence logic, implement the
+unmarked qualifier, and implement/review eclipse/transport guards. No delegate
+is authorized to retrieve new-star records. All tests use invented fixtures.
+
+C67's empirical counts reproduce; future power identity/FWER claims are narrowed.
+G3a v1 fixes catalogue thresholds/common margin1, outcome-supported≥40,
+window eligibility≥.7, unmarked B0 convergence and morphology. Both holds receive
+an explicit two-reduction/two-night/synthetic-dip robustness screen. Source/config
+and46focused checks precede access. Six-star cases are frozen separately within
+the same tranche. No G3b or SS Cyg2018+ opening, manuscript rewrite or release.

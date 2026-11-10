@@ -1,0 +1,76 @@
+{
+  "version": "g3a-feasibility-v1",
+  "start_jd": 1.0,
+  "stop_jd_exclusive": 2447892.5,
+  "visual_band": "Vis.",
+  "validation_flag": "V",
+  "minimum_supported_forecasts": 40,
+  "minimum_window_fraction": 0.7,
+  "decisive_margin": 1.0,
+  "test_years_for_planning": [
+    28,
+    36
+  ],
+  "stars": [
+    {
+      "name": "SS Aur",
+      "slug": "ss_aur",
+      "threshold": 13.5,
+      "eclipsing_hold": false
+    },
+    {
+      "name": "RU Peg",
+      "slug": "ru_peg",
+      "threshold": 11.5,
+      "eclipsing_hold": false
+    },
+    {
+      "name": "AR And",
+      "slug": "ar_and",
+      "threshold": 14.5,
+      "eclipsing_hold": false
+    },
+    {
+      "name": "X Leo",
+      "slug": "x_leo",
+      "threshold": 14.0,
+      "eclipsing_hold": false
+    },
+    {
+      "name": "TW Vir",
+      "slug": "tw_vir",
+      "threshold": 14.5,
+      "eclipsing_hold": false
+    },
+    {
+      "name": "UU Aql",
+      "slug": "uu_aql",
+      "threshold": 14.0,
+      "eclipsing_hold": false
+    },
+    {
+      "name": "CH UMa",
+      "slug": "ch_uma",
+      "threshold": 13.5,
+      "eclipsing_hold": false
+    },
+    {
+      "name": "DX And",
+      "slug": "dx_and",
+      "threshold": 13.5,
+      "eclipsing_hold": false
+    },
+    {
+      "name": "U Gem",
+      "slug": "u_gem",
+      "threshold": 12.0,
+      "eclipsing_hold": true
+    },
+    {
+      "name": "IP Peg",
+      "slug": "ip_peg",
+      "threshold": 14.5,
+      "eclipsing_hold": true
+    }
+  ]
+}

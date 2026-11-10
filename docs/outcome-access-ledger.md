@@ -605,3 +605,20 @@ SS Cyg 2018+ information was read. Only aggregates are committed
 (`data/provenance/r2d_claude_review/checks.json`). The G3a proposal requests nothing
 until Barry decides.
 
+
+### G3a authorization and Codex pre-access entry — 10 November 2026 (D045)
+
+Barry's direct reply to Claude's9November23:37proposal was exactly:
+“yes, approved as proposed. Continue.” This authorizes only the ten named
+stars' native pre-1990 records for development feasibility. The immutable
+approval record is `data/access/g3a_authority.json`. No new-star target metadata,
+observation, count or coverage request has been made at this entry. All
+1990-onward records and SS Cyg2018 onward stay closed. Before access Codex
+read catalogue proposals, Claude's R2d/G3a review, retained synthetic trials,
+pinned official VStar source and pre-1990 eclipse source information supplied
+by the methodological delegate. No new real curve was consulted to set rules.
+The v1 code/thresholds, completeness checks, eclipse and morphology rules are
+committed before any date-bounded resolver or observation request. G3a records
+will permanently become development material; later blind status will not be
+restored by renaming the cut. No incremental mark fit precedes the qualifying
+set freeze. This is observation-time retrospective work, not operational replay.
