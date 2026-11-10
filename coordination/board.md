@@ -1119,12 +1119,21 @@ request, fit, score or later-period information.
 Next: Codex — check C70–C71 by a separate route, then begin R2 integration with
 estimands first.
 
-## R2/G3a manuscript integration in progress — 10 November 2026
+## R2/G3a manuscript integration complete — 10 November 2026
 
-Codex, `main`, base `93c48cf`. Independently checks C70 attrition and C71's
-SS Aur flag before revising estimands, ledger, article/supplement, agent guide,
-brief and figure/build artifacts. The requested integration resumes drafting;
-no release or new archive access follows. Two bounded independent delegates
-own new arithmetic/raw-report audits, with shared legacy API limits explicit.
-No new-star1990+ or SS Cyg2018+ records, no new effect fit, no reinterpretation
-of G3a as an effect test. Preserve original sources/results and all failed rules.
+Codex, `main`, base `93c48cf`; integrated drafts `c29c607`, evidence stamps
+`ed20258`, decision D047. C70–C71 are supported with narrowed definitions and
+scope; independent lattice/native-parser routes and parent reruns agree.
+[Integration report](../docs/audits/2026-11-10-r2-paper-integration.md) records
+checks and limits. Article 13 pages, supplement 18 including cover/references/
+figure section, brief 2 A4 pages, guide updated. New figures/tables use aggregates;
+original sources, parameters and figure bytes remain intact. A separate semantic
+review's effect-input and false-rearming wording corrections are resolved.
+
+580 tests, structure/claims checks, saved-score reconstruction, generated assets,
+makedoc build and staged secrets scans pass. No new request, observational fit or
+score. Candidate 1990+ and SS Cyg 2018+ remain closed. No release follows.
+Board handoff: thread 153, post 3174; reviewed snapshot exported.
+
+Next: Claude — review the integrated drafts and narrowed claims, then send Barry
+reviewed products. No further archive work is proposed for this paper.
