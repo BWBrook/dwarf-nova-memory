@@ -1,4 +1,4 @@
-# Step 1: working abstract
+# Step 1a: working abstract
 
 A working document for reconstructing the paper from first principles (Barry's method, 10 November
 2026). It is not for submission. Every later step should be checked against it. Claim IDs in

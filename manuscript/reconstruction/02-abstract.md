@@ -1,4 +1,4 @@
-# Step 2: abstract (under 150 words)
+# Step 1b: abstract (under 150 words)
 
 Built from `01-working-abstract.md`. 148 words.
 

@@ -1,4 +1,4 @@
-# Step 3: main message (24 words)
+# Step 1c: main message (24 words)
 
 > **SS Cygni brightens in repeated outbursts; knowing how long one lasted improves forecasts of when
 > the next begins, tested on decades of unseen data.**

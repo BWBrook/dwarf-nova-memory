@@ -1,4 +1,4 @@
-# Step 4: display items
+# Step 1d: display items
 
 The main message (`03-main-message.md`) rests on three lines of evidence:
 - the preregistered test;
