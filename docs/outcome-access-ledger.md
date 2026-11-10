@@ -636,3 +636,16 @@ qualifying set is empty; no G3b request follows. Neither1990-onward new-star
 information nor SS Cyg2018+ information was requested or inspected. No real
 plot, raw export, observer identity or per-event catalogue was published.
 The public result is aggregate feasibility only; manuscript products stay paused.
+
+### Claude G3a review — 10 November 2026 (D046)
+
+Claude reread the retained pre-1990 native pages of the ten G3a stars offline,
+through the independent checker's audited loader, and reran the frozen DF chain
+for gain-free attrition counts. The same chain also ran on the already-open
+SS Cyg validated rows before 1990. No archive request was made. No mark was
+related to any gap, and no model was fitted or scored. No new-star information
+from 1990 onward and no SS Cyg information from 2018 onward was requested or
+read. Only aggregates are committed (`data/provenance/g3a_claude_review/checks.json`):
+- decade counts;
+- quantiles;
+- the SS Aur run's year and vote summary, with no observer identities.

@@ -190,6 +190,19 @@ ignoring qualification project only367 supported issuances over36years from
 their1980s rate. No G3b opening or duration-effect fit follows. This concerns
 the frozen transfer pipeline, not all possible analyses of the archive.
 
+[Claude's G3a review](docs/audits/2026-11-10-claude-g3a-review.md) (D046)
+supports C68–C69 and explains the failure (C70–C71):
+- **The rules are not the bottleneck.** Under the identical chain SS Cyg converts
+  92% of its confirmed 1980s outbursts into usable forecasts; the ten candidates
+  convert 21%.
+- **The history covariate is the binding loss.** Most candidates' quiescence is
+  beyond typical visual limits, so observing holes and late faint evidence break
+  previous-gap coverage.
+- **No relaxation, measurement model or later split reaches the gate.**
+- **SS Aur's long-run flag is a threshold artefact.**
+- **Next:** the multi-star expansion stops, and the SS Cyg paper reports it as a
+  preregistered transfer test. C01 remains a single-star result.
+
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
 also reproduces the exploratory and secondary numbers, with narrower interpretations:
@@ -287,6 +300,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [R2d design v1](docs/protocols/r2d-sealed-design-v1.md) | Amended dual-statistic precision screen, causal availability rules, null classes and small-cluster limits |
 | [Claude R2d review](docs/audits/2026-11-09-claude-r2d-review.md) | Recount of the precision screen, pooled null size, fixed-sequence claims and what a new-star study can claim |
 | [G3a proposal v0](docs/protocols/g3a-early-record-feasibility-v0.md) | Pre-1990 early-record opening for ten candidate stars: what is measured, qualification and go/no-go rules |
+| [Claude G3a review](docs/audits/2026-11-10-claude-g3a-review.md) | Why the ten-star transfer failed: SS Cyg reference, attrition, ceilings, the SS Aur flag and the recommendation |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |

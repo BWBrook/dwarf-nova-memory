@@ -133,6 +133,33 @@ to certify this. G3a approval concerns early-record feasibility; G3b remains clo
 - association power cited as forecast-gain power;
 - absence of an effect when association fails.
 
+**Status after G3a (D046):** no cohort qualified (C68), so these claims are a design record for a
+future cohort, not claims of this paper.
+
+## Multi-star transfer (G3a, D046; C68–C71)
+
+What G3a measured: whether ten pre-registered candidate stars' pre-1990 AAVSO visual records
+support the frozen extraction, timing and qualification rules. It computed no mark–gap relation.
+It bounds feasibility under those rules, and the attrition analysis says why they fail.
+
+**Allowed:**
+- “under the frozen transfer rules, none of ten candidate northern U Gem-type dwarf novae has enough
+  timed cycles in the pre-1990 AAVSO visual record for a sealed multi-star test”;
+- “under the identical chain SS Cyg converts 92% of its confirmed 1980s outbursts into usable
+  forecasts, the ten candidates 21%”;
+- “the binding loss is the previous-gap history, driven by observing holes and ineligible onset
+  windows where quiescence is fainter than typical visual limits”;
+- “the SS Cyg result is a single-star result; its generality is untested”.
+
+**Not allowed:**
+- “other dwarf novae show no memory”, or any statement about a duration effect in other stars;
+- “the effect is unique to SS Cyg”;
+- “the AAVSO archive cannot support any multi-star analysis”, or a claim about other archives or
+  measurement models;
+- “SS Aur shows standstills” or any subtype diagnosis from the morphology flag;
+- “eclipses caused U Gem or IP Peg to fail”, or “the eclipse rule removed eclipse effects”;
+- projected yields cited as observed counts, or gate relaxations presented as a pass.
+
 ## Primary forecast gain (C01–C04)
 
 - **Estimand:** the mean paired log-score difference over the 441 SS Cyg issuances in 1960–2017.

@@ -1093,3 +1093,28 @@ and manuscript products stay closed/paused.
 
 Next: Claude — review the failed transfer and recommend the scientific next
 step; preserve the failed screen and do not request G3b.
+
+## G3a reviewed; multi-star expansion stops — 10 November 2026
+
+Claude, `main`. [Review](../docs/audits/2026-11-10-claude-g3a-review.md), D046,
+aggregates `data/provenance/g3a_claude_review/checks.json`. Gain-free rerun of the
+frozen DF chain on the retained pre-1990 pages and on the open SS Cyg record; no
+request, fit, score or later-period information.
+
+- C68 and C69 supported. The eight ordinary stars' counts and all 16,000 six-star
+  trial lines reproduce.
+- C70 (provisional): conversion of confirmed 1980s outbursts into supported
+  forecasts is 92% for SS Cyg against 21% for the ten candidates.
+  - 542 of 822 clocked candidate forecasts lack a covered previous gap. The mark
+    requirement removes four.
+  - Without history and mark requirements: 41% conversion, 724 over 36 years,
+    five stars with 40 forecasts.
+  - A later split does not help.
+- C71 (provisional): SS Aur's 101-day run is four outbursts bridged by estimates
+  near the 13.5 threshold. It is not a plateau.
+- Recommendation: stop the expansion. Report G3a in the SS Cyg paper as a
+  preregistered transfer test that failed for a measured reason. A generality
+  study with deep CCD surveys would be a new project for Barry to decide.
+
+Next: Codex — check C70–C71 by a separate route, then begin R2 integration with
+estimands first.

@@ -1219,6 +1219,39 @@ or marker fit follows. The six-star16,000-trial supplement and independent
 integrity/count audits complete. C68–C69 remain provisional for Claude's
 scientific review. Do not relax this run's gates after the result.
 
+### D046 — G3a reviewed: stop the multi-star expansion; report it in the SS Cyg paper
+
+- Claude, 10 November 2026. Review `docs/audits/2026-11-10-claude-g3a-review.md`; aggregates
+  `data/provenance/g3a_claude_review/checks.json`.
+  - Gain-free, development-only rerun of the frozen DF chain from the retained, audited pre-1990
+    pages, plus the same chain on the already-open SS Cyg record.
+  - No request, mark-gap relation, fit or score. No 1990+ new-star or 2018+ SS Cyg information.
+- C68 and C69 supported.
+  - All eight ordinary stars' supported counts reproduce.
+  - All 16,000 six-star trial lines are hash-checked and recounted.
+- C70 (provisional):
+  - The rules are not the bottleneck. SS Cyg converts 67 of 73 confirmed 1980s outbursts into
+    supported forecasts under the identical chain; the ten candidates convert 102 of 485.
+  - The binding loss is the history covariate: 542 of 822 clocked candidate forecasts lack a
+    covered previous gap. Observing holes account for 207 and ineligible onset windows for 162.
+  - Removing the history and mark requirements reaches 41% conversion (724 over 36 years) and
+    five stars with 40 development forecasts.
+  - 1,100 needs 63–81% conversion. CH UMa, DX And and IP Peg have fewer than 40 confirmed
+    outbursts in their whole pre-1990 record.
+  - A later split does not help: the five best stars' 1980s rate is 95 per decade.
+- C71 (provisional): SS Aur's 100.97-day run spans four decisive-bright clusters bridged by
+  estimates within 1 mag of the 13.5 threshold (median 13.2), against a record faint median of
+  14.5. It is a photometric artefact of threshold placement, not an annotated plateau.
+- Choice:
+  - no new visual-record measurement model for the multi-star test in this paper;
+  - the paper reports G3a as a preregistered transfer test that failed for a measured reason, and
+    C01 stays a single-star result;
+  - the G3b rules, fixed sequence and six-star grid remain the design record for any future cohort.
+  - A generality study with deep CCD surveys or a latent-state light-curve model would be a new
+    project and a new access decision for Barry.
+- Codex: check C70–C71 by a separate route, then R2 integration of R2b, R2d and G3a into the
+  products can begin, estimands first. G3b, 1990+ new-star records and SS Cyg 2018+ stay closed.
+
 ## New decision template
 
 ### D0xx — Short concrete title

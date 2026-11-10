@@ -141,7 +141,15 @@ project only367.2 supported issuances over36years from their1980s rate.
 No marker fit/association/gain was computed, and G3b must not be requested under
 this specification. The six-star supplement completes16,000 trials without
 failures but provides no robust precision guarantee. See
-`docs/audits/2026-11-10-g3a-feasibility-results.md`; C68–C69 await Claude.
+`docs/audits/2026-11-10-g3a-feasibility-results.md`. Claude's review (D046)
+supports C68–C69 and adds C70–C71 for Codex to check:
+- SS Cyg converts 67 of 73 confirmed 1980s outbursts under the identical chain,
+  the candidates 102 of 485;
+- the binding loss is previous-gap history;
+- no relaxation or later split reaches six stars and 1,100 forecasts;
+- SS Aur's flag is threshold-proximate reporting.
+The multi-star expansion stops, and the paper reports G3a as a failed
+preregistered transfer. Do not build a new measurement model to rescue it.
 The now-open pre-1990 records remain development material; later records stay
 closed and any new specification must preserve this failed transfer result.
 Frozen X4 bytes stay unchanged. Manuscript rewriting
