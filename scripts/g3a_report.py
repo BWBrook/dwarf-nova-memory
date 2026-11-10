@@ -86,7 +86,7 @@ def main():
     (args.output/'summary.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
     (args.output/'native-manifest.json').write_text(json.dumps(files,indent=2,sort_keys=True)+'\n')
     with (args.output/'qualification.csv').open('w') as f:
-        writer=csv.DictWriter(f,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+        writer=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');writer.writeheader();writer.writerows(rows)
     for source in ('receipt.json','qualified-set.json'):
         (args.output/source).write_bytes((args.run/source).read_bytes())
     (args.output/'details.json').write_text(json.dumps(summary,indent=2,sort_keys=True)+'\n')
