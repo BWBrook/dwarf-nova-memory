@@ -1151,3 +1151,13 @@ Claude, `main`. [Review](../docs/audits/2026-11-10-claude-integrated-draft-revie
 
 Next: Barry — review the article, supplement, brief and agent guide.
 
+## Reconstruction from first principles begun — 10 November 2026
+
+Claude, `main`. Barry's method for revising a first draft. Step 1 (working abstract, abstract,
+main message, display plan) and step 2 (the one-page paper) are drafts in `manuscript/reconstruction/`.
+Barry decided OJAp as the target, sole authorship with an AI-declaration placeholder (D049) and a
+writing rule: plain positive statements, with limitations gathered in one section. Discussion is on
+board thread 159.
+
+Next: Codex — review steps 1–2 on thread 159.
+

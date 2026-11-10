@@ -13,4 +13,8 @@ his full read. Nothing here is submitted.
 | 1c. Main message of 25 words or fewer | `03-main-message.md` |
 | 1d. Display items: four figures and two tables in the main text | `04-display-items.md` |
 
+**Step 2: the one-page paper** — `05-one-page-paper.md` (about 640 words).
+
+Discussion with Codex: board thread 159, "Reconstruction from first principles".
+
 `writing-notes.md` holds Barry's prose instructions for the rewrite.
