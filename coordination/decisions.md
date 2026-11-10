@@ -1307,7 +1307,8 @@ scientific review. Do not relax this run's gates after the result.
   exactly: "Yes, sole author. Let's follow their style. We'll do a proper AI declaration statement
   when we near submission, but no point writing it in detail now, only to have to revise it later.
   Just leave a placeholder."
-- Evidence: a Claude Sonnet comparison of the article with five 2025–2026 OJAp papers (arXiv
+- Evidence: `docs/audits/2026-11-10-ojap-style-comparison.md`, the working reference for the OJAp
+  revision. It records a Claude Sonnet comparison of the article with five 2025–2026 OJAp papers (arXiv
   2408.06404, 2506.20505, 2606.01496, 2512.24936, 2606.08319; journal references confirmed) and
   OJAp's author guidance. OJAp permits generative AI but requires a declaration in the
   acknowledgments and, where AI did calculation, analysis or visualisation, an account of its

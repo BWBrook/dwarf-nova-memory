@@ -311,6 +311,7 @@ separation is intentional and must stay visible in every discussion of the seed.
 | [Claude R2d review](docs/audits/2026-11-09-claude-r2d-review.md) | Recount of the precision screen, pooled null size, fixed-sequence claims and what a new-star study can claim |
 | [G3a proposal v0](docs/protocols/g3a-early-record-feasibility-v0.md) | Pre-1990 early-record opening for ten candidate stars: what is measured, qualification and go/no-go rules |
 | [Claude G3a review](docs/audits/2026-11-10-claude-g3a-review.md) | Why the ten-star transfer failed: SS Cyg reference, attrition, ceilings, the SS Aur flag and the recommendation |
+| [OJAp style comparison](docs/audits/2026-11-10-ojap-style-comparison.md) | Target-journal requirements, five comparison papers and the ranked list of format and framing changes for the OJAp revision |
 | [A04 review and annotation](docs/audits/2026-11-07-a04-review-and-annotation.md) | D013 review, native time and flag check, first event brackets for SS Cyg 1956–1958 |
 | [A04b adjudication and extraction candidates](docs/audits/2026-11-07-a04b-adjudication-extraction-candidates.md) | Three boundary disputes settled, tied-epoch rule, extractors X1/X2, open-era coverage by decade, injection/recovery design |
 | [Outcome access](docs/outcome-access-ledger.md) | Provisional 2018 access boundary and prior outcome knowledge |
