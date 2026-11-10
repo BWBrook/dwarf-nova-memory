@@ -1300,6 +1300,32 @@ scientific review. Do not relax this run's gates after the result.
   bibliography entries without DOIs (Hempelmann and Kurths 1990; Grigorievskiy et al. 2014) are
   his decisions or pre-release tasks. No data opened; SS Cyg 2018+ and candidate 1990+ stay closed.
 
+### D049 — Target OJAp; Barry sole author; follow OJAp house style
+
+- Barry, direct chat with Claude, 10 November 2026. On venue, exactly: "OJA (is that the
+  abbreviation?) it is then!" (The Open Journal of Astrophysics, OJAp.) On byline and style,
+  exactly: "Yes, sole author. Let's follow their style. We'll do a proper AI declaration statement
+  when we near submission, but no point writing it in detail now, only to have to revise it later.
+  Just leave a placeholder."
+- Evidence: a Claude Sonnet comparison of the article with five 2025–2026 OJAp papers (arXiv
+  2408.06404, 2506.20505, 2606.01496, 2512.24936, 2606.08319; journal references confirmed) and
+  OJAp's author guidance. OJAp permits generative AI but requires a declaration in the
+  acknowledgments and, where AI did calculation, analysis or visualisation, an account of its
+  testing and validation. arXiv's posted policy says AI tools should not be listed as authors.
+- Done now: `manuscript/authors.yaml` lists Barry alone. The article's roles section is replaced by
+  Acknowledgments with the AAVSO acknowledgment and a placeholder for the AI declaration. The former
+  roles text (main.md at 7a736d5) and `manuscript/ai-roles.json` are its source material.
+- Still to do for OJAp style:
+  - move the essential methods into the main text, with the rest as appendices in one PDF;
+  - a shorter abstract that states each limit once;
+  - two-column journal class, figures inline, no line numbers;
+  - AAS-style references, subject headings, and a few defining equations;
+  - remove the draft banner;
+  - verified entries for the two inline-only citations;
+  - the exact AAVSO acknowledgment wording;
+  - observer credit.
+- The brief and agent guide are repository products. Their roles statements stay.
+
 ## New decision template
 
 ### D0xx — Short concrete title

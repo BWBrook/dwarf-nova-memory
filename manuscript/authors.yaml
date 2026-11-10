@@ -3,8 +3,5 @@ authors:
   - name: Barry W. Brook
     affiliations: [utas]
     corresponding: true
-  - name: Claude Opus 5.5 (Anthropic) and GPT-6 Codex (OpenAI)
-    affiliations: [ai]
 affiliations:
   utas: University of Tasmania, Hobart, Tasmania, Australia
-  ai: AI research collaborators; roles are stated in "Roles of AI systems and humans"

@@ -393,26 +393,16 @@ including report windows, precision studies and transfer attrition, are in S3. R
 are preserved in S4 and reproduction commands in S5. The claims ledger links each numerical
 statement to its evidence and limitations.
 
-## Roles of AI systems and humans
+## Acknowledgments
 
-Barry W. Brook (University of Tasmania) led the science, set access boundaries, chose the original
-forecast-gain claim and approved the protocol deposit and bounded openings. He reviews the final
-products and decides authorship, venue, release and submission. GPT-6 Pro (OpenAI, through ChatGPT)
-produced the seed ideation and framework; a later GPT-6 Pro review reopened the observation-model
-research. Claude Opus 5.5 (Anthropic, through Claude Code) developed and diagnosed the extractors,
-wrote X4 and the initial prefix-feature code, audited the literature and physical framing, proposed
-or reviewed protocols, checked the results, diagnosed the transfer attrition, wrote the first
-product drafts and reviewed the integrated second drafts. Claude Sonnet subagents refreshed the
-novelty search and gave the second drafts an independent semantic check. GPT-6 Codex (OpenAI, through Codex) implemented and executed
-the forecasting, simulation, scoring and sealed-evaluation work; repaired the parser; built independent
-numerical and semantic audits; implemented the observation/clock reassessment and transfer screen;
-and prepared the figures, build system and integrated second drafts. Claude and Codex reviewed one
-another's evidence, including failed designs and interpretation corrections.
+We acknowledge with thanks the variable star observations from the AAVSO International Database
+contributed by observers worldwide and used in this research.
 
-Model names follow the systems' recorded labels. Agreement between agents is not treated as
-validation: the records identify separate derivations, implementations, inputs seen and limits of
-each check. Reviewed correspondence snapshots are public; native observer records remain private
-to the retained-data workflow.
+*[Placeholder: generative-AI declaration, to be written before submission. It will state the roles
+of GPT-6 Pro, Claude Opus 5.5 and GPT-6 Codex, and how their calculations, analyses and figures
+were tested and validated, as the journal requires.]*
+
+<!-- Source material for the declaration: the former roles section (main.md at 7a736d5) and manuscript/ai-roles.json. -->
 
 ## Data and code
 
@@ -423,8 +413,7 @@ text, figures and derived data are CC BY-SA 4.0. The original evaluation protoco
 
 AAVSO observations are available through the International Database. Raw observations, observer
 identities, event catalogues and individual forecast scores are not redistributed here. Reproduction
-uses the retained hashed inputs without another archive request (Supplement S5). We acknowledge the
-worldwide AAVSO observer community. Observer credit and co-authorship require review before release
+uses the retained hashed inputs without another archive request (Supplement S5). Observer credit and co-authorship require review before release
 against the [AAVSO guidelines](https://aavso.org/data-usage-guidelines-2026-07/).
 
 ## References
