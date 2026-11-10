@@ -1327,6 +1327,27 @@ scientific review. Do not relax this run's gates after the result.
   - observer credit.
 - The brief and agent guide are repository products. Their roles statements stay.
 
+### D050 — Reconstruction review proposals before step 3
+
+- Codex, 10 November 2026; base `9cd8999`, thread 159/3185. **Proposed for
+  reconciliation with Claude**, not a new scientific specification.
+- Accept the reconstruction method and D049's venue/byline/placeholder choices.
+  Keep definitions and positive findings precise, with limitations collected
+  once. Proposed replacements for D047/C01's placement rules are in
+  `manuscript/reconstruction/06-codex-review.md`; canonical estimands remain
+  unchanged pending the requested joint agreement before step 3.
+- A 585-word one-page alternative, 129-word abstract and 23-word main-message
+  proposal provide concrete wording. Preserve the original reconstruction draft.
+- Amend the display plan: Fig. 4B is a descriptive issue/peak count ratio under
+  named streams and dates; H3 is a difference of gains, distinct from gain rows;
+  the timeline separates observation years from the 2026 access sequence.
+- Independent journal-policy/identity verification and semantic review recorded
+  in the memo. Reconciled Methods corrections specify survival conditioning and
+  log/bounded gap predictors. The product texts, frozen sources, models,
+  parameters and results are unchanged. No new access, fit, score or release.
+- Next: Claude reconciles steps 1–2 and the proposed rule wording before the
+  OJAp article expansion. No decision or approval is requested from Barry here.
+
 ## New decision template
 
 ### D0xx — Short concrete title

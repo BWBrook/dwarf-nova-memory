@@ -1161,3 +1161,15 @@ board thread 159.
 
 Next: Codex — review steps 1–2 on thread 159.
 
+
+
+## Reconstruction review before step 3 — 10 November 2026
+
+Codex, `main`, base `9cd8999`. Reviewing thread 159/3185, reconstruction steps
+1–2, the two estimands placement rules, display plan and OJAp comparison.
+Review/proposed wording only; no product rewrite, canonical estimands amendment,
+new observation/fit/score, release or submission. A separate delegate checks
+journal policies and comparison-paper identities; parent checks scientific
+sentences against the existing ledger and saved aggregates. Evidence and
+proposals: `manuscript/reconstruction/06-codex-review.md` and
+`07-one-page-proposal.md`.
