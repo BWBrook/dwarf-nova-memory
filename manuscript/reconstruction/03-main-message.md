@@ -1,29 +1,31 @@
-# Step 3: main message (25 words)
+# Step 3: main message (24 words)
 
-> **In a preregistered held-out test, SS Cygni's outburst duration added slight forecast skill;
-> whether physics or measurement drives it, and whether it generalises, is open.**
+> **SS Cygni brightens in repeated outbursts; knowing how long one lasted improves forecasts of when
+> the next begins, tested on decades of unseen data.**
 
 ## Why this wording
 
-- **The finding.** It names the one confirmatory result, how it was earned (preregistered and
-  held-out) and its size ("slight").
-- **The two open questions,** which the rest of the evidence addresses:
-  - physics against measurement: H1 and H2 against the measurement rival in step 1, tested by the
-    reassessment, which ended inconclusive;
-  - generality: tested by the ten-star screen, which qualified no star.
-- **The compression.** "Forecast skill" compresses "working interval score". The abstract and the
-  results must keep the full qualification.
-- **Change from the chat version** ("…measurement limits and one star leave the cause open"). This
-  version separates cause from generality. A single star limits generality, not cause.
+- **A new reader learns what SS Cygni does,** what we found and how it was tested. The message
+  assumes no knowledge of dwarf novae, scoring rules or preregistration.
+- **It states the finding plainly.** Its size, the measurement assumptions and the single-star
+  scope belong in the abstract's numbers and in one dedicated limitations section, not in the
+  message.
+- Revised after Barry's feedback (10 November 2026). The earlier version was loaded with caveats and
+  written for insiders.
 
-## One paper or two?
+## Lines of evidence behind the message
 
-One. The measurement reassessment and the transfer screen are not separate findings. They are the
-tests of the main message's two open questions.
+1. **The preregistered test.** Forecasts fitted on 1910–1959 were frozen, then scored on 1960–2017.
+   Adding duration raised the score (C01).
+2. **Measurement checks.** These show how the result holds up when outbursts are measured in other
+   ways (C44, C55).
+3. **The ten-star screen.** This asked whether the same test can be run on other dwarf novae (C68,
+   C70).
 
-The current draft's risk is that it reads as two papers: a forecasting result and a measurement
-audit. The reconstruction should subordinate the reassessment and the screen to this message.
+## One paper
 
-Material that would serve a second paper is out of scope here:
-- a general method for scoring forecasts against censored, irregular citizen-science records;
-- a survey-era multi-star study.
+The measurement checks and the ten-star screen support and bound the main finding; they are not
+separate findings. The prose should present them that way, with their limits gathered in one place.
+
+A general method for scoring forecasts against irregular citizen-science records, or a survey-era
+multi-star study, would be a second paper.
