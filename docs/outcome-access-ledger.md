@@ -622,3 +622,17 @@ committed before any date-bounded resolver or observation request. G3a records
 will permanently become development material; later blind status will not be
 restored by renaming the cut. No incremental mark fit precedes the qualifying
 set freeze. This is observation-time retrospective work, not operational replay.
+
+### G3a completed — 10 November 2026 (D045)
+
+Source freeze d827313 precedes all ten bounded identity/observation acquisitions.
+The native pre-1990 streams are now opened development material for the ten
+approved stars:264,997 native rows,183,538 selected validated visual reports.
+Transport included other bands/flags within the same dates, retained but not
+used scientifically. Code/independent review checked every native JD, identity,
+page and hash. Qualification used extraction, support and unmarked B0 fits,
+with no duration-gap association, marker fit or observational gain. The frozen
+qualifying set is empty; no G3b request follows. Neither1990-onward new-star
+information nor SS Cyg2018+ information was requested or inspected. No real
+plot, raw export, observer identity or per-event catalogue was published.
+The public result is aggregate feasibility only; manuscript products stay paused.
