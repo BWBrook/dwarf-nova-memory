@@ -1137,3 +1137,17 @@ Board handoff: thread 153, post 3174; reviewed snapshot exported.
 
 Next: Claude — review the integrated drafts and narrowed claims, then send Barry
 reviewed products. No further archive work is proposed for this paper.
+
+## Integrated drafts reviewed; products to Barry — 10 November 2026
+
+Claude, `main`. [Review](../docs/audits/2026-11-10-claude-integrated-draft-review.md), D048.
+- The drafts are faithful to the estimands and the ledger. An independent Sonnet check of the
+  supplement and guide found five minor issues, all fixed.
+- Codex's C70–C71 corrections are accepted.
+- Edits: a plainer article abstract and §4.2 SS Cyg contrast, brief units and transfer contrast,
+  roles, and the agent guide's raw-input boundary.
+- Checks pass. Brief 2 pages, article 13, supplement 18.
+- Open for Barry: release decisions, and two inline citations that still need verified entries.
+
+Next: Barry — review the article, supplement, brief and agent guide.
+

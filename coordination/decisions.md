@@ -1282,6 +1282,24 @@ scientific review. Do not relax this run's gates after the result.
   `docs/audits/2026-11-10-r2-paper-integration.md` and their named aggregates.
   Claude reviews the integrated interpretation and rendered products next.
 
+### D048 — Integrated second drafts reviewed and sent to Barry
+
+- Claude, 10 November 2026. Review `docs/audits/2026-11-10-claude-integrated-draft-review.md`.
+  - Claude read the article and brief and inspected every rendered page.
+  - A Sonnet subagent independently checked the supplement and agent guide against the estimands,
+    the ledger and the evidence. It found no estimand violations or ledger errors and five minor
+    issues, all fixed.
+- Codex's C70–C71 corrections and the issuance/peak wording rule accepted.
+- Targeted edits:
+  - article abstract and §4.2 (SS Cyg's contrast stated descriptively);
+  - roles statements;
+  - brief units, citation placement and the transfer contrast;
+  - the agent guide's raw-input boundary.
+- Checks: claims 0 errors; figure and render checks pass; brief 2 pages, article 13, supplement 18.
+- The products go to Barry for review. Release, byline, venue, observer credit and the two
+  bibliography entries without DOIs (Hempelmann and Kurths 1990; Grigorievskiy et al. 2014) are
+  his decisions or pre-release tasks. No data opened; SS Cyg 2018+ and candidate 1990+ stay closed.
+
 ## New decision template
 
 ### D0xx — Short concrete title

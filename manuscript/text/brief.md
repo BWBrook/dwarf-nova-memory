@@ -13,9 +13,10 @@ length improves a forecast beyond what recent quiet spells already tell us.
 We fitted two forecasters using 1910–1959 observations from the American Association of Variable
 Star Observers (AAVSO). Both knew the recent timing history; one also knew the completed flare's
 length. We froze the rules, published the protocol and then opened 1960–2017. The duration-aware
-forecast gained [0.0165]{.C01 .V001} score units per forecast (90% interval
-[0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}), over [441]{.C01 .V004} forecasts.
-This met the success rule set beforehand.
+forecast gained [0.0165]{.C01 .V001} nats of log score per forecast (90% interval
+[0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}), over [441]{.C01 .V004} forecasts: on a geometric
+average, about [1.7]{.C02}% more probability given to the outcomes as scored. This met the success
+rule set beforehand. The gain is small, but it is a held-out test, not a fit to known data.
 
 **The qualification matters.** We scored probabilities assigned to intervals estimated by the
 flare-finding software. Those intervals are not known bounds on the true onset. The gain is
@@ -37,9 +38,9 @@ makes one flare longer and the following quiet spell shorter. Observers may also
 when the star is active.
 
 After external review we kept the frozen result and tested different measurements. Scoring at a
-single estimated start still favoured duration. New comparisons used report-based onset windows,
-different timing models and a clock starting at an observed faint report rather than an estimated
-end. Their duration gains were positive but their intervals included zero[]{.C44}[]{.C55}.
+single estimated start still favoured duration[]{.C44}. New comparisons used report-based onset
+windows, different timing models and a clock starting at an observed faint report rather than an
+estimated end. Their duration gains were positive but their intervals included zero[]{.C55}.
 Adjustments for changing typical gaps also reduced an analogous gain. These checks were designed
 after the original result: they expose its limits, and cannot count as fresh confirmation.
 
@@ -48,8 +49,11 @@ after the original result: they expose its limits, and cannot count as fresh con
 ## Could we test other stars?
 
 We froze a feasibility screen before opening the early visual records of [10]{.C68 .V030}
-other dwarf novae. [None]{.C68} passed every rule for a later forecasting test. Most lost
-usable cycles because reports did not adequately cover the previous quiet gap. A long bright-run
+other dwarf novae. [None]{.C68} passed every rule for a later forecasting test. Under the same
+rules, SS Cyg's 1980s record gave [67]{.C70} usable forecasts for [73]{.C70} confirmed outbursts;
+the ten candidates together gave [102]{.C70} for [485]{.C70}. Their largest loss was missing
+coverage of the previous quiet gap. Most of these stars are fainter than SS Cyg between outbursts,
+which makes continuous coverage by eye harder. A long bright-run
 flag excluded SS Aur; inspecting that flag found separated bright-report groups, not evidence
 for one continuous plateau or a particular cause[]{.C70}[]{.C71}.
 
@@ -60,7 +64,8 @@ archive or method could never work.
 
 ## What we can say
 
-Measured flare length improved the original frozen working score for SS Cyg. The observation
+Measured flare length improved the original frozen working score for SS Cyg, a test that rests on
+how closely amateur observers have watched this one star for a century. The observation
 model, baseline and measurement choices limit the inference. We have neither identified a
 physical memory mechanism nor demonstrated a general forecasting gain across dwarf novae.
 SS Cyg's records from 2018 onward and the candidates' records from 1990 onward remain closed.
@@ -68,8 +73,9 @@ SS Cyg's records from 2018 onward and the candidates' records from 1990 onward r
 ## How this work was done
 
 Barry Brook set the direction and access boundaries and decides release. Claude reviewed the
-literature, built the flare finder and drafted the paper. Codex built and ran the forecasts and
-independently checked the results and later diagnostics. GPT-6 Pro supplied the initial ideas
+literature, built the flare finder, drafted the first versions and reviewed these. Codex built and
+ran the forecasts, independently checked the results and later diagnostics, and prepared these
+second drafts. GPT-6 Pro supplied the initial ideas
 and an external review. The public repository preserves the frozen calculation, corrections,
 failed transfer and evidence behind each claim. These are second drafts for review.
 

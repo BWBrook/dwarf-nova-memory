@@ -6,26 +6,23 @@
 ## Abstract
 
 Does the duration of a completed dwarf-nova outburst improve forecasts of the next onset beyond
-recent recurrence history? We tested this for SS Cygni using archived visual observations, an
-outburst extractor and lognormal forecast clocks fitted on 1910–1959. After freezing the models
-and publishing the protocol, we opened 1960–2017. Adding duration raised the specified working
-interval score by [0.0165]{.C01 .V001} nats per issuance (90% cluster interval
+recent recurrence history? We tested this for SS Cygni with a century of archived visual
+observations, an outburst extractor and lognormal forecast clocks fitted on 1910–1959. After
+freezing the models and publishing the protocol, we opened 1960–2017. Adding duration raised the
+specified working interval score by [0.0165]{.C01 .V001} nats per issuance (90% cluster interval
 [0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}; [441]{.C01 .V004} issuances), meeting the
-predeclared criterion. The scored intervals are fitted extraction outputs, however, not known
-bounds on physical onset; a proper latent-onset likelihood has not been established. The run
-followed a documented post-access parser repair to an unused missing-uncertainty field[]{.C05}.
-The original later-period and long/short-class comparisons were inconclusive[]{.C07}[]{.C08}.
-Subsequent exploratory checks retained a positive point-score sensitivity, but redesigned
-report-window and observed-clock comparisons were inconclusive[]{.C44}[]{.C55}. Post-result
-rolling adjustments reduced an analogous point-clock gain from [0.0184]{.C62} to
-[0.0132]{.C62} nats, showing sensitivity to baseline level and mark definition without measuring
-a causal component of the original result. A prospectively frozen transfer screen then opened
-only the pre-1990 visual records of [10]{.C68 .V030} catalogue-selected candidates. None qualified
-for the planned multi-star test[]{.C68}; no duration effect was fitted for those stars. Simulations
-also showed that a positive coefficient-score moment need not imply improvement by the trained
-forecast[]{.C66}. The study establishes a reproducible working-score result for one extraction
-and baseline, with unresolved observation-model assumptions and untested generality. It does
-not identify physical memory or a disc mechanism.
+predeclared criterion after a documented post-access parser repair[]{.C05}. The scored intervals
+are fitted by the extractor, not known bounds on physical onset, so this is a working-score gain
+rather than an established likelihood for the physical event. The original later-period and
+long/short-class comparisons were inconclusive[]{.C07}[]{.C08}. Exploratory follow-ups retained a
+positive point-score sensitivity, but redesigned report-window and observed-clock comparisons were
+inconclusive[]{.C44}[]{.C55}, and rolling level adjustments reduced an analogous gain from
+[0.0184]{.C62} to [0.0132]{.C62} nats. To test generality, a prospectively frozen screen opened
+only the pre-1990 records of [10]{.C68 .V030} catalogue-selected dwarf novae. None qualified for
+the planned multi-star test[]{.C68}: under the same rules their 1980s records supported far fewer
+usable forecasts per confirmed outburst than SS Cyg's[]{.C70}. No duration effect was fitted for
+those stars. The study establishes a reproducible working-score result for one star, extraction
+and baseline. It does not identify physical memory, and its generality remains untested.
 
 ## 1. Introduction
 
@@ -286,8 +283,8 @@ those failures.
 
 An independent reconstruction of SS Aur's [100.97]{.C71}-day flag found [four]{.C71} groups of
 decisive-bright report nights, one represented by a single night. Among positive visit medians,
-[69.8]{.C71}% lay in the nondecisive threshold-bright band. These facts describe a threshold-night
-component bridged by near-threshold reports. They do not establish four physical outbursts,
+[69.8]{.C71}% lay in the nondecisive threshold-bright band. These facts do not establish four physical
+outbursts,
 a plateau, a subtype or a photometric contamination mechanism.
 
 The descriptive 1980s rate comparison is large: SS Cyg had [67]{.C70} supported issuances and
@@ -339,7 +336,11 @@ do not exclude a slower component. None of the present contrasts separates these
 
 G3a failed before a multi-star effect test existed. That is useful evidence about transport of
 this measurement and forecast contract. A dense-looking archive can contain few consecutive
-cycles with a covered previous gap, a decisive span and usable outcome. The prespecified
+cycles with a covered previous gap, a decisive span and usable outcome. SS Cyg shows that the
+contract can be met: under the same chain its 1980s record supplied nearly one supported issuance
+per confirmed peak, against roughly one per five across the candidates. The single-star result
+rests on an unusually complete visual record, and a test of its generality needs records of
+comparable completeness. The prespecified
 thresholds, coverage rule, prefix history, morphology screen and eclipse reductions all helped
 define which opportunities counted. No observed effect in another star was rejected.
 
@@ -347,7 +348,7 @@ We retain the failure and stop expanding this paper rather than change rules unt
 qualifies. This is a scope decision. It is not a theorem that a different measurement model,
 a later development split, later coverage or another archive could not support a multi-star
 analysis. Such work would need its own development and frozen evaluation; it could not turn
-this failed transfer into a pass. The single-star result's generality remains untested.
+this failed transfer into a pass.
 
 **Table 2.** Assumptions and limits of the principal conclusions.
 
@@ -369,10 +370,8 @@ current measurements. A new forecast comparison would then need a baseline whose
 mark coding and nuisance estimation were all fixed together, with uncertainty checked under the
 admitted dependence and observation process.
 
-Those requirements are more specific than adding forecasts to the same pipeline. The present
-study does not measure scheduling utility, operational calibration or a physical-memory parameter.
+The present study does not measure scheduling utility, operational calibration or a physical-memory parameter.
 SS Cyg observations from 2018 onward and the candidate stars' test records remain closed.
-No new access, release, venue or submission decision follows from this synthesis.
 
 ## 5. Conclusions
 
@@ -402,8 +401,9 @@ products and decides authorship, venue, release and submission. GPT-6 Pro (OpenA
 produced the seed ideation and framework; a later GPT-6 Pro review reopened the observation-model
 research. Claude Opus 5.5 (Anthropic, through Claude Code) developed and diagnosed the extractors,
 wrote X4 and the initial prefix-feature code, audited the literature and physical framing, proposed
-or reviewed protocols, checked the results and wrote the first product drafts. A Claude Sonnet
-subagent refreshed the novelty search. GPT-6 Codex (OpenAI, through Codex) implemented and executed
+or reviewed protocols, checked the results, diagnosed the transfer attrition, wrote the first
+product drafts and reviewed the integrated second drafts. Claude Sonnet subagents refreshed the
+novelty search and gave the second drafts an independent semantic check. GPT-6 Codex (OpenAI, through Codex) implemented and executed
 the forecasting, simulation, scoring and sealed-evaluation work; repaired the parser; built independent
 numerical and semantic audits; implemented the observation/clock reassessment and transfer screen;
 and prepared the figures, build system and integrated second drafts. Claude and Codex reviewed one
@@ -419,8 +419,7 @@ to the retained-data workflow.
 The living repository <https://github.com/BWBrook/dwarf-nova-memory> contains protocols, source,
 frozen parameters, aggregate evidence, claims, figures and access receipts. Code is MIT licensed;
 text, figures and derived data are CC BY-SA 4.0. The original evaluation protocol is archived at
-<https://doi.org/10.5281/zenodo.24053338>. G3a was frozen in Git before its authorized early-record
-access; it was a feasibility screen, not a preregistered multi-star effect test.
+<https://doi.org/10.5281/zenodo.24053338>.
 
 AAVSO observations are available through the International Database. Raw observations, observer
 identities, event catalogues and individual forecast scores are not redistributed here. Reproduction

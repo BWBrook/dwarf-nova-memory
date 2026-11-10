@@ -95,7 +95,7 @@ observation-time retrospective analysis, not operational replay.
 | Original frozen scores | `scripts/check_a10g_evaluation.py` on the retained repaired run | `data/provenance/a10i_evaluation_1960_2017/`; C01–C15 |
 | Original exploratory fits | A10j / independent A10k scripts | `data/provenance/a10k_independent_review/`; C20–C25 |
 | R1 observation/end diagnostics | R1 scripts and protocol, separate scratch outputs | `docs/audits/2026-11-09-r1-*.md`; C42–C46 |
-| R2 preparation and fits | R2a/c and R2b protocols and execution receipts | `docs/audits/2026-11-09-r2*.md`; C47–C64 |
+| R2 preparation and fits | R2a/c and R2b protocols and execution receipts | `docs/audits/2026-11-09-r2*.md`; C47–C64 (C52 and C59 provisional) |
 | Synthetic precision | Frozen R2d grid and six-star supplement | `docs/audits/2026-11-09-r2d-precision-results.md`, G3a report; C65–C69 |
 | Gain-free transfer | G3a source freeze d827313, no later-data request | `docs/audits/2026-11-10-g3a-feasibility-results.md`; C68 |
 | Attrition / SS Aur | Separate lattice and native-parser reconstructions | `data/provenance/g3a_review_independent/`; C70–C71 |
@@ -145,7 +145,7 @@ matched population for the original denominator.
 13. **Round once, from evidence.** The SE failure boundary is strict, not an inclusive safe rounded
     multiplier. Counts, score differences and interval endpoints have separate value bindings.
 14. **Prior work stays prior.** “First held-out forecast” is false without qualifiers; the bounded
-    novelty search found earlier held-out point forecasts. Cannizzo's model is compatible with,
+    novelty search found an earlier held-out point forecast (C41). Cannizzo's model is compatible with,
     rather than a prediction or confirmation of, this particular duration–gap result.
 
 ## 6. Reproduce without reopening archives
@@ -164,7 +164,10 @@ make -C manuscript
 ```
 
 Use fresh scratch destinations; never overwrite evidence. Raw-data checks need the retained local
-payloads. The public aggregate figure/build check needs none of those observations. To regenerate
+payloads: `check_g3a_attrition.py` and `check_ss_aur_flag.py` read the candidates' pre-1990 pages in
+`data/raw/g3a_20261110_d827313/` and the pre-1990 SS Cyg extract in `outputs/c70_safe_input/`.
+Never point any script at SS Cyg records from 2018 onward or candidate records from 1990 onward,
+and never edit a raw-input path to a newer window; opening those needs Barry's explicit decision. The public aggregate figure/build check needs none of those observations. To regenerate
 only the new aggregate figures, use `manuscript/figures.py --generate-aggregates`; the manifest
 retains the byte-identical original figure assets and their lineage. Full `--generate` also uses
 the previously authorized raw illustration input and is unnecessary for ordinary text revision.

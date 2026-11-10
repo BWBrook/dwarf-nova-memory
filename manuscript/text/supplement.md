@@ -191,7 +191,7 @@ Under the relevant premises, the report likelihood can factor into a model-indep
 observation term and the forecast probability of its compatible onset set. Visit timing alone
 does not establish that factorisation. Median aggregation can hide a decisive raw report,
 so exact raw magnitudes and broad time supports do not by themselves establish witness ordering.
-A margin past threshold is not proof of A0, A1 or A2[]{.C53}.
+A margin past threshold is not proof of A0, A1 or A2.
 
 R2b retained the working interval/backoff score and reported a separate deterministic sensitivity.
 At the realised stopping cutoff C, its mixed functional uses the point-density contrast for a
@@ -417,7 +417,8 @@ For [705]{.C40} outbursts (1896–1992), the correlations are:
 Durations split at [12]{.C40} days, with [401]{.C40} shorter and [304]{.C40} longer. The correlation of duration
 with the following onset-to-onset cycle is [0.475]{.C40}, against [0.145]{.C40} with the preceding cycle. For
 end-to-end cycles the pattern reverses, at [0.093]{.C40} and [0.521]{.C40}. The famous relation is therefore
-largely definitional, as CM92 showed.
+largely a consequence of the cycle definition, which already contains the duration; CM92 showed
+that cycle definitions matter.
 
 ### S3.8 Bounded independent novelty check
 
