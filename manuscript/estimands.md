@@ -121,7 +121,12 @@ populations differ; they must not share a denominator silently.
 - a claim that about a third of C01 was causally attributed to the era shift;
 - different significance labels used as evidence that duration and rate effects differ;
 - a zero-coefficient score test described as confirmation of forecast gain;
-- any post-result guarded statistic presented as a new confirmation.
+- any post-result guarded statistic presented as a new confirmation;
+- “adding the observing rate leaves the duration gain unchanged”: rate was fitted in place of
+  duration; the 0.0043 duration gain is over a B2 base refitted with raw end cadence `c_end`
+  (C56; D053). No joint rate-plus-duration fit exists;
+- the guard reduction assigned to drift alone: it changes duration centring and baseline level
+  together (D053).
 
 ## Proposed multi-star claims (D044, C67; not yet frozen)
 
@@ -181,7 +186,12 @@ identify a unique physical or observational cause.
   measurement models;
 - “SS Aur shows standstills” or any subtype diagnosis from the morphology flag;
 - “eclipses caused U Gem or IP Peg to fail”, or “the eclipse rule removed eclipse effects”;
-- projected yields cited as observed counts, or gate relaxations presented as a pass.
+- projected yields cited as observed counts, or gate relaxations presented as a pass;
+- “SS Cyg's record times most successive outbursts” or a required completeness equal to SS Cyg's:
+  the counts show enough supported, well-covered confirmed cycles under the frozen rules, not
+  completeness against the physical event population (D053);
+- the 490-forecast SS Cyg reference called development data: it spans the available pre-1990
+  record, including 215 forecasts from 1960–1989 (D053).
 - “the rules are not strict”, a causal attribution solely to visual depth, or a theorem
   that no new measurement model or later split could reach the target;
 - “SS Aur had four physical outbursts in the flagged run” or “the contamination is
@@ -222,6 +232,14 @@ identify a unique physical or observational cause.
 - **Not allowed:** physical memory, causation, confirmation of a disc mechanism, generality to
   dwarf novae, operational forecasts, a blind/untouched evaluation, well-calibrated predictions,
   or an additional confirmatory test chosen after inspection. The rule was an interval criterion.
+  Also (D053): “most of SS Cyg's predictability lies in its recent rhythm” (three frozen models do
+  not decompose all predictability; say timing history made the larger contribution among them);
+  the doubling effect equated with the short/long difference (no class means in C04's evidence);
+  the state hypothesis said to entail a positive coefficient (the sign restriction tests CM92's
+  reported direction).
+- **Size in clock units (C04):** with timing history fixed, doubling duration multiplies M3's
+  untruncated median clock by 1.088 (about 9%). This describes exp(mu), not the survival-conditioned
+  remaining wait or an observed waiting-time contrast.
 - **Measurement qualification:** the source-blind new waveform failed benchmark qualification
   before X4 recovery was scored. X4 passed its conditional screen on a waveform family known
   during development. Do not call the unperformed unseen-family recovery a failed X4 test, or

@@ -1,19 +1,21 @@
 ---
 document: agent-facing paper
 study: SS Cyg working-score result and measurement/transfer reassessment
-status: integrated second drafts; independent review and Barry review precede release
+status: third draft (D052) with review corrections (D053, D054); Barry reviews before release
 human_paper: manuscript/text/main.md (article with appendices; + supplement.md technical record, brief.md)
 claims_ledger: manuscript/claims.csv
 interpretation: manuscript/estimands.md
 governing_docs: [AGENTS.md, coordination/decisions.md, manuscript/estimands.md]
 authority: Barry W. Brook decides release, submission and any new protected-data opening
-updated: 2026-11-10
+updated: 2026-11-11
 ---
 
 # SS Cyg for agents: evidence, reproduction and interpretation
 
 This is the entry point for an agent arriving cold. Read `manuscript/estimands.md` before quoting
-any result. The article, supplement and brief are integrated second drafts, not a paper release.
+any result. The article (methods, results, one limitations section and appendices A–G), the
+technical record (`supplement.md`: superseded analyses and reproduction) and the brief are third
+drafts, not a paper release.
 The original frozen calculation is preserved. Later work changes what we can infer from it;
 it does not replace it with a more favourable result. An evidence file and its receipt outrank
 this guide: reconcile any disagreement rather than modifying a historical receipt.
@@ -23,15 +25,19 @@ this guide: reconcile any disagreement rather than modifying a historical receip
 - **Original frozen decision.** Adding fitted duration raised the specified working interval
   score by [0.0165]{.C01 .V001} nats per issuance (90% six-year cluster interval
   [0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}; [441]{.C01 .V004} issuances). This met the
-  sole predeclared criterion. The X4 intervals are fitted extraction summaries, not known bounds
+  sole predeclared criterion. With timing history fixed, doubling duration lengthens M3's
+  untruncated median clock by about [9]{.C04}% (exp(beta ln 2 / s) = 1.088; C04). The X4 intervals are fitted extraction summaries, not known bounds
   on physical onset; a proper latent-onset observation likelihood is not established.
   The run followed a post-access parser repair (C05). The later segment and the frozen class
   rule were inconclusive (C07–C08).
 - **Post-result reassessment.** Point rescoring stays positive (C44). New report windows and
   clocks produce positive but inconclusive working gains: H1 [0.0075]{.C55 .V009} and H2
   [0.0043]{.C55 .V013} nats. These change the baseline, population and observation assumptions;
-  they are exploratory, not replication or a causal decomposition. Rolling guards attenuate
-  an analogous point-clock gain without measuring a fraction of C01 (C62–C63).
+  they are exploratory, not replication or a causal decomposition. On the DF clock an
+  observer-night rate used *in place of* duration gained [0.0030]{.C56} nats; separately, the
+  duration gain over a B2 base refitted with raw end cadence stayed at [0.0043]{.C56} (C56).
+  Rolling guards (duration recentring plus baseline-level recalibration) attenuate an analogous
+  point-clock gain without measuring a fraction of C01 (C62–C63).
 - **Precision.** Simulations distinguish a positive residual score moment from improved
   predictions by a development-trained forecast (C65–C67). More association power is not more
   forecast-gain power, and a test sequence needs validity under both full nulls.
@@ -147,6 +153,22 @@ matched population for the original denominator.
 14. **Prior work stays prior.** “First held-out forecast” is false without qualifiers; the bounded
     novelty search found an earlier held-out point forecast (C41). Cannizzo's model is compatible with,
     rather than a prediction or confirmation of, this particular duration–gap result.
+15. **Rate replaced duration; cadence adjusted the base.** C56 holds two separate saved fits:
+    observer-night rate as a replacement mark (0.0030), and duration above a B2 base refitted
+    with raw `c_end` (0.0043). No joint rate-plus-duration fit exists. The third draft conflated
+    them; D053 caught it.
+16. **Supported cycles, not completeness.** C70's counts show that SS Cyg supplies enough
+    supported, well-covered cycles under the frozen rules. They do not measure completeness
+    against the physical event population, and a future test needs sufficient supported cycles,
+    not SS Cyg's exact coverage. The Fig. 4A reference (490) spans the available pre-1990 record,
+    including 215 forecasts from the 1960–1989 held-out era.
+17. **Model contributions are not total predictability.** M2's gain over M0 is about seven times
+    duration's (C02, C10). That ranks the frozen models; it does not decompose all available
+    predictability. The class indicator's higher in-sample likelihood (C21) motivates a future
+    frozen type predictor and favours no physical mechanism.
+18. **H3 is a matched contrast.** It pairs DF and fitted-end gains at the same delayed issuances;
+    it is not H2 minus the headline H1. The C04 doubling ratio concerns exp(mu), not the
+    survival-conditioned remaining wait, and has no short/long class meaning.
 
 ## 6. Reproduce without reopening archives
 
@@ -185,4 +207,4 @@ that other dwarf novae lack a duration effect, or that the SS Cyg result is uniq
 
 Change `estimands.md` before changing interpretation. Update the single ledger, verify the evidence,
 stamp changed claims with `tools/claims.py`, then rebuild every product. Do not hand-edit generated
-figures, reference metadata or PDFs. Barry reviews the integrated drafts before release.
+figures, reference metadata or PDFs. Barry reviews the drafts before release.

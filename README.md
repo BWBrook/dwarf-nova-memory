@@ -1,6 +1,6 @@
 # Dwarf-nova recurrence: memory, changing activity and forecast reliability
 
-> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. The original frozen SS Cyg working-score result is preserved. Observation-model reassessment and a failed multi-star feasibility screen are now integrated into second drafts for review; no manuscript or data release follows.
+> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated. The original frozen SS Cyg working-score result is preserved. Observation-model reassessment and a failed multi-star feasibility screen are integrated into third drafts for review; no manuscript or data release follows.
 
 **A research repository led by Barry W. Brook. Seeded 5 November 2026; public from 7 November 2026.**
 
@@ -214,9 +214,10 @@ paper from first principles (`manuscript/reconstruction/`), the
 Astrophysics: methods in the main text, four new figures and two tables, a single
 limitations section, and appendices in the same PDF. The former supplement is now a
 short [technical record](manuscript/build/supplement.pdf) of superseded analyses
-and reproduction commands. The [two-page brief](manuscript/build/brief.pdf) and
-[agent guide](manuscript/text/for-agents.md) are still second drafts. Release
-requires Barry's review.
+and reproduction commands. Codex's [semantic review](docs/audits/2026-11-11-third-draft-semantic-review.md)
+(D053) verified the numbers and required targeted corrections; those are applied, and the
+[two-page brief](manuscript/build/brief.pdf) and [agent guide](manuscript/text/for-agents.md)
+are aligned with the article (D054). Release requires Barry's review.
 
 [Claude's review](docs/audits/2026-11-09-a10j-result-review.md) reproduces the
 result by a separate route. [The independent A10k review](docs/audits/2026-11-09-a10k-claims-and-figures.md)
@@ -236,8 +237,7 @@ does not replace the inconclusive predeclared type rule. The paper's
 
 The article has four main figures and three appendix figures, plus a brief figure.
 `make -C manuscript` checks public assets and builds PDF/DOCX drafts without raw
-observations or archive access. The article, supplement and brief are integrated
-second drafts after R1/R2b/R2d/G3a, with a revised agent guide. Regenerate figures with `make -C manuscript figures`, which reads the retained
+observations or archive access. Regenerate figures with `make -C manuscript figures`, which reads the retained
 raw inputs for Figs. 1 and 2, and numeric tables with `python3 manuscript/tables.py`.
 Neither is needed for a text build. The bibliography has
 [generated DOI metadata and unresolved identifiers](references/README.md).

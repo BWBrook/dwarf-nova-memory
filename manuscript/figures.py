@@ -236,7 +236,7 @@ TIMELINES = dict(
         dict(label="Closed", start=2018, end=None, star="SS Cyg"),
         dict(label="Candidate stars: pre-1990 only", start=None, end=1989, star="candidates")],
     analysis_sequence=dict(
-        time_basis="UTC; timestamps are from the saved chronology, bare dates are day-resolution",
+        time_basis="UTC; timestamps are from the saved chronology and Git commit times",
         events=[
             dict(label="Protocol frozen; Zenodo deposit 10.5281/zenodo.24053338", at="2026-11-08T12:34:47Z",
                  source="coordination/decisions.md D025"),
@@ -248,10 +248,10 @@ TIMELINES = dict(
                  source="docs/audits/2026-11-09-a10i-sealed-evaluation.md"),
             dict(label="Primary result scored", at="2026-11-08T13:06:58Z",
                  source="docs/audits/2026-11-09-a10i-sealed-evaluation.md"),
-            dict(label="Post-result checks", start="2026-11-09", end="2026-11-10",
-                 source="A10j, R1, R2b and R2d audits, all dated 9 November"),
-            dict(label="Frozen transfer screen", start="2026-11-10", end="2026-11-11",
-                 source="coordination/decisions.md D045-D046; docs/audits/2026-11-10-g3a-feasibility-results.md")]))
+            dict(label="Post-result checks", start="2026-11-08T13:57:28Z", end="2026-11-09T12:36:07Z",
+                 source="commit f1aa2ae (A10j review) to commit cdd5ac8 (R2d review, D044)"),
+            dict(label="Frozen transfer screen", start="2026-11-10T02:21:46Z", end="2026-11-10T04:00:55Z",
+                 source="commit d827313 (G3a freeze) to commit e0924ca (G3a review, D046)")]))
 
 
 def csv_text(rows):
@@ -607,20 +607,35 @@ def figure_four(plt, data):
     save(fig,"fig4-type-exploration");plt.close(fig)
 
 
-def brief_figure(plt, data):
-    rows=[data["comparisons"][k] for k in (0,2,3)]
-    labels=("Primary: 1960–2017","Later segment: 1993–2017","Type/within-type rule")
-    fig,ax=plt.subplots(figsize=(7.2,3.1),layout="constrained")
-    for k,(row,color) in enumerate(zip(rows,(BLUE,GREY,ORANGE))):
-        ax.plot([row["lower"],row["upper"]],[k,k],color=color,lw=3.5)
-        ax.plot(row["estimate"],k,"D" if k==0 else "o",color=color,ms=8)
-    ax.axvline(0,color=BLACK,lw=1)
-    ax.set_yticks(range(3),labels,fontsize=12);ax.invert_yaxis();ax.set_xlim(-.014,.033)
-    ax.tick_params(axis="x",labelsize=11)
-    ax.set_xlabel("Forecast gain (nats per forecast); 90% intervals",fontsize=12)
-    ax.set_title("SS Cyg: the frozen forecast comparison",fontsize=14,fontweight="bold",pad=12)
-    fig.supxlabel("Only the primary row is confirmatory. Documented post-access format repair; models unchanged.",fontsize=9)
-    save(fig,"brief-forecast-gain");plt.close(fig)
+def brief_figure(plt, data, nights):
+    fig, (curve, blocks) = plt.subplots(1, 2, figsize=(7.2, 2.9), gridspec_kw={"width_ratios": [1.2, 1]}, layout="constrained")
+    year = lambda jd: 1960 + (jd - START)/365.25
+    det = [r for r in nights if r["median_magnitude"] != "" and float(r["jd_floor"]) < START + 366]
+    run = []
+    for r in det + [None]:
+        if r is None or (run and float(r["jd_floor"])-float(run[-1]["jd_floor"]) > 3):
+            curve.plot([year(float(x["jd_floor"])+.5) for x in run], [float(x["median_magnitude"]) for x in run], color=BLUE, lw=.8)
+            run = []
+        if r is not None:
+            run.append(r)
+    curve.scatter([year(float(r["jd_floor"])+.5) for r in det], [float(r["median_magnitude"]) for r in det], s=6, color=BLUE, linewidths=0)
+    curve.axhline(10, color=BLACK, ls=":", lw=1)
+    curve.set_ylim(12.6, 7.9); curve.set_xlim(1960, 1961)
+    curve.set_xticks([1960 + m/12 for m in (0, 3, 6, 9)], ("Jan", "Apr", "Jul", "Oct"))
+    curve.set_ylabel("Brightness\n(magnitude; brighter up)", fontsize=9)
+    curve.set_title("A  SS Cygni through 1960", loc="left", fontsize=10.5)
+    for k, row in enumerate(data["blocks"]):
+        blocks.plot(row["mean_gain"], k, "o", color=GREY, ms=5.5, zorder=3)
+    primary = data["comparisons"][0]
+    blocks.axvspan(primary["lower"], primary["upper"], color=BLUE, alpha=.16, lw=0)
+    blocks.axvline(primary["estimate"], color=BLUE, lw=1.6)
+    blocks.axvline(0, color=BLACK, lw=.9)
+    blocks.set_yticks(range(len(data["blocks"])), [row["nominal_year_label"] for row in data["blocks"]], fontsize=8)
+    blocks.invert_yaxis()
+    blocks.text(primary["upper"]+.002, 8.5, "all years:\ngain and\n90% interval", color=BLUE, fontsize=8, va="center", ha="left")
+    blocks.set_xlabel("Gain from outburst length\n(nats per forecast)", fontsize=9)
+    blocks.set_title("B  Gain in each six-year block", loc="left", fontsize=10.5)
+    save(fig, "brief-forecast-gain"); plt.close(fig)
 
 
 def g3a_figure(plt, rows):
@@ -673,8 +688,10 @@ def bracket(ax, x0, x1, y, text, *, below=False, color=BLACK, size=8.3):
 def context_figure(plt, nights):
     import numpy as np
     from matplotlib.patches import Rectangle
-    fig = plt.figure(figsize=(7.2, 10.2), layout="constrained")
-    grid = fig.add_gridspec(4, 2, height_ratios=[1.45, 2.05, .78, .95], width_ratios=[1, 1.25])
+    sigma = load(PARAMETERS)["primary"]["models"]["M2"]["sigma"]
+    assert sigma == load(PARAMETERS)["primary"]["models"]["M3"]["sigma"]
+    fig = plt.figure(figsize=(7.2, 7.7), layout="constrained")
+    grid = fig.add_gridspec(4, 2, height_ratios=[1.2, 1.75, .66, .88], width_ratios=[1, 1.25])
 
     ax = fig.add_subplot(grid[0, :])
     year = lambda jd: 1960 + (jd - START)/365.25
@@ -706,7 +723,7 @@ def context_figure(plt, nights):
 
     sub = grid[1, :].subgridspec(2, 1, height_ratios=[1.35, 1], hspace=.04)
     curve, dens = fig.add_subplot(sub[0]), fig.add_subplot(sub[1], sharex=None)
-    t = np.linspace(0, 112, 1800)
+    t = np.linspace(0, 124, 2000)
     def burst(t0, d):
         return 1/(1+np.exp(-(t-t0)/.7))*1/(1+np.exp((t-(t0+d))/1.1))*(1-.12*np.clip(t-t0, 0, d)/d)
     seen = burst(6, 5)+burst(36, 15)
@@ -717,8 +734,8 @@ def context_figure(plt, nights):
     bracket(curve, 11, 36, -.2, "previous quiet\ninterval", below=True)
     bracket(curve, 51, onset3, -.2, "quiet interval\n(the forecast target)", below=True)
     curve.text(21, 1.12, "earlier outburst", ha="center", va="bottom", fontsize=8.3, color=GREY)
-    curve.text(103, .72, "next outburst\n(not yet seen)", ha="center", va="center", fontsize=8.3, color=GREY)
-    curve.set(xlim=(0, 112), ylim=(-.95, 1.75), ylabel="Brightness", yticks=[], xticks=[])
+    curve.text(110, .72, "next outburst\n(not yet seen)", ha="center", va="center", fontsize=8.3, color=GREY)
+    curve.set(xlim=(0, 124), ylim=(-.95, 1.75), ylabel="Brightness", yticks=[], xticks=[])
     for a in (curve, dens):
         a.axvline(issue, color=BLACK, ls="--", lw=1)
         a.axvspan(onset3-1.2, onset3+1.2, color=PURPLE, alpha=.25, lw=0)
@@ -731,11 +748,11 @@ def context_figure(plt, nights):
         pdf = np.exp(-(np.log(g)-np.log(median))**2/(2*sigma**2))/(g*sigma*np.sqrt(2*np.pi))
         pdf = np.where(t >= issue, pdf, np.nan)
         return pdf/np.nansum(pdf)/(t[1]-t[0])
-    for median_gap, sigma, color, label in ((41, .30, BLUE, "Timing-only forecast"), (36, .20, ORANGE, "Timing + duration forecast")):
+    for median_gap, color, label in ((30, BLUE, "Timing-only forecast"), (35, ORANGE, "Timing + duration forecast")):
         pdf = density(median_gap, sigma)
         dens.plot(t, pdf, color=color, lw=2, label=label)
         dens.fill_between(t, 0, np.nan_to_num(pdf), color=color, alpha=.14, lw=0)
-    dens.set(xlim=(0, 112), yticks=[], xticks=[], xlabel="Time (schematic; not to scale)", ylabel="Forecast density\nfor the next onset")
+    dens.set(xlim=(0, 124), yticks=[], xticks=[], xlabel="Time (schematic; not to scale)", ylabel="Forecast\ndensity")
     dens.set_ylim(0, None)
     dens.legend(loc="upper left", bbox_to_anchor=(0, 1.0), fontsize=8.2, frameon=False)
     curve.set_title("B  Schematic of one cycle (illustration, not data)", loc="left", fontsize=10.5)
@@ -778,15 +795,17 @@ def context_figure(plt, nights):
     left.set_xticklabels(("12:30", "12:40", "12:50", "13:00", "13:10"))
     left.set_xlabel("8 November, UTC", fontsize=8.6)
     left.spines["right"].set_visible(False)
-    hours = lambda day: (int(day[8:10])-8)*24
+    hours = lambda stamp: (int(stamp[8:10])-8)*24+int(stamp[11:13])+int(stamp[14:16])/60+int(stamp[17:19])/3600
     for label, color in (("Post-result checks", GREY), ("Frozen transfer screen", PURPLE)):
         e = events[label]
         right.barh(0, hours(e["end"])-hours(e["start"]), left=hours(e["start"]), height=.8, color=color)
-    right.text(36, 0, "post-result\nchecks", ha="center", va="center", fontsize=7.4, color="white")
-    right.text(60, 0, "frozen\ntransfer screen", ha="center", va="center", fontsize=7.4, color="white")
-    right.set(xlim=(13.2, 72), ylim=(-1.9, 2.2), yticks=[], xticks=(24, 48, 72))
-    right.set_xticklabels(("9 Nov", "10 Nov", "11 Nov"))
-    right.set_xlabel("day boundaries, UTC", fontsize=8.6)
+    checks, screen = events["Post-result checks"], events["Frozen transfer screen"]
+    right.text((hours(checks["start"])+hours(checks["end"]))/2, 0, "SS Cyg post-result checks", ha="center", va="center", fontsize=7.4, color="white")
+    right.annotate("frozen transfer\nscreen", xy=(hours(screen["start"])+.8, .4), xytext=(hours(screen["start"])+.8, .95), fontsize=7.4,
+                   va="bottom", ha="center", arrowprops=dict(arrowstyle="-", lw=.7))
+    right.set(xlim=(13.2, 56), ylim=(-1.9, 2.2), yticks=[], xticks=(24, 48))
+    right.set_xticklabels(("9 Nov 00:00", "10 Nov 00:00"))
+    right.set_xlabel("UTC", fontsize=8.6)
     right.spines["left"].set_visible(False)
     for ax_, x in ((left, 1), (right, 0)):
         ax_.plot([x-.02, x+.02], [-.02, .02], transform=ax_.transAxes, color=BLACK, lw=1, clip_on=False)
@@ -891,7 +910,7 @@ def transfer_figure(plt, rows):
         b.plot(r["ratio"], y, "o", color=color(r), ms=6.5, markerfacecolor="white" if held(r) else color(r), markeredgewidth=1.5)
         b.text(r["ratio"]+.03, y, f"{r['supported_1980_1989']}/{r['confirmed_peaks_1980_1989']}", va="center", fontsize=8.2)
     a.barh(ref_y, 128, height=.55, color="#BEC3C7")
-    a.text(64, ref_y, f"{reference['supported_development']} (pre-1990; axis truncated) →", ha="center", va="center", fontsize=8.2)
+    a.text(64, ref_y, f"{reference['supported_development']} (axis truncated) →", ha="center", va="center", fontsize=8.2)
     b.plot(reference["ratio"], ref_y, "D", color=BLACK, ms=6.5)
     b.text(reference["ratio"]+.03, ref_y, f"{reference['supported_1980_1989']}/{reference['confirmed_peaks_1980_1989']}", va="center", fontsize=8.2)
     pooled = sum(r["supported_1980_1989"] for r in candidates)/sum(r["confirmed_peaks_1980_1989"] for r in candidates)
@@ -906,7 +925,7 @@ def transfer_figure(plt, rows):
     a.set_xlim(0, 132)
     b.set_xlim(0, 1.12)
     b.set_xticks((0, .25, .5, .75, 1.0))
-    a.set_xlabel("Supported development forecasts\n(whole development period)", fontsize=9)
+    a.set_xlabel("Supported forecasts in\navailable pre-1990 records", fontsize=9)
     b.set_xlabel("Supported issuances /\nconfirmed episode peaks (1980–1989)", fontsize=9)
     a.set_title("A  Forecast count per star", loc="left", fontsize=10.4)
     b.set_title("B  Operational yield, 1980–1989", loc="left", fontsize=10.4)
@@ -1007,7 +1026,7 @@ def generate():
     tables=aggregate_tables()
     context_figure(plt,nights);forecast_figure(plt,f1,f2);robustness_figure(plt,tables["fig3-forest.csv"])
     transfer_figure(plt,tables["fig4-transfer.csv"])
-    figure_three(plt,f3);figure_four(plt,f4);brief_figure(plt,f2);g3a_figure(plt,g3a_rows()[0])
+    figure_three(plt,f3);figure_four(plt,f4);brief_figure(plt,f2,nights);g3a_figure(plt,g3a_rows()[0])
     manifest = manifest_for(np, scipy, matplotlib, font_manager, private_inputs)
     dump(FIGURES/"manifest.json",manifest)
     check()

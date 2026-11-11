@@ -30,19 +30,19 @@
         "source": "docs/audits/2026-11-09-a10i-sealed-evaluation.md"
       },
       {
-        "end": "2026-11-10",
+        "end": "2026-11-09T12:36:07Z",
         "label": "Post-result checks",
-        "source": "A10j, R1, R2b and R2d audits, all dated 9 November",
-        "start": "2026-11-09"
+        "source": "commit f1aa2ae (A10j review) to commit cdd5ac8 (R2d review, D044)",
+        "start": "2026-11-08T13:57:28Z"
       },
       {
-        "end": "2026-11-11",
+        "end": "2026-11-10T04:00:55Z",
         "label": "Frozen transfer screen",
-        "source": "coordination/decisions.md D045-D046; docs/audits/2026-11-10-g3a-feasibility-results.md",
-        "start": "2026-11-10"
+        "source": "commit d827313 (G3a freeze) to commit e0924ca (G3a review, D046)",
+        "start": "2026-11-10T02:21:46Z"
       }
     ],
-    "time_basis": "UTC; timestamps are from the saved chronology, bare dates are day-resolution"
+    "time_basis": "UTC; timestamps are from the saved chronology and Git commit times"
   },
   "observation_years": [
     {

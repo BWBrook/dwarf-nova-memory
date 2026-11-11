@@ -33,28 +33,28 @@
   },
   "assets": {
     "manuscript/figures/brief-forecast-gain.pdf": {
-      "bytes": 25626,
-      "sha256": "70cb006a9ee0fa8adaf0d5c1e201644af46b7fc1217dc938d0bcd7047de1b4ff"
+      "bytes": 21104,
+      "sha256": "5e0fed52cddfc07aa13f7fb27ea246800463864eb7a0e18eea8abc67fcda9f1c"
     },
     "manuscript/figures/brief-forecast-gain.png": {
-      "bytes": 57071,
+      "bytes": 108355,
       "pixel_dimensions": [
-        1243,
-        546
+        1242,
+        512
       ],
-      "sha256": "4af8c0ceeb5a10e87b62126aca21418b205502a9bab0b7942cf68d92ce8aa75e"
+      "sha256": "d2d6047fa4ca804872815938972062a62b0b04e46052c735efae48103eb2d0b3"
     },
     "manuscript/figures/fig1-context.pdf": {
-      "bytes": 81859,
-      "sha256": "b47a127cc220a65263837584a3c47fe2b81dd12f59c19cbbaf060a72341de0c3"
+      "bytes": 88267,
+      "sha256": "18edf7e42f50d78935c5000e9e4cac396b6859362bf85376bccabedd48195907"
     },
     "manuscript/figures/fig1-context.png": {
-      "bytes": 350284,
+      "bytes": 311677,
       "pixel_dimensions": [
         1243,
-        1753
+        1328
       ],
-      "sha256": "f54217faffa8c5b4a8300e5ec79df5fd17c3177589913612567ea102e30baebd"
+      "sha256": "b2dafc86faaee55618163b82bc41fb44a737f369e3ef91f6622994954f697821"
     },
     "manuscript/figures/fig2-forecast.pdf": {
       "bytes": 21521,
@@ -93,16 +93,16 @@
       "sha256": "f2f9bb6669a932b67dac95b39391a8ed04a4c74c5fc9ead60056879f425583d0"
     },
     "manuscript/figures/fig4-transfer.pdf": {
-      "bytes": 26119,
-      "sha256": "252af77caf1ebfe765cabe8e7d60054fef06ff87511ab755057db30c45e229be"
+      "bytes": 25708,
+      "sha256": "bd620c8d7f7d2e6e73e85c5697ee7da81f75aa4bee2d25dcfddeaf4df1edc927"
     },
     "manuscript/figures/fig4-transfer.png": {
-      "bytes": 114312,
+      "bytes": 112788,
       "pixel_dimensions": [
         1243,
         903
       ],
-      "sha256": "2b87a925c929b22248af522f96f9727539b83f30f28e7c5bf7fc1c7999fc02c7"
+      "sha256": "31db1ff2a7785db73d9130859810eed39e208cb7c99ffea971a920cc932ed811"
     },
     "manuscript/figures/fig4-type-exploration.pdf": {
       "bytes": 33007,
@@ -143,8 +143,8 @@
       "sha256": "4d7927083e87a051dbf6fbc7ea29ab6f844d5afc233b278a0f09ca7b885090e0"
     },
     "manuscript/figure-data/fig1-timelines.json": {
-      "bytes": 2148,
-      "sha256": "e0df834a8c4ed95fa3aedf21aac145ea2f84008b38da955bfae24e4e5ea1357b"
+      "bytes": 2171,
+      "sha256": "da8bbdd852f4ebfddee87106e8c62a6c8d42a1fe8faa159ca5345347d8efb994"
     },
     "manuscript/figure-data/fig2-gains.json": {
       "bytes": 3852,
@@ -190,7 +190,7 @@
     "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22"
   },
   "generator": "manuscript/figures.py",
-  "generator_sha256": "2e069e81a5259fcf8f5b05521a3187473cd35a31675253924c7d81e8d00f70d5",
+  "generator_sha256": "0ce6b2dddcf465510a2a67c60bc0fe9589a6989547530123a437baecfcdfe151",
   "output_policy": {
     "fig1_public_data": "nightly light-curve aggregates for a fixed 1960-1961 window; fig2 example from one derived bracket set and model CDF grid; no observation rows, observer identifiers or event times",
     "new_event_catalog": false,

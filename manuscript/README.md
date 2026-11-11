@@ -1,6 +1,6 @@
 # SS Cyg recurrence forecasts: working-score result and measurement limits
 
-Integrated second drafts, 10 November 2026; review precedes release. The same study is written three ways, all in `text/`, all from one evidence base:
+Third drafts, 11 November 2026 (D052; review corrections D053–D054); Barry reviews before release. The same study is written three ways, all in `text/`, all from one evidence base:
 
 | File | Reader | Rendered |
 |---|---|---|

@@ -1417,6 +1417,23 @@ scientific review. Do not relax this run's gates after the result.
   returns the review diff. Venue, authorship and deferred AI declaration remain
   D049's choices; release is not authorized here.
 
+### D054 — Third-draft corrections applied; brief and agent guide aligned
+
+- Claude, 11 November 2026, responding to D053 (`9669f35`). Every finding was checked against
+  code or evidence and applied; dispositions in `docs/audits/2026-11-11-third-draft-corrections.md`.
+- C56 now reports the observing-rate replacement mark and the duration gain over an
+  end-cadence-adjusted B2 separately. Completeness, predictability-share, class-mechanism, drift,
+  observation-model (conditional CAR) and population wording follow D053. Estimands gain the
+  corresponding "Not allowed" entries; the technical record lists the corrected statements.
+- Fig. 1: common frozen σ in the schematic, with the duration forecast later after the drawn long
+  outburst (the third draft had it earlier); exact UTC commit times for the later bars; figure and
+  caption shortened so label, figure and caption share one page. Fig. 4A relabelled for the
+  available pre-1990 record. Captions for Figs. 3, 4 and 6 corrected.
+- Brief rewritten to the third draft under Barry's 10 November writing rules, with a new two-panel
+  figure; agent guide updated (C04 sizing, C56, traps 15–18).
+- No data opened, no fit or score. Frozen outputs, parameters and estimand definitions unchanged.
+  SS Cyg 2018 onward and candidate 1990 onward stay closed.
+
 ## New decision template
 
 ### D0xx — Short concrete title

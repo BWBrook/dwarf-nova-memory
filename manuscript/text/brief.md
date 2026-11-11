@@ -1,83 +1,87 @@
-# Can an outburst help predict the next one?
+# Does the length of a stellar outburst help forecast the next?
 
-Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and GPT-6 Codex (OpenAI). Draft of 2026-11-10; a summary of <https://github.com/BWBrook/dwarf-nova-memory>.
+Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and GPT-6 Codex (OpenAI). Draft of 2026-11-11; a summary of <https://github.com/BWBrook/dwarf-nova-memory>.
 
-## A century of observations, a small forecasting gain
+## A star that flares every few weeks
 
-SS Cygni is a pair of stars in which a white dwarf pulls gas from its companion into a disc.
-The disc flares irregularly, then fades. Amateur astronomers have followed these outbursts by
-eye for more than a century. Short and long flares tend to alternate. Earlier work found that
-longer flares are followed by longer quiet spells; our question was whether knowing a flare's
-length improves a forecast beyond what recent quiet spells already tell us.
+SS Cygni is a pair of stars in which a white dwarf pulls gas from a companion into a surrounding
+disc. Every seven weeks or so the disc heats up, and the system brightens about twentyfold for
+one or two weeks before fading (Figure A). Amateur astronomers have recorded its brightness by eye
+for well over a century, and the American Association of Variable Star Observers (AAVSO) holds
+their reports. Long and short outbursts tend to alternate, and earlier work found that longer
+outbursts tend to be followed by longer quiet spells [@cannizzo1992LongtermBehaviorSS].
 
-We fitted two forecasters using 1910–1959 observations from the American Association of Variable
-Star Observers (AAVSO). Both knew the recent timing history; one also knew the completed flare's
-length. We froze the rules, published the protocol and then opened 1960–2017. The duration-aware
-forecast gained [0.0165]{.C01 .V001} nats of log score per forecast (90% interval
-[0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}), over [441]{.C01 .V004} forecasts: on a geometric
-average, about [1.7]{.C02}% more probability given to the outcomes as scored. This met the success
-rule set beforehand. The gain is small, but it is a held-out test, not a fit to known data.
+We asked whether knowing how long an outburst lasted improves a forecast of when the next one
+starts, beyond what the recent quiet spells already tell. Two ideas suggest it could. A long
+outburst may drain more of the disc, which then takes longer to refill. Or outburst length may
+track a slowly changing feeding rate that recent quiet spells capture only in part.
 
-**The qualification matters.** We scored probabilities assigned to intervals estimated by the
-flare-finding software. Those intervals are not known bounds on the true onset. The gain is
-therefore a result for this *working score*, not yet a clean measure of predicting the physical
-start. A formatting problem also required a documented reader repair after first access; it
-changed no observation or forecasting rule[]{.C05}. The later years alone and the frozen
-long/short rule were inconclusive[]{.C07}[]{.C08}.
+## A forecast test fixed in advance
+
+We built two forecasters from the 1910–1959 observations. Both use the recent quiet spells; one
+also uses the length of the outburst that has just ended. Whenever the reports show that an
+outburst has faded, each forecaster spreads probability over the possible start dates of the next
+one. We froze both, published the protocol online, and only then opened the observations from
+1960–2017. A forecast earns more credit the more probability it placed on the start window that
+the later reports revealed.
+
+## Outburst length helped
+
+Over [441]{.C01 .V004} forecasts, the forecaster that knew outburst length gained
+[0.0165]{.C01 .V001} nats of log score per forecast (90% interval [0.0049]{.C01 .V002} to
+[0.0281]{.C01 .V003}), passing the success rule set beforehand. On average it gave about
+[1.7]{.C02}% more probability to what happened. It expected longer waits after longer outbursts:
+doubling an outburst's length moved its typical forecast wait about [9]{.C04}% later. The gain is
+about a seventh of what knowing the recent quiet spells adds,[]{.C02} and it was positive in
+[eight]{.C25} of the ten six-year blocks (Figure B).
+
+After an external review, we re-timed the outbursts in other ways. Scoring against single
+estimated start dates gave a similar gain, [0.0154]{.C44} nats. Start windows rebuilt directly
+from observers' reports gave smaller gains, [0.0075]{.C55 .V009} and [0.0043]{.C55 .V013} nats,
+with intervals that include zero.
 
 <div id="figures"></div>
 
-*Figure. The original working-score gain and its interval are above zero. The later-period and
-long/short comparisons are inconclusive. None identifies physical memory.*
+*Figure. (A) SS Cygni's nightly brightness through 1960, the first year of the test; the dotted
+line is the threshold that defines an outburst. (B) The gain from knowing outburst length in each
+six-year block of 1960–2017; the blue line and band show the overall gain and its 90% interval.*
 
-## What survived closer checking
+## Could other stars be tested?
 
-The dates when people looked, the software's estimated start and end, and changes in the star's
-typical quiet interval can all affect the score. An error in the estimated end simultaneously
-makes one flare longer and the following quiet spell shorter. Observers may also watch harder
-when the star is active.
+Before opening their early records, we froze a screen of ten other dwarf novae, the class of star
+SS Cygni belongs to. None had pre-1990 records that qualified for the same test.[]{.C68} The test
+needs unbroken watching across two successive cycles, and most of these stars are fainter than SS
+Cygni and were watched less continuously. In the 1980s SS Cygni's record gave [67]{.C70} usable
+forecasts for [73]{.C70} outbursts; the ten others together gave [102]{.C70} for [485]{.C70}.
+Their later records, and automated sky surveys, may supply more.
 
-After external review we kept the frozen result and tested different measurements. Scoring at a
-single estimated start still favoured duration[]{.C44}. New comparisons used report-based onset
-windows, different timing models and a clock starting at an observed faint report rather than an
-estimated end. Their duration gains were positive but their intervals included zero[]{.C55}.
-Adjustments for changing typical gaps also reduced an analogous gain. These checks were designed
-after the original result: they expose its limits, and cannot count as fresh confirmation.
+## What would tell the two ideas apart
 
-\newpage
+Both ideas fit the result. Forecasts that also include an independent measure of the disc's state,
+such as its brightness between outbursts or its X-ray output, could separate them: if outburst
+length stops helping once the state is known, the feeding-rate idea gains support; if it keeps
+helping, the draining idea does. The frozen forecasters can also be scored on SS Cygni's
+observations from 2018 onward, which remain unopened.
 
-## Could we test other stars?
+## Limits
 
-We froze a feasibility screen before opening the early visual records of [10]{.C68 .V030}
-other dwarf novae. [None]{.C68} passed every rule for a later forecasting test. Under the same
-rules, SS Cyg's 1980s record gave [67]{.C70} usable forecasts for [73]{.C70} confirmed outbursts;
-the ten candidates together gave [102]{.C70} for [485]{.C70}. Their largest loss was missing
-coverage of the previous quiet gap. Most of these stars are fainter than SS Cyg between outbursts,
-which makes continuous coverage by eye harder. A long bright-run
-flag excluded SS Aur; inspecting that flag found separated bright-report groups, not evidence
-for one continuous plateau or a particular cause[]{.C70}[]{.C71}.
-
-The measured early-record rates fell well short of the planned sample. We stopped this expansion
-without fitting duration effects for these stars or opening their later test records. This says
-what the chosen rules could support, not that other dwarf novae lack the effect or that another
-archive or method could never work.
-
-## What we can say
-
-Measured flare length improved the original frozen working score for SS Cyg, a test that rests on
-how closely amateur observers have watched this one star for a century. The observation
-model, baseline and measurement choices limit the inference. We have neither identified a
-physical memory mechanism nor demonstrated a general forecasting gain across dwarf novae.
-SS Cyg's records from 2018 onward and the candidates' records from 1990 onward remain closed.
+- The score rewards probability placed on start windows that software estimated from the reports.
+  Turning it into skill at predicting the true start needs a tested model of when observers look
+  and report.
+- An outburst's length and the following quiet spell share one estimated end time, and observers
+  may watch more closely when the star is active. Both could tie outburst length to timing.
+- The re-timing checks were designed after the result and reuse the opened data.
+- A documented repair to the data reader followed the first data access, before any forecast was
+  scored.[]{.C05}
+- The result concerns one star.
 
 ## How this work was done
 
-Barry Brook set the direction and access boundaries and decides release. Claude reviewed the
-literature, built the flare finder, drafted the first versions and reviewed these. Codex built and
-ran the forecasts, independently checked the results and later diagnostics, and prepared these
-second drafts. GPT-6 Pro supplied the initial ideas
-and an external review. The public repository preserves the frozen calculation, corrections,
-failed transfer and evidence behind each claim. These are second drafts for review.
+Barry Brook set the direction and access rules and decides release. GPT-6 Pro supplied the initial
+ideas and an external review. Claude Opus 5.5 reviewed the literature, built the outburst finder
+and drafted the current article and brief. GPT-6 Codex built and ran the forecasts and
+independently checked the results, the later diagnostics and the drafts. The repository keeps the
+frozen calculation, every correction and the evidence behind each claim.
 
 ## Sources
 

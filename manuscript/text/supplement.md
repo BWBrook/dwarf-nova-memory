@@ -66,6 +66,11 @@ evidence and state their retained-input dependencies. The primary comparison is 
 | Candidate/reference ratios are paired cycle-conversion probabilities | Issuance/peak descriptive rates; ordinary and derived hold streams are separate |[]{.C70} |
 | SS Aur's flag establishes four outbursts or photometric contamination | Four report-night clusters and threshold-proximate medians, with no cause adjudicated |[]{.C71} |
 | Frozen transfer failure excludes every later model or data source | Failure of the specified screen; stopping expansion is a scope judgment |[]{.C68}[]{.C70} |
+| Adding the observing rate leaves the duration gain unchanged (third draft; Codex, D053) | Rate was fitted in place of duration; the unchanged duration gain is over an end-cadence-adjusted baseline. The two are reported separately |[]{.C56} |
+| SS Cyg's record times most successive outbursts (third draft; Codex, D053) | Enough successive, well-covered cycles for the frozen test; the counts do not measure physical completeness |[]{.C70} |
+| Most of SS Cyg's predictability lies in its recent rhythm (third draft; Codex, D053) | Timing history made the larger contribution among the three frozen models |[]{.C02}[]{.C10} |
+| A class-indicator fit favours a cycle-level mechanism (third draft; Codex, D053) | An in-sample likelihood preference that motivates a future frozen type predictor; refilling and a changing state can both produce it |[]{.C21} |
+| Doubling duration matches the short/long difference (third draft; Codex, D053) | About 9% longer untruncated median clock at fixed timing history; the evidence has no class means |[]{.C04} |
 
 None of these reviews retunes or overwrites the original comparison. The failed protocols,
 source freezes, bounded access receipts and negative/inconclusive results remain in the record.
