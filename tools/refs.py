@@ -91,6 +91,10 @@ def clean(raw):
         if k in entry:
             entry[k] = markup(entry[k])
     entry["author"] = [{x: a[x] for x in ("family", "given", "literal") if a.get(x)} for a in raw["author"]]
+    for a in entry["author"]:
+        if "given" in a:
+            # Pandoc drops a bare one-letter given name ("N"); write initials with periods ("N.").
+            a["given"] = re.sub(r"\b([A-Z])(?=\s|$)", r"\1.", a["given"])
     # The print year, as journals cite it; Crossref's "issued" is often the earlier online-first date.
     issued = raw.get("published-print") or raw.get("issued") or raw.get("published-online")
     entry["issued"] = {"date-parts": [issued["date-parts"][0][:1]]}

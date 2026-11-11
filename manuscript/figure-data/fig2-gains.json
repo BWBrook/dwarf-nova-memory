@@ -129,7 +129,7 @@
       "kind": "secondary",
       "lower": -0.002195506222485899,
       "n": 441,
-      "name": "Type/within-type rule",
+      "name": "Long/short rule",
       "upper": 0.007152042402645137
     }
   ],

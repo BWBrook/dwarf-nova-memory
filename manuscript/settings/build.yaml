@@ -1,12 +1,12 @@
 # makedoc profiles (https://github.com/BWBrook/makedoc). Build with `make -C manuscript` from the repo root.
-# Paths are relative to this file. The CSL is a placeholder until a journal is chosen:
-#   make -C ~/work/makedoc csl-source JOURNAL="Journal Name" CSL_DEST_DIR="$PWD/manuscript/csl"
+# Paths are relative to this file. OJAp has no CSL style; its papers mostly use AAS author-year
+# references, so the nearest repository style (The Astrophysical Journal) is used (D055).
 default_profile: main
 
 common: &common
   bibliography: ../../references/refs.yaml
-  csl: ../csl/chicago-author-date.csl
-  journal: Undecided
+  csl: ../csl/the-astrophysical-journal.csl
+  journal: The Open Journal of Astrophysics
   csl_search_dirs:
     - ../csl
   output_dir: ../build

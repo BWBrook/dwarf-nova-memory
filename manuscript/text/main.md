@@ -4,18 +4,21 @@
 
 ## Abstract
 
-Dwarf novae brighten in repeated outbursts when the gas disc around a white dwarf heats up. In SS
+Dwarf novae brighten in repeated outbursts as the gas disc around a white dwarf heats up. In SS
 Cygni, longer outbursts tend to precede longer quiet intervals. Using a century of amateur
-observations from the AAVSO, we tested whether outburst duration improves forecasts of the next
-onset beyond recent timing. Lognormal recurrence models fitted on 1910–1959 were frozen and
-preregistered before 1960–2017 was opened. Duration raised the working log score by
-[0.0165]{.C01 .V001} nats per forecast (90% interval [0.0049]{.C01 .V002}–[0.0281]{.C01 .V003};
-[441]{.C01 .V004} forecasts), meeting the preregistered criterion. Two redesigned timings and both
-preregistered secondary tests gave smaller gains with intervals spanning
-zero.[]{.C55}[]{.C07}[]{.C08} A frozen screen of ten other dwarf novae found none whose pre-1990
-records qualified for the test.[]{.C68} Linking the working score to physical onsets requires a
-validated observation model, and shared end estimates or activity-dependent observing could couple
-duration with timing. A documented parser repair followed first data access.[]{.C05}
+observations from the American Association of Variable Star Observers (AAVSO), we tested whether an
+outburst's duration improves forecasts of when the next begins, beyond what recent quiet intervals
+predict. Lognormal recurrence models fitted to 1910–1959 were frozen and preregistered before the
+1960–2017 observations were opened. Adding duration raised the log score by [0.0165]{.C01 .V001}
+nats (natural-log units) per forecast (90% interval [0.0049]{.C01 .V002}–[0.0281]{.C01 .V003};
+[441]{.C01 .V004} forecasts), meeting the preregistered criterion. The 1993–2017 half of the test
+period, a preregistered long/short rule and two redesigned outburst timings gave smaller gains with
+intervals spanning zero.[]{.C07}[]{.C08}[]{.C55} None of ten other dwarf novae had pre-1990 records
+that qualified under frozen rules.[]{.C68} The score rates forecasts against onsets estimated from
+the light curve, so linking it to physical onsets requires a validated observation model. A shared
+end-time estimate, or more frequent reporting while the star is active, could link duration with
+timing. A data-parsing error was repaired after the first data request and before any forecast was
+scored.[]{.C05}
 
 **Key words:** stars: dwarf novae – stars: individual: SS Cygni – accretion, accretion discs –
 methods: statistical
@@ -24,92 +27,99 @@ methods: statistical
 
 Dwarf novae are close binaries in which a white dwarf accretes gas from a low-mass companion through
 a disc. Every few weeks to months the disc switches from a cool, faint state to a hot, bright one,
-and the system brightens by several magnitudes for days to weeks before fading. The disc instability
-model attributes these outbursts to a thermal–viscous instability driven by hydrogen ionisation
+and the system brightens by several magnitudes for days to weeks. The disc instability model
+attributes these outbursts to a thermal–viscous instability driven by hydrogen ionisation
 [@lasota2001DiscInstabilityModel; @hameury2020ReviewDiscInstability]. In that picture an outburst
-drains part of the disc onto the white dwarf, and the next outburst begins once the disc has
-refilled to a critical state.
+drains part of the disc onto the white dwarf, and the next begins once the disc has refilled to a
+critical state.
 
 SS Cygni (SS Cyg) is one of the brightest and best-observed dwarf novae. Amateur observers have
 reported its brightness to the American Association of Variable Star Observers (AAVSO) since the
 1890s, producing a nearly continuous visual light curve. Its outbursts recur roughly every seven
-weeks and fall into short and long kinds, lasting about one and two weeks respectively (Fig. 1A).
+weeks and come in short and long kinds, lasting about one and two weeks (Fig. 1A).
 
-The record has long been searched for dependence between successive cycles. Bath and van Paradijs
-related outburst energy to the following interval [@bath1983OutburstPeriodenergyRelations]. Cannizzo
-and Mattei (CM92) analysed [705]{.C40} outbursts and found that duration correlates with the
-following quiet interval (r = [0.223]{.C40}) and with the preceding one (r = [0.282]{.C40}), that
-successive durations alternate (r = [−0.400]{.C40}), and that durations divide at about [12]{.C40}
-days into short and long classes [@cannizzo1992LongtermBehaviorSS]. They also showed that how a
-cycle is defined governs the strength of duration–cycle correlations, and later extended the
-outburst statistics [@cannizzo1998StudyOutburstsSS]. Disc calculations reproduce long/short
-alternation and slow changes in recurrence [@cannizzo1993AccretionDiskLimit]. Related work examined
-symbolic dependence in outburst widths (Hempelmann and Kurths, *Astronomy and Astrophysics*, 1990,
-232, 356), searched for low-dimensional chaos [@cannizzo1988ChaosSSCygni] and short-term precursors
-[@price2007SSCygniOutburst], and studied recurrence in other dwarf novae
+The record has long been searched for links between successive cycles.
+@bath1983OutburstPeriodenergyRelations related outburst energy to the following interval. Cannizzo
+and Mattei [-@cannizzo1992LongtermBehaviorSS, hereafter CM92] analysed [705]{.C40} outbursts.
+Duration correlated with the quiet interval that followed (r = [0.223]{.C40}) and the one before (r
+= [0.282]{.C40}), successive durations alternated (r = [−0.400]{.C40}), and durations fell into
+short and long classes divided at about [12]{.C40} days. How a cycle is defined governs such
+correlations, because an onset-to-onset cycle contains the outburst's own duration
+[@cannizzo1992LongtermBehaviorSS; @ak2002StatisticalAnalysisLongterm]; we therefore forecast the
+quiet interval alone, from the end of one outburst to the start of the next. Later work extended the
+outburst statistics [@cannizzo1998StudyOutburstsSS], reproduced long/short alternation and slow
+changes in recurrence in disc calculations [@cannizzo1993AccretionDiskLimit], tested for dependence
+between successive outburst widths [@hempelmann1990DynamicsOutburstSeries], and searched for
+low-dimensional chaos [@cannizzo1988ChaosSSCygni] and for outburst predictors
+[@price2007SSCygniOutburst]; recurrence has also been studied in other dwarf novae
 [@vanderwoerd1987RecurrenceBehaviorOutbursts].
 
-These studies estimate associations on the data they describe. A forecast test asks whether the
-information improves predictions of data the forecaster has not seen. The answer depends on what the
-forecaster already knows: recent quiet intervals carry information about the next one, so the useful
-question is whether duration adds to them. The closest forecasting precedent we found is
-Grigorievskiy and colleagues' study in the 2014 ITISE proceedings (pp. 520–531), which tested point
-forecasts of onset on one held-out outburst of V363 Lyr. To our knowledge, the present study is the
-first preregistered probabilistic test of dwarf-nova recurrence forecasts on held-out data, and the
-first held-out test of duration beyond a timing baseline.[]{.C41}
+These studies measure association in the data they describe. A forecast test asks whether a variable
+improves predictions of data not used to fit the model, beyond what the model already uses. Recent
+quiet intervals already inform the next one, so the useful question is whether duration adds to
+them. The closest forecasting precedent we found tested point forecasts of onset on one held-out
+outburst of V363 Lyr [@grigorievskiy2014ForecastingOutburstsPhotometry]. To our knowledge, this
+study is the first preregistered test of probabilistic dwarf-nova recurrence forecasts (a full
+probability distribution for the next onset, not a single date) on held-out data, and the first
+held-out test of duration beyond a timing baseline.[]{.C41}
 
-Two hypotheses predict that duration should help. Under the *depletion hypothesis*, a long outburst
-drains more of the disc, which then takes longer to refill when the gas supply from the companion is
-similar from cycle to cycle, so longer outbursts should precede longer quiet intervals. Under the
-*state hypothesis*, duration tracks a slowly changing accretion state, such as the mass-transfer
-rate, that recent intervals describe incompletely, so duration carries information about the next
-interval. Separating them requires measurements beyond outburst timing (Section 4.2).
+Two explanations would make duration useful. Under the *depletion hypothesis*, a long outburst
+drains more of the disc, which then takes longer to refill if the companion's gas supply is similar
+from cycle to cycle, so longer outbursts should precede longer quiet intervals. Under the *state
+hypothesis*, duration tracks a slowly changing accretion state, such as the mass-transfer rate, that
+recent intervals describe incompletely. Separating them requires measurements beyond outburst timing
+(Section 4.2).
 
-We tested whether duration improves forecasts using a standard forecasting design. Forecasts were
-judged by a logarithmic score, which rewards the probability assigned to what happens
-[@gneiting2007StrictlyProperScoring], and evaluated strictly forward in time
-[@burkner2020ApproximateLeavefutureoutCrossvalidation]. We fitted the models to 1910–1959, froze
-them, published the protocol and then scored every forecast for 1960–2017. We then examined how the
-result depends on the way outbursts are timed, and screened ten other dwarf novae to see whether
-their records could support the same test. Section 2 describes the data and methods, Section 3 the
-results, Section 4 their interpretation and Section 5 the limitations.
+We tested the prediction with a preregistered forecasting design
+[@nosek2018PreregistrationRevolution]. Forecasts were judged by a logarithmic score, which rewards
+the probability assigned to what happens [@gneiting2007StrictlyProperScoring], and evaluated
+strictly forward in time [@burkner2020ApproximateLeavefutureoutCrossvalidation]. We fitted the
+models to 1910–1959, froze them, published the protocol, and only then opened and scored every
+forecast for 1960–2017. Adding duration improved the frozen forecasts, by a margin small beside
+recent timing but positive through most of the test period. We then asked how the result depends on
+the way outbursts are timed, and whether the records of ten other dwarf novae could support the same
+test.
 
 ## 2 Data and methods
 
+In outline, we turned nightly magnitude estimates into outburst start and end times, issued a
+forecast of the next start whenever an outburst had faded, and scored it against the later record.
+
 ### 2.1 Observations
 
-We used visual magnitude estimates of SS Cyg from the AAVSO International Database, requested in
-bounded annual windows, hashed on receipt and restricted to the visual band (`Vis.`) with validation
-flag `V`. Reports fainter than an observer's detection limit were kept as limits. The primary model
-choices and fits used the development period 1910–1959. The evaluation period covers forecasts
-issued from 1960 January 1 to 2017 December 31 (JD 2436934.5 to 2458119.5); it contains
-[500,479]{.C15} archive rows after deduplication, of which [249,356]{.C15} meet the selector.
-Observations from 2018 onward are reserved for a future test. Times are Julian Dates as returned by
-the archive.
+We used visual estimates of SS Cyg from the AAVSO International Database (band `Vis.`, validation
+flag `V`), requested in bounded annual windows and hashed on receipt. Fainter-than reports were kept
+as limits. The primary model choices and fits used the development period 1910–1959. The evaluation
+period covers forecasts issued from 1960 January 1 to 2017 December 31 (JD 2436934.5 to 2458119.5);
+it contains [500,479]{.C15} archive rows after deduplication, of which [249,356]{.C15} meet these
+selection criteria. Observations from 2018 onward are reserved for a future test. Times are Julian
+Dates as returned by the archive.
 
 ### 2.2 Outburst extraction
 
-An extraction algorithm, X4, identifies outbursts as episodes brighter than visual magnitude 10,
-which lies between SS Cyg's quiescent and outburst brightness. X4 groups each observer's reports
-into visits and estimates when the light curve crossed magnitude 10 on the rise (the onset) and on
-the fade (the end). Each crossing is summarised as an interval and a point, fitted to nearby reports
-with a shared 0.05-mag allowance for systematic error common to observers. An episode is confirmed
-by bright reports from two distinct observers, or from one observer on at least two nights, with a
-margin past the threshold and no contradicting faint report. Duration runs from fitted onset to
-fitted end, and a quiet interval from one outburst's end to the next onset. A quiet interval counts
-as covered when no gap between visits within it exceeds seven days. X4 was adopted during
-development after three earlier extractors failed a synthetic recovery screen; it passed that screen
-at magnitude 10 (Appendix A).
+An extraction algorithm, X4 (the fourth candidate tried), identifies outbursts as episodes brighter
+than visual magnitude 10, between SS Cyg's quiescent and outburst brightness. X4 groups each
+observer's reports into visits (reports within 0.15 day) and estimates when the light curve crossed
+magnitude 10 on the rise (the onset) and on the fade (the end). Each crossing time is estimated as a
+point and an interval from nearby reports, allowing 0.05 mag of systematic error shared across
+observers. An episode is confirmed by reports decisively brighter than the threshold (beyond a set
+margin) from two observers, or from one observer on two or more nights, with no contradicting faint
+report. Duration runs from fitted onset to fitted end, and a quiet interval from one outburst's end
+to the next onset. A quiet interval counts as covered when no gap between visits within it exceeds
+seven days. X4 was adopted during development after three earlier extractors failed a synthetic
+recovery screen, a test of recovering known outbursts from simulated light curves; X4 passed it at
+magnitude 10 (Appendix A).
 
 ### 2.3 Forecasts
 
 A forecast is issued at the observation time when reports first confirm that the current outburst
-has faded. Every such confirmation issues a forecast, including repeats. Each forecast uses only
-reports dated within the preceding 400 days: X4 is rerun on that window alone, and tests that insert
-later rows confirm that no predictor changes.
+has faded; every such confirmation issues one, including repeats. Each forecast uses only reports
+dated within the preceding 400 days: X4 is rerun on that window alone, and tests that insert later
+rows confirm that no predictor changes.
 
 Each forecast is a lognormal distribution for the quiet interval $Q$ that follows the fitted end $e$
-of the completed outburst. With log-location $\mu$ and log-scale $\sigma$, the three models are
+of the completed outburst. With log-location $\mu$ and log-scale $\sigma$, the three models
+(numbered as in the protocol) are
 
 $$\begin{aligned}
 \mathrm{M0}&:\ \mu = \alpha,\\
@@ -117,31 +127,33 @@ $$\begin{aligned}
 \mathrm{M3}&:\ \mu = \alpha + \gamma_1 q + \gamma_2 L + \beta x,\quad \beta \ge 0,
 \end{aligned}$$
 
-where $q$ is the standardised log of the previous covered quiet interval, $L$ the standardised mean
-of up to six earlier covered log quiet intervals ($L = 0$ when none is available), and $x$ the
-standardised log duration. Centres and scales are development means and standard deviations. M2 is
-the timing baseline and M3 adds duration; the constraint $\beta \ge 0$ tests the direction CM92
-reported, longer outbursts before longer quiet intervals. A forecast issued at age $a =
-t_{\mathrm{issue}} - e$ is the lognormal conditioned on $Q > a$. Forecasts without a covered
-previous interval use M0 in both arms, and forecasts without a fitted end use a common
-remaining-wait forecast; both contribute exactly zero to the comparison. Table 1 summarises the
-models and test, and Fig. 1B shows one cycle schematically.
+where $q$ is the log of the previous covered quiet interval, $L$ the mean of up to six earlier
+covered log quiet intervals ($L = 0$ when none is available) and $x$ the log duration, each
+standardised with development means and standard deviations. M2 is the timing baseline and M3 adds
+duration; the constraint $\beta \ge 0$ restricts duration's effect to the direction CM92 reported,
+longer outbursts before longer quiet intervals. A forecast issued at age $a = t_{\mathrm{issue}} -
+e$, the time already elapsed since the fitted end, is the lognormal conditioned on $Q > a$.
+Forecasts without a covered previous interval use M0 under both models, and forecasts without a
+fitted end use one shared forecast of the remaining wait. These fallback forecasts contribute
+exactly zero to the comparison. Table 1 summarises the models and test; Fig. 1B shows one cycle
+schematically.
 
 ### 2.4 Outcomes and the working score
 
-The outcome of a forecast is the onset of the next outburst as X4 estimates it from the later
-record, an interval $(l, u]$. A forecast stops at the first loss of coverage (a visit gap over seven
-days), at the next issued forecast, or at the end of the evaluation period. If no onset is
-established by then, the forecast is right-censored at that time $c$. The *working score* of a
-forecast is
+The outcome is the onset of the next outburst as X4 estimates it from the later record, an interval
+$(l, u]$. A forecast is scored until the first of three events: loss of coverage (a visit gap over
+seven days), the next issued forecast, or the end of the evaluation period. If no onset is
+established by then, the forecast is right-censored at that time $c$ and scored on the probability
+of no onset before $c$. The *working score* of a forecast is
 
 $$s = \begin{cases}
 \log\left[S(l-e) - S(u-e)\right] - \log S(a) & \text{onset interval},\\
 \log S(c-e) - \log S(a) & \text{censored},
 \end{cases}$$
 
-where $S$ is the lognormal survival function. It is the log probability the forecast assigned to the
-extracted onset window, or to no onset before $c$, measured in nats; higher is better. The paired
+where $S$ is the lognormal survival function. The score is the log probability, in nats, that the
+forecast assigned to the extracted onset window, or to no onset before $c$; higher is better. We
+call it the working score because it rates extracted windows rather than physical onsets. The paired
 gain is M3's score minus M2's for the same forecast. Exponentiating a mean gain gives the ratio of
 the geometric-mean probabilities the two models assigned to the scored outcomes.
 
@@ -153,58 +165,59 @@ M2 exactly. The frozen values are $\beta$ = [0.0466]{.C04} per standard deviatio
 $\gamma_1$ = [0.0780]{.C04}, $\gamma_2$ = [0.0513]{.C04} and, shared by M2 and M3, $\sigma$ =
 [0.346]{.C04}.
 
-The single preregistered statistic is the mean paired gain over all score-eligible forecasts issued
-in 1960–2017, including the zero contributions of fallback forecasts. Its standard error is
-cluster-robust over consecutive six-year blocks (2191.5 days) from the start of 1960, with a
-$G/(G-1)$ correction for $G$ nonempty blocks, and inference uses Student's t with $G - 1$ degrees of
-freedom. The criterion was a one-sided 95% lower bound above zero, equivalent to a two-sided 90%
-interval wholly above zero. The protocol also specified secondary comparisons: an era split at 1993,
-after the end of CM92's record, and a rule that replaces continuous duration with CM92's 12-day
-long/short classes plus within-class duration. Before the development fit, a synthetic screen
-confirmed [11]{.C30} of [40]{.C30} simulated evaluations at an effect sized to CM92's correlations,
-and [3]{.C31} of [220]{.C31} no-effect histories.
+The single preregistered statistic is the mean paired gain over all scored forecasts issued in
+1960–2017, including the zero contributions of fallback forecasts. Because forecasts close in time
+are not independent, its standard error is cluster-robust over consecutive six-year blocks (2191.5
+days) from the start of 1960, with a $G/(G-1)$ correction for the $G$ nonempty blocks and Student's
+t with $G - 1$ degrees of freedom [@cameron2015PractitionersGuideClusterrobust]. The criterion was a
+one-sided 95% lower bound above zero, equivalent to a two-sided 90% interval wholly above zero. Two
+secondary comparisons were also specified: an era split at 1993, after the end of CM92's record, and
+a rule that replaces continuous duration with CM92's 12-day long/short classes plus within-class
+duration. Before the development fit, the criterion was met in [11]{.C30} of [40]{.C30} simulated
+evaluations with an effect sized to CM92's correlations, and in [3]{.C31} of [220]{.C31} simulated
+histories with no effect.
 
 ### 2.6 Access and execution
 
 The protocol was deposited on Zenodo (doi:10.5281/zenodo.24053338) on 2026 November 8, before any
 evaluation data were requested (Fig. 1C). The first request stopped before any forecast was scored,
-because the archive returned the literal token `None` for missing uncertainties, a field that no
-analysis uses. The parser was changed to accept that exact token without altering or dropping a row.
-Independent review, invariance tests and a full synthetic rehearsal passed before the run resumed,
-and all forecasting code, parameters and protocol files stayed unchanged.[]{.C05} Two independent
-implementations of the forecast ledger had to agree exactly before scoring, and a separate checker
-reproduced every score.[]{.C01}
+because the archive returned the literal token `None` for missing uncertainties, a field no analysis
+uses. The parser was changed to accept that exact token without altering or dropping a row.
+Independent review, invariance tests and a full synthetic rehearsal passed before the run resumed;
+forecasting code, parameters and protocol files stayed unchanged.[]{.C05} Two independent
+implementations of the forecast table, which records every forecast and its inputs, had to agree
+exactly before scoring, and a separate checker reproduced every score.[]{.C01}
 
 ### 2.7 Measurement checks after the result
 
-After the result, an external review asked how far it depends on the way outbursts are timed. The
-analyses in this subsection were each specified before their own fits, and all reuse the opened
-data.
+An external review of the result asked how far it depends on the way outbursts are timed. Each
+analysis below was specified before its own fits, and all reuse the opened data.
 
-- **Rescoring (R1)** audited the censoring rules, scored each forecast against X4's point estimate
-  of onset in place of its interval, and added synthetic errors to fitted end times.
-- **Report windows and clocks (R2b)** rebuilt each onset outcome as a report window, from the last
-  faint report to the first decisively bright one (extractor X5). Two clocks were compared. The
-  first keeps the fitted end. The second starts the quiet interval at the first decisively faint
-  report and measures duration as the span of decisively bright reports, so no end time is
-  interpolated. These comparisons use new windowed timing baselines: B0 with recent-interval
-  covariates, B1 with discounted history and B2, a state-space level model chosen in advance.
+- **Rescoring** audited the censoring rules, scored each forecast against X4's point estimate of
+  onset instead of its interval, and added synthetic errors to fitted end times.
+- **Report windows and clocks** rebuilt each onset outcome as a report window, from the last faint
+  report to the first decisively bright one (a second extractor, X5), and compared two clocks, that
+  is, two ways of starting the quiet interval. The fitted-end clock keeps the fitted end. The
+  decisive-faint clock starts at the first decisively faint report and measures duration as the
+  span of decisively bright reports, so no end time is interpolated. These comparisons use new windowed timing baselines: B0 with recent-interval
+  covariates, B1 with discounted history, and B2, a state-space level model chosen in advance.
 - **Drift recalibration** recentred duration on the preceding ten outbursts and updated the
-  baseline level from preceding outcomes, to ask how changes in the typical quiet interval affect
-  the gain.
+  baseline level from preceding outcomes, to ask how slow change in the typical quiet interval
+  (drift) affects the gain.
 
 ### 2.8 Transfer screen
 
-To ask whether other dwarf novae could support the same test, we froze a screen in Git before
-requesting any of their data. Eight candidates (SS Aur, RU Peg, AR And, X Leo, TW Vir, UU Aql, CH
-UMa and DX And) and two eclipsing systems held to stricter rules (U Gem and IP Peg) were chosen from
-catalogue properties, with thresholds proposed from the same catalogues. Only records before 1990
-(JD < 2447892.5) were opened, keeping later decades for a future test. A star qualified if its
-pre-1990 record yielded at least [40]{.C68 .V036} supported forecasts (with a covered previous
-interval, a measurable duration and a scorable outcome), at least [70]{.C68 .V037}% eligible onset
-windows, stable timing-baseline fits, and no operational long-run flag (a bright run of 60 days or
-more, or repeated 40-day runs); the eclipsing systems also needed to pass an eclipse-handling check.
-The screen fitted no duration effect and computed no forecast gain (Appendix E).
+To ask whether other dwarf novae could support the same test, we froze the screen's code in Git
+before requesting any of their data. Eight candidates (SS Aur, RU Peg, AR And, X Leo, TW Vir, UU
+Aql, CH UMa and DX And) and two eclipsing systems held to stricter rules (U Gem and IP Peg) were
+chosen from catalogue properties, with thresholds proposed from the same catalogues. Only records
+before 1990 (JD < 2447892.5) were opened, keeping later decades for a future test. A star qualified
+if its pre-1990 record yielded at least [40]{.C68 .V036} supported forecasts (with a covered
+previous interval, a measurable duration and a scorable outcome), at least [70]{.C68 .V037}%
+eligible onset windows and stable timing-baseline fits. It also needed no operational long-run flag,
+which marks bright runs longer than ordinary outbursts (60 days or more, or repeated 40-day runs);
+the eclipsing systems also had to pass an eclipse-handling check. The screen fitted no duration
+effect and computed no forecast gain (Appendix E).
 
 **Table 1.** Models and test.
 
@@ -224,24 +237,26 @@ The screen fitted no duration effect and computed no forecast gain (Appendix E).
 
 ### 3.1 Duration improved the frozen forecasts
 
-The duration model forecast longer waits after longer outbursts: with timing history fixed, doubling
-the duration lengthens the median of its untruncated lognormal clock by about [9]{.C04}%. Over
-[441]{.C01 .V004} forecasts issued in 1960–2017, adding duration raised the mean working score by
-[0.0165]{.C01 .V001} nats (90% interval [0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}; ten blocks,
-nine degrees of freedom), meeting the preregistered criterion (Fig. 2). The geometric-mean
-probability assigned to the scored outcomes rose by [1.7]{.C02}%. The timing baseline M2 itself
-gained [0.117]{.C10} nats over the constant forecast M0, so duration added about [14]{.C02}% of what
-recent timing adds. The outcomes comprised [435]{.C03} onset intervals and [six]{.C03} censored
-forecasts, and [five]{.C03} forecasts used the shared fallback.
+Over [441]{.C01 .V004} forecasts issued in 1960–2017, adding duration raised the mean working score
+by [0.0165]{.C01 .V001} nats (90% interval [0.0049]{.C01 .V002} to [0.0281]{.C01 .V003}; ten blocks,
+nine degrees of freedom), meeting the preregistered criterion (Fig. 2). The duration model forecast
+longer waits after longer outbursts: with timing history fixed, doubling the duration lengthens the
+median forecast quiet interval, before conditioning on the time already elapsed, by about
+[9]{.C04}%. The geometric-mean probability assigned to the scored outcomes rose by [1.7]{.C02}%. The
+timing baseline M2 itself gained [0.117]{.C10} nats over the constant forecast M0, so duration added
+about [14]{.C02}% of what recent timing adds. The outcomes comprised [435]{.C03} onset intervals and
+[six]{.C03} censored forecasts; [five]{.C03} of the forecasts used the shared remaining-wait
+fallback.
 
-Fig. 2A shows the first eligible forecast of the evaluation period, chosen by date. M3 gave a median
-remaining wait of [26.77]{.C42} days against [27.57]{.C42} for M2, and placed [0.603]{.C42} of its
-probability within 30 days against [0.577]{.C42}. The gain was positive in [eight]{.C25} of ten
-six-year blocks (Fig. 2B), and leaving out any one block gave means from [0.0132]{.C25} to
-[0.0194]{.C25}. Frozen sensitivities to uniform end times, a previous-gap-only baseline, a two-day
-issue delay and three-year clusters kept the lower bound above zero (Appendix B). M3's predictive
-intervals were conservative: its nominal 50% intervals covered between [0.546]{.C11} and
-[0.617]{.C11} of outcomes, and its nominal 90% intervals between [0.923]{.C11} and [0.980]{.C11}.
+Fig. 2A shows the first eligible forecast of the evaluation period, chosen by date. It followed a
+shorter-than-average outburst, so M3 gave a median remaining wait of [26.77]{.C42} days against
+[27.57]{.C42} for M2, and placed [0.603]{.C42} of its probability within 30 days against
+[0.577]{.C42}. The gain was positive in [eight]{.C25} of ten six-year blocks (Fig. 2B), and leaving
+out any one block gave means from [0.0132]{.C25} to [0.0194]{.C25}. Preregistered variants (uniform
+end times, a previous-gap-only baseline, a two-day issue delay and three-year clusters) each kept
+the lower bound above zero (Appendix B). M3's predictive intervals were conservative, wider than
+nominal: nominal 50% intervals covered between [0.546]{.C11} and [0.617]{.C11} of outcomes, and
+nominal 90% intervals between [0.923]{.C11} and [0.980]{.C11}.
 
 The preregistered era split gave [0.0240]{.C06} nats ([0.0091]{.C06} to [0.0389]{.C06}; [261]{.C06}
 forecasts) for 1960–1992 and [0.0057]{.C07} ([−0.0107]{.C07} to [0.0221]{.C07}; [180]{.C07}
@@ -250,90 +265,93 @@ forecasts) for 1993–2017. The long/short rule gained [0.0025]{.C08} nats ([−
 
 ### 3.2 Measurement checks
 
-Fig. 3 collects selected duration-gain comparisons. Scoring against X4's point estimates of onset
-gave [0.0154]{.C44} nats ([0.0034]{.C44} to [0.0274]{.C44}). The censoring audit changed
-[zero]{.C43} of the [441]{.C43} outcomes. The report-window comparisons gave smaller gains with
-intervals spanning zero: [0.0075]{.C55 .V009} nats ([−0.0008]{.C55 .V010} to [0.0159]{.C55 .V011};
-[432]{.C55 .V012} forecasts) on the fitted-end clock and [0.0043]{.C55 .V013} nats
-([−0.0008]{.C55 .V014} to [0.0094]{.C55 .V015}; [431]{.C55 .V016} forecasts) on the decisive-faint
-clock, both with baseline B2. The paired contrast between the decisive-faint and fitted-end gains at
-the same delayed issuances was [−0.0031]{.C55 .V017} nats ([−0.0078]{.C55 .V018} to
-[0.0017]{.C55 .V019}; Appendix C).
+The gain survived rescoring against point onsets and shrank under report-window outcomes (Fig. 3).
+Scoring against X4's point estimates of onset gave [0.0154]{.C44} nats ([0.0034]{.C44} to
+[0.0274]{.C44}), and the censoring audit left all [441]{.C43} outcomes unchanged. The report-window
+comparisons gave smaller gains with intervals spanning zero: [0.0075]{.C55 .V009} nats
+([−0.0008]{.C55 .V010} to [0.0159]{.C55 .V011}; [432]{.C55 .V012} forecasts) on the fitted-end clock
+and [0.0043]{.C55 .V013} nats ([−0.0008]{.C55 .V014} to [0.0094]{.C55 .V015}; [431]{.C55 .V016}
+forecasts) on the decisive-faint clock, both with baseline B2. The paired contrast between the
+decisive-faint and fitted-end gains at the same issue times was [−0.0031]{.C55 .V017} nats
+([−0.0078]{.C55 .V018} to [0.0017]{.C55 .V019}; Appendix C).
 
-In synthetic null and gap-dependent histories, adding independent errors to fitted end times gave
-mean gains of zero or below at every tested error size.[]{.C46} On the decisive-faint clock, the
-observer-night reporting rate during the completed outburst gained [0.0030]{.C56} nats
-([0.0013]{.C56} to [0.0048]{.C56}) over baseline B2 when used in place of duration. Separately,
-adding the end-cadence gap (from the last report short of decisive faintness to the decisively faint
-report that starts the clock) to that baseline left the duration gain essentially unchanged, at
-[0.0043]{.C56} nats.
+To ask whether end-time errors alone could create a gain, we added independent errors to fitted end
+times in synthetic null and gap-dependent histories; mean gains were zero or below at every tested
+error size.[]{.C46} To gauge how much forecast information observing effort carries, we replaced
+duration with the observer-night reporting rate during the outburst: on the decisive-faint clock it
+gained [0.0030]{.C56} nats ([0.0013]{.C56} to [0.0048]{.C56}) over baseline B2. Separately, adding
+the end-cadence gap (from the last report short of decisive faintness to the decisively faint report
+that starts the clock) to that baseline left the duration gain unchanged at [0.0043]{.C56} nats.
 
-Of the redesigned baselines, B1 fitted the development data best and B2 worst (negative log
-likelihoods [827.24]{.C61} for B1, [830.19]{.C61} for B0 and [849.28]{.C61} for B2). The typical
-quiet interval early in the evaluation period was shorter than in the development blocks.[]{.C61}
-Recentring duration on the preceding ten outbursts and recalibrating the baseline level from
-preceding outcomes reduced the duration gain in the R2b comparison closest to the primary design
-(point clock, baseline B0) from [0.0184]{.C62} to [0.0132]{.C62} nats and the observing-rate gain
-from [0.0030]{.C62} to [0.0014]{.C62}. After this recalibration the duration gains stayed positive
-on every clock and baseline, from [0.0052]{.C63} to [0.0132]{.C63} nats; the point-clock B0 gain
-kept a positive lower bound.[]{.C63}
+Of the redesigned baselines, B1 fitted the development data best and B2, chosen in advance for the
+main report-window comparisons, worst (negative log likelihoods [827.24]{.C61} for B1,
+[830.19]{.C61} for B0 and [849.28]{.C61} for B2). The typical quiet interval early in the evaluation
+period was shorter than in the development blocks.[]{.C61} Recentring duration on the preceding ten
+outbursts and recalibrating the baseline level from preceding outcomes reduced the duration gain in
+the redesigned comparison closest to the primary design (fitted-end clock, baseline B0) from
+[0.0184]{.C62} to [0.0132]{.C62} nats, and the reporting-rate gain from [0.0030]{.C62} to
+[0.0014]{.C62}. After this recalibration the duration gains stayed positive on every clock and
+baseline, from [0.0052]{.C63} to [0.0132]{.C63} nats, and the fitted-end B0 gain kept a positive
+lower bound.[]{.C63}
 
 ### 3.3 Transfer screen
 
 None of the ten stars qualified (Fig. 4; Appendix E). Nine yielded fewer than the [40]{.C68 .V036}
-supported forecasts required, and across all ten the frozen pre-1990 streams yielded
+supported forecasts required, and across all ten the frozen pre-1990 records yielded
 [217]{.C68 .V033}. SS Aur yielded [110]{.C68 .V038}, with [79.6]{.C68 .V039}% eligible onset
 windows, and failed the long-run check with a [100.97]{.C71}-day bright run made up of [four]{.C71}
 separate clusters of report nights. The eclipsing systems U Gem and IP Peg yielded [27]{.C68 .V054}
-and [0]{.C68 .V056} supported forecasts, and their eclipse check stopped at its baseline stage.
+and [0]{.C68 .V056} supported forecasts, and neither passed the preliminary stage of the eclipse
+check.
 
-The candidates' records time successive outbursts far less often than SS Cyg's. In 1980–1989 SS
+The candidates' records supported far fewer forecasts per outburst than SS Cyg's. In 1980–1989 SS
 Cyg's record yielded [67]{.C70} supported forecasts against [73]{.C70} confirmed outbursts; the ten
 candidates together yielded [102]{.C70} against [485]{.C70} (Fig. 4B). The largest single loss was
-the requirement for a covered previous quiet interval: in an ordinary report-level diagnostic,
-[822]{.C70} pre-1990 candidate forecasts with a timing clock fell to [280]{.C70} once that
-requirement applied. At the 1980s rate, all ten stars together, ignoring the other qualification
-rules, would yield [367.2]{.C68 .V035} supported forecasts over 36 years.
+the requirement for a covered previous quiet interval: in a separate count from the raw reports,
+[822]{.C70} pre-1990 candidate forecasts with a clock fell to [280]{.C70} once that requirement
+applied. At the 1980s rate, all ten stars together, ignoring the other qualification rules, would
+yield [367.2]{.C68 .V035} supported forecasts over 36 years, well short of the [1,100]{.C65} assumed
+in planning a multi-star test (Appendix F).
 
 ## 4 Discussion
 
 ### 4.1 What the result shows
 
-The duration of a completed outburst improved forecasts of SS Cyg's next onset beyond what recent
-quiet intervals provided, in a test whose models and criterion were fixed before the evaluation data
-were opened. The direction matches CM92's correlation between duration and the following quiet
-interval, now carried forward in time over 58 years of observations. The gain is modest, about a
-seventh of timing history's among the frozen models, and positive in eight of ten six-year blocks.
+Adding the length of the last outburst to recent quiet intervals improved forecasts of SS Cyg's next
+onset, in a test whose models and criterion were fixed before the evaluation data were opened. The
+direction matches CM92's correlation between duration and the following quiet interval, now carried
+into forecasts of 58 years of later observations. The gain is modest, about a seventh of the gain
+from timing history, and positive in eight of ten six-year blocks.
 
-Rescoring against point onsets gives a similar gain. Rebuilding the outcomes from report windows
-gives smaller gains, [0.0075]{.C55 .V009} and [0.0043]{.C55 .V013} nats, with intervals spanning
-zero. Used in place of duration, the observing rate carries a smaller amount of forecast
-information, and adjusting the baseline for the end-cadence gap leaves the duration gain unchanged
-on the decisive-faint clock.
+Rescoring against point onsets gives a similar gain, and report-window outcomes give smaller gains
+whose intervals span zero. Used in place of duration, the reporting rate carries less forecast
+information, and adjusting the baseline for the reporting gap at the fade leaves the duration gain
+unchanged.
 
 ### 4.2 Depletion or state?
 
 Both hypotheses accommodate the observed direction. The depletion hypothesis ties the effect to
 individual cycles: each long outburst should lengthen the interval that follows. Disc models that
 drain different fractions of the disc in long and short outbursts reproduce the observed alternation
-[@cannizzo1993AccretionDiskLimit], and alternation is strong in these data: the lag-one correlation
-of log duration was [−0.52]{.C24} in the evaluation years. In exploratory fits to the evaluation
-data, a long/short indicator had a higher likelihood than continuous duration (Appendix D), which
-motivates an outburst-type predictor in a future frozen comparison. Type-dependent refilling and a
-changing state could each produce such a class pattern.
+[@cannizzo1993AccretionDiskLimit], and alternation is strong in these data: the correlation between
+successive log durations was [−0.52]{.C24} in the evaluation years. In exploratory fits that
+re-estimate the level on the evaluation data, a long/short indicator had a higher likelihood than
+continuous duration (Appendix D), although the frozen long/short rule gained little (Section 3.1).
+This motivates an outburst-type predictor in a future frozen comparison. Type-dependent refilling
+and a changing state could each produce such a long/short pattern.
 
 The state hypothesis ties the effect to slower change: duration would carry information about the
 mass-transfer rate or disc state that the recent-interval average smooths over. SS Cyg's behaviour
-can depart from its usual pattern: an anomalous event was reported in 2021
-[@kimura2021NatureAnomalousEvent]. The drift in the typical quiet interval between development and
-evaluation, and the smaller gains after duration recentring and baseline recalibration, are
-compatible with a contribution from slow variation, in the star or in how it was observed.
+can depart from its usual pattern; an anomalous event was reported in 2021, after the evaluation
+period [@kimura2021NatureAnomalousEvent]. The drift in the typical quiet interval between
+development and evaluation, and the smaller gains after duration recentring and baseline
+recalibration, are compatible with slow variation, in the star or in how it was observed.
 
-Forecasts that include an independent measure of accretion state, such as quiescent brightness or
-X-ray and extreme-ultraviolet flux [@wheatley2003XrayExtremeultravioletFlux], could separate the
-two: if duration's gain shrinks once state is known, the state hypothesis gains support; if it
-persists, depletion does. The frozen forecasts can also be scored on SS Cyg's observations from 2018
-onward, which remain unopened.
+Forecasts that add an independent measure of accretion state, such as quiescent brightness
+[@vogt2023PhotometricLongtermVariations] or X-ray and extreme-ultraviolet flux
+[@wheatley2003XrayExtremeultravioletFlux], could separate the two: if duration's gain shrinks once
+state is known, the state hypothesis gains support; if it persists, depletion does. The frozen
+forecasts can also be scored on SS Cyg's observations from 2018 onward, which remain unopened.
 
 ### 4.3 What a record needs
 
@@ -345,10 +363,9 @@ Their records from 1990 onward, and automated surveys, may supply more supported
 multi-star test would need its own frozen design on those records.
 
 The design itself is general. Fitting on early records, freezing and publishing the forecasts, and
-scoring them on later records suits other long, irregular records of recurrent events kept by many
-observers, such as volcanic eruptions or disease outbreaks. It needs a record with enough
-well-covered successive events, a baseline that captures their recent rhythm, and a score fixed
-before the test data are seen.
+scoring them on later records suits other long, irregular records of recurrent events, such as
+volcanic eruptions or disease outbreaks. It needs enough well-covered successive events, a baseline
+that captures their recent rhythm, and a score fixed before the test data are seen.
 
 ## 5 Limitations
 
@@ -356,29 +373,30 @@ Table 2 lists the assumptions behind the primary result, what tested each and wh
 Three matter most.
 
 First, the working score evaluates extracted onset windows, which are fitted statistical summaries.
-Establishing physical-onset forecast skill requires a validated model for how the selected reports
-and observing times arise: correct association of reports with outbursts and a valid risk set,
-containment of the true crossing in each window, and an observation process that is coarsened at
-random given the observed history, so that it factors out of the likelihood (Appendix C). X4 passed
-its recovery screen on waveforms known during development; recovery on a waveform family held out
-from development remains untested, because that benchmark failed qualification before X4 was scored
-on it.
+Establishing skill at forecasting physical onsets requires a validated model of how the selected
+reports and observing times arise. It must show that reports are assigned to the right outbursts and
+forecasts to a valid risk set, that each window contains the true crossing, and that when observers
+report depends on the outcome only through what has already been observed, so that observing factors
+out of the likelihood (coarsening at random; Heitjan & Rubin 1991; Appendix C). X4 passed its
+recovery screen on light-curve shapes known during development; recovery on a family of shapes held
+out from development remains untested, because that benchmark failed qualification before X4 was
+scored on it.
 
 Second, duration and the following quiet interval share one estimated end time, so errors in that
 time can couple them, and observers may report more often when the star is active. The
-decisive-faint clock removes interpolation from the end but keeps report timing, and an invented
-cadence construction shows that report timing alone can produce a positive duration gain.[]{.C48}
-The endpoint-error experiments added independent Gaussian errors in a fixed simulator, and the
-observing rate itself carried forecast information.
+decisive-faint clock removes interpolation from the end but keeps report timing, and a constructed
+example shows that report timing alone can produce a positive duration gain.[]{.C48} The
+endpoint-error experiments added independent Gaussian errors in a fixed simulator, and the reporting
+rate itself carried forecast information.
 
 Third, all post-result SS Cyg reanalyses reuse opened data and are exploratory. The redesigned
 comparisons and the drift recalibration change baseline, clock, coding and scored population
-together, so their smaller gains measure no fraction of the primary gain.[]{.C62} A richer timing
-baseline could also absorb part of that gain.
+together, so their smaller gains cannot be read as fractions of the primary gain.[]{.C62} A richer
+timing baseline could also absorb part of that gain.
 
 The evaluation followed a parser repair made after the first data access and before scoring; the
 protocol DOI timestamps the original code, and the repair is documented separately.[]{.C05}
-Forecasts use reports by observation date, and when historical reports were uploaded or revised is
+Forecasts use reports by observation date; when historical reports were uploaded or revised is
 unknown, so the test replays the archive as it stands today. The transfer screen's ratios count
 forecasts and outbursts by different landmarks and describe yield under its frozen rules, which used
 catalogue thresholds.[]{.C70} The result concerns one star.
@@ -387,9 +405,9 @@ catalogue thresholds.[]{.C70} The result concerns one star.
 
 | Assumption | Why it matters | What tested it | What remains open |
 |---|---|---|---|
-| Extracted onset windows stand for physical onsets | Defines what the score rewards | Synthetic recovery screen; point rescoring[]{.C44}; report windows[]{.C55} | A validated observation model; recovery on unfamiliar waveforms |
+| Extracted onset windows stand for physical onsets | Defines what the score rewards | Synthetic recovery screen; point rescoring[]{.C44}; report windows[]{.C55} | A validated observation model; recovery on held-out light-curve shapes |
 | Endpoint measurement model | A shared estimated end couples duration and the next interval | Sign constraint; simulated independent end errors[]{.C46}; decisive-faint clock[]{.C55} | Systematic or state-dependent errors; report-timing coupling[]{.C48} |
-| Observation process is coarsened at random given history | Observers may watch an active star more closely | Observing-rate mark; end-cadence covariate[]{.C56} | The rate itself carries information |
+| Observation process is coarsened at random given history | Observers may watch an active star more closely | Reporting-rate mark; end-cadence covariate[]{.C56} | The rate itself carries information |
 | The timing baseline is adequate | The gain is measured beyond it | Baselines B0–B2; drift recalibration[]{.C61}[]{.C62}[]{.C63} | Richer baselines; recalibration is exploratory |
 | The archive reflects what was reported at each date | Defines the information at issue | Prefix-only predictors; inserted-row tests | Upload and revision dates are unknown |
 | Six-year blocks are independent | Sets the interval width | Leave-one-block-out; three-year clusters[]{.C09}[]{.C25} | A standard error [1.43]{.C25} times larger removes the result |
@@ -398,15 +416,14 @@ catalogue thresholds.[]{.C70} The result concerns one star.
 
 ## 6 Conclusions
 
-A century of amateur observations of SS Cygni supported a preregistered test of a question first
-raised by correlations in the same record: does the length of an outburst help forecast the next?
-Forecasts including duration, frozen on 1910–1959 and scored on 1960–2017, assigned more probability
-to the extracted onsets than forecasts based on recent timing alone, meeting the preregistered
-criterion. The gain is about a seventh of what the timing baseline adds. Separating disc depletion
-from a slowly changing accretion state, and repeating the test on other dwarf novae, will need
-records with enough well-covered successive cycles, together with independent measures of the
-accretion state. The frozen forecasts, code and protocol are public and ready to be scored on SS
-Cyg's later observations.
+Knowing how long an SS Cygni outburst lasted improves forecasts of when the next one begins.
+Forecasts that included duration, fitted to 1910–1959 and frozen before 1960–2017 was opened,
+assigned more probability to the extracted onsets than forecasts from recent timing alone; the gain
+was small and met a preregistered criterion. A century of amateur observations made the test
+possible. Separating disc depletion from a slowly changing accretion state, and repeating the test
+on other dwarf novae, will need records with enough well-covered successive cycles, together with
+independent measures of accretion state. The frozen forecasts, code and protocol are public, ready
+to be scored on SS Cyg's observations from 2018 onward.
 
 ## Acknowledgments
 
@@ -423,13 +440,18 @@ against https://aavso.org/data-usage-guidelines-2026-07/. -->
 
 ## Data availability
 
-The repository <https://github.com/BWBrook/dwarf-nova-memory> contains the protocols, source code,
-frozen parameters, aggregate evidence, claims ledger, figures and access receipts. Code is MIT
-licensed; text, figures and derived data are CC BY-SA 4.0. The evaluation protocol is archived at
+Protocols, source code, frozen parameters, aggregate evidence, the claims ledger, figures and access
+receipts are at <https://github.com/BWBrook/dwarf-nova-memory> (code MIT; text, figures and derived
+data CC BY-SA 4.0). The evaluation protocol is archived at
 <https://doi.org/10.5281/zenodo.24053338>. AAVSO observations are available from the International
-Database. Raw observations, observer identities, event catalogues and individual forecast scores are
-retained outside the repository; reproduction uses those hashed inputs without a new archive
-request.
+Database. Raw extracts, observer identities, event catalogues and per-forecast scores are kept
+outside the repository; reproduction uses their hashes without a new archive request.
+
+## Software
+
+Analyses used Python with NumPy [@harris2020ArrayProgrammingNumPy] and SciPy [@virtanen2020SciPy10];
+figures used Matplotlib [@hunter2007Matplotlib2DGraphics]. The manuscript was built with Pandoc and
+makedoc (<https://github.com/BWBrook/makedoc>).
 
 ## Appendix A: Extraction, issuance and access
 
@@ -440,10 +462,10 @@ arms only on bright evidence at least 0.5 mag past the threshold. Three earlier 
 failed qualification. X4 passed a synthetic screen at magnitude 10 on the qualified cadence family,
 where the seven-day coverage rule was also chosen; magnitude-9.5 diagnostics failed in later eras.
 
-**Issuance and predictors.** The current episode is the last prefix episode whose end bracket
-reaches the issuing bright evidence. A duration of zero or less makes the mark unavailable. The
-previous interval counts only if the previous episode begins more than 30 days inside the 400-day
-window. A two-day reporting delay was a frozen sensitivity.
+**Issuance and predictors.** The current episode is the last episode in the 400-day window whose end
+bracket reaches the issuing bright evidence. A duration of zero or less makes the mark unavailable.
+The previous interval counts only if the previous episode begins more than 30 days inside the
+400-day window. A two-day reporting delay was a frozen sensitivity.
 
 **The sign constraint.** Shared end-time error pushed fitted null duration coefficients negative in
 development simulations, which motivated fitting $\beta$ with M2 fixed and bounding it at zero. The
@@ -492,8 +514,8 @@ associations, so the earlier report-interval rescoring covered only [11]{.C45} c
 association of reports with outbursts, completeness and a valid risk set (A0); containment of the
 true crossing in the window, or genuine survival through a censoring time (A1); and a complete,
 normalised observation process that is coarsened at random (A2). Under them the report likelihood
-factors into an observation term and the forecast probability of the window. Visit timing and
-margins past threshold do not by themselves establish the premises.
+factors into an observation term and the forecast probability of the window. Establishing them needs
+evidence beyond visit timing and margins past threshold.
 
 **Clocks.** The decisive-faint clock anchors each forecast at the first decisively faint report,
 uses the decisive-bright span as duration, and waits for report availability before issuing. Exact
@@ -594,8 +616,8 @@ with $\beta$ = [0.05]{.C66} and $b$ = [0.20]{.C66}, the expected gain is [−0.0
 | Six, noisy / delayed / common state | [1,100]{.C69 .V066} | [36.2]{.C69 .V064}% | [10.3]{.C69 .V065}% |
 <!-- END GENERATED precision -->
 
-The grids used [70,000]{.C65} and [16,000]{.C69 .V068} trials. Neither establishes a robust sample
-size across its stressed conditions.[]{.C67}
+The grids used [70,000]{.C65} and [16,000]{.C69 .V068} trials. Under their stressed conditions, both
+leave the required sample size open.[]{.C67}
 
 ## Appendix G: Prior art
 

@@ -14,7 +14,8 @@ outbursts tend to be followed by longer quiet spells [@cannizzo1992LongtermBehav
 We asked whether knowing how long an outburst lasted improves a forecast of when the next one
 starts, beyond what the recent quiet spells already tell. Two ideas suggest it could. A long
 outburst may drain more of the disc, which then takes longer to refill. Or outburst length may
-track a slowly changing feeding rate that recent quiet spells capture only in part.
+track a slowly changing feeding rate that recent quiet spells capture only in part. A test fixed
+before the data were seen gave the answer: yes, by a small margin.
 
 ## A forecast test fixed in advance
 

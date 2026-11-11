@@ -6,9 +6,11 @@ literature audit or establish that any full text has been read.
 - `literature.bib` and `evidence.csv` retain the original thirty citation keys
   and their one-to-one relation. Their source, access and metadata-caution
   statuses remain unchanged.
-- `dois.txt` contains thirty-four distinct active DOI identifiers, one per
-  line, derived from the twenty-eight seed DOI fields and seven A01 DOI lines,
-  with one unresolved retrieval separated out.
+- `dois.txt` contains thirty-nine distinct active DOI identifiers, one per
+  line: thirty-four derived from the twenty-eight seed DOI fields and seven A01
+  DOI lines (one unresolved retrieval separated out), and five added in step 4
+  of the reconstruction (D055) after Crossref checks: Heitjan and Rubin (1991),
+  Nosek et al. (2018), and the NumPy, SciPy and Matplotlib papers.
 - `refs.yaml` is generated from that active ledger by `tools/refs.py`, using
   Crossref's CSL-JSON transform and DOI content negotiation as its fallback.
   Each active DOI returned one record with the same DOI. Cite the generated
@@ -34,18 +36,24 @@ python3 scripts/validate_seed.py
 
 The generator prints each manuscript key beside its DOI. It fetches citation
 metadata only; it does not request papers or archive observations. The current
-`manual.yaml` remains empty. The two seed records without verified DOI fields
-(`SzkodyMattei1984` and `HempelmannKurths1990`) remain in the legacy audit and
-are not fabricated in the generated bibliography.
+`manual.yaml` holds three entries written from verified sources, each with its
+provenance in a comment: Hempelmann and Kurths (1990), confirmed against the ADS
+bibcode and J. Kurths's institutional bibliography; Grigorievskiy et al. (2014),
+from the paper's title page and the authors' group publication list; and Cameron
+and Miller (2015), whose Crossref record splits the first author's name. The seed
+record `SzkodyMattei1984` remains in the legacy audit only. The manuscript uses
+the AAS-style `the-astrophysical-journal.csl`, modified locally to print
+publishers only for books and reports.
 
-Generated on 9 November 2026 (Hobart), with official metadata retrieved by
-2026-11-08T14:37:07.696129+00:00. Snapshot digests:
+First generated on 9 November 2026 (Hobart); regenerated on 11 November 2026
+after the step-4 additions, with metadata retrieved from Crossref that day.
+Snapshot digests:
 
 | File | SHA-256 |
 |---|---|
-| `tools/refs.py` | `b12a737c6d311e26d4b54f3ba8bc0c22fd578a8ffeb4110811f1f865f58244df` |
-| `dois.txt` | `507fee464d0c3f60d20604c0ccb21e4d56e1aeacda4766ed9b3c32fa3c7f0eb1` |
-| `refs.yaml` | `33192e30dced13820d071d6ccbc48290adbfd44a221946c68b17b381a98d08d5` |
+| `tools/refs.py` | `b90ff7a7b516e4bb3a70370a4f41979bb1703f5e62222dcf200f8f79ca764372` |
+| `dois.txt` | `c06b7b378c3798be42da44754a155ebe7d57418fb49e961cc003bf5c72293057` |
+| `refs.yaml` | `b1264ebef72399263fdb2275f7ed5fc94e8e5dd1edfa1bd76665de3d151a948e` |
 | `unresolved-identifiers.txt` | `38edfecaeaff16ab887e311d771fd8f654f018cc51e64ce31630c47420f331c4` |
 | unchanged A01 identifier list | `ae373659c1ebd04caa5e4d20ef8b995e7bde37b816b51a534d0d9212b1913097` |
 

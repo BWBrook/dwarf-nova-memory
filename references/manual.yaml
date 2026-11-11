@@ -1,2 +1,60 @@
 # Works without a DOI, as CSL-JSON-style YAML entries with an explicit id.
-references: []
+# hempelmann1990: ADS bibcode 1990A&A...232..356H; title, journal, volume and pages confirmed against
+#   J. Kurths's institutional bibliography (pik-potsdam.de, 1990-1993 list), 11 November 2026.
+# grigorievskiy2014: title and authors from the paper's title page (PDF sha256 0ff9ed57..., the
+#   A10m novelty receipt); venue, volume and pages from the authors' group publication list
+#   (research.cs.aalto.fi/aml/publications.shtml, Publication216), 11 November 2026.
+# cameron2015: Crossref metadata for DOI 10.3368/jhr.50.2.317, with the first author's name, which
+#   Crossref splits as family 'Colin Cameron', corrected to A. Colin Cameron.
+references:
+- id: hempelmann1990DynamicsOutburstSeries
+  type: article-journal
+  author:
+  - family: Hempelmann
+    given: A.
+  - family: Kurths
+    given: J.
+  title: Dynamics of the outburst series of SS Cygni
+  container-title: Astronomy and Astrophysics
+  volume: '232'
+  page: 356-366
+  issued:
+    date-parts:
+    - [1990]
+- id: grigorievskiy2014ForecastingOutburstsPhotometry
+  type: paper-conference
+  author:
+  - family: Grigorievskiy
+    given: Alexander
+  - family: Mantere
+    given: Maarit
+  - family: Akusok
+    given: Anton
+  - family: Eirola
+    given: Emil
+  - family: Lendasse
+    given: Amaury
+  title: Forecasting the outbursts of the photometry light curve of star V363 Lyr
+  container-title: International Work Conference on Time Series Analysis (ITISE 2014)
+  volume: '1'
+  page: 520-531
+  issued:
+    date-parts:
+    - [2014]
+  URL: https://research.cs.aalto.fi/aml/Publications/Publication216.pdf
+- id: cameron2015PractitionersGuideClusterrobust
+  type: article-journal
+  author:
+  - family: Cameron
+    given: A. Colin
+  - family: Miller
+    given: Douglas L.
+  title: A practitioner's guide to cluster-robust inference
+  container-title: Journal of Human Resources
+  volume: '50'
+  issue: '2'
+  page: 317-372
+  issued:
+    date-parts:
+    - [2015]
+  DOI: 10.3368/jhr.50.2.317

@@ -81,16 +81,16 @@
       "sha256": "ae8cfafbff52cbc28ad7c18a80ea15e5776b38768769d35ff9d1ae994adf9dea"
     },
     "manuscript/figures/fig3-robustness.pdf": {
-      "bytes": 31268,
-      "sha256": "ccc1d307df2d6f7f6a79b18e5834366220898aabd818164395c26544a69e0535"
+      "bytes": 31129,
+      "sha256": "5d54a9781bd78f9cf8aab598cf4ac0572bb4ea01764a1698e22d8ac45214a522"
     },
     "manuscript/figures/fig3-robustness.png": {
-      "bytes": 158749,
+      "bytes": 163749,
       "pixel_dimensions": [
         1242,
         1022
       ],
-      "sha256": "f2f9bb6669a932b67dac95b39391a8ed04a4c74c5fc9ead60056879f425583d0"
+      "sha256": "b4ac27dc756c6cdce253a48c1044bce2399c34da9cb292e498399eade72b489f"
     },
     "manuscript/figures/fig4-transfer.pdf": {
       "bytes": 25708,
@@ -147,16 +147,16 @@
       "sha256": "da8bbdd852f4ebfddee87106e8c62a6c8d42a1fe8faa159ca5345347d8efb994"
     },
     "manuscript/figure-data/fig2-gains.json": {
-      "bytes": 3852,
-      "sha256": "fe863b113e03c13a58b0c1131b7303e71dcd06f8665ca8ae40238c09a2a958fa"
+      "bytes": 3846,
+      "sha256": "ecd0ec3f6c26a2950cfdc24f584d2898e17bb96f3ffbf4a51a4f97f6d4148c69"
     },
     "manuscript/figure-data/fig3-coverage.json": {
       "bytes": 1583,
       "sha256": "a6b714d837f2ae4f02fe3b918a7586fc083f7afc179422ef783ca576162ef52a"
     },
     "manuscript/figure-data/fig3-forest.csv": {
-      "bytes": 2713,
-      "sha256": "70192bf7c201682cc8cbba184f4ec37c73574b88bc059f6d8a096c8100a76ec6"
+      "bytes": 2758,
+      "sha256": "179046feb40f139dc93bf2ad0fd2121c483be867a2885ceb50cc1e259f17eca5"
     },
     "manuscript/figure-data/fig4-refits.json": {
       "bytes": 4180,
@@ -190,7 +190,7 @@
     "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22"
   },
   "generator": "manuscript/figures.py",
-  "generator_sha256": "0ce6b2dddcf465510a2a67c60bc0fe9589a6989547530123a437baecfcdfe151",
+  "generator_sha256": "363db3d0803715e748c0a6d4c1113b65fae5acaa1e04cd9743f4b9ca74c97e6a",
   "output_policy": {
     "fig1_public_data": "nightly light-curve aggregates for a fixed 1960-1961 window; fig2 example from one derived bracket set and model CDF grid; no observation rows, observer identifiers or event times",
     "new_event_catalog": false,

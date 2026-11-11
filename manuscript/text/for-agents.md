@@ -1,7 +1,7 @@
 ---
 document: agent-facing paper
 study: SS Cyg working-score result and measurement/transfer reassessment
-status: third draft (D052) with review corrections (D053, D054); Barry reviews before release
+status: step-4 detailed draft (D055) after the third draft and review corrections (D052–D054); Barry reviews before release
 human_paper: manuscript/text/main.md (article with appendices; + supplement.md technical record, brief.md)
 claims_ledger: manuscript/claims.csv
 interpretation: manuscript/estimands.md
@@ -14,8 +14,11 @@ updated: 2026-11-11
 
 This is the entry point for an agent arriving cold. Read `manuscript/estimands.md` before quoting
 any result. The article (methods, results, one limitations section and appendices A–G), the
-technical record (`supplement.md`: superseded analyses and reproduction) and the brief are third
-drafts, not a paper release.
+technical record (`supplement.md`: superseded analyses and reproduction) and the brief are
+detailed drafts, not a paper release. The article uses AAS author-year references
+(`manuscript/csl/the-astrophysical-journal.csl`, locally restricted to print publishers only for
+books); its main text names the report-window comparisons and drift recalibration in words, while
+the evidence files keep the labels R1, R2b, H1–H3 and "guarded".
 The original frozen calculation is preserved. Later work changes what we can infer from it;
 it does not replace it with a more favourable result. An evidence file and its receipt outrank
 this guide: reconcile any disagreement rather than modifying a historical receipt.

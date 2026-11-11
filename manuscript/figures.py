@@ -167,20 +167,20 @@ def forest_rows():
         v = era[key]
         add(claim, label, "a", "fitted-end", "M2 frozen", v["n"], v["estimate"], v["lower"], v["upper"], two_sided, SUMMARY)
     v = summary["secondary"]["robustness"]["type_within"]["gain_M3_M2"]
-    add("C08", "Type/within-type rule", "a", "fitted-end, type + within-type duration", "M2 frozen",
+    add("C08", "Long/short rule", "a", "fitted-end, type + within-type duration", "M2 frozen",
         v["n"], v["estimate"], v["lower"], v["upper"], two_sided, SUMMARY)
-    add("C44", "Point score", "b", "fitted-end, saved-point score", "M2 frozen", r1["n"], r1["estimate"],
+    add("C44", "Point-onset rescoring", "b", "fitted-end, saved-point score", "M2 frozen", r1["n"], r1["estimate"],
         r1["lower90"], r1["upper90"], two_sided, R1_SCORES)
-    for claim, name, label, clock in (("C55", "H1", "H1 fitted-end clock", "fitted-end"),
-                                      ("C55", "H2", "H2 observed decisive-faint clock", "observed decisive-faint")):
+    for claim, name, label, clock in (("C55", "H1", "Report windows, fitted-end clock", "fitted-end"),
+                                      ("C55", "H2", "Report windows, decisive-faint clock", "observed decisive-faint")):
         v = r2b[name]
         add(claim, label, "b", clock, "B2", v["n"], v["estimate"], v["six_year_lower"], v["six_year_upper"],
             "exploratory CR1/t 90%, six-year clusters", R2B)
     for claim, key, label, clock, baseline in (
-            ("C62", "point_original:B0.duration", "Fitted-end clock, B0 guarded", "fitted-end", "B0 drift-recalibrated"),
-            ("C63", "df:B0.duration", "Decisive-faint, B0 guarded", "observed decisive-faint", "B0 drift-recalibrated"),
-            ("C63", "df:B1.duration", "Decisive-faint, B1 guarded", "observed decisive-faint", "B1 drift-recalibrated"),
-            ("C63", "df:B2.duration", "Decisive-faint, B2 guarded", "observed decisive-faint", "B2 drift-recalibrated")):
+            ("C62", "point_original:B0.duration", "Fitted-end clock, B0 recalibrated", "fitted-end", "B0 drift-recalibrated"),
+            ("C63", "df:B0.duration", "Decisive-faint, B0 recalibrated", "observed decisive-faint", "B0 drift-recalibrated"),
+            ("C63", "df:B1.duration", "Decisive-faint, B1 recalibrated", "observed decisive-faint", "B1 drift-recalibrated"),
+            ("C63", "df:B2.duration", "Decisive-faint, B2 recalibrated", "observed decisive-faint", "B2 drift-recalibrated")):
         v = guarded[key]["guarded_gain"]
         add(claim, label, "c", clock, baseline, scored[key]["scored"], v["mean"], v["lower90"], v["upper90"],
             "exploratory CR1/t 90%, six-year clusters", R2D)
@@ -995,7 +995,7 @@ def generate():
     for name,kind,value in (("Primary 1960–2017","sole primary",primary),
                             ("1960–1992 segment","secondary",summary["secondary"]["era_split"]["1960_1992"]),
                             ("1993–2017 segment","secondary",summary["secondary"]["era_split"]["1993_2017"]),
-                            ("Type/within-type rule","secondary",summary["secondary"]["robustness"]["type_within"]["gain_M3_M2"])):
+                            ("Long/short rule","secondary",summary["secondary"]["robustness"]["type_within"]["gain_M3_M2"])):
         comparisons.append(dict(name=name,kind=kind,**{k:value[k] for k in ("n","estimate","lower","upper")}))
     f2=dict(scope="one pooled primary comparison; all block means and other contrasts descriptive/secondary",blocks=blocks,comparisons=comparisons,
             cluster_days=2191.5,year_labels="nominal; exact boundaries are in JD",derived_units=derived_units(primary,summary),claim_ids=["C01","C06","C07","C08","C25"])

@@ -1434,6 +1434,40 @@ scientific review. Do not relax this run's gates after the result.
 - No data opened, no fit or score. Frozen outputs, parameters and estimand definitions unchanged.
   SS Cyg 2018 onward and candidate 1990 onward stay closed.
 
+### D055 — Step 4 of the reconstruction: final detailing
+
+- Barry, direct chat with Claude, 11 November 2026, exactly: "Step 4: Final Detailing. With the
+  full draft is completed, go back over it to do things like adding references, specific
+  formatting, creating display-item legends etc. Give it another careful read and a hard edit, to
+  cut verbiage. Be concise!" He added two reminders: "Strategic repetition of your main message is
+  key", and, after step 4, "another pass over the text, focusing specifically on context, clarity,
+  your target audience, and a general audience: no re-structures at this stage, just textual edits
+  with a steady, measured hand."
+- References: the two inline-only citations now have verified manual entries (Hempelmann & Kurths
+  1990; Grigorievskiy et al. 2014), and five works are added for specific uses after Crossref checks
+  (Cameron & Miller 2015 for the cluster-robust error; Heitjan & Rubin 1991 for coarsening at random;
+  Nosek et al. 2018 for preregistration; NumPy, SciPy and Matplotlib in a new Software section).
+  Two works already in the source register are now cited: Ak et al. (2002) on cycle definitions and
+  Vogt & Vega-Manubens (2023) on quiescent brightness. Provenance is in `references/manual.yaml`.
+- Formatting: AAS author-year style (`the-astrophysical-journal.csl`, the nearest repository style
+  to OJAp practice), locally restricted to print publishers only for books and reports. `refs.py`
+  now adds periods to bare initials (Pandoc dropped "N" for N. Vogt); the same fix is in the
+  living-paper skill scaffold (claude-config `c62b12d`).
+- Hard edit and strategic repetition: the main message is restated in different words in the
+  abstract, at the end of the Introduction, at the opening of 4.1, in the Conclusions and at the
+  head of the Fig. 2 caption; each caption now opens with its message. The abstract now says that
+  the 1993–2017 half and the long/short rule were inconclusive; it had wrongly said "both secondary
+  tests", although the 1960–1992 half's interval excludes zero.
+- Clarity pass: a Claude Sonnet cold read from two viewpoints (an astronomer outside cataclysmic
+  variables; a general scientific reader) informed text-only edits: internal labels (R1, R2b, H1–H3,
+  "guarded", "point clock") removed from the main text and Fig. 3, and terms defined at first use
+  (clock, working score, fallback, visit, age, drift, decisive). Declined: tying the 2021 event to a
+  changing accretion state (D053), framing the rate replacement as a proxy test, and a scheduling
+  rationale (estimands: practical utility untested).
+- No data opened, no fit or score; claims, estimands and frozen outputs unchanged. Release and
+  submission remain Barry's decisions; the OJAp journal class, AI declaration, AAVSO credit and
+  licence choice remain pre-submission items.
+
 ## New decision template
 
 ### D0xx — Short concrete title

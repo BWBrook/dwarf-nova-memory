@@ -77,9 +77,8 @@ source freezes, bounded access receipts and negative/inconclusive results remain
 
 ## 2 Reproduction and navigation
 
-From the repository root, without new archive requests:
-
-These public-only checks use the committed aggregates and figure assets:
+From the repository root, without new archive requests, these checks use only the committed
+aggregates and figure assets:
 
 ```sh
 python3 manuscript/figures.py --check
@@ -108,7 +107,6 @@ The retained run includes raw archive replies, observer identities and per-issua
 archive SHA-256 and manifest are in `data/provenance/a10i_evaluation_1960_2017/archive.json`.
 The committed aggregates support the ledger values, but do not replace these inputs for a full
 recomputation. The published protocol is at <https://doi.org/10.5281/zenodo.24053338>.
-
 
 The observation/transfer reviews use the same retained early records and saved outputs.
 These commands write new audit outputs and do not download data:
@@ -139,7 +137,7 @@ Navigation:
 - `manuscript/claims.csv`: every claim, with its status, evidence, commit, reproduction command and
   limits.
 - `manuscript/estimands.md`: allowed and forbidden readings.
-- `coordination/decisions.md`: D013–D051.
+- `coordination/decisions.md`: D013–D055.
 - `docs/audits/`: every review, including A10i (the result), A10j (Claude's review), A10k (Codex's
   audit) and A10l (sources and drafts).
 - `docs/outcome-access-ledger.md`: who saw which outcomes, and when.
