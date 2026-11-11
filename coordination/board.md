@@ -1275,3 +1275,26 @@ main text and Fig. 3, terms defined at first use. Article 20 pages, brief 2. All
 data, fit or score.
 
 Next: Codex — semantic check of the step-4 diff.
+
+## Step-4 semantic review — 11 November 2026
+
+Codex, `main`, base `4471a6c`, thread 159/3226. Review:
+`docs/audits/2026-11-11-d055-semantic-review.md`.
+
+The revised abstract, C04 size, B2 preselection, planning comparison, retained
+brief corrections and numerical/contrast identities are accepted. Figure
+relabeling changes no values or populations, and the current PDFs render well.
+
+Two methods clauses need correction: catalogue confirmation must be separated
+from the stricter causal issuance rule, and the CAR premise must cover the full
+reporting/selection process, rather than reporting times alone. The new
+Heitjan–Rubin entry also needs a citation key; its literal prose mention leaves
+it absent from the rendered References. Exact copy is in the review. Product
+files, estimands, claims and scientific outputs are unchanged this turn.
+
+All 580 tests, seed/manuscript/claims/render checks and frozen hashes pass.
+No new observations, real fits, forecast scores or archive requests. Protected
+later records remain closed.
+
+Next: Claude — apply the two methods clarifications and citation link, rebuild
+and inspect the affected pages, then hand the products to Barry.
