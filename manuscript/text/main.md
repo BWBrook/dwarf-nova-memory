@@ -102,20 +102,22 @@ than visual magnitude 10, between SS Cyg's quiescent and outburst brightness. X4
 observer's reports into visits (reports within 0.15 day) and estimates when the light curve crossed
 magnitude 10 on the rise (the onset) and on the fade (the end). Each crossing time is estimated as a
 point and an interval from nearby reports, allowing 0.05 mag of systematic error shared across
-observers. An episode is confirmed by reports decisively brighter than the threshold (beyond a set
-margin) from two observers, or from one observer on two or more nights, with no contradicting faint
-report. Duration runs from fitted onset to fitted end, and a quiet interval from one outburst's end
-to the next onset. A quiet interval counts as covered when no gap between visits within it exceeds
-seven days. X4 was adopted during development after three earlier extractors failed a synthetic
-recovery screen, a test of recovering known outbursts from simulated light curves; X4 passed it at
-magnitude 10 (Appendix A).
+observers. For catalogue confirmation, two observers need only report magnitude 10 or brighter; a
+single observer needs bright reports on at least two nights, one at magnitude 9.5 or brighter,
+without a contradictory report at magnitude 10.5 or fainter from another observer on those nights.
+Duration runs from fitted onset to fitted end, and a quiet interval from one outburst's end to the
+next onset. A quiet interval counts as covered when no gap between visits within it exceeds seven
+days. X4 was adopted during development after three earlier extractors failed a synthetic recovery
+screen, a test of recovering known outbursts from simulated light curves; X4 passed it at magnitude
+10 (Appendix A).
 
 ### 2.3 Forecasts
 
-A forecast is issued at the observation time when reports first confirm that the current outburst
-has faded; every such confirmation issues one, including repeats. Each forecast uses only reports
-dated within the preceding 400 days: X4 is rerun on that window alone, and tests that insert later
-rows confirm that no predictor changes.
+A separate causal rule issues forecasts: after magnitude-9.5-or-brighter reports from two observers,
+or one observer on two nights, subsequent reports at magnitude 10.5 or fainter from two observers
+confirm the fade. Every such confirmation issues a forecast, including repeats. Each forecast uses
+only reports dated within the preceding 400 days: X4 is rerun on that window alone, and tests that
+insert later rows confirm that no predictor changes.
 
 Each forecast is a lognormal distribution for the quiet interval $Q$ that follows the fitted end $e$
 of the completed outburst. With log-location $\mu$ and log-scale $\sigma$, the three models
@@ -375,12 +377,14 @@ Three matter most.
 First, the working score evaluates extracted onset windows, which are fitted statistical summaries.
 Establishing skill at forecasting physical onsets requires a validated model of how the selected
 reports and observing times arise. It must show that reports are assigned to the right outbursts and
-forecasts to a valid risk set, that each window contains the true crossing, and that when observers
-report depends on the outcome only through what has already been observed, so that observing factors
-out of the likelihood (coarsening at random; Heitjan & Rubin 1991; Appendix C). X4 passed its
-recovery screen on light-curve shapes known during development; recovery on a family of shapes held
-out from development remains untested, because that benchmark failed qualification before X4 was
-scored on it.
+forecasts to a valid risk set, that each window contains the true crossing, and that, given the
+retained history and forecast state, the complete reporting and selection process gives the same
+probability of obtaining the reported window for every onset time it contains, with observation
+parameters distinct from forecast parameters. Under these conditions, known as coarsening at random
+[@heitjan1991IgnorabilityCoarseData], the observation term factors out of the likelihood (Appendix
+C). X4 passed its recovery screen on light-curve shapes known during development; recovery on a
+family of shapes held out from development remains untested, because that benchmark failed
+qualification before X4 was scored on it.
 
 Second, duration and the following quiet interval share one estimated end time, so errors in that
 time can couple them, and observers may report more often when the star is active. The

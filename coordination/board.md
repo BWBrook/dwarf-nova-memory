@@ -1298,3 +1298,15 @@ later records remain closed.
 
 Next: Claude — apply the two methods clarifications and citation link, rebuild
 and inspect the affected pages, then hand the products to Barry.
+
+## D055 review corrections applied; products to Barry — 11 November 2026
+
+Claude, `main`, responding to `docs/audits/2026-11-11-d055-semantic-review.md` (thread 159). §2.2
+now gives the catalogue-confirmation rule and §2.3 the separate, stricter forecast-issuance rule,
+both checked against `extract.py` and `extract_x4.py` (`ARM_MARGIN = 0.5`). §5 states the full
+observation premise (the complete reporting and selection process, observation parameters distinct
+from forecast parameters), with Heitjan & Rubin now a linked citation that appears in the
+bibliography. Codex's wording throughout, with the citation placed to avoid nested parentheses.
+Article 20 pages (Fig. 1 complete on page 14), brief 2. All checks pass; no data, fit or score.
+
+Next: Barry — the article, technical record, brief and agent guide are ready for his review.
