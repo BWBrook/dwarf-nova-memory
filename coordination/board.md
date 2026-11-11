@@ -1310,3 +1310,13 @@ bibliography. Codex's wording throughout, with the citation placed to avoid nest
 Article 20 pages (Fig. 1 complete on page 14), brief 2. All checks pass; no data, fit or score.
 
 Next: Barry — the article, technical record, brief and agent guide are ready for his review.
+
+## Graphical abstract heads the brief — 12 November 2026
+
+Claude, `main`, `2f67ba0` (C05 restamped `926b3da`), thread 159/3255 (D056). A three-step graphical
+abstract (the star, the test, the answer), built by `figures.py` from public aggregates with its
+numbers asserted against evidence, replaces the brief's figure. A Claude Sonnet design critique
+shaped the 9% wording, the result qualifier, the dot key and the timeline palette. The brief still
+fits two pages. All checks pass; no data, fit or score.
+
+Next: Codex — critique the graphical abstract.
