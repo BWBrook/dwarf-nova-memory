@@ -235,7 +235,8 @@ does not replace the inconclusive predeclared type rule. The paper's
 [interpretation specification](manuscript/estimands.md) and
 [claims ledger](manuscript/claims.csv) govern the figure captions and drafting.
 
-The article has four main figures and three appendix figures, plus a brief figure.
+The article has four main figures and three appendix figures; a graphical abstract heads the
+brief and can accompany a journal submission.
 `make -C manuscript` checks public assets and builds PDF/DOCX drafts without raw
 observations or archive access. Regenerate figures with `make -C manuscript figures`, which reads the retained
 raw inputs for Figs. 1 and 2, and numeric tables with `python3 manuscript/tables.py`.

@@ -1,1 +1,1 @@
-![](../figures/brief-forecast-gain.png){#fig-brief width=100%}
+![](../figures/graphical-abstract.png){#fig-brief width=100%}

@@ -1,12 +1,17 @@
 # Does the length of a stellar outburst help forecast the next?
 
-Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and GPT-6 Codex (OpenAI). Draft of 2026-11-11; a summary of <https://github.com/BWBrook/dwarf-nova-memory>.
+Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and GPT-6 Codex (OpenAI). Draft of 2026-11-12; a summary of <https://github.com/BWBrook/dwarf-nova-memory>.
+
+<div id="figures"></div>
+
+*The study at a glance. The light curve shows AAVSO observers' nightly data from 1960; the binary is
+a sketch.*
 
 ## A star that flares every few weeks
 
 SS Cygni is a pair of stars in which a white dwarf pulls gas from a companion into a surrounding
 disc. Every seven weeks or so the disc heats up, and the system brightens about twentyfold for
-one or two weeks before fading (Figure A). Amateur astronomers have recorded its brightness by eye
+one or two weeks before fading. Amateur astronomers have recorded its brightness by eye
 for well over a century, and the American Association of Variable Star Observers (AAVSO) holds
 their reports. Long and short outbursts tend to alternate, and earlier work found that longer
 outbursts tend to be followed by longer quiet spells [@cannizzo1992LongtermBehaviorSS].
@@ -34,19 +39,13 @@ Over [441]{.C01 .V004} forecasts, the forecaster that knew outburst length gaine
 fixed, doubling outburst length increased the model's median full quiet spell, measured from the
 estimated end to the next start, by about [9]{.C04}%. The gain is about a seventh of what knowing
 the recent quiet spells adds,[]{.C02} and it was positive in [eight]{.C25} of the ten six-year
-blocks (Figure B). The two other checks planned in advance, on the 1993–2017 years alone and on a
+blocks. The two other checks planned in advance, on the 1993–2017 years alone and on a
 long/short forecasting rule, were inconclusive.[]{.C07}[]{.C08}
 
 After an external review, we re-timed the outbursts in other ways. Scoring against single
 estimated start dates gave a similar gain, [0.0154]{.C44} nats. Start windows rebuilt directly
 from observers' reports gave smaller gains, [0.0075]{.C55 .V009} and [0.0043]{.C55 .V013} nats,
 with intervals that include zero.
-
-<div id="figures"></div>
-
-*Figure. (A) SS Cygni's nightly brightness through 1960, the first year of the test; the dotted
-line is the threshold that defines an outburst. (B) The gain from knowing outburst length in each
-six-year block of 1960–2017; the blue line and band show the overall gain and its 90% interval.*
 
 ## Could other stars be tested?
 

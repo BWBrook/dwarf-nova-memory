@@ -32,18 +32,6 @@
     }
   },
   "assets": {
-    "manuscript/figures/brief-forecast-gain.pdf": {
-      "bytes": 21104,
-      "sha256": "5e0fed52cddfc07aa13f7fb27ea246800463864eb7a0e18eea8abc67fcda9f1c"
-    },
-    "manuscript/figures/brief-forecast-gain.png": {
-      "bytes": 108355,
-      "pixel_dimensions": [
-        1242,
-        512
-      ],
-      "sha256": "d2d6047fa4ca804872815938972062a62b0b04e46052c735efae48103eb2d0b3"
-    },
     "manuscript/figures/fig1-context.pdf": {
       "bytes": 88267,
       "sha256": "18edf7e42f50d78935c5000e9e4cac396b6859362bf85376bccabedd48195907"
@@ -127,6 +115,18 @@
         1039
       ],
       "sha256": "879428fea0aac8201ca7fb866590c47e3184390c7abf7ec029d49dfa50153c50"
+    },
+    "manuscript/figures/graphical-abstract.pdf": {
+      "bytes": 55523,
+      "sha256": "21c09906efb14181176424d3b0d40836dd45752c9a41c6dd9000dc8295f37f24"
+    },
+    "manuscript/figures/graphical-abstract.png": {
+      "bytes": 350668,
+      "pixel_dimensions": [
+        2221,
+        1453
+      ],
+      "sha256": "b4583f75da2b1fce23da9dd5f3be343efec9a1b6fbfb0b6466196545f530ee7a"
     }
   },
   "figure_data": {
@@ -190,7 +190,7 @@
     "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22"
   },
   "generator": "manuscript/figures.py",
-  "generator_sha256": "363db3d0803715e748c0a6d4c1113b65fae5acaa1e04cd9743f4b9ca74c97e6a",
+  "generator_sha256": "ef19ae2ec369c1114ad317573ba401ca4f373dc20fa9125b53b3f3f90e2d69c0",
   "output_policy": {
     "fig1_public_data": "nightly light-curve aggregates for a fixed 1960-1961 window; fig2 example from one derived bracket set and model CDF grid; no observation rows, observer identifiers or event times",
     "new_event_catalog": false,
@@ -257,7 +257,7 @@
     "scipy": "1.18.1"
   },
   "schema_version": 2,
-  "scope": "eight static scientific figures: four main-text, three appendix and one brief figure",
+  "scope": "seven static scientific figures (four main-text, three appendix) and the graphical abstract used in the brief",
   "source_execution_commit_sha1": "d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
   "source_freeze_sha1": "5e39aeb772c427ef29671c1a9c80b22c05519b58"
 }

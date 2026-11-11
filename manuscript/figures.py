@@ -41,7 +41,7 @@ G3A_CHECK = ROOT / "data/provenance/g3a_claude_review/checks.json"
 C70 = ROOT / "data/provenance/g3a_review_independent/c70.json"
 R1_EXAMPLE = ROOT / "data/provenance/r1_20261109/example-and-simulation-table.json"
 BASENAMES = ("fig1-context", "fig2-forecast", "fig3-robustness", "fig4-transfer", "fig3-calibration",
-             "fig4-type-exploration", "brief-forecast-gain", "fig6-g3a-feasibility")
+             "fig4-type-exploration", "graphical-abstract", "fig6-g3a-feasibility")
 ORIGINAL_DATA_NAMES = ("fig1-illustration.json", "fig2-gains.json", "fig3-coverage.json", "fig4-refits.json")
 AGGREGATE_CSV_NAMES = ("r2b-contrasts.csv", "g3a-stars.csv", "g3a-totals.csv", "six-star-precision.csv")
 CONTEXT_DATA_NAMES = ("fig1-lightcurve-nights.csv", "fig1-timelines.json", "fig3-forest.csv", "fig4-transfer.csv")
@@ -549,8 +549,8 @@ def illustration(np, log_ndtr, private_inputs):
     return public
 
 
-def save(figure, stem):
-    figure.savefig(FIGURES/(stem+".png"),dpi=170,bbox_inches="tight",pad_inches=.10,
+def save(figure, stem, dpi=170):
+    figure.savefig(FIGURES/(stem+".png"),dpi=dpi,bbox_inches="tight",pad_inches=.10,
                    metadata={"Software":"dwarf-nova-memory figures"},pil_kwargs={"compress_level":9})
     figure.savefig(FIGURES/(stem+".pdf"),bbox_inches="tight",pad_inches=.10,
                    metadata={"Creator":"dwarf-nova-memory figures","Producer":"Matplotlib",
@@ -607,35 +607,206 @@ def figure_four(plt, data):
     save(fig,"fig4-type-exploration");plt.close(fig)
 
 
-def brief_figure(plt, data, nights):
-    fig, (curve, blocks) = plt.subplots(1, 2, figsize=(7.2, 2.9), gridspec_kw={"width_ratios": [1.2, 1]}, layout="constrained")
-    year = lambda jd: 1960 + (jd - START)/365.25
-    det = [r for r in nights if r["median_magnitude"] != "" and float(r["jd_floor"]) < START + 366]
-    run = []
-    for r in det + [None]:
-        if r is None or (run and float(r["jd_floor"])-float(run[-1]["jd_floor"]) > 3):
-            curve.plot([year(float(x["jd_floor"])+.5) for x in run], [float(x["median_magnitude"]) for x in run], color=BLUE, lw=.8)
-            run = []
-        if r is not None:
-            run.append(r)
-    curve.scatter([year(float(r["jd_floor"])+.5) for r in det], [float(r["median_magnitude"]) for r in det], s=6, color=BLUE, linewidths=0)
-    curve.axhline(10, color=BLACK, ls=":", lw=1)
-    curve.set_ylim(12.6, 7.9); curve.set_xlim(1960, 1961)
-    curve.set_xticks([1960 + m/12 for m in (0, 3, 6, 9)], ("Jan", "Apr", "Jul", "Oct"))
-    curve.set_ylabel("Brightness\n(magnitude; brighter up)", fontsize=9)
-    curve.set_title("A  SS Cygni through 1960", loc="left", fontsize=10.5)
-    for k, row in enumerate(data["blocks"]):
-        blocks.plot(row["mean_gain"], k, "o", color=GREY, ms=5.5, zorder=3)
-    primary = data["comparisons"][0]
-    blocks.axvspan(primary["lower"], primary["upper"], color=BLUE, alpha=.16, lw=0)
-    blocks.axvline(primary["estimate"], color=BLUE, lw=1.6)
-    blocks.axvline(0, color=BLACK, lw=.9)
-    blocks.set_yticks(range(len(data["blocks"])), [row["nominal_year_label"] for row in data["blocks"]], fontsize=8)
-    blocks.invert_yaxis()
-    blocks.text(primary["upper"]+.002, 8.5, "all years:\ngain and\n90% interval", color=BLUE, fontsize=8, va="center", ha="left")
-    blocks.set_xlabel("Gain from outburst length\n(nats per forecast)", fontsize=9)
-    blocks.set_title("B  Gain in each six-year block", loc="left", fontsize=10.5)
-    save(fig, "brief-forecast-gain"); plt.close(fig)
+def illustrated_episodes(nights, lo=150, hi=250):
+    """Outbursts in a fixed 1960 window, from nightly medians brighter than the threshold."""
+    days = sorted(float(n["jd_floor"]) + 0.5 - START for n in nights
+                  if n["median_magnitude"] and float(n["median_magnitude"]) <= 10 and lo <= float(n["jd_floor"]) + 0.5 - START <= hi)
+    runs, run = [], [days[0]]
+    for day in days[1:]:
+        if day - run[-1] > 3:
+            runs.append(run); run = []
+        run.append(day)
+    runs.append(run)
+    complete = [(a[0], a[-1], b[0]) for a, b in zip(runs, runs[1:]) if a[0] > lo]
+    if len(complete) < 2 or not (complete[1][1] - complete[1][0] > complete[0][1] - complete[0][0]):
+        raise ValueError("the illustration window no longer shows a short then a long outburst")
+    return complete[:2]
+
+
+def graphical_abstract(plt, nights, gains):
+    import numpy as np
+    import matplotlib.colors as mcolors
+    from matplotlib.patches import FancyBboxPatch, Ellipse, Circle, Rectangle, Arc, Polygon
+    ink, muted, card_fill = "#22272B", "#4F5A61", "#F2F5F8"
+    orange_text, slate, built = "#B34700", "#3B4750", "#D9E0E5"
+    primary, blocks = gains["comparisons"][0], gains["blocks"]
+    m3 = load(PARAMETERS)["primary"]["models"]["M3"]
+    percent = round(100 * math.expm1(m3["coefficients"]["beta"] * math.log(2) / m3["scales"]["mark"]))
+    better_blocks = sum(block["mean_gain"] > 0 for block in blocks)
+    if primary["lower"] <= 0 or (percent, better_blocks, len(blocks), primary["n"]) != (9, 8, 10, 441):
+        raise ValueError("graphical-abstract statements differ from their evidence")
+    W, H = 183.0, 118.0
+    fig = plt.figure(figsize=(W / 25.4, H / 25.4))
+    bg = fig.add_axes([0, 0, 1, 1]); bg.set_xlim(0, W); bg.set_ylim(0, H); bg.axis("off")
+
+    def mm_axes(x0, y0, x1, y1):
+        return fig.add_axes([x0 / W, y0 / H, (x1 - x0) / W, (y1 - y0) / H])
+
+    def card(x0, y0, x1, y1):
+        bg.add_patch(FancyBboxPatch((x0, y0), x1 - x0, y1 - y0, boxstyle="round,pad=0,rounding_size=2.6",
+                                    facecolor=card_fill, edgecolor="none", zorder=0))
+
+    def heading(x, y, text):
+        bg.text(x, y, text, fontsize=7.8, fontweight="bold", color=muted, va="center", ha="left")
+
+    def gradient(patch, cmap, extent, center=(0.5, 0.5)):
+        bg.add_patch(patch)
+        yy, xx = np.mgrid[0:1:300j, 0:1:300j]
+        image = bg.imshow(np.hypot(xx - center[0], yy - center[1]), extent=extent, origin="lower", cmap=cmap,
+                          interpolation="bicubic", zorder=patch.get_zorder(), aspect="auto")
+        image.set_clip_path(patch)
+        patch.set_facecolor("none")
+
+    # headline
+    bg.text(4, H - 6.0, "How long an outburst lasts helps forecast when the next one begins",
+            fontsize=12.6, fontweight="bold", color=ink, va="center")
+    bg.text(4, H - 12.0, "SS Cygni: a century of amateur observations, and forecasts fixed before the test data were opened",
+            fontsize=8.2, color=muted, va="center")
+
+    # (1) the star
+    L0, L1, B0, B1 = 4, 63, 13, 101
+    card(L0, B0, L1, B1); heading(L0 + 4, B1 - 4.4, "①  THE STAR")
+    cx, cy, r = 16.5, 85.5, 6.4
+    t = np.linspace(0, 2 * np.pi, 400)
+    rx = r * (1 + 0.32 * np.clip(np.cos(t), 0, None) ** 3)
+    star = Polygon(np.c_[cx + rx * np.cos(t), cy + 0.92 * r * np.sin(t)], closed=True, zorder=3)
+    gradient(star, mcolors.LinearSegmentedColormap.from_list("star", ["#FFE0A3", "#F7A541", "#E0631B", "#B83E12"]),
+             (cx - r, cx + 1.35 * r, cy - r, cy + r), center=(0.38, 0.62))
+    dx, dy, dw, dh = 43.5, 85.0, 26.0, 8.4
+    gradient(Ellipse((dx, dy), dw, dh, zorder=3),
+             mcolors.LinearSegmentedColormap.from_list("disc", ["#FFFFFF", "#EAF4FA", "#C9E3F2", "#A9D2EA", "#8BBFDF"]),
+             (dx - dw / 2, dx + dw / 2, dy - dh / 2, dy + dh / 2))
+    bg.add_patch(Ellipse((dx, dy), dw, dh, facecolor="none", edgecolor="#7FAFCB", lw=0.6, zorder=4))
+    for k in (0.72, 0.46):
+        bg.add_patch(Ellipse((dx, dy), dw * k, dh * k, facecolor="none", edgecolor="white", lw=0.5, alpha=0.9, zorder=4))
+    bg.add_patch(Circle((dx, dy), 1.4, facecolor="white", edgecolor="#9AA5AD", lw=0.6, zorder=5))
+    p0, p1, p2 = np.array([cx + 1.30 * r, cy + 0.2]), np.array([28.0, 89.5]), np.array([dx - dw / 2 + 2.0, dy + 2.5])
+    s = np.linspace(0, 1, 60)[:, None]
+    stream = (1 - s) ** 2 * p0 + 2 * (1 - s) * s * p1 + s ** 2 * p2
+    for i in range(len(stream) - 1):
+        bg.plot(stream[i:i + 2, 0], stream[i:i + 2, 1], color=AMBER, lw=2.2 - 1.5 * i / len(stream),
+                solid_capstyle="round", zorder=4)
+    bg.add_patch(Circle(tuple(p2), 0.85, facecolor="#FFC857", edgecolor="none", zorder=5))
+    small = dict(fontsize=6.6, color=muted, ha="center", va="top")
+    bg.text(cx + 1, cy - r - 1.0, "companion star", **small)
+    bg.text(dx, dy - dh / 2 - 1.0, "disc around a white dwarf", **small)
+    bg.text((L0 + L1) / 2, 70.2, "About every seven weeks the disc\nflares, then fades: an outburst",
+            fontsize=7.3, color=ink, ha="center", va="center", linespacing=1.25)
+
+    lc = mm_axes(L0 + 7.0, 29, L1 - 2.5, 60.5)
+    lo, hi = 150, 250
+    points = [(float(n["jd_floor"]) + 0.5 - START, float(n["median_magnitude"])) for n in nights if n["median_magnitude"]]
+    x, m = np.array([p for p in points if lo <= p[0] <= hi]).T
+    breaks = np.flatnonzero(np.diff(x) > 3) + 1
+    for run_x, run_m in zip(np.split(x, breaks), np.split(m, breaks)):
+        lc.plot(run_x, run_m, color="#4D5A63", lw=0.8, zorder=3)
+    lc.scatter(x, m, s=4, color="#4D5A63", lw=0, zorder=4)
+    for (a, b, nxt), word in zip(illustrated_episodes(nights, lo, hi), ("short", "long")):
+        lc.axvspan(a, b, color=ORANGE, alpha=0.16, lw=0, zorder=0)
+        lc.plot([a, b], [7.75, 7.75], color=ORANGE, lw=1.6, solid_capstyle="butt")
+        lc.text((a + b) / 2, 7.45, word, color=orange_text, fontsize=6.8, ha="center", va="bottom", fontweight="bold")
+        lc.annotate("", xy=(nxt, 12.85), xytext=(b, 12.85), arrowprops=dict(arrowstyle="-|>", color=BLUE, lw=1.1,
+                    mutation_scale=6, shrinkA=0, shrinkB=0))
+        lc.text((b + nxt) / 2, 13.05, f"{round((nxt - b) / 7)}-week wait", color=BLUE, fontsize=6.6, ha="center",
+                va="top", fontweight="bold")
+    lc.set_xlim(lo, hi); lc.set_ylim(13.9, 6.9); lc.axis("off")
+    bg.text(L0 + 4.0, 43.5, "brighter", rotation=90, fontsize=6.6, color=muted, ha="center", va="center")
+    bg.annotate("", xy=(L0 + 4.0, 53.0), xytext=(L0 + 4.0, 49.4), arrowprops=dict(arrowstyle="-|>", color=muted, lw=0.7,
+                mutation_scale=5))
+    bg.text((L0 + L1) / 2 + 2, 25.6, "Real nightly brightness, 100 days of 1960", fontsize=6.6, color=muted,
+            ha="center", va="center")
+    bg.text((L0 + L1) / 2, 17.6, "Does an outburst's length help\nforecast when the next one starts?", fontsize=8.0,
+            color=ink, fontweight="bold", ha="center", va="center", linespacing=1.25)
+    bg.add_patch(Polygon([[63.7, 60], [65.6, 57], [63.7, 54]], closed=True, facecolor="#C9D2D9", edgecolor="none"))
+
+    # (2) the test and (3) the answer share one time axis
+    R0, R1 = 66.5, 179
+    card(R0, B0, R1, B1)
+    X0, X1 = 1908, 2028
+    gx0, gx1 = R0 + 4.5, R1 - 14.5
+
+    def xmm(year):
+        return gx0 + (year - X0) / (X1 - X0) * (gx1 - gx0)
+
+    heading(xmm(1910), B1 - 4.4, "②  THE TEST")
+    heading(xmm(1960) - 0.6, B1 - 4.4, "③  THE ANSWER")
+    ty, th = 25.5, 7.0
+    bg.add_patch(FancyBboxPatch((xmm(1910), ty), xmm(1960) - xmm(1910), th, boxstyle="round,pad=0,rounding_size=1.2",
+                                facecolor=built, edgecolor="none", zorder=2))
+    bg.add_patch(Rectangle((xmm(1960), ty), xmm(2018) - xmm(1960), th, facecolor=slate, edgecolor="none", zorder=2))
+    bg.add_patch(Rectangle((xmm(2018), ty), xmm(2027) - xmm(2018), th, facecolor="white", edgecolor="#9AA5AD", lw=0.6,
+                           hatch="////", zorder=2))
+    bg.text((xmm(1910) + xmm(1960)) / 2, ty + th / 2, "forecasters built", fontsize=7.0, color=ink, ha="center",
+            va="center", zorder=3)
+    bg.text((xmm(1960) + xmm(2018)) / 2, ty + th / 2, f"{primary['n']} forecasts scored", fontsize=7.0, color="white", ha="center",
+            va="center", fontweight="bold", zorder=3)
+    for year in (1910, 1960, 2018):
+        bg.text(xmm(year), ty - 1.6, str(year), fontsize=6.6, color=muted, ha="center", va="top")
+    bg.text(xmm(2027) + 1.2, ty + th / 2, "unopened", fontsize=6.6, color=muted, ha="left", va="center")
+    lx, ly = xmm(1960), ty + th + 5.4
+    bg.add_patch(FancyBboxPatch((lx - 2.1, ly - 1.9), 4.2, 3.4, boxstyle="round,pad=0,rounding_size=0.6", facecolor=ink,
+                                edgecolor="none", zorder=6))
+    bg.add_patch(Arc((lx, ly + 1.5), 2.9, 3.4, theta1=0, theta2=180, color=ink, lw=1.4, zorder=6))
+    bg.add_patch(Circle((lx, ly - 0.3), 0.42, facecolor="white", edgecolor="none", zorder=7))
+    bg.plot([lx, lx], [ty + th, ly - 1.9], color=ink, lw=0.7, zorder=5)
+    bg.text(lx - 3.0, ly + 0.1, "fixed and\npublished", fontsize=6.8, color=ink, ha="right", va="center", linespacing=1.15,
+            fontweight="bold")
+
+    def chip(y, lines, edge, fill, color):
+        w, h = xmm(1956) - xmm(1910), 3.6 + 3.0 * len(lines)
+        bg.add_patch(FancyBboxPatch((xmm(1910), y - h / 2), w, h, boxstyle="round,pad=0,rounding_size=2.4", facecolor=fill,
+                                    edgecolor=edge, lw=0.9, zorder=4))
+        bg.text(xmm(1910) + w / 2, y, "\n".join(lines), fontsize=6.8, color=color, ha="center", va="center", zorder=5,
+                linespacing=1.15)
+        return y - h / 2
+
+    bg.text(xmm(1910), 89.2, "Two forecasters", fontsize=7.6, color=ink, fontweight="bold", ha="left", va="center")
+    bg.text(xmm(1910), 85.0, "each gives odds on when the\nnext outburst starts", fontsize=6.6, color=muted, ha="left",
+            va="center", linespacing=1.2)
+    chip(77.0, ["recent quiet spells"], "#7F8C95", "white", ink)
+    bottom = chip(69.0, ["recent quiet spells", "+ outburst length"], ORANGE, "#FFF1E8", orange_text)
+    bg.plot([xmm(1914)] * 2, [bottom, bottom - 4.2], color=ORANGE, lw=0.8)
+    bg.text(xmm(1916), bottom - 4.6, f"expects a {percent}% longer wait\nfor each doubling of length", fontsize=6.6,
+            color=orange_text, ha="left", va="center", linespacing=1.2)
+
+    y_lo, y_hi, gy0, gy1 = -0.018, 0.048, 45.5, 80.5
+
+    def ymm(v):
+        return gy0 + (v - y_lo) / (y_hi - y_lo) * (gy1 - gy0)
+
+    gain = mm_axes(xmm(1960), gy0, xmm(2018), gy1)
+    gain.set_xlim(1960, 2018); gain.set_ylim(y_lo, y_hi); gain.axis("off")
+    gain.fill_between([1960, 2018], primary["lower"], primary["upper"], color=BLUE, alpha=0.14, lw=0, zorder=1)
+    gain.plot([1960, 2018], [primary["estimate"]] * 2, color=BLUE, lw=1.6, zorder=2)
+    gain.plot([1960, 2018], [0, 0], color="#8A959D", lw=0.8, zorder=1)
+    for block in blocks:
+        year = 1960 + ((block["start_jd"] + block["end_jd"]) / 2 - START) / 365.25
+        better = block["mean_gain"] > 0
+        gain.plot(year, block["mean_gain"], "o", ms=4.8, color=ORANGE if better else "white", mec=ORANGE, mew=1.1,
+                  zorder=4)
+    for year in (1960, 2018):
+        bg.plot([xmm(year)] * 2, [ty + th + 0.8, gy0], color="#C3CCD3", lw=0.5, ls=(0, (1.5, 1.5)), zorder=1)
+    bg.text(xmm(2018) + 1.2, ymm(primary["estimate"]) + 1.2, "overall", fontsize=6.8, color=BLUE, ha="left",
+            va="center", fontweight="bold")
+    bg.text(xmm(2018) + 1.2, ymm(primary["estimate"]) - 1.8, "90% range", fontsize=6.6, color=BLUE, ha="left",
+            va="center")
+    bg.text(xmm(2018) + 1.2, ymm(0), "no gain", fontsize=6.6, color=muted, ha="left", va="center")
+    bg.annotate("", xy=(xmm(2018) + 2.4, ymm(0.047)), xytext=(xmm(2018) + 2.4, ymm(0.034)),
+                arrowprops=dict(arrowstyle="-|>", color=muted, lw=0.7, mutation_scale=5))
+    bg.text(xmm(2018) + 4.0, ymm(0.0405), "better", fontsize=6.6, color=muted, ha="left", va="center")
+    bg.text(xmm(1960) - 0.6, 91.6, f"Better overall, and in {better_blocks} of {len(blocks)}\nsix-year blocks", fontsize=7.6, color=ink,
+            fontweight="bold", ha="left", va="center", linespacing=1.2)
+    bg.text(xmm(1960) - 0.6, 85.2, "a small gain, but its 90% range stayed\nabove zero, as required in advance",
+            fontsize=6.6, color=muted, ha="left", va="center", linespacing=1.2)
+    bg.text(xmm(1960) + 3.2, 41.6, "each dot: six years, in time order\nopen dots: worse", fontsize=6.6, color=muted,
+            ha="left", va="center", linespacing=1.2)
+
+    # footer
+    for y, lead, text in ((7.4, "Other stars", "Ten other dwarf novae: their early records were too patchy to repeat the test."),
+                          (3.0, "Next", "Score the fixed forecasts on SS Cygni's observations from 2018 onward, still unopened.")):
+        bg.text(4, y, lead, fontsize=7.2, color=ink, fontweight="bold", ha="left", va="center")
+        bg.text(23.5, y, text, fontsize=7.2, color=muted, ha="left", va="center")
+    return fig
 
 
 def g3a_figure(plt, rows):
@@ -964,7 +1135,7 @@ def manifest_for(np, scipy, matplotlib, font_manager, private_inputs):
     aggregate_inputs={relative(p):dict(sha256=sha(p)) for p in (R2B,G3A,G3A_DETAILS,PRECISION,R1_SCORES,R2B_CHECK,R2D,G3A_CHECK,C70,R1_EXAMPLE)}
     font=Path(font_manager.findfont("DejaVu Sans"))
     return dict(schema_version=2,generator=relative(__file__),generator_sha256=sha(__file__),
-                scope="eight static scientific figures: four main-text, three appendix and one brief figure",
+                scope="seven static scientific figures (four main-text, three appendix) and the graphical abstract used in the brief",
                 source_freeze_sha1="5e39aeb772c427ef29671c1a9c80b22c05519b58",source_execution_commit_sha1="d7151e0da48ce3d3f91e38d94b8bfdc656272dd0",
                 protocol_doi="10.5281/zenodo.24053338",
                 post_result_status="frozen comparison and illustration retained; R2b exploratory working-score contrasts; G3a gain-free development feasibility; precision rows are point-Gaussian simulations",
@@ -1026,7 +1197,7 @@ def generate():
     tables=aggregate_tables()
     context_figure(plt,nights);forecast_figure(plt,f1,f2);robustness_figure(plt,tables["fig3-forest.csv"])
     transfer_figure(plt,tables["fig4-transfer.csv"])
-    figure_three(plt,f3);figure_four(plt,f4);brief_figure(plt,f2,nights);g3a_figure(plt,g3a_rows()[0])
+    figure_three(plt,f3);figure_four(plt,f4);save(graphical_abstract(plt,nights,f2),"graphical-abstract",dpi=300);plt.close("all");g3a_figure(plt,g3a_rows()[0])
     manifest = manifest_for(np, scipy, matplotlib, font_manager, private_inputs)
     dump(FIGURES/"manifest.json",manifest)
     check()

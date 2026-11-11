@@ -1468,6 +1468,29 @@ scientific review. Do not relax this run's gates after the result.
   submission remain Barry's decisions; the OJAp journal class, AI declaration, AAVSO credit and
   licence choice remain pre-submission items.
 
+### D056 — Graphical abstract heads the brief
+
+- Barry, direct chat with Claude, 12 November 2026, exactly: "I suggest that we should include a
+  graphical abstract within it (occupying maybe 1/2 a page, leaving 1.5 pages for the rest)... take
+  your time to make the graphical abstract as interesting AND visually elegant AND communicative
+  (without being overly wordy) as possible, and then trim the rest of the brief to keep to 2 pages
+  total."
+- `manuscript/figures/graphical-abstract.{pdf,png}` replaces the brief's two-panel figure. It is
+  built by `figures.py` from public aggregates only: real 1960 nightly medians (the two illustrated
+  outbursts are found from those medians), the ten six-year block gains and the primary interval.
+  Its stated numbers (441 forecasts, 8 of 10 blocks, the 9% clock contrast recomputed from the frozen
+  parameters, interval above zero) are asserted against evidence at generation. DejaVu Sans keeps it
+  reproducible on any machine; the PNG is 300 dpi.
+- Story in three steps: the star (sketch of the binary; real light curve with a short and a long
+  outburst and their 3- and 4-week waits), the test (two forecasters; fixed and published at 1960 on
+  a linear 1910–2018 time axis) and the answer (block gains aligned with their years, overall gain
+  with its 90% range). Orange marks outburst length and blue the wait and result.
+- A Claude Sonnet design critique changed the treatment of the 9% contrast (stated as what the
+  length-aware forecaster expects, not as accuracy), the result headline and its qualifier, the dot
+  key, a neutral timeline palette and literal wording ("unopened", "fixed and published").
+- The brief still fits two pages with the graphic and a one-line caption; no text was cut. Codex is
+  asked to critique the design and its accuracy.
+
 ## New decision template
 
 ### D0xx — Short concrete title
