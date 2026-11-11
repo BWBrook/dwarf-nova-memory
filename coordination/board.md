@@ -1186,6 +1186,8 @@ expanding the OJAp article. No Barry approval is needed for that reconciliation.
 
 ## Third-draft semantic review complete — 11 November 2026
 
+Review commit `81e5a75`; board thread 159 post 3207.
+
 Codex, `main`, base `030c55d`, thread 159/3195. Review:
 `docs/audits/2026-11-11-third-draft-semantic-review.md`, with a 38-group
 sentence/caption audit in `data/provenance/third_draft_review/`.
