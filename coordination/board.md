@@ -1263,3 +1263,15 @@ dashes replaced by commas. Still two pages. Claims, lint, render and brief check
 fit or score.
 
 Next: Barry — the article, technical record, brief and agent guide are ready for his review.
+
+## Step 4 (final detailing) complete — 11 November 2026
+
+Claude, `main`, `438c4b4` (C05 restamped `08aa51c`), thread 159/3226 (D055). References verified
+and added (two manual entries for the inline-only citations; seven new works with specific uses);
+AAS author-year style; hard edit with the main message restated in different words; captions lead
+with their messages; abstract corrected on the secondary tests (the 1960–1992 half was not
+inconclusive). A Sonnet cold read informed the text-only clarity pass: internal labels out of the
+main text and Fig. 3, terms defined at first use. Article 20 pages, brief 2. All checks pass. No
+data, fit or score.
+
+Next: Codex — semantic check of the step-4 diff.
