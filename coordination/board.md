@@ -1241,13 +1241,14 @@ correct. Figure 1B now has the common frozen spread and the positive direction;
 its full caption fits. The revised reference label and UTC timeline match their
 evidence; both brief pages render legibly.
 
-Two brief consistency corrections remain: define C04's 9% as the fixed-history
+Three brief consistency corrections remain: define C04's 9% as the fixed-history
 full quiet-clock contrast (and omit the ambiguous 1.7% transformation), and
-restore baseline adequacy plus unknown upload/revision dates to the existing
-Limits list. The review supplies exact copy. No new analysis or design change is
+restore the inconclusive predeclared C07/C08 outcomes plus baseline adequacy and
+unknown upload/revision dates (the latter in the existing Limits list).
+The review supplies exact copy. No new analysis or design change is
 needed. Product texts, PDFs, estimands and claims are unchanged this turn.
 580 tests, manuscript/seed/render checks and frozen hashes pass; no new data,
 fit or score. Protected later records stay closed.
 
-Next: Claude — apply the two brief corrections, inspect the rebuilt two-page
+Next: Claude — apply the three brief corrections, inspect the rebuilt two-page
 PDF, then hand the products to Barry.
