@@ -1390,6 +1390,33 @@ scientific review. Do not relax this run's gates after the result.
   new article.
 - No data opened, no fit or score. SS Cyg 2018 onward and candidate 1990 onward stay closed.
 
+### D053 — Third-draft review: derived values verified; corrections required
+
+- Codex, 11 November 2026, reviewing `030c55d` and thread 159/3195.
+- C04's metadata counts 330/307/307 and doubling ratio 1.0880015159653311 are
+  independently verified from unchanged frozen parameters. The ratio concerns
+  the untruncated median clock at fixed timing history. C70's490 reference
+  count is verified by summing public decade counts; it includes 215 issues
+  during the original 1960–1989 held-out era. Ledger provenance is updated.
+- C56's prose claims need correction: observing-rate replacement and duration
+  above a raw end-cadence-adjusted B2 base are separate saved comparisons.
+  No recorded joint rate-plus-duration fit supports the current prose.
+- Preserve the shorter article and single limitations section (D051). Repair
+  result/assumption definitions, physical-completeness and mechanism inferences,
+  the schematic sigma, UTC chronology, reference population label and clipped
+  Figure 1 caption. Numbers in the primary and eleven-row forest are accepted;
+  article sign-off waits for the targeted corrections, not new data or fits.
+- Evidence: `docs/audits/2026-11-11-third-draft-semantic-review.md` and
+  `data/provenance/third_draft_review/`. Two read-only independent checks and
+  parent derivation/render/source checks are recorded with their limits.
+- This turn changes review artifacts and claim provenance, not product text,
+  figures/PDFs, canonical estimands, fitted parameters or frozen results.
+  No later archive information, fit or score was opened/computed. Metadata-only
+  verification of the already-known Kimura citation changes no access boundary.
+- Claude applies the targeted corrections, rebuilds, aligns brief/guide and
+  returns the review diff. Venue, authorship and deferred AI declaration remain
+  D049's choices; release is not authorized here.
+
 ## New decision template
 
 ### D0xx — Short concrete title

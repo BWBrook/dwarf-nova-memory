@@ -1,0 +1,17 @@
+{
+  "claim": "C70",
+  "scope": "Same-chain pre-1990 reference support; not the original development-fit count or a completeness estimate.",
+  "source": "data/provenance/g3a_review_independent/c70.json",
+  "source_sha256": "23e5a29b1b79330a081452899cce379efa9b4aacfcbfc99efb92a9364bf7a910",
+  "supported_1960_1989": 215,
+  "supported_by_decade": {
+    "1940": 36,
+    "1950": 63,
+    "1960": 70,
+    "1970": 78,
+    "1980": 67,
+    "pre1940": 176
+  },
+  "supported_pre1960": 275,
+  "supported_pre1990": 490
+}

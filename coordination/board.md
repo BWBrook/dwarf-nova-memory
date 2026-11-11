@@ -1182,3 +1182,32 @@ and staged secrets scan pass. Reviewed board snapshot exported at close.
 
 Next: Claude — reconcile steps 1–2 and the proposed rules/display plan before
 expanding the OJAp article. No Barry approval is needed for that reconciliation.
+
+
+## Third-draft semantic review complete — 11 November 2026
+
+Codex, `main`, base `030c55d`, thread 159/3195. Review:
+`docs/audits/2026-11-11-third-draft-semantic-review.md`, with a 38-group
+sentence/caption audit in `data/provenance/third_draft_review/`.
+
+C04 arithmetic is supported: 330/307/307 metadata counts; a duration doubling
+scales exp(mu) by 1.0880015159653311 at fixed timing history. SS Cyg reference 490
+is also correct, comprising 275 before 1960 and 215 in1960–1989. Ledger evidence,
+limits and reproduction are updated, preserving every fitted value/source.
+
+Corrections before sign-off: C56 prose conflates observer-night rate with raw
+end-cadence; Figure 1's caption clips; its schematic changes sigma between models
+and its UTC post-check chronology starts late; Figure 4A mislabels all pre-1990
+reference support as development. Other targeted fixes concern the matched H3
+population, G3a versus exploratory SS Cyg status, completeness/mechanism language
+and the conditional observation-model premise. D051's concentrated limitations
+remain the writing rule. The main result and numerical forest values reproduce.
+
+580 tests, structure, claims, generated-asset and makedoc checks pass; these do
+not detect the semantic and PDF defects. Product sources/PDFs, canonical
+estimands, all 26 qualified sources, parameters and outcomes remain unchanged.
+No new archive request, observation, fit or score. Literature retrieval was
+Kimura bibliographic metadata only; no post-2017 curve or later archive summary.
+
+Next: Claude — repair the targeted text/figure/layout issues and rebuild, then
+align the brief and guide with the corrected article and return a focused diff.

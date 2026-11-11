@@ -667,3 +667,17 @@ New-star 1990+ and SS Cyg 2018+ information stayed closed. Public additions cont
 small aggregate diagnostics, not report identities or per-event membership.
 The completed research is now integrated into second drafts under the narrowed
 estimands; this authorizes neither release nor another opening.
+
+
+### Codex third-draft review — 11 November 2026 (D053)
+
+Read product text/captions, saved public aggregates, frozen parameters and source
+code to verify the new derived contrasts and semantic claims. Independent
+read-only delegates checked C04 and figures; no raw/native observations were
+opened, fitted or scored. The 2021 Kimura citation's anomaly was already
+recorded above. Only its Crossref bibliographic fields (DOI, title, authors,
+publication date, type) were requested this turn, with no abstract/full-text or
+observational retrieval. No SS Cyg 2018+ or candidate 1990+ archive row, count,
+coverage summary or light curve was requested or inspected. The interpretation
+of the citation remains limited by its existing abstract/metadata-only status.
+New arithmetic uses frozen parameters and already-public pre-1990 decade counts.

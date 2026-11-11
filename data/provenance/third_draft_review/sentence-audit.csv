@@ -1,0 +1,39 @@
+file,source_lines_at_030c55d,claims,verdict,evidence_route,finding
+main.md,9-20,"C01,C05,C07,C08,C55,C68",verified_with_scope,primary.json; headline.json; g3a summary,Core numbers correct; say qualified under the frozen rules rather than imply every possible repeat test.
+main.md,42-54,C40,verified_existing_source_audit,references/evidence.csv E07; C40,Prior scan-checked correlations/705/split retained; no fresh scan or novelty search performed.
+main.md,56-66,C41,verified_bounded_search_status,a10m_novelty records,Bounded first-preregistered-probabilistic duration comparison; earlier held-out point forecast acknowledged.
+main.md,68-75,hypotheses,amend,estimands physical reading; C40,Slow-state hypothesis motivates information but does not by itself imply positive duration sign; sign restriction comes from historical direction.
+main.md,91-96,C15,verified_with_scope,a10i summary/archive.json,"Counts correct; restrict all model choices/fits to primary frozen comparison, since later explorations differ."
+main.md,"148-151,214",C04,verified,third_draft_review/c04.json,"307 and coefficient rounding correct; sigma listed is M2/M3, not M0."
+main.md,195-204,C68,verified_with_definition_fix,g3a details/config,Qualification counts/gates correct; use operational long-run flag to include repeated40-day criterion from Appendix E.
+main.md,224-226,C04,verified_with_target_fix,third_draft_review/c04.json,1.0880015 fixed-history untruncated median ratio; short/long doubling analogy requires separate source.
+main.md,226-232,"C01,C02,C03,C10",verified,a10i primary/summary,441/.0165/limits/1.7 percent/.117/14 percent/435/six/five correct.
+main.md,234-241,"C42,C25,C09,C11",verified,r1 example; a10j summary; a10i secondary,"Example medians/CDF, block and deletion summaries, frozen sensitivity and extracted-outcome coverage values correct."
+main.md,243-246,"C06,C07,C08",verified,a10i summary,Era and class gains/limits/counts correct.
+main.md,250-257,"C43,C44,C55",amend_contrast_identity,r2b headline H1/H2/H3,"H1/H2/R1 numbers correct; H3 uses matched fitted-end population, not subtraction of the two headline means."
+main.md,259-260,C46,verified_saved_scope,r1 endpoint-dose aggregates,Saved means nonpositive for stated iid added-error scenarios; simulator not rerun.
+main.md,"260-263,304-305",C56,correction_required,r2b_models.py71-89; r2b_execute.py132-134; comparisons.csv,"Rate is replacement mark.004278322 is duration gain over raw c_end-adjusted B2, not over an observer-rate base."
+main.md,265-267,C61,verified,r2b comparisons.csv,NLLs827.24/830.19/849.28 and early-period gap shift agree.
+main.md,268-272,"C62,C63",amend_description,r2d_review_audit; r2b_claude_review,Values agree; both mark centring and baseline level change. Appendix C correctly records proxy availability.
+main.md,276-282,"C68,C71",verified,g3a summary/details; c71.json,"Zero qualifying, nine count failures, SS Aur and hold counts, report-cluster status correct."
+main.md,284-291,"C70,C68",verified_with_scope,c70.json; g3a summary,"67/73,102/485,822 to280 and367.2 projection correct; support is operational, not true-event completeness."
+main.md,298-305,"C01,C02,C25,C44,C55,C56",amend_interpretation,same evidence as Results,Do not infer most of all predictability from three tested models; point score is similar rather than identical; repair C56.
+main.md,309-324,"C21,C24,C62; Kimura2021",amend_interpretation,a10k; r2d audit; references/evidence.csv E18,Type fit/lag/drift numbers supported; mechanism preference/physical attribution need narrower wording. Kimura remains abstract/metadata-only.
+main.md,326-342,C70,amend_completeness,c70.json; estimands,Sufficient supported confirmed cycles established; physical completeness and necessary equal completeness not established.
+main.md,"349-362,380-382","A0-A2,C44,C46,C48,C55,C56",amend_assumption_definition,r2-design-v1 A2; r1/r2 records,"Keep score object distinct from true onset; CAR is conditional normalized observation factorization, not unconditional effort independence."
+main.md,364-374,"C05,C62,C68,C70",correction_required,g3a source freeze; access ledger,All post-result SS Cyg reanalyses are exploratory; prospectively frozen new-star feasibility screen used previously unopened records.
+main.md,385,C25,verified_with_wording,a10k SE audit,1.43 times as large exceeds strict1.42705 boundary; avoid ambiguous times larger.
+main.md,391-399,C01,amend_scope,primary; C70 limits,"Working-score improvement retained; future replication does not require exactly SS Cyg completeness, and later access remains a separate decision."
+main.md,438-448,C05,verified_existing_audit,a10h/a10i receipts,Parser chronology/source invariance/two-ledger/score-audit facts preserved.
+main.md,457-471,"C01,C06-C11,C43",verified,a10i secondary; r1 censor audit,"Frozen table, censor deletion and lagged-placebo statements agree with saved evidence."
+main.md,475-506,"C45,C47,C55,C62,C63",verified,r2b headline; C47 prep; protocols,"Windows/counts/median, exact H3 matched definition, saved-label/availability qualification correct."
+main.md,510-518,C21-C24,verified_with_unit_fix,a10k exploratory audit,"LRs/14 percent/transitions correct;0.16323/.07828 are log class offsets, not clock-scale ratios."
+main.md,522-558,"C68,C70,C71",verified,g3a details; c70/c71,Tables/attrition/SS Aur exact band and cluster counts retained correctly.
+main.md,562-598,"C40,C41,C65-C69",verified_saved_scope,r2d and six-star summaries; prior source audit,Precision table/counts/nominal N and Gaussian counterexample correct; no new simulations or literature search performed.
+figures.md,1,Fig1,correction_required,"figures.py734,251,789; frozen sigma; git f1aa2ae",Shared dispersion required; UTC chronology starts checks too late; caption clipped in PDF pages14-15.
+figures.md,3,Fig2,verified,R1 example; fig1-illustration.json; a10i blocks,CDF/source identity/block arithmetic independently match.
+figures.md,5,Fig3,verified_with_label_scope,public forest source aggregates,All11 estimates/CI/n match; H3 excluded; every comparison overstates selected subset.
+figures.md,7,"Fig4,C68,C70",verified_with_label_fix,third_draft_review/reference-counts.json; C70,"490 correct; label all available pre1990, not original development.1980s ratios/hold streams correct."
+figures.md,9,"Fig5,C11",verified,a10i calibration,Definite/possible sample coverage endpoints correct.
+figures.md,11,"Fig6,C21,C23",amend_panel_reference,fig4-type-exploration.png,"Use A top likelihood; B lower-left added within-class; C lower-right scale ratios, rather than left/right."
+figures.md,13,"Fig7,C68",verified,g3a summary/details,Count/window gates and hold streams agree.

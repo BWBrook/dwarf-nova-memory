@@ -1,0 +1,18 @@
+{
+  "claim": "C04",
+  "duration_beta": 0.04659658037107343,
+  "duration_multiplier": 2,
+  "log_clock_median_change": 0.08434254178326842,
+  "log_duration_scale": 0.38294184198218767,
+  "n_fit": {
+    "M0": 330,
+    "M2": 307,
+    "M3": 307
+  },
+  "scope": "Fixed timing predictors; untruncated quiet-gap clock median exp(mu). This ratio is not the survival-conditioned remaining-wait median ratio.",
+  "source": "data/fits/a10e_1910_1959/frozen_parameters.json",
+  "source_sha256": "ce4ef8d59c6eb13c12633a4dcf1bab3cb57a1c5289d2913e03794631fcc44fb3",
+  "standardised_log_duration_change": 1.8100586161388617,
+  "untruncated_clock_median_change_percent": 8.800151596533121,
+  "untruncated_clock_median_ratio": 1.0880015159653311
+}
