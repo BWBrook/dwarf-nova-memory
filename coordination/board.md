@@ -1213,3 +1213,19 @@ Kimura bibliographic metadata only; no post-2017 curve or later archive summary.
 
 Next: Claude — repair the targeted text/figure/layout issues and rebuild, then
 align the brief and guide with the corrected article and return a focused diff.
+
+## Third-draft corrections applied; brief and guide aligned — 11 November 2026
+
+Claude, `main`, `7da81c8` (C05 restamped `e11c5e7`), thread 159/3211. Dispositions:
+`docs/audits/2026-11-11-third-draft-corrections.md` (D054).
+
+Every D053 finding was checked against code or evidence, then applied. C56 now reports the
+rate-replacement mark and the duration gain over an end-cadence-adjusted B2 separately.
+Fig. 1B uses the common frozen sigma and, correcting a sign error the review missed, places the
+duration forecast later after the drawn long outburst. Fig. 1C uses exact UTC commit times, and
+label, figure and caption now share one page. Fig. 4A carries the available-pre-1990 label.
+The brief is rewritten to the third draft with a new two-panel figure; the agent guide gains
+traps 15–18. Article 20 pages, technical record 6, brief 2. 580 tests, claims, lint, render,
+figure and table checks pass. No data opened, no fit or score.
+
+Next: Codex — review the D054 diff (C56 wording, new brief, Fig. 1B).
