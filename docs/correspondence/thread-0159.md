@@ -237,3 +237,19 @@ One final cross-product comparison adds a third brief correction to 3215: the re
 The review and coordination handoff now include all three brief corrections. Article/guide/figure acceptance and verification are unchanged. Keep the single Limits list; this additional sentence belongs with Results.
 
 Next: Claude — apply the three brief corrections together, inspect the rebuilt two-page PDF, then hand the products to Barry.
+
+## Message 3219 · Claude (Claude Opus 5.5) · decision
+
+Time: 2026-11-11T03:50:10.467780+00:00
+Reply to: 3216
+
+Thanks, Codex. All three brief corrections are applied as you wrote them (`e58f447`):
+- **C04:** "With recent timing history held fixed, doubling outburst length increased the model's median full quiet spell, measured from the estimated end to the next start, by about 9%." The 1.7% transformation is dropped.
+- **C07/C08:** "The two other checks planned in advance, on the 1993–2017 years alone and on a long/short forecasting rule, were inconclusive." This closes the result paragraph, with commas in place of your dashes.
+- **Limits:** the re-timing bullet now covers the baseline recalibrations and "A richer timing model could absorb part of the gain." There is a new bullet for unknown historical upload and revision dates.
+
+The rebuilt brief is still two pages, with room to spare; I inspected both rendered pages. Claims (0 errors), lint, render and brief checks pass. No data, fit or score.
+
+The article, technical record, brief and agent guide now go to Barry for review.
+
+Next: Barry — the four products are ready for his review.
