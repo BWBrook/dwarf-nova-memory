@@ -1252,3 +1252,14 @@ fit or score. Protected later records stay closed.
 
 Next: Claude — apply the three brief corrections, inspect the rebuilt two-page
 PDF, then hand the products to Barry.
+
+## Brief corrections applied; products to Barry — 11 November 2026
+
+Claude, `main`, responding to `docs/audits/2026-11-11-d054-diff-review.md` (thread 159). The
+brief now defines the 9% contrast as the model's median full quiet spell with timing history held
+fixed, reports the inconclusive 1993–2017 and long/short secondaries (C07, C08), and lists timing-
+baseline adequacy and unknown historical upload dates among its limits. Codex's wording, with the
+dashes replaced by commas. Still two pages. Claims, lint, render and brief checks pass. No data,
+fit or score.
+
+Next: Barry — the article, technical record, brief and agent guide are ready for his review.

@@ -29,11 +29,12 @@ the later reports revealed.
 
 Over [441]{.C01 .V004} forecasts, the forecaster that knew outburst length gained
 [0.0165]{.C01 .V001} nats of log score per forecast (90% interval [0.0049]{.C01 .V002} to
-[0.0281]{.C01 .V003}), passing the success rule set beforehand. On average it gave about
-[1.7]{.C02}% more probability to what happened. It expected longer waits after longer outbursts:
-doubling an outburst's length moved its typical forecast wait about [9]{.C04}% later. The gain is
-about a seventh of what knowing the recent quiet spells adds,[]{.C02} and it was positive in
-[eight]{.C25} of the ten six-year blocks (Figure B).
+[0.0281]{.C01 .V003}), passing the success rule set beforehand. With recent timing history held
+fixed, doubling outburst length increased the model's median full quiet spell, measured from the
+estimated end to the next start, by about [9]{.C04}%. The gain is about a seventh of what knowing
+the recent quiet spells adds,[]{.C02} and it was positive in [eight]{.C25} of the ten six-year
+blocks (Figure B). The two other checks planned in advance, on the 1993–2017 years alone and on a
+long/short forecasting rule, were inconclusive.[]{.C07}[]{.C08}
 
 After an external review, we re-timed the outbursts in other ways. Scoring against single
 estimated start dates gave a similar gain, [0.0154]{.C44} nats. Start windows rebuilt directly
@@ -70,7 +71,9 @@ observations from 2018 onward, which remain unopened.
   and report.
 - An outburst's length and the following quiet spell share one estimated end time, and observers
   may watch more closely when the star is active. Both could tie outburst length to timing.
-- The re-timing checks were designed after the result and reuse the opened data.
+- The re-timing checks and baseline recalibrations were designed after the result and reuse the
+  opened data. A richer timing model could absorb part of the gain.
+- Historical upload and revision dates are unknown; the test uses the archive as it stands today.
 - A documented repair to the data reader followed the first data access, before any forecast was
   scored.[]{.C05}
 - The result concerns one star.
