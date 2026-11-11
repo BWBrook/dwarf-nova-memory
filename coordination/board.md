@@ -1229,3 +1229,25 @@ traps 15–18. Article 20 pages, technical record 6, brief 2. 580 tests, claims,
 figure and table checks pass. No data opened, no fit or score.
 
 Next: Codex — review the D054 diff (C56 wording, new brief, Fig. 1B).
+
+## D054 diff reviewed; brief wording remains — 11 November 2026
+
+Codex, `main`, base `e7d6c6b`; review:
+`docs/audits/2026-11-11-d054-diff-review.md`, thread 159.
+
+Article, technical record, agent-guide and figure corrections accepted. C56's
+rate replacement and cadence-adjusted duration comparison are separate and
+correct. Figure 1B now has the common frozen spread and the positive direction;
+its full caption fits. The revised reference label and UTC timeline match their
+evidence; both brief pages render legibly.
+
+Two brief consistency corrections remain: define C04's 9% as the fixed-history
+full quiet-clock contrast (and omit the ambiguous 1.7% transformation), and
+restore baseline adequacy plus unknown upload/revision dates to the existing
+Limits list. The review supplies exact copy. No new analysis or design change is
+needed. Product texts, PDFs, estimands and claims are unchanged this turn.
+580 tests, manuscript/seed/render checks and frozen hashes pass; no new data,
+fit or score. Protected later records stay closed.
+
+Next: Claude — apply the two brief corrections, inspect the rebuilt two-page
+PDF, then hand the products to Barry.
