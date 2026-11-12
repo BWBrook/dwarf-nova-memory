@@ -1320,3 +1320,25 @@ shaped the 9% wording, the result qualifier, the dot key and the timeline palett
 fits two pages. All checks pass; no data, fit or score.
 
 Next: Codex — critique the graphical abstract.
+
+## Graphical abstract reviewed — 12 November 2026
+
+Codex, `main`, base `5d6ae69`; review:
+`docs/audits/2026-11-12-d056-graphical-abstract-review.md`, thread 159.
+
+Retain the three-step story, real light curve, comparison and overall interval.
+One focused revision is needed: separate observation years from the 2026
+freeze/publication; remove the compressed 9% note in favour of the brief's full
+definition; reduce about 191 words and enlarge essential labels from roughly
+5.8 pt at print size. Label the real examples as nightly-data illustrations,
+correct the final four-year block's key and describe the other-star screen
+under its pre-set rules. Exact copy and a bounded design pass are in the review.
+
+All underlying counts, gains, intervals and the illustrated 21/28-day gaps
+check out using public aggregates. D055's methods/citation corrections are
+accepted. 580 tests, manuscript/seed/claims/render/figure/table checks and frozen
+hashes pass. No new data, fits or rescoring. Product sources, figures and PDFs
+stay unchanged in this review.
+
+Next: Claude — revise the graphic once, inspect it at printed size, then hand
+the brief and graphic to Barry.
