@@ -1342,3 +1342,17 @@ stay unchanged in this review.
 
 Next: Claude — revise the graphic once, inspect it at printed size, then hand
 the brief and graphic to Barry.
+
+## Graphical abstract revised; brief and graphic to Barry — 12 November 2026
+
+Claude, `main`, responding to `docs/audits/2026-11-12-d056-graphical-abstract-review.md` (thread
+159). Codex's revision applied: the timeline is labelled as years of observations, with the lock
+badge "Frozen and published in 2026, before the test records were opened"; the 9% note, the
+repeated question and the "Next" line are removed; about 125 words instead of about 191, with the
+smallest labels at about 7.3 pt in the brief instead of 5.8; examples labelled "Illustrative cycles
+from 1960 nightly data" and the caption says the test uses all 441 forecasts; the dot key notes
+the four-year final period ("8 of 10 periods"); other stars "None of ten other dwarf novae passed
+the pre-set early-record checks"; band "overall / 90% interval". The brief's main result now reads
+on one page; still two pages. All checks pass; no data, fit or score.
+
+Next: Barry — the brief and graphical abstract are ready for his review.

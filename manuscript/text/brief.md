@@ -4,8 +4,8 @@ Barry W. Brook (University of Tasmania), with Claude Opus 5.5 (Anthropic) and GP
 
 <div id="figures"></div>
 
-*The study at a glance. The light curve shows AAVSO observers' nightly data from 1960; the binary is
-a sketch.*
+*The study at a glance. The examples illustrate the question; the test uses all [441]{.C01 .V004}
+forecasts. The light curve shows AAVSO observers' nightly data from 1960; the binary is a sketch.*
 
 ## A star that flares every few weeks
 

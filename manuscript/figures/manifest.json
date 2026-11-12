@@ -117,16 +117,16 @@
       "sha256": "879428fea0aac8201ca7fb866590c47e3184390c7abf7ec029d49dfa50153c50"
     },
     "manuscript/figures/graphical-abstract.pdf": {
-      "bytes": 55523,
-      "sha256": "21c09906efb14181176424d3b0d40836dd45752c9a41c6dd9000dc8295f37f24"
+      "bytes": 56225,
+      "sha256": "e94fdc93ec64d2d8936c6e6b3343574407cbec535be8cb98a72bd6182c2f528a"
     },
     "manuscript/figures/graphical-abstract.png": {
-      "bytes": 350668,
+      "bytes": 308810,
       "pixel_dimensions": [
-        2221,
-        1453
+        2224,
+        1288
       ],
-      "sha256": "b4583f75da2b1fce23da9dd5f3be343efec9a1b6fbfb0b6466196545f530ee7a"
+      "sha256": "7d2f089a81a1b34ca9de23614b87252f2b8e88049433a9b14f47545e04576641"
     }
   },
   "figure_data": {
@@ -190,7 +190,7 @@
     "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22"
   },
   "generator": "manuscript/figures.py",
-  "generator_sha256": "ef19ae2ec369c1114ad317573ba401ca4f373dc20fa9125b53b3f3f90e2d69c0",
+  "generator_sha256": "2a49ce21326f079ec76756bfc1371ee9283e2bf76a37af18b494692a85807860",
   "output_policy": {
     "fig1_public_data": "nightly light-curve aggregates for a fixed 1960-1961 window; fig2 example from one derived bracket set and model CDF grid; no observation rows, observer identifiers or event times",
     "new_event_catalog": false,

@@ -630,14 +630,13 @@ def graphical_abstract(plt, nights, gains):
     ink, muted, card_fill = "#22272B", "#4F5A61", "#F2F5F8"
     orange_text, slate, built = "#B34700", "#3B4750", "#D9E0E5"
     primary, blocks = gains["comparisons"][0], gains["blocks"]
-    m3 = load(PARAMETERS)["primary"]["models"]["M3"]
-    percent = round(100 * math.expm1(m3["coefficients"]["beta"] * math.log(2) / m3["scales"]["mark"]))
     better_blocks = sum(block["mean_gain"] > 0 for block in blocks)
-    if primary["lower"] <= 0 or (percent, better_blocks, len(blocks), primary["n"]) != (9, 8, 10, 441):
+    if primary["lower"] <= 0 or (better_blocks, len(blocks), primary["n"]) != (8, 10, 441):
         raise ValueError("graphical-abstract statements differ from their evidence")
-    W, H = 183.0, 118.0
+    W, H = 183.0, 104.0
     fig = plt.figure(figsize=(W / 25.4, H / 25.4))
     bg = fig.add_axes([0, 0, 1, 1]); bg.set_xlim(0, W); bg.set_ylim(0, H); bg.axis("off")
+    note, body, title = 8.0, 8.4, 8.8
 
     def mm_axes(x0, y0, x1, y1):
         return fig.add_axes([x0 / W, y0 / H, (x1 - x0) / W, (y1 - y0) / H])
@@ -647,7 +646,7 @@ def graphical_abstract(plt, nights, gains):
                                     facecolor=card_fill, edgecolor="none", zorder=0))
 
     def heading(x, y, text):
-        bg.text(x, y, text, fontsize=7.8, fontweight="bold", color=muted, va="center", ha="left")
+        bg.text(x, y, text, fontsize=8.6, fontweight="bold", color=muted, va="center", ha="left")
 
     def gradient(patch, cmap, extent, center=(0.5, 0.5)):
         bg.add_patch(patch)
@@ -657,22 +656,20 @@ def graphical_abstract(plt, nights, gains):
         image.set_clip_path(patch)
         patch.set_facecolor("none")
 
-    # headline
-    bg.text(4, H - 6.0, "How long an outburst lasts helps forecast when the next one begins",
-            fontsize=12.6, fontweight="bold", color=ink, va="center")
-    bg.text(4, H - 12.0, "SS Cygni: a century of amateur observations, and forecasts fixed before the test data were opened",
-            fontsize=8.2, color=muted, va="center")
+    bg.text(4, H - 5.8, "How long an outburst lasts helps forecast when the next one begins",
+            fontsize=13.2, fontweight="bold", color=ink, va="center")
+    bg.text(4, H - 11.8, "SS Cygni and a century of amateur observations", fontsize=9.0, color=muted, va="center")
 
-    # (1) the star
-    L0, L1, B0, B1 = 4, 63, 13, 101
-    card(L0, B0, L1, B1); heading(L0 + 4, B1 - 4.4, "①  THE STAR")
-    cx, cy, r = 16.5, 85.5, 6.4
+    # (1) the star: a sketch of the binary and real nightly data
+    L0, L1, B0, B1 = 4, 63, 11, 86
+    card(L0, B0, L1, B1); heading(L0 + 4, B1 - 4.6, "①  THE STAR")
+    cx, cy, r = 15.5, 71.0, 6.0
     t = np.linspace(0, 2 * np.pi, 400)
     rx = r * (1 + 0.32 * np.clip(np.cos(t), 0, None) ** 3)
     star = Polygon(np.c_[cx + rx * np.cos(t), cy + 0.92 * r * np.sin(t)], closed=True, zorder=3)
     gradient(star, mcolors.LinearSegmentedColormap.from_list("star", ["#FFE0A3", "#F7A541", "#E0631B", "#B83E12"]),
              (cx - r, cx + 1.35 * r, cy - r, cy + r), center=(0.38, 0.62))
-    dx, dy, dw, dh = 43.5, 85.0, 26.0, 8.4
+    dx, dy, dw, dh = 43.5, 70.5, 26.0, 8.0
     gradient(Ellipse((dx, dy), dw, dh, zorder=3),
              mcolors.LinearSegmentedColormap.from_list("disc", ["#FFFFFF", "#EAF4FA", "#C9E3F2", "#A9D2EA", "#8BBFDF"]),
              (dx - dw / 2, dx + dw / 2, dy - dh / 2, dy + dh / 2))
@@ -680,20 +677,19 @@ def graphical_abstract(plt, nights, gains):
     for k in (0.72, 0.46):
         bg.add_patch(Ellipse((dx, dy), dw * k, dh * k, facecolor="none", edgecolor="white", lw=0.5, alpha=0.9, zorder=4))
     bg.add_patch(Circle((dx, dy), 1.4, facecolor="white", edgecolor="#9AA5AD", lw=0.6, zorder=5))
-    p0, p1, p2 = np.array([cx + 1.30 * r, cy + 0.2]), np.array([28.0, 89.5]), np.array([dx - dw / 2 + 2.0, dy + 2.5])
+    p0, p1, p2 = np.array([cx + 1.30 * r, cy + 0.2]), np.array([27.0, 75.0]), np.array([dx - dw / 2 + 2.0, dy + 2.4])
     s = np.linspace(0, 1, 60)[:, None]
     stream = (1 - s) ** 2 * p0 + 2 * (1 - s) * s * p1 + s ** 2 * p2
     for i in range(len(stream) - 1):
         bg.plot(stream[i:i + 2, 0], stream[i:i + 2, 1], color=AMBER, lw=2.2 - 1.5 * i / len(stream),
                 solid_capstyle="round", zorder=4)
     bg.add_patch(Circle(tuple(p2), 0.85, facecolor="#FFC857", edgecolor="none", zorder=5))
-    small = dict(fontsize=6.6, color=muted, ha="center", va="top")
-    bg.text(cx + 1, cy - r - 1.0, "companion star", **small)
-    bg.text(dx, dy - dh / 2 - 1.0, "disc around a white dwarf", **small)
-    bg.text((L0 + L1) / 2, 70.2, "About every seven weeks the disc\nflares, then fades: an outburst",
-            fontsize=7.3, color=ink, ha="center", va="center", linespacing=1.25)
+    bg.text(cx + 1, cy - r - 1.0, "companion\nstar", fontsize=note, color=muted, ha="center", va="top", linespacing=1.1)
+    bg.text(dx, dy - dh / 2 - 1.0, "disc around\na white dwarf", fontsize=note, color=muted, ha="center", va="top",
+            linespacing=1.1)
+    bg.text((L0 + L1) / 2, 50.5, "Outbursts about every seven weeks", fontsize=body, color=ink, ha="center", va="center")
 
-    lc = mm_axes(L0 + 7.0, 29, L1 - 2.5, 60.5)
+    lc = mm_axes(L0 + 7.0, 20.5, L1 - 2.5, 46.5)
     lo, hi = 150, 250
     points = [(float(n["jd_floor"]) + 0.5 - START, float(n["median_magnitude"])) for n in nights if n["median_magnitude"]]
     x, m = np.array([p for p in points if lo <= p[0] <= hi]).T
@@ -703,73 +699,69 @@ def graphical_abstract(plt, nights, gains):
     lc.scatter(x, m, s=4, color="#4D5A63", lw=0, zorder=4)
     for (a, b, nxt), word in zip(illustrated_episodes(nights, lo, hi), ("short", "long")):
         lc.axvspan(a, b, color=ORANGE, alpha=0.16, lw=0, zorder=0)
-        lc.plot([a, b], [7.75, 7.75], color=ORANGE, lw=1.6, solid_capstyle="butt")
-        lc.text((a + b) / 2, 7.45, word, color=orange_text, fontsize=6.8, ha="center", va="bottom", fontweight="bold")
-        lc.annotate("", xy=(nxt, 12.85), xytext=(b, 12.85), arrowprops=dict(arrowstyle="-|>", color=BLUE, lw=1.1,
+        lc.plot([a, b], [7.7, 7.7], color=ORANGE, lw=1.6, solid_capstyle="butt")
+        lc.text((a + b) / 2, 7.35, word, color=orange_text, fontsize=note, ha="center", va="bottom", fontweight="bold")
+        lc.annotate("", xy=(nxt, 12.75), xytext=(b, 12.75), arrowprops=dict(arrowstyle="-|>", color=BLUE, lw=1.1,
                     mutation_scale=6, shrinkA=0, shrinkB=0))
-        lc.text((b + nxt) / 2, 13.05, f"{round((nxt - b) / 7)}-week wait", color=BLUE, fontsize=6.6, ha="center",
-                va="top", fontweight="bold")
-    lc.set_xlim(lo, hi); lc.set_ylim(13.9, 6.9); lc.axis("off")
-    bg.text(L0 + 4.0, 43.5, "brighter", rotation=90, fontsize=6.6, color=muted, ha="center", va="center")
-    bg.annotate("", xy=(L0 + 4.0, 53.0), xytext=(L0 + 4.0, 49.4), arrowprops=dict(arrowstyle="-|>", color=muted, lw=0.7,
+        lc.text((b + nxt) / 2, 13.0, f"{round((nxt - b) / 7)}-week\nwait", color=BLUE, fontsize=note, ha="center",
+                va="top", fontweight="bold", linespacing=1.05)
+    lc.set_xlim(lo, hi); lc.set_ylim(15.2, 6.7); lc.axis("off")
+    bg.text(L0 + 3.8, 33.5, "brighter", rotation=90, fontsize=note, color=muted, ha="center", va="center")
+    bg.annotate("", xy=(L0 + 3.8, 43.5), xytext=(L0 + 3.8, 39.6), arrowprops=dict(arrowstyle="-|>", color=muted, lw=0.7,
                 mutation_scale=5))
-    bg.text((L0 + L1) / 2 + 2, 25.6, "Real nightly brightness, 100 days of 1960", fontsize=6.6, color=muted,
-            ha="center", va="center")
-    bg.text((L0 + L1) / 2, 17.6, "Does an outburst's length help\nforecast when the next one starts?", fontsize=8.0,
-            color=ink, fontweight="bold", ha="center", va="center", linespacing=1.25)
-    bg.add_patch(Polygon([[63.7, 60], [65.6, 57], [63.7, 54]], closed=True, facecolor="#C9D2D9", edgecolor="none"))
+    bg.text((L0 + L1) / 2 + 2, 15.6, "Illustrative cycles from\n1960 nightly data", fontsize=note, color=muted,
+            ha="center", va="center", linespacing=1.15)
+    bg.add_patch(Polygon([[63.7, 51], [65.6, 48], [63.7, 45]], closed=True, facecolor="#C9D2D9", edgecolor="none"))
 
-    # (2) the test and (3) the answer share one time axis
+    # (2) the test and (3) the answer share one axis of observation years
     R0, R1 = 66.5, 179
     card(R0, B0, R1, B1)
     X0, X1 = 1908, 2028
-    gx0, gx1 = R0 + 4.5, R1 - 14.5
+    gx0, gx1 = R0 + 4.5, R1 - 17.0
 
     def xmm(year):
         return gx0 + (year - X0) / (X1 - X0) * (gx1 - gx0)
 
-    heading(xmm(1910), B1 - 4.4, "②  THE TEST")
-    heading(xmm(1960) - 0.6, B1 - 4.4, "③  THE ANSWER")
-    ty, th = 25.5, 7.0
+    heading(xmm(1910), B1 - 4.6, "②  THE TEST")
+    heading(xmm(1960) - 0.6, B1 - 4.6, "③  THE ANSWER")
+
+    def chip(y, lines, edge, fill, color):
+        w, h = xmm(1956) - xmm(1910), 3.8 + 3.3 * len(lines)
+        bg.add_patch(FancyBboxPatch((xmm(1910), y - h / 2), w, h, boxstyle="round,pad=0,rounding_size=2.4", facecolor=fill,
+                                    edgecolor=edge, lw=0.9, zorder=4))
+        bg.text(xmm(1910) + w / 2, y, "\n".join(lines), fontsize=body, color=color, ha="center", va="center", zorder=5,
+                linespacing=1.15)
+
+    bg.text(xmm(1910), 74.6, "Two forecasters", fontsize=title, color=ink, fontweight="bold", ha="left", va="center")
+    chip(67.4, ["recent quiet spells"], "#7F8C95", "white", ink)
+    chip(58.4, ["recent quiet spells", "+ outburst length"], ORANGE, "#FFF1E8", orange_text)
+
+    ty, th = 20.5, 6.6
     bg.add_patch(FancyBboxPatch((xmm(1910), ty), xmm(1960) - xmm(1910), th, boxstyle="round,pad=0,rounding_size=1.2",
                                 facecolor=built, edgecolor="none", zorder=2))
     bg.add_patch(Rectangle((xmm(1960), ty), xmm(2018) - xmm(1960), th, facecolor=slate, edgecolor="none", zorder=2))
     bg.add_patch(Rectangle((xmm(2018), ty), xmm(2027) - xmm(2018), th, facecolor="white", edgecolor="#9AA5AD", lw=0.6,
                            hatch="////", zorder=2))
-    bg.text((xmm(1910) + xmm(1960)) / 2, ty + th / 2, "forecasters built", fontsize=7.0, color=ink, ha="center",
+    bg.text((xmm(1910) + xmm(1960)) / 2, ty + th / 2, "used for fitting", fontsize=body, color=ink, ha="center",
             va="center", zorder=3)
-    bg.text((xmm(1960) + xmm(2018)) / 2, ty + th / 2, f"{primary['n']} forecasts scored", fontsize=7.0, color="white", ha="center",
-            va="center", fontweight="bold", zorder=3)
+    bg.text((xmm(1960) + xmm(2018)) / 2, ty + th / 2, f"{primary['n']} forecasts scored", fontsize=body, color="white",
+            ha="center", va="center", fontweight="bold", zorder=3)
+    bg.text(xmm(2027) + 1.2, ty + th / 2, "unopened", fontsize=note, color=muted, ha="left", va="center")
     for year in (1910, 1960, 2018):
-        bg.text(xmm(year), ty - 1.6, str(year), fontsize=6.6, color=muted, ha="center", va="top")
-    bg.text(xmm(2027) + 1.2, ty + th / 2, "unopened", fontsize=6.6, color=muted, ha="left", va="center")
-    lx, ly = xmm(1960), ty + th + 5.4
+        bg.text(xmm(year), ty - 1.3, str(year), fontsize=note, color=muted, ha="center", va="top")
+    bg.text((xmm(1910) + xmm(2027)) / 2, ty - 5.4, "years of observations", fontsize=note, color=muted,
+            ha="center", va="top", style="italic")
+
+    lx, ly = xmm(1960), 37.0
     bg.add_patch(FancyBboxPatch((lx - 2.1, ly - 1.9), 4.2, 3.4, boxstyle="round,pad=0,rounding_size=0.6", facecolor=ink,
                                 edgecolor="none", zorder=6))
     bg.add_patch(Arc((lx, ly + 1.5), 2.9, 3.4, theta1=0, theta2=180, color=ink, lw=1.4, zorder=6))
     bg.add_patch(Circle((lx, ly - 0.3), 0.42, facecolor="white", edgecolor="none", zorder=7))
     bg.plot([lx, lx], [ty + th, ly - 1.9], color=ink, lw=0.7, zorder=5)
-    bg.text(lx - 3.0, ly + 0.1, "fixed and\npublished", fontsize=6.8, color=ink, ha="right", va="center", linespacing=1.15,
-            fontweight="bold")
+    bg.text(lx - 3.2, ly + 0.2, "Frozen and published\nin 2026, before the\ntest records were opened", fontsize=note,
+            color=ink, ha="right", va="center", linespacing=1.15, fontweight="bold")
 
-    def chip(y, lines, edge, fill, color):
-        w, h = xmm(1956) - xmm(1910), 3.6 + 3.0 * len(lines)
-        bg.add_patch(FancyBboxPatch((xmm(1910), y - h / 2), w, h, boxstyle="round,pad=0,rounding_size=2.4", facecolor=fill,
-                                    edgecolor=edge, lw=0.9, zorder=4))
-        bg.text(xmm(1910) + w / 2, y, "\n".join(lines), fontsize=6.8, color=color, ha="center", va="center", zorder=5,
-                linespacing=1.15)
-        return y - h / 2
-
-    bg.text(xmm(1910), 89.2, "Two forecasters", fontsize=7.6, color=ink, fontweight="bold", ha="left", va="center")
-    bg.text(xmm(1910), 85.0, "each gives odds on when the\nnext outburst starts", fontsize=6.6, color=muted, ha="left",
-            va="center", linespacing=1.2)
-    chip(77.0, ["recent quiet spells"], "#7F8C95", "white", ink)
-    bottom = chip(69.0, ["recent quiet spells", "+ outburst length"], ORANGE, "#FFF1E8", orange_text)
-    bg.plot([xmm(1914)] * 2, [bottom, bottom - 4.2], color=ORANGE, lw=0.8)
-    bg.text(xmm(1916), bottom - 4.6, f"expects a {percent}% longer wait\nfor each doubling of length", fontsize=6.6,
-            color=orange_text, ha="left", va="center", linespacing=1.2)
-
-    y_lo, y_hi, gy0, gy1 = -0.018, 0.048, 45.5, 80.5
+    y_lo, y_hi, gy0, gy1 = -0.018, 0.048, 36.0, 59.5
 
     def ymm(v):
         return gy0 + (v - y_lo) / (y_hi - y_lo) * (gy1 - gy0)
@@ -782,30 +774,26 @@ def graphical_abstract(plt, nights, gains):
     for block in blocks:
         year = 1960 + ((block["start_jd"] + block["end_jd"]) / 2 - START) / 365.25
         better = block["mean_gain"] > 0
-        gain.plot(year, block["mean_gain"], "o", ms=4.8, color=ORANGE if better else "white", mec=ORANGE, mew=1.1,
+        gain.plot(year, block["mean_gain"], "o", ms=5.0, color=ORANGE if better else "white", mec=ORANGE, mew=1.1,
                   zorder=4)
-    for year in (1960, 2018):
-        bg.plot([xmm(year)] * 2, [ty + th + 0.8, gy0], color="#C3CCD3", lw=0.5, ls=(0, (1.5, 1.5)), zorder=1)
-    bg.text(xmm(2018) + 1.2, ymm(primary["estimate"]) + 1.2, "overall", fontsize=6.8, color=BLUE, ha="left",
-            va="center", fontweight="bold")
-    bg.text(xmm(2018) + 1.2, ymm(primary["estimate"]) - 1.8, "90% range", fontsize=6.6, color=BLUE, ha="left",
-            va="center")
-    bg.text(xmm(2018) + 1.2, ymm(0), "no gain", fontsize=6.6, color=muted, ha="left", va="center")
-    bg.annotate("", xy=(xmm(2018) + 2.4, ymm(0.047)), xytext=(xmm(2018) + 2.4, ymm(0.034)),
+    side = xmm(2018) + 1.2
+    bg.text(side, ymm(primary["estimate"]) + 1.6, "overall", fontsize=note, color=BLUE, ha="left", va="center",
+            fontweight="bold")
+    bg.text(side, ymm(primary["estimate"]) - 1.8, "90% interval", fontsize=note, color=BLUE, ha="left", va="center")
+    bg.text(side, ymm(0), "no gain", fontsize=note, color=muted, ha="left", va="center")
+    bg.annotate("", xy=(side + 1.0, ymm(0.047)), xytext=(side + 1.0, ymm(0.033)),
                 arrowprops=dict(arrowstyle="-|>", color=muted, lw=0.7, mutation_scale=5))
-    bg.text(xmm(2018) + 4.0, ymm(0.0405), "better", fontsize=6.6, color=muted, ha="left", va="center")
-    bg.text(xmm(1960) - 0.6, 91.6, f"Better overall, and in {better_blocks} of {len(blocks)}\nsix-year blocks", fontsize=7.6, color=ink,
-            fontweight="bold", ha="left", va="center", linespacing=1.2)
-    bg.text(xmm(1960) - 0.6, 85.2, "a small gain, but its 90% range stayed\nabove zero, as required in advance",
-            fontsize=6.6, color=muted, ha="left", va="center", linespacing=1.2)
-    bg.text(xmm(1960) + 3.2, 41.6, "each dot: six years, in time order\nopen dots: worse", fontsize=6.6, color=muted,
-            ha="left", va="center", linespacing=1.2)
+    bg.text(side + 2.6, ymm(0.040), "score\ngain", fontsize=note, color=muted, ha="left", va="center", linespacing=1.05)
+    bg.text(xmm(1960) - 0.6, 73.4, f"Better overall, and in\n{better_blocks} of {len(blocks)} periods", fontsize=title,
+            color=ink, fontweight="bold", ha="left", va="center", linespacing=1.15)
+    bg.text(xmm(1960) - 0.6, 64.6, "Small gain; 90% interval above zero,\nmeeting the pre-set criterion", fontsize=note,
+            color=muted, ha="left", va="center", linespacing=1.15)
+    bg.text(xmm(1960) + 3.2, 31.4, "Six-year periods (last: four years);\nopen dots: worse", fontsize=note, color=muted,
+            ha="left", va="center", linespacing=1.15)
 
-    # footer
-    for y, lead, text in ((7.4, "Other stars", "Ten other dwarf novae: their early records were too patchy to repeat the test."),
-                          (3.0, "Next", "Score the fixed forecasts on SS Cygni's observations from 2018 onward, still unopened.")):
-        bg.text(4, y, lead, fontsize=7.2, color=ink, fontweight="bold", ha="left", va="center")
-        bg.text(23.5, y, text, fontsize=7.2, color=muted, ha="left", va="center")
+    bg.text(4, 4.6, "Other stars", fontsize=body, color=ink, fontweight="bold", ha="left", va="center")
+    bg.text(24.5, 4.6, "None of ten other dwarf novae passed the pre-set early-record checks.", fontsize=body,
+            color=muted, ha="left", va="center")
     return fig
 
 
